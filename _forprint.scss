@@ -10,7 +10,12 @@
     display: none;
   }
 
+  h1 {
+    margin-top: ($font-size * 2);
+  }
+
   h2 {
+    margin-top: ($font-size * 4);
     letter-spacing: 0;
   }
 
@@ -61,11 +66,21 @@
     color: black;
   }
 
+  strong,
+  ins {
+    border-color: black;
+  }
+
   code,
   var,
   samp,
   kbd {
     font-family: "Courier New", monospace;
+  }
+
+  mark,
+  .highlight {
+    background: none;
   }
 
   table {
@@ -80,10 +95,24 @@
   }
 
   body > header {
-    border-top: none;
+    text-align: left;
+  }
+
+  h2 + footer {
+    color: black;
+
+    time {
+      color: black;
+    }
   }
 
   body > footer {
+    background: none;
+
+    address {
+      text-align: left;
+    }
+
     section {
       display: none;
     }
