@@ -1,0 +1,233 @@
+// Sections
+body {
+  line-height: 1.75;
+  color: $fg;
+  background-color: $bg;
+  background-image: url("../images/bg-body.png");
+  font-family: $sans-serif;
+}
+
+section,
+nav,
+article,
+aside {
+  @include clearfix;
+}
+
+h1 {
+  margin: ($font-size * 6) 0;
+  line-height: 1;
+  page-break-after: avoid;
+  font-weight: normal;
+}
+
+h2 {
+  margin: ($font-size * 10) 0 ($font-size * 2) 0;
+  line-height: normal;
+  page-break-after: avoid;
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+
+h3, h4, h5, h6 {
+  margin: ($font-size * 4) 0 ($font-size * 2) 0;
+  line-height: normal;
+  page-break-after: avoid;
+}
+
+// Grouping content
+p {
+  margin: ($font-size * 2) 0;
+}
+
+hr {
+  margin: ($font-size * 2) 0;
+  border: none;
+  position: relative;
+  clear: both;
+  width: 100%;
+  height: ($font-size * 4.5);
+  background-color: transparent;
+
+  &:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: ($font-size * 4.5);
+    line-height: ($font-size * 4.5);
+    content: "\223c\2022\223c"; // tilda op + bullet + tilda op
+    color: lighten($fg, 92%);
+    color: transparentize($fg, 0.92);
+    font-size: 450%; // 72px
+    text-align: center;
+  }
+}
+
+pre {
+  margin: ($font-size * 2) 0;
+  clear: both;
+  line-height: 1.25;
+  page-break-inside: avoid;
+  font-family: $monospace;
+  font-size: 87.5%;
+}
+
+blockquote {
+  margin: 0 0 0 ($font-size * 4);
+  position: relative;
+  clear: both;
+  min-height: ($font-size * 4.5);
+  page-break-inside: avoid;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: (- $font-size * 4);
+    width: ($font-size * 3);
+    height: 100%;
+    line-height: 1;
+    content: "\201c"; // Left dquote
+    color: lighten($fg, 80%);
+    color: transparentize($fg, 0.8);
+    font-family: "Trebuchet MS", $sans-serif;
+    font-weight: bold;
+    font-size: 450%; // 72px
+  }
+}
+
+ul,
+ol {
+  margin: ($font-size * 2) 0;
+  clear: both;
+
+  ul,
+  ol {
+    margin: 0;
+  }
+}
+
+dl {
+  margin: ($font-size * 2) 0;
+  clear: both;
+
+  dt {
+    font-weight: bold;
+  }
+
+  dl {
+    margin: 0;
+  }
+}
+
+figure,
+.image {
+  line-height: 1;
+
+  img {
+    border: 1px solid lighten($fg, 90%);
+    border: 1px solid transparentize($fg, 0.9);
+    padding: ($font-size * 0.5 - 1px);
+    background-color: white;
+  }
+
+  a:hover {
+    img {
+      border-color: $light;
+    }
+  }
+}
+
+figure {
+  margin: ($font-size * 2) 0;
+
+  figcaption {
+    display: block;
+    line-height: normal;
+    font-weight: bold;
+  }
+}
+
+// Text-level semantics
+a {
+  color: $link;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover;
+  }
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+strong {
+  border-bottom: 1px dashed $fg;
+}
+
+q::before {
+  content: "\201c"; // Left dquote
+}
+
+q::after {
+  content: "\201d"; // Right dquote
+}
+
+abbr {
+  cursor: help;
+}
+
+code,
+var,
+samp,
+kbd {
+  font-family: $monospace;
+}
+
+mark {
+  background-color: $mark;
+}
+
+// Edits
+ins {
+  border-bottom: 3px double $fg;
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+// Embedded content
+img {
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Tabular data
+table {
+  margin: ($font-size * 2) 0;
+  clear: both;
+  page-break-inside: avoid;
+
+  th {
+    padding: ($font-size * 0.5);
+    border: 1px solid lighten($fg, 85%);
+    vertical-align: top;
+    background-color: lighten($fg, 92%);
+    background-color: transparentize($fg, 0.92);
+  }
+
+  td {
+    padding: ($font-size * 0.5);
+    border: 1px solid lighten($fg, 85%);
+    vertical-align: top;
+    background-color: lighten($fg, 98%);
+    background-color: transparentize($fg, 0.98);
+  }
+}

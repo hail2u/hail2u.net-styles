@@ -1,0 +1,92 @@
+// Header
+body > header {
+  margin: 0 auto;
+  padding: 0 $font-size;
+  max-width: $cwidth;
+  line-height: 1;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 0;
+    font-family: $serif;
+    font-style: italic;
+  }
+
+  mark {
+    color: $fg;
+    background-color: transparent;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  nav {
+    font-family: "Terminal Dosis", sans-serif;
+    font-size: 87.5%;
+    text-transform: uppercase;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    margin: 0 ($font-size * 0.5);
+    display: inline-block;
+    color: $link;
+  }
+}
+
+// Main
+body > div {
+  margin: 0 auto;
+  padding: 0 $font-size;
+  max-width: $cwidth;
+}
+
+h2 + footer {
+  margin-top: (- $font-size * 1.5);
+  color: lighten($fg, 40%);
+  font-family: $serif;
+  font-style: italic;
+
+  time {
+    color: $fg;
+  }
+
+  a[rel="tag"] {
+    text-decoration: none;
+  }
+}
+
+section,
+article {
+  p a {
+    text-decoration: underline;
+  }
+}
+
+// Footer
+body > footer {
+  line-height: 1;
+  background-color: lighten($fg, 92%);
+  background-color: transparentize($fg, 0.92);
+  font-family: $serif;
+
+  address {
+    margin: ($font-size * 6) auto 0 auto;
+    padding: ($font-size * 1.5) $font-size;
+    max-width: $cwidth;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    address {
+      padding: 0 $font-size;
+      height: ($font-size * 4);
+      line-height: ($font-size * 4);
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+$version: "4.2";
+
+/*!
+ * error.css v#{$version}
+ *
+ * LICENSE: http://hail2u.mit-license.org/2011
+ */
+
+body {
+  margin: 2em auto;
+  padding: 0;
+  width: 288px;
+  line-height: 1.5;
+  color: black;
+  background-color: transparent;
+  background-image: url("../images/bg-body.png");
+  font-family: "ArmedBanana", cursive;
+
+  @media only screen and (min-width: 720px) {
+    width: 688px;
+    font-size: 24px;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  color: rgb(44, 111, 133);
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(136, 187, 204);
+}

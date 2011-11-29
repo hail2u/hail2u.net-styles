@@ -1,0 +1,48 @@
+$version: "3.7";
+
+/*!
+ * document.css v#{$version}
+ *
+ * LICENSE: http://hail2u.mit-license.org/2011
+ */
+
+$sans-serif: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+
+@import "natural";
+
+body {
+  max-width: (800px - $font-size * 2 * 2);
+}
+
+.note {
+  padding-left: $font-size;
+  border-left: 3px double red;
+}
+
+.image, .social {
+  margin: ($font-size * 2) 0;
+  max-width: 100%;
+}
+
+.rdbWrapper {
+  height: 23px;
+  overflow: hidden;
+}
+
+.adsense {
+  position: fixed;
+  top: ($font-size * 2);
+  left: 100%;
+}
+
+
+@media only screen and (min-width: 1120px) {
+  body {
+    padding-left: 160px;
+  }
+
+  .adsense {
+    left: auto;
+    right: ($font-size * 2);
+  }
+}

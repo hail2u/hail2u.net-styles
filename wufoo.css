@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*!
+ * wufoo.css
+ *
+ * LICENSE: http://hail2u.mit-license.org/2010
+ */
+
+html {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#container {
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: 0 0 7px #d9d9d9 !important;
+  -moz-box-shadow: 0 0 7px #d9d9d9 !important;
+  -o-box-shadow: 0 0 7px #d9d9d9 !important;
+  box-shadow: 0 0 7px #d9d9d9 !important;
+}
+
+form.wufoo {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+.wufoo .info div {
+  line-height: 1.75;
+}
+
+.wufoo label.desc {
+  font-weight: bold;
+}
+
+.wufoo input.btTxt {
+  margin-left: 0;
+  padding: 3px 12px;
+  font-family: inherit;
+}
+
+.wufoo input.btTxt:hover {
+  cursor: pointer;
+}

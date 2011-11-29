@@ -1,0 +1,418 @@
+// Something need to hide
+.hidden {
+  display: none;
+}
+
+// Highlight Search Terms
+.highlight {
+  background-color: mix($mark, $bg, 50%);
+}
+
+// Seemore
+.seemore {
+  a {
+    padding: 0 $font-size;
+    border: 1px solid $dark;
+    border-radius: 0.75em/1em;
+    box-shadow: inset 0 1px 0 0 lighten($bg, 0.3), 0 0 ($font-size * 0.25) 0 $lightest;
+    box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3), 0 0 ($font-size * 0.25) 0 $lightest;
+    display: inline-block;
+    line-height: ($font-size * 2);
+    color: $bg;
+    background-color: $base;
+    background-image: $button-overlay;
+    font-family: $serif;
+    font-style: italic;
+    text-decoration: none;
+
+    &:hover {
+      border-color: $darkest;
+      box-shadow: inset 0 1px 0 0 lighten($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
+      box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
+    }
+
+    &::after {
+      content: "\0020\00bb"; // space + raquo
+    }
+  }
+}
+
+// Weblog entries
+.sub-news {
+  margin-left: 40px;
+  display: list-item;
+
+  h3 {
+    margin: ($font-size * 0.375) 0;
+    display: inline;
+    font-weight: normal;
+    font-size: 100%;
+  }
+
+  p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  $count: 3;
+  $gap: 8px;
+
+  .news {
+    margin: 0 -$gap;
+
+    h2,
+    p {
+      margin-right: $gap;
+      margin-left: $gap;
+    }
+  }
+
+  .sub-news {
+    margin: $gap;
+    padding: $font-size;
+    border: 1px solid lighten($fg, 90%);
+    border: 1px solid transparentize($fg, 0.9);
+    display: block;
+    float: left;
+    width: (($cwidth + $gap * 2) / $count - $gap * 2 - $font-size * 2 - 1px * 2);
+    background-color: lighten($fg, 98%);
+    background-color: transparentize($fg, 0.98);
+    font-size: 75%; // 12px
+
+    &:hover {
+      background-color: lighten($fg, 96%);
+      background-color: transparentize($fg, 0.96);
+      border-color: $light;
+    }
+
+    h3 {
+      margin: 0 0 ($font-size * 0.75) 0;
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      font-weight: bold;
+      font-size: 117%; // 14px
+      text-overflow: ellipsis;
+    }
+
+    p {
+      margin: 0;
+      height: ($font-size * 0.75 * 1.75 * 6);
+      display: block;
+      overflow: hidden;
+      color: $fg;
+    }
+  }
+}
+
+// Flat DL (ugly class name)
+.flat {
+  @include clearfix;
+
+  dt {
+    clear: both;
+  }
+
+  dd {
+    margin: 0 $font-size 0 0;
+    float: left;
+    color: lighten($fg, 80%);
+  }
+
+  @media screen and (min-width: 768px) {
+    dt {
+      float: left;
+      clear: left;
+
+      &::after {
+        content: "\003a"; // colon
+      }
+    }
+
+    dd {
+      margin: 0 0 0 $font-size;
+    }
+  }
+}
+
+// Paging
+.paging {
+  $arrow-size-x: 64px;
+  $arrow-size-y: 64px;
+
+  ul {
+    @include clearfix;
+
+    margin: ($font-size * 6) 0 ($font-size * 2) 0;
+    padding-left: 0;
+    text-align: center;
+    line-height: 1;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    margin: 0 ($font-size * 0.25);
+    border: ($font-size * 0.25) solid $base;
+    border-radius: #{($arrow-size-x * 0.5 + $font-size * 0.25)}/#{($arrow-size-y * 0.5 + $font-size * 0.25)};
+    display: block;
+    width: $arrow-size-x;
+    height: $arrow-size-y;
+    line-height: $arrow-size-y;
+    overflow: hidden;
+    background-color: $lightest;
+    background-image: url("../images/arrow.png");
+
+    &[rel="next"] {
+      background-position: 0 (- $arrow-size-y);
+    }
+
+    &:hover {
+      border-color: $darkest;
+      box-shadow: 0 0 ($font-size * 0.5) 0 $base;
+      background-color: $base;
+    }
+
+    &::before {
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "\00a0"; // nbsp
+    }
+  }
+}
+
+// Elsewhere
+body > footer {
+  section {
+    margin: 0 auto;
+    padding-bottom: $font-size;
+    width: (($icon-size * 1.25 + 2px * 2) * 7);
+    line-height: 1;
+  }
+
+  ul {
+    @include clearfix;
+    @include transform(scale(0.75));
+
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+    display: block;
+    float: left;
+
+    a {
+      margin: 0 2px;
+      border: ($icon-size * 0.125) solid lighten($fg, 60%);
+      display: block;
+      width: $icon-size;
+      height: $icon-size;
+      line-height: $icon-size;
+      overflow: hidden;
+      background-image: url("../images/icons/icons-b.png");
+      background-repeat: no-repeat;
+      background-clip: padding-box;
+      border-radius: #{($icon-size * 1.25 * 0.5)}/#{($icon-size * 1.25 * 0.5)};
+      opacity: 0.3;
+
+      // &[href="http://feeds.feedburner.com/hail2u"] {
+      //   background-position: 0 0;
+      // }
+
+      &[href="http://www.facebook.com/hail2u"] {
+        background-position: 0 (- $icon-size * 10);
+      }
+
+      &[href="http://twitter.com/hell2u"] {
+        background-position: 0 (- $icon-size * 3);
+      }
+
+      &[href="http://github.com/hail2u"] {
+        background-position: 0 (- $icon-size * 5);
+      }
+
+      &[href="http://www.last.fm/user/hail2u"] {
+        background-position: 0 (- $icon-size * 7);
+      }
+
+      &[href="http://www.delicious.com/hail2u"] {
+        background-position: 0 (- $icon-size * 8);
+      }
+
+      &[href="http://pinterest.com/hail2u/"] {
+        background-position: 0 (- $icon-size * 13);
+      }
+
+      &:hover {
+        border-color: $base;
+        box-shadow: 0 0 ($font-size * 0.5) 0 $base;
+        opacity: 0.6;
+      }
+
+      &:before {
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: "\00a0"; // nbsp
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    section {
+      padding-bottom: 0;
+      position: relative;
+      width: auto;
+      max-width: $cwidth;
+    }
+
+    ul {
+      @include transform(scale(1));
+
+      position: absolute;
+      right: -2px;
+      bottom: (($font-size * 4 - $icon-size * 1.25) * 0.5);
+    }
+  }
+}
+
+// Facebook Like Button
+.like {
+  clear: both;
+  width: 100%;
+  line-height: 1;
+  overflow: hidden;
+
+  iframe {
+    vertical-align: middle;
+  }
+}
+
+// Google AdSense
+.adsense {
+  margin: ($font-size * 6) 0 ($font-size * 2) 0;
+  padding: (($cwidth - 728px) * 0.5);
+  border: 1px solid rgb(207, 204, 198);
+  clear: both;
+  line-height: 1;
+  overflow: hidden;
+  background-color: rgb(243, 240, 234);
+
+  &::before {
+    margin-bottom: 4px;
+    padding: 8px 4px;
+    border-bottom: 2px groove rgb(255, 252, 246);
+    display: block;
+    height: auto;
+    visibility: visible;
+    content: "Advertisements";
+    color: rgb(231, 227, 221);
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgb(159, 156, 150)
+  }
+}
+
+// Google Code Prettify
+.pln,
+.typ,
+.lit,
+.pun,
+.opn,
+.clo,
+.fun {
+  color: inherit;
+}
+
+.str,
+.atv {
+  color: #090;
+}
+
+.kwd,
+.tag,
+.atn {
+  color: #00c;
+}
+
+.com,
+.dec,
+.var {
+  color: #777;
+}
+
+// Google Site Search
+.searchbox {
+  form {
+    margin: ($font-size * 2) 0;
+  }
+
+  div {
+    padding: 6px;
+    border-radius: 16px/20px;
+    display: inline-block;
+    line-height: 1;
+    background-color: lighten($fg, 92%);
+    background-color: transparentize($fg, 0.92);
+  }
+
+  input {
+    box-sizing: content-box;
+    border: 1px solid $dark !important;
+    vertical-align: middle;
+
+    &:hover, &:active, &:focus {
+      border-color: $darkest !important;
+      outline: none !important;
+    }
+  }
+
+  input[type="text"] {
+    margin: 0 -32px 0 0;
+    padding: 2px 32px 2px 8px !important;
+    border-width: 0 !important;
+    border-radius: 12px/16px;
+    width: 183px;
+    height: 28px;
+    background-position: 8px 50% !important;
+  }
+
+  input[type="submit"] {
+    padding: 0;
+    border-radius: 12px/16px;
+    box-shadow: inset 0 1px 0 0 lighten($bg, 0.3);
+    box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3);
+    width: 78px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    color: $bg;
+    background-color: $base;
+    background-image: $button-overlay;
+    font-family: $serif;
+    font-style: italic;
+
+    &:hover {
+      box-shadow: inset 0 1px 0 0 lighten($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
+      box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
+      cursor: pointer;
+    }
+  }
+}
+
+// Hatena Star
+.hatena-star-star {
+  vertical-align: baseline;
+}
+
+// Readability Button
+.readability {
+  height: 23px;
+}
