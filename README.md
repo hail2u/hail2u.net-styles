@@ -12,7 +12,7 @@ Missing SCSS Partials
 
 See: http://github.com/hail2u/scss-partials
 
-I use these partials through symlink but msysGit doesn't offer a `readlink()` for following symlinks. That's because this repository miss some of scss partials.
+I use these partials through symlink but msysGit doesn't offer a `readlink()` for following symlinks. That's because this repository miss some of SCSS partials.
 
 
 LICENSE
