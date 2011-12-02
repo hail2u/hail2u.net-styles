@@ -45,6 +45,13 @@ body > div {
   max-width: $cwidth;
 }
 
+section,
+article {
+  p a {
+    text-decoration: underline;
+  }
+}
+
 h2 + footer {
   margin-top: (- $font-size * 2);
   color: lighten($fg, 40%);
@@ -60,25 +67,23 @@ h2 + footer {
   }
 }
 
-section,
-article {
-  p a {
-    text-decoration: underline;
-  }
-}
-
 // Footer
 body > footer {
   line-height: 1;
   background-color: lighten($fg, 92%);
   background-color: transparentize($fg, 0.92);
-  font-family: $serif;
 
   address {
     margin: ($font-size * 6) auto 0 auto;
     padding: ($font-size * 1.5) $font-size;
     max-width: $cwidth;
+    font-style: normal;
     text-align: center;
+
+    a {
+      font-family: $serif;
+      font-style: italic;
+    }
   }
 
   @media screen and (min-width: 768px) {
