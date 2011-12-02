@@ -22,8 +22,8 @@ body > header {
   }
 
   nav {
-    font-family: "Terminal Dosis", sans-serif;
-    font-size: 87.5%;
+    font-family: "Terminal Dosis", $sans-serif;
+    font-size: 87.5%; // 14px
     text-transform: uppercase;
   }
 
