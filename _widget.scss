@@ -151,29 +151,31 @@
   }
 
   li {
-    display: inline-block;
-  }
-
-  a {
     margin: 0 ($font-size * 0.25);
     border: ($font-size * 0.25) solid $base;
     border-radius: #{($arrow-size-x * 0.5 + $font-size * 0.25)}/#{($arrow-size-y * 0.5 + $font-size * 0.25)};
-    display: block;
-    width: $arrow-size-x;
-    height: $arrow-size-y;
-    line-height: $arrow-size-y;
-    overflow: hidden;
-    background-color: $lightest;
-    background-image: url("../images/arrow.png");
-
-    &[rel="next"] {
-      background-position: 0 (- $arrow-size-y);
-    }
+    display: inline-block;
+    color: $bg;
+    background-color: $light;
+    background-image: $button-overlay;
 
     &:hover {
       border-color: $darkest;
       box-shadow: 0 0 ($font-size * 0.5) 0 $base;
       background-color: $base;
+    }
+  }
+
+  a {
+    display: block;
+    width: $arrow-size-x;
+    height: $arrow-size-y;
+    line-height: $arrow-size-y;
+    overflow: hidden;
+    background-image: url("../images/arrow.png");
+
+    &[rel="next"] {
+      background-position: 0 (- $arrow-size-y);
     }
 
     &::before {
