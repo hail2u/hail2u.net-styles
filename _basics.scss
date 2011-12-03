@@ -14,25 +14,24 @@ aside {
   @include clearfix;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: normal;
+  page-break-after: avoid;
+}
+
 h1 {
   margin: ($font-size * 6) 0;
-  line-height: 1;
-  page-break-after: avoid;
   font-weight: normal;
 }
 
 h2 {
   margin: ($font-size * 10) 0 ($font-size * 2) 0;
-  line-height: normal;
-  page-break-after: avoid;
   font-weight: normal;
   letter-spacing: -1px;
 }
 
 h3, h4, h5, h6 {
   margin: ($font-size * 4) 0 ($font-size * 2) 0;
-  line-height: normal;
-  page-break-after: avoid;
 }
 
 // Grouping content
@@ -220,18 +219,18 @@ table {
   clear: both;
   page-break-inside: avoid;
 
-  th {
+  th, td {
     padding: ($font-size * 0.5);
     border: 1px solid lighten($fg, 85%);
     vertical-align: top;
+  }
+
+  th {
     background-color: lighten($fg, 92%);
     background-color: transparentize($fg, 0.92);
   }
 
   td {
-    padding: ($font-size * 0.5);
-    border: 1px solid lighten($fg, 85%);
-    vertical-align: top;
     background-color: lighten($fg, 98%);
     background-color: transparentize($fg, 0.98);
   }
