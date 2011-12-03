@@ -198,7 +198,6 @@ body > footer {
 
   ul {
     @include clearfix;
-    @include transform(scale(0.75));
 
     margin: 0;
     padding: 0;
@@ -275,8 +274,6 @@ body > footer {
     }
 
     ul {
-      @include transform(scale(1));
-
       position: absolute;
       right: -2px;
       bottom: (($font-size * 4 - $icon-size * 1.25) * 0.5);
