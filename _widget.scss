@@ -97,6 +97,10 @@
       text-overflow: ellipsis;
     }
 
+    a:hover {
+      color: inherit;
+    }
+
     p {
       margin: 0;
       height: ($font-size * 0.75 * 1.75 * 6);
