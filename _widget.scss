@@ -1,3 +1,32 @@
+// Color Representation
+.color-base {
+  color: $base;
+}
+
+.color-darkest {
+  color: $darkest;
+}
+
+.color-dark {
+  color: $dark;
+}
+
+.color-light {
+  color: $light;
+}
+
+.color-lightest {
+  color: $lightest;
+}
+
+.color-foreground {
+  color: $fg;
+}
+
+.color-background {
+  color: $bg;
+}
+
 // Something need to hide
 .hidden {
   display: none;
