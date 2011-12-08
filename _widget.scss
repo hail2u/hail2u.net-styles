@@ -314,17 +314,6 @@ body > footer {
   }
 }
 
-// Facebook Like Button
-.like {
-  clear: both;
-  line-height: 1;
-  overflow: hidden;
-
-  iframe {
-    vertical-align: middle;
-  }
-}
-
 // Google AdSense
 .adsense {
   margin: ($font-size * 6) 0 ($font-size * 2) 0;
@@ -438,9 +427,32 @@ body > footer {
   }
 }
 
+// Socail Buttons
+.buttons {
+  @include clearfix;
+
+  line-height: 1;
+
+  // looks very ugly...
+  div {
+    div,
+    span {
+      display: block !important;
+      float: left !important;
+    }
+  }
+}
+
+// Google +1 Button
+.plusone {
+}
+
+// Facebook Like Button
+.like {
+}
+
 // Hatena Star
-.hatena-star-star {
-  vertical-align: baseline;
+.star {
 }
 
 // Readability Button
