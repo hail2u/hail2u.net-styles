@@ -8,7 +8,7 @@ $version: "3.7";
 
 $sans-serif: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 
-@import "natural";
+@import "clearfix", "natural";
 
 body {
   max-width: (800px - $font-size * 2 * 2);
@@ -19,9 +19,20 @@ body {
   border-left: 3px double red;
 }
 
-.image, .social {
+.image,
+.social {
+  @include clearfix;
+
   margin: ($font-size * 2) 0;
   max-width: 100%;
+
+  > div {
+    float: left;
+
+    iframe {
+      vertical-align: text-bottom;
+    }
+  }
 }
 
 .rdbWrapper {
@@ -34,7 +45,6 @@ body {
   top: ($font-size * 2);
   left: 100%;
 }
-
 
 @media only screen and (min-width: 1120px) {
   body {
