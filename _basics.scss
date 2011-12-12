@@ -173,6 +173,10 @@ strong {
   border-bottom: 1px dashed $fg;
 }
 
+cite {
+  font-style: normal;
+}
+
 q::before {
   content: "\201c"; // Left dquote
 }
