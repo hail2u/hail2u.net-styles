@@ -439,8 +439,8 @@ body > footer {
 
   // looks very ugly...
   div {
-    div,
-    span {
+    > div,
+    > span {
       display: block !important;
       float: left !important;
     }
