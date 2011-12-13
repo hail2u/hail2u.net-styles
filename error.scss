@@ -8,19 +8,23 @@ $version: "4.2";
 
 @import url("../fonts/armedbanana-kana.css");
 
+@import "vars";
+
+@import "normaliz";
+
 body {
-  margin: 2em auto;
-  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
   width: 288px;
   line-height: 1.5;
-  color: black;
-  background-color: transparent;
+  color: $fg;
+  background-color: $bg;
   background-image: url("../images/bg-body.png");
   font-family: "ArmedBanana", cursive;
 
   @media only screen and (min-width: 720px) {
     width: 688px;
-    font-size: 24px;
+    font-size: 150%;
   }
 }
 
@@ -29,10 +33,10 @@ address {
 }
 
 a {
-  color: rgb(44, 111, 133);
+  color: $darkest;
   font-weight: bold;
-}
 
-a:hover {
-  color: rgb(136, 187, 204);
+  &:hover {
+    color: $base;
+  }
 }
