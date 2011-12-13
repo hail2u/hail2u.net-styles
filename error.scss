@@ -1,4 +1,4 @@
-$version: "4.2";
+$version: "4.3";
 
 /*!
  * error.css v#{$version}
@@ -6,10 +6,13 @@ $version: "4.2";
  * LICENSE: http://hail2u.mit-license.org/2011
  */
 
+// Web fonts
 @import url("../fonts/armedbanana-kana.css");
 
+// Variables
 @import "vars";
 
+// Partials
 @import "normaliz";
 
 body {
