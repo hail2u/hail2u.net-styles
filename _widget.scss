@@ -283,17 +283,18 @@ body > footer {
 
     a {
       margin: 0 2px;
-      border: ($icon-size * 0.125) solid black;
+      border: ($icon-size * 0.125) solid mix($fg, $bg, 30%);
       display: block;
       width: $icon-size;
       height: $icon-size;
       line-height: $icon-size;
       overflow: hidden;
+      background-color: mix($fg, $bg, 25%);
       background-image: url("../images/icons/icons-b.png");
       background-repeat: no-repeat;
       background-clip: padding-box;
       border-radius: #{($icon-size * 1.25 * 0.5)}/#{($icon-size * 1.25 * 0.5)};
-      opacity: 0.1;
+      opacity: 0.2;
 
       // &[href="http://feeds.feedburner.com/hail2u"] {
       //   background-position: 0 0;
