@@ -3,18 +3,6 @@ $sans-serif: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 $serif:      "Palatino", "Palatino Linotype", serif;
 $monospace:  "Monaco", "Andale Mono", monospace;
 
-.sans-serif {
-  font-family: $sans-serif;
-}
-
-.serif {
-  font-family: $serif;
-}
-
-.monospace {
-  font-family: $monospace;
-}
-
 // Color
 $base:     rgb(136, 187, 204); // #88bbcc
 
@@ -29,34 +17,6 @@ $bg: rgb(249, 246, 240);
 $link:  $darkest;
 $hover: $base;
 $mark:  rgb(255, 238,   0);
-
-.color-base {
-  color: $base;
-}
-
-.color-darkest {
-  color: $darkest;
-}
-
-.color-dark {
-  color: $dark;
-}
-
-.color-light {
-  color: $light;
-}
-
-.color-lightest {
-  color: $lightest;
-}
-
-.color-foreground {
-  color: $fg;
-}
-
-.color-background {
-  color: $bg;
-}
 
 // Size
 $font-size:    16px;

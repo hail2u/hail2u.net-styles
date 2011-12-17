@@ -1,3 +1,45 @@
+// Font Representation
+.sans-serif {
+  font-family: $sans-serif;
+}
+
+.serif {
+  font-family: $serif;
+}
+
+.monospace {
+  font-family: $monospace;
+}
+
+// Color Representation
+.color-base {
+  color: $base;
+}
+
+.color-darkest {
+  color: $darkest;
+}
+
+.color-dark {
+  color: $dark;
+}
+
+.color-light {
+  color: $light;
+}
+
+.color-lightest {
+  color: $lightest;
+}
+
+.color-foreground {
+  color: $fg;
+}
+
+.color-background {
+  color: $bg;
+}
+
 // Sections
 body {
   line-height: 1.75;
