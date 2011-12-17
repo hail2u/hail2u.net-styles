@@ -27,7 +27,7 @@
   color: $bg;
 }
 
-// Something need to hide
+// Something Need to Hide
 .hidden {
   display: none;
 }
@@ -37,7 +37,7 @@
   background-color: mix($mark, $bg, 75%);
 }
 
-// Minimal list
+// Minimal List
 .minimal {
   padding-left: 0;
 
@@ -54,7 +54,7 @@
   }
 }
 
-// Flat description list
+// Flat Description List
 .flat {
   @include clearfix;
 
@@ -470,7 +470,7 @@ body > footer {
   }
 }
 
-// Socail Buttons
+// Social Buttons
 .buttons {
   @include clearfix;
 
