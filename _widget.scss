@@ -37,39 +37,90 @@
   background-color: mix($mark, $bg, 75%);
 }
 
-// Seemore
-.seemore {
-  a {
-    padding: 0 $font-size;
-    border: 1px solid $dark;
-    border-radius: 0.75em/1em;
-    box-shadow: inset 0 1px 0 0 lighten($bg, 0.3), 0 0 ($font-size * 0.25) 0 $lightest;
-    box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3), 0 0 ($font-size * 0.25) 0 $lightest;
-    display: inline-block;
-    line-height: ($font-size * 2);
-    color: $bg;
-    background-color: $base;
-    background-image: $button-overlay;
-    font-family: $serif;
-    font-style: italic;
-    text-decoration: none;
+// Minimal list
+.minimal {
+  padding-left: 0;
 
-    &:hover {
-      border-color: $darkest;
-      box-shadow: inset 0 1px 0 0 lighten($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
-      box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
-    }
+  li {
+    display: inline;
 
     &::after {
-      content: "\0020\00bb"; // space + raquo
+      content: " // ";
+    }
+
+    &:last-child::after {
+      content: "";
     }
   }
 }
 
-// Weblog entries
-.sub-news {
+// Flat description list
+.flat {
+  @include clearfix;
+
+  dt {
+    clear: both;
+  }
+
+  dd {
+    margin: 0 $font-size 0 0;
+    float: left;
+    color: lighten($fg, 80%);
+  }
+
+  @media screen and (min-width: 768px) {
+    dt {
+      float: left;
+      clear: left;
+
+      &::after {
+        content: "\003a"; // colon
+      }
+    }
+
+    dd {
+      margin: 0 0 0 $font-size;
+    }
+  }
+}
+
+// Grid
+$count: 3;
+$gap: 7px;
+
+.grid-container {
+  @media screen and (min-width: 768px) {
+    margin: 0 -$gap;
+  }
+}
+
+.grid {
   margin-left: 40px;
   display: list-item;
+
+  @media screen and (min-width: 768px) {
+    margin: $gap;
+    display: block;
+    float: left;
+    width: (($cwidth + $gap * 2) / $count - $gap * 2 - $font-size * 2 - 1px * 2);
+  }
+}
+
+// Posts
+#posts {
+  @extend .grid-container;
+
+  @media screen and (min-width: 768px) {
+    h2,
+    p {
+      margin-right: $gap;
+      margin-left: $gap;
+    }
+  }
+}
+
+#posts > section {
+  @extend .grid;
 
   h3 {
     margin: ($font-size * 0.375) 0;
@@ -81,31 +132,12 @@
   p {
     display: none;
   }
-}
 
-@media screen and (min-width: 768px) {
-  $count: 3;
-  $gap: 7px;
-
-  .news {
-    margin: 0 -$gap;
-
-    h2,
-    p {
-      margin-right: $gap;
-      margin-left: $gap;
-    }
-  }
-
-  .sub-news {
-    margin: $gap;
+  @media screen and (min-width: 768px) {
     padding: $font-size;
     border: 1px solid lighten($fg, 90%);
     border: 1px solid transparentize($fg, 0.9);
     border-radius: 2px;
-    display: block;
-    float: left;
-    width: (($cwidth + $gap * 2) / $count - $gap * 2 - $font-size * 2 - 1px * 2);
     background-color: lighten($fg, 98%);
     background-color: transparentize($fg, 0.98);
     font-size: 75%; // 12px
@@ -142,43 +174,38 @@
   }
 }
 
-// Flat DL (ugly class name)
-.flat {
-  @include clearfix;
+// Seemore
+.seemore {
+  a {
+    padding: 0 $font-size;
+    border: 1px solid $dark;
+    border-radius: 0.75em/1em;
+    box-shadow: inset 0 1px 0 0 lighten($bg, 0.3), 0 0 ($font-size * 0.25) 0 $lightest;
+    box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3), 0 0 ($font-size * 0.25) 0 $lightest;
+    display: inline-block;
+    line-height: ($font-size * 2);
+    color: $bg;
+    background-color: $base;
+    background-image: $button-overlay;
+    font-family: $serif;
+    font-style: italic;
+    text-decoration: none;
 
-  dt {
-    clear: both;
-  }
-
-  dd {
-    margin: 0 $font-size 0 0;
-    float: left;
-    color: lighten($fg, 80%);
-  }
-
-  @media screen and (min-width: 768px) {
-    dt {
-      float: left;
-      clear: left;
-
-      &::after {
-        content: "\003a"; // colon
-      }
+    &:hover {
+      border-color: $darkest;
+      box-shadow: inset 0 1px 0 0 lighten($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
+      box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
     }
 
-    dd {
-      margin: 0 0 0 $font-size;
+    &::after {
+      content: "\0020\00bb"; // space + raquo
     }
   }
 }
 
-// Site news
-#site-news ul {
-  clear: none;
-
-  @media screen and (min-width: 768px) {
-    margin-right: 352px;
-  }
+// News
+#news ul {
+  @extend .minimal;
 }
 
 // Paging
@@ -327,6 +354,10 @@ body > footer {
   }
 }
 
+// Shot from iine!
+#iine {
+}
+
 // Google AdSense
 .adsense {
   margin: ($font-size * 6) 0 ($font-size * 2) 0;
@@ -471,27 +502,4 @@ body > footer {
 // Readability Button
 .readability {
   height: 23px;
-}
-
-// iine!
-.iine {
-  img {
-    border: 1px solid lighten($fg, 90%);
-    border: 1px solid transparentize($fg, 0.9);
-    padding: ($font-size * 0.5 - 1px);
-    background-color: white;
-  }
-
-  a:hover img {
-    border-color: $light;
-  }
-
-  @media screen and (min-width: 368px) {
-    width: 336px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-top: (- $font-size * 2);
-    float: right;
-  }
 }
