@@ -42,11 +42,12 @@
 
 // Sections
 body {
+  @extend .sans-serif;
+
   line-height: 1.75;
   color: $fg;
   background-color: $bg;
   background-image: url("../images/bg-body.png");
-  font-family: $sans-serif;
 }
 
 section,
@@ -107,6 +108,8 @@ hr {
 }
 
 pre {
+  @extend .monospace;
+
   margin: ($font-size * 2) 0;
   padding: ($font-size * 1.5);
   border-radius: ($font-size * 0.25);
@@ -116,7 +119,6 @@ pre {
   color: $fg;
   background-color: lighten($fg, 98%);
   background-color: transparentize($fg, 0.98);
-  font-family: $monospace;
   font-size: 87.5%;
 }
 
@@ -233,7 +235,7 @@ code,
 var,
 samp,
 kbd {
-  font-family: $monospace;
+  @extend .monospace;
 }
 
 mark {
