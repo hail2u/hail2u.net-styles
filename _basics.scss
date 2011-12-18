@@ -182,7 +182,18 @@ dl {
   }
 }
 
-figure,
+figure {
+  margin: 0;
+
+  figcaption {
+    @extend p;
+
+    line-height: normal;
+    font-weight: bold;
+  }
+}
+
+figure > p,
 .image {
   line-height: 1;
 
@@ -195,17 +206,6 @@ figure,
 
   a:hover img {
     border-color: $light;
-  }
-}
-
-figure {
-  margin: 0;
-
-  figcaption {
-    @extend p;
-
-    line-height: normal;
-    font-weight: bold;
   }
 }
 
