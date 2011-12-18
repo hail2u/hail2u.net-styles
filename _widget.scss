@@ -340,8 +340,28 @@ body > footer {
   }
 }
 
-// Shot from iine!
+// Shots from iine!
 #iine {
+  ol {
+    @include clearfix;
+
+    padding-left: 0;
+
+    li {
+      display: block;
+    }
+  }
+
+  figure {
+    width: (100% / 3);
+    float: left;
+
+    img {
+      border: none;
+      padding: 0;
+      width: 100%;
+    }
+  }
 }
 
 // Google AdSense
