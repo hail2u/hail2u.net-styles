@@ -40,14 +40,19 @@
   color: $bg;
 }
 
+// Other Representation
+.heading {
+  line-height: normal;
+  page-break-after: avoid;
+}
+
 // Sections
 body {
-  @extend .sans-serif;
-
   line-height: 1.75;
   color: $fg;
   background-color: $bg;
   background-image: url("../images/bg-body.png");
+  font-family: $sans-serif;
 }
 
 section,
@@ -57,23 +62,27 @@ aside {
   @include clearfix;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: normal;
-  page-break-after: avoid;
-}
-
 h1 {
+  @extend .heading;
+
   margin: ($font-size * 6) 0;
   font-weight: normal;
 }
 
 h2 {
+  @extend .heading;
+
   margin: ($font-size * 10) 0 ($font-size * 2) 0;
   font-weight: normal;
   letter-spacing: -1px;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
+  @extend .heading;
+
   margin: ($font-size * 4) 0 ($font-size * 2) 0;
 }
 
@@ -83,7 +92,8 @@ p {
 }
 
 hr {
-  margin: ($font-size * 2) 0;
+  @extend p;
+
   border: none;
   position: relative;
   clear: both;
@@ -108,9 +118,8 @@ hr {
 }
 
 pre {
-  @extend .monospace;
+  @extend p;
 
-  margin: ($font-size * 2) 0;
   padding: ($font-size * 1.5);
   border-radius: ($font-size * 0.25);
   clear: both;
@@ -119,6 +128,7 @@ pre {
   color: $fg;
   background-color: lighten($fg, 98%);
   background-color: transparentize($fg, 0.98);
+  font-family: $monospace;
   font-size: 87.5%;
 }
 
@@ -148,7 +158,8 @@ blockquote {
 
 ul,
 ol {
-  margin: ($font-size * 2) 0;
+  @extend p;
+
   clear: both;
 
   ul,
@@ -158,7 +169,8 @@ ol {
 }
 
 dl {
-  margin: ($font-size * 2) 0;
+  @extend p;
+
   clear: both;
 
   dt {
@@ -187,10 +199,11 @@ figure,
 }
 
 figure {
-  margin: ($font-size * 2) 0;
+  margin: 0;
 
   figcaption {
-    display: block;
+    @extend p;
+
     line-height: normal;
     font-weight: bold;
   }
@@ -235,7 +248,7 @@ code,
 var,
 samp,
 kbd {
-  @extend .monospace;
+  font-family: $monospace;
 }
 
 mark {
@@ -261,7 +274,8 @@ img {
 
 // Tabular data
 table {
-  margin: ($font-size * 2) 0;
+  @extend p;
+
   clear: both;
   page-break-inside: avoid;
 

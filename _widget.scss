@@ -3,7 +3,7 @@
   display: none;
 }
 
-// Highlight Search Terms
+// Highlight Something
 .highlight {
   background-color: mix($mark, $bg, 75%);
 }
@@ -14,14 +14,6 @@
 
   li {
     display: inline;
-
-    &::after {
-      content: " // ";
-    }
-
-    &:last-child::after {
-      content: "";
-    }
   }
 }
 
@@ -36,7 +28,6 @@
   dd {
     margin: 0 $font-size 0 0;
     float: left;
-    color: lighten($fg, 80%);
   }
 
   @media screen and (min-width: 768px) {
@@ -73,11 +64,58 @@ $gap: 7px;
     margin: $gap;
     display: block;
     float: left;
-    width: (($cwidth + $gap * 2) / $count - $gap * 2 - $font-size * 2 - 1px * 2);
+    width: (($cwidth + $gap * 2) / $count - $gap * 2);
   }
 }
 
-// Posts
+// Elegant Button
+.elegant-btn {
+  padding: 0 $font-size;
+  border: 1px solid $dark;
+  border-radius: 0.75em/1em;
+  box-shadow: inset 0 1px 0 0 lighten($bg, 0.3), 0 0 ($font-size * 0.25) 0 $lightest;
+  box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3), 0 0 ($font-size * 0.25) 0 $lightest;
+  display: inline-block;
+  line-height: ($font-size * 2);
+  color: $bg;
+  background-color: $base;
+  background-image: $button-overlay;
+  font-family: $serif;
+  font-style: italic;
+  text-decoration: none;
+
+  &:hover {
+    border-color: $darkest;
+    box-shadow: inset 0 1px 0 0 lighten($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
+    box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
+    color: $bg;
+    cursor: pointer;
+  }
+}
+
+// Monthly Archives (inherit Flat Description List)
+#by-month dl {
+  @extend .flat;
+
+  dd {
+    color: lighten($fg, 80%);
+  }
+}
+
+// News (inherit Minimal List)
+#news ul {
+  @extend .minimal;
+
+  li::after {
+    content: " // ";
+  }
+
+  li:last-child::after {
+    content: "";
+  }
+}
+
+// Posts (inherit Grid)
 #posts {
   @extend .grid-container;
 
@@ -109,6 +147,7 @@ $gap: 7px;
     border: 1px solid lighten($fg, 90%);
     border: 1px solid transparentize($fg, 0.9);
     border-radius: 2px;
+    width: (($cwidth + $gap * 2) / $count - $gap * 2 - $font-size * 2 - 1px * 2);
     background-color: lighten($fg, 98%);
     background-color: transparentize($fg, 0.98);
     font-size: 75%; // 12px
@@ -145,39 +184,15 @@ $gap: 7px;
   }
 }
 
-// Seemore
+// Seemore (inherit Elegant Button)
 .seemore {
   a {
-    @extend .serif;
-
-    padding: 0 $font-size;
-    border: 1px solid $dark;
-    border-radius: 0.75em/1em;
-    box-shadow: inset 0 1px 0 0 lighten($bg, 0.3), 0 0 ($font-size * 0.25) 0 $lightest;
-    box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3), 0 0 ($font-size * 0.25) 0 $lightest;
-    display: inline-block;
-    line-height: ($font-size * 2);
-    color: $bg;
-    background-color: $base;
-    background-image: $button-overlay;
-    font-style: italic;
-    text-decoration: none;
-
-    &:hover {
-      border-color: $darkest;
-      box-shadow: inset 0 1px 0 0 lighten($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
-      box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
-    }
+    @extend .elegant-btn;
 
     &::after {
       content: "\0020\00bb"; // space + raquo
     }
   }
-}
-
-// News
-#news ul {
-  @extend .minimal;
 }
 
 // Paging
@@ -420,25 +435,15 @@ body > footer {
   }
 
   input[type="submit"] {
-    @extend .serif;
+    @extend .elegant-btn;
 
     padding: 0;
-    border-radius: 12px/16px;
-    box-shadow: inset 0 1px 0 0 lighten($bg, 0.3);
-    box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3);
     width: 78px;
     height: 32px;
     line-height: 32px;
     overflow: hidden;
-    color: $bg;
-    background-color: $base;
-    background-image: $button-overlay;
-    font-style: italic;
 
     &:hover {
-      box-shadow: inset 0 1px 0 0 lighten($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
-      box-shadow: inset 0 1px 0 0 transparentize($bg, 0.3), 0 0 ($font-size * 0.5) 0 $base;
-      cursor: pointer;
     }
   }
 }
@@ -449,7 +454,7 @@ body > footer {
 
   line-height: 1;
 
-  // looks very ugly...
+  // very ugly...
   div {
     > div,
     > span {

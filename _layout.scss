@@ -7,9 +7,8 @@ body > header {
   text-align: center;
 
   h1 {
-    @extend .serif;
-
     margin-bottom: 0;
+    font-family: $serif;
     font-style: italic;
   }
 
@@ -54,10 +53,9 @@ article {
 }
 
 h2 + footer {
-  @extend .serif;
-
   margin-top: (- $font-size * 2);
   color: lighten($fg, 40%);
+  font-family: $serif;
   font-style: italic;
 
   time {
@@ -83,8 +81,7 @@ body > footer {
     text-align: center;
 
     a {
-      @extend .serif;
-
+      font-family: $serif;
       font-style: italic;
     }
   }
