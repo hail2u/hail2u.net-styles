@@ -93,15 +93,6 @@ $gap: 7px;
   }
 }
 
-// Monthly Archives (inherit Flat Description List)
-#by-month dl {
-  @extend .flat;
-
-  dd {
-    color: lighten($fg, 80%);
-  }
-}
-
 // News (inherit Minimal List)
 #news ul {
   @extend .minimal;
@@ -112,6 +103,15 @@ $gap: 7px;
 
   li:last-child::after {
     content: "";
+  }
+}
+
+// Monthly Archives (inherit Flat Description List)
+#by-month dl {
+  @extend .flat;
+
+  dd {
+    color: lighten($fg, 80%);
   }
 }
 
@@ -192,6 +192,51 @@ $gap: 7px;
     &::after {
       content: "\0020\00bb"; // space + raquo
     }
+  }
+}
+
+// Searchbox
+.searchbox {
+  form {
+    margin: ($font-size * 2) 0;
+  }
+
+  div {
+    padding: 6px;
+    border-radius: 16px/20px;
+    display: inline-block;
+    line-height: 1;
+    background-color: lighten($fg, 92%);
+    background-color: transparentize($fg, 0.92);
+  }
+
+  input {
+    border: 0;
+    vertical-align: middle;
+    box-sizing: content-box;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input[type="text"] {
+    margin: 0 -32px 0 0;
+    padding: 2px 32px 2px 8px;
+    border-radius: 12px/16px;
+    width: 183px;
+    height: 28px;
+  }
+
+  input[type="submit"] {
+    @extend .elegant-btn;
+
+    padding: 0;
+    width: 78px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
   }
 }
 
@@ -340,28 +385,41 @@ body > footer {
   }
 }
 
-// Shots from iine!
-#iine {
-  ol {
-    @include clearfix;
+/*
+ * 3rd Party Widgets
+ */
 
-    padding-left: 0;
+// Social Buttons
+.buttons {
+  @include clearfix;
 
-    li {
-      display: block;
+  line-height: 1;
+
+  // very ugly...
+  div {
+    > div,
+    > span {
+      display: block !important;
+      float: left !important;
     }
   }
+}
 
-  figure {
-    width: (100% / 3);
-    float: left;
+// Google +1 Button
+.plusone {
+}
 
-    img {
-      border: none;
-      padding: 0;
-      width: 100%;
-    }
-  }
+// Facebook Like Button
+.like {
+}
+
+// Hatena Star
+.star {
+}
+
+// Readability Button
+.readability {
+  height: 23px;
 }
 
 // Google AdSense
@@ -419,84 +477,34 @@ body > footer {
 }
 
 // Google Site Search
-.searchbox {
-  form {
-    margin: ($font-size * 2) 0;
-  }
-
-  div {
-    padding: 6px;
-    border-radius: 16px/20px;
-    display: inline-block;
-    line-height: 1;
-    background-color: lighten($fg, 92%);
-    background-color: transparentize($fg, 0.92);
-  }
-
-  input {
-    box-sizing: content-box;
-    border: 1px solid $dark !important;
-    vertical-align: middle;
-
-    &:hover, &:active, &:focus {
-      border-color: $darkest !important;
-      outline: none !important;
-    }
-  }
-
+#cse-search-box {
   input[type="text"] {
-    margin: 0 -32px 0 0;
     padding: 2px 32px 2px 8px !important;
     border-width: 0 !important;
-    border-radius: 12px/16px;
-    width: 183px;
-    height: 28px;
     background-position: 8px 50% !important;
   }
+}
 
-  input[type="submit"] {
-    @extend .elegant-btn;
+// Shots from iine!
+#iine {
+  ol {
+    @include clearfix;
 
-    padding: 0;
-    width: 78px;
-    height: 32px;
-    line-height: 32px;
-    overflow: hidden;
+    padding-left: 0;
 
-    &:hover {
+    li {
+      display: block;
     }
   }
-}
 
-// Social Buttons
-.buttons {
-  @include clearfix;
+  figure {
+    width: (100% / 3);
+    float: left;
 
-  line-height: 1;
-
-  // very ugly...
-  div {
-    > div,
-    > span {
-      display: block !important;
-      float: left !important;
+    img {
+      border: none;
+      padding: 0;
+      width: 100%;
     }
   }
-}
-
-// Google +1 Button
-.plusone {
-}
-
-// Facebook Like Button
-.like {
-}
-
-// Hatena Star
-.star {
-}
-
-// Readability Button
-.readability {
-  height: 23px;
 }
