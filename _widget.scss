@@ -501,13 +501,42 @@ body > footer {
   }
 
   figure {
-    width: (100% / 3);
+    position: relative;
     float: left;
+    width: (100% / 3);
+    line-height: 1;
+    overflow: hidden;
 
     img {
       border: none;
       padding: 0;
       width: 100%;
+      vertical-align: text-bottom;
+    }
+
+    figcaption {
+      @include transition-duration(0.5s);
+
+      margin: 0;
+      padding: 0 1em;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      line-height: 3;
+      color: white;
+      background-color: black;
+      font-weight: normal;
+      font-size: 12px;
+      text-align: right;
+      opacity: 0.5;
+    }
+
+    &:hover figcaption {
+      @include transition-duration(0.5s);
+
+      line-height: 0;
+      cursor: pointer;
     }
   }
 }
