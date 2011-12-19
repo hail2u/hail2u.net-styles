@@ -315,18 +315,19 @@ body > footer {
 
     a {
       margin: 0 2px;
-      border: ($icon-size * 0.125) solid mix($fg, $bg, 30%);
+      border: ($icon-size * 0.125) solid black;
+      border-radius: #{($icon-size * 1.25 * 0.5)}/#{($icon-size * 1.25 * 0.5)};
       display: block;
       width: $icon-size;
       height: $icon-size;
       line-height: $icon-size;
       overflow: hidden;
-      background-color: mix($fg, $bg, 25%);
-      background-image: url("../images/icons/icons-b.png");
-      background-repeat: no-repeat;
       background-clip: padding-box;
-      border-radius: #{($icon-size * 1.25 * 0.5)}/#{($icon-size * 1.25 * 0.5)};
-      opacity: 0.2;
+      background-color: black;
+      background-image: url("../images/icons/icons-w.png");
+      background-repeat: no-repeat;
+      text-decoration: none;
+      opacity: 0.1;
 
       // &[href="http://feeds.feedburner.com/hail2u"] {
       //   background-position: 0 0;
@@ -357,7 +358,9 @@ body > footer {
       }
 
       &:hover {
-        opacity: 0.55;
+        border-color: $base;
+        background-color: $base;
+        opacity: 1;
       }
 
       &:before {
