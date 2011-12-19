@@ -41,9 +41,28 @@
 }
 
 // Other Representation
+.default-margin {
+  margin: ($font-size * 2) 0;
+}
+
 .heading {
   line-height: normal;
   page-break-after: avoid;
+}
+
+.image {
+  line-height: 1;
+
+  img {
+    border: 1px solid lighten($fg, 90%);
+    border: 1px solid transparentize($fg, 0.9);
+    padding: ($font-size * 0.5 - 1px);
+    background-color: white;
+  }
+
+  a:hover img {
+    border-color: $light;
+  }
 }
 
 // Sections
@@ -88,11 +107,11 @@ h6 {
 
 // Grouping content
 p {
-  margin: ($font-size * 2) 0;
+  @extend .default-margin;
 }
 
 hr {
-  @extend p;
+  @extend .default-margin;
 
   border: none;
   position: relative;
@@ -118,7 +137,7 @@ hr {
 }
 
 pre {
-  @extend p;
+  @extend .default-margin;
 
   padding: ($font-size * 1.5);
   border-radius: ($font-size * 0.25);
@@ -158,7 +177,7 @@ blockquote {
 
 ul,
 ol {
-  @extend p;
+  @extend .default-margin;
 
   clear: both;
 
@@ -169,7 +188,7 @@ ol {
 }
 
 dl {
-  @extend p;
+  @extend .default-margin;
 
   clear: both;
 
@@ -183,27 +202,13 @@ dl {
 }
 
 figure {
-  figcaption {
-    @extend p;
-
-    line-height: normal;
-  }
+  @extend .image;
 }
 
-figure > p,
-.image {
-  line-height: 1;
+figcaption {
+  @extend .default-margin;
 
-  img {
-    border: 1px solid lighten($fg, 90%);
-    border: 1px solid transparentize($fg, 0.9);
-    padding: ($font-size * 0.5 - 1px);
-    background-color: white;
-  }
-
-  a:hover img {
-    border-color: $light;
-  }
+  line-height: normal;
 }
 
 // Text-level semantics
@@ -271,7 +276,7 @@ img {
 
 // Tabular data
 table {
-  @extend p;
+  @extend .default-margin;
 
   clear: both;
   page-break-inside: avoid;
