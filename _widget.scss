@@ -494,10 +494,21 @@ body > footer {
     @include clearfix;
 
     padding-left: 0;
+  }
 
-    li {
-      display: block;
-    }
+  li {
+    display: block;
+  }
+
+  a {
+    color: white;
+  }
+
+  img {
+    border: none;
+    padding: 0;
+    width: 100%;
+    vertical-align: text-bottom;
   }
 
   figure {
@@ -506,13 +517,6 @@ body > footer {
     width: (100% / 3);
     line-height: 1;
     overflow: hidden;
-
-    img {
-      border: none;
-      padding: 0;
-      width: 100%;
-      vertical-align: text-bottom;
-    }
 
     figcaption {
       @include transition-duration(0.5s);
@@ -524,7 +528,8 @@ body > footer {
       bottom: 0;
       width: 100%;
       line-height: 3;
-      color: white;
+      overflow: hidden;
+      color: gray;
       background-color: black;
       font-weight: normal;
       font-size: 12px;
