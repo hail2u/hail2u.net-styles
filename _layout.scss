@@ -86,12 +86,103 @@ body > footer {
     }
   }
 
+  section {
+    margin: 0 auto;
+    padding-bottom: $font-size;
+    width: (($icon-size * 1.25 + 2px * 2) * 7);
+    line-height: 1;
+  }
+
+  ul {
+    @include clearfix;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+    display: block;
+    float: left;
+
+    a {
+      margin: 0 2px;
+      border: ($icon-size * 0.125) solid black;
+      border-radius: #{($icon-size * 1.25 * 0.5)}/#{($icon-size * 1.25 * 0.5)};
+      display: block;
+      width: $icon-size;
+      height: $icon-size;
+      line-height: $icon-size;
+      overflow: hidden;
+      background-clip: padding-box;
+      background-color: black;
+      background-image: url("../images/icons/icons-w.png");
+      background-repeat: no-repeat;
+      text-decoration: none;
+      opacity: 0.1;
+
+      // &[href="http://feeds.feedburner.com/hail2u"] {
+      //   background-position: 0 0;
+      // }
+
+      &[href="http://www.facebook.com/hail2u"] {
+        background-position: 0 (- $icon-size * 10);
+      }
+
+      &[href="http://twitter.com/hell2u"] {
+        background-position: 0 (- $icon-size * 3);
+      }
+
+      &[href="http://github.com/hail2u"] {
+        background-position: 0 (- $icon-size * 5);
+      }
+
+      &[href="http://www.last.fm/user/hail2u"] {
+        background-position: 0 (- $icon-size * 7);
+      }
+
+      &[href="http://www.delicious.com/hail2u"] {
+        background-position: 0 (- $icon-size * 8);
+      }
+
+      &[href="http://pinterest.com/hail2u/"] {
+        background-position: 0 (- $icon-size * 13);
+      }
+
+      &:hover {
+        border-color: $base;
+        background-color: $base;
+        opacity: 1;
+      }
+
+      &:before {
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: "\00a0"; // nbsp
+      }
+    }
+  }
+
   @media screen and (min-width: 768px) {
     address {
       padding: 0 $font-size;
       height: ($font-size * 4);
       line-height: ($font-size * 4);
       text-align: left;
+    }
+
+    section {
+      padding-bottom: 0;
+      position: relative;
+      width: auto;
+      max-width: $cwidth;
+    }
+
+    ul {
+      position: absolute;
+      right: -2px;
+      bottom: (($font-size * 4 - $icon-size * 1.25) * 0.5);
     }
   }
 }
