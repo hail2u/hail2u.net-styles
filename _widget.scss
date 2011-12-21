@@ -260,18 +260,17 @@ $gap: 7px;
 
   a {
     margin: 0 ($font-size * 0.25);
-    border: ($font-size * 0.25) solid $base;
-    border-radius: #{($arrow-size-x * 0.5 + $font-size * 0.25)}/#{($arrow-size-y * 0.5 + $font-size * 0.25)};
+    border-radius: #{($arrow-size-x * 0.5)}/#{($arrow-size-y * 0.5)};
     display: block;
     width: $arrow-size-x;
     height: $arrow-size-y;
     line-height: $arrow-size-y;
     overflow: hidden;
-    color: $bg;
-    background-color: $light;
+    color: white;
+    background-color: lighten(black, 0.9);
+    background-color: transparentize(black, 0.9);
 
     &:hover {
-      border-color: $darkest;
       box-shadow: 0 0 ($font-size * 0.5) 0 $base;
       background-color: $base;
     }
