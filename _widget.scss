@@ -500,10 +500,6 @@ body > footer {
     display: block;
   }
 
-  a {
-    color: white;
-  }
-
   img {
     border: none;
     padding: 0;
@@ -535,6 +531,10 @@ body > footer {
       font-size: 12px;
       text-align: right;
       opacity: 0.8;
+
+      a {
+        color: white;
+      }
     }
 
     &:hover figcaption {
