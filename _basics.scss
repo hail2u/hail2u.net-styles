@@ -51,17 +51,15 @@
 }
 
 .image {
-  line-height: 1;
-
   img {
     border: 1px solid lighten($fg, 90%);
     border: 1px solid transparentize($fg, 0.9);
     padding: ($font-size * 0.5 - 1px);
     background-color: white;
-  }
 
-  a:hover img {
-    border-color: $light;
+    a:hover & {
+      border-color: $light;
+    }
   }
 }
 
