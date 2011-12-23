@@ -118,7 +118,7 @@ hr {
   height: ($font-size * 4.5);
   background-color: transparent;
 
-  &:before {
+  &::before {
     display: block;
     position: absolute;
     top: 0;
