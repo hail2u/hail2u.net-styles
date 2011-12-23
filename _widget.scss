@@ -393,28 +393,42 @@ $gap:   4px;
 
 // Shots from iine!
 #iine {
+  @extend .grid-container;
+
   ol {
-    @include clearfix;
-
     padding-left: 0;
+    list-style-type: none;
   }
 
-  li {
-    display: block;
-  }
+  @media screen and (min-width: 768px) {
+    ol {
+      @include clearfix;
+    }
 
-  img {
-    border: none;
-    padding: 0;
-    width: 100%;
-    vertical-align: text-bottom;
-  }
+    li {
+      display: block;
+    }
 
-  figure {
-    margin: 1%;
+    h2,
+    p {
+      margin-right: $gap;
+      margin-left: $gap;
+    }
+
+    img {
+      border: none;
+      padding: 0;
+      width: 100%;
+      vertical-align: text-bottom;
+    }
+  }
+}
+
+#iine figure {
+  @extend .grid;
+
+  @media screen and (min-width: 768px) {
     position: relative;
-    float: left;
-    width: (100% / 3 - 1% * 2);
     line-height: 1;
     overflow: hidden;
 
@@ -447,5 +461,6 @@ $gap:   4px;
       line-height: 0;
       cursor: pointer;
     }
+
   }
 }
