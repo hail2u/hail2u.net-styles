@@ -269,7 +269,6 @@ $gap:   4px;
     opacity: 0.1;
 
     &:hover {
-      box-shadow: 0 0 ($font-size * 0.5) 0 $base;
       background-color: $base;
       opacity: 1;
     }
