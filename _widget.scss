@@ -108,7 +108,8 @@ $gap:   4px;
   @extend .flat;
 
   dd {
-    color: mix($fg, $bg, 20%);
+    color: mix($bg, $fg, 75%);
+    color: transparentize($fg, 0.75);
   }
 }
 
