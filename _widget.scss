@@ -5,7 +5,8 @@
 
 // Highlight Something
 .highlight {
-  background-color: mix($mark, $bg, 75%);
+  background-color: mix($bg, $mark, 25%);
+  background-color: transparentize($mark, 0.25);
 }
 
 // Minimal List
