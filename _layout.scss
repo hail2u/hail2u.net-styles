@@ -54,7 +54,8 @@ article {
 
 h2 + footer {
   margin-top: (- $font-size * 2);
-  color: lighten($fg, 40%);
+  color: mix($bg, $fg, 60%);
+  color: transparentize($fg, 0.6);
   font-family: $serif;
   font-style: italic;
 
@@ -70,7 +71,7 @@ h2 + footer {
 // Footer
 body > footer {
   line-height: 1;
-  background-color: lighten($fg, 92%);
+  background-color: mix($bg, $fg, 92%);
   background-color: transparentize($fg, 0.92);
 
   address {
