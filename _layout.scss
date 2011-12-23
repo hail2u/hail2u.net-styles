@@ -89,7 +89,7 @@ body > footer {
   section {
     margin: 0 auto;
     padding-bottom: $font-size;
-    width: (($icon-size * 1.25 + 2px * 2) * 7);
+    width: (($icon-size + 2px * 2) * 7);
     line-height: 1;
   }
 
@@ -107,8 +107,7 @@ body > footer {
 
     a {
       margin: 0 2px;
-      border: ($icon-size * 0.125) solid black;
-      border-radius: #{($icon-size * 1.25 * 0.5)}/#{($icon-size * 1.25 * 0.5)};
+      border-radius: #{($icon-size * 0.5)}/#{($icon-size * 0.5)};
       display: block;
       width: $icon-size;
       height: $icon-size;
@@ -121,32 +120,34 @@ body > footer {
       text-decoration: none;
       opacity: 0.1;
 
-      // &[href="http://feeds.feedburner.com/hail2u"] {
-      //   background-position: 0 0;
-      // }
+      $adjuster: (($icon-size - 32px) * 0.5); 
+
+      &[href="http://feeds.feedburner.com/hail2u"] {
+        background-position: center $adjuster;
+      }
 
       &[href="http://www.facebook.com/hail2u"] {
-        background-position: 0 (- $icon-size * 10);
+        background-position: center (- 32px * 10 + $adjuster);
       }
 
       &[href="http://twitter.com/hell2u"] {
-        background-position: 0 (- $icon-size * 3);
+        background-position: center (- 32px * 3 + $adjuster);
       }
 
       &[href="http://github.com/hail2u"] {
-        background-position: 0 (- $icon-size * 5);
+        background-position: center (- 32px * 5 + $adjuster);
       }
 
       &[href="http://www.last.fm/user/hail2u"] {
-        background-position: 0 (- $icon-size * 7);
+        background-position: center (- 32px * 7 + $adjuster);
       }
 
       &[href="http://www.delicious.com/hail2u"] {
-        background-position: 0 (- $icon-size * 14);
+        background-position: center (- 32px * 14 + $adjuster);
       }
 
       &[href="http://pinterest.com/hail2u/"] {
-        background-position: 0 (- $icon-size * 13);
+        background-position: center (- 32px * 13 + $adjuster);
       }
 
       &:hover {
@@ -155,7 +156,7 @@ body > footer {
         opacity: 1;
       }
 
-      &:before {
+      &::before {
         display: block;
         width: 100%;
         height: 100%;
