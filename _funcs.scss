@@ -1,0 +1,24 @@
+/*
+ * adjust-rgb() - Adjust RGB properties at once with specified amount
+ *
+ * @param {color} $color
+ * @param {number} $amount - between -1 and 1
+ */
+@function adjust-rgb($color, $amount) {
+  $number: 255 * $amount;
+
+  @return adjust-color($color, $red: $number, $blue: $number, $green: $number);
+}
+
+/*
+ * mixxd() - Mix colors by decimal
+ *
+ * @param {color} $color-1
+ * @param {color} $color-2
+ * @param {number=} $weight - between 0 and 1
+ */
+@function mixxd($color-1, $color-2, $weight: 0.5) {
+  $percentage: percentage(1 - $weight);
+
+  @return mix($color-2, $color-2, $percentage);
+}
