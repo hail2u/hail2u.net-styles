@@ -434,11 +434,11 @@ $gap:   4px;
     figcaption {
       @include transition-duration(0.5s);
 
-      margin: 0;
+      margin: -1.5em 0 0 0;
       padding: 0 1em;
       position: absolute;
+      top: 50%;
       right: 0;
-      bottom: 0;
       width: 100%;
       line-height: 3;
       overflow: hidden;
@@ -457,9 +457,9 @@ $gap:   4px;
     &:hover figcaption {
       @include transition-duration(0.5s);
 
+      margin-top: 0;
       line-height: 0;
       cursor: pointer;
     }
-
   }
 }
