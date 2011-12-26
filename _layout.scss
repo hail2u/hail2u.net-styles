@@ -71,7 +71,7 @@ h2 + footer {
 // Footer
 body > footer {
   line-height: 1;
-  background-color: mix($bg, $fg, 92%);
+  background-color: mixxd($fg, $bg, 0.92);
   background-color: transparentize($fg, 0.92);
 
   address {

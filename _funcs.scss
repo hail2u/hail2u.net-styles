@@ -20,5 +20,5 @@
 @function mixxd($color-1, $color-2, $weight: 0.5) {
   $percentage: percentage(1 - $weight);
 
-  @return mix($color-2, $color-2, $percentage);
+  @return mix($color-1, $color-2, $percentage);
 }
