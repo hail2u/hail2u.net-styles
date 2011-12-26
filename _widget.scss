@@ -144,10 +144,10 @@ $gap:   4px;
 
   @media screen and (min-width: 768px) {
     padding-left: 0;
-    border: 1px solid mix(white, $fg, 90%);
+    border: 1px solid mixxd($fg, $bg, 0.98 * 0.9);
     border: 1px solid transparentize($fg, 0.9);
     width: (($cwidth + $gap * 2) / $count - $gap * 2 - 1px * 2);
-    background-color: mix($bg, $fg, 98%);
+    background-color: mixxd($fg, $bg, 0.98);
     background-color: transparentize($fg, 0.98);
     font-size: 75%; // 12px
 
