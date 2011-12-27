@@ -432,10 +432,11 @@ $gap:   4px;
     overflow: hidden;
 
     figcaption {
-      @include transition-duration(0.5s);
+      @include transition-duration(0.3s);
 
       margin: -1.5em 0 0 0;
       padding: 0 1em;
+      box-sizing: border-box;
       position: absolute;
       top: 50%;
       right: 0;
@@ -446,7 +447,7 @@ $gap:   4px;
       background-color: black;
       font-weight: normal;
       font-size: 12px;
-      text-align: right;
+      text-align: center;
       opacity: 0.8;
 
       a {
@@ -455,7 +456,7 @@ $gap:   4px;
     }
 
     &:hover figcaption {
-      @include transition-duration(0.5s);
+      @include transition-duration(0.3s);
 
       margin-top: 0;
       line-height: 0;
