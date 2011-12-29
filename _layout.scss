@@ -59,11 +59,7 @@ h2 + footer {
   font-family: $serif;
   font-style: italic;
 
-  time {
-    color: $fg;
-  }
-
-  a[rel="tag"] {
+  a {
     text-decoration: none;
   }
 }
