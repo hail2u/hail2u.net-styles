@@ -111,16 +111,31 @@ body > footer {
       line-height: $icon-size;
       overflow: hidden;
       background-clip: padding-box;
-      background-color: black;
       background-image: url("../images/icons/icons-w.png");
       background-repeat: no-repeat;
       text-decoration: none;
+      background-color: $fg;
       opacity: 0.1;
+
+      &:hover {
+        border-color: $base;
+        background-color: $base;
+        opacity: 1;
+      }
+
+      &::before {
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: "\00a0"; // nbsp
+      }
 
       $adjuster: (($icon-size - 32px) * 0.5); 
 
       &[href^="http://feeds.feedburner.com/hail2u"] {
+        background-color: orange;
         background-position: center $adjuster;
+        opacity: 1;
       }
 
       &[href="http://www.facebook.com/hail2u"] {
@@ -145,19 +160,6 @@ body > footer {
 
       &[href="http://pinterest.com/hail2u/"] {
         background-position: center (- 32px * 13 + $adjuster);
-      }
-
-      &:hover {
-        border-color: $base;
-        background-color: $base;
-        opacity: 1;
-      }
-
-      &::before {
-        display: block;
-        width: 100%;
-        height: 100%;
-        content: "\00a0"; // nbsp
       }
     }
   }
