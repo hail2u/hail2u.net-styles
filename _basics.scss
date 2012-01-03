@@ -52,7 +52,7 @@
 
 .image {
   img {
-    border: 1px solid mix(white, $fg, 90%);
+    border: 1px solid mixxd($fg, white, 0.9);
     border: 1px solid transparentize($fg, 0.9);
     padding: ($font-size * 0.5 - 1px);
     background-color: white;
@@ -127,7 +127,7 @@ hr {
     height: ($font-size * 4.5);
     line-height: ($font-size * 4.5);
     content: "\223c\2022\223c"; // tilda op + bullet + tilda op
-    color: mix($bg, $fg, 92%);
+    color: mixxd($fg, $bg, 0.92);
     color: transparentize($fg, 0.92);
     font-size: 450%; // 72px
     text-align: center;
@@ -143,7 +143,7 @@ pre {
   line-height: 1.25;
   page-break-inside: avoid;
   color: $fg;
-  background-color: mix($bg, $fg, 98%);
+  background-color: mixxd($fg, $bg, 0.98);
   background-color: transparentize($fg, 0.98);
   font-family: $monospace;
   font-size: 87.5%;
@@ -165,7 +165,7 @@ blockquote {
     height: 100%;
     line-height: 1;
     content: "\201c"; // Left dquote
-    color: mix($bg, $fg, 80%);
+    color: mixxd($fg, $bg, 0.8);
     color: transparentize($fg, 0.8);
     font-family: "Trebuchet MS", $sans-serif;
     font-weight: bold;
@@ -281,17 +281,17 @@ table {
 
   th, td {
     padding: ($font-size * 0.5);
-    border: 1px solid mix($bg, $fg, 84%);
+    border: 1px solid mixxd($fg, $bg, 0.84);
     vertical-align: top;
   }
 
   th {
-    background-color: mix($bg, $fg, 92%);
+    background-color: mixxd($fg, $bg, 0.92);
     background-color: transparentize($fg, 0.92);
   }
 
   td {
-    background-color: mix($bg, $fg, 98%);
+    background-color: mixxd($fg, $bg, 0.98);
     background-color: transparentize($fg, 0.98);
   }
 }
