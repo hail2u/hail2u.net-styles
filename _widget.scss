@@ -359,7 +359,6 @@ $gap:   4px;
 // Google Code Prettify
 .pln,
 .typ,
-.lit,
 .pun,
 .opn,
 .clo,
@@ -370,6 +369,10 @@ $gap:   4px;
 .str,
 .atv {
   color: #090;
+}
+
+.lit {
+  color: #c00;
 }
 
 .kwd,
