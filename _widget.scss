@@ -304,21 +304,23 @@ $gap:   4px;
   line-height: 1;
 
   // very ugly...
-  div {
-    > div,
-    > span {
-      display: block !important;
-      float: left !important;
-    }
+  > div,
+  > span {
+    display: block !important;
+    float: left !important;
   }
-}
-
-// Google +1 Button
-.plusone {
 }
 
 // Facebook Like Button
 .like {
+}
+
+// Twitter Tweet Button
+.tweet {
+}
+
+// Google +1 Button
+.plusone {
 }
 
 // Hatena Star
