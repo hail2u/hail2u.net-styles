@@ -1,16 +1,3 @@
-// Font Representation
-.sans-serif {
-  font-family: $sans-serif;
-}
-
-.serif {
-  font-family: $serif;
-}
-
-.monospace {
-  font-family: $monospace;
-}
-
 // Color Representation
 .color-base {
   color: $base;
@@ -41,16 +28,16 @@
 }
 
 // Other Representation
-.default-margin {
+%default-margin {
   margin: ($font-size * 2) 0;
 }
 
-.heading {
+%heading {
   line-height: normal;
   page-break-after: avoid;
 }
 
-.image {
+%image {
   img {
     border: 1px solid mixxd($fg, white, 0.9);
     border: 1px solid transparentize($fg, 0.9);
@@ -80,14 +67,14 @@ aside {
 }
 
 h1 {
-  @extend .heading;
+  @extend %heading;
 
   margin: ($font-size * 6) 0;
   font-weight: normal;
 }
 
 h2 {
-  @extend .heading;
+  @extend %heading;
 
   margin: ($font-size * 10) 0 ($font-size * 2) 0;
   font-weight: normal;
@@ -98,18 +85,18 @@ h3,
 h4,
 h5,
 h6 {
-  @extend .heading;
+  @extend %heading;
 
   margin: ($font-size * 4) 0 ($font-size * 2) 0;
 }
 
 // Grouping content
 p {
-  @extend .default-margin;
+  @extend %default-margin;
 }
 
 hr {
-  @extend .default-margin;
+  @extend %default-margin;
 
   border: none;
   position: relative;
@@ -135,7 +122,7 @@ hr {
 }
 
 pre {
-  @extend .default-margin;
+  @extend %default-margin;
 
   padding: ($font-size * 1.5);
   border-radius: ($font-size * 0.25);
@@ -175,7 +162,7 @@ blockquote {
 
 ul,
 ol {
-  @extend .default-margin;
+  @extend %default-margin;
 
   clear: both;
 
@@ -186,7 +173,7 @@ ol {
 }
 
 dl {
-  @extend .default-margin;
+  @extend %default-margin;
 
   clear: both;
 
@@ -200,11 +187,11 @@ dl {
 }
 
 figure {
-  @extend .image;
+  @extend %image;
 }
 
 figcaption {
-  @extend .default-margin;
+  @extend %default-margin;
 
   line-height: normal;
 }
@@ -274,7 +261,7 @@ img {
 
 // Tabular data
 table {
-  @extend .default-margin;
+  @extend %default-margin;
 
   clear: both;
   page-break-inside: avoid;
