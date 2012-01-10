@@ -37,7 +37,7 @@
   page-break-after: avoid;
 }
 
-%image {
+.image {
   img {
     border: 1px solid mixxd($fg, white, 0.9);
     border: 1px solid transparentize($fg, 0.9);
@@ -187,7 +187,7 @@ dl {
 }
 
 figure {
-  @extend %image;
+  @extend .image;
 }
 
 figcaption {
