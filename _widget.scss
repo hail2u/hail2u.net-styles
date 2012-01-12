@@ -333,6 +333,14 @@ $gap:   4px;
 .star {
 }
 
+body > div > div > blockquote {
+  min-height: 0;
+
+  &:before {
+    display: none;
+  }
+}
+
 // Readability Button
 .readability {
   height: 23px;
