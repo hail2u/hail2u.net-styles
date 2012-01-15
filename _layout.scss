@@ -43,24 +43,22 @@
   margin: 0 auto;
   padding: 0 $font-size;
   max-width: $cwidth;
+}
 
-  nav,
-  section,
-  article {
-    p a {
-      text-decoration: underline;
-    }
+section,
+article {
+  p a {
+    text-decoration: underline;
   }
 }
 
-[itemprop="BlogPosts"] > footer {
+[itemprop="blogPosts"] > footer {
   margin-top: (- $font-size * 2);
   color: mixxd($fg, $bg, 0.6);
   color: transparentize($fg, 0.6);
   font-family: $serif;
-  font-style: italic;
 
-  a {
+  p a {
     text-decoration: none;
   }
 }
