@@ -31,7 +31,7 @@
     float: left;
   }
 
-  @media screen and (min-width: 717px) {
+  @media screen and (min-width: 768px) {
     dt {
       float: left;
       clear: left;
@@ -52,13 +52,13 @@ $count: 3;
 $gap:   4px;
 
 .grid-container {
-  @media screen and (min-width: 717px) {
+  @media screen and (min-width: 768px) {
     margin: 0 -$gap;
   }
 }
 
 .grid {
-  @media screen and (min-width: 717px) {
+  @media screen and (min-width: 768px) {
     margin: $gap;
     float: left;
     width: (($cwidth + $gap * 2) / $count - $gap * 2);
@@ -128,7 +128,7 @@ $gap:   4px;
 #posts {
   @extend .grid-container;
 
-  @media screen and (min-width: 717px) {
+  @media screen and (min-width: 768px) {
     h2,
     p {
       margin-right: $gap;
@@ -153,7 +153,7 @@ $gap:   4px;
     display: none;
   }
 
-  @media screen and (min-width: 717px) {
+  @media screen and (min-width: 768px) {
     padding-left: 0;
     border: 1px solid mixxd($fg, $bg, 0.98 * 0.9);
     border: 1px solid transparentize($fg, 0.9);
@@ -426,7 +426,7 @@ body > div > div > blockquote {
     list-style-type: none;
   }
 
-  @media screen and (min-width: 717px) {
+  @media screen and (min-width: 768px) {
     ol {
       @include clearfix;
     }
@@ -450,7 +450,7 @@ body > div > div > blockquote {
 #iine figure {
   @extend .grid;
 
-  @media screen and (min-width: 717px) {
+  @media screen and (min-width: 768px) {
     position: relative;
     line-height: 1;
     overflow: hidden;
