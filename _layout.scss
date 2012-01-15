@@ -134,45 +134,31 @@
       $adjuster: (($icon-size - 32px) * 0.5); 
 
       &[href^="http://feeds.feedburner.com/hail2u"] {
-        // background-color: orange;
         background-position: center $adjuster;
-        // opacity: 1;
       }
 
       &[href="http://www.facebook.com/hail2u"] {
-        // background-color: rgb(59, 89, 152);
         background-position: center (- 32px * 10 + $adjuster);
-        // opacity: 1;
       }
 
       &[href="https://twitter.com/hell2u"] {
-        // background-color: rgb(51, 204, 255);
         background-position: center (- 32px * 3 + $adjuster);
-        // opacity: 1;
       }
 
       &[href="https://github.com/hail2u"] {
-        // background-color: black;
         background-position: center (- 32px * 5 + $adjuster);
-        // opacity: 1;
       }
 
       &[href="http://pinterest.com/hail2u/"] {
-        // background-color: rgb(203, 32, 39);
         background-position: center (- 32px * 13 + $adjuster);
-        // opacity: 1;
       }
 
       &[href="http://www.last.fm/user/hail2u"] {
-        // background-color: rgb(213, 16, 7);
         background-position: center (- 32px * 7 + $adjuster);
-        // opacity: 1;
       }
 
       &[href="http://www.delicious.com/hail2u"] {
-        // background-color: rgb(64, 122, 204);
         background-position: center (- 32px * 14 + $adjuster);
-        // opacity: 1;
       }
     }
   }
