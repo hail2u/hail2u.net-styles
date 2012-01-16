@@ -4,19 +4,19 @@ $serif:      "Palatino", "Palatino Linotype", serif;
 $monospace:  "Monaco", "Consolas", monospace;
 
 // Color
-$base: rgb(136, 187, 204); // #88bbcc
+$base:     rgb(136, 187, 204); // #88bbcc
 
 $darkest:  rgb( 44, 111, 133);
 $dark:     rgb(115, 143, 153);
 $light:    rgb(172, 215, 230);
 $lightest: rgb(187, 219, 230);
 
-$fg: rgb(  9,   9,   9);
-$bg: rgb(249, 246, 240);
+$fg:       rgb(  9,   9,   9);
+$bg:       rgb(249, 246, 240);
 
-$link:  $darkest;
-$hover: $base;
-$mark:  rgb(255, 238,   0);
+$link:     $darkest;
+$hover:    $base;
+$mark:     rgb(255, 238,   0);
 
 // Size
 $font-size: 16px;
