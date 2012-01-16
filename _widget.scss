@@ -320,6 +320,10 @@ $gap:   4px;
     display: block !important;
     float: left !important;
   }
+
+  [role="main"] > & {
+    margin-top: ($font-size * 4);
+  }
 }
 
 // Facebook Like Button
