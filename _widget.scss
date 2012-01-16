@@ -146,11 +146,11 @@ $gap:   4px;
 #posts > section {
   @extend .grid;
 
-  padding-left: 40px;
+  margin-left: 40px;
+  display: list-item;
 
   h3 {
     margin: ($font-size * 0.375) 0; // 0.375 comes from (1.75 - 1) / 2
-    display: list-item;
     font-weight: normal;
     font-size: 100%;
   }
@@ -160,9 +160,10 @@ $gap:   4px;
   }
 
   @media screen and (min-width: 768px) {
-    padding-left: 0;
+    margin-left: $gap;
     border: 1px solid mixxd($fg, $bg, 0.98 * 0.9);
     border: 1px solid transparentize($fg, 0.9);
+    display: block;
     width: (($cwidth + $gap * 2) / $count - $gap * 2 - 1px * 2);
     background-color: mixxd($fg, $bg, 0.98);
     background-color: transparentize($fg, 0.98);
