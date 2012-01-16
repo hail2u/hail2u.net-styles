@@ -462,11 +462,12 @@ body > div > div > blockquote {
     figcaption {
       @include transition-duration(0.3s);
 
-      margin: -1.5em 0 0 0;
+      margin-top: 0;
+      margin-bottom: 0;
       padding: 0 1em;
       box-sizing: border-box;
       position: absolute;
-      top: 50%;
+      bottom: 0;
       right: 0;
       width: 100%;
       line-height: 3;
@@ -487,7 +488,6 @@ body > div > div > blockquote {
     &:hover figcaption {
       @include transition-duration(0.3s);
 
-      margin-top: 0;
       line-height: 0;
       cursor: pointer;
     }
