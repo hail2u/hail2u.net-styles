@@ -1,9 +1,6 @@
 Styles for hail2u.net
 =====================
 
-DESCRIPTION
------------
-
 Repository for tracking (or stalking) changes on CSS or Sassy CSS (SCSS) files for [hail2u.net](http://hail2u.net/).
 
 
