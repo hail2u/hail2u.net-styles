@@ -1,3 +1,9 @@
+// Selection
+::selection {
+  color: white;
+  background-color: $light;
+}
+
 // Something Need to Hide
 .hidden {
   display: none;
