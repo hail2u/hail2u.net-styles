@@ -436,12 +436,17 @@ body > div > div > blockquote {
     list-style-type: none;
   }
 
+  li {
+    margin-top: 32px;
+  }
+
   @media screen and (min-width: 768px) {
     ol {
       @include clearfix;
     }
 
     li {
+      margin-top: 0;
       display: block;
     }
 
@@ -460,28 +465,44 @@ body > div > div > blockquote {
 #iine figure {
   @extend .grid;
 
+  position: relative;
+  line-height: 1;
+
+  img {
+    padding-bottom: 36px;
+  }
+
+  figcaption {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 3px;
+    left: 8px;
+    line-height: 3;
+    font-weight: normal;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
   @media screen and (min-width: 768px) {
-    position: relative;
-    line-height: 1;
     overflow: hidden;
+
+    img {
+      padding-bottom: 7px;
+    }
 
     figcaption {
       @include transition-duration(0.3s);
 
-      margin-top: 0;
-      margin-bottom: 0;
       padding: 0 1em;
       box-sizing: border-box;
-      position: absolute;
-      bottom: 0;
       right: 0;
+      bottom: 0;
+      left: auto;
       width: 100%;
-      line-height: 3;
       overflow: hidden;
       color: gray;
       background-color: black;
-      font-weight: normal;
-      font-size: 12px;
       text-align: center;
       white-space: nowrap;
       opacity: 0.8;
