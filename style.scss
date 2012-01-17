@@ -9,11 +9,11 @@ $version: "6.11.2";
 // Web Fonts
 @import url("http://fonts.googleapis.com/css?family=Terminal+Dosis");
 
-// Variables
-@import "vars";
-
 // Functions
 @import "funcs";
+
+// Variables
+@import "vars";
 
 // Partials
 @import "normaliz", "clearfix", "vendor-extension";
