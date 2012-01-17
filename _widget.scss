@@ -95,6 +95,7 @@ $gap:   4px;
     box-shadow: inset 0 1px 0 0 mixxd(white, $base, 0.3), 0 0 ($font-size * 0.25) 0 $base;
     box-shadow: inset 0 1px 0 0 transparentize(white, 0.3), 0 0 ($font-size * 0.25) 0 $base;
     color: $bg;
+    background-color: darken($base, 5%);
     cursor: pointer;
   }
 

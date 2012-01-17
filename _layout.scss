@@ -10,15 +10,15 @@
     margin-bottom: 0;
     font-family: $serif;
     font-style: italic;
+
+    a {
+      color: inherit;
+    }
   }
 
   mark {
     color: $fg;
     background-color: transparent;
-  }
-
-  a {
-    color: inherit;
   }
 
   nav {
@@ -34,7 +34,6 @@
   li {
     margin: 0 ($font-size * 0.5);
     display: inline-block;
-    color: $link;
   }
 }
 
