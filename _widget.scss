@@ -163,7 +163,9 @@ $gap:   4px;
     margin-left: $gap;
     border: 1px solid mixxd($fg, $bg, 0.98 * 0.9);
     border: 1px solid transparentize($fg, 0.9);
+    border-radius: ($font-size * 0.125);
     display: block;
+    position: relative;
     width: (($cwidth + $gap * 2) / $count - $gap * 2 - 1px * 2);
     background-color: mixxd($fg, $bg, 0.98);
     background-color: transparentize($fg, 0.98);
@@ -173,6 +175,18 @@ $gap:   4px;
       border-color: $light;
       background-color: mixxd($fg, $bg, 0.96);
       background-color: transparentize($fg, 0.96);
+
+      &:after {
+        border: 1em solid $light;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        visibility: visible;
+        content: "";
+      }
     }
 
     h3 {
