@@ -114,7 +114,7 @@ hr {
     width: 100%;
     height: ($font-size * 4.5);
     line-height: ($font-size * 4.5);
-    content: "\223c\2022\223c"; // tilda op + bullet + tilda op
+    content: "\223c\2219\223c"; // tilda op + bullet op + tilda op
     color: mixxd($fg, $bg, 0.92);
     color: transparentize($fg, 0.92);
     font-family: $stack-point;
