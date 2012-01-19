@@ -116,6 +116,7 @@ hr {
     content: "\223c\2022\223c"; // tilda op + bullet + tilda op
     color: mixxd($fg, $bg, 0.92);
     color: transparentize($fg, 0.92);
+    font-family: $serif;
     font-size: 450%; // 72px
     text-align: center;
   }
@@ -228,6 +229,7 @@ q::after {
 }
 
 abbr {
+  font-family: $serif;
   cursor: help;
 }
 
