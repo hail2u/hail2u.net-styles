@@ -34,6 +34,7 @@
 
 %heading {
   line-height: normal;
+  font-family: $stack-heading;
   page-break-after: avoid;
 }
 
@@ -56,7 +57,7 @@ body {
   color: $fg;
   background-color: $bg;
   background-image: url("../images/bg-body.png");
-  font-family: $sans-serif;
+  font-family: $stack-body;
 }
 
 section,
@@ -116,7 +117,7 @@ hr {
     content: "\223c\2022\223c"; // tilda op + bullet + tilda op
     color: mixxd($fg, $bg, 0.92);
     color: transparentize($fg, 0.92);
-    font-family: $serif;
+    font-family: $stack-point;
     font-size: 450%; // 72px
     text-align: center;
   }
@@ -133,7 +134,7 @@ pre {
   color: $fg;
   background-color: mixxd($fg, $bg, 0.98);
   background-color: transparentize($fg, 0.98);
-  font-family: $monospace;
+  font-family: $stack-code;
   font-size: 87.5%;
 }
 
@@ -155,7 +156,7 @@ blockquote {
     content: "\201c"; // Left dquote
     color: mixxd($fg, $bg, 0.8);
     color: transparentize($fg, 0.8);
-    font-family: "Trebuchet MS", $sans-serif;
+    font-family: "Trebuchet MS", $stack-body;
     font-weight: bold;
     font-size: 450%; // 72px
   }
@@ -229,7 +230,7 @@ q::after {
 }
 
 abbr {
-  font-family: $serif;
+  font-family: $stack-point;
   cursor: help;
 }
 
@@ -237,7 +238,7 @@ code,
 var,
 samp,
 kbd {
-  font-family: $monospace;
+  font-family: $stack-code;
 }
 
 mark {

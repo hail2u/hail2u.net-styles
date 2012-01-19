@@ -8,7 +8,7 @@
 
   h1 {
     margin-bottom: 0;
-    font-family: $serif;
+    font-family: $stack-logo;
     font-style: italic;
 
     a {
@@ -22,7 +22,7 @@
   }
 
   nav {
-    font-family: "Terminal Dosis", $sans-serif;
+    font-family: $stack-nav;
     font-size: 87.5%; // 14px
     text-transform: uppercase;
   }
@@ -56,7 +56,7 @@ article {
   margin-top: (- $font-size * 2);
   color: mixxd($fg, $bg, 0.6);
   color: transparentize($fg, 0.6);
-  font-family: $serif;
+  font-family: $stack-point;
   font-style: italic;
 
   p a {
@@ -78,7 +78,7 @@ article {
     text-align: center;
 
     a {
-      font-family: $serif;
+      font-family: $stack-point;
       font-style: italic;
     }
   }

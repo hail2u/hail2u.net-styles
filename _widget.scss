@@ -84,7 +84,7 @@ $gap:   4px;
   color: $bg;
   background-color: $light;
   background-image: $button-overlay-normal;
-  font-family: $serif;
+  font-family: $stack-point;
   font-style: italic;
   text-decoration: none;
   text-shadow: 0 -1px 0 mixxd(black, $light, 0.8);
@@ -394,8 +394,9 @@ body > div > div > blockquote {
     visibility: visible;
     content: "Advertisements";
     color: rgb(231, 227, 221);
-    font-family: "Georgia", serif;
-    font-weight: bold;
+    font-family: $stack-point;
+    font-style: italic;
+    font-size: 150%;
     text-align: center;
     text-shadow: 0 -1px 0 rgb(159, 156, 150)
   }

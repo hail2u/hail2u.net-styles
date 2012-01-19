@@ -1,7 +1,11 @@
-// Font
-$sans-serif: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-$serif:      "Crimson Text", "Baskerville", "Times New Roman", serif;
-$monospace:  "Monaco", "Consolas", monospace;
+// Font Stack
+$stack-body:    "Lato", "Helvetica Neue", "Arial", sans-serif;
+$stack-logo:    "Crimson Text", "Baskerville", "Times New Roman", serif;
+$stack-heading: $stack-body;
+$stack-point:   $stack-logo;
+$stack-nav:     "Terminal Dosis", $stack-body;
+$stack-code:    "Monaco", "Consolas", monospace;
+
 
 // Color
 $base:     rgb( 85, 136, 153); // #88bbcc
