@@ -58,11 +58,8 @@ article {
   color: transparentize($fg, 0.6);
   font-family: $serif;
   font-style: italic;
-  font-size: 87.5%;
 
   p a {
-    font-family: $sans-serif;
-    font-style: normal;
     text-decoration: none;
   }
 }
