@@ -52,7 +52,7 @@ article {
   }
 }
 
-[itemprop="blogPosts"] > footer {
+h2 + footer {
   margin-top: (- $font-size * 2);
   color: mixxd($fg, $bg, 0.6);
   color: transparentize($fg, 0.6);
