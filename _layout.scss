@@ -68,18 +68,14 @@ h2 + footer {
   line-height: 1;
   background-color: mixxd($fg, $bg, 0.92);
   background-color: transparentize($fg, 0.92);
+  font-family: $stack-point;
+  font-style: italic;
 
   address {
     margin: ($font-size * 6) auto 0 auto;
     padding: ($font-size * 1.5) $font-size;
     max-width: $cwidth;
-    font-style: normal;
     text-align: center;
-
-    a {
-      font-family: $stack-point;
-      font-style: italic;
-    }
   }
 
   section {
