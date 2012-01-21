@@ -53,6 +53,7 @@
 
 // Sections
 body {
+  border-top: ($font-size * 0.25) solid $lightest;
   line-height: 1.75;
   color: $fg;
   background-color: $bg;
