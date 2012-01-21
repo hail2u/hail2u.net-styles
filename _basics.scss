@@ -155,10 +155,10 @@ blockquote {
     line-height: 1;
     content: "\201c"; // Left dquote
     color: mixxd($fg, $bg, 0.8);
-    color: transparentize($fg, 0.8);
     font-family: "Trebuchet MS", $stack-body;
     font-weight: bold;
     font-size: 450%; // 72px
+    text-shadow: -1px -1px mixxd($fg, $bg, 0.6);
   }
 }
 
