@@ -58,7 +58,11 @@ h2 + footer {
   color: transparentize($fg, 0.6);
   font-family: $stack-point;
 
-  p a {
+  time {
+    color: $fg;
+  }
+
+  a {
     text-decoration: none;
   }
 }
