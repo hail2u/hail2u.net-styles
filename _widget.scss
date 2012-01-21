@@ -53,21 +53,29 @@
   }
 }
 
-// Grid
+// Column
 $count: 3;
-$gap:   4px;
+$gap:   10px;
 
-.grid-container {
+.column-container {
   @media screen and (min-width: 768px) {
     margin: 0 -$gap;
   }
 }
 
-.grid {
+.column {
   @media screen and (min-width: 768px) {
     margin: $gap;
     float: left;
     width: (($cwidth + $gap * 2) / $count - $gap * 2);
+  }
+}
+
+.column-2 {
+  @media screen and (min-width: 768px) {
+    margin: $gap;
+    float: left;
+    width: (($cwidth + $gap * 2) / $count - $gap * 2) * 2 + $gap * 2;
   }
 }
 
@@ -131,9 +139,9 @@ $gap:   4px;
   }
 }
 
-// Posts (inherit Grid)
+// Posts (inherit Column)
 #posts {
-  @extend .grid-container;
+  @extend .column-container;
 
   @media screen and (min-width: 768px) {
     h2,
@@ -145,13 +153,14 @@ $gap:   4px;
 }
 
 #posts > section {
-  @extend .grid;
+  @extend .column;
 
   margin-left: 40px;
   display: list-item;
 
   h3 {
     margin: ($font-size * 0.375) 0; // 0.375 comes from (1.75 - 1) / 2
+    line-height: 1;
     font-weight: normal;
     font-size: 100%;
   }
@@ -162,51 +171,17 @@ $gap:   4px;
 
   @media screen and (min-width: 768px) {
     margin-left: $gap;
-    border: 1px solid mixxd($fg, $bg, 0.98 * 0.9);
-    border: 1px solid transparentize($fg, 0.9);
-    border-radius: ($font-size * 0.125);
     display: block;
-    position: relative;
-    width: (($cwidth + $gap * 2) / $count - $gap * 2 - 1px * 2);
-    background-color: mixxd($fg, $bg, 0.98);
-    background-color: transparentize($fg, 0.98);
-    font-size: 75%; // 12px
 
-    &:hover {
-      border-color: $light;
-      background-color: mixxd($fg, $bg, 0.96);
-      background-color: transparentize($fg, 0.96);
-
-      &:after {
-        border: 1em solid $light;
-        border-top-color: transparent;
-        border-left-color: transparent;
-        display: block;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        visibility: visible;
-        content: "";
-      }
+    a {
+      display: block;
     }
 
     h3 {
       margin: 0 0 ($font-size * 0.75) 0;
-      display: block;
       overflow: hidden;
       white-space: nowrap;
-      font-weight: bold;
-      font-size: 117%; // 14px
       text-overflow: ellipsis;
-    }
-
-    a {
-      padding: $font-size;
-      display: block;
-
-      &:hover {
-        color: inherit;
-      }
     }
 
     p {
@@ -215,6 +190,7 @@ $gap:   4px;
       display: block;
       overflow: hidden;
       color: $fg;
+      font-size: 75%; // 12px
     }
   }
 }
@@ -444,7 +420,7 @@ body > div > div > blockquote {
 
 // Shots from iine!
 #iine {
-  @extend .grid-container;
+  @extend .column-container;
 
   ol {
     padding-left: 0;
@@ -478,7 +454,7 @@ body > div > div > blockquote {
 }
 
 #iine figure {
-  @extend .grid;
+  @extend .column;
 
   position: relative;
   line-height: 1;
