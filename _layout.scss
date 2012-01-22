@@ -15,7 +15,7 @@
       color: inherit;
     }
 
-    @media screen and (min-width: 936px) {
+    @media screen and (min-width: $safe-for-contents-and-menu) {
       margin-top: ($font-size * 6 + $font-size * 0.875 + $font-size * 5);
       margin-right: auto;
       margin-left: auto;
@@ -44,7 +44,7 @@
     font-size: 87.5%; // 14px
     text-transform: uppercase;
 
-    @media screen and (min-width: 936px) {
+    @media screen and (min-width: $safe-for-contents-and-menu) {
       margin-right: auto;
       margin-left: auto;
       padding-right: $font-size;
@@ -61,7 +61,7 @@
     display: table;
     border-spacing: $font-size 0;
 
-    @media screen and (min-width: 936px) {
+    @media screen and (min-width: $safe-for-contents-and-menu) {
       margin-top: ($font-size * 2 + $font-size * 2);
       margin-right: (- $mwidth + $font-size * 2);
       margin-left: 0;
@@ -76,12 +76,12 @@
   li {
     display: table-cell;
 
-    @media screen and (min-width: 936px) {
+    @media screen and (min-width: $safe-for-contents-and-menu) {
       display: block;
     }
   }
 
-  @media screen and (min-width: 936px) {
+  @media screen and (min-width: $safe-for-contents-and-menu) {
     padding: 0;
     position: fixed;
     width: 100%;
@@ -98,7 +98,7 @@
   padding: 0 $font-size;
   max-width: $cwidth;
 
-  @media screen and (min-width: 936px) {
+  @media screen and (min-width: $safe-for-contents-and-menu) {
     margin-top: (- $font-size * (10 - 6));
     padding-left: $mwidth;
   }
@@ -141,7 +141,7 @@ h2 + footer {
     max-width: $cwidth;
     text-align: center;
 
-    @media screen and (min-width: 936px) {
+    @media screen and (min-width: $safe-for-contents-and-menu) {
       padding-left: $mwidth;
       text-align: left;
     }
@@ -153,7 +153,7 @@ h2 + footer {
     width: (($icon-size + 2px * 2) * 7);
     line-height: 1;
 
-    @media screen and (min-width: 936px) {
+    @media screen and (min-width: $safe-for-contents-and-menu) {
       padding-right: $font-size;
       padding-left: $mwidth;
       width: $cwidth;
@@ -230,7 +230,7 @@ h2 + footer {
         background-position: center (- 32px * 8 + $adjuster);
       }
 
-      @media screen and (min-width: 936px) {
+      @media screen and (min-width: $safe-for-contents-and-menu) {
         margin-right: 4px;
         margin-left: 0;
       }

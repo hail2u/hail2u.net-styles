@@ -37,7 +37,7 @@
     float: left;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $safe-for-contents) {
     dt {
       float: left;
       clear: left;
@@ -58,13 +58,13 @@ $count: 3;
 $gap:   10px;
 
 .column-container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $safe-for-contents) {
     margin: 0 (- $gap);
   }
 }
 
 .column {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $safe-for-contents) {
     margin: $gap;
     float: left;
     width: (($cwidth + $gap * 2) / $count - $gap * 2);
@@ -72,7 +72,7 @@ $gap:   10px;
 }
 
 .column-2 {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $safe-for-contents) {
     margin: $gap;
     float: left;
     width: (($cwidth + $gap * 2) / $count - $gap * 2) * 2 + $gap * 2;
@@ -143,7 +143,7 @@ $gap:   10px;
 #posts {
   @extend .column-container;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $safe-for-contents) {
     h2,
     p {
       margin-right: $gap;
@@ -168,7 +168,7 @@ $gap:   10px;
     display: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $safe-for-contents) {
     margin-left: $gap;
     display: block;
 
@@ -262,7 +262,7 @@ $gap:   10px;
     text-align: center;
     line-height: 1;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $safe-for-contents-and-menu) {
       text-align: left;
     }
   }
@@ -302,7 +302,7 @@ $gap:   10px;
       content: $right-arrow;
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $safe-for-contents-and-menu) {
       margin-right: ($font-size * 0.5);
       margin-left: 0;
     }
@@ -440,7 +440,7 @@ body > div > div > blockquote {
     margin-top: 32px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $safe-for-contents) {
     ol {
       @include clearfix;
     }
@@ -484,7 +484,7 @@ body > div > div > blockquote {
     white-space: nowrap;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $safe-for-contents) {
     overflow: hidden;
 
     img {
@@ -503,6 +503,7 @@ body > div > div > blockquote {
       overflow: hidden;
       color: gray;
       background-color: black;
+      font-family: $stack-heading;
       text-align: center;
       white-space: nowrap;
       opacity: 0.8;
