@@ -136,6 +136,11 @@ pre {
   background-color: transparentize($fg, 0.98);
   font-family: $stack-code;
   font-size: 87.5%;
+
+  @media screen and (min-width: 912px) {
+    margin-left: (- $mwidth);
+    padding-left: $mwidth;
+  }
 }
 
 blockquote {
@@ -159,6 +164,10 @@ blockquote {
     font-weight: bold;
     font-size: 450%; // 72px
     text-shadow: -1px -1px mixxd($fg, $bg, 0.6);
+  }
+
+  @media screen and (min-width: 912px) {
+    margin-left: 0;
   }
 }
 

@@ -261,6 +261,10 @@ $gap:   10px;
     padding-left: 0;
     text-align: center;
     line-height: 1;
+
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+    }
   }
 
   li {
@@ -296,6 +300,11 @@ $gap:   10px;
 
     &[rel="next"]::before {
       content: $right-arrow;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin-right: ($font-size * 0.5);
+      margin-left: 0;
     }
   }
 }

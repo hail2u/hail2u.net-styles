@@ -14,6 +14,22 @@
     a {
       color: inherit;
     }
+
+    @media screen and (min-width: 912px) {
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: $font-size;
+      padding-left: $mwidth;
+      position: relative;
+      max-width: $cwidth;
+
+      a {
+        margin-right: (- $mwidth + $font-size * 2);
+        display: block;
+        position: absolute;
+        right: 100%;
+      }
+    }
   }
 
   mark {
@@ -25,6 +41,15 @@
     font-family: $stack-nav;
     font-size: 87.5%; // 14px
     text-transform: uppercase;
+
+    @media screen and (min-width: 912px) {
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: $font-size;
+      padding-left: $mwidth;
+      position: relative;
+      max-width: $cwidth;
+    }
   }
 
   ul {
@@ -33,10 +58,33 @@
     padding-left: 0;
     display: table;
     border-spacing: $font-size 0;
+
+    @media screen and (min-width: 912px) {
+      margin-top: ($font-size * 2 + $font-size * 2);
+      margin-right: (- $mwidth + $font-size * 2);
+      margin-left: 0;
+      display: block;
+      position: absolute;
+      right: 100%;
+      line-height: 2;
+      text-align: right;
+    }
   }
 
   li {
     display: table-cell;
+
+    @media screen and (min-width: 912px) {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 912px) {
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    max-width: none;
+    text-align: left;
   }
 }
 
@@ -45,6 +93,11 @@
   margin: 0 auto;
   padding: 0 $font-size;
   max-width: $cwidth;
+
+  @media screen and (min-width: 912px) {
+    margin-top: (- $font-size * (10 - 6));
+    padding-left: $mwidth;
+  }
 }
 
 section,
@@ -83,6 +136,11 @@ h2 + footer {
     padding: ($font-size * 1.5) $font-size;
     max-width: $cwidth;
     text-align: center;
+
+    @media screen and (min-width: 912px) {
+      padding-left: $mwidth;
+      text-align: left;
+    }
   }
 
   section {
@@ -90,6 +148,12 @@ h2 + footer {
     padding-bottom: $font-size;
     width: (($icon-size + 2px * 2) * 7);
     line-height: 1;
+
+    @media screen and (min-width: 912px) {
+      padding-right: $font-size;
+      padding-left: $mwidth;
+      width: $cwidth;
+    }
   }
 
   ul {
@@ -160,6 +224,11 @@ h2 + footer {
 
       &[href="http://www.delicious.com/hail2u"] {
         background-position: center (- 32px * 8 + $adjuster);
+      }
+
+      @media screen and (min-width: 912px) {
+        margin-right: 4px;
+        margin-left: 0;
       }
     }
   }
