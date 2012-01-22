@@ -139,7 +139,7 @@ pre {
 
   @media screen and (min-width: $safe-for-contents-and-menu) {
     margin-left: (- $mwidth + $font-size);
-    padding-left: $mwidth;
+    padding-left: ($mwidth - $font-size);
   }
 }
 
