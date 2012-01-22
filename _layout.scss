@@ -23,7 +23,8 @@
       position: relative;
       max-width: $cwidth;
 
-      a {
+      a,
+      mark {
         margin-right: (- $mwidth + $font-size * 2);
         display: block;
         position: absolute;
