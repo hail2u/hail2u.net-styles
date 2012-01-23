@@ -106,7 +106,7 @@
   @extend .minimal;
 
   li::after {
-    content: " // ";
+    content: " \2022\2022\2022 ";
   }
 
   li:last-child::after {
