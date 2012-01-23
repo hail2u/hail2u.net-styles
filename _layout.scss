@@ -192,33 +192,59 @@ h2 + footer {
       $adjuster: (($icon-size - 32px) * 0.5); 
 
       &[href^="http://feeds.feedburner.com/hail2u"] {
-        background-color: rgb(255, 153, 0);
         background-position: center $adjuster;
-        opacity: 1;
+
+        &:hover {
+          background-color: $cc-feed;
+        }
       }
 
       &[href="http://www.facebook.com/hail2u"] {
         background-position: center (- 32px * 10 + $adjuster);
+
+        &:hover {
+          background-color: $cc-facebook;
+        }
       }
 
       &[href="https://twitter.com/hell2u"] {
         background-position: center (- 32px * 3 + $adjuster);
+
+        &:hover {
+          background-color: $cc-twitter;
+        }
       }
 
       &[href="https://github.com/hail2u"] {
         background-position: center (- 32px * 5 + $adjuster);
+
+        &:hover {
+          background-color: $cc-github;
+        }
       }
 
       &[href="http://pinterest.com/hail2u/"] {
         background-position: center (- 32px * 13 + $adjuster);
+
+        &:hover {
+          background-color: $cc-pinterest;
+        }
       }
 
       &[href="http://www.last.fm/user/hail2u"] {
         background-position: center (- 32px * 7 + $adjuster);
+
+        &:hover {
+          background-color: $cc-lastfm;
+        }
       }
 
       &[href="http://www.delicious.com/hail2u"] {
         background-position: center (- 32px * 8 + $adjuster);
+
+        &:hover {
+          background-color: $cc-delicious;
+        }
       }
     }
   }
