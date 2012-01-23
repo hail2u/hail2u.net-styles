@@ -80,8 +80,8 @@
   font-family: $stack-point;
   font-style: italic;
   text-decoration: none;
-  text-shadow: 0 -1px 0 mixxd(black, $light, 0.8);
-  text-shadow: 0 -1px 0 transparentize(black, 0.8);
+  text-shadow: 0 -1px 0 mixxd(black, $light, 0.5);
+  text-shadow: 0 -1px 0 transparentize(black, 0.5);
 
   &:hover {
     border-color: $dark;
