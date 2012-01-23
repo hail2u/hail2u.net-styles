@@ -147,6 +147,7 @@
     margin: ($font-size * 0.375) 0; // 0.375 comes from (1.75 - 1) / 2
     line-height: 1;
     font-weight: normal;
+    font-size: 100%;
   }
 
   p {
@@ -163,7 +164,8 @@
 
     h3 {
       margin: 0 0 ($font-size * 0.75) 0;
-      height: 1em;
+      height: ($font-size * 1.5);
+      line-height: ($font-size * 1.5);
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
