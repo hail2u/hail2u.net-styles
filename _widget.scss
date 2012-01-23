@@ -95,7 +95,7 @@
   &:active {
     box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.7), 0 0 ($font-size * 0.25) 0 $light;
     box-shadow: inset 0 1px 0 0 transparentize(white, 0.7), 0 0 ($font-size * 0.25) 0 $light;
-    line-height: ($font-size * 2) + 1px;
+    line-height: ($font-size * 2) + 2px; // need 2px for Crimson Text
     background-color: darken($light, 5%);
     background-image: $button-overlay-active;
   }
