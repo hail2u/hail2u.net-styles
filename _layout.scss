@@ -43,7 +43,7 @@
 
   @media screen and (min-width: $safe-for-full) {
     padding: 0;
-    position: fixed;
+    position: absolute;
     top: ($font-size * 0.25); // size of body top border
     width: 100%;
     max-width: none;
