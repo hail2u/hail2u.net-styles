@@ -52,7 +52,7 @@
     h1 {
       margin: 0 auto;
       padding-left: ($suppli-width + $gap * 3);
-      padding-right: $gap;
+      padding-right: ($font-size * 0.5); // for Chrome
       position: relative;
       max-width: $content-width;
 
