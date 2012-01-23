@@ -165,11 +165,11 @@ blockquote {
   page-break-inside: avoid;
 
   &::before {
+    margin-right: $font-size;
     display: block;
     position: absolute;
     top: 0;
-    left: (- $font-size * 4);
-    width: ($font-size * 3);
+    right: 100%;
     height: 100%;
     line-height: 1;
     content: "\201c"; // Left dquote
@@ -177,7 +177,16 @@ blockquote {
     font-family: "Trebuchet MS", $stack-body;
     font-weight: bold;
     font-size: 450%; // 72px
-    text-shadow: -1px -1px mixxd($fg, $bg, 0.6);
+    text-shadow: -1px -1px 0 mixxd($fg, $bg, 0.6);
+  }
+
+  @media screen and (min-width: $safe-for-full) {
+    margin-left: 0;
+
+    &::before {
+      margin-right: ($gap * 2);
+      font-size: 750%; // 120px
+    }
   }
 }
 
