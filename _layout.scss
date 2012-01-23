@@ -44,7 +44,7 @@
   @media screen and (min-width: $safe-for-full) {
     padding: 0;
     position: fixed;
-    top: 50%;
+    top: ($font-size * 0.25); // size of body top border
     width: 100%;
     max-width: none;
     text-align: right;
@@ -61,7 +61,7 @@
         padding-right: $gap;
         display: block;
         position: absolute;
-        top: (- ($font-size * 2.25 + $font-size * 2 + $font-size * 2 * 4) * 0.5);
+        top: ($font-size * 10 - $font-size * 2.25 - $font-size * 2);
         left: $gap;
         width: $suppli-width;
       }
@@ -80,7 +80,7 @@
       margin: 0;
       display: block;
       position: absolute;
-      top: (- ($font-size * 2 * 4 - $font-size * 2.25 - $font-size * 2) * 0.5);
+      top: ($font-size * 10);
       left: $gap;
       width: $suppli-width;
       line-height: 2;
