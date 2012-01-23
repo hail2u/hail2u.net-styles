@@ -1,36 +1,19 @@
 // Header
 [role="banner"] {
   margin: 0 auto;
-  padding: 0 $font-size;
-  max-width: $cwidth;
-  line-height: 1;
+  padding: 0 $gap;
+  max-width: $content-width;
   text-align: center;
 
   h1 {
     margin-bottom: 0;
+    line-height: 1;
     font-family: $stack-logo;
     font-style: italic;
+    font-size: 225%; // 36px
 
     a {
       color: inherit;
-    }
-
-    @media screen and (min-width: $safe-for-contents-and-menu) {
-      margin-top: ($font-size * 6 + $font-size * 0.875 + $font-size * 5);
-      margin-right: auto;
-      margin-left: auto;
-      padding-right: $font-size;
-      padding-left: $mwidth;
-      position: relative;
-      max-width: $cwidth;
-
-      a,
-      mark {
-        margin-right: (- $mwidth + $font-size * 2);
-        display: block;
-        position: absolute;
-        right: 100%;
-      }
     }
   }
 
@@ -40,18 +23,10 @@
   }
 
   nav {
+    line-height: 1;
     font-family: $stack-nav;
     font-size: 87.5%; // 14px
     text-transform: uppercase;
-
-    @media screen and (min-width: $safe-for-contents-and-menu) {
-      margin-right: auto;
-      margin-left: auto;
-      padding-right: $font-size;
-      padding-left: $mwidth;
-      position: relative;
-      max-width: $cwidth;
-    }
   }
 
   ul {
@@ -59,48 +34,72 @@
     margin-left: auto;
     padding-left: 0;
     display: table;
-    border-spacing: $font-size 0;
-
-    @media screen and (min-width: $safe-for-contents-and-menu) {
-      margin-top: ($font-size * 2 + $font-size * 2);
-      margin-right: (- $mwidth + $font-size * 2);
-      margin-left: 0;
-      display: block;
-      position: absolute;
-      right: 100%;
-      line-height: 2;
-      text-align: right;
-    }
+    border-spacing: $gap 0;
   }
 
   li {
     display: table-cell;
-
-    @media screen and (min-width: $safe-for-contents-and-menu) {
-      display: block;
-    }
   }
 
-  @media screen and (min-width: $safe-for-contents-and-menu) {
+  @media screen and (min-width: $safe-for-full) {
     padding: 0;
     position: fixed;
+    top: 50%;
     width: 100%;
-    height: 0;
     max-width: none;
-    z-index: 10;
-    text-align: left;
+    text-align: right;
+
+    h1 {
+      margin: 0 auto;
+      padding-left: ($suppli-width + $gap * 3);
+      padding-right: $gap;
+      position: relative;
+      max-width: $content-width;
+
+      a,
+      mark {
+        padding-right: $gap;
+        display: block;
+        position: absolute;
+        top: (- ($font-size * 2.25 + $font-size * 2 + $font-size * 2 * 4) * 0.5);
+        left: $gap;
+        width: $suppli-width;
+      }
+    }
+
+    nav {
+      margin: 0 auto;
+      padding-left: ($suppli-width + $gap * 3);
+      padding-right: $gap;
+      position: relative;
+      max-width: $content-width;
+      font-size: 100%;
+    }
+
+    ul {
+      margin: 0;
+      display: block;
+      position: absolute;
+      top: (- ($font-size * 2 * 4 - $font-size * 2.25 - $font-size * 2) * 0.5);
+      left: $gap;
+      width: $suppli-width;
+      line-height: 2;
+    }
+
+    li {
+      display: block;
+    }
   }
 }
 
 // Main
 [role="main"] {
   margin: 0 auto;
-  padding: 0 $font-size;
-  max-width: $cwidth;
+  padding: 0 $gap;
+  max-width: $content-width;
 
-  @media screen and (min-width: $safe-for-contents-and-menu) {
-    margin-top: (- $font-size * (10 - 6));
-    padding-left: $mwidth;
+  @media screen and (min-width: $safe-for-full) {
+    padding-left: ($suppli-width + $gap * 3);
   }
 }
 
@@ -137,14 +136,9 @@ h2 + footer {
 
   address {
     margin: ($font-size * 6) auto 0 auto;
-    padding: ($font-size * 1.5) $font-size;
-    max-width: $cwidth;
+    padding: ($font-size * 1.5) $gap;
+    max-width: $content-width;
     text-align: center;
-
-    @media screen and (min-width: $safe-for-contents-and-menu) {
-      padding-left: $mwidth;
-      text-align: left;
-    }
   }
 
   section {
@@ -152,12 +146,6 @@ h2 + footer {
     padding-bottom: $font-size;
     width: (($icon-size + 2px * 2) * 7);
     line-height: 1;
-
-    @media screen and (min-width: $safe-for-contents-and-menu) {
-      padding-right: $font-size;
-      padding-left: $mwidth;
-      width: $cwidth;
-    }
   }
 
   ul {
@@ -229,11 +217,30 @@ h2 + footer {
       &[href="http://www.delicious.com/hail2u"] {
         background-position: center (- 32px * 8 + $adjuster);
       }
+    }
+  }
 
-      @media screen and (min-width: $safe-for-contents-and-menu) {
-        margin-right: 4px;
-        margin-left: 0;
-      }
+  @media screen and (min-width: $safe-for-full) {
+    address {
+      padding: (($icon-size + $font-size) * 0.5) ($content-width + $gap * 3) (($icon-size + $font-size) * 0.5) $gap;
+      max-width: $suppli-width;
+      text-align: right;
+    }
+
+    section {
+      padding: 0 $gap 0 ($suppli-width + $gap * 3);
+      position: relative;
+      width: auto;
+      max-width: $content-width;
+    }
+
+    ul {
+      position: absolute;
+      top: (- $icon-size - $font-size);
+    }
+
+    li a {
+      margin: 0 ($gap * 0.5) 0 0;
     }
   }
 }

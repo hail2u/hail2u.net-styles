@@ -37,7 +37,7 @@
     float: left;
   }
 
-  @media screen and (min-width: $safe-for-contents) {
+  @media screen and (min-width: $safe-for-content) {
     dt {
       float: left;
       clear: left;
@@ -54,28 +54,13 @@
 }
 
 // Column
-$count: 3;
-$gap:   10px;
-
-.column-container {
-  @media screen and (min-width: $safe-for-contents) {
-    margin: 0 (- $gap);
-  }
-}
-
-.column {
-  @media screen and (min-width: $safe-for-contents) {
-    margin: $gap;
-    float: left;
-    width: (($cwidth + $gap * 2) / $count - $gap * 2);
-  }
-}
-
-.column-2 {
-  @media screen and (min-width: $safe-for-contents) {
-    margin: $gap;
-    float: left;
-    width: (($cwidth + $gap * 2) / $count - $gap * 2) * 2 + $gap * 2;
+@for $i from 1 through 12 {
+  .column-#{$i} {
+    @media screen and (min-width: $safe-for-content) {
+      margin: $gap;
+      float: left;
+      width: (($column + $gap * 2) * $i - $gap * 2);
+    }
   }
 }
 
@@ -141,9 +126,9 @@ $gap:   10px;
 
 // Posts (inherit Column)
 #posts {
-  @extend .column-container;
+  @media screen and (min-width: $safe-for-content) {
+    margin: 0 (- $gap);
 
-  @media screen and (min-width: $safe-for-contents) {
     h2,
     p {
       margin-right: $gap;
@@ -153,7 +138,7 @@ $gap:   10px;
 }
 
 #posts > section {
-  @extend .column;
+  @extend .column-3;
 
   margin-left: 40px;
   display: list-item;
@@ -168,7 +153,7 @@ $gap:   10px;
     display: none;
   }
 
-  @media screen and (min-width: $safe-for-contents) {
+  @media screen and (min-width: $safe-for-content) {
     margin-left: $gap;
     display: block;
 
@@ -255,24 +240,17 @@ $gap:   10px;
   $arrow-size-y: 64px;
 
   ul {
-    @include clearfix;
-
-    margin: ($font-size * 6) 0 ($font-size * 2) 0;
+    margin: ($font-size * 6) auto ($font-size * 2) auto;
     padding-left: 0;
-    text-align: center;
-    line-height: 1;
-
-    @media screen and (min-width: $safe-for-contents-and-menu) {
-      text-align: left;
-    }
+    display: table;
+    border-spacing: $font-size 0;
   }
 
   li {
-    display: inline-block;
+    display: table-cell;
   }
 
   a {
-    margin: 0 ($font-size * 0.25);
     border-radius: #{($arrow-size-x * 0.5)}/#{($arrow-size-y * 0.5)};
     display: block;
     width: $arrow-size-x;
@@ -301,10 +279,18 @@ $gap:   10px;
     &[rel="next"]::before {
       content: $right-arrow;
     }
+  }
 
-    @media screen and (min-width: $safe-for-contents-and-menu) {
-      margin-right: ($font-size * 0.5);
-      margin-left: 0;
+  @media screen and (min-width: $safe-for-full) {
+    ul {
+      @include clearfix;
+      display: block;
+    }
+
+    li {
+      margin-right: $gap;
+      display: block;
+      float: left;
     }
   }
 }
@@ -363,7 +349,7 @@ body > div > div > blockquote {
 // Google AdSense
 .adsense {
   margin: ($font-size * 6) 0 ($font-size * 2) 0;
-  padding: (($cwidth - 728px) * 0.5);
+  padding: (($content-width - 728px) * 0.5);
   border: 1px solid rgb(207, 204, 198);
   clear: both;
   line-height: 1;
@@ -372,7 +358,7 @@ body > div > div > blockquote {
 
   &::before {
     margin-bottom: 4px;
-    padding: 8px 4px;
+    padding: 0 4px 8px 4px;
     border-bottom: 2px groove rgb(255, 252, 246);
     display: block;
     height: auto;
@@ -429,8 +415,6 @@ body > div > div > blockquote {
 
 // Shots from iine!
 #iine {
-  @extend .column-container;
-
   ol {
     padding-left: 0;
     list-style-type: none;
@@ -440,7 +424,9 @@ body > div > div > blockquote {
     margin-top: 32px;
   }
 
-  @media screen and (min-width: $safe-for-contents) {
+  @media screen and (min-width: $safe-for-content) {
+    margin: 0 (- $gap);
+
     ol {
       @include clearfix;
     }
@@ -463,28 +449,28 @@ body > div > div > blockquote {
 }
 
 #iine figure {
-  @extend .column;
+  @extend .column-3;
 
   position: relative;
   line-height: 1;
 
   img {
-    padding-bottom: 36px;
+    padding-bottom: ($font-size * 3);
   }
 
   figcaption {
     margin-top: 0;
     margin-bottom: 0;
     position: absolute;
-    bottom: 3px;
-    left: 8px;
+    bottom: ($font-size * 0.25);
+    left: ($font-size * 0.5);
     line-height: 3;
+    font-family: $stack-heading;
     font-weight: normal;
-    font-size: 12px;
     white-space: nowrap;
   }
 
-  @media screen and (min-width: $safe-for-contents) {
+  @media screen and (min-width: $safe-for-content) {
     overflow: hidden;
 
     img {
@@ -503,7 +489,7 @@ body > div > div > blockquote {
       overflow: hidden;
       color: gray;
       background-color: black;
-      font-family: $stack-heading;
+    font-size: 12px;
       text-align: center;
       white-space: nowrap;
       opacity: 0.8;

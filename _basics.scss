@@ -137,9 +137,9 @@ pre {
   font-family: $stack-code;
   font-size: 87.5%;
 
-  @media screen and (min-width: $safe-for-contents-and-menu) {
-    margin-left: (- $mwidth + $font-size);
-    padding-left: ($mwidth - $font-size);
+  @media screen and (min-width: $safe-for-full) {
+    margin-left: (- $suppli-width - $gap * 2);
+    padding-left: ($suppli-width + $gap * 2);
   }
 }
 
@@ -164,10 +164,6 @@ blockquote {
     font-weight: bold;
     font-size: 450%; // 72px
     text-shadow: -1px -1px mixxd($fg, $bg, 0.6);
-  }
-
-  @media screen and (min-width: $safe-for-contents-and-menu) {
-    margin-left: 0;
   }
 }
 
