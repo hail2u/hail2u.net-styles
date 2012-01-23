@@ -60,6 +60,14 @@ body {
   background-image: url("../images/bg-body.png");
   font-family: $stack-body;
 
+  // Decrease font size
+  $too-narrow: $safe-for-content * 0.875;
+
+  @media screen and (max-width: $too-narrow) {
+    font-size: 87.5%;
+  }
+
+  // Increse font size
   $wide-enough: $safe-for-full * 1.25;
 
   @media screen and (min-width: $wide-enough) {
