@@ -191,7 +191,9 @@ h2 + footer {
       $adjuster: (($icon-size - 32px) * 0.5); 
 
       &[href^="http://feeds.feedburner.com/hail2u"] {
+        background-color: rgb(255, 153, 0);
         background-position: center $adjuster;
+        opacity: 1;
       }
 
       &[href="http://www.facebook.com/hail2u"] {
