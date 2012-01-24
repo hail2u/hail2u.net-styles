@@ -77,17 +77,15 @@
     }
 
     ul {
-      margin: 0;
+      margin-top: (($font-size * 10 - $font-size) * 0.5);
       display: block;
       position: absolute;
-      top: ($font-size * 10 + $font-size * 0.75);
-      left: $gap;
-      width: $suppli-width;
+      right: 0;
     }
 
     li {
-      margin-bottom: ($font-size);
-      display: block;
+      margin-left: ($font-size);
+      display: inline;
     }
   }
 }
