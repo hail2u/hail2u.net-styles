@@ -172,11 +172,10 @@ blockquote {
     height: 100%;
     line-height: 1;
     content: "\201c"; // Left dquote
-    color: mixxd($fg, $bg, 0.8);
+    color: $lightest;
     font-family: "Trebuchet MS", $stack-body;
     font-weight: bold;
     font-size: 450%; // 72px
-    text-shadow: -1px -1px 0 mixxd($fg, $bg, 0.6);
   }
 
   @media screen and (min-width: $safe-for-full) {
@@ -184,7 +183,6 @@ blockquote {
 
     &::before {
       margin-right: ($gap * 2);
-      font-size: 750%; // 120px
     }
   }
 }
