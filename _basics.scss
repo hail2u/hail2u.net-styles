@@ -153,7 +153,6 @@ pre {
 
   @media screen and (min-width: $safe-for-full) {
     margin-left: (- $suppli-width - $gap * 2);
-    padding-left: ($suppli-width + $gap * 2);
   }
 }
 
