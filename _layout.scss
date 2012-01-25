@@ -34,10 +34,10 @@
     margin-left: auto;
     padding-left: 0;
     display: table;
-    border-spacing: $gap 0;
   }
 
   li {
+    padding: 0 $gap;
     display: table-cell;
   }
 
@@ -47,7 +47,7 @@
     top: ($font-size * 0.25); // size of body top border
     width: 100%;
     max-width: none;
-    text-align: right;
+    text-align: left;
 
     h1 {
       margin: 0 auto;
@@ -78,14 +78,8 @@
 
     ul {
       margin-top: (($font-size * 10 - $font-size) * 0.5);
-      display: block;
       position: absolute;
       right: 0;
-    }
-
-    li {
-      margin-right: $gap;
-      display: inline;
     }
   }
 }
@@ -142,24 +136,22 @@ h2 + footer {
   section {
     margin: 0 auto;
     padding-bottom: $font-size;
-    width: (($icon-size + 2px * 2) * 7);
     line-height: 1;
   }
 
   ul {
     @include clearfix;
 
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding-left: 0;
+    display: table;
   }
 
   li {
-    margin: 0;
-    display: block;
-    float: left;
+    padding: 0 ($gap * 0.125);
+    display: table-cell;
 
     a {
-      margin: 0 2px;
       border-radius: #{($icon-size * 0.5)}/#{($icon-size * 0.5)};
       display: block;
       width: $icon-size;
@@ -266,8 +258,8 @@ h2 + footer {
       right: $gap;
     }
 
-    li a {
-      margin: 0 0 0 ($gap * 0.5);
+    li {
+      padding: 0 0 0 ($gap * 0.5);
     }
   }
 }
