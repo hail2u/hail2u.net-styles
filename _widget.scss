@@ -476,7 +476,8 @@ body > div > div > blockquote {
     overflow: hidden;
 
     img {
-      padding-bottom: 7px;
+      padding: 0;
+      border: 0;
     }
 
     figcaption {
@@ -491,7 +492,7 @@ body > div > div > blockquote {
       overflow: hidden;
       color: gray;
       background-color: black;
-    font-size: 12px;
+      font-size: 12px;
       text-align: center;
       white-space: nowrap;
       opacity: 0.8;
