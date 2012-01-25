@@ -308,10 +308,10 @@ body.debug::before {
     margin: ($font-size * 6) auto ($font-size * 2) auto;
     padding-left: 0;
     display: table;
-    border-spacing: $font-size 0;
   }
 
   li {
+    padding: 0 ($gap * 0.5);
     display: table-cell;
   }
 
@@ -349,13 +349,12 @@ body.debug::before {
   @media screen and (min-width: $safe-for-full) {
     ul {
       @include clearfix;
-      display: block;
+
+      margin-left: 0;
     }
 
     li {
-      margin-right: $gap;
-      display: block;
-      float: left;
+      padding: 0 $gap 0 0;
     }
   }
 }
