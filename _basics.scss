@@ -61,14 +61,14 @@ body {
   font-family: $stack-body;
 
   // Decrease font size
-  $too-narrow: $safe-for-content * 0.875;
+  $too-narrow: $safe-for-content * 0.875 * 0.875;
 
   @media screen and (max-width: $too-narrow) {
     font-size: 87.5%;
   }
 
   // Increse font size
-  $wide-enough: $safe-for-full * 1.25;
+  $wide-enough: $safe-for-full * 1.25 * 1.25;
 
   @media screen and (min-width: $wide-enough) {
     font-size: 125%;
