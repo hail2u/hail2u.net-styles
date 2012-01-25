@@ -248,9 +248,9 @@ h2 + footer {
 
   @media screen and (min-width: $safe-for-full) {
     address {
-      padding: (($icon-size + $font-size) * 0.5) ($content-width + $gap * 3) (($icon-size + $font-size) * 0.5) $gap;
-      max-width: $suppli-width;
-      text-align: right;
+      padding: (($icon-size + $font-size) * 0.5) $gap;
+      max-width: ($suppli-width + $gap * 2 + $content-width);
+      text-align: left;
     }
 
     section {
