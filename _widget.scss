@@ -54,6 +54,17 @@
 }
 
 // Column
+.column-container {
+  @media screen and (min-width: $safe-for-content) {
+    margin: 0 (- $gap);
+
+    > * {
+      margin-right: $gap;
+      margin-left: $gap;
+    }
+  }
+}
+
 @for $i from 1 through 12 {
   .column-#{$i} {
     @media screen and (min-width: $safe-for-content) {
@@ -126,15 +137,7 @@
 
 // Posts (inherit Column)
 #posts {
-  @media screen and (min-width: $safe-for-content) {
-    margin: 0 (- $gap);
-
-    h2,
-    p {
-      margin-right: $gap;
-      margin-left: $gap;
-    }
-  }
+  @extend .column-container;
 }
 
 #posts > section {
