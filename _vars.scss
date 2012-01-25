@@ -7,19 +7,20 @@ $stack-nav:     "Terminal Dosis", "Geneva", "Tahoma", sans-serif;
 $stack-code:    "Monaco", "Consolas", monospace;
 
 // Color
-$base:     rgb( 85, 136, 153); // #558899
+$base: rgb( 85, 136, 153); // #558899
 
 $darkest:  rgb( 28,  82,  99);
 $dark:     rgb( 76, 105, 115);
 $light:    rgb(136, 187, 204);
 $lightest: rgb(154, 192, 204);
 
-$fg:       rgb(  9,   9,   9);
-$bg:       rgb(249, 246, 240);
+$fg: rgb(  9,   9,   9);
+$bg: rgb(249, 246, 240);
 
-$link:     $base;
-$hover:    $darkest;
-$mark:     rgb(255, 238,   0);
+$link: $base;
+$hover: $darkest;
+
+$mark: rgb(255, 238,   0);
 
 // Size
 $font-size: 16px;
