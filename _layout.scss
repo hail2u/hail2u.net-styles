@@ -88,6 +88,8 @@
 section,
 nav,
 article {
+  position: relative;
+
   p a {
     text-decoration: underline;
   }
@@ -105,6 +107,22 @@ h2 + footer {
 
   a {
     text-decoration: none;
+  }
+
+  br {
+    display: none;
+  }
+
+  @media screen and (min-width: $safe-for-full) {
+    margin-right: 32px;
+    position: absolute;
+    right: 100%;
+    width: $suppli-width;
+    text-align: right;
+
+    br {
+      display: inline;
+    }
   }
 }
 
