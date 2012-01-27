@@ -51,6 +51,11 @@
   }
 }
 
+// The root element
+html {
+  overflow-y: scroll;
+}
+
 // Sections
 body {
   border-top: ($font-size * 0.25) solid $lightest;
