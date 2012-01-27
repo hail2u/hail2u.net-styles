@@ -37,7 +37,7 @@
   }
 
   li {
-    padding: 0 $gap;
+    padding: 0 ($gap * 0.5);
     display: table-cell;
   }
 
