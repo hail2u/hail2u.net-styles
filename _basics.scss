@@ -99,15 +99,35 @@ h2 {
 
   margin: ($font-size * 10) 0 ($font-size * 2) 0;
   font-weight: normal;
+  font-size: 187.5%; // 30px
 }
 
-h3,
-h4,
-h5,
+h3 {
+  @extend %heading;
+
+  margin: ($font-size * 4) 0 ($font-size * 2) 0;
+  font-size: 150%; // 24px
+}
+
+h4 {
+  @extend %heading;
+
+  margin: ($font-size * 4) 0 ($font-size * 2) 0;
+  font-size: 125%; // 20px
+}
+
+h5 {
+  @extend %heading;
+
+  margin: ($font-size * 4) 0 ($font-size * 2) 0;
+  font-size: 112.5%; // 18px
+}
+
 h6 {
   @extend %heading;
 
   margin: ($font-size * 4) 0 ($font-size * 2) 0;
+  font-size: 100%; // 16px
 }
 
 // Grouping content
