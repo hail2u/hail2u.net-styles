@@ -7,7 +7,7 @@ body.debug::before {
   left: 0;
   z-index: 1;
   content: "";
-  background-image: -moz-linear-gradient(
+  /* background-image: -moz-linear-gradient(
     left,
     rgb(255, 0, 255) 0,
     rgb(255, 0, 255) ($column / 2),
@@ -15,7 +15,7 @@ body.debug::before {
     transparent ($column / 2 + $gap * 2),
     rgb(255, 0, 255) ($column / 2 + $gap * 2),
     rgb(255, 0, 255) ($column + $gap * 2)
-  );
+  ); */
   background-image: -webkit-linear-gradient(
     left,
     rgb(255, 0, 255) 0,
