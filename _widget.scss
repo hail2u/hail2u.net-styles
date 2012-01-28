@@ -9,52 +9,52 @@ body.debug::before {
   content: "";
   /* background-image: -moz-linear-gradient(
     left,
-    rgb(255, 0, 255) 0,
-    rgb(255, 0, 255) ($column / 2),
+    $base 0,
+    $base ($column / 2),
     transparent ($column / 2),
     transparent ($column / 2 + $gap * 2),
-    rgb(255, 0, 255) ($column / 2 + $gap * 2),
-    rgb(255, 0, 255) ($column + $gap * 2)
+    $base ($column / 2 + $gap * 2),
+    $base ($column + $gap * 2)
   ); */
   background-image: -webkit-linear-gradient(
     left,
-    rgb(255, 0, 255) 0,
-    rgb(255, 0, 255) ($column / 2),
+    $base 0,
+    $base ($column / 2),
     transparent ($column / 2),
     transparent ($column / 2 + $gap * 2),
-    rgb(255, 0, 255) ($column / 2 + $gap * 2),
-    rgb(255, 0, 255) ($column + $gap * 2)
+    $base ($column / 2 + $gap * 2),
+    $base ($column + $gap * 2)
   );
   background-image: -o-linear-gradient(
     left,
-    rgb(255, 0, 255) 0,
-    rgb(255, 0, 255) ($column / 2),
+    $base 0,
+    $base ($column / 2),
     transparent ($column / 2),
     transparent ($column / 2 + $gap * 2),
-    rgb(255, 0, 255) ($column / 2 + $gap * 2),
-    rgb(255, 0, 255) ($column + $gap * 2)
+    $base ($column / 2 + $gap * 2),
+    $base ($column + $gap * 2)
   );
   background-image: -ms-linear-gradient(
     left,
-    rgb(255, 0, 255) 0,
-    rgb(255, 0, 255) ($column / 2),
+    $base 0,
+    $base ($column / 2),
     transparent ($column / 2),
     transparent ($column / 2 + $gap * 2),
-    rgb(255, 0, 255) ($column / 2 + $gap * 2),
-    rgb(255, 0, 255) ($column + $gap * 2)
+    $base ($column / 2 + $gap * 2),
+    $base ($column + $gap * 2)
   );
   background-image: linear-gradient(
     left,
-    rgb(255, 0, 255) 0,
-    rgb(255, 0, 255) ($column / 2),
+    $base 0,
+    $base ($column / 2),
     transparent ($column / 2),
     transparent ($column / 2 + $gap * 2),
-    rgb(255, 0, 255) ($column / 2 + $gap * 2),
-    rgb(255, 0, 255) ($column + $gap * 2)
+    $base ($column / 2 + $gap * 2),
+    $base ($column + $gap * 2)
   );
   background-size: ($column + $gap * 2) 1px;
   background-position: 50% 0;
-  opacity: 0.05;
+  opacity: 0.1;
   pointer-events: none;
 }
 
