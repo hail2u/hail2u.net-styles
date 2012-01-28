@@ -9,6 +9,13 @@ $version: "6.15pre";
 // Web Fonts
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700|Crimson+Text:400,400italic|Andika:400,700|Terminal+Dosis:400,700");
 
+// Replace Open Sans' &ldquo; with Trebuchet MS
+@font-face {
+  font-family: "Open Sans";
+  src: local("Trebuchet MS");
+  unicode-range: U+201C;
+}
+
 // Functions
 @import "funcs";
 
