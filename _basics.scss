@@ -29,7 +29,7 @@
 
 // Other Representation
 %default-margin {
-  margin: ($font-size * 2) 0;
+  margin: 2em 0;
 }
 
 %heading {
@@ -42,7 +42,7 @@
   img {
     border: 1px solid mixxd($fg, white, 0.9);
     border: 1px solid transparentize($fg, 0.9);
-    padding: ($font-size * 0.5 - 1px);
+    padding: ($gap * 0.5 - 1px);
     background-color: white;
   }
 
@@ -58,7 +58,7 @@ html {
 
 // Sections
 body {
-  border-top: ($font-size * 0.25) solid $lightest;
+  border-top: 0.25em solid $lightest;
   line-height: 1.75;
   color: $fg;
   background-color: $bg;
@@ -69,14 +69,21 @@ body {
   $too-narrow: $safe-for-content * 0.875 * 0.875;
 
   @media screen and (max-width: $too-narrow) {
-    font-size: 87.5%;
+    font-size: 87.5%; // 14px
   }
 
   // Increse font size
+  $wide-enough: $safe-for-full * 1.125 * 1.125;
+
+  @media screen and (min-width: $wide-enough) {
+    font-size: 112.5%; // 18px
+  }
+
+  // Increse font size more
   $wide-enough: $safe-for-full * 1.25 * 1.25;
 
   @media screen and (min-width: $wide-enough) {
-    font-size: 125%;
+    font-size: 125%; // 20px
   }
 }
 
@@ -90,14 +97,15 @@ aside {
 h1 {
   @extend %heading;
 
-  margin: ($font-size * 6) 0;
+  margin: (6em / 2.25) 0;
   font-weight: normal;
+  font-size: 225%; // 36px
 }
 
 h2 {
   @extend %heading;
 
-  margin: ($font-size * 10) 0 ($font-size * 2) 0;
+  margin: (10em / 1.875) 0 2em 0;
   font-weight: normal;
   font-size: 187.5%; // 30px
 }
@@ -105,28 +113,28 @@ h2 {
 h3 {
   @extend %heading;
 
-  margin: ($font-size * 4) 0 ($font-size * 2) 0;
+  margin: (4em / 1.5) 0 2em 0;
   font-size: 150%; // 24px
 }
 
 h4 {
   @extend %heading;
 
-  margin: ($font-size * 4) 0 ($font-size * 2) 0;
+  margin: (4em / 1.25) 0 2em 0;
   font-size: 125%; // 20px
 }
 
 h5 {
   @extend %heading;
 
-  margin: ($font-size * 4) 0 ($font-size * 2) 0;
+  margin: (4em / 1.125) 0 2em 0;
   font-size: 112.5%; // 18px
 }
 
 h6 {
   @extend %heading;
 
-  margin: ($font-size * 4) 0 ($font-size * 2) 0;
+  margin: 4em 0 2em 0;
   font-size: 100%; // 16px
 }
 
@@ -137,11 +145,12 @@ p {
 
 hr {
   @extend %default-margin;
+  $h: 4.5em;
 
   border: none;
   position: relative;
   clear: both;
-  height: ($font-size * 4.5);
+  height: $h;
   background-color: transparent;
 
   &::before {
@@ -150,8 +159,8 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    height: ($font-size * 4.5);
-    line-height: ($font-size * 4.5);
+    height: ($h / 8);
+    line-height: ($h / 8);
     content: "\223c\2219\223c"; // tilda op + bullet op + tilda op
     color: mixxd($fg, $bg, 0.92);
     color: transparentize($fg, 0.92);
@@ -164,8 +173,8 @@ hr {
 pre {
   @extend %default-margin;
 
-  padding: ($font-size * 1.5);
-  border-radius: ($font-size * 0.25);
+  padding: 1.5em;
+  border-radius: 0.25em;
   clear: both;
   line-height: 1.25;
   page-break-inside: avoid;
@@ -181,14 +190,14 @@ pre {
 }
 
 blockquote {
-  margin: 0 0 0 ($font-size * 4);
+  margin: 0 0 0 4em;
   position: relative;
   clear: both;
-  min-height: ($font-size * 4.5);
+  min-height: 4.5em;
   page-break-inside: avoid;
 
   &::before {
-    margin-right: $font-size;
+    margin-right: (1em / 4.5);
     display: block;
     position: absolute;
     top: 0;
@@ -328,7 +337,7 @@ table {
   page-break-inside: avoid;
 
   th, td {
-    padding: ($font-size * 0.5);
+    padding: 0.5em;
     border: 1px solid mixxd($fg, $bg, 0.84);
     vertical-align: top;
   }
