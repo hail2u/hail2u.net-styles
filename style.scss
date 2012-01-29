@@ -16,7 +16,7 @@ $version: "6.15pre";
 @import "vars";
 
 // Partials
-@import "scss-partials/normalize";
+@import "normalize";
 @import "scss-partials/clearfix";
 @import "scss-partials/vendor-extension";
 @import "scss-partials/corporate-colors";
