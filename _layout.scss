@@ -24,6 +24,7 @@
   nav {
     line-height: 1;
     font-family: $stack-nav;
+    font-size: 87.5%; // 14px
     text-transform: uppercase;
   }
 
@@ -62,7 +63,7 @@
     }
 
     ul {
-      margin-top: ((- 2.25em - 1em) * 0.5); 
+      margin-top: ((- 2.25em - 1em) / 0.875 * 0.5); 
       position: absolute;
       right: $gap;
     }
