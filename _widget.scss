@@ -144,7 +144,7 @@ body.debug::before {
   box-shadow: inset 0 1px 0 0 transparentize(white, 0.3);
   display: inline-block;
   height: 2em;
-  line-height: 2em;
+  line-height: 2;
   color: $bg;
   background-color: $light;
   background-image: $button-overlay-normal;
@@ -166,7 +166,7 @@ body.debug::before {
   &:active {
     box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.7), 0 0 0.25em 0 $light;
     box-shadow: inset 0 1px 0 0 transparentize(white, 0.7), 0 0 0.25em 0 $light;
-    line-height: 2.125em;
+    line-height: 2.125;
     background-color: darken($light, 5%);
     background-image: $button-overlay-active;
   }
@@ -208,7 +208,6 @@ body.debug::before {
 
   h3 {
     margin: 0.375em 0; // 0.375 comes from (1.75 - 1) / 2
-    line-height: 1;
     font-weight: normal;
     font-size: 100%;
   }
@@ -228,7 +227,7 @@ body.debug::before {
     h3 {
       margin: 0 0 0.75em 0;
       height: 1.5em;
-      line-height: 1.5em;
+      line-height: 1.5;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
