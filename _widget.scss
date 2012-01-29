@@ -1,63 +1,8 @@
 // Grid overlay
-body.debug::before {
-  $column-color: complement($base);
+@import "scss-partials/grid-overlay";
 
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  content: "";
-  background-image: -moz-linear-gradient(
-    left,
-    $column-color 0,
-    $column-color ($column / 2),
-    transparent ($column / 2),
-    transparent ($column / 2 + $gap * 2),
-    $column-color ($column / 2 + $gap * 2),
-    $column-color ($column + $gap * 2)
-  );
-  background-image: -webkit-linear-gradient(
-    left,
-    $column-color 0,
-    $column-color ($column / 2),
-    transparent ($column / 2),
-    transparent ($column / 2 + $gap * 2),
-    $column-color ($column / 2 + $gap * 2),
-    $column-color ($column + $gap * 2)
-  );
-  background-image: -o-linear-gradient(
-    left,
-    $column-color 0,
-    $column-color ($column / 2),
-    transparent ($column / 2),
-    transparent ($column / 2 + $gap * 2),
-    $column-color ($column / 2 + $gap * 2),
-    $column-color ($column + $gap * 2)
-  );
-  background-image: -ms-linear-gradient(
-    left,
-    $column-color 0,
-    $column-color ($column / 2),
-    transparent ($column / 2),
-    transparent ($column / 2 + $gap * 2),
-    $column-color ($column / 2 + $gap * 2),
-    $column-color ($column + $gap * 2)
-  );
-  background-image: linear-gradient(
-    left,
-    $column-color 0,
-    $column-color ($column / 2),
-    transparent ($column / 2),
-    transparent ($column / 2 + $gap * 2),
-    $column-color ($column / 2 + $gap * 2),
-    $column-color ($column + $gap * 2)
-  );
-  background-size: ($column + $gap * 2) 1px;
-  background-position: 50% 0;
-  opacity: 0.1;
-  pointer-events: none;
+body.debug {
+  @include grid-overlay($column, ($gap * 2));
 }
 
 // Selection
