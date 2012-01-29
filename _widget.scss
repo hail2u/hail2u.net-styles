@@ -93,7 +93,7 @@ body.debug::before {
   }
 
   dd {
-    margin: 0 $font-size 0 0;
+    margin: 0 1em 0 0;
     float: left;
   }
 
@@ -108,7 +108,7 @@ body.debug::before {
     }
 
     dd {
-      margin: 0 0 0 $font-size;
+      margin: 0 0 0 1em;
     }
   }
 }
@@ -137,14 +137,14 @@ body.debug::before {
 
 // Elegant Button
 .elegant-btn {
-  padding: 0 $font-size;
+  padding: 0 1em;
   border: 1px solid $base;
   border-radius: 0.75em/1em;
   box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.3);
   box-shadow: inset 0 1px 0 0 transparentize(white, 0.3);
   display: inline-block;
-  height: ($font-size * 2);
-  line-height: ($font-size * 2);
+  height: 2em;
+  line-height: 2em;
   color: $bg;
   background-color: $light;
   background-image: $button-overlay-normal;
@@ -156,17 +156,17 @@ body.debug::before {
 
   &:hover {
     border-color: $dark;
-    box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.3), 0 0 ($font-size * 0.25) 0 $light;
-    box-shadow: inset 0 1px 0 0 transparentize(white, 0.3), 0 0 ($font-size * 0.25) 0 $light;
+    box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.3), 0 0 0.25em 0 $light;
+    box-shadow: inset 0 1px 0 0 transparentize(white, 0.3), 0 0 0.25em 0 $light;
     color: $bg;
     background-color: darken($light, 5%);
     cursor: pointer;
   }
 
   &:active {
-    box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.7), 0 0 ($font-size * 0.25) 0 $light;
-    box-shadow: inset 0 1px 0 0 transparentize(white, 0.7), 0 0 ($font-size * 0.25) 0 $light;
-    line-height: ($font-size * 2) + 2px; // need 2px for Crimson Text
+    box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.7), 0 0 0.25em 0 $light;
+    box-shadow: inset 0 1px 0 0 transparentize(white, 0.7), 0 0 0.25em 0 $light;
+    line-height: 2.125em;
     background-color: darken($light, 5%);
     background-image: $button-overlay-active;
   }
@@ -207,7 +207,7 @@ body.debug::before {
   display: list-item;
 
   h3 {
-    margin: ($font-size * 0.375) 0; // 0.375 comes from (1.75 - 1) / 2
+    margin: 0.375em 0; // 0.375 comes from (1.75 - 1) / 2
     line-height: 1;
     font-weight: normal;
     font-size: 100%;
@@ -226,9 +226,9 @@ body.debug::before {
     }
 
     h3 {
-      margin: 0 0 ($font-size * 0.75) 0;
-      height: ($font-size * 1.5);
-      line-height: ($font-size * 1.5);
+      margin: 0 0 0.75em 0;
+      height: 1.5em;
+      line-height: 1.5em;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -236,7 +236,7 @@ body.debug::before {
 
     p {
       margin: 0;
-      height: ($font-size * 0.75 * 1.75 * 6);
+      height: (0.75em * 1.75 * 6);
       display: block;
       overflow: hidden;
       color: $fg;
@@ -259,11 +259,11 @@ body.debug::before {
 // Searchbox
 .searchbox {
   form {
-    margin: ($font-size * 2) 0;
+    @extend %default-margin;
   }
 
   div {
-    padding: ($font-size * 0.375);
+    padding: 6px;
     border-radius: 1em/1.25em;
     display: inline-block;
     line-height: 1;
@@ -283,11 +283,11 @@ body.debug::before {
   }
 
   input[type="text"] {
-    margin: 0 (- $font-size * 2) 0 0;
-    padding: 2px ($font-size * 2) 2px ($font-size * 0.5);
+    margin: 0 -2em 0 0;
+    padding: 2px 32px 2px 8px;
     border-radius: 0.75em/1em;
     width: 183px;
-    height: ($font-size * 2 - 2px * 2);
+    height: 28px;
   }
 
   input[type="submit"] {
@@ -301,29 +301,26 @@ body.debug::before {
 
 // Paging
 .paging {
-  $arrow-size-x: 64px;
-  $arrow-size-y: 64px;
 
   ul {
-    margin: ($font-size * 6) auto ($font-size * 2) auto;
+    margin: 6em auto 2em auto;
     padding-left: 0;
     display: table;
   }
 
   li {
-    padding: 0 ($gap * 0.5);
+    padding: 0 $gap;
     display: table-cell;
   }
 
   a {
-    border-radius: #{($arrow-size-x * 0.5)}/#{($arrow-size-y * 0.5)};
+    border-radius: #{($column * 0.5)}/#{($column * 0.5)};
     display: block;
-    width: $arrow-size-x;
-    height: $arrow-size-y;
-    line-height: $arrow-size-y;
+    width: $column;
+    height: $column;
     overflow: hidden;
-    color: white;
-    background-color: black;
+    color: $bg;
+    background-color: $fg;
     opacity: 0.1;
 
     &:hover {
@@ -354,7 +351,7 @@ body.debug::before {
     }
 
     li {
-      padding: 0 $gap 0 0;
+      padding: 0 ($gap * 2) 0 0;
     }
   }
 }
@@ -377,7 +374,7 @@ body.debug::before {
   }
 
   [role="main"] > & {
-    margin-top: ($font-size * 4);
+    margin-top: 4em;
   }
 }
 
@@ -412,7 +409,7 @@ body > div > div > blockquote {
 
 // Google AdSense
 .adsense {
-  margin: ($font-size * 6) 0 ($font-size * 2) 0;
+  margin: 6em 0 2em 0;
   padding: (($content-width - 728px) * 0.5);
   border: 1px solid rgb(207, 204, 198);
   clear: both;
@@ -519,15 +516,15 @@ body > div > div > blockquote {
   line-height: 1;
 
   img {
-    padding-bottom: ($font-size * 3);
+    padding-bottom: 3em;
   }
 
   figcaption {
     margin-top: 0;
     margin-bottom: 0;
     position: absolute;
-    bottom: ($font-size * 0.25);
-    left: ($font-size * 0.5);
+    bottom: 0.25em;
+    left: 0.5em;
     line-height: 3;
     font-family: $stack-heading;
     font-weight: normal;
@@ -554,7 +551,7 @@ body > div > div > blockquote {
       overflow: hidden;
       color: gray;
       background-color: black;
-      font-size: 12px;
+      font-size: 75%; // 12px
       text-align: center;
       white-space: nowrap;
       opacity: 0.8;

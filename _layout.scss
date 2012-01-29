@@ -10,7 +10,6 @@
     line-height: 1;
     font-family: $stack-logo;
     font-style: italic;
-    font-size: 225%; // 36px
 
     a {
       color: inherit;
@@ -25,7 +24,6 @@
   nav {
     line-height: 1;
     font-family: $stack-nav;
-    font-size: 87.5%; // 14px
     text-transform: uppercase;
   }
 
@@ -44,16 +42,14 @@
   @media screen and (min-width: $safe-for-full) {
     padding: 0;
     position: absolute;
-    top: ($font-size * 0.25); // size of body top border
+    top: 0.25em; // size of body top border
     width: 100%;
     max-width: none;
     text-align: left;
 
     h1 {
-      margin: (($font-size * 10 - $font-size * 2.25) * 0.5) auto 0 auto;
-      padding-left: $gap;
-      padding-right: $gap;
-      position: relative;
+      margin: ((10em - 2.25em) / 2.25 * 0.5) auto 0 auto;
+      padding: 0 $gap;
       max-width: ($safe-for-full - $gap * 2);
     }
 
@@ -63,13 +59,16 @@
       padding-right: $gap;
       position: relative;
       max-width: $content-width;
-      font-size: 100%;
     }
 
     ul {
-      margin-top: ((- $font-size * 2.25 - $font-size) * 0.5); 
+      margin-top: ((- 2.25em - 1em) * 0.5); 
       position: absolute;
-      right: ($gap * 0.5);
+      right: $gap;
+    }
+
+    li {
+      padding: 0 0 0 $gap;
     }
   }
 }
@@ -96,7 +95,7 @@ article {
 }
 
 h2 + footer {
-  margin-top: (- $font-size * 2);
+  margin-top: -2em;
   color: mixxd($fg, $bg, 0.6);
   color: transparentize($fg, 0.6);
   font-family: $stack-point;
@@ -114,7 +113,7 @@ h2 + footer {
   }
 
   @media screen and (min-width: $safe-for-full) {
-    margin-right: 32px;
+    margin-right: ($gap * 2);
     position: absolute;
     right: 100%;
     width: $suppli-width;
@@ -135,15 +134,15 @@ h2 + footer {
   font-style: italic;
 
   address {
-    margin: ($font-size * 6) auto 0 auto;
-    padding: ($font-size * 1.5) $gap;
+    margin: 6em auto 0 auto;
+    padding: 1.5em $gap;
     max-width: $content-width;
     text-align: center;
   }
 
   section {
     margin: 0 auto;
-    padding-bottom: $font-size;
+    padding-bottom: 1em;
     line-height: 1;
   }
 
@@ -248,7 +247,7 @@ h2 + footer {
 
   @media screen and (min-width: $safe-for-full) {
     address {
-      padding: (($icon-size + $font-size) * 0.5) $gap;
+      padding: 2em $gap;
       max-width: ($suppli-width + $gap * 2 + $content-width);
       text-align: left;
     }
@@ -261,8 +260,9 @@ h2 + footer {
     }
 
     ul {
+      margin-top: ($icon-size * 0.5);
       position: absolute;
-      top: (- $icon-size - $font-size);
+      top: -5em;
       right: $gap;
     }
 
