@@ -13,7 +13,7 @@ $version: "4.4";
 @import "vars";
 
 // Partials
-@import "normaliz";
+@import "normalize";
 
 html {
   overflow: hidden;
@@ -24,7 +24,7 @@ body {
   color: $fg;
   background-color: $bg;
   background-image: url("../images/bg-body.png");
-  font-family: $sans-serif;
+  font-family: $stack-body;
   text-align: center;
 }
 
@@ -37,7 +37,7 @@ header {
 
   h1 {
     margin: 0;
-    font-family: $serif;
+    font-family: $stack-logo;
     font-style: italic;
     font-weight: normal;
     font-size: 225%; // 36px
@@ -55,7 +55,7 @@ nav {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: "Terminal Dosis", $sans-serif;
+    font-family: $stack-nav;
     font-size: 87.5%; // 14px
     text-transform: uppercase;
 

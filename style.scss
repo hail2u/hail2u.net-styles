@@ -16,10 +16,15 @@ $version: "6.15pre";
 @import "vars";
 
 // Partials
-@import "normaliz", "clearfix", "vendor-extension", "corporate-colors";
+@import "scss-partials/normalize";
+@import "scss-partials/clearfix";
+@import "scss-partials/vendor-extension";
+@import "scss-partials/corporate-colors";
 
 // Styles
-@import "basics", "layout", "widget";
+@import "basics";
+@import "layout";
+@import "widget";
 
 // Styles for print
 @import "forprint";
