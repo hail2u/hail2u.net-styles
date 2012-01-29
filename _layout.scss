@@ -88,10 +88,16 @@
 section,
 nav,
 article {
-  position: relative;
-
   p a {
     text-decoration: underline;
+  }
+
+  @media screen and (min-width: $safe-for-full) {
+    position: relative;
+
+    h2 {
+      margin-left: (- $suppli-width - $gap * 2);
+    }
   }
 }
 
@@ -101,6 +107,10 @@ h2 + footer {
   color: transparentize($fg, 0.6);
   font-family: $stack-point;
 
+  br {
+    display: none;
+  }
+
   time {
     color: $fg;
   }
@@ -109,16 +119,11 @@ h2 + footer {
     text-decoration: none;
   }
 
-  br {
-    display: none;
-  }
-
   @media screen and (min-width: $safe-for-full) {
     margin-right: ($gap * 2);
     position: absolute;
     right: 100%;
     width: $suppli-width;
-    text-align: right;
 
     br {
       display: inline;
