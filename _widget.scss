@@ -177,7 +177,7 @@ body.debug::before {
   @extend .minimal;
 
   li::after {
-    content: " \2022\2022\2022 ";
+    content: " \2756";
   }
 
   li:last-child::after {
