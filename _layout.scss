@@ -42,14 +42,12 @@
 
   @media screen and (min-width: $safe-for-full) {
     padding: 0;
-    position: absolute;
-    top: 0.25em; // size of body top border
     width: 100%;
     max-width: none;
     text-align: left;
 
     h1 {
-      margin: ((10em - 2.25em) / 2.25 * 0.5) auto 0 auto;
+      margin: (6em / 2.25) auto;
       padding: 0 $gap;
       max-width: ($safe-for-full - $gap * 2);
     }
@@ -63,7 +61,7 @@
     }
 
     ul {
-      margin-top: ((- 2.25em - 1em) / 0.875 * 0.5); 
+      margin-top: ((- 6em - 2.25em) / 0.875 + (2.25em - 0.875em) * 0.5); 
       position: absolute;
       right: $gap;
     }
