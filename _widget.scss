@@ -248,7 +248,7 @@ body > div > div > blockquote {
 // Google AdSense
 .adsense {
   margin: 6em 0 2em 0;
-  padding: (($content-width - 728px) * 0.5);
+  padding: 0.5em (($content-width - 728px) * 0.5);
   border: 1px solid rgb(207, 204, 198);
   clear: both;
   line-height: 1;
