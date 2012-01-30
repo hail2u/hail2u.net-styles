@@ -58,7 +58,9 @@ body.debug {
       margin-right: $gap;
       margin-left: $gap;
     }
-
+  }
+  
+  @media screen and (min-width: $safe-for-full) {
     > h2 {
       margin-left: (- $suppli-width - $gap);
     }
