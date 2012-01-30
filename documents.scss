@@ -1,4 +1,4 @@
-$version: "3.9";
+$version: "3.10";
 
 /*!
  * document.css v#{$version}
@@ -6,7 +6,13 @@ $version: "3.9";
  * LICENSE: http://hail2u.mit-license.org/2011
  */
 
-@import "scss-partials/clearfix", "scss-partials/natural";
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic");
+
+$sans-serif: "Open Sans", "Helvetica Neue", "Arial", sans-serif;
+$monospace:  "Monaco", "Consolas", monospace;
+
+@import "scss-partials/clearfix";
+@import "scss-partials/natural";
 
 body {
   max-width: (800px - $font-size * 2 * 2);
