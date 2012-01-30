@@ -58,6 +58,10 @@ body.debug {
       margin-right: $gap;
       margin-left: $gap;
     }
+
+    > h2 {
+      margin-left: (- $suppli-width - $gap);
+    }
   }
 }
 
@@ -418,30 +422,21 @@ body > div > div > blockquote {
 // Shots from iine!
 #iine {
   ol {
+    @extend .column-container;
+
     padding-left: 0;
     list-style-type: none;
   }
 
   li {
+    @extend .column-3;
+
     margin-top: 32px;
   }
 
   @media screen and (min-width: $safe-for-content) {
-    margin: 0 (- $gap);
-
-    ol {
-      @include clearfix;
-    }
-
     li {
       margin-top: 0;
-      display: block;
-    }
-
-    h2,
-    p {
-      margin-right: $gap;
-      margin-left: $gap;
     }
 
     img {
@@ -451,8 +446,6 @@ body > div > div > blockquote {
 }
 
 #iine figure {
-  @extend .column-3;
-
   position: relative;
   line-height: 1;
 
