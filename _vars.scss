@@ -27,8 +27,8 @@ $font-size: 16px;
 $icon-size: 40px;
 
 // Layout
-$column: 56px;
-$gap:    16px;
+$column: 3.5em;
+$gap:    1em;
 
 $column-span1:  (($column + $gap * 2) *  1 - $gap * 2);
 $column-span2:  (($column + $gap * 2) *  2 - $gap * 2);

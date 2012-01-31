@@ -31,6 +31,19 @@ body.debug {
 // Posts (inherit Column)
 #posts {
   @extend .column-container;
+
+  @media screen and (min-width: $safe-for-content) {
+    > h2 {
+      margin-right: ($gap / 1.875);
+      margin-left: ($gap / 1.875);
+    }
+  }
+
+  @media screen and (min-width: $safe-for-full) {
+    > h2 {
+      margin-left: ((- $suppli-width - $gap) / 1.875);
+    }
+  }
 }
 
 #posts > section {
@@ -139,7 +152,6 @@ body.debug {
 
 // Paging
 .paging {
-
   ul {
     margin: 6em auto 2em auto;
     padding-left: 0;
@@ -248,15 +260,16 @@ body > div > div > blockquote {
 // Google AdSense
 .adsense {
   margin: 6em 0 2em 0;
-  padding: 0.5em (($content-width - 728px) * 0.5);
+  padding: 0.5em 0;
   border: 1px solid rgb(207, 204, 198);
   clear: both;
   line-height: 1;
   overflow: hidden;
   background-color: rgb(243, 240, 234);
+  text-align: center;
 
   &::before {
-    margin-bottom: 4px;
+    margin: 0 8px 4px 8px;
     padding: 0 4px 8px 4px;
     border-bottom: 2px groove rgb(255, 252, 246);
     display: block;
@@ -267,7 +280,6 @@ body > div > div > blockquote {
     font-family: $stack-point;
     font-style: italic;
     font-size: 150%;
-    text-align: center;
     text-shadow: 0 -1px 0 rgb(159, 156, 150)
   }
 }

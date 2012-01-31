@@ -38,6 +38,10 @@
   li {
     padding: 0 ($gap * 0.5);
     display: table-cell;
+
+    mark {
+      border-bottom: 3px double $fg;
+    }
   }
 
   @media screen and (min-width: $safe-for-full) {
@@ -47,27 +51,29 @@
     text-align: left;
 
     h1 {
-      margin: (6em / 2.25) auto;
-      padding: 0 $gap;
-      max-width: ($safe-for-full - $gap * 2);
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0 ($gap / 2.25);
+      max-width: (($safe-for-full - $gap * 2) / 2.25);
     }
 
     nav {
       margin: 0 auto;
-      padding-left: ($suppli-width + $gap * 3);
-      padding-right: $gap;
+      padding-left: (($suppli-width + $gap * 3) / 0.875);
+      padding-right: ($gap / 0.875);
       position: relative;
-      max-width: $content-width;
+      max-width: ($content-width / 0.875);
     }
 
     ul {
-      margin-top: ((- 6em - 2.25em) / 0.875 + (2.25em - 0.875em) * 0.5); 
+      margin-top: 0;
       position: absolute;
+      top: ((- 2.25em) / 0.875 + (2.25em - 0.875em) * 0.5); 
       right: $gap;
     }
 
     li {
-      padding: 0 0 0 $gap;
+      padding: 0 0 0 ($gap / 0.875);
     }
   }
 }
@@ -95,7 +101,7 @@ aside {
     position: relative;
 
     h2 {
-      margin-left: (- $suppli-width - $gap * 2);
+      margin-left: ((- $suppli-width - $gap * 2) / 1.875);
     }
   }
 }
