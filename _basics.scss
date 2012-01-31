@@ -208,7 +208,7 @@ aside {
 h1 {
   @extend %heading;
 
-  margin: (6em / 2.25) 0;
+  margin: (6em / 2.25) 0 (3em / 2.25) 0;
   font-weight: normal;
   font-size: 225%; // 36px
 }
@@ -216,7 +216,7 @@ h1 {
 h2 {
   @extend %heading;
 
-  margin: (9em / 1.875) 0 2em 0;
+  margin: (9em / 1.875) 0 (3em / 1.875) 0;
   font-weight: normal;
   font-size: 187.5%; // 30px
 }
@@ -224,21 +224,21 @@ h2 {
 h3 {
   @extend %heading;
 
-  margin: (4em / 1.5) 0 2em 0;
+  margin: (4em / 1.5) 0 (2em / 1.5) 0;
   font-size: 150%; // 24px
 }
 
 h4 {
   @extend %heading;
 
-  margin: (4em / 1.25) 0 2em 0;
+  margin: (4em / 1.25) 0 (2em / 1.25) 0;
   font-size: 125%; // 20px
 }
 
 h5 {
   @extend %heading;
 
-  margin: (4em / 1.125) 0 2em 0;
+  margin: (4em / 1.125) 0 (2em / 1.125) 0;
   font-size: 112.5%; // 18px
 }
 
