@@ -2,7 +2,11 @@
 @import "scss-partials/grid-overlay";
 
 body.debug {
-  @include grid-overlay($column, ($gap * 2));
+  @include grid-overlay(($gap * 2), $column);
+
+  @media screen and (min-width: $safe-for-full) {
+    @include grid-overlay($column, ($gap * 2));
+  }
 }
 
 // News (inherit Minimal List)
