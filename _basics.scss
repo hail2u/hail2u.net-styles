@@ -310,7 +310,8 @@ blockquote {
     height: 100%;
     line-height: 1;
     content: "\201c"; // Left dquote
-    color: $lightest;
+    color: mixxd($fg, $bg, 0.92);
+    color: transparentize($fg, 0.92);
     font-family: "Trebuchet MS", sans-serif;
     font-weight: bold;
     font-size: 450%; // 72px
