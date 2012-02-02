@@ -59,21 +59,22 @@
 
     nav {
       margin: 0 auto;
-      padding-left: (($suppli-width + $gap * 3) / 0.875);
-      padding-right: ($gap / 0.875);
+      padding-left: ($suppli-width + $gap * 3);
+      padding-right: $gap;
       position: relative;
-      max-width: ($content-width / 0.875);
+      max-width: $content-width;
+      font-size: 100%; // 16px
     }
 
     ul {
       margin-top: 0;
       position: absolute;
-      top: ((- 2.25em) / 0.875 + (2.25em - 0.875em) * 0.5); 
+      top: (- 2.25em + (2.25em - 1em) * 0.5);
       right: $gap;
     }
 
     li {
-      padding: 0 0 0 ($gap / 0.875);
+      padding: 0 0 0 $gap;
     }
   }
 }
