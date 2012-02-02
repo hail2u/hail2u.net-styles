@@ -231,6 +231,13 @@ figcaption {
 a {
   color: $link;
   text-decoration: none;
+
+  section p &,
+  nav p &,
+  article p &,
+  aside p & {
+    text-decoration: underline;
+  }
 }
 
 em {

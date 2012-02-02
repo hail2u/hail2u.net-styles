@@ -45,24 +45,11 @@
   }
 
   @media screen and (min-width: $safe-for-full) {
-    padding: 0;
-    width: 100%;
-    max-width: none;
+    max-width: $column-span12;
     text-align: left;
 
-    h1 {
-      margin-right: auto;
-      margin-left: auto;
-      padding: 0 ($gap / 2.25);
-      max-width: (($safe-for-full - $gap * 2) / 2.25);
-    }
-
     nav {
-      margin: 0 auto;
-      padding-left: ($suppli-width + $gap * 3);
-      padding-right: $gap;
       position: relative;
-      max-width: $content-width;
       font-size: 100%; // 16px
     }
 
@@ -70,7 +57,7 @@
       margin-top: 0;
       position: absolute;
       top: (- 2.25em + (2.25em - 1em) * 0.5);
-      right: $gap;
+      right: 0;
     }
 
     li {
@@ -85,54 +72,45 @@
   padding: 0 $gap;
   max-width: $content-width;
 
-  @media screen and (min-width: $safe-for-full) {
-    padding-left: ($suppli-width + $gap * 3);
-  }
-}
+  section,
+  article {
+    h2 + footer {
+      margin-top: -2em;
+      color: mixxd($fg, $bg, 0.6);
+      color: transparentize($fg, 0.6);
+      font-family: $stack-point;
 
-section,
-nav,
-article,
-aside {
-  p a {
-    text-decoration: underline;
-  }
+      br {
+        display: none;
+      }
 
-  @media screen and (min-width: $safe-for-full) {
-    position: relative;
-
-    h2 {
-      margin-left: ((- $suppli-width - $gap * 2) / 1.875);
+      time {
+        color: $fg;
+      }
     }
   }
-}
-
-h2 + footer {
-  margin-top: -2em;
-  color: mixxd($fg, $bg, 0.6);
-  color: transparentize($fg, 0.6);
-  font-family: $stack-point;
-
-  br {
-    display: none;
-  }
-
-  time {
-    color: $fg;
-  }
-
-  a {
-    text-decoration: none;
-  }
 
   @media screen and (min-width: $safe-for-full) {
-    margin-right: ($gap * 2);
-    position: absolute;
-    right: 100%;
-    width: $suppli-width;
+    padding-left: ($suppli-width + $gap * 3);
 
-    br {
-      display: inline;
+    section,
+    article {
+      position: relative;
+
+      h2 {
+        margin-left: ((- $suppli-width - $gap * 2) / 1.875);
+      }
+
+      h2 + footer {
+        margin-right: ($gap * 2);
+        position: absolute;
+        right: 100%;
+        width: $suppli-width;
+
+        br {
+          display: inline;
+        }
+      }
     }
   }
 }
