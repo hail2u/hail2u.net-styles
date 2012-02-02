@@ -43,46 +43,52 @@ aside {
 
 h1 {
   @extend %heading;
+  $ratio: 2.25;
 
-  margin: (6em / 2.25) 0 (3em / 2.25) 0;
+  margin: (6em / $ratio) 0 (3em / $ratio) 0;
   font-weight: normal;
-  font-size: 225%; // 36px
+  font-size: percentage($ratio); // 36px
 }
 
 h2 {
   @extend %heading;
+  $ratio: 1.875;
 
-  margin: (9em / 1.875) 0 (3em / 1.875) 0;
+  margin: (9em / $ratio) 0 (3em / $ratio) 0;
   font-weight: normal;
-  font-size: 187.5%; // 30px
+  font-size: percentage($ratio); // 30px
 }
 
 h3 {
   @extend %heading;
+  $ratio: 1.5;
 
-  margin: (4em / 1.5) 0 (2em / 1.5) 0;
-  font-size: 150%; // 24px
+  margin: (4em / $ratio) 0 (2em / $ratio) 0;
+  font-size: percentage($ratio); // 24px
 }
 
 h4 {
   @extend %heading;
+  $ratio: 1.25;
 
-  margin: (4em / 1.25) 0 (2em / 1.25) 0;
-  font-size: 125%; // 20px
+  margin: (4em / $ratio) 0 (2em / $ratio) 0;
+  font-size: percentage($ratio); // 20px
 }
 
 h5 {
   @extend %heading;
+  $ratio: 1.125;
 
-  margin: (4em / 1.125) 0 (2em / 1.125) 0;
-  font-size: 112.5%; // 18px
+  margin: (4em / $ratio) 0 (2em / $ratio) 0;
+  font-size: percentage($ratio); // 18px
 }
 
 h6 {
   @extend %heading;
+  $ratio: 1;
 
-  margin: 4em 0 2em 0;
-  font-size: 100%; // 16px
+  margin: (4em / $ratio) 0 (2em / $ratio) 0;
+  font-size: percentage($ratio); // 16px
 }
 
 // Grouping content
@@ -93,6 +99,7 @@ p {
 hr {
   @extend %default-margin;
   $h: 4.5em;
+  $ratio: 8;
 
   border: none;
   position: relative;
@@ -106,21 +113,22 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    height: ($h / 8);
-    line-height: ($h / 8);
+    height: ($h / $ratio);
+    line-height: ($h / $ratio);
     content: "\223c\2219\223c"; // tilda op + bullet op + tilda op
     color: mixxd($fg, $bg, 0.92);
     color: transparentize($fg, 0.92);
     font-family: $stack-point;
-    font-size: 800%; // 128px
+    font-size: percentage($ratio); // 128px
     text-align: center;
   }
 }
 
 pre {
   @extend %default-margin;
+  $ratio: 0.875;
 
-  padding: 1.5em;
+  padding: (1.25em / $ratio);
   clear: both;
   line-height: 1.25;
   page-break-inside: avoid;
@@ -128,22 +136,24 @@ pre {
   background-color: mixxd($fg, $bg, 0.98);
   background-color: transparentize($fg, 0.98);
   font-family: $stack-code;
-  font-size: 87.5%; // 14px
+  font-size: percentage($ratio); // 14px
 
   @media screen and (min-width: $safe-for-full) {
-    margin-left: ((- $suppli-width - $gap * 2) / 0.875);
+    margin-left: ((- $suppli-width - $gap * 2) / $ratio);
   }
 }
 
 blockquote {
+  $ratio: 4.5;
+
   margin: 0 0 0 4em;
   position: relative;
   clear: both;
-  min-height: 4.5em;
+  min-height: (1em * $ratio);
   page-break-inside: avoid;
 
   &::before {
-    margin-right: (1em / 4.5);
+    margin-right: (1em / $ratio);
     display: block;
     position: absolute;
     top: 0;
@@ -155,14 +165,14 @@ blockquote {
     color: transparentize($fg, 0.92);
     font-family: "Trebuchet MS", sans-serif;
     font-weight: bold;
-    font-size: 450%; // 72px
+    font-size: percentage($ratio); // 72px
   }
 
   @media screen and (min-width: $safe-for-full) {
     margin-left: 0;
 
     &::before {
-      margin-right: ($gap * 2 / 4.5);
+      margin-right: ($gap * 2 / $ratio);
     }
   }
 }
