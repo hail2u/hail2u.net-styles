@@ -47,10 +47,6 @@
     padding: ($gap * 0.4);
     background-color: white;
   }
-
-  a:hover img {
-    border-color: $light;
-  }
 }
 
 // Highlight Something
@@ -375,10 +371,6 @@ figcaption {
 a {
   color: $link;
   text-decoration: none;
-
-  &:hover {
-    color: $hover;
-  }
 }
 
 em {

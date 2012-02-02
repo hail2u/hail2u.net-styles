@@ -178,8 +178,7 @@ body.debug {
     opacity: 0.1;
 
     &:hover {
-      background-color: $light;
-      opacity: 1;
+      opacity: 0.3;
     }
 
     &::before {
@@ -383,8 +382,6 @@ body > div > div > blockquote {
     }
 
     figcaption {
-      @include transition-duration(0.3s);
-
       padding: 0 1em;
       box-sizing: border-box;
       right: 0;
@@ -405,9 +402,7 @@ body > div > div > blockquote {
     }
 
     &:hover figcaption {
-      @include transition-duration(0.3s);
-
-      line-height: 0;
+      opacity: 0.2;
       cursor: pointer;
     }
   }

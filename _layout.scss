@@ -181,12 +181,10 @@ h2 + footer {
       background-repeat: no-repeat;
       text-decoration: none;
       background-color: $fg;
-      opacity: 0.1;
+      opacity: 0.2;
 
       &:hover {
-        border-color: $light;
-        background-color: $light;
-        opacity: 1;
+        opacity: 0.8;
       }
 
       &::before {
@@ -199,59 +197,38 @@ h2 + footer {
       $adjuster: (($icon-size - 32px) * 0.5); 
 
       &[href^="http://feeds.feedburner.com/hail2u"] {
+        background-color: $cc-feed;
         background-position: center $adjuster;
-
-        &:hover {
-          background-color: $cc-feed;
-        }
       }
 
       &[href="http://www.facebook.com/hail2u"] {
+        background-color: $cc-facebook;
         background-position: center (- 32px * 10 + $adjuster);
-
-        &:hover {
-          background-color: $cc-facebook;
-        }
       }
 
       &[href="https://twitter.com/hell2u"] {
+        background-color: $cc-twitter;
         background-position: center (- 32px * 3 + $adjuster);
-
-        &:hover {
-          background-color: $cc-twitter;
-        }
       }
 
       &[href="https://github.com/hail2u"] {
+        background-color: $cc-github;
         background-position: center (- 32px * 5 + $adjuster);
-
-        &:hover {
-          background-color: $cc-github;
-        }
       }
 
       &[href="http://pinterest.com/hail2u/"] {
+        background-color: $cc-pinterest;
         background-position: center (- 32px * 13 + $adjuster);
-
-        &:hover {
-          background-color: $cc-pinterest;
-        }
       }
 
       &[href="http://www.last.fm/user/hail2u"] {
+        background-color: $cc-lastfm;
         background-position: center (- 32px * 7 + $adjuster);
-
-        &:hover {
-          background-color: $cc-lastfm;
-        }
       }
 
       &[href="http://www.delicious.com/hail2u"] {
+        background-color: $cc-delicious;
         background-position: center (- 32px * 8 + $adjuster);
-
-        &:hover {
-          background-color: $cc-delicious;
-        }
       }
     }
   }
