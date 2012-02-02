@@ -22,6 +22,7 @@ $version: "6.15";
 @import "scss-partials/corporate-colors";
 
 // Styles
+@import "class";
 @import "basics";
 @import "layout";
 @import "widget";

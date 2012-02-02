@@ -1,0 +1,153 @@
+// Color
+.color-base {
+  color: $base;
+}
+
+.color-darkest {
+  color: $darkest;
+}
+
+.color-dark {
+  color: $dark;
+}
+
+.color-light {
+  color: $light;
+}
+
+.color-lightest {
+  color: $lightest;
+}
+
+.color-foreground {
+  color: $fg;
+}
+
+.color-background {
+  color: $bg;
+}
+
+// Margin
+%default-margin {
+  margin: 2em 0;
+}
+
+// Heading
+%heading {
+  line-height: 1.25;
+  font-family: $stack-heading;
+  page-break-after: avoid;
+}
+
+// Image Container
+.image {
+  img {
+    border: 1px solid mixxd($fg, white, 0.9);
+    border: 1px solid transparentize($fg, 0.9);
+    padding: ($gap * 0.4);
+    background-color: white;
+  }
+}
+
+// Highlight Something
+.highlight {
+  background-color: mixxd($mark, $bg, 0.25);
+  background-color: transparentize($mark, 0.25);
+}
+
+// Minimal List
+.minimal {
+  padding-left: 0;
+
+  li {
+    display: inline;
+  }
+}
+
+// Flat Description List
+.flat {
+  @include clearfix;
+
+  dt {
+    clear: both;
+  }
+
+  dd {
+    margin: 0 1em 0 0;
+    float: left;
+  }
+
+  @media screen and (min-width: $safe-for-content) {
+    dt {
+      float: left;
+      clear: left;
+
+      &::after {
+        content: "\003a"; // colon
+      }
+    }
+
+    dd {
+      margin: 0 0 0 1em;
+    }
+  }
+}
+
+// Column
+.column-container {
+  @media screen and (min-width: $safe-for-content) {
+    margin: 0 (- $gap);
+
+    > * {
+      margin-right: $gap;
+      margin-left: $gap;
+    }
+  }
+}
+
+@for $i from 1 through 12 {
+  .column-#{$i} {
+    @media screen and (min-width: $safe-for-content) {
+      margin: $gap;
+      float: left;
+      width: (($column + $gap * 2) * $i - $gap * 2);
+    }
+  }
+}
+
+// Elegant Button
+.elegant-btn {
+  padding: 0 1em;
+  border: 1px solid $base;
+  border-radius: 0.75em/1em;
+  box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.3);
+  box-shadow: inset 0 1px 0 0 transparentize(white, 0.3);
+  display: inline-block;
+  height: 2em;
+  line-height: 2;
+  color: $bg;
+  background-color: $light;
+  background-image: $button-overlay-normal;
+  font-family: $stack-point;
+  font-style: italic;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 mixxd(black, $light, 0.5);
+  text-shadow: 0 -1px 0 transparentize(black, 0.5);
+
+  &:hover {
+    border-color: $dark;
+    box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.3), 0 0 0.25em 0 $light;
+    box-shadow: inset 0 1px 0 0 transparentize(white, 0.3), 0 0 0.25em 0 $light;
+    color: $bg;
+    background-color: darken($light, 5%);
+    cursor: pointer;
+  }
+
+  &:active {
+    box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.7), 0 0 0.25em 0 $light;
+    box-shadow: inset 0 1px 0 0 transparentize(white, 0.7), 0 0 0.25em 0 $light;
+    line-height: 2.125;
+    background-color: darken($light, 5%);
+    background-image: $button-overlay-active;
+  }
+}
