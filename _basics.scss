@@ -326,6 +326,7 @@ ul,
 ol {
   @extend %default-margin;
 
+  padding-left: 2.5em; // 40px
   clear: both;
 
   ul,
@@ -338,7 +339,7 @@ ol {
 
     ul,
     ol {
-      padding-left: 40px; // revert default size
+      padding-left: 2.5em; // revert default size
     }
   }
 }
@@ -350,6 +351,10 @@ dl {
 
   dt {
     font-weight: bold;
+  }
+
+  dd {
+    margin-left: 2.5em; // 40px
   }
 
   dl {
