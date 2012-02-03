@@ -99,6 +99,11 @@ p {
     margin-top: -2em;
     text-indent: 2em;
   }
+
+  &.image + p {
+    margin-top: 2em;
+    text-indent: 0;
+  }
 }
 
 hr {
