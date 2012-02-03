@@ -94,6 +94,11 @@ h6 {
 // Grouping content
 p {
   @extend %default-margin;
+
+  + p {
+    margin-top: -2em;
+    text-indent: 2em;
+  }
 }
 
 hr {
