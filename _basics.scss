@@ -148,6 +148,13 @@ pre {
   font-family: $stack-code;
   font-size: percentage($ratio); // 14px
 
+  code,
+  var,
+  samp,
+  kbd {
+    font-size: 100%;
+  }
+
   @media screen and (min-width: $safe-for-full) {
     margin-left: ((- $suppli-width - $gap * 2) / $ratio);
   }
@@ -280,7 +287,10 @@ code,
 var,
 samp,
 kbd {
+  $ratio: 0.875;
+
   font-family: $stack-code;
+  font-size: percentage($ratio); // 14px
 }
 
 mark {
