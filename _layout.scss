@@ -38,15 +38,17 @@
       }
 
       &::before {
+        @include transform(rotate(30deg));
+
         background-color: $lightest;
         z-index: -1;
-        -webkit-transform: rotate(30deg);
       }
 
       &::after {
+        @include transform(rotate(-30deg));
+
         background-color: $base;
         z-index: -2;
-        -webkit-transform: rotate(-30deg);
       }
     }
   }
