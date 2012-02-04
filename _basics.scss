@@ -155,9 +155,9 @@ pre {
     font-size: 100%;
   }
 
-  @media screen and (min-width: $safe-for-full) {
-    margin-left: ((- $suppli-width - $gap * 2) / $ratio);
-  }
+  // @media screen and (min-width: $safe-for-full) {
+  //   margin-left: ((- $suppli-width - $gap * 2) / $ratio);
+  // }
 }
 
 blockquote {
