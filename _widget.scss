@@ -38,14 +38,10 @@ body.debug {
 
   @media screen and (min-width: $safe-for-content) {
     > h2 {
-      margin-right: ($gap / 1.875);
-      margin-left: ($gap / 1.875);
-    }
-  }
+      $ratio: 1.875;
 
-  @media screen and (min-width: $safe-for-full) {
-    > h2 {
-      margin-left: ((- $suppli-width - $gap) / 1.875);
+      margin-right: ($gap / $ratio);
+      margin-left: ($gap / $ratio);
     }
   }
 }
