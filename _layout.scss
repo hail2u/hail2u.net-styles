@@ -8,7 +8,7 @@
   h1 {
     $ratio: 1.6875;
 
-    margin: ($column-span1 / $ratio) 0;
+    margin: ($column-span1 / $ratio) 0 0 0;
     line-height: 1;
     font-family: $stack-logo;
     font-style: italic;
@@ -56,13 +56,11 @@
   nav {
     line-height: 1;
     font-family: $stack-nav;
-    font-size: 87.5%; // 14px
     text-transform: uppercase;
   }
 
   ul {
-    margin-right: auto;
-    margin-left: auto;
+    margin: $column-span1 auto 0 auto;
     padding-left: 0;
     display: table;
   }
@@ -81,10 +79,6 @@
   @media screen and (min-width: $safe-for-full) {
     max-width: $column-span12;
     text-align: left;
-
-    h1 {
-      margin-bottom: 0;
-    }
 
     nav {
       position: relative;
@@ -113,10 +107,13 @@
   section,
   article {
     h2 + footer {
-      margin-top: -2em;
       color: mixxd($fg, $bg, 0.6);
       color: transparentize($fg, 0.6);
       font-family: $stack-point;
+
+      p {
+        margin-top: 0;
+      }
 
       br {
         display: none;

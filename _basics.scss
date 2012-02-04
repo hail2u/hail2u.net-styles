@@ -45,7 +45,7 @@ h1 {
   @extend %heading;
   $ratio: 2.25;
 
-  margin: (6em / $ratio) 0 (3em / $ratio) 0;
+  margin: (6em / $ratio) 0 0 0;
   font-weight: normal;
   font-size: percentage($ratio); // 36px
 }
@@ -54,7 +54,7 @@ h2 {
   @extend %heading;
   $ratio: 1.875;
 
-  margin: (9em / $ratio) 0 (3em / $ratio) 0;
+  margin: (9em / $ratio) 0 0 0;
   font-weight: normal;
   font-size: percentage($ratio); // 30px
 }
@@ -63,7 +63,7 @@ h3 {
   @extend %heading;
   $ratio: 1.5;
 
-  margin: (4em / $ratio) 0 (2em / $ratio) 0;
+  margin: (4em / $ratio) 0 0 0;
   font-size: percentage($ratio); // 24px
 }
 
@@ -71,7 +71,7 @@ h4 {
   @extend %heading;
   $ratio: 1.25;
 
-  margin: (4em / $ratio) 0 (2em / $ratio) 0;
+  margin: (4em / $ratio) 0 0 0;
   font-size: percentage($ratio); // 20px
 }
 
@@ -79,7 +79,7 @@ h5 {
   @extend %heading;
   $ratio: 1.125;
 
-  margin: (4em / $ratio) 0 (2em / $ratio) 0;
+  margin: (4em / $ratio) 0 0 0;
   font-size: percentage($ratio); // 18px
 }
 
@@ -87,7 +87,7 @@ h6 {
   @extend %heading;
   $ratio: 1;
 
-  margin: (4em / $ratio) 0 (2em / $ratio) 0;
+  margin: (4em / $ratio) 0 0 0;
   font-size: percentage($ratio); // 16px
 }
 
@@ -96,13 +96,14 @@ p {
   @extend %default-margin;
 
   + p {
-    margin-top: -2em;
+    margin-top: 0;
     text-indent: 2em;
   }
 
   + p.image,
   &.image + p {
-    margin-top: 2em;
+    @extend %default-margin;
+
     text-indent: 0;
   }
 }

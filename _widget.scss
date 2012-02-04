@@ -57,7 +57,7 @@ body.debug {
   display: list-item;
 
   h3 {
-    margin: 0.375em 0; // 0.375 comes from (1.75 - 1) / 2
+    margin: 0.375em 0 0 0; // 0.375 comes from (1.75 - 1) / 2
     font-weight: normal;
     font-size: 100%;
   }
@@ -157,7 +157,7 @@ body.debug {
 // Paging
 .paging {
   ul {
-    margin: 6em auto 2em auto;
+    margin: 6em auto 0 auto;
     padding-left: 0;
     display: table;
   }
@@ -218,6 +218,7 @@ body.debug {
 .buttons {
   @include clearfix;
 
+  margin-top: 2em;
   line-height: 1;
 
   // very ugly...
@@ -263,7 +264,7 @@ body > div > div > blockquote {
 
 // Google AdSense
 .adsense {
-  margin: 6em 0 2em 0;
+  margin: 6em 0 0 0;
   padding: 0.5em 0;
   border: 1px solid rgb(207, 204, 198);
   clear: both;
@@ -364,7 +365,6 @@ body > div > div > blockquote {
 
   figcaption {
     margin-top: 0;
-    margin-bottom: 0;
     position: absolute;
     bottom: 0.25em;
     left: 0.5em;
