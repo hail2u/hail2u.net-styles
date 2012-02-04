@@ -140,6 +140,7 @@ pre {
   @extend %default-margin;
   $ratio: 0.875;
 
+  margin-top: (2em / $ratio);
   padding: (1.25em / $ratio);
   clear: both;
   line-height: 1.25;
