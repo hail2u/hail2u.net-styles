@@ -104,24 +104,21 @@
   padding: 0 $gap;
   max-width: $content-width;
 
-  section,
-  article {
-    h2 + footer {
-      color: mixxd($fg, $bg, 0.6);
-      color: transparentize($fg, 0.6);
-      font-family: $stack-point;
+  h2 + footer {
+    color: mixxd($fg, $bg, 0.6);
+    color: transparentize($fg, 0.6);
+    font-family: $stack-point;
 
-      p {
-        margin-top: 0;
-      }
+    p {
+      margin-top: 0;
+    }
 
-      br {
-        display: none;
-      }
+    br {
+      display: none;
+    }
 
-      time {
-        color: $fg;
-      }
+    time {
+      color: $fg;
     }
   }
 
@@ -129,22 +126,24 @@
     padding-left: ($suppli-width + $gap * 3);
 
     section,
-    article {
+    nav,
+    article,
+    aside {
       position: relative;
+    }
 
-      h2 {
-        margin-left: ((- $suppli-width - $gap * 2) / 1.875);
-      }
+    h2 {
+      margin-left: ((- $suppli-width - $gap * 2) / 1.875);
+    }
 
-      h2 + footer {
-        margin-right: ($gap * 2);
-        position: absolute;
-        right: 100%;
-        width: $suppli-width;
+    h2 + footer {
+      margin-right: ($gap * 2);
+      position: absolute;
+      right: 100%;
+      width: $suppli-width;
 
-        br {
-          display: inline;
-        }
+      br {
+        display: inline;
       }
     }
   }
