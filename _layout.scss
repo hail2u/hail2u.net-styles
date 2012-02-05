@@ -6,7 +6,7 @@
   text-align: center;
 
   h1 {
-    $ratio: 1.6875;
+    $ratio: 1.875;
 
     margin: ($column-span1 / $ratio) 0 0 0;
     line-height: 1;
@@ -51,18 +51,45 @@
         z-index: -2;
       }
     }
+
+    @media screen and (min-width: $safe-for-full) {
+      margin: 0 auto;
+      padding-right: (($content-width + $gap * 2) / $ratio);
+      position: relative;
+      max-width: ($suppli-width / $ratio);
+
+      a,
+      mark {
+        position: absolute;
+        top: ($column-span1 / $ratio);
+      }
+    }
   }
 
   nav {
     line-height: 1;
     font-family: $stack-nav;
     text-transform: uppercase;
+
+    @media screen and (min-width: $safe-for-full) {
+      margin: 0 auto;
+      padding-right: ($content-width + $gap * 2);
+      position: relative;
+      max-width: $suppli-width;
+    }
   }
 
   ul {
     margin: $column-span1 auto 0 auto;
     padding-left: 0;
     display: table;
+
+    @media screen and (min-width: $safe-for-full) {
+      margin: 0;
+      display: block;
+      position: absolute;
+      top: ($column-span1 + $column-span2 + $column-span1);
+    }
   }
 
   li {
@@ -74,27 +101,20 @@
       color: $fg;
       background-color: transparent;
     }
+
+    @media screen and (min-width: $safe-for-full) {
+      padding: ($gap * 0.5) 0;
+      display: block;
+    }
   }
 
   @media screen and (min-width: $safe-for-full) {
-    max-width: $column-span12;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    max-width: none;
     text-align: left;
-
-    nav {
-      position: relative;
-      font-size: 100%; // 16px
-    }
-
-    ul {
-      margin-top: 0;
-      position: absolute;
-      top: (- $column-span2 + ($column-span2 - 1em) * 0.5);
-      right: 0;
-    }
-
-    li {
-      padding: 0 0 0 $gap;
-    }
   }
 }
 
@@ -125,24 +145,30 @@
   @media screen and (min-width: $safe-for-full) {
     padding-left: ($suppli-width + $gap * 3);
 
-    section,
-    nav,
-    article,
-    aside {
-      position: relative;
+    h2 {
+      $ratio: 1.875;
+
+      margin-top: (($column-span1 + ($column-span2 - 1.25em * $ratio) * 0.5) / $ratio);
     }
 
-    h2 + footer {
-      margin-right: ($gap * 2);
-      position: absolute;
-      top: 0;
-      right: 100%;
-      width: $suppli-width;
+    // section,
+    // nav,
+    // article,
+    // aside {
+    //   position: relative;
+    // }
 
-      br {
-        display: inline;
-      }
-    }
+    // h2 + footer {
+    //   margin-right: ($gap * 2);
+    //   position: absolute;
+    //   top: 0;
+    //   right: 100%;
+    //   width: $suppli-width;
+
+    //   br {
+    //     display: inline;
+    //   }
+    // }
   }
 }
 
