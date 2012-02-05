@@ -43,6 +43,7 @@ $column-span12: (($column + $gap * 2) * 12 - $gap * 2);
 
 $content-width: $column-span9;
 $suppli-width:  $column-span3;
+$full-width:    $column-span12;
 
 // Responsive
 $safe-for-content: ($content-width + $gap * 2);
