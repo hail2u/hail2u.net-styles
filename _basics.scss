@@ -282,7 +282,9 @@ q::after {
 }
 
 abbr {
-  font-family: $stack-point;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  text-transform: lowercase;
   cursor: help;
 }
 
