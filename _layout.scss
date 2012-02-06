@@ -102,16 +102,18 @@
     color: transparentize($fg, 0.6);
     font-family: $stack-point;
 
-    p {
-      margin-top: 0;
-    }
-
     br {
       display: none;
     }
 
     time {
       color: $fg;
+    }
+  }
+
+  @media screen and (max-width: $safe-for-full) {
+    h2 + footer p {
+      margin-top: 0;
     }
   }
 
@@ -126,7 +128,6 @@
     }
 
     h2 + footer {
-      margin-top: 2em;
       margin-right: ($gap * 2);
       position: absolute;
       right: 100%;
