@@ -49,7 +49,7 @@ body.debug {
 #posts > section {
   @extend .column-3;
 
-  margin-left: 40px;
+  margin-left: 2.5em;
   display: list-item;
 
   h3 {
@@ -213,8 +213,8 @@ body.debug {
 // Social Buttons
 .buttons {
   @include clearfix;
+  @extend %default-margin;
 
-  margin-top: 2em;
   line-height: 1;
 
   // very ugly...
@@ -222,10 +222,6 @@ body.debug {
   > span {
     display: block !important;
     float: left !important;
-  }
-
-  [role="main"] > & {
-    margin-top: 4em;
   }
 }
 
@@ -335,9 +331,8 @@ body > div > div > blockquote {
   }
 
   li {
+    @extend %default-margin;
     @extend .column-3;
-
-    margin-top: 32px;
   }
 
   @media screen and (min-width: $safe-for-content) {

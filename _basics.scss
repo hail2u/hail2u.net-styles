@@ -140,10 +140,9 @@ hr {
 }
 
 pre {
-  @extend %default-margin;
   $ratio: 0.875;
 
-  margin-top: (2em / $ratio);
+  margin: (2em / $ratio) 0 0 0;
   padding: (1.25em / $ratio);
   clear: both;
   line-height: 1.25;
@@ -160,10 +159,6 @@ pre {
   kbd {
     font-size: 100%;
   }
-
-  // @media screen and (min-width: $safe-for-full) {
-  //   margin-left: ((- $suppli-width - $gap * 2) / $ratio);
-  // }
 }
 
 blockquote {
