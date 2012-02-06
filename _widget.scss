@@ -38,7 +38,7 @@ body.debug {
 
   @media screen and (min-width: $safe-for-content) {
     > h2 {
-      $ratio: 1.875;
+      $ratio: 1.5;
 
       margin-right: ($gap / $ratio);
       margin-left: ($gap / $ratio);
