@@ -6,7 +6,7 @@ html {
 // Sections
 body {
   border-top: 0.25em solid $lightest; // 4px
-  line-height: 1.75;
+  line-height: $line-height;
   color: $fg;
   background-color: $bg;
   background-image: url("../images/bg-body.png");
