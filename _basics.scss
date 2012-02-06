@@ -12,25 +12,28 @@ body {
   background-image: url("../images/bg-body.png");
   font-family: $stack-body;
 
-  // Decrease font size
-  $too-narrow: $safe-for-content * 0.875 * 0.875;
+  // Decrese font size
+  $ratio: 0.875;
+  $too-narrow: $safe-for-content * $ratio * $ratio;
 
   @media screen and (max-width: $too-narrow) {
-    font-size: 87.5%; // 14px
+    font-size: percentage($ratio);
   }
 
   // Increse font size
-  $wide-enough: $safe-for-full * 1.125 * 1.125;
+  $ratio: 1.125;
+  $wide-enough: $safe-for-full * $ratio * $ratio;
 
   @media screen and (min-width: $wide-enough) {
-    font-size: 112.5%; // 18px
+    font-size: percentage($ratio);
   }
 
   // Increse font size more
-  $wide-enough: $safe-for-full * 1.25 * 1.25;
+  $ratio: 1.3125;
+  $wide-enough: $safe-for-full * $ratio * $ratio;
 
   @media screen and (min-width: $wide-enough) {
-    font-size: 125%; // 20px
+    font-size: percentage($ratio);
   }
 }
 
@@ -43,52 +46,52 @@ aside {
 
 h1 {
   @extend %heading;
-  $ratio: 2.25;
+  $ratio: 2.25; // 36px
 
   margin: (6em / $ratio) 0 0 0;
   font-weight: normal;
-  font-size: percentage($ratio); // 36px
+  font-size: percentage($ratio);
 }
 
 h2 {
   @extend %heading;
-  $ratio: 1.875;
+  $ratio: 1.5; // 24px
 
   margin: (9em / $ratio) 0 0 0;
   font-weight: normal;
-  font-size: percentage($ratio); // 30px
+  font-size: percentage($ratio);
 }
 
 h3 {
   @extend %heading;
-  $ratio: 1.5;
+  $ratio: 1.3125; // 21px
 
   margin: (4em / $ratio) 0 0 0;
-  font-size: percentage($ratio); // 24px
+  font-size: percentage($ratio);
 }
 
 h4 {
   @extend %heading;
-  $ratio: 1.25;
+  $ratio: 1.125; // 18px
 
   margin: (4em / $ratio) 0 0 0;
-  font-size: percentage($ratio); // 20px
+  font-size: percentage($ratio);
 }
 
 h5 {
   @extend %heading;
-  $ratio: 1.125;
+  $ratio: 1; // 16px
 
   margin: (4em / $ratio) 0 0 0;
-  font-size: percentage($ratio); // 18px
+  font-size: percentage($ratio);
 }
 
 h6 {
   @extend %heading;
-  $ratio: 1;
+  $ratio: 1; // 16px
 
   margin: (4em / $ratio) 0 0 0;
-  font-size: percentage($ratio); // 16px
+  font-size: percentage($ratio);
 }
 
 // Grouping content
