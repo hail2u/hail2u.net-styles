@@ -34,7 +34,7 @@
 
 // Heading
 %heading {
-  line-height: 1.25;
+  line-height: $heading-line-height;
   font-family: $stack-heading;
   page-break-after: avoid;
 }
