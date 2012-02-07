@@ -114,7 +114,7 @@
 @for $i from 1 through 12 {
   .column-#{$i} {
     @media screen and (min-width: $safe-for-content) {
-      margin: $gap;
+      margin: 0 $gap;
       float: left;
       width: (($column + $gap * 2) * $i - $gap * 2);
     }

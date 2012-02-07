@@ -53,9 +53,11 @@ body.debug {
   display: list-item;
 
   h3 {
-    margin: 0.375em 0 0 0; // 0.375 comes from (1.75 - 1) / 2
+    margin-top: 0;
+    padding: ((1em * 1.75 - 1em) * 0.5) 0;
+    line-height: 1;
     font-weight: normal;
-    font-size: 100%;
+    font-size: 100%; // 16px
   }
 
   p {
@@ -71,21 +73,21 @@ body.debug {
     }
 
     h3 {
-      margin: 0;
-      padding-bottom: 0.5em;
-      line-height: 1;
+      margin-top: 2em;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
     }
 
     p {
-      margin: 0;
-      height: (0.75em * 1.75 * 6 / 0.75);
+      $ratio: 0.75;
+
+      margin-top: (1em / $ratio);
+      height: (1em * 0.75 * 1.75 * 6 / $ratio);
       display: block;
       overflow: hidden;
       color: $fg;
-      font-size: 75%; // 12px
+      font-size: percentage($ratio); // 12px
     }
   }
 }
