@@ -250,6 +250,10 @@ a {
   color: $link;
   text-decoration: none;
 
+  &:hover {
+    color: $hover;
+  }
+
   section p &,
   nav p &,
   article p &,
