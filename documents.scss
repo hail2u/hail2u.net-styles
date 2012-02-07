@@ -1,4 +1,4 @@
-$version: "3.10";
+$version: "3.11";
 
 /*!
  * document.css v#{$version}
@@ -6,16 +6,14 @@ $version: "3.10";
  * LICENSE: http://hail2u.mit-license.org/2011
  */
 
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic");
-
-$sans-serif: "Open Sans", "Helvetica Neue", "Arial", sans-serif;
 $monospace:  "Monaco", "Consolas", monospace;
 
 @import "scss-partials/clearfix";
 @import "scss-partials/natural";
 
 body {
-  max-width: (800px - $font-size * 2 * 2);
+  margin: ($font-size * 2) ($font-size * 4);
+  max-width: (800px - $font-size * 4 * 2);
 }
 
 .note {
@@ -47,16 +45,73 @@ body {
 .adsense {
   position: fixed;
   top: ($font-size * 2);
-  left: 100%;
+  right: 100%;
+}
+
+@media only screen and (min-width: 960px) {
+  .adsense {
+    right: ($font-size * 2);
+  }
 }
 
 @media only screen and (min-width: 1120px) {
   body {
     padding-left: 160px;
   }
+}
 
+@media print {
+  body {
+    color: black;
+    background-color: inherit;
+    font-family: "Georgia", serif;
+  }
+
+  p {
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  }
+
+  hr,
+  .note {
+    border-color: black;
+  }
+
+  pre {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-family: "Courier New", monospace;
+  }
+
+  blockquote {
+    font-style: italic;
+  }
+
+  a {
+    color: black;
+  }
+
+  strong,
+  ins {
+    border-color: black;
+  }
+
+  code,
+  var,
+  samp,
+  kbd {
+    font-family: "Courier New", monospace;
+  }
+
+  mark {
+    background: none;
+  }
+
+  .rdbWrapper,
+  .social,
   .adsense {
-    left: auto;
-    right: ($font-size * 2);
+    display: none;
   }
 }
