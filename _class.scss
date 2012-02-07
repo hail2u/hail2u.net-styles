@@ -47,6 +47,11 @@
     padding: ($gap * 0.5);
     background-color: white;
   }
+
+  a img {
+    border-color: mixxd($link, white, 0.8);
+    border-color: transparentize($link, 0.8);
+  }
 }
 
 // Highlight Something
