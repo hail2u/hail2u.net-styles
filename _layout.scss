@@ -198,7 +198,7 @@
         content: "\00a0"; // nbsp
       }
 
-      $adjuster: (($icon-size - 32px) * 0.5); 
+      $adjuster: (($icon-size - 32px) * 0.5);
 
       &[href^="http://feeds.feedburner.com/hail2u"] {
         background-position: center $adjuster;
