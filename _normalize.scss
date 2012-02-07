@@ -14,7 +14,6 @@ hr {
 
 @import "normalize.scss/links/fix-outline.scss";
 
-@import "normalize.scss/typography/h1.scss";
 @import "normalize.scss/typography/abbr.scss";
 @import "normalize.scss/typography/fix-bolder.scss";
 @import "normalize.scss/typography/blockquote.scss";
@@ -26,7 +25,7 @@ hr {
 @import "normalize.scss/typography/small.scss";
 @import "normalize.scss/typography/sub-and-sup.scss";
 
-@import "normalize.scss/lists/fix-indent.scss";
+@import "normalize.scss/lists/fix-margin-and-padding.scss";
 
 @import "normalize.scss/embed/img.scss";
 @import "normalize.scss/embed/svg.scss";
@@ -39,6 +38,7 @@ hr {
 @import "normalize.scss/forms/fix-font.scss";
 @import "normalize.scss/forms/fix-line-height.scss";
 @import "normalize.scss/forms/buttons.scss";
+@import "normalize.scss/forms/disabled.scss";
 @import "normalize.scss/forms/checkbox-and-radio.scss";
 @import "normalize.scss/forms/search.scss";
 @import "normalize.scss/forms/fix-focus-inner.scss";
