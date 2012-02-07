@@ -350,52 +350,31 @@ body > div > div > blockquote {
   position: relative;
   line-height: 1;
 
+  a {
+    color: inherit;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
   img {
     padding-bottom: 3em;
   }
 
   figcaption {
     margin-top: 0;
+    padding-left: ($gap * 0.5);
     position: absolute;
-    bottom: 0.25em;
-    left: 0.5em;
+    bottom: 1px;
+    left: 1px;
     line-height: 3;
     font-family: $stack-heading;
-    font-weight: normal;
-    white-space: nowrap;
   }
 
   @media screen and (min-width: $safe-for-content) {
-    overflow: hidden;
+    $ratio: 0.75;
 
-    img {
-      padding: 0;
-      border: 0;
-    }
-
-    figcaption {
-      padding: 0 1em;
-      box-sizing: border-box;
-      right: 0;
-      bottom: 0;
-      left: auto;
-      width: 100%;
-      overflow: hidden;
-      color: gray;
-      background-color: black;
-      font-size: 75%; // 12px
-      text-align: center;
-      white-space: nowrap;
-      opacity: 0.8;
-
-      a {
-        color: white;
-      }
-    }
-
-    &:hover figcaption {
-      opacity: 0.2;
-      cursor: pointer;
-    }
+    font-size: percentage($ratio); // 12px
   }
 }
