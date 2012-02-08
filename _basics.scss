@@ -55,7 +55,7 @@ h1 {
 
 h2 {
   @extend %heading;
-  $ratio: 1.5; // 24px
+  $ratio: 2.25; // 36px
 
   margin: (9em / $ratio) 0 0 0;
   font-weight: normal;
