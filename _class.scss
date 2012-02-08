@@ -102,11 +102,6 @@
   @media screen and (min-width: $safe-for-content) {
     margin-right: (- $gap);
     margin-left: (- $gap);
-
-    > * {
-      margin-right: $gap;
-      margin-left: $gap;
-    }
   }
 }
 

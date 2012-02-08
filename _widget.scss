@@ -35,15 +35,6 @@ body.debug {
 // Posts (inherit Column)
 #posts {
   @extend .column-container;
-
-  @media screen and (min-width: $safe-for-content) {
-    > h2 {
-      $ratio: 2.25;
-
-      margin-right: ($gap / $ratio);
-      margin-left: ($gap / $ratio);
-    }
-  }
 }
 
 #posts > section {
