@@ -330,6 +330,7 @@ body > div > div > blockquote {
   ol {
     @extend .column-container;
 
+    margin-top: 0;
     padding-left: 0;
     list-style-type: none;
   }
@@ -340,10 +341,6 @@ body > div > div > blockquote {
   }
 
   @media screen and (min-width: $safe-for-content) {
-    li {
-      margin-top: 0;
-    }
-
     img {
       vertical-align: text-bottom;
     }
