@@ -166,7 +166,7 @@ blockquote {
   margin: 0 0 0 2.5em;
   position: relative;
   clear: both;
-  min-height: (1em * $ratio);
+  min-height: em($ratio);
   page-break-inside: avoid;
 
   &::before {

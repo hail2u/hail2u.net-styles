@@ -45,7 +45,7 @@ body.debug {
 
   h3 {
     margin-top: 0;
-    padding: ((1em * 1.75 - 1em) * 0.5) 0;
+    padding: ((em(1.75) - 1em) * 0.5) 0;
     display: inline-block;
     line-height: 1;
     font-weight: normal;
@@ -76,7 +76,7 @@ body.debug {
       $ratio: 0.75;
 
       margin-top: (1em / $ratio);
-      height: (1em * 0.75 * 1.75 * 6 / $ratio);
+      height: (em($ratio) * 1.75 * 6 / $ratio);
       display: block;
       overflow: hidden;
       color: $fg;
