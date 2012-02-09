@@ -31,5 +31,7 @@
  * @param {number} $number The decimal number to convert to an em
  */
 @function em($number) {
-  @return "1em * $number";
+  $number: (1em * $number);
+
+  @return $number;
 }
