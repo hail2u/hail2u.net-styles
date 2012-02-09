@@ -102,6 +102,7 @@ p {
   }
 
   + p.image,
+  + p.seealso,
   &.image + p {
     @extend %default-margin;
 
