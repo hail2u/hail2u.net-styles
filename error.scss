@@ -1,4 +1,4 @@
-$version: "4.4";
+$version: "4.5";
 
 /*!
  * error.css v#{$version}
@@ -7,7 +7,7 @@ $version: "4.4";
  */
 
 // Web Fonts
-@import url("http://fonts.googleapis.com/css?family=Terminal+Dosis");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:700|Terminal+Dosis:400");
 
 // Variables
 @import "vars";
@@ -25,11 +25,12 @@ body {
   background-color: $bg;
   background-image: url("../images/bg-body.png");
   font-family: $stack-body;
+  text-transform: uppercase;
   text-align: center;
 }
 
 header {
-  margin: 0 0 $font-size 0;
+  margin: 0 0 1em 0;
   position: absolute;
   bottom: 50%;
   width: 100%;
@@ -37,40 +38,36 @@ header {
 
   h1 {
     margin: 0;
-    font-family: $stack-logo;
-    font-style: italic;
-    font-weight: normal;
     font-size: 225%; // 36px
   }
 }
 
 nav {
-  margin: $font-size 0 0 0;
+  margin: 1em 0 0 0;
   position: absolute;
   top: 50%;
   width: 100%;
   line-height: 1;
+  font-family: $stack-nav;
 
   ul {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    display: table;
     list-style: none;
-    font-family: $stack-nav;
-    font-size: 87.5%; // 14px
-    text-transform: uppercase;
 
     li {
-      margin: 0 ($font-size * 0.5);
-      display: inline-block;
+      padding: 0 0.5em;
+      display: table-cell;
     }
   }
 }
 
 a {
-  color: $base;
+  color: $link;
   text-decoration: none;
 
   &:hover {
-    color: $darkest;
+    color: $hover;
   }
 }
