@@ -163,7 +163,7 @@ pre {
 blockquote {
   $ratio: 4.5;
 
-  margin: 0 0 0 4em;
+  margin: 0 0 0 2.5em;
   position: relative;
   clear: both;
   min-height: (1em * $ratio);
@@ -198,7 +198,7 @@ ul,
 ol {
   @extend %default-margin;
 
-  padding-left: 2.5em; // 40px
+  padding: 0 0 0 2.5em; // 40px
   clear: both;
 
   ul,
