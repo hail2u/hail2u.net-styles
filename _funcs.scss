@@ -1,5 +1,5 @@
 /**
- * adjust-rgb() - Adjust RGB properties at once with fixed amount
+ * adjust-rgb() - Adjust RGB properties at once with fixed amount.
  *
  * @param {color}  $color
  * @param {number} $amount Adjust amount number between 0 and 1
@@ -12,7 +12,7 @@
 
 
 /**
- * mixxd() - Mix colors by decimal
+ * mixxd() - Mix colors by decimal.
  *
  * @param {color}   $color-1
  * @param {color}   $color-2
@@ -22,4 +22,14 @@
   $percentage: percentage(1 - $weight);
 
   @return mix($color-1, $color-2, $percentage);
+}
+
+
+/**
+ * em() - Convert unitless number to an em.
+ *
+ * @param {number} $number The decimal number to convert to an em
+ */
+@function em($number) {
+  @return "1em * $number";
 }
