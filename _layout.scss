@@ -8,8 +8,7 @@
   h1 {
     $ratio: 1.6875;
 
-    margin: ($column-span1 / $ratio) 0 0 0;
-    margin-top: ((9em - $column-span2 * 0.5 + 0.5em) / $ratio);
+    margin: ((9em - $column-span2 * 0.5 + 0.5em) / $ratio) 0 0 0;
     line-height: 1;
     font-family: $stack-logo;
     font-style: italic;

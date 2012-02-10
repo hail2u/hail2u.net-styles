@@ -65,7 +65,7 @@ body.debug {
     }
 
     h3 {
-      margin-top: 2em;
+      margin-top: $default-margin;
       display: block;
       overflow: hidden;
       white-space: nowrap;
@@ -75,7 +75,7 @@ body.debug {
     p {
       $ratio: 0.75;
 
-      margin-top: (1em / $ratio);
+      margin-top: ($default-margin * 0.5 / $ratio);
       height: (em($ratio) * 1.75 * 6 / $ratio);
       display: block;
       overflow: hidden;
@@ -207,8 +207,8 @@ body.debug {
 
 // Social Buttons
 .buttons {
-  @include clearfix;
   @extend %default-margin;
+  @include clearfix;
 
   line-height: 1;
 
@@ -332,6 +332,10 @@ body > div > div > blockquote {
   }
 
   @media screen and (min-width: $safe-for-content) {
+    li {
+      margin-bottom: ($gap * 2 - $default-margin);
+    }
+
     img {
       vertical-align: text-bottom;
     }

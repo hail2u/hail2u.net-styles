@@ -142,7 +142,7 @@ hr {
 pre {
   $ratio: 0.875;
 
-  margin: (2em / $ratio) 0 0 0;
+  margin: ($default-margin / $ratio) 0 0 0;
   padding: (1.25em / $ratio);
   clear: both;
   line-height: 1.25;
@@ -204,7 +204,7 @@ ol {
 
   ul,
   ol {
-    margin: 0;
+    margin-top: 0;
   }
 
   @media screen and (min-width: $safe-for-full) {
@@ -231,7 +231,7 @@ dl {
   }
 
   dl {
-    margin: 0;
+    margin-top: 0;
   }
 }
 

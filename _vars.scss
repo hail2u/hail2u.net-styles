@@ -22,6 +22,8 @@ $mark:     rgb(255, 238,   0);
 $line-height:         (16 / 9);
 $heading-line-height: 1.25;
 
+$default-margin: em(2 - ($line-height - 1));
+
 $icon-size: 40px;
 
 // Layout
