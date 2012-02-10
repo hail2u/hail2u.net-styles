@@ -343,8 +343,8 @@ body > div > div > blockquote {
 }
 
 #iine figure {
-  position: relative;
   line-height: 1;
+  display: inline-block;
 
   a {
     color: inherit;
@@ -359,18 +359,10 @@ body > div > div > blockquote {
   }
 
   figcaption {
-    margin-top: 0;
-    padding-left: ($gap * 0.5);
-    position: absolute;
-    bottom: 1px;
-    left: 1px;
+    margin-top: -3em;
     line-height: 3;
-    font-family: $stack-heading;
-  }
-
-  @media screen and (min-width: $safe-for-content) {
-    $ratio: 0.75;
-
-    font-size: percentage($ratio); // 12px
+    font-family: $stack-point;
+    font-style: italic;
+    text-align: center;
   }
 }
