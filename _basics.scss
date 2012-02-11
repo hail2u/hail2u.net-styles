@@ -301,6 +301,19 @@ kbd {
   font-size: percentage($ratio); // 14px
 }
 
+kbd {
+  margin: 0 0.25em;
+  padding: 0 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc;
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  color: #333;
+  background-color: #fff;
+}
+
 mark {
   background-color: $mark;
 }
