@@ -8,7 +8,7 @@
   h1 {
     $ratio: 1.6875;
 
-    margin: ((9em - $column-span2 * 0.5 + 0.5em) / $ratio) 0 0 0;
+    margin: (($default-margin * 6 - $column-span2 * 0.5 + 0.5em) / $ratio) 0 0 0;
     line-height: 1;
     font-family: $stack-logo;
     font-style: italic;
@@ -61,7 +61,7 @@
   }
 
   ul {
-    margin: 4em auto 0 auto;
+    margin: ($default-margin * 2) auto 0 auto;
     padding-left: 0;
     display: table;
   }
@@ -157,7 +157,7 @@
   font-style: italic;
 
   address {
-    margin: 6em auto 0 auto;
+    margin: ($default-margin * 3) auto 0 auto;
     padding: 1.5em $gap;
     max-width: $content-width;
     text-align: center;
