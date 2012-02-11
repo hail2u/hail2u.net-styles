@@ -11,7 +11,7 @@ body.debug {
 
 // News (inherit Minimal List)
 #news ul {
-  @extend .minimal;
+  @extend %minimal;
 
   li::after {
     content: " \2756";
@@ -24,7 +24,7 @@ body.debug {
 
 // Monthly Archives (inherit Flat Description List)
 #by-month dl {
-  @extend .flat;
+  @extend %flat;
 
   dd {
     color: mixxd($fg, $bg, 0.75);
@@ -34,11 +34,11 @@ body.debug {
 
 // Posts (inherit Column)
 #posts {
-  @extend .column-container;
+  @extend %column-container;
 }
 
 #posts > section {
-  @extend .column-3;
+  @extend %column-3;
 
   margin-left: 2.5em;
   display: list-item;
@@ -88,7 +88,7 @@ body.debug {
 // Seemore (inherit Elegant Button)
 .seemore {
   a {
-    @extend .elegant-btn;
+    @extend %elegant-btn;
 
     &::after {
       content: "\0020\00bb"; // space + raquo
@@ -131,7 +131,7 @@ body.debug {
   }
 
   input[type="submit"] {
-    @extend .elegant-btn;
+    @extend %elegant-btn;
 
     padding: 0;
     width: 78px;
@@ -319,7 +319,7 @@ body > div > div > blockquote {
 // Shots from iine!
 #iine {
   ol {
-    @extend .column-container;
+    @extend %column-container;
 
     margin-top: 0;
     padding-left: 0;
@@ -328,7 +328,7 @@ body > div > div > blockquote {
 
   li {
     @extend %default-margin;
-    @extend .column-3;
+    @extend %column-3;
   }
 
   @media screen and (min-width: $safe-for-content) {
