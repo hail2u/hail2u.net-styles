@@ -103,7 +103,8 @@ p {
 
   + p.image,
   + p.seealso,
-  &.image + p {
+  &.image + p,
+  &.seealso + p {
     @extend %default-margin;
 
     text-indent: 0;
