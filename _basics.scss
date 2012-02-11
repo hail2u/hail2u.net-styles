@@ -101,6 +101,7 @@ p {
     text-indent: 2em;
   }
 
+  blockquote & + p,
   + p.image,
   + p.seealso,
   &.image + p,
@@ -187,8 +188,17 @@ blockquote {
     font-size: percentage($ratio); // 72px
   }
 
+  + p,
+  + figcaption {
+    margin-left: 2.5em;
+  }
+
   @media screen and (min-width: $safe-for-full) {
     margin-left: 0;
+    
+    + p {
+      margin-left: 0;
+    }
 
     &::before {
       margin-right: ($gap * 2 / $ratio);
@@ -303,13 +313,14 @@ kbd {
 
 kbd {
   margin: 0 0.25em;
-  padding: 0 0.5em;
+  padding: 0.25em 0.5em;
   border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc;
   display: inline-block;
   position: relative;
   top: -2px;
+  line-height: 1;
   color: #333;
   background-color: #fff;
 }
