@@ -7,6 +7,10 @@ body.debug {
   @media screen and (min-width: $safe-for-full) {
     @include grid-overlay($column, ($gap * 2));
   }
+
+  // background-image: -webkit-linear-gradient(top, transparent 0, transparent 27px, #0ff 27px, #0ff 28px);
+  // background-size: 100% 28px;
+  // background-repeat: repeat-y;
 }
 
 // News (inherit Minimal List)
