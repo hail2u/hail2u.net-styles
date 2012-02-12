@@ -101,13 +101,12 @@ p {
     text-indent: 2em;
   }
 
-  blockquote & + p,
+  blockquote + & + p,
   + p.image,
   + p.seealso,
   &.image + p,
   &.seealso + p {
-    @extend %default-margin;
-
+    margin-top: $default-margin;
     text-indent: 0;
   }
 }
@@ -196,7 +195,8 @@ blockquote {
   @media screen and (min-width: $safe-for-full) {
     margin-left: 0;
     
-    + p {
+    + p,
+    + figcaption {
       margin-left: 0;
     }
 
