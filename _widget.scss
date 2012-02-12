@@ -2,10 +2,10 @@
 @import "scss-partials/grid-overlay";
 
 body.debug {
-  @include grid-overlay(($gap * 2), $column);
+  @include grid-overlay($gutter, $column);
 
   @media screen and (min-width: $safe-for-full) {
-    @include grid-overlay($column, ($gap * 2));
+    @include grid-overlay($column, $gutter);
   }
 
   // background-image: -webkit-linear-gradient(top, transparent 0, transparent 27px, #0ff 27px, #0ff 28px);
@@ -202,11 +202,11 @@ body.debug {
       margin-left: 0;
       position: absolute;
       top: (- $column-span1);
-      left: (- $suppli-width - $gap * 2);
+      left: (- $suppli-width - $gutter);
     }
 
     li {
-      padding: 0 ($gap * 2) 0 0;
+      padding: 0 $gutter 0 0;
     }
   }
 }
@@ -343,7 +343,7 @@ body > div > div > blockquote {
 
   @media screen and (min-width: $safe-for-content) {
     li {
-      margin-bottom: ($gap * 2 - $default-margin);
+      margin-bottom: ($gutter - $default-margin);
     }
 
     img {

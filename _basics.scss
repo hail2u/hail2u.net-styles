@@ -205,7 +205,7 @@ blockquote {
     }
 
     &::before {
-      margin-right: ($gap * 2 / $ratio);
+      margin-right: ($gutter / $ratio);
     }
   }
 }

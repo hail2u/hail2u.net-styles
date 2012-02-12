@@ -133,11 +133,11 @@
     h2 {
       $ratio: 2.25;
 
-      margin-left: (- ($column-span3 + $gap * 2) / $ratio);
+      margin-left: (- ($column-span3 + $gutter) / $ratio);
     }
 
     h2 + footer {
-      margin-right: ($gap * 2);
+      margin-right: $gutter;
       position: absolute;
       // top: 0;
       right: 100%;
@@ -275,12 +275,12 @@
   @media screen and (min-width: $safe-for-full) {
     address {
       padding: 3em $gap;
-      max-width: ($suppli-width + $gap * 2 + $content-width);
+      max-width: ($suppli-width + $gutter + $content-width);
       text-align: left;
     }
 
     section {
-      padding: 0 $gap 0 ($suppli-width + $gap * 3);
+      padding: 0 $gap 0 ($gap + $suppli-width + $gutter);
       position: relative;
       width: auto;
       max-width: $content-width;

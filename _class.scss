@@ -83,7 +83,7 @@
       margin-right: $gap;
       margin-left: $gap;
       float: left;
-      width: (($column + $gap * 2) * $i - $gap * 2);
+      width: (($column + $gutter) * $i - $gutter);
     }
   }
 }

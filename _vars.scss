@@ -29,6 +29,7 @@ $icon-size: 40px;
 // Layout
 $column: 3.5em;
 $gap:    1em;
+$gutter: ($gap * 2);
 
 $column-span1:  (($column + $gap * 2) *  1 - $gap * 2);
 $column-span2:  (($column + $gap * 2) *  2 - $gap * 2);
