@@ -287,11 +287,11 @@ cite {
 }
 
 q::before {
-  content: "\201c"; // Left dquote
+  content: "\300c"; // Left Corner Bracket
 }
 
 q::after {
-  content: "\201d"; // Right dquote
+  content: "\300d"; // Right Corner Bracket
 }
 
 abbr {
