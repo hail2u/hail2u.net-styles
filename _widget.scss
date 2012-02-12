@@ -1,4 +1,4 @@
-// Grid overlay
+// Grid Overlay
 @import "scss-partials/grid-overlay";
 
 body.debug {
@@ -95,7 +95,7 @@ body.debug {
     @extend %elegant-btn;
 
     &::after {
-      content: "\0020\00bb"; // space + raquo
+      content: "\0020\00bb"; // Space + Right Arrow Quote
     }
   }
 }
@@ -135,6 +135,7 @@ body.debug {
     height: 28px;
   }
 
+  // inherit Elegant Button
   input[type="submit"] {
     @extend %elegant-btn;
 
@@ -201,7 +202,7 @@ body.debug {
       margin-left: 0;
       position: absolute;
       top: (- $column-span1);
-      left: (- $column-span3 - $gap * 2);
+      left: (- $suppli-width - $gap * 2);
     }
 
     li {
