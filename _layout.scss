@@ -6,9 +6,9 @@
   text-align: center;
 
   h1 {
-    $ratio: 1.6875;
+    $ratio: 1.3125;
 
-    margin: (($default-margin * 6 - $column-span2 * 0.5 + 0.5em) / $ratio) 0 0 0;
+    margin: (($default-margin * 4 - ($column-span2 - $column-span1) * 0.5 + 0.5em) / $ratio) 0 0 0;
     line-height: 1;
     font-family: $stack-logo;
     font-style: italic;
@@ -19,9 +19,9 @@
     mark {
       display: inline-block;
       position: relative;
-      width: ($column-span2 / $ratio);
-      height: ($column-span2 / $ratio);
-      line-height: ($column-span2 / $ratio);
+      width: (($column-span2 - $column-span1) / $ratio);
+      height: (($column-span2 - $column-span1) / $ratio);
+      line-height: (($column-span2 - $column-span1) / $ratio);
       color: $bg;
       background-color: $darkest;
       text-align: center;
@@ -39,14 +39,14 @@
       }
 
       &::before {
-        @include transform(rotate(30deg));
+        @include transform(rotate(20deg));
 
         background-color: $lightest;
         z-index: -1;
       }
 
       &::after {
-        @include transform(rotate(-30deg));
+        @include transform(rotate(10deg));
 
         background-color: $base;
         z-index: -2;
@@ -82,7 +82,7 @@
     text-align: left;
 
     ul {
-      margin-top: (- $column-span2 * 0.5 - 0.5em);
+      margin-top: (- ($column-span2 - $column-span1) * 0.5 - 0.5em);
       margin-right: 0;
     }
 
@@ -119,6 +119,7 @@
   }
 
   @media screen and (min-width: $safe-for-full) {
+    margin-top: (- $default-margin * 2);
     padding-left: ($suppli-width + $gap * 3);
 
     section,
