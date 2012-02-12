@@ -163,10 +163,10 @@ body.debug {
   }
 
   a {
-    border-radius: #{($column * 0.5)}/#{($column * 0.5)};
+    border-radius: #{($column-span1 * 0.5)}/#{($column-span1 * 0.5)};
     display: block;
-    width: $column;
-    height: $column;
+    width: $column-span1;
+    height: $column-span1;
     overflow: hidden;
     color: $bg;
     background-color: $fg;
@@ -196,7 +196,11 @@ body.debug {
     ul {
       @include clearfix;
 
+      margin-top: 0;
       margin-left: 0;
+      position: absolute;
+      top: (- $column-span1);
+      left: (- $column-span3 - $gap * 2);
     }
 
     li {
