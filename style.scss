@@ -6,26 +6,26 @@ $version: "6.17.3";
  * LICENSE: http://hail2u.mit-license.org/2011
  */
 
-// Web Fonts
+// Web Font
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700|Crimson+Text:400,400italic|Terminal+Dosis:400");
 
-// Functions
+// Function
 @import "funcs";
 
-// Variables
+// Variable
 @import "vars";
 
-// Partials
+// Partial
 @import "normalize";
 @import "scss-partials/clearfix";
 @import "scss-partials/vendor-extension";
 @import "scss-partials/corporate-colors";
 
-// Styles
+// Style for screen
 @import "class";
 @import "basics";
 @import "layout";
 @import "widget";
 
-// Styles for print
+// Style for print
 @import "forprint";
