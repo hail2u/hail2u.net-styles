@@ -132,8 +132,8 @@ hr {
     height: ($h / $ratio);
     line-height: ($h / $ratio);
     content: "\223c\2219\223c"; // tilda op + bullet op + tilda op
-    color: mixxd($fg, $bg, 0.92);
-    color: transparentize($fg, 0.92);
+    color: mixxd($fg, $bg, 0.9);
+    color: transparentize($fg, 0.9);
     font-family: $stack-point;
     font-size: percentage($ratio); // 128px
     text-align: center;
@@ -180,8 +180,8 @@ blockquote {
     height: 100%;
     line-height: 1;
     content: "\201c"; // Left dquote
-    color: mixxd($fg, $bg, 0.92);
-    color: transparentize($fg, 0.92);
+    color: mixxd($fg, $bg, 0.9);
+    color: transparentize($fg, 0.9);
     font-family: "Trebuchet MS", sans-serif;
     font-weight: bold;
     font-size: percentage($ratio); // 72px
@@ -365,13 +365,13 @@ table {
 
   th, td {
     padding: 0.5em;
-    border: 1px solid mixxd($fg, $bg, 0.84);
+    border: 1px solid mixxd($fg, $bg, 0.8);
     vertical-align: top;
   }
 
   th {
-    background-color: mixxd($fg, $bg, 0.92);
-    background-color: transparentize($fg, 0.92);
+    background-color: mixxd($fg, $bg, 0.9);
+    background-color: transparentize($fg, 0.9);
     text-align: left;
   }
 
