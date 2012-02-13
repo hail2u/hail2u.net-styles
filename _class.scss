@@ -104,7 +104,8 @@
   font-family: $stack-point;
   // font-style: italic;
   text-decoration: none;
-  text-shadow: 0 -1px 0 $darkest;
+  text-shadow: 0 -1px 0 mixxd($darkest, $light, 0.5);
+  text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
 
   &:hover {
     border-color: $dark;
