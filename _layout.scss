@@ -7,7 +7,7 @@
   h1 {
     $ratio: 1.3125;
 
-    margin: (($default-margin * 4 - ($logo-width) * 0.5 + 0.5em) / $ratio) auto 0 auto;
+    margin: ($default-margin * 4 / $ratio) 0 0 0;
     line-height: 1;
     font-family: $stack-logo;
     font-style: italic;
@@ -16,7 +16,8 @@
 
     a,
     mark {
-      display: inline-block;
+      margin: 0 auto;
+      display: block;
       position: relative;
       width: ($logo-width / $ratio);
       height: ($logo-width / $ratio);
@@ -79,8 +80,8 @@
   @media screen and (min-width: $safe-for-full) {
     max-width: $full-width;
 
-    h1 {
-      margin-left: 0;
+    h1 a {
+      margin-left: 0.667em;
     }
 
     ul {
