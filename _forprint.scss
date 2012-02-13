@@ -78,6 +78,18 @@
     font-family: "Courier New", monospace;
   }
 
+  kbd {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    display: inline;
+    position: static;
+    line-height: $line-height;
+    color: inherit;
+    background-color: transparent;
+  }
+
   mark,
   .highlight {
     background: none;
