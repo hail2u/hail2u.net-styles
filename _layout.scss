@@ -25,6 +25,7 @@
       color: $bg;
       background-color: $darkest;
       text-align: center;
+      text-shadow: 0 -1px 0 $darkest;
       opacity: 0.5;
 
       &::before,
