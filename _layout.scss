@@ -130,17 +130,17 @@
       $ratio: 2.25;
 
       margin-left: (- ($column-span3 + $gutter) / $ratio);
-    }
 
-    h2 + footer {
-      margin-right: $gutter;
-      position: absolute;
-      // top: 0;
-      right: 100%;
-      width: $suppli-width;
+      + footer {
+        margin-right: $gutter;
+        position: absolute;
+        // top: 0;
+        right: 100%;
+        width: $suppli-width;
 
-      br {
-        display: inline;
+        br {
+          display: inline;
+        }
       }
     }
   }
