@@ -126,13 +126,6 @@
   @media screen and (min-width: $safe-for-full) {
     padding-left: ($gap + $suppli-width + $gutter);
 
-    section,
-    nav,
-    article,
-    aside {
-      position: relative;
-    }
-
     h2 {
       $ratio: 2.25;
 
@@ -284,7 +277,6 @@
 
     section {
       padding: 0 $gap 0 ($gap + $suppli-width + $gutter);
-      position: relative;
       width: auto;
       max-width: $content-width;
     }
