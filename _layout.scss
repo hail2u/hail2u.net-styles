@@ -81,7 +81,8 @@
   @media screen and (min-width: $safe-for-full) {
     max-width: $full-width;
 
-    h1 a {
+    h1 a,
+    h1 mark {
       margin-left: 0.667em;
     }
 
