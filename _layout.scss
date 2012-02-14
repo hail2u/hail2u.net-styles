@@ -124,7 +124,7 @@
   }
 
   @media screen and (min-width: $safe-for-full) {
-    padding-left: ($suppli-width + $gap * 3);
+    padding-left: ($gap + $suppli-width + $gutter);
 
     section,
     nav,
@@ -278,7 +278,7 @@
   @media screen and (min-width: $safe-for-full) {
     address {
       padding: 3em $gap;
-      max-width: ($suppli-width + $gutter + $content-width);
+      max-width: $full-width;
       text-align: left;
     }
 
