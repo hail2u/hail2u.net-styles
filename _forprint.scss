@@ -81,7 +81,6 @@
   }
 
   kbd {
-    margin: 0;
     padding: 0;
     border: none;
     box-shadow: none;
@@ -111,20 +110,23 @@
   [role="banner"] {
     text-align: left;
 
-    h1 a {
+    h1 {
       $ratio: 2.25;
 
-      display: inline;
-      width: auto;
-      height: auto;
-      line-height: 1;
-      color: inherit;
-      font-size: percentage($ratio);
-      opacity: 1;
+      margin-top: $default-margin;
 
-      &::before,
-      &::after {
-        display: none;
+      a {
+        display: inline;
+        height: auto;
+        line-height: 1;
+        color: inherit;
+        font-size: percentage($ratio);
+        opacity: 1;
+
+        &::before,
+        &::after {
+          display: none;
+        }
       }
     }
   }
