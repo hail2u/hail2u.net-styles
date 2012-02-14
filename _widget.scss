@@ -39,16 +39,21 @@ body.debug {
 // Posts (inherit Column)
 #posts {
   @extend %column-container;
-}
 
-#posts > section {
-  @extend %column-3;
+  > section {
+    @extend %column-3;
 
-  margin-left: 2.5em;
-  display: list-item;
+    margin-left: 2.5em;
+    display: list-item;
 
-  &:first-child {
-    margin-top: $default-margin;
+    &:first-child {
+      margin-top: $default-margin;
+
+    }
+
+    p {
+      display: none;
+    }
   }
 
   h3 {
@@ -60,20 +65,25 @@ body.debug {
     font-size: 100%; // 16px
   }
 
-  p {
-    display: none;
-  }
-
   @media screen and (min-width: $safe-for-content) {
-    margin-left: $gap;
-    display: block;
-
-    &:first-child {
-      margin-top: 0;
-    }
-
-    a {
+    > section {
+      margin-left: $gap;
       display: block;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      p {
+        $ratio: 0.75;
+
+        margin-top: ($default-margin * 0.5 / $ratio);
+        height: (em($ratio) * 1.75 * 6 / $ratio);
+        display: block;
+        overflow: hidden;
+        color: $fg;
+        font-size: percentage($ratio); // 12px
+      }
     }
 
     h3 {
@@ -83,79 +93,15 @@ body.debug {
       white-space: nowrap;
       text-overflow: ellipsis;
     }
-
-    p {
-      $ratio: 0.75;
-
-      margin-top: ($default-margin * 0.5 / $ratio);
-      height: (em($ratio) * 1.75 * 6 / $ratio);
-      display: block;
-      overflow: hidden;
-      color: $fg;
-      font-size: percentage($ratio); // 12px
-    }
   }
 }
 
 // Seemore (inherit Elegant Button)
-.seemore {
-  a {
-    @extend %elegant-btn;
+.seemore a {
+  @extend %elegant-btn;
 
-    &::after {
-      content: "\0020\00bb"; // Space + Right Arrow Quote
-    }
-  }
-}
-
-// Searchbox
-.searchbox {
-  form {
-    @extend %default-margin;
-  }
-
-  div {
-    padding: 6px;
-    border-radius: 6px;
-    display: inline-block;
-    line-height: 1;
-    background-color: mixxd($fg, $bg, 0.92);
-    background-color: transparentize($fg, 0.92);
-  }
-
-  input {
-    border: 0;
-    vertical-align: middle;
-    font-size: 16px;
-    box-sizing: content-box;
-
-    &:active,
-    &:focus {
-      outline: none;
-    }
-  }
-
-  input[type="text"] {
-    margin: 0 -8px 0 0;
-    padding: 2px 8px;
-    border-radius: 4px;
-    width: 188px;
-    height: 28px;
-  }
-
-  // inherit Elegant Button
-  input[type="submit"] {
-    @extend %elegant-btn;
-
-    padding: 0;
-    width: 78px;
-    height: 30px;
-    line-height: 30px;
-    overflow: hidden;
-
-    &:active {
-      line-height: 32px;
-    }
+  &::after {
+    content: "\0020\00bb"; // Space + Right Arrow Quote
   }
 }
 
@@ -324,12 +270,55 @@ body > div > div > blockquote {
   color: #999;
 }
 
+
 // Google Site Search
 #cse-search-box {
+  @extend %default-margin;
+
+  div {
+    padding: 6px;
+    border-radius: 6px;
+    display: inline-block;
+    line-height: 1;
+    background-color: mixxd($fg, $bg, 0.92);
+    background-color: transparentize($fg, 0.92);
+  }
+
+  input {
+    border: 0;
+    vertical-align: middle;
+    font-size: 16px;
+    box-sizing: content-box;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+
   input[type="text"] {
+    margin: 0 -8px 0 0;
     padding: 2px 8px !important;
     border-width: 0 !important;
+    border-radius: 4px;
+    width: 188px;
+    height: 28px;
     background-position: 8px 50% !important;
+  }
+
+  // inherit Elegant Button
+  input[type="submit"] {
+    @extend %elegant-btn;
+
+    padding: 0;
+    width: 78px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+
+    &:active {
+      line-height: 32px;
+    }
   }
 }
 
@@ -348,28 +337,14 @@ body > div > div > blockquote {
     @extend %column-3;
   }
 
-  @media screen and (min-width: $safe-for-content) {
-    li {
-      margin-bottom: ($gutter - $default-margin);
-    }
-
-    img {
-      vertical-align: text-bottom;
-    }
+  figure {
+    line-height: 1;
+    display: inline-block;
+    max-width: 100%;
   }
-}
-
-#iine figure {
-  line-height: 1;
-  display: inline-block;
-  max-width: 100%;
 
   a {
     color: inherit;
-
-    a {
-      font-weight: bold;
-    }
   }
 
   img {
@@ -382,5 +357,15 @@ body > div > div > blockquote {
     font-family: $stack-point;
     font-style: italic;
     text-align: center;
+  }
+
+  @media screen and (min-width: $safe-for-content) {
+    li {
+      margin-bottom: ($gutter - $default-margin);
+    }
+
+    img {
+      vertical-align: text-bottom;
+    }
   }
 }
