@@ -86,6 +86,10 @@
       margin-left: 0.667em;
     }
 
+    nav {
+      margin-left: ($suppli-width + $gutter);
+    }
+
     ul {
       margin-top: (- $logo-width * 0.5 - 0.5em);
       margin-right: 0;
