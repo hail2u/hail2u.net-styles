@@ -2,12 +2,13 @@
 [role="banner"] {
   margin: 0 auto;
   padding: 0 $gap;
+  position: relative;
   max-width: $content-width;
 
   h1 {
     $ratio: 1.3125;
 
-    margin: ($default-margin * 4 / $ratio) 0 0 0;
+    margin: ($logo-width / $ratio) 0 0 0;
     line-height: 1;
     font-family: $stack-logo;
     font-style: italic;
@@ -56,13 +57,17 @@
   }
 
   nav {
+    position: absolute;
+    top: (- $logo-width + 0.5em);
+    left: 0;
+    width: 100%;
     line-height: 1;
     font-family: $stack-nav;
     text-transform: uppercase;
   }
 
   ul {
-    margin: ($default-margin * 2) auto 0 auto;
+    margin: 0 auto;
     padding-left: 0;
     display: table;
   }
@@ -75,6 +80,17 @@
       border-bottom: 3px double $fg;
       color: $fg;
       background-color: transparent;
+    }
+  }
+
+  @media screen and (min-width: $safe-for-content) {
+    nav {
+      position: static;
+      width: auto;
+    }
+
+    ul {
+      margin-top: $default-margin;
     }
   }
 
@@ -103,7 +119,7 @@
 
 // Main
 [role="main"] {
-  margin: 0 auto;
+  margin: (- $default-margin * 6 + $logo-width) auto 0 auto;
   padding: 0 $gap;
   max-width: $content-width;
 
@@ -111,6 +127,10 @@
     color: mixxd($fg, $bg, 0.6);
     color: transparentize($fg, 0.6);
     font-family: $stack-point;
+
+    p {
+      margin-top: 0;
+    }
 
     br {
       display: none;
@@ -121,10 +141,8 @@
     }
   }
 
-  @media screen and (max-width: $safe-for-full) {
-    h2 + footer p {
-      margin-top: 0;
-    }
+  @media screen and (min-width: $safe-for-content) {
+    margin-top: 0;
   }
 
   @media screen and (min-width: $safe-for-full) {
@@ -141,6 +159,10 @@
         // top: 0;
         right: 100%;
         width: $suppli-width;
+
+        p {
+          margin-top: $default-margin;
+        }
 
         br {
           display: inline;
