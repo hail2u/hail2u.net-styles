@@ -146,13 +146,9 @@ pre {
   $ratio: 0.875;
 
   margin: ($default-margin / $ratio) 0 0 0;
-  padding: (1.25em / $ratio);
   clear: both;
   line-height: 1.25;
   page-break-inside: avoid;
-  color: $fg;
-  background-color: mixxd($fg, $bg, 0.98);
-  background-color: transparentize($fg, 0.98);
   font-family: $stack-code;
   font-size: percentage($ratio); // 14px
 
