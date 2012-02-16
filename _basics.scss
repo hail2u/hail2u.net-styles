@@ -189,12 +189,9 @@ blockquote {
     font-size: percentage($ratio); // 72px
   }
 
-  + p {
-    margin-top: ($default-margin * 0.25);
-    margin-left: 2.5em;
-  }
-
+  + p,
   + figcaption {
+    margin-top: ($default-margin * 0.25);
     margin-left: 2.5em;
   }
 
@@ -254,18 +251,25 @@ dl {
 
 figure {
   @extend .image;
+
+  position: relative;
 }
 
-figcaption:first-child {
-  @extend %default-margin;
+figcaption {
+  @media screen and (min-width: $safe-for-full) {
+    margin-right: $gutter;
+    position: absolute;
+    right: 100%;
+    bottom: em(($line-height - 1) * 0.5);
+    width: $suppli-width;
+    text-align: right;
 
-  + p {
-    margin-top: ($default-margin * 0.25);
+    blockquote + & {
+      position: static;
+      width: auto;
+      text-align: left;
+    }
   }
-}
-
-figcaption:last-child {
-  margin-top: ($default-margin * 0.25);
 }
 
 // Text-level semantics
