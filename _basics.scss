@@ -261,6 +261,7 @@ figcaption {
     text-align: right;
 
     blockquote + & {
+      margin-right: 0;
       position: static;
       width: auto;
       text-align: left;

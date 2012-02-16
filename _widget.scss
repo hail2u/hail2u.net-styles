@@ -353,6 +353,9 @@ body > div > div > blockquote {
 
   figcaption {
     margin-top: -3em;
+    margin-right: 0;
+    position: static;
+    width: auto;
     line-height: 3;
     font-family: $stack-point;
     font-style: italic;
