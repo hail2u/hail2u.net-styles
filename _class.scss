@@ -20,8 +20,7 @@
   }
 
   a:hover img {
-    border: 1px solid mixxd($fg, white, 0.6);
-    border: 1px solid transparentize($fg, 0.6);
+    border: 1px solid $lightest;
   }
 }
 
