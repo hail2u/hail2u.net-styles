@@ -143,21 +143,13 @@ hr {
 }
 
 pre {
-  $ratio: 0.875;
+  @extend %default-margin;
 
-  margin: ($default-margin / $ratio) 0 0 (2.5em / $ratio);
+  margin-left: 2.5em;
   clear: both;
   line-height: 1.25;
   page-break-inside: avoid;
   font-family: $stack-code;
-  font-size: percentage($ratio); // 14px
-
-  code,
-  var,
-  samp,
-  kbd {
-    font-size: 100%;
-  }
 }
 
 blockquote {
@@ -318,10 +310,7 @@ code,
 var,
 samp,
 kbd {
-  $ratio: 0.875;
-
   font-family: $stack-code;
-  font-size: percentage($ratio); // 14px
 }
 
 kbd {
