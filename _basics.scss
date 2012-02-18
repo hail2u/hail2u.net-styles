@@ -54,7 +54,7 @@ h2 {
   @extend %heading;
   $ratio: 2.25; // 36px
 
-  margin: ($default-margin * 6 / $ratio) 0 0 0;
+  margin: ($logo-width / $ratio) 0 0 0;
   font-size: percentage($ratio);
 }
 

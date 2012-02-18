@@ -118,7 +118,7 @@
 
 // Main
 [role="main"] {
-  margin: (- $default-margin * 6 + $logo-width) auto 0 auto;
+  margin: 0 auto;
   padding: 0 $gap;
   max-width: $content-width;
 
@@ -138,10 +138,6 @@
     time {
       color: $fg;
     }
-  }
-
-  @media screen and (min-width: $safe-for-content) {
-    margin-top: 0;
   }
 
   @media screen and (min-width: $safe-for-full) {
