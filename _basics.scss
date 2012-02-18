@@ -6,7 +6,7 @@ html {
 // Sections
 body {
   border-top: 0.25em solid $lightest; // 4px
-  line-height: $line-height;
+  line-height: $default-line-height;
   color: $fg;
   background-color: $bg;
   background-image: url("../images/bg-body.png");
@@ -244,7 +244,7 @@ figcaption {
     margin-right: $gutter;
     position: absolute;
     right: 100%;
-    bottom: em(($line-height - 1) * 0.5);
+    bottom: em(($default-line-height - 1) * 0.5);
     width: $suppli-width;
     text-align: right;
 
