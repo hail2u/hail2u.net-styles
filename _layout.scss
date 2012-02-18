@@ -147,26 +147,21 @@
 
   @media screen and (min-width: $safe-for-full) {
     padding-left: ($gap + $suppli-width + $gutter);
+    padding-right: ($gutter + $column-span1 + $gap);
 
-    h2 {
-      $ratio: 2.25;
+    h2 + footer {
+      margin-right: $gutter;
+      position: absolute;
+      // top: 0;
+      right: 100%;
+      width: $suppli-width;
 
-      margin-left: (- ($column-span3 + $gutter) / $ratio);
+      p {
+        margin-top: $default-margin;
+      }
 
-      + footer {
-        margin-right: $gutter;
-        position: absolute;
-        // top: 0;
-        right: 100%;
-        width: $suppli-width;
-
-        p {
-          margin-top: $default-margin;
-        }
-
-        br {
-          display: inline;
-        }
+      br {
+        display: inline;
       }
     }
   }
