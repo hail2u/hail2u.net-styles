@@ -90,7 +90,7 @@
     }
 
     ul {
-      margin-top: $default-margin;
+      margin-top: ($logo-width * 0.5);
     }
   }
 
@@ -107,8 +107,7 @@
     }
 
     ul {
-      margin-top: (- $logo-width * 0.5 - 0.5em);
-      margin-right: 0;
+      margin: (- $logo-width * 0.5 - 0.5em) 0 ($logo-width * 0.5 - 0.5em + $logo-width) auto;
     }
 
     li {
