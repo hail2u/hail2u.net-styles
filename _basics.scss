@@ -48,10 +48,6 @@ aside {
 
 h1 {
   @extend %heading;
-  $ratio: 2.25; // 36px
-
-  margin: ($default-margin * 3 / $ratio) 0 0 0;
-  font-size: percentage($ratio);
 }
 
 h2 {
