@@ -292,9 +292,9 @@
     }
 
     section {
-      padding: 0 $gap 0 ($gap + $suppli-width + $gutter);
+      padding: 0 $gap;
       width: auto;
-      max-width: $content-width;
+      max-width: $full-width;
     }
 
     ul {
