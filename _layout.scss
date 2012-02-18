@@ -58,7 +58,7 @@
 
   nav {
     position: absolute;
-    top: (- $logo-width + 0.5em);
+    top: (- $logo-width + 1em);
     left: 0;
     width: 100%;
     line-height: 1;
@@ -107,7 +107,7 @@
     }
 
     ul {
-      margin: (- $logo-width * 0.5 - 0.5em) 0 ($logo-width * 0.5 - 0.5em + $logo-width) auto;
+      margin: (- $logo-width * 0.5 - 0.5em) 0 0 auto;
     }
 
     li {
@@ -141,8 +141,7 @@
   }
 
   @media screen and (min-width: $safe-for-full) {
-    padding-left: ($gap + $suppli-width + $gutter);
-    padding-right: ($gutter + $column-span1 + $gap);
+    padding: ($logo-width * 0.5 - 0.5em) ($gutter + $column-span1 + $gap) 0 ($gap + $suppli-width + $gutter);
 
     h2 + footer {
       margin-right: $gutter;
