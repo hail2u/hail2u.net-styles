@@ -8,7 +8,7 @@
   h1 {
     $ratio: 1.3125;
 
-    margin: ($logo-width / $ratio) 0 0 0;
+    margin: ($logo-height / $ratio) 0 0 0;
     line-height: 1;
     font-family: $stack-logo;
     font-style: italic;
@@ -21,8 +21,8 @@
       display: block;
       position: relative;
       width: ($logo-width / $ratio);
-      height: ($logo-width / $ratio);
-      line-height: ($logo-width / $ratio);
+      height: ($logo-height / $ratio);
+      line-height: ($logo-height / $ratio);
       color: $bg;
       background-color: $darkest;
       text-align: center;
@@ -58,7 +58,7 @@
 
   nav {
     position: absolute;
-    top: (- $logo-width + 1em);
+    top: (- $logo-height + 1em);
     left: 0;
     width: 100%;
     line-height: 1;
@@ -90,7 +90,7 @@
     }
 
     ul {
-      margin-top: ($logo-width * 0.5);
+      margin-top: ($logo-height * 0.5);
     }
   }
 
@@ -107,7 +107,7 @@
     }
 
     ul {
-      margin: (- $logo-width * 0.5 - 0.5em) 0 0 auto;
+      margin: (- $logo-height * 0.5 - 0.5em) 0 0 auto;
     }
 
     li {
@@ -141,7 +141,7 @@
   }
 
   @media screen and (min-width: $safe-for-full) {
-    padding: ($logo-width * 0.5 - 0.5em) ($gutter + $column-span1 + $gap) 0 ($gap + $suppli-width + $gutter);
+    padding: ($logo-height * 0.5 - 0.5em) ($gutter + $column-span1 + $gap) 0 ($gap + $suppli-width + $gutter);
 
     h2 + footer {
       margin-right: $gutter;
