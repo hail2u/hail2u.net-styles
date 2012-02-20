@@ -47,8 +47,8 @@ $column-span12: (($column + $gap * 2) * 12 - $gap * 2);
 $content-width: $column-span9;
 $suppli-width:  $column-span2;
 $full-width:    $column-span12;
-$logo-width:    $column-span2;
-$logo-height:   $column-span2;
+$logo-width:    $suppli-width;
+$logo-height:   $logo-width;
 
 // Responsive
 $safe-for-content: ($gap + $content-width + $gap);
