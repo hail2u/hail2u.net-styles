@@ -6,9 +6,9 @@
   max-width: $content-width;
 
   h1 {
-    $ratio: 1.3125;
+    $ratio: 1.5;
 
-    margin: ($logo-height / $ratio) 0 0 0;
+    margin: ($default-margin * 3 / $ratio) 0 0 0;
     line-height: 1;
     font-family: $stack-logo;
     font-style: italic;
@@ -21,44 +21,43 @@
       display: block;
       position: relative;
       width: ($logo-width / $ratio);
-      height: ($logo-height / $ratio);
+      height: (($logo-height - 1em) / $ratio);
       line-height: ($logo-height / $ratio);
       color: $bg;
-      background-color: $darkest;
+      background-color: $lightest;
       text-align: center;
-      text-shadow: 0 -1px 0 $darkest;
-      opacity: 0.5;
+      text-shadow: 0 -1px 0 mixxd($darkest, $lightest, 0.5);
+      text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
 
       &::before,
       &::after {
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: 100%;
         content: "";
       }
 
       &::before {
-        @include transform(rotate(20deg));
-
-        background-color: $lightest;
-        z-index: -1;
+        border: (0.5em / $ratio) solid white;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        right: 0;
+        width: 0;
+        height: 0;
       }
 
       &::after {
-        @include transform(rotate(10deg));
-
-        background-color: $base;
-        z-index: -2;
+        left: 0;
+        width: (($logo-width - 1em) / $ratio);
+        height: (1em / $ratio);
+        background-color: $lightest;
       }
     }
   }
 
   nav {
     position: absolute;
-    top: (- $logo-height + 1em);
+    top: (- $default-margin * 3 + 1em);
     left: 0;
     width: 100%;
     line-height: 1;
@@ -107,7 +106,7 @@
     }
 
     ul {
-      margin: (- $logo-height * 0.5 - 0.5em) 0 0 auto;
+      margin: (- $logo-height * 0.5 + 0.5em) 0 0 auto;
     }
 
     li {
@@ -141,7 +140,7 @@
   }
 
   @media screen and (min-width: $safe-for-full) {
-    padding: ($logo-height * 0.5 - 0.5em) ($gutter + $column-span1 + $gap) 0 ($gap + $suppli-width + $gutter);
+    padding: ($logo-height * 0.5 + 0.5em) ($gutter + $column-span1 + $gap) 0 ($gap + $suppli-width + $gutter);
 
     h2 + footer {
       margin-right: $gutter;
