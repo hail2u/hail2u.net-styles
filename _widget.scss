@@ -324,6 +324,11 @@ body > div > div > blockquote {
 
 // Shots from iine!
 #iine {
+  h2 a {
+    font-family: $stack-point;
+    font-style: italic;
+  }
+
   ol {
     @extend %column-container;
 
@@ -341,10 +346,10 @@ body > div > div > blockquote {
     line-height: 1;
     display: inline-block;
     max-width: 100%;
-  }
 
-  a {
-    color: inherit;
+    a {
+      color: inherit;
+    }
   }
 
   img {
