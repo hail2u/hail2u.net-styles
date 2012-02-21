@@ -121,7 +121,6 @@ body.debug {
       p {
         $ratio: 0.75;
 
-        margin-top: ($default-margin * 0.5 / $ratio);
         height: (em($ratio) * 1.75 * 6 / $ratio);
         display: block;
         overflow: hidden;
@@ -132,7 +131,9 @@ body.debug {
 
     h3 {
       margin-top: $default-margin;
+      padding: 0;
       display: block;
+      line-height: $heading-line-height;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
