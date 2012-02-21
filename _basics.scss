@@ -53,9 +53,10 @@ h1 {
 
 h2 {
   @extend %heading;
-  $ratio: 1.5; // 24px
+  $ratio: 1.875; // 30px
 
   margin: ($logo-width / $ratio) 0 0 0;
+  font-weight: normal;
   font-size: percentage($ratio);
 }
 
