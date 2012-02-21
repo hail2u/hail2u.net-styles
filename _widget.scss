@@ -121,7 +121,7 @@ body.debug {
       p {
         $ratio: 0.75;
 
-        height: (em($ratio) * 1.75 * 6 / $ratio);
+        height: (em($ratio) * $default-line-height * 6 / $ratio);
         display: block;
         overflow: hidden;
         color: $fg;
