@@ -50,7 +50,7 @@
         left: 0;
         width: (($logo-width - 1em) / $ratio);
         height: (1em / $ratio);
-        background-color: $lightest;
+        background-color: inherit;
       }
     }
   }
