@@ -22,6 +22,7 @@ body.debug {
   li {
     @extend %column-1;
 
+    margin-bottom: $gutter;
     display: block;
     height: $column-span1;
     text-indent: -9999em;
