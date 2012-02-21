@@ -1,7 +1,7 @@
 // Header
 [role="banner"] {
   margin: 0 auto;
-  padding: 0 $gap;
+  padding: 2em $gap 0 $gap;
   position: relative;
   max-width: $content-width;
 
@@ -57,7 +57,7 @@
 
   nav {
     position: absolute;
-    top: (- $default-margin * 3 + 1em);
+    top: 1em;
     left: 0;
     width: 100%;
     line-height: 1;
@@ -83,6 +83,8 @@
   }
 
   @media screen and (min-width: $safe-for-content) {
+    padding-top: 0;
+
     nav {
       position: static;
       width: auto;
