@@ -3,6 +3,11 @@
   margin: $default-margin 0 0 0;
 }
 
+// Mini margin
+%mini-margin {
+  margin: ($default-margin * 0.25) 0 0 0;
+}
+
 // Heading
 %heading {
   line-height: $heading-line-height;

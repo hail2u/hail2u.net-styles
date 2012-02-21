@@ -96,6 +96,15 @@ h6 {
 p {
   @extend %default-margin;
 
+  h1 + &,
+  h2 + &,
+  h3 + &,
+  h4 + &,
+  h5 + &,
+  h6 + & {
+    @extend %mini-margin;
+  }
+
   + p {
     margin-top: 0;
     text-indent: 2em;
@@ -177,7 +186,8 @@ blockquote {
 
   + p,
   + figcaption {
-    margin-top: ($default-margin * 0.25);
+    @extend %mini-margin;
+
     margin-left: 2.5em;
   }
 

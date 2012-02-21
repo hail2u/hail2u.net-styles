@@ -127,7 +127,7 @@
     font-family: $stack-point;
 
     p {
-      margin-top: 0;
+      @extend %mini-margin;
     }
 
     br {
