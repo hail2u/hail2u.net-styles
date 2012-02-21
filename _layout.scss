@@ -38,9 +38,9 @@
       }
 
       &::before {
-        border: (0.5em / $ratio) solid white;
-        border-right-color: transparent;
-        border-bottom-color: transparent;
+        border-width: (0.5em / $ratio);
+        border-style: solid;
+        border-color: white transparent transparent white;
         right: 0;
         width: 0;
         height: 0;
