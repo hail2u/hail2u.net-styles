@@ -1,10 +1,15 @@
 // The root element
 html {
   overflow-y: scroll;
+  font-family: sans-serif;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 // Sections
 body {
+  margin: 0;
   border-top: 0.25em solid $darkest;
   box-shadow: inset 0 0.25em 0 $base, inset 0 0.5em 0 $lightest;
   line-height: $default-line-height;
@@ -128,6 +133,9 @@ hr {
   clear: both;
   height: $h;
   background-color: transparent;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 
   &::before {
     display: block;
@@ -154,6 +162,10 @@ pre {
   clear: both;
   line-height: 1.25;
   font-family: $stack-code;
+  font-size: 1em;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
 }
 
 blockquote {
@@ -244,6 +256,7 @@ dl {
 figure {
   @extend .image;
 
+  margin: 0;
   position: relative;
 }
 
@@ -270,8 +283,17 @@ a {
   color: $link;
   text-decoration: none;
 
+  &:focus {
+    outline: thin dotted;
+  }
+
   &:hover {
     color: $hover;
+    outline: 0;
+  }
+
+  &:active {
+    outline: 0;
   }
 
   section p &,
@@ -291,8 +313,14 @@ strong {
   border-bottom: 1px dashed $fg;
 }
 
+@import "normalize.scss/typography/small.scss";
+
 cite {
   font-style: normal;
+}
+
+q {
+  quotes: none;
 }
 
 q::before {
@@ -302,6 +330,8 @@ q::before {
 q::after {
   content: "\300d"; // Right Corner Bracket
 }
+
+@import "normalize.scss/typography/dfn.scss";
 
 abbr {
   font-variant: small-caps;
@@ -315,6 +345,7 @@ var,
 samp,
 kbd {
   font-family: $stack-code;
+  font-size: 1em;
 }
 
 kbd {
@@ -330,6 +361,8 @@ kbd {
   color: #666;
   background-color: #f9f9f9;
 }
+
+@import "normalize.scss/typography/sub-and-sup.scss";
 
 mark {
   background-color: $mark;
@@ -347,9 +380,11 @@ del {
 
 // Embedded content
 img {
+  border: 0;
   max-width: 100%;
-  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -ms-interpolation-mode: bicubic;
 }
 
 // Tabular data
@@ -357,6 +392,8 @@ table {
   @extend %default-margin;
 
   clear: both;
+  border-collapse: collapse;
+  border-spacing: 0;
 
   th {
     padding: 0.5em;
@@ -374,4 +411,33 @@ table {
     background-color: mixxd($fg, $bg, 0.98);
     background-color: transparentize($fg, 0.98);
   }
+}
+
+// Forms
+@import "normalize.scss/forms/form.scss";
+@import "normalize.scss/forms/fieldset.scss";
+@import "normalize.scss/forms/legend.scss";
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 100%;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+@import "normalize.scss/forms/fix-line-height.scss";
+@import "normalize.scss/forms/buttons.scss";
+@import "normalize.scss/forms/disabled.scss";
+@import "normalize.scss/forms/checkbox-and-radio.scss";
+@import "normalize.scss/forms/search.scss";
+@import "normalize.scss/forms/fix-focus-inner.scss";
+@import "normalize.scss/forms/textarea.scss";
+
+// SVG
+svg:not(:root) {
+  overflow: hidden;
 }
