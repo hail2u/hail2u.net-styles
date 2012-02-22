@@ -15,6 +15,7 @@ body.debug {
 
 // Colors
 .colors {
+  @include clearfix;
   @extend %column-container;
 
   padding-left: 0;
