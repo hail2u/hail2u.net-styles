@@ -74,6 +74,8 @@
 
 // Column
 %column-container {
+  @include clearfix;
+
   @media (min-width: $safe-for-content) {
     margin-right: (- $gap);
     margin-left: (- $gap);

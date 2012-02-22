@@ -86,6 +86,13 @@
   padding: 0 $gap;
   max-width: $content-width;
 
+  > section,
+  > article {
+    @include clearfix;
+
+    position: relative;
+  }
+
   h2 + footer {
     color: mixxd($fg, $bg, 0.6);
     color: transparentize($fg, 0.6);
@@ -256,6 +263,7 @@
 
     section {
       padding: 0 $gap;
+      position: relative;
       width: auto;
       max-width: $full-width;
     }

@@ -43,15 +43,6 @@ body {
   }
 }
 
-section,
-nav,
-article,
-aside {
-  @include clearfix;
-
-  position: relative;
-}
-
 h1 {
   @extend %heading;
 }

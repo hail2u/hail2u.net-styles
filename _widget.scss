@@ -15,7 +15,6 @@ body.debug {
 
 // Colors
 .colors {
-  @include clearfix;
   @extend %column-container;
 
   padding-left: 0;
@@ -198,9 +197,9 @@ body.debug {
   }
 
   @media (min-width: $safe-for-full) {
-    ul {
-      @include clearfix;
+    position: relative;
 
+    ul {
       margin-top: 0;
       margin-left: 0;
       display: block;
