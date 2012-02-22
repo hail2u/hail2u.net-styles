@@ -56,6 +56,10 @@ body.debug {
     &:nth-child(7) {
       background-color: $bg;
     }
+
+    @media (min-width: $safe-for-content) {
+      margin-bottom: 0;
+    }
   }
 }
 
