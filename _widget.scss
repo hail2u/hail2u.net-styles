@@ -230,6 +230,11 @@ body.debug {
   > span {
     display: block !important;
     float: left !important;
+    height: 20px !important;
+  }
+
+  iframe {
+    vertical-align: baseline !important;
   }
 }
 
