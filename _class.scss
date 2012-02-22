@@ -139,6 +139,8 @@
   line-height: ($logo-height / $ratio);
   color: $bg;
   background-color: $lightest;
+  background-image: url("../images/bg-logo.png");
+  background-position: bottom left;
   font-family: $stack-logo;
   font-style: italic;
   font-weight: normal;
@@ -168,6 +170,7 @@
     width: (($logo-width - 1em) / $ratio);
     height: (1em / $ratio);
     background-color: inherit;
+    background-image: inherit;
     content: "";
   }
 }
