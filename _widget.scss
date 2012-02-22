@@ -199,13 +199,15 @@ body.debug {
 
       margin-top: 0;
       margin-left: 0;
+      display: block;
       position: absolute;
-      top: (- $column-span1);
+      bottom: 100%;
       left: (- $suppli-width - $gutter);
     }
 
     li {
-      padding: 0 $gutter 0 0;
+      padding: $gutter 0 0 0;
+      display: block;
     }
   }
 }
