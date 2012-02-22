@@ -45,7 +45,7 @@
     }
   }
 
-  @media screen and (min-width: $safe-for-content) {
+  @media (min-width: $safe-for-content) {
     padding-top: 0;
 
     nav {
@@ -58,7 +58,7 @@
     }
   }
 
-  @media screen and (min-width: $safe-for-full) {
+  @media (min-width: $safe-for-full) {
     max-width: $full-width;
 
     h1 a,
@@ -104,7 +104,7 @@
     }
   }
 
-  @media screen and (min-width: $safe-for-full) {
+  @media (min-width: $safe-for-full) {
     padding: ($logo-height * 0.5 + 0.5em) ($gutter + $column-span1 + $gap) 0 ($gap + $suppli-width + $gutter);
 
     h2 + footer {
@@ -247,7 +247,7 @@
     }
   }
 
-  @media screen and (min-width: $safe-for-full) {
+  @media (min-width: $safe-for-full) {
     address {
       padding: 3em $gap;
       max-width: $full-width;

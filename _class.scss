@@ -12,7 +12,6 @@
 %heading {
   line-height: $heading-line-height;
   font-family: $stack-heading;
-  page-break-after: avoid;
 }
 
 // Image Container
@@ -57,7 +56,7 @@
     float: left;
   }
 
-  @media screen and (min-width: $safe-for-content) {
+  @media (min-width: $safe-for-content) {
     dt {
       float: left;
       clear: left;
@@ -75,7 +74,7 @@
 
 // Column
 %column-container {
-  @media screen and (min-width: $safe-for-content) {
+  @media (min-width: $safe-for-content) {
     margin-right: (- $gap);
     margin-left: (- $gap);
   }
@@ -83,7 +82,7 @@
 
 @for $i from 1 through 12 {
   %column-#{$i} {
-    @media screen and (min-width: $safe-for-content) {
+    @media (min-width: $safe-for-content) {
       margin-right: $gap;
       margin-left: $gap;
       float: left;

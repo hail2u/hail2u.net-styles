@@ -4,7 +4,7 @@
 body.debug {
   @include grid-overlay($gutter, $column);
 
-  @media screen and (min-width: $safe-for-full) {
+  @media (min-width: $safe-for-full) {
     @include grid-overlay($column, $gutter);
   }
 
@@ -109,7 +109,7 @@ body.debug {
     font-size: 100%; // 16px
   }
 
-  @media screen and (min-width: $safe-for-content) {
+  @media (min-width: $safe-for-content) {
     > section {
       margin-left: $gap;
       display: block;
@@ -193,7 +193,7 @@ body.debug {
     }
   }
 
-  @media screen and (min-width: $safe-for-full) {
+  @media (min-width: $safe-for-full) {
     ul {
       @include clearfix;
 
@@ -403,7 +403,7 @@ body > div > div > blockquote {
     text-align: center;
   }
 
-  @media screen and (min-width: $safe-for-content) {
+  @media (min-width: $safe-for-content) {
     li {
       margin-bottom: ($gutter - $default-margin);
     }
