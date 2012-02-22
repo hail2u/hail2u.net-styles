@@ -127,3 +127,48 @@
     background-image: $button-overlay-active;
   }
 }
+
+// Logo
+%logo {
+  $ratio: 1.5;
+
+  box-shadow: inset (- 0.25em / $ratio) 0 0 $dark, inset (- 0.5em / $ratio) 0 0 $base;
+  display: block;
+  position: relative;
+  width: ($logo-width / $ratio);
+  height: (($logo-height - 1em) / $ratio);
+  line-height: ($logo-height / $ratio);
+  color: $bg;
+  background-color: $lightest;
+  font-family: $stack-logo;
+  font-style: italic;
+  font-weight: normal;
+  font-size: percentage($ratio);
+  text-align: center;
+  text-shadow: 0 -1px 0 mixxd($darkest, $lightest, 0.5);
+  text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
+
+  &::before {
+    border-width: (0.5em / $ratio);
+    border-style: solid;
+    border-color: white transparent transparent white;
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 0;
+    height: 0;
+    content: "";
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: (($logo-width - 1em) / $ratio);
+    height: (1em / $ratio);
+    background-color: inherit;
+    content: "";
+  }
+}
