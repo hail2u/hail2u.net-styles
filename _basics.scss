@@ -205,7 +205,7 @@ blockquote {
     &::before {
       margin-right: ($gutter / $ratio);
     }
-    
+
     + p,
     + figcaption {
       margin-left: 0;
