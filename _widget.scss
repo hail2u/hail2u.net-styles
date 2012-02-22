@@ -89,10 +89,11 @@ body.debug {
 #posts {
   @extend %column-container;
 
+  padding-left: 2.5em;
+
   > section {
     @extend %column-3;
 
-    margin-left: 2.5em;
     display: list-item;
 
     &:first-child {
@@ -112,6 +113,8 @@ body.debug {
   }
 
   @media (min-width: $safe-for-content) {
+    padding-left: 0;
+
     > section {
       margin-left: $gap;
       display: block;
@@ -133,7 +136,6 @@ body.debug {
 
     h3 {
       margin-top: $default-margin;
-      padding: 0;
       display: block;
       line-height: $heading-line-height;
       overflow: hidden;
