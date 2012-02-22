@@ -191,14 +191,14 @@ blockquote {
 
   @media screen and (min-width: $safe-for-full) {
     margin-left: 0;
+
+    &::before {
+      margin-right: ($gutter / $ratio);
+    }
     
     + p,
     + figcaption {
       margin-left: 0;
-    }
-
-    &::before {
-      margin-right: ($gutter / $ratio);
     }
   }
 }
@@ -361,19 +361,19 @@ table {
   clear: both;
   page-break-inside: avoid;
 
-  th, td {
+  th {
     padding: 0.5em;
     border: 1px solid mixxd($fg, $bg, 0.8);
     vertical-align: top;
-  }
-
-  th {
     background-color: mixxd($fg, $bg, 0.9);
     background-color: transparentize($fg, 0.9);
     text-align: left;
   }
 
   td {
+    padding: 0.5em;
+    border: 1px solid mixxd($fg, $bg, 0.8);
+    vertical-align: top;
     background-color: mixxd($fg, $bg, 0.98);
     background-color: transparentize($fg, 0.98);
   }
