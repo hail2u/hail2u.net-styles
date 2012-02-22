@@ -27,7 +27,6 @@ body.debug {
     display: block;
     height: $column-span1;
     text-indent: -9999em;
-    outline: 1px solid black;
 
     &:nth-child(1) {
       background-color: $base;
