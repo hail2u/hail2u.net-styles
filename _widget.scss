@@ -106,9 +106,7 @@ body.debug {
 
   h3 {
     margin-top: 0;
-    padding: (em($default-line-height - 1) * 0.5) 0;
-    display: inline-block;
-    line-height: 1;
+    display: inline;
     font-weight: normal;
     font-size: 100%; // 16px
   }
