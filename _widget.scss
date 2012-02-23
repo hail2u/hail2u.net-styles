@@ -25,6 +25,7 @@ body.debug {
     margin-bottom: $gutter;
     border: 1px solid black;
     display: block;
+    direction: ltr;
     height: $column-span1;
     text-indent: -9999em;
     -moz-box-sizing: border-box;
