@@ -329,7 +329,6 @@ body > div > div > blockquote {
   color: #999;
 }
 
-
 // Google Site Search
 #cse-search-box {
   @extend %default-margin;
@@ -341,6 +340,7 @@ body > div > div > blockquote {
     line-height: 1;
     background-color: mixxd($fg, $bg, 0.92);
     background-color: transparentize($fg, 0.92);
+    font-size: 16px;
   }
 
   input[type="text"] {
@@ -350,8 +350,7 @@ body > div > div > blockquote {
     border-radius: 4px;
     width: 188px;
     height: 28px;
-    vertical-align: middle;
-    font-size: 16px;
+    line-height: 28px;
     background-position: 8px 50% !important;
     outline: none;
     -moz-box-sizing: content-box;
@@ -366,8 +365,6 @@ body > div > div > blockquote {
     width: 78px;
     height: 30px;
     line-height: 30px;
-    vertical-align: middle;
-    overflow: hidden;
     outline: none;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
