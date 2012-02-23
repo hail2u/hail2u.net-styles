@@ -112,7 +112,7 @@
   }
 
   @media (min-width: $safe-for-full) {
-    padding: ($logo-height * 0.5 + 0.5em) ($gutter + $column-span1 + $gap) 0 ($gap + $suppli-width + $gutter);
+    padding: ($logo-height * 0.5 + 0.5em - 1em) ($gutter + $column-span1 + $gap) 0 ($gap + $suppli-width + $gutter);
 
     h2 + footer {
       margin-right: $gutter;
