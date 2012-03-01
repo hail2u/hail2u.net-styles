@@ -213,15 +213,13 @@ body.debug {
     ul {
       margin-top: 0;
       margin-left: 0;
-      display: block;
       position: absolute;
       bottom: 100%;
       left: (- $suppli-width - $gutter);
     }
 
     li {
-      padding: $gutter 0 0 0;
-      display: block;
+      padding: 0 $gutter 0 0;
     }
   }
 }
