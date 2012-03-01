@@ -61,13 +61,18 @@
   @media (min-width: $safe-for-full) {
     max-width: $full-width;
 
-    h1 a,
-    h1 mark {
-      margin-left: 0;
+    h1 {
+      padding-left: ($suppli-width + $gutter);
+
+      a,
+      mark {
+        margin-left: 0;
+      }
     }
 
     nav {
-      margin-left: ($suppli-width + $gutter);
+      padding-right: ($gutter + $column-span1);
+      margin-left: ($suppli-width + $gutter + $logo-width);
     }
 
     ul {
