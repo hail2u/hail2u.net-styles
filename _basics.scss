@@ -197,6 +197,22 @@ blockquote {
       margin-right: ($gutter / $ratio);
     }
 
+    // &::after {
+    //   margin-left: ($gutter / $ratio);
+    //   display: block;
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 100%;
+    //   height: 0.5em;
+    //   line-height: 1;
+    //   content: "\201d"; // Right dquote
+    //   color: mixxd($fg, $bg, 0.9);
+    //   color: transparentize($fg, 0.9);
+    //   font-family: "Trebuchet MS", sans-serif;
+    //   font-weight: bold;
+    //   font-size: percentage($ratio); // 72px
+    // }
+
     + p,
     + figcaption {
       margin-left: 0;
