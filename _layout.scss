@@ -1,12 +1,13 @@
 // Header
 [role="banner"] {
   margin: 0 auto;
-  padding: 2em $gap 0 $gap;
+  padding: 0 $gap;
   position: relative;
+  height: $logo-height;
   max-width: $content-width;
 
   h1 {
-    margin: ($default-margin * 3) 0 0 0;
+    margin: ($default-margin * 2) 0 0 0;
     line-height: 1;
     font-size: 100%;
 
@@ -20,10 +21,9 @@
 
   nav {
     position: absolute;
-    top: 1em;
+    top: (- $default-margin * 2);
     left: 0;
     width: 100%;
-    line-height: 1;
     font-family: $stack-nav;
     text-transform: uppercase;
   }
@@ -46,20 +46,17 @@
   }
 
   @media (min-width: $safe-for-content) {
-    padding-top: 0;
+    height: ($logo-height + $default-margin + em($default-line-height));
 
     nav {
-      position: static;
-      width: auto;
-    }
-
-    ul {
-      margin-top: ($default-margin * 3 * 0.5 + 1em);
+      top: auto;
+      bottom: 0;
     }
   }
 
   @media (min-width: $safe-for-full) {
     max-width: $full-width;
+    height: $logo-height;
 
     h1 {
       a,
@@ -69,22 +66,21 @@
     }
 
     nav {
-      margin-left: $logo-width;
-    }
-
-    ul {
-      margin: (- $logo-height * 0.5 + 0.5em) 0 0 auto;
+      right: 0;
+      bottom: (($logo-height - em($default-line-height)) * 0.5);
+      left: auto;
+      width: auto;
     }
 
     li {
-      padding: 0 0 0 $gap;
+      padding: 0 $gap 0 0;
     }
   }
 }
 
 // Main
 [role="main"] {
-  margin: 0 auto;
+  margin: (- $default-margin * 2) auto 0 auto;
   padding: 0 $gap;
   max-width: $content-width;
 
@@ -113,8 +109,12 @@
     }
   }
 
+  @media (min-width: $safe-for-content) {
+    margin-top: 0;
+  }
+
   @media (min-width: $safe-for-full) {
-    padding: ($logo-height * 0.5 + 0.5em - 1em) ($gutter + $column-span1 + $gap) 0 ($gap + $suppli-width + $gutter);
+    padding: 0 ($gutter + $column-span1 + $gap) 0 ($gap + $suppli-width + $gutter);
 
     h2 + footer {
       margin-right: $gutter;
