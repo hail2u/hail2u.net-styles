@@ -49,6 +49,7 @@ $suppli-width:  $column-span2;
 $full-width:    $column-span12;
 $logo-width:    $suppli-width;
 $logo-height:   $column-span1;
+$nav-height:    em($default-line-height);
 
 // Responsive
 $safe-for-content: ($gap + $content-width + $gap);

@@ -46,7 +46,7 @@
   }
 
   @media (min-width: $safe-for-content) {
-    height: ($logo-height + $default-margin + em($default-line-height));
+    height: ($logo-height + $default-margin + $nav-height);
 
     nav {
       top: auto;
@@ -67,7 +67,7 @@
 
     nav {
       right: 0;
-      bottom: (($logo-height - em($default-line-height)) * 0.5);
+      bottom: (($logo-height - $nav-height) * 0.5);
       left: auto;
       width: auto;
     }
