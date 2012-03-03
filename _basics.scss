@@ -11,6 +11,7 @@ html {
 // Sections
 body {
   margin: 0;
+  padding-top: 0.5em;
   border-top: 0.25em solid $darkest;
   box-shadow: inset 0 0.25em 0 0 $base, inset 0 0.5em 0 0 $lightest;
   line-height: $default-line-height;
