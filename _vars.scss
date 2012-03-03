@@ -51,7 +51,7 @@ $content-width: $column-span9;
 $suppli-width:  $column-span2;
 $full-width:    $column-span12;
 $logo-width:    $suppli-width;
-$logo-height:   ($logo-width / $golden-ratio * 1);
+$logo-height:   ($logo-width / $golden-ratio);
 $nav-height:    em($default-line-height);
 
 // Responsive
