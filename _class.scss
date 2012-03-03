@@ -138,9 +138,10 @@
   box-shadow: inset (- 0.25em / $ratio) 0 0 0 $dark, inset (- 0.5em / $ratio) 0 0 0 $base;
   display: block;
   position: relative;
+  top: ($peel / $ratio);
   width: (($logo-width - 0.5em) / $ratio);
   height: (($logo-height - $peel) / $ratio);
-  line-height: ($logo-height / $ratio);
+  line-height: (($logo-height - $peel - 1em) / $ratio);
   color: $bg;
   background-color: $lightest;
   background-image: url("../images/bg-logo.png");
@@ -156,10 +157,10 @@
   &::before {
     border-width: ($peel * 0.5 / $ratio);
     border-style: solid;
-    border-color: white transparent transparent white;
+    border-color: transparent transparent white white;
     display: block;
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     right: 0;
     width: 0;
     height: 0;
@@ -169,7 +170,7 @@
   &::after {
     display: block;
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     left: 0;
     width: (($logo-width - $peel) / $ratio);
     height: ($peel / $ratio);
