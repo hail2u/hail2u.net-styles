@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 0 $gap;
   position: relative;
-  height: $logo-height;
+  height: ($logo-height + $default-margin + $nav-height);
   max-width: $content-width;
 
   h1 {
@@ -21,7 +21,7 @@
 
   nav {
     position: absolute;
-    top: (- $default-margin * 2);
+    bottom: 0;
     left: 0;
     width: 100%;
     font-family: $stack-nav;
@@ -46,16 +46,6 @@
   }
 
   @media (min-width: $safe-for-content) {
-    height: ($logo-height + $default-margin + $nav-height);
-
-    nav {
-      top: auto;
-      bottom: 0;
-    }
-  }
-
-  @media (min-width: $safe-for-full) {
-    max-width: $full-width;
     height: $logo-height;
 
     h1 {
@@ -75,6 +65,10 @@
     li {
       padding: 0 $gap 0 0;
     }
+  }
+
+  @media (min-width: $safe-for-full) {
+    max-width: $full-width;
   }
 }
 
