@@ -132,13 +132,14 @@
 // Logo
 %logo {
   $ratio: 1.5;
+  $peel: ($logo-width / pow($golden-ratio, 4));
 
   padding-right: (0.5em / $ratio);
   box-shadow: inset (- 0.25em / $ratio) 0 0 0 $dark, inset (- 0.5em / $ratio) 0 0 0 $base;
   display: block;
   position: relative;
   width: (($logo-width - 0.5em) / $ratio);
-  height: (($logo-height - 1em) / $ratio);
+  height: (($logo-height - $peel) / $ratio);
   line-height: ($logo-height / $ratio);
   color: $bg;
   background-color: $lightest;
@@ -153,7 +154,7 @@
   text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
 
   &::before {
-    border-width: (0.5em / $ratio);
+    border-width: ($peel * 0.5 / $ratio);
     border-style: solid;
     border-color: white transparent transparent white;
     display: block;
@@ -170,8 +171,8 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: (($logo-width - 1em) / $ratio);
-    height: (1em / $ratio);
+    width: (($logo-width - $peel) / $ratio);
+    height: ($peel / $ratio);
     background-color: inherit;
     background-image: inherit;
     content: "";
