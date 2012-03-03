@@ -1,3 +1,6 @@
+// Static
+$golden-ratio: 1.618;
+
 // Font Stack
 $stack-body:    "Open Sans", "Helvetica Neue", "Arial", sans-serif;
 $stack-logo:    "Crimson Text", "Baskerville", "Times New Roman", serif;
@@ -19,7 +22,7 @@ $hover:    $darkest;
 $mark:     rgb(255, 238,   0);
 
 // Size
-$default-line-height: (16 / 9);
+$default-line-height: $golden-ratio;
 $heading-line-height: 1.25;
 
 $default-margin: em($default-line-height);
@@ -48,7 +51,7 @@ $content-width: $column-span9;
 $suppli-width:  $column-span2;
 $full-width:    $column-span12;
 $logo-width:    $suppli-width;
-$logo-height:   $column-span1;
+$logo-height:   ($logo-width / $golden-ratio * 1);
 $nav-height:    em($default-line-height);
 
 // Responsive
