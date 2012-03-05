@@ -131,7 +131,7 @@
 // Footer
 [role="contentinfo"] {
   line-height: 1;
-  color: $fg;
+  color: $bg;
   background-color: mixxd($fg, $bg, 0.25);
   background-color: transparentize($fg, 0.25);
   font-family: $stack-point;
@@ -142,6 +142,14 @@
     padding: 1.5em $gap;
     max-width: $content-width;
     text-align: center;
+  }
+
+  a {
+    color: $lightest;
+
+    &:hover {
+      color: $base;
+    }
   }
 
   section {
