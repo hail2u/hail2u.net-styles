@@ -131,8 +131,9 @@
 // Footer
 [role="contentinfo"] {
   line-height: 1;
-  background-color: mixxd($fg, $bg, 0.9);
-  background-color: transparentize($fg, 0.9);
+  color: $fg;
+  background-color: mixxd($fg, $bg, 0.25);
+  background-color: transparentize($fg, 0.25);
   font-family: $stack-point;
   font-style: italic;
 
@@ -176,10 +177,6 @@
       opacity: 0.1;
 
       &:hover {
-        opacity: 0.5;
-      }
-
-      &:active {
         opacity: 1;
       }
 
