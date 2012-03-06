@@ -53,8 +53,8 @@ $column-span12: (($column + $gap * 2) * 12 - $gap * 2);
 $content-width: $column-span9;
 $suppli-width:  $column-span2;
 $full-width:    $column-span12;
-$logo-width:    ($gutter + $column-span1 + $gutter);
-$logo-height:   $logo-width;
+$logo-width:    $column-span1;
+$logo-height:   ($logo-width * $golden-ratio);
 $nav-height:    em($default-line-height);
 
 // Responsive

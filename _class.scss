@@ -131,56 +131,32 @@
 
 // Logo
 %logo {
-  $ratio: 1.5;
-  $peel: ($logo-width / pow($golden-ratio, 4));
-
+  box-shadow: inset 0 -0.25em 0 0 $darkest, inset 0 -0.5em 0 0 $base;
   display: block;
   position: relative;
-  top: ($peel / $ratio);
-  width: ($logo-width / $ratio);
-  height: (($logo-height - $peel) / $ratio);
-  line-height: (($logo-height - $peel - 1em) / $ratio);
+  width: $logo-width;
+  height: $logo-height;
+  overflow: hidden;
+  line-height: $logo-height;
   color: $bg;
   background-color: $lightest;
   background-image: url("../images/bg-logo.png");
   background-position: left bottom;
-  font-family: $stack-logo;
-  font-style: italic;
-  font-weight: normal;
-  font-size: percentage($ratio);
-  text-align: center;
-  text-shadow: 0 -1px 0 mixxd($darkest, $lightest, 0.5);
-  text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
 
   &::before {
-    border-width: ($peel * 0.5 / $ratio);
-    border-style: solid;
-    border-color: transparent transparent white white;
-    display: block;
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    width: 0;
-    height: 0;
-    content: "";
-  }
+    $ratio: 2.25; // 36px
 
-  &::after {
-    box-shadow: inset 0 (0.25em / $ratio) 0 0 $darkest, inset 0 (0.5em / $ratio) 0 0 $base;
     display: block;
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    width: (($logo-width - $peel) / $ratio);
-    height: ($peel / $ratio);
-    background-color: inherit;
-    background-image: inherit;
-    content: "";
+    width: 100%;
+    height: 100%;
+    content: "h";
+    font-family: $stack-logo;
+    font-size: percentage($ratio);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 0 mixxd($darkest, $lightest, 0.5);
+    text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
   }
-
-  // &:hover {
-  //   @include transform(rotate(-6deg));
-  // }
 }
 
 // Footer icon
