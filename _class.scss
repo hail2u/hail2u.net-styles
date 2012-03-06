@@ -159,6 +159,28 @@
   }
 }
 
+// Nav
+%nav {
+  height: $nav-height;
+  line-height: $nav-height;
+  font-family: $stack-nav;
+  text-transform: uppercase;
+
+  ul {
+    display: table;
+
+    li {
+      display: table-cell;
+    }
+  }
+
+  mark {
+    color: $fg;
+    background-color: transparent;
+    font-weight: bold;
+  }
+}
+
 // Footer icon
 %footer-icon {
   border-radius: #{($icon-size * 0.5)}/#{($icon-size * 0.5)};

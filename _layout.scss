@@ -18,27 +18,19 @@
   }
 
   nav {
+    @extend %nav;
+
     position: absolute;
     bottom: 0;
     right: 0;
-    font-family: $stack-nav;
-    text-transform: uppercase;
-  }
 
-  ul {
-    margin: 0;
-    padding-left: 0;
-    display: table;
-  }
+    ul {
+      margin: 0;
+      padding-left: 0;
 
-  li {
-    padding: 0 $gap 0 0;
-    display: table-cell;
-
-    mark {
-      color: $fg;
-      background-color: transparent;
-      font-weight: bold;
+      li {
+        padding: 0 $gap 0 0;
+      }
     }
   }
 
