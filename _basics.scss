@@ -117,7 +117,7 @@ p {
 hr {
   @extend %default-margin;
   $h: 4.5em;
-  $ratio: 8;
+  $ratio: 8; // 128px
 
   border: none;
   position: relative;
@@ -140,7 +140,7 @@ hr {
     color: mixxd($fg, $bg, 0.9);
     color: transparentize($fg, 0.9);
     font-family: $stack-point;
-    font-size: percentage($ratio); // 128px
+    font-size: percentage($ratio);
     text-align: center;
   }
 }
@@ -159,7 +159,7 @@ pre {
 }
 
 blockquote {
-  $ratio: 4.5;
+  $ratio: 4.5; // 72px
 
   margin: 0 0 0 2.5em;
   position: relative;
@@ -179,7 +179,7 @@ blockquote {
     color: transparentize($fg, 0.9);
     font-family: "Trebuchet MS", sans-serif;
     font-weight: bold;
-    font-size: percentage($ratio); // 72px
+    font-size: percentage($ratio);
   }
 
   + p,
@@ -209,7 +209,7 @@ blockquote {
     //   color: transparentize($fg, 0.9);
     //   font-family: "Trebuchet MS", sans-serif;
     //   font-weight: bold;
-    //   font-size: percentage($ratio); // 72px
+    //   font-size: percentage($ratio);
     // }
 
     + p,
