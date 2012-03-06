@@ -137,7 +137,7 @@
   width: $logo-width;
   height: $logo-height;
   overflow: hidden;
-  line-height: $logo-height;
+  line-height: ($logo-height - 0.5em);
   color: $bg;
   background-color: $lightest;
   background-image: url("../images/bg-logo.png");
