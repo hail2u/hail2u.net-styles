@@ -235,16 +235,9 @@ body.debug {
 
   line-height: 1;
 
-  // very ugly...
-  > div,
-  > span {
-    display: block !important;
-    float: left !important;
-    height: 20px !important;
-  }
-
-  iframe {
-    vertical-align: baseline !important;
+  .button {
+    display: inline-block;
+    float: left;
   }
 }
 
