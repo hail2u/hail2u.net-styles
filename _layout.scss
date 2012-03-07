@@ -23,15 +23,17 @@
     position: absolute;
     bottom: 0;
     right: 0;
+  }
 
-    ul {
-      margin: 0;
-      padding-left: 0;
+  ul {
+    margin: 0;
+    padding-left: 0;
+    display: table;
+  }
 
-      li {
-        padding: 0 $gap 0 0;
-      }
-    }
+  li {
+    padding: 0 $gap 0 0;
+    display: table-cell;
   }
 
   @media (min-width: $safe-for-full) {
