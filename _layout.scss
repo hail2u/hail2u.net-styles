@@ -98,25 +98,21 @@
 // Footer
 [role="contentinfo"] {
   padding: $default-margin 0;
-  background-color: mixxd($fg, $bg, 0.9);
-  background-color: transparentize($fg, 0.9);
+  color: $bg;
+  background-color: mixxd($fg, $bg, 0.25);
   font-family: $stack-point;
   font-style: italic;
 
-  address {
-    margin: 0 auto;
-    padding: 0 $gap;
-    max-width: $content-width;
-  }
-
-  section {
-    margin: 0 auto;
+  address,
+  section,
+  .license {
+    margin-right: auto;
+    margin-left: auto;
     padding: 0 $gap;
     max-width: $content-width;
   }
 
   ul {
-    margin: $default-margin 0 0 0;
     padding-left: 0;
     display: table;
   }
@@ -131,9 +127,6 @@
   }
 
   @media (min-width: $safe-for-content) {
-    padding-top: ($default-margin * 2);
-    padding-bottom: ($default-margin * 2);
-
     address {
       max-width: $content-width;
     }
@@ -146,15 +139,20 @@
     ul {
       margin-top: (- $icon-size * 0.5);
       position: absolute;
-      top: (- em($default-line-height) * 0.5);
+      top: 0;
       right: ($gap * 0.5);
+    }
+
+    .license {
+      margin-top: 0;
+      max-width: $content-width;
     }
   }
 
   @media (min-width: $safe-for-full) {
-
     address,
-    section {
+    section,
+    .license {
       max-width: $full-width;
     }
   }
