@@ -46,7 +46,7 @@
 
 // Main
 [role="main"] {
-  margin: (- $default-margin * 4 + $logo-height - $nav-height) auto ($default-margin * 4) auto;
+  margin: (- $default-margin * 4 + $logo-height - $body-border-size - $nav-height) auto ($default-margin * 4) auto;
   padding: 0 $gap;
   max-width: $content-width;
 
