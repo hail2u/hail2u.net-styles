@@ -144,7 +144,7 @@
     ul {
       margin-top: (- $icon-size * 0.5);
       position: absolute;
-      top: (- $default-line-height * 0.5);
+      top: (- em($default-line-height) * 0.5);
       right: ($gap * 0.5);
     }
   }
