@@ -14,20 +14,6 @@
   font-family: $stack-heading;
 }
 
-// Image Container
-.image {
-  img {
-    border: 1px solid mixxd($fg, white, 0.9);
-    border: 1px solid transparentize($fg, 0.9);
-    padding: ($gap * 0.5);
-    background-color: white;
-  }
-
-  a:hover img {
-    border: 1px solid $lightest;
-  }
-}
-
 // Highlight Something
 .highlight {
   background-color: mixxd($mark, $bg, 0.25);
