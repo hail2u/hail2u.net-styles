@@ -104,10 +104,10 @@
   background-image: url("../images/bg-footer.png");
   font-family: $stack-point;
   font-style: italic;
+  text-align: center;
 
-  address,
   section,
-  .license {
+  address {
     margin-right: auto;
     margin-left: auto;
     padding: 0 $gap;
@@ -115,12 +115,13 @@
   }
 
   ul {
+    margin: 0 auto $default-margin auto;
     padding-left: 0;
     display: table;
   }
 
   li {
-    padding: 0 ($gap * 0.5) 0 0;
+    padding: 0 ($gap * 0.25);
     display: table-cell;
 
     a {
@@ -128,10 +129,14 @@
     }
   }
 
+  .license {
+    margin: 0 auto;
+    padding: 0 $gap;
+    max-width: $content-width;
+  }
+
   @media (min-width: $safe-for-content) {
-    address {
-      max-width: $content-width;
-    }
+    text-align: left;
 
     section {
       position: relative;
@@ -141,12 +146,17 @@
     ul {
       margin-top: (- $icon-size * 0.5);
       position: absolute;
-      top: 0;
+      top: em($default-line-height);
       right: ($gap * 0.5);
     }
 
+    li {
+      padding-right: ($gap * 0.5);
+      padding-left: 0;
+    }
+
+    address,
     .license {
-      margin-top: 0;
       max-width: $content-width;
     }
   }
