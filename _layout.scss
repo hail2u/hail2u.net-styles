@@ -98,7 +98,7 @@
 // Footer
 [role="contentinfo"] {
   padding: $default-margin 0;
-  box-shadow: inset $body-border-size 0 0 0 $lightest, inset ($body-border-size * 2) 0 0 0 $base, inset ($body-border-size * 3) 0 0 0 $darkest;
+  box-shadow: inset (- $body-border-size) 0 0 0 $lightest, inset (- $body-border-size * 2) 0 0 0 $base, inset (- $body-border-size * 3) 0 0 0 $darkest;
   color: $bg;
   background-color: mixxd($fg, $bg, 0.25);
   background-image: url("../images/bg-footer.png");
