@@ -40,8 +40,8 @@
     max-width: $full-width;
 
     nav {
-      left: ($gap + $suppli-width + $gutter);
       right: auto;
+      left: ($gap + $suppli-width + $gutter);
     }
   }
 }
