@@ -328,7 +328,7 @@ strong {
   border-bottom: 1px dashed $fg;
 }
 
-@import "normalize.scss/typography/small.scss";
+@import "normalize.scss/typography/small";
 
 cite {
   font-style: normal;
@@ -346,7 +346,7 @@ q::after {
   content: "\300d"; // Right Corner Bracket
 }
 
-@import "normalize.scss/typography/dfn.scss";
+@import "normalize.scss/typography/dfn";
 
 abbr {
   font-variant: small-caps;
@@ -377,7 +377,7 @@ kbd {
   background-color: #f9f9f9;
 }
 
-@import "normalize.scss/typography/sub-and-sup.scss";
+@import "normalize.scss/typography/sub-and-sup";
 
 mark {
   background-color: $mark;
@@ -429,9 +429,9 @@ table {
 }
 
 // Forms
-@import "normalize.scss/forms/form.scss";
-@import "normalize.scss/forms/fieldset.scss";
-@import "normalize.scss/forms/legend.scss";
+@import "normalize.scss/forms/form";
+@import "normalize.scss/forms/fieldset";
+@import "normalize.scss/forms/legend";
 
 button,
 input,
@@ -444,13 +444,14 @@ textarea {
   *vertical-align: middle;
 }
 
-@import "normalize.scss/forms/fix-line-height.scss";
-@import "normalize.scss/forms/buttons.scss";
-@import "normalize.scss/forms/disabled.scss";
-@import "normalize.scss/forms/checkbox-and-radio.scss";
-@import "normalize.scss/forms/search.scss";
-@import "normalize.scss/forms/fix-focus-inner.scss";
-@import "normalize.scss/forms/textarea.scss";
+@import "normalize.scss/forms/fix-line-height";
+@import "normalize.scss/forms/buttons";
+@import "normalize.scss/forms/disabled";
+@import "normalize.scss/forms/checkbox-and-radio";
+@import "normalize.scss/forms/search";
+@import "normalize.scss/forms/placeholder";
+@import "normalize.scss/forms/fix-focus-inner";
+@import "normalize.scss/forms/textarea";
 
 // SVG
 svg:not(:root) {
