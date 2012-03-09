@@ -385,7 +385,6 @@ body > div > div > blockquote {
   }
 
   li {
-    @extend %default-margin;
     @extend %column-3;
   }
 
