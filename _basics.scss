@@ -158,27 +158,22 @@ pre {
 }
 
 blockquote {
-  $ratio: 3; // 48px
-
   margin: 0 0 0 2.5em;
   position: relative;
   clear: both;
-  min-height: em($ratio / 2);
+  min-height: 1.5em;
 
   &::before {
-    margin-right: (1em / $ratio);
+    margin-right: 1em;
     display: block;
     position: absolute;
     top: 0;
     right: 100%;
-    height: 100%;
-    line-height: 1;
-    content: "\201c"; // Left dquote
-    color: mixxd($fg, $bg, 0.9);
-    color: transparentize($fg, 0.9);
-    font-family: "Trebuchet MS", sans-serif;
-    font-weight: bold;
-    font-size: percentage($ratio);
+    width: 1.5em;
+    height: 1.5em;
+    content: "";
+    background-image: $left-double-quote;
+    background-size: 100% 100%;
   }
 
   + p,
@@ -192,7 +187,7 @@ blockquote {
     margin-left: 0;
 
     &::before {
-      margin-right: ($gutter / $ratio);
+      margin-right: $gutter;
     }
 
     // &::after {
