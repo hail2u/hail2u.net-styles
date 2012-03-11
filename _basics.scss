@@ -169,7 +169,9 @@ blockquote {
     height: 1.5em;
     content: "";
     background-image: $left-double-quote;
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
     opacity: 0.1;
   }
 
