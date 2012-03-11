@@ -115,32 +115,28 @@ p {
 }
 
 hr {
-  @extend %default-margin;
   $h: 4.5em;
-  $ratio: 8; // 128px
 
+  margin: $default-margin auto 0 auto;
   border: none;
-  position: relative;
   clear: both;
+  width: 50%;
   height: $h;
+  overflow: hidden;
   background-color: transparent;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 
   &::before {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: ($h / $ratio);
-    line-height: ($h / $ratio);
-    content: "\223c\2219\223c"; // tilda op + bullet op + tilda op
-    color: mixxd($fg, $bg, 0.9);
-    color: transparentize($fg, 0.9);
-    font-family: $stack-point;
-    font-size: percentage($ratio);
-    text-align: center;
+    height: 100%;
+    content: "";
+    background-image: $hr-ornament;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.1;
   }
 }
 
