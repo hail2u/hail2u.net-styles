@@ -115,12 +115,11 @@ p {
 }
 
 hr {
-  $h: 4.5em;
+  $h: 3em;
 
-  margin: $default-margin auto 0 auto;
+  margin: ($default-margin + $h * 0.5) auto ($h * 0.5) auto;
   border: none;
   clear: both;
-  width: 50%;
   height: $h;
   overflow: hidden;
   background-color: transparent;
