@@ -196,14 +196,20 @@ body.debug {
       display: block;
       width: 100%;
       height: 100%;
-      content: $left-arrow;
+      content: "";
+      background-image: $left-arrow;
+      background-position: center center;
+      background-size: contain;
     }
 
     &[rel="next"]::before {
       display: block;
       width: 100%;
       height: 100%;
-      content: $right-arrow;
+      content: "";
+      background-image: $right-arrow;
+      background-position: center center;
+      background-size: contain;
     }
   }
 
