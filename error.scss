@@ -1,4 +1,4 @@
-$version: "4.5";
+$version: "4.5.1";
 
 /*!
  * error.css v#{$version}
@@ -7,13 +7,13 @@ $version: "4.5";
  */
 
 // Web Fonts
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:700|Terminal+Dosis:400");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700|Crimson+Text:400,400italic|Open+Sans+Condensed:300,700");
 
 // Variables
 @import "vars";
 
 // Partials
-@import "normalize";
+@import "normalize.scss/normalize";
 
 html {
   overflow: hidden;
