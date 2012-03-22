@@ -242,3 +242,27 @@
     }
   }
 }
+
+// Ornament seperator
+%ornament-sep {
+  $h: 3em;
+
+  border: none;
+  clear: both;
+  height: ($h * 2);
+  overflow: hidden;
+  background-color: transparent;
+
+  &::before {
+    margin-top: ($h * 0.5);
+    display: block;
+    width: 100%;
+    height: $h;
+    content: "";
+    background-image: $ornament;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.1;
+  }
+}

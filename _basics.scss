@@ -116,28 +116,10 @@ p {
 
 hr {
   @extend %default-margin;
-  $h: 3em;
+  @extend %ornament-sep;
 
-  border: none;
-  clear: both;
-  height: ($h * 2);
-  overflow: hidden;
-  background-color: transparent;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-
-  &::before {
-    margin-top: ($h * 0.5);
-    display: block;
-    width: 100%;
-    height: $h;
-    content: "";
-    background-image: $hr-ornament;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    opacity: 0.1;
-  }
 }
 
 pre {
