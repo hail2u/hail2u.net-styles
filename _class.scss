@@ -20,103 +20,77 @@
   background-color: transparentize($mark, 0.25);
 }
 
-// Minimal List
-%minimal {
-  padding-left: 0;
+// Ornament seperator
+%ornament-sep {
+  $h: 3em;
 
-  li {
-    display: inline;
+  border: none;
+  clear: both;
+  height: ($h * 2);
+  overflow: hidden;
+  background-color: transparent;
+
+  &::before {
+    margin-top: ($h * 0.5);
+    display: block;
+    width: 100%;
+    height: $h;
+    content: "";
+    background-image: $ornament;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.1;
   }
 }
 
-// Flat Description List
-%flat {
-  @include clearfix;
+// Quote mark
+%quote-mark {
+  $size: 1.5em;
 
-  dt {
-    clear: both;
+  position: relative;
+  min-height: $size;
+
+  &::before {
+    margin-right: 1em;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: $size;
+    height: $size;
+    content: "";
+    background-image: $left-double-quote;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.1;
   }
 
-  dd {
-    margin: 0 1em 0 0;
-    float: left;
-  }
-
-  @media (min-width: $safe-for-content) {
-    dt {
-      float: left;
-      clear: left;
-
-      &::after {
-        content: "\003a"; // colon
-      }
-    }
-
-    dd {
-      margin: 0 0 0 1em;
-    }
-  }
-}
-
-// Column
-%column-container {
-  @include clearfix;
-
-  @media (min-width: $safe-for-content) {
-    margin-right: (- $gap);
-    margin-left: (- $gap);
-  }
-}
-
-@for $i from 1 through 12 {
-  %column-#{$i} {
-    @media (min-width: $safe-for-content) {
-      margin-right: $gap;
-      margin-left: $gap;
-      float: left;
-      width: (($column + $gutter) * $i - $gutter);
+  @media (min-width: $safe-for-full) {
+    &::before {
+      margin-right: $gutter;
     }
   }
 }
 
-// Elegant Button
-%elegant-btn {
-  padding: 0 1em;
-  border: 1px solid $base;
-  border-radius: 0.25em;
-  box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.3);
-  box-shadow: inset 0 1px 0 0 transparentize(white, 0.3);
+// White keytop
+%white-keytop {
+  margin: 0 0.25em;
+  padding: 0.125em 0.375em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 0 #ccc;
   display: inline-block;
-  height: 2em;
-  line-height: 2;
-  color: $bg;
-  background-color: $light;
-  background-image: $button-overlay-normal;
-  font-family: $stack-point;
-  // font-style: italic;
-  text-decoration: none;
-  text-shadow: 0 -1px 0 mixxd($darkest, $light, 0.5);
-  text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
-
-  &:hover {
-    border-color: $dark;
-    box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.3), 0 0 0.25em 0 $light;
-    box-shadow: inset 0 1px 0 0 transparentize(white, 0.3), 0 0 0.25em 0 $light;
-    color: $bg;
-    background-color: darken($light, 5%);
-    cursor: pointer;
-  }
-
-  &:active {
-    box-shadow: 0 0 0.25em 0 $light;
-    position: relative;
-    top: 1px;
-    background-image: $button-overlay-active;
-  }
+  position: relative;
+  top: -2px;
+  line-height: 1;
+  color: #666;
+  background-color: #f9f9f9;
 }
 
-// Logo
-%logo {
+// Header logo
+%header-logo {
   box-shadow: inset 0 -0.25em 0 0 $darkest, inset 0 -0.5em 0 0 $base;
   display: block;
   position: relative;
@@ -145,8 +119,8 @@
   }
 }
 
-// Nav
-%nav {
+// Golbal navigation
+%global-nav {
   height: $nav-height;
   line-height: $nav-height;
   font-family: $stack-nav;
@@ -243,71 +217,97 @@
   }
 }
 
-// Ornament seperator
-%ornament-sep {
-  $h: 3em;
+// Minimal List
+%minimal {
+  padding-left: 0;
 
-  border: none;
-  clear: both;
-  height: ($h * 2);
-  overflow: hidden;
-  background-color: transparent;
-
-  &::before {
-    margin-top: ($h * 0.5);
-    display: block;
-    width: 100%;
-    height: $h;
-    content: "";
-    background-image: $ornament;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    opacity: 0.1;
+  li {
+    display: inline;
   }
 }
 
-// Quote mark
-%quote-mark {
-  $size: 1.5em;
+// Flat Description List
+%flat {
+  @include clearfix;
 
-  position: relative;
-  min-height: $size;
-
-  &::before {
-    margin-right: 1em;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: $size;
-    height: $size;
-    content: "";
-    background-image: $left-double-quote;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    opacity: 0.1;
+  dt {
+    clear: both;
   }
 
-  @media (min-width: $safe-for-full) {
-    &::before {
-      margin-right: $gutter;
+  dd {
+    margin: 0 1em 0 0;
+    float: left;
+  }
+
+  @media (min-width: $safe-for-content) {
+    dt {
+      float: left;
+      clear: left;
+
+      &::after {
+        content: "\003a"; // colon
+      }
+    }
+
+    dd {
+      margin: 0 0 0 1em;
     }
   }
 }
 
-// White keytop
-%white-keytop {
-  margin: 0 0.25em;
-  padding: 0.125em 0.375em;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-shadow: 0 2px 0 0 #ccc;
+// Column
+%column-container {
+  @include clearfix;
+
+  @media (min-width: $safe-for-content) {
+    margin-right: (- $gap);
+    margin-left: (- $gap);
+  }
+}
+
+@for $i from 1 through 12 {
+  %column-#{$i} {
+    @media (min-width: $safe-for-content) {
+      margin-right: $gap;
+      margin-left: $gap;
+      float: left;
+      width: (($column + $gutter) * $i - $gutter);
+    }
+  }
+}
+
+// Elegant Button
+%elegant-btn {
+  padding: 0 1em;
+  border: 1px solid $base;
+  border-radius: 0.25em;
+  box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.3);
+  box-shadow: inset 0 1px 0 0 transparentize(white, 0.3);
   display: inline-block;
-  position: relative;
-  top: -2px;
-  line-height: 1;
-  color: #666;
-  background-color: #f9f9f9;
+  height: 2em;
+  line-height: 2;
+  color: $bg;
+  background-color: $light;
+  background-image: $button-overlay-normal;
+  font-family: $stack-point;
+  // font-style: italic;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 mixxd($darkest, $light, 0.5);
+  text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
+
+  &:hover {
+    border-color: $dark;
+    box-shadow: inset 0 1px 0 0 mixxd(white, $light, 0.3), 0 0 0.25em 0 $light;
+    box-shadow: inset 0 1px 0 0 transparentize(white, 0.3), 0 0 0.25em 0 $light;
+    color: $bg;
+    background-color: darken($light, 5%);
+    cursor: pointer;
+  }
+
+  &:active {
+    box-shadow: 0 0 0.25em 0 $light;
+    position: relative;
+    top: 1px;
+    background-image: $button-overlay-active;
+  }
 }

@@ -13,12 +13,12 @@
 
     a,
     mark {
-      @extend %logo;
+      @extend %header-logo;
     }
   }
 
   nav {
-    @extend %nav;
+    @extend %global-nav;
 
     position: absolute;
     bottom: 0;
