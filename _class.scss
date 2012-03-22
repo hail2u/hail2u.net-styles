@@ -266,3 +266,33 @@
     opacity: 0.1;
   }
 }
+
+// Quote mark
+%quote-mark {
+  $size: 1.5em;
+
+  position: relative;
+  min-height: $size;
+
+  &::before {
+    margin-right: 1em;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: $size;
+    height: $size;
+    content: "";
+    background-image: $left-double-quote;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.1;
+  }
+
+  @media (min-width: $safe-for-full) {
+    &::before {
+      margin-right: $gutter;
+    }
+  }
+}

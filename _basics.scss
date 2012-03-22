@@ -136,26 +136,10 @@ pre {
 }
 
 blockquote {
-  margin: 0 0 0 2.5em;
-  position: relative;
-  clear: both;
-  min-height: 1.5em;
+  @extend %quote-mark;
 
-  &::before {
-    margin-right: 1em;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: 1.5em;
-    height: 1.5em;
-    content: "";
-    background-image: $left-double-quote;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    opacity: 0.1;
-  }
+  margin: 0 0 0 2.5em;
+  clear: both;
 
   + p,
   + figcaption {
@@ -166,26 +150,6 @@ blockquote {
 
   @media (min-width: $safe-for-full) {
     margin-left: 0;
-
-    &::before {
-      margin-right: $gutter;
-    }
-
-    // &::after {
-    //   margin-left: ($gutter / $ratio);
-    //   display: block;
-    //   position: absolute;
-    //   bottom: 0;
-    //   left: 100%;
-    //   height: 0.5em;
-    //   line-height: 1;
-    //   content: "\201d"; // Right dquote
-    //   color: mixxd($fg, $bg, 0.9);
-    //   color: transparentize($fg, 0.9);
-    //   font-family: "Trebuchet MS", sans-serif;
-    //   font-weight: bold;
-    //   font-size: percentage($ratio);
-    // }
 
     + p,
     + figcaption {
