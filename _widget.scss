@@ -198,6 +198,7 @@ body.debug {
       height: 100%;
       content: "\00a0";
       background-image: $left-arrow;
+      background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
     }
@@ -208,6 +209,7 @@ body.debug {
       height: 100%;
       content: "\00a0";
       background-image: $right-arrow;
+      background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
     }
