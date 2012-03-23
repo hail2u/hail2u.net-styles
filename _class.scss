@@ -1,4 +1,6 @@
 // Clearfix
+@import "scss-partials/clearfix";
+
 %clearfix {
   @include clearfix;
 }
@@ -142,6 +144,8 @@
 }
 
 // Footer icon
+@import "scss-partials/corporate-colors";
+
 %footer-icon {
   @extend %ir;
 

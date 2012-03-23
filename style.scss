@@ -15,11 +15,6 @@ $version: "6.21.7";
 // Variable
 @import "vars";
 
-// Partial
-@import "scss-partials/clearfix";
-@import "scss-partials/vendor-extension";
-@import "scss-partials/corporate-colors";
-
 // Style for screen
 @import "class";
 @import "basics";
