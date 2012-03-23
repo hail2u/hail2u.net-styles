@@ -178,11 +178,12 @@ body.debug {
   }
 
   a {
+    @extend %ir;
+
     border-radius: #{($column-span1 * 0.5)}/#{($column-span1 * 0.5)};
     display: block;
     width: $column-span1;
     height: $column-span1;
-    overflow: hidden;
     color: $bg;
     background-color: $fg;
     opacity: 0.1;
@@ -193,14 +194,10 @@ body.debug {
     }
 
     &[rel="prev"]::before {
-      @extend %ir;
-
       background-image: $left-arrow;
     }
 
     &[rel="next"]::before {
-      @extend %ir;
-
       background-image: $right-arrow;
     }
   }

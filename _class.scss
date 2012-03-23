@@ -4,14 +4,16 @@
 }
 
 // Image replacement
+@import "scss-partials/image-replacement";
+
 %ir {
-  display: block;
-  width: 100%;
-  height: 100%;
-  content: "\00a0";
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  @include ir-pseudo-element;
+
+  &::before {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
 }
 
 // Margin
@@ -38,17 +40,15 @@
 
 // Ornament seperator
 %ornament-sep {
+  @extend %ir;
   $h: 3em;
 
   border: none;
   clear: both;
   height: ($h * 2);
-  overflow: hidden;
   background-color: transparent;
 
   &::before {
-    @extend %ir;
-
     margin-top: ($h * 0.5);
     height: $h;
     background-image: $ornament;
@@ -58,14 +58,14 @@
 
 // Quote mark
 %quote-mark {
+  @extend %ir;
   $size: 1.5em;
 
   position: relative;
   min-height: $size;
+  overflow: visible;
 
   &::before {
-    @extend %ir;
-
     margin-right: 1em;
     position: absolute;
     top: 0;
@@ -143,17 +143,16 @@
 
 // Footer icon
 %footer-icon {
+  @extend %ir;
+
   border-radius: #{($icon-size * 0.5)}/#{($icon-size * 0.5)};
   display: block;
   width: $icon-size;
   height: $icon-size;
   line-height: $icon-size;
   overflow: hidden;
-  background-clip: padding-box;
-  background-image: url("../images/icons/icons-w.png");
-  background-repeat: no-repeat;
-  text-decoration: none;
   background-color: $fg;
+  text-decoration: none;
   opacity: 0.1;
 
   &:hover {
@@ -161,64 +160,79 @@
   }
 
   &::before {
-    @extend %ir;
+    background-image: url("../images/icons/icons-w.png");
+    background-size: auto;
   }
 
   $adjuster: (($icon-size - 32px) * 0.5);
 
   &[href^="http://feeds.feedburner.com/hail2u"] {
-    background-position: center $adjuster;
-
     &:hover {
       background-color: $cc-feed;
+    }
+
+    &::before {
+      background-position: center $adjuster;
     }
   }
 
   &[href="http://www.facebook.com/hail2u"] {
-    background-position: center (- 32px * 10 + $adjuster);
-
     &:hover {
       background-color: $cc-facebook;
+    }
+
+    &::before {
+      background-position: center (- 32px * 10 + $adjuster);
     }
   }
 
   &[href="https://twitter.com/hell2u"] {
-    background-position: center (- 32px * 3 + $adjuster);
-
     &:hover {
       background-color: $cc-twitter;
+    }
+
+    &::before {
+      background-position: center (- 32px * 3 + $adjuster);
     }
   }
 
   &[href="https://github.com/hail2u"] {
-    background-position: center (- 32px * 5 + $adjuster);
-
     &:hover {
       background-color: $cc-github;
+    }
+
+    &::before {
+      background-position: center (- 32px * 5 + $adjuster);
     }
   }
 
   &[href="http://pinterest.com/hail2u/"] {
-    background-position: center (- 32px * 13 + $adjuster);
-
     &:hover {
       background-color: $cc-pinterest;
+    }
+
+    &::before {
+      background-position: center (- 32px * 13 + $adjuster);
     }
   }
 
   &[href="http://www.last.fm/user/hail2u"] {
-    background-position: center (- 32px * 7 + $adjuster);
-
     &:hover {
       background-color: $cc-lastfm;
+    }
+
+    &::before {
+      background-position: center (- 32px * 7 + $adjuster);
     }
   }
 
   &[href="http://www.delicious.com/hail2u"] {
-    background-position: center (- 32px * 8 + $adjuster);
-
     &:hover {
       background-color: $cc-delicious;
+    }
+
+    &::before {
+      background-position: center (- 32px * 8 + $adjuster);
     }
   }
 }
