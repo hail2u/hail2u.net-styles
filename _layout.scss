@@ -106,15 +106,17 @@
   text-align: center;
 
   section,
-  address {
-    margin-right: auto;
-    margin-left: auto;
+  address,
+  ul,
+  .license {
+    margin: 0 auto;
     padding: 0 $gap;
     max-width: $content-width;
   }
 
   ul {
-    margin: 0 auto $default-margin auto;
+    margin-bottom: $default-margin;
+    padding-right: 0;
     padding-left: 0;
     display: table;
   }
@@ -128,18 +130,17 @@
     }
   }
 
-  .license {
-    margin: 0 auto;
-    padding: 0 $gap;
-    max-width: $content-width;
-  }
-
   @media (min-width: $safe-for-content) {
     text-align: left;
 
+    address,
+    section,
+    .license {
+      max-width: $content-width;
+    }
+
     section {
       position: relative;
-      max-width: $content-width;
     }
 
     ul {
@@ -152,11 +153,6 @@
     li {
       padding-right: ($gap * 0.5);
       padding-left: 0;
-    }
-
-    address,
-    .license {
-      max-width: $content-width;
     }
   }
 
