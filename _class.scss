@@ -1,3 +1,8 @@
+// Clearfix
+%clearfix {
+  @include clearfix;
+}
+
 // Image replacement
 %ir {
   display: block;
@@ -229,7 +234,7 @@
 
 // Flat Description List
 %flat {
-  @include clearfix;
+  @extend %clearfix;
 
   dt {
     clear: both;
@@ -258,7 +263,7 @@
 
 // Column
 %column-container {
-  @include clearfix;
+  @extend %clearfix;
 
   @media (min-width: $safe-for-content) {
     margin-right: (- $gap);

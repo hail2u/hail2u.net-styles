@@ -228,8 +228,8 @@ body.debug {
 
 // Social Buttons
 .buttons {
+  @extend %clearfix;
   @extend %default-margin;
-  @include clearfix;
 
   line-height: 1;
 

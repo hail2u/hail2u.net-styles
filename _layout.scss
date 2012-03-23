@@ -54,7 +54,7 @@
 
   > section,
   > article {
-    @include clearfix;
+    @extend %clearfix;
 
     position: relative;
   }
