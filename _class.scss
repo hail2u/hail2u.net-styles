@@ -1,3 +1,14 @@
+// Image replacement
+%ir {
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "\00a0";
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
 // Margin
 %default-margin {
   margin: $default-margin 0 0 0;
@@ -31,15 +42,11 @@
   background-color: transparent;
 
   &::before {
+    @extend %ir;
+
     margin-top: ($h * 0.5);
-    display: block;
-    width: 100%;
     height: $h;
-    content: "";
     background-image: $ornament;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
     opacity: 0.1;
   }
 }
@@ -52,18 +59,15 @@
   min-height: $size;
 
   &::before {
+    @extend %ir;
+
     margin-right: 1em;
-    display: block;
     position: absolute;
     top: 0;
     right: 100%;
     width: $size;
     height: $size;
-    content: "";
     background-image: $left-double-quote;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
     opacity: 0.1;
   }
 
@@ -152,10 +156,7 @@
   }
 
   &::before {
-    display: block;
-    width: 100%;
-    height: 100%;
-    content: "\00a0"; // nbsp
+    @extend %ir;
   }
 
   $adjuster: (($icon-size - 32px) * 0.5);

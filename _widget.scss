@@ -193,25 +193,15 @@ body.debug {
     }
 
     &[rel="prev"]::before {
-      display: block;
-      width: 100%;
-      height: 100%;
-      content: "\00a0";
+      @extend %ir;
+
       background-image: $left-arrow;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
     }
 
     &[rel="next"]::before {
-      display: block;
-      width: 100%;
-      height: 100%;
-      content: "\00a0";
+      @extend %ir;
+
       background-image: $right-arrow;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
     }
   }
 
