@@ -60,6 +60,8 @@
   }
 
   h2 + footer {
+    @extend %hanging-block;
+
     color: mixxd($fg, $bg, 0.6);
     color: transparentize($fg, 0.6);
     font-family: $stack-point;
@@ -81,16 +83,8 @@
     padding-right: ($gap + $column-span1 + $gap);
     padding-left: ($gap + $suppli-width + $gap);
 
-    h2 + footer {
-      margin-right: $gutter;
-      position: absolute;
-      top: 0;
-      right: 100%;
-      width: $suppli-width;
-
-      br {
-        display: inline;
-      }
+    h2 + footer br {
+      display: inline;
     }
   }
 }

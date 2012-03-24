@@ -79,6 +79,17 @@
   }
 }
 
+// Hanging block
+%hanging-block {
+  @media (min-width: $safe-for-full) {
+    margin-right: $gutter;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: $suppli-width;
+  }
+}
+
 // White keytop
 %white-keytop {
   margin: 0 0.25em;

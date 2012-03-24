@@ -166,8 +166,12 @@ body.debug {
 
 // Paging
 .paging {
+  margin: ($default-margin * 3) auto 0 auto;
+
   ul {
-    margin: ($default-margin * 3) auto 0 auto;
+    @extend %hanging-block;
+
+    margin-top: 0;
     padding-left: 0;
     display: table;
   }
@@ -203,14 +207,12 @@ body.debug {
   }
 
   @media (min-width: $safe-for-full) {
+    margin-top: 0;
     position: relative;
 
     ul {
-      margin-top: 0;
-      margin-left: 0;
-      position: absolute;
-      bottom: 100%;
-      left: (- $suppli-width - $gutter);
+      top: auto;
+      bottom: 0;
     }
 
     li {

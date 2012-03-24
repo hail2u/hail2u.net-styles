@@ -216,15 +216,11 @@ figure {
 }
 
 figcaption {
+  @extend %hanging-block;
+
   font-family: $stack-point;
 
   @media (min-width: $safe-for-full) {
-    margin-right: $gutter;
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: $suppli-width;
-
     blockquote + & {
       margin-right: 0;
       position: static;
