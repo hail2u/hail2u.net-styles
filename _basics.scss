@@ -242,13 +242,13 @@ a {
     outline: thin dotted;
   }
 
+  &:active,
   &:hover {
-    color: $hover;
     outline: 0;
   }
 
-  &:active {
-    outline: 0;
+  &:hover {
+    color: $hover;
   }
 
   section p &,
