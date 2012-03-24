@@ -34,12 +34,6 @@
   font-family: $stack-heading;
 }
 
-// Highlight Something
-.highlight {
-  background-color: mixxd($mark, $bg, 0.25);
-  background-color: transparentize($mark, 0.25);
-}
-
 // Ornament seperator
 %ornament-sep {
   @extend %ir;
