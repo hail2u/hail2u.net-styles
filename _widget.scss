@@ -226,13 +226,13 @@ body.debug {
  */
 
 // Social Buttons
-.buttons {
+.social-buttons {
   @extend %clearfix;
   @extend %default-margin;
 
   line-height: 1;
 
-  .button {
+  > div {
     display: inline-block;
     float: left;
   }
