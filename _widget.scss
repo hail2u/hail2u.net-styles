@@ -239,7 +239,7 @@ body.debug {
 }
 
 // Hatena Star
-body > div > div > blockquote {
+blockquote[style] {
   min-height: 0;
 
   &:before {
