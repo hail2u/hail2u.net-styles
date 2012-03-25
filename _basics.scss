@@ -18,13 +18,13 @@ body {
   background-image: url("../images/bg-body.png");
   font-family: $stack-body;
 
-  // Decrese font size
-  $ratio: 0.875;
-  $too-narrow: $safe-for-content * $ratio * $ratio;
+  // // Decrease font size
+  // $ratio: 0.875;
+  // $too-narrow: $safe-for-content * $ratio * $ratio;
 
-  @media (max-width: $too-narrow) {
-    font-size: percentage($ratio);
-  }
+  // @media (max-width: $too-narrow) {
+  //   font-size: percentage($ratio);
+  // }
 
   // Increse font size
   $ratio: 1.125;
