@@ -77,7 +77,7 @@ body.debug {
   @extend %minimal;
 
   li::after {
-    content: " \2756";
+    content: "\0020\2756";
   }
 
   li:last-child::after {
