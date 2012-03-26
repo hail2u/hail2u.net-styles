@@ -90,8 +90,8 @@ body.debug {
   @extend %flat;
 
   dd {
-    color: mixxd($fg, $bg, 0.75);
-    color: transparentize($fg, 0.75);
+    color: mixxd($fg, $bg, 0.6);
+    color: transparentize($fg, 0.6);
   }
 }
 
