@@ -99,16 +99,13 @@ body.debug {
 #posts {
   @extend %column-container;
 
+  margin-top: $default-margin;
   padding-left: 2.5em;
 
   > section {
     @extend %column-3;
 
     display: list-item;
-
-    &:first-child {
-      margin-top: $default-margin;
-    }
 
     p {
       display: none;
@@ -123,15 +120,12 @@ body.debug {
   }
 
   @media (min-width: $safe-for-content) {
+    margin-top: 0;
     padding-left: 0;
 
     > section {
       margin-left: $gap;
       display: block;
-
-      &:first-child {
-        margin-top: 0;
-      }
 
       p {
         $ratio: 0.75;
