@@ -1,0 +1,66 @@
+// Grid Overlay
+@import "scss-partials/grid-overlay";
+
+body.debug {
+  @include grid-overlay($gutter, $column);
+
+  @media (min-width: $safe-for-full) {
+    @include grid-overlay($column, $gutter);
+  }
+
+  // background-image: -webkit-linear-gradient(top, transparent 0, transparent 27px, #0ff 27px, #0ff 28px);
+  // background-size: 100% 28px;
+  // background-repeat: repeat-y;
+}
+
+// Colors
+.colors {
+  @extend %column-container;
+
+  padding-left: 0;
+
+  li {
+    @extend %column-1;
+
+    margin-bottom: $gutter;
+    border: 1px solid black;
+    display: block;
+    direction: ltr;
+    height: $column-span1;
+    text-indent: -9999em;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &:nth-child(1) {
+      background-color: $base;
+    }
+
+    &:nth-child(2) {
+      background-color: $darkest;
+    }
+
+    &:nth-child(3) {
+      background-color: $dark;
+    }
+
+    &:nth-child(4) {
+      background-color: $light;
+    }
+
+    &:nth-child(5) {
+      background-color: $lightest;
+    }
+
+    &:nth-child(6) {
+      background-color: $fg;
+    }
+
+    &:nth-child(7) {
+      background-color: $bg;
+    }
+
+    @media (min-width: $safe-for-content) {
+      margin-bottom: 0;
+    }
+  }
+}
