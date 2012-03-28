@@ -1,6 +1,10 @@
 // Selection
-::selection,
 ::-moz-selection {
+  color: $bg;
+  background-color: $base;
+}
+
+::selection {
   color: $bg;
   background-color: $base;
 }
