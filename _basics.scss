@@ -2,11 +2,13 @@
 ::-moz-selection {
   color: $bg;
   background-color: $base;
+  text-shadow: none;
 }
 
 ::selection {
   color: $bg;
   background-color: $base;
+  text-shadow: none;
 }
 
 // The root element
