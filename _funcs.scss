@@ -23,7 +23,7 @@
 
 // em() - Convert unitless number to an em.
 //
-// @param {number} $number The decimal number to convert to an em
+// @param {number} $number
 @function em($number) {
   $number: (1em * $number);
 
