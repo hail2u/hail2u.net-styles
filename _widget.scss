@@ -158,7 +158,7 @@
 blockquote[style] {
   min-height: 0;
 
-  &:before {
+  &::before {
     display: none;
   }
 }
