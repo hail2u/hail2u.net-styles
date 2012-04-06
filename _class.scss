@@ -252,6 +252,16 @@
       background-position: center (- 32px * 8 + $adjuster);
     }
   }
+
+  &[href="http://u2liah.tumblr.com/"] {
+    &:hover {
+      background-color: $cc-tumblr;
+    }
+
+    &::before {
+      background-position: center (- 32px * 18 + $adjuster);
+    }
+  }
 }
 
 // Minimal List
