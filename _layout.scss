@@ -22,7 +22,7 @@
 
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: ($gap * 0.5);
   }
 
   ul {
@@ -32,8 +32,18 @@
   }
 
   li {
-    padding: 0 $gap 0 0;
+    padding: 0 ($gap * 0.5) 0 0;
     display: table-cell;
+  }
+
+  @media (min-width: $safe-for-content) {
+    nav {
+      right: 0;
+    }
+
+    li {
+      padding-right: $gap;
+    }
   }
 
   @media (min-width: $safe-for-full) {
