@@ -110,7 +110,8 @@
   section,
   address,
   ul,
-  .license {
+  .license,
+  .subscribe {
     margin: 0 auto;
     padding: 0 $gap;
     max-width: $content-width;
@@ -137,7 +138,8 @@
 
     address,
     section,
-    .license {
+    .license,
+    .subscribe {
       max-width: $content-width;
     }
 
@@ -148,7 +150,7 @@
     ul {
       margin-top: (- $icon-size * 0.5);
       position: absolute;
-      top: em($default-line-height);
+      top: em($default-line-height * 3 * 0.5);
       right: ($gap * 0.5);
     }
 
@@ -161,7 +163,8 @@
   @media (min-width: $safe-for-full) {
     address,
     section,
-    .license {
+    .license,
+    .subscribe {
       max-width: $full-width;
     }
   }
