@@ -267,6 +267,10 @@ a {
   aside p & {
     text-decoration: underline;
   }
+
+  [role="contentinfo"] &:hover {
+    color: $link;
+  }
 }
 
 em {
