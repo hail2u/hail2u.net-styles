@@ -70,14 +70,13 @@
   }
 
   h2 + footer {
-    @extend %hanging-block;
-
     color: mixxd($fg, $bg, 0.6);
     color: transparentize($fg, 0.6);
     font-family: $stack-point;
 
     p {
       @extend %mini-margin;
+      @extend %hanging-block;
     }
 
     br {
@@ -93,8 +92,15 @@
     padding-right: ($gap + $column-span1 + $gap);
     padding-left: ($gap + $suppli-width + $gap);
 
-    h2 + footer br {
-      display: inline;
+    h2 + footer {
+      p {
+        margin-top: $default-margin;
+        top: auto;
+      }
+
+      br {
+        display: inline;
+      }
     }
   }
 }
