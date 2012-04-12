@@ -19,17 +19,6 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-}
-
-// Sections
-body {
-  margin: 0;
-  box-shadow: inset 0 $body-border-size 0 0 $lightest;
-  line-height: $default-line-height;
-  color: $fg;
-  background-color: $bg;
-  background-image: url("../images/bg-body.png");
-  font-family: $stack-body;
 
   // // Decrease font size
   // $ratio: 0.875;
@@ -54,6 +43,17 @@ body {
   @media (min-width: $wide-enough) {
     font-size: percentage($ratio);
   }
+}
+
+// Sections
+body {
+  margin: 0;
+  box-shadow: inset 0 $body-border-size 0 0 $lightest;
+  line-height: $default-line-height;
+  color: $fg;
+  background-color: $bg;
+  background-image: url("../images/bg-body.png");
+  font-family: $stack-body;
 }
 
 h1 {
