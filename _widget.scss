@@ -87,6 +87,7 @@
 // Paging
 .paging {
   margin: ($default-margin * 3) auto 0 auto;
+  width: ($gap + $column-span2 + $gap);
 
   ul {
     @extend %hanging-block;
@@ -129,6 +130,7 @@
   @media (min-width: $safe-for-full) {
     margin-top: 0;
     position: relative;
+    width: auto;
 
     ul {
       top: auto;
