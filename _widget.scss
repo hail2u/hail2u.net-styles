@@ -3,7 +3,7 @@
   @extend %minimal;
 
   li::after {
-    content: "\0020\2756";
+    content: "\0020\00a0\2756\00a0";
   }
 
   li:last-child::after {
