@@ -118,20 +118,19 @@
   ul,
   .license,
   .subscribe {
-    margin: 0 auto;
+    margin: ($default-margin * 0.5) auto;
     padding: 0 $gap;
     max-width: $content-width;
   }
 
   ul {
-    margin-bottom: $default-margin;
     padding-right: 0;
     padding-left: 0;
-    display: table;
+    display: inline-table;
   }
 
   li {
-    padding: 0 ($gap * 0.25);
+    padding: 0 ($gap * 0.5);
     display: table-cell;
 
     a {
@@ -140,13 +139,22 @@
   }
 
   @media (min-width: $safe-for-content) {
+    address,
+    section,
+    .license,
+    .subscribe {
+      max-width: $content-width;
+    }
+  }
+
+  @media (min-width: $safe-for-full) {
     text-align: left;
 
     address,
     section,
     .license,
     .subscribe {
-      max-width: $content-width;
+      max-width: $full-width;
     }
 
     section {
@@ -156,22 +164,13 @@
     ul {
       margin-top: (- $icon-size * 0.5);
       position: absolute;
-      top: em($default-line-height * 3 * 0.5);
+      top: ((em($default-line-height * 3) + $default-margin) * 0.5);
       right: ($gap * 0.5);
     }
 
     li {
       padding-right: ($gap * 0.5);
       padding-left: 0;
-    }
-  }
-
-  @media (min-width: $safe-for-full) {
-    address,
-    section,
-    .license,
-    .subscribe {
-      max-width: $full-width;
     }
   }
 }
