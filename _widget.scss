@@ -21,6 +21,12 @@
   }
 }
 
+// Category Archives
+#by-category li {
+  margin-right: $gap;
+  display: inline-block;
+}
+
 // Posts (inherit Column)
 #posts {
   @extend %column-container;
