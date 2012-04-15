@@ -22,9 +22,15 @@
 }
 
 // Category Archives
-#by-category li {
-  margin-right: $gap;
-  display: inline-block;
+#by-category {
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    margin-right: $gap;
+    display: inline-block;
+  }
 }
 
 // Posts (inherit Column)
