@@ -24,12 +24,17 @@
 // Category Archives
 #by-category {
   ul {
-    padding-left: 0;
+    @extend %column-container;
+
+    @media (min-width: $safe-for-content) {
+      padding-left: 0;
+    }
   }
 
   li {
-    margin-right: $gap;
-    display: inline-block;
+    @extend %column-2;
+
+    display: block;
   }
 }
 
