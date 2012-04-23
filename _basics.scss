@@ -95,7 +95,7 @@ h5 {
 
 h6 {
   @extend %heading;
-  $ratio: 1; // 16px
+  $ratio: 0.875; // 14px
 
   margin: ($default-margin * 2 / $ratio) 0 0 0;
   font-size: percentage($ratio);
