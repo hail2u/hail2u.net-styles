@@ -171,6 +171,15 @@
     display: inline-block;
     float: left;
   }
+
+  iframe {
+    vertical-align: text-bottom;
+  }
+}
+
+// Facebook Like Button
+.fb-like {
+  margin-right: 0.5em;
 }
 
 // Hatena Star
