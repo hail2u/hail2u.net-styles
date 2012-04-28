@@ -1,11 +1,9 @@
 @import "scss-partials/black-prints";
 
 @media print {
-  @include "black-prints";
+  @include black-prints;
 
   body {
-    color: black;
-    background-color: white;
     font-family: "Georgia", serif;
   }
 
@@ -22,6 +20,19 @@
   h6 {
     page-break-after: avoid;
     page-break-inside: avoid;
+    font-family: inherit;
+  }
+
+  hr {
+    margin-right: auto;
+    margin-left: auto;
+    border-top: 1px dashed black;
+    width: 80%;
+    height: 0;
+
+    &::before {
+      display: none;
+    }
   }
 
   pre {
@@ -41,6 +52,10 @@
 
   figure {
     page-break-inside: avoid;
+
+    figcaption {
+      font-family: inherit;
+    }
   }
 
   code,
@@ -62,11 +77,38 @@
     page-break-inside: avoid;
   }
 
-  [role="main"] h2 + footer br {
-    display: none;
+  [role="banner"] h1 {
+    $ratio: 2.25;
+
+    margin-top: ($default-margin * 2 / $ratio);
+    font-size: percentage($ratio);
+
+    a,
+    mark {
+      width: auto;
+      line-height: 1;
+
+      &::before {
+        display: none;
+      }
+    }
   }
 
-  [role="contentinfo"] section {
-    display: none;
+  [role="main"] h2 + footer {
+    font-family: inherit;
+
+    br {
+      display: none;
+    }
+  }
+
+  [role="contentinfo"] {
+    font-family: inherit;
+    text-align: Left;
+
+    section,
+    .subscribe {
+      display: none;
+    }
   }
 }
