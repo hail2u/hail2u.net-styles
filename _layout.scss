@@ -3,7 +3,6 @@
   margin: 0 auto;
   padding: 0 $gap;
   position: relative;
-  height: $logo-height;
   max-width: $content-width;
 
   h1 {
@@ -14,19 +13,18 @@
     a,
     mark {
       @extend %header-logo;
+
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
   nav {
     @extend %global-nav;
-
-    position: absolute;
-    bottom: 0;
-    right: ($gap * 0.5);
   }
 
   ul {
-    margin: 0;
+    margin: $default-margin auto 0 auto;
     padding-left: 0;
     display: table;
   }
@@ -37,8 +35,24 @@
   }
 
   @media (min-width: $safe-for-content) {
+    height: $logo-height;
+
+    h1 {
+      a,
+      mark {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+
     nav {
+      position: absolute;
+      bottom: 0;
       right: 0;
+    }
+
+    ul {
+      margin-top: 0;
     }
 
     li {
