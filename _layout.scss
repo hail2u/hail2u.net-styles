@@ -87,6 +87,7 @@
     color: mixxd($fg, $bg, 0.6);
     color: transparentize($fg, 0.6);
     font-family: $stack-point;
+    font-style: italic;
 
     p {
       @extend %mini-margin;
