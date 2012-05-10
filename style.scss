@@ -10,7 +10,11 @@ $version: "6.24";
 @import "funcs";
 
 // Variable
-@import "vars";
+@import "ratio";
+@import "font";
+@import "color";
+@import "size";
+@import "image";
 
 // Style for Screen
 @import "class";
