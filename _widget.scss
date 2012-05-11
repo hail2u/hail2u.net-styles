@@ -183,6 +183,40 @@
 }
 
 // Hatena Star
+.hatena-star-star {
+  width: 20px;
+  height: 20px;
+}
+
+.hatena-star-add-button,
+.hatena-star-comment-button {
+  vertical-align: baseline !important;
+}
+
+.hatena-star-star-image {
+  background-image: $star-yellow;
+}
+
+.hatena-star-green-star-image {
+  background-image: $star-green;
+}
+
+.hatena-star-red-star-image {
+  background-image: $star-red;
+}
+
+.hatena-star-blue-star-image {
+  background-image: $star-blue;
+}
+
+.hatena-star-purple-star-image {
+  background-image: $star-purple;
+}
+
+.hatena-star-temp-star-image {
+  background-image: $star-yellow;
+}
+
 blockquote[style] {
   min-height: 0;
 
