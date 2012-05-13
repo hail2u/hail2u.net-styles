@@ -103,15 +103,15 @@
 
 // Paging
 .paging {
-  margin: ($default-margin * 3) auto 0 auto;
-  width: ($gap + $column-span2 + $gap);
+  margin-top: ($default-margin * 3);
+  text-align: center;
 
   ul {
     @extend %hanging-block;
 
     margin-top: 0;
     padding-left: 0;
-    display: table;
+    display: inline-table;
   }
 
   li {
