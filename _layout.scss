@@ -124,7 +124,7 @@
 [role="contentinfo"] {
   @extend %global-footer;
 
-  padding: $default-margin 0;
+  padding: $default-margin $gap;
   color: $bg;
   text-align: center;
 
@@ -134,12 +134,10 @@
   .license,
   .subscribe {
     margin: ($default-margin * 0.25) auto;
-    padding: 0 $gap;
     max-width: $content-width;
   }
 
   ul {
-    padding-right: 0;
     padding-left: 0;
     display: inline-table;
   }
@@ -153,23 +151,19 @@
     }
   }
 
-  @media (min-width: $safe-for-content) {
-    address,
-    section,
-    .license,
-    .subscribe {
-      max-width: $content-width;
-    }
+  .license {
+    margin-top: ($default-margin + $default-margin * 0.25);
+    padding-top: ($default-margin + $default-margin * 0.25);
   }
 
-  @media (min-width: $safe-for-full) {
+  @media (min-width: $safe-for-content) {
     text-align: left;
 
     address,
     section,
     .license,
     .subscribe {
-      max-width: $full-width;
+      max-width: $content-width;
     }
 
     section {
@@ -179,13 +173,27 @@
     ul {
       margin-top: (- $icon-size * 0.5);
       position: absolute;
-      top: ((em($default-line-height) * 3 + $default-margin * 0.25 * 2) * 0.5);
-      right: ($gap * 0.5);
+      top: (em($default-line-height) * 0.5);
+      right: 0;
     }
 
     li {
-      padding-right: ($gap * 0.5);
-      padding-left: 0;
+      padding-right: 0;
+      padding-left: ($gap * 0.5);
+    }
+
+    .license,
+    .subscribe {
+      text-align: right;
+    }
+  }
+
+  @media (min-width: $safe-for-full) {
+    address,
+    section,
+    .license,
+    .subscribe {
+      max-width: $full-width;
     }
   }
 }
