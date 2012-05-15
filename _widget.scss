@@ -233,27 +233,8 @@ blockquote[style] {
 // Google AdSense
 .adsense {
   margin: ($default-margin * 3) 0 0 0;
-  padding: 0.5em 0;
-  border: 1px solid rgb(207, 204, 198);
   clear: both;
-  line-height: 1;
   overflow: hidden;
-  background-color: rgb(243, 240, 234);
-  text-align: center;
-
-  &::before {
-    margin: 0 8px 4px 8px;
-    padding: 0 4px 8px 4px;
-    border-bottom: 2px groove rgb(255, 252, 246);
-    display: block;
-    height: auto;
-    visibility: visible;
-    content: "Advertisements";
-    color: rgb(231, 227, 221);
-    font-family: $stack-point;
-    font-size: 150%;
-    text-shadow: 0 -1px 0 rgb(159, 156, 150)
-  }
 }
 
 // Google Code Prettify
