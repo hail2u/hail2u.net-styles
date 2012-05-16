@@ -155,8 +155,8 @@
   font-style: italic;
 
   .license {
-    border-top: 2px groove mixxd(mixxd($fg, $bg, 0.4), mixxd($fg, $bg, 0.25), 0.5);
-    border-top: 2px groove transparentize(mixxd($fg, $bg, 0.4), 0.5);
+    border-top: 1px solid mixxd($fg, $bg, 0.35);
+    box-shadow: 0 -1px 0 0 mixxd($fg, $bg, 0.2);
   }
 }
 
