@@ -190,6 +190,7 @@
 
 .hatena-star-add-button,
 .hatena-star-comment-button {
+  height: 20px;
   vertical-align: baseline !important;
 }
 
@@ -215,6 +216,18 @@
 
 .hatena-star-temp-star-image {
   background-image: $star-yellow;
+}
+
+.hatena-star-add-button-image {
+  background-image: $star-add;
+}
+
+.hatena-star-comment-button-image {
+  background-image: $star-comment;
+}
+
+.hatena-star-comment-button-image-active {
+  background-image: $star-comment-active;
 }
 
 blockquote[style] {
