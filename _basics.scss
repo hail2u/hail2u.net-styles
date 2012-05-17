@@ -228,8 +228,9 @@ figure {
     background-color: white;
   }
 
-  a:hover img {
-    border: 1px solid $lightest;
+  a:hover img,
+  a:hover & img {
+    border-color: $lightest;
   }
 }
 

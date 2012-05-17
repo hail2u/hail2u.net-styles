@@ -285,6 +285,7 @@ blockquote[style] {
 #iine {
   h2 a {
     font-family: $stack-point;
+    font-style: italic;
   }
 
   ol {
@@ -297,16 +298,16 @@ blockquote[style] {
 
   li {
     @extend %column-3;
+
+    a {
+      color: inherit;
+    }
   }
 
   figure {
     line-height: 1;
     display: inline-block;
     max-width: 100%;
-
-    a {
-      color: inherit;
-    }
   }
 
   img {
