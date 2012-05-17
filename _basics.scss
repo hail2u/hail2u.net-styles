@@ -101,6 +101,10 @@ h6 {
   font-size: percentage($ratio);
 }
 
+address {
+  font-style: normal;
+}
+
 // Grouping Content
 p {
   @extend %default-margin;
@@ -233,7 +237,6 @@ figcaption {
   @extend %hanging-block;
 
   font-family: $stack-point;
-  font-style: italic;
 
   @media (min-width: $safe-for-full) {
     blockquote + & {
