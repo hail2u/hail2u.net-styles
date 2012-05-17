@@ -254,7 +254,7 @@ a {
   text-decoration: none;
 
   &:focus {
-    outline: thin dotted;
+    outline: 1px dotted $focus;
   }
 
   &:active,
