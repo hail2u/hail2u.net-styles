@@ -166,23 +166,14 @@
   @extend %default-margin;
 
   line-height: 1;
-
-  > div {
-    display: inline-block;
-    float: left;
-  }
-
-  iframe {
-    vertical-align: text-bottom;
-  }
-}
-
-// Facebook Like Button
-.fb-like {
-  margin-right: 0.5em;
 }
 
 // Hatena Star
+.hatena-star-comment-button,
+.hatena-star-add-button {
+  margin: 0 0.25em 0 0 !important;
+}
+
 .hatena-star-star {
   vertical-align: middle;
 }
@@ -193,11 +184,6 @@ blockquote[style] {
   &::before {
     display: none;
   }
-}
-
-// Readability Button
-.readability {
-  height: 23px;
 }
 
 // Google AdSense
