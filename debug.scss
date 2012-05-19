@@ -1,3 +1,14 @@
+$version: "1.0";
+
+/*!
+ * debug.css v#{$version}
+ *
+ * LICENSE: http://hail2u.mit-license.org/2012
+ */
+
+// Variables
+@import "vars";
+
 // Grid Overlay
 @import "scss-partials/grid-overlay";
 
@@ -7,10 +18,6 @@ body.debug {
   @media (min-width: $safe-for-full) {
     @include grid-overlay($column, $gutter);
   }
-
-  // background-image: -webkit-linear-gradient(top, transparent 0, transparent 27px, #0ff 27px, #0ff 28px);
-  // background-size: 100% 28px;
-  // background-repeat: repeat-y;
 }
 
 // Colors
