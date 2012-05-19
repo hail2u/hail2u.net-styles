@@ -6,11 +6,14 @@ $version: "6.26.3";
  * LICENSE: http://hail2u.mit-license.org/2011
  */
 
+// Web Fonts
+@import "web-fonts";
+
 // Function
-@import "funcs";
+@import "function";
 
 // Variable
-@import "vars";
+@import "variable";
 
 // Screen
 @import "class";

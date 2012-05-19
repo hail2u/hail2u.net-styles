@@ -6,8 +6,14 @@ $version: "1.0";
  * LICENSE: http://hail2u.mit-license.org/2012
  */
 
+// Functions
+@import "function";
+
 // Variables
-@import "vars";
+@import "variable";
+
+// Classes
+@import "class";
 
 // Grid Overlay
 @import "scss-partials/grid-overlay";
