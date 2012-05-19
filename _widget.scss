@@ -170,8 +170,7 @@
 
   margin: ($default-margin * 3) 0 0 0;
   padding: 15px;
-  border: 1px solid mixxd($adsense-text, $adsense-background, 0.9);
-  border: 1px solid transparentize($adsense-text, 0.9);
+  border: 1px solid darken($adsense-border, 15%);
   height: 90px;
   clear: both;
   overflow: hidden;
