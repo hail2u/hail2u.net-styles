@@ -160,6 +160,50 @@
   }
 }
 
+// Twitter Share
+.twitter-share {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+
+  @media (min-width: $safe-for-full) {
+    margin-left: $gutter;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 100%;
+  }
+}
+
+.twitter-share-button {
+  padding-left: 2em;
+  display: block;
+  line-height: 1.25;
+  color: $cc-twitter;
+  background-image: $twitter-bird;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 90%;
+  font-family: $stack-point;
+  font-style: italic;
+
+  &:hover {
+    color: $cc-twitter;
+  }
+
+  @media (min-width: $safe-for-full) {
+    padding-top: 2.5em;
+    padding-left: 0;
+    width: 3.5em;
+    height: 2.5em;
+    line-height: 1;
+    background-position: center top;
+    background-size: 90% auto;
+    text-align: center;
+    white-space: pre-line;
+  }
+}
+
 // Google AdSense
 .adsense {
   $adsense-border:     rgb(255, 248, 231);
