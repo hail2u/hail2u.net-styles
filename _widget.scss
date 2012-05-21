@@ -192,10 +192,9 @@
   }
 
   @media (min-width: $safe-for-full) {
-    padding-top: 2.5em;
+    padding-top: (3.5em * 149 / 216.072 * 0.9 + 0.125em);
     padding-left: 0;
     width: 3.5em;
-    height: 2em;
     line-height: 1;
     background-position: center top;
     background-size: 90% auto;
