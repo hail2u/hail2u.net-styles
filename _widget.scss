@@ -160,7 +160,14 @@
   }
 }
 
-// Twitter Share
+// Social Buttons
+.buttons {
+  @extend %clearfix;
+
+  margin-top: $default-margin;
+}
+
+// Twitter Share Button
 .twitter-share {
   position: absolute;
   right: 0;
@@ -201,6 +208,27 @@
     text-align: center;
     white-space: pre-line;
   }
+}
+
+// .tw-share {
+//   display: inline-block;
+// }
+
+// Facebook Like Button
+.fb-like {
+  > span {
+    vertical-align: baseline !important;
+  }
+}
+
+// Hatena Star
+.hatena-star-comment-button,
+.hatena-star-add-button {
+  vertical-align: 2px !important;
+}
+
+.hatena-star-star {
+  vertical-align: 5px;
 }
 
 // Google AdSense
