@@ -307,10 +307,8 @@
   input[type="submit"] {
     @extend %elegant-btn;
 
-    padding: 0;
-    width: 78px;
-    height: 30px;
-    line-height: 30px;
+    width: 46px;
+    line-height: 1;
     outline: none;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
