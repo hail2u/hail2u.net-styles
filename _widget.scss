@@ -165,32 +165,28 @@
   @extend %clearfix;
 
   margin-top: $default-margin;
-}
 
-// Twitter Share Button
-.tw-share {
-  display: inline-block;
-}
-
-// Facebook Like Button
-.fb-like {
-  > span {
-    vertical-align: baseline !important;
+  > div {
+    float: left !important; // `!important` flag is needed for Google +1's crappy style
+    height: 20px;
+    line-height: 20px;
   }
 }
 
-// Hatena Bookmark Button
-.htn-bookmark {
-  display: inline-block;
-}
-
 // Hatena Star
-.hatena-star-comment-container {
-  display: none;
+.hatena-star-comment-button,
+.hatena-star-add-button,
+.hatena-star-star,
+.hatena-star-inner-count {
+  float: left;
 }
 
-.hatena-star-add-button {
-  vertical-align: baseline !important;
+.hatena-star-inner-count {
+  padding: 3px 2px;
+  line-height: 1;
+  color: rgb(254, 205, 105);
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .hatena-star-star-image,
