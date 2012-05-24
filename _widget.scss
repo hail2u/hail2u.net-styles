@@ -160,6 +160,11 @@
   }
 }
 
+// Seealso
+.seealso:before {
+  content: "\27a0\00a0"; // Heavy Dashed Triangle-Headed Rightwards Arrow
+}
+
 // Sidenote (inherit Hanging Block)
 .sidenote {
   @extend %hanging-block;
