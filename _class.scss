@@ -280,27 +280,23 @@
 %flat {
   @extend %clearfix;
 
-  dt {
-    clear: both;
-  }
-
   dd {
-    margin: 0 1em 0 0;
-    float: left;
+    margin: 0 0 0 1em;
+    display: inline;
   }
 
   @media (min-width: $safe-for-content) {
     dt {
-      float: left;
-      clear: left;
+      display: inline;
 
       &::after {
         content: "\003a"; // Colon
       }
     }
 
-    dd {
-      margin: 0 0 0 1em;
+    dd ~ dt::before {
+      content: "\000a"; // Line Feed
+      white-space: pre;
     }
   }
 }
