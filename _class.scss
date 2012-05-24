@@ -294,7 +294,7 @@
       }
     }
 
-    dd ~ dt::before {
+    dd + dt::before {
       content: "\000a"; // Line Feed
       white-space: pre;
     }
