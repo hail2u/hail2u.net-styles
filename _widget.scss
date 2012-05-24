@@ -160,6 +160,18 @@
   }
 }
 
+// Sidenote (inherit Hanging Block)
+.sidenote {
+  @extend %hanging-block;
+
+  color: mixxd($fg, $bg, 0.6);
+  color: transparentize($fg, 0.6);
+
+  @media (min-width: $safe-for-full) {
+    top: auto;
+  }
+}
+
 // Social Buttons
 .social-buttons {
   @extend %clearfix;
