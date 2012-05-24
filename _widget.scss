@@ -312,7 +312,12 @@
   }
 }
 
-// Shots from iine!
+// Links on Delicious
+#links dl {
+  @extend %flat;
+}
+
+// Shots on iine!
 #iine {
   ol {
     @extend %column-container;
