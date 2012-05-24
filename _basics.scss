@@ -297,11 +297,11 @@ q {
   quotes: none;
 }
 
-q::before {
+q:before {
   content: "\300c"; // Left Corner Bracket
 }
 
-q::after {
+q:after {
   content: "\300d"; // Right Corner Bracket
 }
 

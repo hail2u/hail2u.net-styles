@@ -11,7 +11,7 @@
 %ir {
   @include ir-pseudo-element;
 
-  &::before {
+  &:before {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -44,7 +44,7 @@
   height: ($h * 2);
   background-color: transparent;
 
-  &::before {
+  &:before {
     margin-top: ($h * 0.5);
     height: $h;
     background-image: $ornament;
@@ -61,7 +61,7 @@
   min-height: $size;
   overflow: visible;
 
-  &::before {
+  &:before {
     margin-right: 1em;
     position: absolute;
     top: 0;
@@ -73,7 +73,7 @@
   }
 
   @media (min-width: $safe-for-full) {
-    &::before {
+    &:before {
       margin-right: $gutter;
     }
   }
@@ -119,7 +119,7 @@
   background-image: url("../images/bg-logo.png");
   background-position: left bottom;
 
-  &::before {
+  &:before {
     $ratio: 2.25; // 36px
 
     display: block;
@@ -179,7 +179,7 @@
     opacity: 1;
   }
 
-  &::before {
+  &:before {
     background-image: url("../images/icons-w.png");
     background-size: auto;
   }
@@ -191,7 +191,7 @@
       background-color: $cc-feed;
     }
 
-    &::before {
+    &:before {
       background-position: center $adjuster;
     }
   }
@@ -201,7 +201,7 @@
       background-color: $cc-facebook;
     }
 
-    &::before {
+    &:before {
       background-position: center (- 32px * 10 + $adjuster);
     }
   }
@@ -211,7 +211,7 @@
       background-color: $cc-twitter;
     }
 
-    &::before {
+    &:before {
       background-position: center (- 32px * 19 + $adjuster);
     }
   }
@@ -221,7 +221,7 @@
       background-color: $cc-github;
     }
 
-    &::before {
+    &:before {
       background-position: center (- 32px * 5 + $adjuster);
     }
   }
@@ -231,7 +231,7 @@
       background-color: $cc-pinterest;
     }
 
-    &::before {
+    &:before {
       background-position: center (- 32px * 13 + $adjuster);
     }
   }
@@ -241,7 +241,7 @@
       background-color: $cc-lastfm;
     }
 
-    &::before {
+    &:before {
       background-position: center (- 32px * 7 + $adjuster);
     }
   }
@@ -251,7 +251,7 @@
       background-color: $cc-delicious;
     }
 
-    &::before {
+    &:before {
       background-position: center (- 32px * 8 + $adjuster);
     }
   }
@@ -261,7 +261,7 @@
       background-color: $cc-tumblr;
     }
 
-    &::before {
+    &:before {
       background-position: center (- 32px * 18 + $adjuster);
     }
   }
@@ -289,12 +289,12 @@
     dt {
       display: inline;
 
-      &::after {
+      &:after {
         content: "\003a"; // Colon
       }
     }
 
-    dd + dt::before {
+    dd + dt:before {
       content: "\000a"; // Line Feed
       white-space: pre;
     }
