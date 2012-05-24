@@ -314,11 +314,6 @@
 
 // Shots from iine!
 #iine {
-  h2 a {
-    font-family: $stack-point;
-    font-style: italic;
-  }
-
   ol {
     @extend %column-container;
 
@@ -329,10 +324,6 @@
 
   li {
     @extend %column-3;
-
-    a {
-      color: inherit;
-    }
   }
 
   figure {
@@ -346,11 +337,11 @@
   }
 
   figcaption {
-    margin-top: -3em;
+    margin-top: -2em;
     margin-right: 0;
     position: static;
     width: auto;
-    line-height: 3;
+    line-height: 1;
     font-family: $stack-point;
     text-align: center;
   }
