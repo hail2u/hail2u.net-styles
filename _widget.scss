@@ -87,12 +87,8 @@
 #news ul {
   @extend %minimal;
 
-  li:after {
+  li + li:before {
     content: "\0020\00a0\2756\00a0";
-  }
-
-  li:last-child:after {
-    content: "";
   }
 }
 
