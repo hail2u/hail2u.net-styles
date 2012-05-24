@@ -1,3 +1,88 @@
+// Paging
+.paging {
+  margin-top: ($default-margin * 3);
+  text-align: center;
+
+  ul {
+    @extend %hanging-block;
+
+    margin-top: 0;
+    padding-left: 0;
+    display: inline-table;
+  }
+
+  li {
+    padding: 0 $gap;
+    display: table-cell;
+  }
+
+  a {
+    @extend %ir;
+
+    border-radius: #{($column-span1 * 0.5)}/#{($column-span1 * 0.5)};
+    display: block;
+    width: $column-span1;
+    height: $column-span1;
+    color: $bg;
+    background-color: $fg;
+    opacity: 0.1;
+
+    &:hover {
+      background-color: $lightest;
+      opacity: 1;
+    }
+
+    &[rel="prev"]:before {
+      background-image: $left-arrow;
+    }
+
+    &[rel="next"]:before {
+      background-image: $right-arrow;
+    }
+  }
+
+  @media (min-width: $safe-for-full) {
+    margin-top: 0;
+    position: relative;
+    width: auto;
+
+    ul {
+      top: auto;
+      bottom: 0;
+    }
+
+    li {
+      padding: 0 $gutter 0 0;
+    }
+  }
+}
+
+// Seemore (inherit Elegant Button)
+.seemore a {
+  @extend %elegant-btn;
+
+  &:after {
+    content: "\0020\00bb"; // Space + Right Arrow Quote
+  }
+}
+
+// Seealso
+.seealso:before {
+  content: "\27a0\00a0"; // Heavy Dashed Triangle-Headed Rightwards Arrow
+}
+
+// Sidenote (inherit Hanging Block)
+.sidenote {
+  @extend %hanging-block;
+
+  color: mixxd($fg, $bg, 0.6);
+  color: transparentize($fg, 0.6);
+
+  @media (min-width: $safe-for-full) {
+    top: auto;
+  }
+}
+
 // News (inherit Minimal List)
 #news ul {
   @extend %minimal;
@@ -89,91 +174,6 @@
       white-space: nowrap;
       text-overflow: ellipsis;
     }
-  }
-}
-
-// Seemore (inherit Elegant Button)
-.seemore a {
-  @extend %elegant-btn;
-
-  &:after {
-    content: "\0020\00bb"; // Space + Right Arrow Quote
-  }
-}
-
-// Paging
-.paging {
-  margin-top: ($default-margin * 3);
-  text-align: center;
-
-  ul {
-    @extend %hanging-block;
-
-    margin-top: 0;
-    padding-left: 0;
-    display: inline-table;
-  }
-
-  li {
-    padding: 0 $gap;
-    display: table-cell;
-  }
-
-  a {
-    @extend %ir;
-
-    border-radius: #{($column-span1 * 0.5)}/#{($column-span1 * 0.5)};
-    display: block;
-    width: $column-span1;
-    height: $column-span1;
-    color: $bg;
-    background-color: $fg;
-    opacity: 0.1;
-
-    &:hover {
-      background-color: $lightest;
-      opacity: 1;
-    }
-
-    &[rel="prev"]:before {
-      background-image: $left-arrow;
-    }
-
-    &[rel="next"]:before {
-      background-image: $right-arrow;
-    }
-  }
-
-  @media (min-width: $safe-for-full) {
-    margin-top: 0;
-    position: relative;
-    width: auto;
-
-    ul {
-      top: auto;
-      bottom: 0;
-    }
-
-    li {
-      padding: 0 $gutter 0 0;
-    }
-  }
-}
-
-// Seealso
-.seealso:before {
-  content: "\27a0\00a0"; // Heavy Dashed Triangle-Headed Rightwards Arrow
-}
-
-// Sidenote (inherit Hanging Block)
-.sidenote {
-  @extend %hanging-block;
-
-  color: mixxd($fg, $bg, 0.6);
-  color: transparentize($fg, 0.6);
-
-  @media (min-width: $safe-for-full) {
-    top: auto;
   }
 }
 
