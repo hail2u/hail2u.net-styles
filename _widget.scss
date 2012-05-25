@@ -88,7 +88,8 @@
   @extend %minimal;
 
   li + li:before {
-    content: "\0020\00a0\2756\00a0";
+    content: "\0020\00b7\00a0";
+    font-weight: bold;
   }
 }
 
