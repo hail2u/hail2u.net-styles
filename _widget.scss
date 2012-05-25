@@ -326,8 +326,14 @@
 }
 
 // Links on Delicious
-#links dl {
-  @extend %flat;
+#links {
+  dt:before {
+    content: "\2764\00a0"; // Heavy Black Heart
+  }
+
+  dd:before {
+    content: "\270d\00a0"; // Writing Hand
+  }
 }
 
 // Shots on iine!
