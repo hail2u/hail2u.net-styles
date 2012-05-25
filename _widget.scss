@@ -327,12 +327,17 @@
 
 // Links on Delicious
 #links {
-  dt:before {
-    content: "\2764\00a0"; // Heavy Black Heart
-  }
+  li {
+    position: relative;
+    list-style: none;
 
-  dd:before {
-    content: "\270d\00a0"; // Writing Hand
+    &:before {
+      margin-right: 0.5em;
+      display: block;
+      position: absolute;
+      right: 100%;
+      content: "\2764"; // Heavy Black Heart
+    }
   }
 }
 
