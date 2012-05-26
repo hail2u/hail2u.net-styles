@@ -368,15 +368,16 @@
 // Shots on iine!
 #iine {
   padding-bottom: ($default-margin * 2);
-  color: $bg;
+  color: mixxd($fg, $bg, 0.25);
   background-color: mixxd($fg, $bg, 0.3);
   background-image: url("../images/bg-footer.png");
   font-family: $stack-point;
   font-style: italic;
   text-align: center;
+  text-shadow: 1px 1px 0 mixxd($fg, $bg, 0.4);
 
   h2 {
-    $ratio: 1.5;
+    $ratio: 2.25;
 
     padding-top: ($default-margin * 2 / $ratio);
     font-family: inherit;
@@ -402,8 +403,12 @@
     line-height: 1;
   }
 
-  a:hover {
-    color: $link;
+  a {
+    text-shadow: none;
+
+    &:hover {
+      color: $link;
+    }
   }
 
   figure {
