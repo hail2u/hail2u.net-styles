@@ -345,9 +345,20 @@
 
 // Links on Delicious
 #links {
+  ol {
+    padding-left: 0;
+  }
+
   li {
-    position: relative;
+    overflow: hidden;
     list-style: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  a {
+    margin-left: 2.5em;
+    position: relative;
 
     &:before {
       margin-right: 0.5em;
@@ -355,6 +366,7 @@
       position: absolute;
       right: 100%;
       content: "\2764"; // Heavy Black Heart
+      color: $fg;
     }
   }
 }
