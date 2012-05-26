@@ -133,7 +133,9 @@
   li {
     @extend %column-2;
 
-    display: block;
+    @media (min-width: $safe-for-content) {
+      display: block;
+    }
   }
 }
 
