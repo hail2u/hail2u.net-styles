@@ -379,6 +379,7 @@
   h2 {
     $ratio: 2.25;
 
+    margin-top: 0;
     padding-top: ($default-margin * 2 / $ratio);
     font-family: inherit;
     font-size: percentage($ratio);
