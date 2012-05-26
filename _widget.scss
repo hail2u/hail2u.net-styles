@@ -361,45 +361,71 @@
 
 // Shots on iine!
 #iine {
+  padding-bottom: ($default-margin * 2);
+  color: $bg;
+  background-color: mixxd($fg, $bg, 0.3);
+  background-image: url("../images/bg-footer.png");
+  font-family: $stack-point;
+  font-style: italic;
+  text-align: center;
+
+  h2 {
+    $ratio: 1.5;
+
+    padding-top: ($default-margin * 2 / $ratio);
+    font-family: inherit;
+    font-size: percentage($ratio);
+  }
+
   ol {
     @extend %column-container;
 
-    margin-top: 0;
+    margin: 0 auto;
     padding-left: 0;
+    max-width: 320px;
     list-style-type: none;
+
+    @media (min-width: $safe-for-full) {
+      max-width: ($gap + $full-width + $gap);
+    }
   }
 
   li {
-    @extend %column-3;
+    @extend %column-4;
+
+    line-height: 1;
+  }
+
+  a:hover {
+    color: $link;
   }
 
   figure {
-    line-height: 1;
     display: inline-block;
+    position: relative;
     max-width: 100%;
   }
 
   img {
-    padding-bottom: 3em;
+    padding: 0;
+    border: none;
+    vertical-align: text-bottom;
   }
 
   figcaption {
-    margin-top: -2em;
     margin-right: 0;
-    position: static;
-    width: auto;
+    padding: 1em;
+    box-sizing: border-box;
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    width: 100%;
     line-height: 1;
+    color: white;
+    background-color: mixxd(black, white, 0.5);
+    background-color: transparentize(black, 0.5);
     font-family: $stack-point;
     text-align: center;
-  }
-
-  @media (min-width: $safe-for-content) {
-    li {
-      margin-bottom: ($gutter - $default-margin);
-    }
-
-    img {
-      vertical-align: text-bottom;
-    }
   }
 }
