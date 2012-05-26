@@ -84,9 +84,7 @@
   }
 
   h2 + footer {
-    color: mixxd($fg, $bg, 0.6);
-    color: transparentize($fg, 0.6);
-    font-family: $stack-point;
+    @extend %article-metainfo;
 
     p {
       @extend %mini-margin;
@@ -95,10 +93,6 @@
 
     br {
       display: none;
-    }
-
-    time {
-      color: $fg;
     }
   }
 

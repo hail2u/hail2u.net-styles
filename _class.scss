@@ -147,6 +147,17 @@
   }
 }
 
+// Article Meta-info
+%article-metainfo {
+  color: mixxd($fg, $bg, 0.6);
+  color: transparentize($fg, 0.6);
+  font-family: $stack-point;
+
+  time {
+    color: $fg;
+  }
+}
+
 // Global Footer
 %global-footer {
   background-color: mixxd($fg, $bg, 0.25);
