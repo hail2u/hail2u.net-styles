@@ -83,13 +83,30 @@
   }
 }
 
-// News (inherit Minimal List)
-#news ul {
-  @extend %minimal;
+// News
+#news {
+  ul {
+    padding-left: 0;
+  }
 
-  li + li:before {
-    content: "\0020\00b7\00a0";
-    font-weight: bold;
+  li {
+    position: relative;
+    list-style-type: none;
+  }
+
+  // inherit Hanging Block
+  time {
+    @extend %hanging-block;
+
+    display: inline-block;
+    width: $column-span2;
+    color: mixxd($fg, $bg, 0.6);
+    color: transparentize($fg, 0.6);
+    font-family: $stack-point;
+
+    @media (min-width: $safe-for-full) {
+      text-align: right;
+    }
   }
 }
 
