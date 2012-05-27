@@ -368,13 +368,13 @@
 // Shots on iine!
 #iine {
   padding-bottom: ($default-margin * 2);
-  color: mixxd($fg, $bg, 0.2);
-  background-color: mixxd($fg, $bg, 0.25);
+  color: mixxd($fg, $bg, 0.15);
+  background-color: mixxd($fg, $bg, 0.2);
   background-image: url("../images/bg-footer.png");
   font-family: $stack-point;
   font-style: italic;
   text-align: center;
-  text-shadow: 1px 1px 0 mixxd($fg, $bg, 0.35);
+  text-shadow: 1px 1px 0 mixxd($fg, $bg, 0.3);
 
   h2 {
     $ratio: 2.25;

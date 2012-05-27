@@ -160,7 +160,7 @@
 
 // Global Footer
 %global-footer {
-  background-color: mixxd($fg, $bg, 0.15);
+  background-color: mixxd($fg, $dark, 0.4);
   background-image: url("../images/bg-footer.png");
   font-family: $stack-point;
 
@@ -169,8 +169,8 @@
   }
 
   .license {
-    border-top: 1px solid mixxd($fg, $bg, 0.2);
-    box-shadow: 0 -1px 0 0 mixxd($fg, $bg, 0.15);
+    border-top: 1px solid mixxd($fg, $dark, 0.6);
+    box-shadow: 0 -1px 0 0 mixxd($fg, $dark, 0.35);
   }
 }
 
