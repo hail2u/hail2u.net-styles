@@ -168,6 +168,11 @@
     color: $link;
   }
 
+  mark {
+    color: inherit;
+    background-color: transparent;
+  }
+
   .license {
     border-top: 1px solid mixxd($fg, $dark, 0.6);
     box-shadow: 0 -1px 0 0 mixxd($fg, $dark, 0.35);
