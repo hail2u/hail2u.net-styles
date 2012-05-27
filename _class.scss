@@ -55,7 +55,7 @@
 // Quote Mark
 %quote-mark {
   @extend %ir;
-  $size: 2.5em;
+  $size: 1.5em;
 
   position: relative;
   min-height: $size;
@@ -73,8 +73,14 @@
   }
 
   @media (min-width: $safe-for-full) {
+    $size: 2.5em;
+
+    min-height: $size;
+
     &:before {
       margin-right: $gutter;
+      width: $size;
+      height: $size;
     }
   }
 }
