@@ -116,7 +116,7 @@
   line-height: $logo-height;
   color: $bg;
   background-color: $lightest;
-  background-image: url("../images/bg-logo.png");
+  background-image: url("../images/noise-light.png");
   background-position: left bottom;
 
   &:before {
@@ -161,7 +161,7 @@
 // Global Footer
 %global-footer {
   background-color: mixxd($fg, $dark, 0.4);
-  background-image: url("../images/bg-footer.png");
+  background-image: url("../images/noise-light.png");
   font-family: $stack-point;
 
   a:hover {
