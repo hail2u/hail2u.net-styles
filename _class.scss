@@ -309,6 +309,7 @@
   dd {
     margin: 0 0 0 1em;
     display: inline;
+    white-space: nowrap;
   }
 
   @media (min-width: $safe-for-content) {
