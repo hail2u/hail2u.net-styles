@@ -441,3 +441,8 @@
     text-align: center;
   }
 }
+
+// Elsewhere
+.elsewhere a {
+  @extend %footer-icon;
+}

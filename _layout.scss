@@ -117,11 +117,11 @@
 [role="contentinfo"] {
   @extend %global-footer;
 
-  padding: $default-margin $gap;
+  padding-bottom: $default-margin;
   color: $bg;
   text-align: center;
 
-  section,
+  .elsewhere,
   address,
   .license,
   .subscribe {
@@ -129,18 +129,17 @@
     max-width: $content-width;
   }
 
-  ul {
-    margin-top: 0;
-    padding-left: 0;
-    display: inline-table;
-  }
+  .elsewhere {
+    ul {
+      margin-top: 0;
+      padding-top: $default-margin;
+      padding-left: 0;
+      display: inline-table;
+    }
 
-  li {
-    padding: 0 ($gap * 0.25);
-    display: table-cell;
-
-    a {
-      @extend %footer-icon;
+    li {
+      padding: 0 ($gap * 0.25);
+      display: table-cell;
     }
   }
 
@@ -152,30 +151,31 @@
   @media (min-width: $safe-for-content) {
     text-align: left;
 
+    .elsewhere,
     address,
-    section,
     .license,
     .subscribe {
       max-width: $content-width;
     }
 
-    address {
-      line-height: $icon-size;
-    }
-
-    section {
+    .elsewhere {
       position: relative;
+
+      ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      li {
+        padding-right: 0;
+        padding-left: ($gap * 0.5);
+      }
     }
 
-    ul {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-
-    li {
-      padding-right: 0;
-      padding-left: ($gap * 0.5);
+    address {
+      padding-top: $default-margin;
+      line-height: $icon-size;
     }
 
     .license,
@@ -185,8 +185,8 @@
   }
 
   @media (min-width: $safe-for-full) {
+    .elsewhere,
     address,
-    section,
     .license,
     .subscribe {
       max-width: $full-width;
