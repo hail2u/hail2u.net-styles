@@ -123,7 +123,6 @@
 
   section,
   address,
-  ul,
   .license,
   .subscribe {
     margin: ($default-margin * 0.25) auto;
@@ -131,6 +130,7 @@
   }
 
   ul {
+    margin-top: 0;
     padding-left: 0;
     display: inline-table;
   }
@@ -159,14 +159,17 @@
       max-width: $content-width;
     }
 
+    address {
+      line-height: $icon-size;
+    }
+
     section {
       position: relative;
     }
 
     ul {
-      margin-top: (- $icon-size * 0.5);
       position: absolute;
-      top: (em($default-line-height) * 0.5);
+      top: 0;
       right: 0;
     }
 
