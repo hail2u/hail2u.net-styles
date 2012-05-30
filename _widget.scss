@@ -227,10 +227,12 @@
 
 // Hatena Star
 .hatena-star-comment-button,
-.hatena-star-add-button,
-.hatena-star-star,
-.hatena-star-inner-count {
-  float: left;
+.hatena-star-add-button {
+  margin: 0 3px 0 0 !important;
+}
+
+.hatena-star-star {
+  vertical-align: middle;
 }
 
 .hatena-star-inner-count {
