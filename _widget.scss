@@ -1,3 +1,34 @@
+// Code Highlight
+.pln,
+.typ,
+.pun,
+.opn,
+.clo,
+.fun {
+  color: #000;
+}
+
+.str,
+.atv {
+  color: #090;
+}
+
+.lit {
+  color: #c00;
+}
+
+.kwd,
+.tag,
+.atn {
+  color: #00c;
+}
+
+.com,
+.dec,
+.var {
+  color: #999;
+}
+
 // Paging
 .paging {
   margin-top: ($default-margin * 3);
@@ -193,6 +224,11 @@
   }
 }
 
+// Elsewhere
+.elsewhere a {
+  @extend %footer-icon;
+}
+
 // Google AdSense
 .adsense {
   $adsense-border:     rgb(255, 248, 231);
@@ -274,37 +310,6 @@
 
 .hatena-star-comment-button-image-active {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUAgMAAAGOC2VyAAAACVBMVEX+9+v70JT////tYtgUAAAAA3RSTlP//wDXyg1BAAAATElEQVQI12NYwODAMIFhAQMDEE8FslcxhDGAwCqGVauAXBCaKgZiQ9BUoCwjAk0JY1iVBZGCERMYGNgYHENDHZEIsNiqlVIgJbMg6gDvKiFDWqKwrQAAAABJRU5ErkJggg==");
-}
-
-// Google Code Prettify
-.pln,
-.typ,
-.pun,
-.opn,
-.clo,
-.fun {
-  color: #000;
-}
-
-.str,
-.atv {
-  color: #090;
-}
-
-.lit {
-  color: #c00;
-}
-
-.kwd,
-.tag,
-.atn {
-  color: #00c;
-}
-
-.com,
-.dec,
-.var {
-  color: #999;
 }
 
 // Google Custom Search Engine
@@ -442,9 +447,4 @@
     font-family: $stack-point;
     text-align: center;
   }
-}
-
-// Elsewhere
-.elsewhere a {
-  @extend %footer-icon;
 }
