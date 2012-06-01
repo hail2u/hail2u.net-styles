@@ -227,8 +227,111 @@
 }
 
 // Elsewhere
+@import "scss-partials/corporate-colors";
+
 .elsewhere a {
-  @extend %footer-icon;
+  @extend %ir;
+
+  border-radius: #{($icon-size * 0.5)}/#{($icon-size * 0.5)};
+  display: block;
+  width: $icon-size;
+  height: $icon-size;
+  line-height: $icon-size;
+  overflow: hidden;
+  background-color: $fg;
+  text-decoration: none;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:before {
+    background-image: url("../images/icons-w.png");
+    background-size: auto;
+  }
+
+  $adjuster: (($icon-size - 32px) * 0.5);
+
+  &[href^="http://feeds.feedburner.com/hail2u"] {
+    &:hover {
+      background-color: $cc-feed;
+    }
+
+    &:before {
+      background-position: center $adjuster;
+    }
+  }
+
+  &[href="http://www.facebook.com/hail2u"] {
+    &:hover {
+      background-color: $cc-facebook;
+    }
+
+    &:before {
+      background-position: center (- 32px * 10 + $adjuster);
+    }
+  }
+
+  &[href="https://twitter.com/hell2u"] {
+    &:hover {
+      background-color: $cc-twitter;
+    }
+
+    &:before {
+      background-position: center (- 32px * 19 + $adjuster);
+    }
+  }
+
+  &[href="https://github.com/hail2u"] {
+    &:hover {
+      background-color: $cc-github;
+    }
+
+    &:before {
+      background-position: center (- 32px * 5 + $adjuster);
+    }
+  }
+
+  &[href="http://pinterest.com/hail2u/"] {
+    &:hover {
+      background-color: $cc-pinterest;
+    }
+
+    &:before {
+      background-position: center (- 32px * 13 + $adjuster);
+    }
+  }
+
+  &[href="http://www.last.fm/user/hail2u"] {
+    &:hover {
+      background-color: $cc-lastfm;
+    }
+
+    &:before {
+      background-position: center (- 32px * 7 + $adjuster);
+    }
+  }
+
+  &[href="http://delicious.com/hail2u"] {
+    &:hover {
+      background-color: $cc-delicious;
+    }
+
+    &:before {
+      background-position: center (- 32px * 8 + $adjuster);
+    }
+  }
+
+  &[href="http://u2liah.tumblr.com/"] {
+    &:hover {
+      background-color: $cc-tumblr;
+    }
+
+    &:before {
+      background-position: center (- 32px * 18 + $adjuster);
+    }
+  }
 }
 
 // Hatena Star
