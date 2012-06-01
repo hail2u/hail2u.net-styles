@@ -229,38 +229,6 @@
   @extend %footer-icon;
 }
 
-// Google AdSense
-.adsense {
-  $adsense-border:     rgb(255, 248, 231);
-  $adsense-title:      rgb( 14,  28, 179);
-  $adsense-background: rgb(255, 248, 231);
-  $adsense-text:       rgb( 23,  23,  23);
-  $adsense-url:        rgb(  0, 128,  42);
-
-  margin: ($default-margin * 3) 0 0 0;
-  padding: 15px;
-  border: 1px solid darken($adsense-border, 15%);
-  height: 90px;
-  clear: both;
-  overflow: hidden;
-  color: $adsense-text;
-  background-color: $adsense-background;
-  text-align: center;
-}
-
-// Social Buttons
-.social-buttons {
-  @extend %clearfix;
-
-  margin-top: $default-margin;
-
-  > div {
-    float: left !important; // `!important` flag is needed for Google +1's crappy style
-    height: 20px;
-    line-height: 20px;
-  }
-}
-
 // Hatena Star
 .hatena-star-comment-button,
 .hatena-star-add-button {
@@ -310,6 +278,38 @@
 
 .hatena-star-comment-button-image-active {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUAgMAAAGOC2VyAAAACVBMVEX+9+v70JT////tYtgUAAAAA3RSTlP//wDXyg1BAAAATElEQVQI12NYwODAMIFhAQMDEE8FslcxhDGAwCqGVauAXBCaKgZiQ9BUoCwjAk0JY1iVBZGCERMYGNgYHENDHZEIsNiqlVIgJbMg6gDvKiFDWqKwrQAAAABJRU5ErkJggg==");
+}
+
+// Social Buttons
+.social-buttons {
+  @extend %clearfix;
+
+  margin-top: $default-margin;
+
+  > div {
+    float: left !important; // `!important` flag is needed for Google +1's crappy style
+    height: 20px;
+    line-height: 20px;
+  }
+}
+
+// Google AdSense
+.adsense {
+  $adsense-border:     rgb(255, 248, 231);
+  $adsense-title:      rgb( 14,  28, 179);
+  $adsense-background: rgb(255, 248, 231);
+  $adsense-text:       rgb( 23,  23,  23);
+  $adsense-url:        rgb(  0, 128,  42);
+
+  margin: ($default-margin * 3) 0 0 0;
+  padding: 15px;
+  border: 1px solid darken($adsense-border, 15%);
+  height: 90px;
+  clear: both;
+  overflow: hidden;
+  color: $adsense-text;
+  background-color: $adsense-background;
+  text-align: center;
 }
 
 // Google Custom Search Engine
