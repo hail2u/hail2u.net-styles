@@ -534,7 +534,6 @@
   figcaption {
     margin-right: 0;
     padding: 1em;
-    box-sizing: border-box;
     position: absolute;
     top: auto;
     right: 0;
@@ -546,5 +545,7 @@
     background-color: transparentize(black, 0.5);
     font-family: $stack-point;
     text-align: center;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
