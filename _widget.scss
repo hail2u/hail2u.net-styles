@@ -92,6 +92,8 @@
 .seemore a {
   @extend %elegant-btn;
 
+  line-height: 2em;
+
   &:after {
     content: "\0020\00bb"; // Space + Right Arrow Quote
   }
@@ -326,24 +328,24 @@
 
   input[type="text"] {
     margin: 0 -8px 0 0;
-    padding: 0.35em 8px !important;
+    padding: 0 8px !important;
     border: 1px solid white !important;
     border-radius: 4px;
     width: 197px;
-    line-height: normal;
+    height: 2em;
+    vertical-align: middle;
     color: black;
     background-color: white;
     background-position: 8px 50% !important;
-    font-family: $stack-point;
   }
 
   // inherit Elegant Button
   input[type="submit"] {
     @extend %elegant-btn;
 
-    padding-top: 0.35em;
-    padding-bottom: 0.35em;
-    line-height: normal;
+    vertical-align: middle;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
   }
 }
 
