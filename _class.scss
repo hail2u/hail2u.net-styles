@@ -166,6 +166,7 @@
 
 // Global Footer
 %global-footer {
+  color: $bg;
   background-color: mixxd($fg, $dark, 0.4);
   background-image: url("../images/noise-light.png");
   font-family: $stack-point;
