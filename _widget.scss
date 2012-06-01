@@ -320,35 +320,30 @@
     padding: 6px;
     border-radius: 6px;
     display: inline-block;
-    line-height: 1;
     background-color: mixxd($fg, $bg, 0.92);
     background-color: transparentize($fg, 0.92);
-    font-size: 16px;
   }
 
   input[type="text"] {
     margin: 0 -8px 0 0;
-    padding: 2px 8px !important;
-    border-width: 0 !important;
+    padding: 0.35em 8px !important;
+    border: 1px solid white !important;
     border-radius: 4px;
-    width: 184px;
-    height: 28px;
-    line-height: 28px;
+    width: 197px;
+    line-height: normal;
+    color: black;
+    background-color: white;
     background-position: 8px 50% !important;
-    outline: none;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
+    font-family: $stack-point;
   }
 
   // inherit Elegant Button
   input[type="submit"] {
     @extend %elegant-btn;
 
-    width: 46px;
-    line-height: 1;
-    outline: none;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
+    line-height: normal;
   }
 }
 
