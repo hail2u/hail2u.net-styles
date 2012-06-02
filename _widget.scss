@@ -335,7 +335,10 @@
 }
 
 // Hatena Star
-.hatena-star-comment-button,
+.hatena-star-comment-container {
+  display: none;
+}
+
 .hatena-star-add-button {
   margin: 0 3px 0 0 !important;
 }
