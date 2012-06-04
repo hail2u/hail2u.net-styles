@@ -482,7 +482,8 @@
     }
   }
 
-  &[href="http://www.facebook.com/hail2u"] {
+  &[href="http://www.facebook.com/hail2u"],
+  &[href="https://www.facebook.com/hail2u"] {
     &:hover {
       background-color: $cc-facebook;
     }
