@@ -52,6 +52,17 @@
   }
 }
 
+// Hanging Block
+%hanging-block {
+  @media (min-width: $safe-for-full) {
+    margin-right: $gutter;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: $suppli-width;
+  }
+}
+
 // Quote Mark
 %quote-mark {
   @extend %ir;
@@ -62,6 +73,8 @@
   overflow: visible;
 
   &:before {
+    @extend %hanging-block;
+
     margin-right: 1em;
     position: absolute;
     top: 0;
@@ -78,21 +91,9 @@
     min-height: $size;
 
     &:before {
-      margin-right: $gutter;
       width: $size;
       height: $size;
     }
-  }
-}
-
-// Hanging Block
-%hanging-block {
-  @media (min-width: $safe-for-full) {
-    margin-right: $gutter;
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: $suppli-width;
   }
 }
 
