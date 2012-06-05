@@ -6,14 +6,13 @@
   max-width: $content-width;
 
   h1 {
+    @extend %header-logo;
+
     margin: 0;
     line-height: 1;
-    font-size: 100%;
 
     a,
     mark {
-      @extend %header-logo;
-
       margin-right: auto;
       margin-left: auto;
     }
