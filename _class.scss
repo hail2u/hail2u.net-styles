@@ -170,8 +170,12 @@
   background-image: url("../images/noise-light.png");
   font-family: $stack-point;
 
-  a:hover {
-    color: $link;
+  a {
+    color: mix($link, $lightest);
+
+    &:hover {
+      color: mix($hover, $lightest);
+    }
   }
 
   mark {
