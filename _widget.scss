@@ -493,7 +493,8 @@
     }
   }
 
-  &[href="https://twitter.com/hell2u"] {
+  &[href="https://twitter.com/hell2u"],
+  &[href="https://twitter.com/hail2u_"] {
     &:hover {
       background-color: $cc-twitter;
     }
