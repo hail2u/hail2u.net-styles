@@ -34,24 +34,6 @@
   font-family: $stack-heading;
 }
 
-// Ornament Seperator
-%ornament-sep {
-  @extend %ir;
-  $h: 3em;
-
-  border: none;
-  clear: both;
-  height: ($h * 2);
-  background-color: transparent;
-
-  &:before {
-    margin-top: ($h * 0.5);
-    height: $h;
-    background-image: $ornament;
-    opacity: 0.1;
-  }
-}
-
 // Hanging Block
 %hanging-block {
   @media (min-width: $safe-for-full) {
@@ -60,138 +42,6 @@
     top: 0;
     right: 100%;
     width: $suppli-width;
-  }
-}
-
-// Quote Mark
-%quote-mark {
-  @extend %ir;
-  $size: 1.5em;
-
-  position: relative;
-  min-height: $size;
-  overflow: visible;
-
-  &:before {
-    @extend %hanging-block;
-
-    margin-right: 1em;
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: $size;
-    height: $size;
-    background-image: $left-double-quote;
-    opacity: 0.1;
-  }
-
-  @media (min-width: $safe-for-full) {
-    $size: 2.5em;
-
-    min-height: $size;
-
-    &:before {
-      width: $size;
-      height: $size;
-    }
-  }
-}
-
-// White Keytop
-%white-keytop {
-  margin: 0 0.25em;
-  padding: 0.125em 0.375em;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-shadow: 0 2px 0 0 #ccc;
-  display: inline-block;
-  position: relative;
-  top: -2px;
-  line-height: 1;
-  color: #666;
-  background-color: #f9f9f9;
-}
-
-// Header Logo
-%header-logo {
-  font-size: 100%;
-
-  a,
-  mark {
-    box-shadow: inset 0 -0.25em 0 0 $darkest, inset 0 -0.5em 0 0 $base;
-    display: block;
-    position: relative;
-    width: $logo-width;
-    height: $logo-height;
-    overflow: hidden;
-    line-height: $logo-height;
-    color: $bg;
-    background-color: $lightest;
-    background-image: url("../images/noise-light.png");
-    background-position: left bottom;
-
-    &:before {
-      $ratio: 2.25; // 36px
-
-      display: block;
-      width: 100%;
-      height: 100%;
-      content: "H";
-      font-family: $stack-logo;
-      font-size: percentage($ratio);
-      text-align: center;
-      text-shadow: 0 -1px 0 mixxd($darkest, $lightest, 0.5);
-      text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
-    }
-  }
-}
-
-// Golbal Navigation
-%global-nav {
-  height: $nav-height;
-  line-height: $nav-height;
-  font-family: $stack-nav;
-  text-transform: uppercase;
-
-  mark {
-    color: $fg;
-    background-color: transparent;
-  }
-}
-
-// Article Meta-info
-%article-metainfo {
-  color: mix($fg, $bg);
-  font-family: $stack-point;
-
-  time {
-    color: $fg;
-  }
-}
-
-// Global Footer
-%global-footer {
-  color: $bg;
-  background-color: mixxd($fg, $dark, 0.3);
-  background-image: url("../images/noise-light.png");
-  font-family: $stack-point;
-
-  a {
-    color: mix($link, $lightest);
-
-    &:hover {
-      color: mix($hover, $lightest);
-    }
-  }
-
-  mark {
-    color: inherit;
-    background-color: transparent;
-  }
-
-  .license {
-    border-top: 1px solid mixxd($fg, $dark, 0.45);
-    box-shadow: 0 -1px 0 0 mixxd($fg, $dark, 0.25);
   }
 }
 
@@ -290,5 +140,88 @@
     background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
     background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+  }
+}
+
+// Header Logo
+%header-logo {
+  font-size: 100%;
+
+  a,
+  mark {
+    box-shadow: inset 0 -0.25em 0 0 $darkest, inset 0 -0.5em 0 0 $base;
+    display: block;
+    position: relative;
+    width: $logo-width;
+    height: $logo-height;
+    overflow: hidden;
+    line-height: $logo-height;
+    color: $bg;
+    background-color: $lightest;
+    background-image: url("../images/noise-light.png");
+    background-position: left bottom;
+
+    &:before {
+      $ratio: 2.25; // 36px
+
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "H";
+      font-family: $stack-logo;
+      font-size: percentage($ratio);
+      text-align: center;
+      text-shadow: 0 -1px 0 mixxd($darkest, $lightest, 0.5);
+      text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
+    }
+  }
+}
+
+// Golbal Navigation
+%global-nav {
+  height: $nav-height;
+  line-height: $nav-height;
+  font-family: $stack-nav;
+  text-transform: uppercase;
+
+  mark {
+    color: $fg;
+    background-color: transparent;
+  }
+}
+
+// Article Meta-info
+%article-metainfo {
+  color: mix($fg, $bg);
+  font-family: $stack-point;
+
+  time {
+    color: $fg;
+  }
+}
+
+// Global Footer
+%global-footer {
+  color: $bg;
+  background-color: mixxd($fg, $dark, 0.3);
+  background-image: url("../images/noise-light.png");
+  font-family: $stack-point;
+
+  a {
+    color: mix($link, $lightest);
+
+    &:hover {
+      color: mix($hover, $lightest);
+    }
+  }
+
+  mark {
+    color: inherit;
+    background-color: transparent;
+  }
+
+  .license {
+    border-top: 1px solid mixxd($fg, $dark, 0.45);
+    box-shadow: 0 -1px 0 0 mixxd($fg, $dark, 0.25);
   }
 }
