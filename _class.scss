@@ -202,7 +202,7 @@
 
 // Global Footer
 %global-footer {
-  color: $bg;
+  color: mixxd($bg, $dark, 0.7);
   background-color: mixxd($fg, $dark, 0.3);
   background-image: url("../images/noise-light.png");
   font-family: $stack-point;

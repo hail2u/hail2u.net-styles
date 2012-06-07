@@ -370,13 +370,9 @@
 // Shots on iine!
 #iine {
   padding-bottom: ($default-margin * 2);
-  color: mixxd($fg, $dark, 0.1);
   background-color: mixxd($fg, $dark, 0.2);
   background-image: url("../images/noise-light.png");
-  font-family: $stack-point;
-  font-style: italic;
   text-align: center;
-  text-shadow: 1px 1px 0 mixxd($fg, $dark, 0.4);
 
   h2 {
     $ratio: 2.25;
