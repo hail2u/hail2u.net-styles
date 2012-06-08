@@ -304,9 +304,7 @@ a {
   }
 
   section p &,
-  nav p &,
-  article p &,
-  aside p & {
+  article p & {
     text-decoration: underline;
   }
 }
