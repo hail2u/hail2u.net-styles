@@ -208,10 +208,10 @@
   font-family: $stack-point;
 
   a {
-    color: mix($link, $lightest);
+    color: mix($link, white);
 
     &:hover {
-      color: mix($hover, $lightest);
+      color: mix($hover, white);
     }
   }
 
