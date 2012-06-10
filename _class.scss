@@ -45,62 +45,6 @@
   }
 }
 
-// Minimal List
-%minimal {
-  padding-left: 0;
-
-  li {
-    display: inline;
-  }
-}
-
-// Flat Description List
-%flat {
-  @extend %clearfix;
-
-  dd {
-    margin: 0 0 0 1em;
-    display: inline;
-    white-space: nowrap;
-  }
-
-  @media (min-width: $safe-for-content) {
-    dt {
-      display: inline;
-
-      &:after {
-        content: "\003a"; // Colon
-      }
-    }
-
-    dd + dt:before {
-      content: "\000a"; // Line Feed
-      white-space: pre;
-    }
-  }
-}
-
-// Column
-%column-container {
-  @extend %clearfix;
-
-  @media (min-width: $safe-for-content) {
-    margin-right: (- $gap);
-    margin-left: (- $gap);
-  }
-}
-
-@for $i from 1 through 12 {
-  %column-#{$i} {
-    @media (min-width: $safe-for-content) {
-      margin-right: $gap;
-      margin-left: $gap;
-      float: left;
-      width: (($column + $gutter) * $i - $gutter);
-    }
-  }
-}
-
 // Elegant Button
 %elegant-btn {
   padding: 0 1em;
@@ -173,6 +117,62 @@
         right: auto;
         left: 100%;
       }
+    }
+  }
+}
+
+// Minimal List
+%minimal {
+  padding-left: 0;
+
+  li {
+    display: inline;
+  }
+}
+
+// Flat Description List
+%flat {
+  @extend %clearfix;
+
+  dd {
+    margin: 0 0 0 1em;
+    display: inline;
+    white-space: nowrap;
+  }
+
+  @media (min-width: $safe-for-content) {
+    dt {
+      display: inline;
+
+      &:after {
+        content: "\003a"; // Colon
+      }
+    }
+
+    dd + dt:before {
+      content: "\000a"; // Line Feed
+      white-space: pre;
+    }
+  }
+}
+
+// Column
+%column-container {
+  @extend %clearfix;
+
+  @media (min-width: $safe-for-content) {
+    margin-right: (- $gap);
+    margin-left: (- $gap);
+  }
+}
+
+@for $i from 1 through 12 {
+  %column-#{$i} {
+    @media (min-width: $safe-for-content) {
+      margin-right: $gap;
+      margin-left: $gap;
+      float: left;
+      width: (($column + $gutter) * $i - $gutter);
     }
   }
 }
