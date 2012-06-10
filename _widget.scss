@@ -202,31 +202,14 @@
   }
 }
 
-// News
+// Posts (inherit News List)
+#posts {
+  @extend %news-list;
+}
+
+// News (inherit News List)
 #news {
-  ul {
-    padding-left: 0;
-  }
-
-  li {
-    position: relative;
-    list-style-type: none;
-  }
-
-  time {
-    display: inline-block;
-    width: 6em;
-    color: mixxd($fg, $bg, 0.6);
-    color: transparentize($fg, 0.6);
-    font-family: $stack-point;
-
-    @media (min-width: $safe-for-full) {
-      position: absolute;
-      top: 0;
-      right: 0;
-      text-align: right;
-    }
-  }
+  @extend %news-list;
 }
 
 // Monthly Archives (inherit Flat Description List)
@@ -254,60 +237,6 @@
 
     @media (min-width: $safe-for-content) {
       display: block;
-    }
-  }
-}
-
-// Posts (inherit Column)
-#posts {
-  @extend %column-container;
-
-  margin-top: $default-margin;
-  padding-left: 2.5em;
-
-  > section {
-    @extend %column-3;
-
-    display: list-item;
-
-    p {
-      display: none;
-    }
-  }
-
-  h3 {
-    margin-top: 0;
-    display: inline;
-    font-weight: normal;
-    font-size: 100%; // 16px
-  }
-
-  @media (min-width: $safe-for-content) {
-    margin-top: 0;
-    padding-left: 0;
-
-    > section {
-      margin-left: $gap;
-      display: block;
-
-      p {
-        $ratio: 0.75;
-
-        height: (em($ratio) * $default-line-height * 6 / $ratio);
-        display: block;
-        overflow: hidden;
-        color: $fg;
-        font-size: percentage($ratio); // 12px
-      }
-    }
-
-    h3 {
-      margin-top: $default-margin;
-      display: block;
-      line-height: $heading-line-height;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
     }
   }
 }
