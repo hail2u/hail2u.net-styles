@@ -59,7 +59,8 @@
   margin-top: $default-margin;
 
   > div {
-    float: left !important; // `!important` flag is needed for Google +1's crappy style
+    // `!important` flag is needed for Google +1's crappy style
+    float: left !important;
     height: 20px;
     line-height: 20px;
   }
@@ -187,7 +188,7 @@
 
 // Seealso
 .seealso:before {
-  content: "\27b2\00a0"; // Circled Heavy White Rightwards Arrow
+  content: "\27b2\00a0"; // Circled Heavy White Rightwards Arrow + Non-breaking Space
 }
 
 // Sidenote (inherit Hanging Block)

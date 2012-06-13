@@ -102,10 +102,6 @@ h6 {
   font-size: percentage($ratio);
 }
 
-address {
-  font-style: normal;
-}
-
 // Grouping Content
 p {
   @extend %default-margin;
@@ -116,20 +112,6 @@ p {
   h6 + & {
     @extend %mini-margin;
   }
-
-  // + p {
-  //   margin-top: 0;
-  //   text-indent: 2em;
-  // }
-
-  // blockquote + & + p,
-  // + p.image,
-  // + p.seealso,
-  // &.image + p,
-  // &.seealso + p {
-  //   margin-top: $default-margin;
-  //   text-indent: 0;
-  // }
 }
 
 hr {

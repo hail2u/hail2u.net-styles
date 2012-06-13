@@ -121,7 +121,7 @@
   text-align: center;
 
   .elsewhere,
-  address,
+  #byline,
   .license,
   .subscribe {
     margin: ($default-margin * 0.25) auto;
@@ -151,7 +151,7 @@
     text-align: left;
 
     .elsewhere,
-    address,
+    #byline,
     .license,
     .subscribe {
       max-width: $content-width;
@@ -172,7 +172,7 @@
       }
     }
 
-    address {
+    #byline {
       padding-top: $default-margin;
       line-height: $icon-size;
     }
@@ -185,7 +185,7 @@
 
   @media (min-width: $safe-for-full) {
     .elsewhere,
-    address,
+    #byline,
     .license,
     .subscribe {
       max-width: $full-width;
