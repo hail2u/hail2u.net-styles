@@ -100,20 +100,23 @@
   color: #090;
 }
 
-.lit {
-  color: #c00;
-}
-
 .kwd,
-.tag,
-.atn {
-  color: #00c;
+.tag {
+  color: #009;
 }
 
 .com,
 .dec,
 .var {
-  color: #999;
+  color: #900;
+}
+
+.lit {
+  color: #066;
+}
+
+.atn {
+  color: #606;
 }
 
 // Paging
