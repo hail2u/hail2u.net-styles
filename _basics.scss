@@ -1,14 +1,16 @@
 // Selection
-::-moz-selection {
+@mixin selection {
   color: $bg;
   background-color: $base;
   text-shadow: none;
 }
 
+::-moz-selection {
+  @include selection;
+}
+
 ::selection {
-  color: $bg;
-  background-color: $base;
-  text-shadow: none;
+  @include selection;
 }
 
 // The Root Element
@@ -116,22 +118,11 @@ p {
 
 hr {
   @extend %default-margin;
-  @extend %ir;
-  $h: 3em;
+  @extend %ornament-separator;
 
-  border: none;
   clear: both;
-  height: ($h * 2);
-  background-color: transparent;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-
-  &:before {
-    margin-top: ($h * 0.5);
-    height: $h;
-    background-image: $ornament;
-    opacity: 0.1;
-  }
 }
 
 pre {
@@ -148,27 +139,10 @@ pre {
 }
 
 blockquote {
-  @extend %ir;
-  $size: 1.5em;
+  @extend %quote-mark;
 
   margin: 0 0 0 2.5em;
-  position: relative;
   clear: both;
-  min-height: $size;
-  overflow: visible;
-
-  &:before {
-    @extend %hanging-block;
-
-    margin-right: 1em;
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: $size;
-    height: $size;
-    background-image: $left-double-quote;
-    opacity: 0.1;
-  }
 
   + p,
   + figcaption {
@@ -178,19 +152,17 @@ blockquote {
   }
 
   @media (min-width: $safe-for-full) {
-    $size: 2.5em;
-
     margin-left: 0;
-    min-height: $size;
-
-    &:before {
-      width: $size;
-      height: $size;
-    }
 
     + p,
     + figcaption {
       margin-left: 0;
+    }
+
+    + figcaption {
+      margin-right: 0;
+      position: static;
+      width: auto;
     }
   }
 }
@@ -257,14 +229,6 @@ figcaption {
   @extend %hanging-block;
 
   font-family: $stack-point;
-
-  @media (min-width: $safe-for-full) {
-    blockquote + & {
-      margin-right: 0;
-      position: static;
-      width: auto;
-    }
-  }
 }
 
 // Text-level Semantics
@@ -336,17 +300,7 @@ kbd {
 }
 
 kbd {
-  margin: 0 0.25em;
-  padding: 0.125em 0.375em;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-shadow: 0 2px 0 0 #ccc;
-  display: inline-block;
-  position: relative;
-  top: -2px;
-  line-height: 1;
-  color: #666;
-  background-color: #f9f9f9;
+  @extend %white-keytop;
 }
 
 @import "normalize.scss/typography/sub-and-sup";
