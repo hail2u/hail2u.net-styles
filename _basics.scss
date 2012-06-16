@@ -229,6 +229,11 @@ figcaption {
   @extend %hanging-block;
 
   font-family: $stack-point;
+
+  @media screen and (min-width: $safe-for-full) {
+    top: auto;
+    bottom: em($default-line-height - 1);
+  }
 }
 
 // Text-level Semantics
