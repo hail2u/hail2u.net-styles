@@ -65,7 +65,7 @@ h1 {
 
 h2 {
   @extend %heading;
-  $ratio: 1.875; // 30px
+  $ratio: 1.875;
 
   margin: ($default-margin * 4 / $ratio) 0 0 0;
   font-weight: normal;
@@ -74,7 +74,7 @@ h2 {
 
 h3 {
   @extend %heading;
-  $ratio: 1.3125; // 21px
+  $ratio: 1.3125;
 
   margin: ($default-margin * 2 / $ratio) 0 0 0;
   font-size: percentage($ratio);
@@ -82,7 +82,7 @@ h3 {
 
 h4 {
   @extend %heading;
-  $ratio: 1.125; // 18px
+  $ratio: 1.125;
 
   margin: ($default-margin * 2 / $ratio) 0 0 0;
   font-size: percentage($ratio);
@@ -90,7 +90,7 @@ h4 {
 
 h5 {
   @extend %heading;
-  $ratio: 1; // 16px
+  $ratio: 1;
 
   margin: ($default-margin * 2 / $ratio) 0 0 0;
   font-size: percentage($ratio);
@@ -98,7 +98,7 @@ h5 {
 
 h6 {
   @extend %heading;
-  $ratio: 0.875; // 14px
+  $ratio: 0.875;
 
   margin: ($default-margin * 2 / $ratio) 0 0 0;
   font-size: percentage($ratio);
@@ -171,7 +171,7 @@ ul,
 ol {
   @extend %default-margin;
 
-  padding: 0 0 0 2.5em; // 40px
+  padding: 0 0 0 2.5em;
   clear: both;
 
   ul,
@@ -199,7 +199,7 @@ dl {
   }
 
   dd {
-    margin-left: 2.5em; // 40px
+    margin-left: 2.5em;
   }
 
   dl {
