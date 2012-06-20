@@ -14,6 +14,23 @@
 }
 
 // The Root Element
+@mixin adjust-font-size($sizes) {
+  @each $s in $sizes {
+    $r: $s / 16px;
+    $f: min-width;
+    $v: $safe-for-full * $r * $r;
+
+    @if ($r < 1) {
+      $f: max-width;
+      $v: $safe-for-content * $r * $r;
+    }
+
+    @media ($f: $v) {
+      font-size: percentage($r);
+    }
+  }
+}
+
 html {
   overflow-y: scroll;
   background-color: mixxd($fg, $dark, 0.4);
@@ -23,29 +40,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 
-  // Decrease Font Size
-  $ratio: 0.875;
-  $too-narrow: $safe-for-content * $ratio * $ratio;
-
-  @media (max-width: $too-narrow) {
-    font-size: percentage($ratio);
-  }
-
-  // Increse Font Size
-  $ratio: 1.125;
-  $wide-enough: $safe-for-full * $ratio * $ratio;
-
-  @media (min-width: $wide-enough) {
-    font-size: percentage($ratio);
-  }
-
-  // Increse Font Size More
-  $ratio: 1.3125;
-  $wide-enough: $safe-for-full * $ratio * $ratio;
-
-  @media (min-width: $wide-enough) {
-    font-size: percentage($ratio);
-  }
+  @include adjust-font-size((14px, 18px, 21px, 24px, 27px, 30px));
 }
 
 // Sections
