@@ -92,31 +92,28 @@
 .opn,
 .clo,
 .fun {
-  color: #000;
+  color: #535353;
 }
 
 .str,
 .atv {
-  color: #090;
+  color: #f18900;
 }
 
 .kwd,
 .tag {
-  color: #009;
+  color: #446fb0;
 }
 
 .com,
 .dec,
 .var {
-  color: #900;
+  color: #a2a2a2;
 }
 
-.lit {
-  color: #066;
-}
-
+.lit,
 .atn {
-  color: #606;
+  color: #738d00;
 }
 
 // Paging
