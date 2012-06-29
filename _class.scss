@@ -301,7 +301,7 @@
 
 // Global Footer
 %global-footer {
-  color: mixxd($bg, $dark, 0.7);
+  color: $dark;
   background-color: mixxd($fg, $dark, 0.3);
   background-image: $footer-texture;
   font-family: $stack-point;
