@@ -34,7 +34,7 @@
 html {
   overflow-y: scroll;
   background-color: mixxd($fg, $dark, 0.4);
-  background-image: url("../images/noise-light.png");
+  background-image: $footer-texture;
   font-family: sans-serif;
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -50,7 +50,7 @@ body {
   line-height: $default-line-height;
   color: $fg;
   background-color: $bg;
-  background-image: url("../images/noise-dark.png");
+  background-image: $body-texture;
   font-family: $stack-body;
 }
 

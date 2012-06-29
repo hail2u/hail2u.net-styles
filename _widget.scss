@@ -308,7 +308,7 @@
 #iine {
   padding-bottom: ($default-margin * 2);
   background-color: mixxd($fg, $dark, 0.2);
-  background-image: url("../images/noise-light.png");
+  background-image: $footer-texture;
   text-align: center;
 
   h2 {
@@ -403,7 +403,7 @@
   }
 
   &:before {
-    background-image: url("../images/icons-w.png");
+    background-image: $icon-sprite;
     background-size: auto;
   }
 

@@ -303,7 +303,7 @@
 %global-footer {
   color: mixxd($bg, $dark, 0.7);
   background-color: mixxd($fg, $dark, 0.3);
-  background-image: url("../images/noise-light.png");
+  background-image: $footer-texture;
   font-family: $stack-point;
 
   a {
