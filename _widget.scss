@@ -385,7 +385,7 @@
 // Elsewhere
 @import "scss-partials/corporate-colors";
 
-.elsewhere a {
+[role="contentinfo"] section a {
   @extend %ir;
 
   border-radius: #{($icon-size * 0.5)}/#{($icon-size * 0.5)};

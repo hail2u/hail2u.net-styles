@@ -120,15 +120,14 @@
   padding-bottom: $default-margin;
   text-align: center;
 
-  .elsewhere,
-  #byline,
-  .license,
-  .subscribe {
+  section,
+  address,
+  > p {
     margin: ($default-margin * 0.25) auto;
     max-width: $content-width;
   }
 
-  .elsewhere {
+  section {
     ul {
       margin-top: 0;
       padding-top: $default-margin;
@@ -142,7 +141,7 @@
     }
   }
 
-  .license {
+  address + p {
     margin-top: ($default-margin + $default-margin * 0.25);
     padding-top: ($default-margin + $default-margin * 0.25);
   }
@@ -150,14 +149,13 @@
   @media (min-width: $safe-for-content) {
     text-align: left;
 
-    .elsewhere,
-    #byline,
-    .license,
-    .subscribe {
+    section,
+    address,
+    > p {
       max-width: $content-width;
     }
 
-    .elsewhere {
+    section {
       position: relative;
 
       ul {
@@ -172,22 +170,20 @@
       }
     }
 
-    #byline {
+    address {
       padding-top: $default-margin;
       line-height: $icon-size;
     }
 
-    .license,
-    .subscribe {
+    > p {
       text-align: right;
     }
   }
 
   @media (min-width: $safe-for-full) {
-    .elsewhere,
-    #byline,
-    .license,
-    .subscribe {
+    section,
+    address,
+    > p {
       max-width: $full-width;
     }
   }
