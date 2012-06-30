@@ -258,6 +258,9 @@
     line-height: $logo-height;
     color: $bg;
     background-color: $lightest;
+    // background-image: $logo-texture;
+    // background-position: center center;
+    // background-size: cover;
 
     &:before {
       $ratio: 2.25;
