@@ -143,6 +143,57 @@
   }
 }
 
+// Messages
+$warning:     rgb(255, 217,   0);
+$error:       rgb(251,  28,  42);
+$information: rgb( 11,  73, 157);
+
+%message {
+  padding: 0.25em 0.5em;
+  border: 1px solid;
+  border-radius: 2px;
+
+  &:before {
+    font-weight: bold;
+  }
+}
+
+.warning {
+  @extend %message;
+
+  border-color: mix($warning, black);
+  color: black;
+  background-color: $warning;
+
+  &:before {
+    content: "Warning: ";
+  }
+}
+
+.error {
+  @extend %message;
+
+  border-color: mix($error, white);
+  color: white;
+  background-color: $error;
+
+  &:before {
+    content: "Error: ";
+  }
+}
+
+.information {
+  @extend %message;
+
+  border-color: mix($information, white);
+  color: white;
+  background-color: $information;
+
+  &:before {
+    content: "Information: ";
+  }
+}
+
 // Posts (inherit News List)
 #posts {
   @extend %news-list;
