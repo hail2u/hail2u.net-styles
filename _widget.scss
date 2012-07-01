@@ -144,14 +144,12 @@
 }
 
 // Messages
-$warning:     rgb(255, 217,   0);
-$error:       rgb(251,  28,  42);
-$information: rgb( 11,  73, 157);
-
-%message {
+@mixin message-coloring($color) {
   padding: 0.25em 0.5em;
-  border: 1px solid;
+  border: 1px solid $color;
   border-radius: 2px;
+  color: mixxd($color, $fg, 0.3);
+  background-color: mixxd($color, $bg, 0.9);
 
   &:before {
     font-weight: bold;
@@ -159,11 +157,7 @@ $information: rgb( 11,  73, 157);
 }
 
 .warning {
-  @extend %message;
-
-  border-color: mix($warning, black);
-  color: black;
-  background-color: $warning;
+  @include message-coloring(rgb(255, 217, 0));
 
   &:before {
     content: "Warning: ";
@@ -171,11 +165,7 @@ $information: rgb( 11,  73, 157);
 }
 
 .error {
-  @extend %message;
-
-  border-color: mix($error, white);
-  color: white;
-  background-color: $error;
+  @include message-coloring(rgb(251, 28, 42));
 
   &:before {
     content: "Error: ";
@@ -183,11 +173,7 @@ $information: rgb( 11,  73, 157);
 }
 
 .information {
-  @extend %message;
-
-  border-color: mix($information, white);
-  color: white;
-  background-color: $information;
+  @include message-coloring(rgb(11, 73, 157));
 
   &:before {
     content: "Information: ";
