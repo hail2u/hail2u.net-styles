@@ -301,6 +301,7 @@
 
 // Global Footer
 %global-footer {
+  border-top: $footer-border-size solid $light;
   color: $dark;
   background-color: mixxd($fg, $dark, 0.3);
   background-image: $footer-texture;
