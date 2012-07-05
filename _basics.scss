@@ -209,7 +209,6 @@ figure {
 
   img {
     border: 1px solid mixxd($fg, white, 0.9);
-    border: 1px solid transparentize($fg, 0.9);
     padding: ($gap * 0.5);
     background-color: white;
   }
