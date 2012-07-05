@@ -275,6 +275,14 @@
 }
 
 // Shots on iine!
+@mixin transition($value) {
+  -moz-transition: $value;
+  -webkit-transition: $value;
+  -o-transition: $value;
+  -ms-transition: $value;
+  transition: $value;
+}
+
 #iine {
   padding-bottom: ($default-margin * 2);
   background-color: mixxd($fg, $dark, 0.2);
@@ -325,6 +333,12 @@
 
     &:hover {
       color: $link;
+
+      figcaption {
+        @include transition(all 0.3s ease-out);
+
+        bottom: -3em;
+      }
     }
   }
 
@@ -332,6 +346,7 @@
     display: inline-block;
     position: relative;
     max-width: 100%;
+    overflow: hidden;
   }
 
   img {
@@ -341,6 +356,8 @@
   }
 
   figcaption {
+    @include transition(all 0.3s ease-out);
+
     margin-right: 0;
     padding: 1em;
     position: absolute;
