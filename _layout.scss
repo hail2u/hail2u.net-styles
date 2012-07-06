@@ -23,13 +23,15 @@
   }
 
   ul {
-    margin: $default-margin auto 0 auto;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 0;
     display: table;
   }
 
   li {
-    padding: 0 ($gutter * 0.5);
+    padding-right: ($gutter * 0.5);
+    padding-left: ($gutter * 0.5);
     display: table-cell;
   }
 
