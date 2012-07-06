@@ -206,12 +206,6 @@ figure {
   @extend %default-margin;
 
   position: relative;
-
-  img {
-    border: 1px solid mixxd($fg, white, 0.8);
-    padding: ($gap * 0.5);
-    background-color: white;
-  }
 }
 
 figcaption {
@@ -320,6 +314,12 @@ img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -ms-interpolation-mode: bicubic;
+
+  figure & {
+    border: 1px solid mixxd($fg, white, 0.8);
+    padding: ($gap * 0.5);
+    background-color: white;
+  }
 }
 
 // Tabular Data
