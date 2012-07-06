@@ -29,7 +29,7 @@
   }
 
   li {
-    padding: 0 ($gap * 0.25);
+    padding: 0 ($gutter * 0.5);
     display: table-cell;
   }
 
@@ -47,7 +47,7 @@
     nav {
       position: absolute;
       bottom: 0;
-      right: 0;
+      right: $gap;
     }
 
     ul {
@@ -55,8 +55,8 @@
     }
 
     li {
-      padding-right: $gap;
-      padding-left: 0;
+      padding-right: 0;
+      padding-left: $gutter;
     }
   }
 
@@ -66,6 +66,11 @@
     nav {
       right: auto;
       left: ($gap + $suppli-width + $gutter);
+    }
+
+    li {
+      padding-right: ($gap * 2);
+      padding-left: 0;
     }
   }
 }
