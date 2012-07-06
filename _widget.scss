@@ -246,7 +246,8 @@
 
 // Google Custom Search Engine
 #cse-search-box {
-  margin-bottom: ($primary-heading-margin * 0.5);
+  margin-top: $primary-heading-margin;
+  margin-bottom: ($primary-heading-margin * 0.333);
   text-align: center;
 
   div {
