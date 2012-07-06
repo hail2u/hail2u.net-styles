@@ -217,9 +217,30 @@
   }
 }
 
+// Links on Delicious
+#links {
+  ol {
+    padding-left: 0;
+  }
+
+  li {
+    overflow: hidden;
+    list-style: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &:before {
+      margin-right: 0.5em;
+      content: "\2764"; // Heavy Black Heart
+      color: rgb(204, 0, 34)
+    }
+  }
+}
+
 // Google Custom Search Engine
 #cse-search-box {
-  @extend %default-margin;
+  margin-bottom: ($primary-heading-margin * 0.5);
+  text-align: center;
 
   div {
     padding: 6px;
@@ -250,25 +271,14 @@
     -moz-box-sizing: content-box;
     box-sizing: content-box;
   }
-}
 
-// Links on Delicious
-#links {
-  ol {
-    padding-left: 0;
-  }
-
-  li {
-    overflow: hidden;
-    list-style: none;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
-    &:before {
-      margin-right: 0.5em;
-      content: "\2764"; // Heavy Black Heart
-      color: rgb(204, 0, 34)
-    }
+  @media (min-width: $safe-for-full) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: ($gap + $column-span1 + $gap);
+    padding-left: ($gap + $suppli-width + $gap);
+    max-width: $content-width;
+    text-align: left;
   }
 }
 
