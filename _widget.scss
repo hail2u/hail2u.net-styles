@@ -413,41 +413,29 @@
   }
 
   &:before {
-    background-image: $icon-sprite;
+    background-position: center center;
     background-size: auto;
   }
 
   $adjuster: (($icon-size - 32px) * 0.5);
 
-  &[href^="http://feeds.feedburner.com/hail2u"] {
-    &:hover {
-      background-color: $cc-feed;
-    }
-
-    &:before {
-      background-position: center $adjuster;
-    }
-  }
-
-  &[href="http://www.facebook.com/hail2u"],
   &[href="https://www.facebook.com/hail2u"] {
     &:hover {
       background-color: $cc-facebook;
     }
 
     &:before {
-      background-position: center (- 32px * 10 + $adjuster);
+      background-image: $icon-facebook;
     }
   }
 
-  &[href="https://twitter.com/hell2u"],
   &[href="https://twitter.com/hail2u_"] {
     &:hover {
       background-color: $cc-twitter;
     }
 
     &:before {
-      background-position: center (- 32px * 19 + $adjuster);
+      background-image: $icon-twitter;
     }
   }
 
@@ -457,17 +445,7 @@
     }
 
     &:before {
-      background-position: center (- 32px * 5 + $adjuster);
-    }
-  }
-
-  &[href="http://pinterest.com/hail2u/"] {
-    &:hover {
-      background-color: $cc-pinterest;
-    }
-
-    &:before {
-      background-position: center (- 32px * 13 + $adjuster);
+      background-image: $icon-github;
     }
   }
 
@@ -477,7 +455,7 @@
     }
 
     &:before {
-      background-position: center (- 32px * 7 + $adjuster);
+      background-image: $icon-lastfm;
     }
   }
 
@@ -487,17 +465,7 @@
     }
 
     &:before {
-      background-position: center (- 32px * 8 + $adjuster);
-    }
-  }
-
-  &[href="http://u2liah.tumblr.com/"] {
-    &:hover {
-      background-color: $cc-tumblr;
-    }
-
-    &:before {
-      background-position: center (- 32px * 18 + $adjuster);
+      background-image: $icon-delicious;
     }
   }
 }
