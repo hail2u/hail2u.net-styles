@@ -81,7 +81,6 @@
 [role="main"] {
   margin-top: (- $primary-heading-margin + $logo-height - $body-border-size - $nav-height);
   margin-right: auto;
-  margin-bottom: $primary-heading-margin;
   margin-left: auto;
   padding: 0 $gap;
   max-width: $content-width;
@@ -89,6 +88,7 @@
   > section,
   > article {
     @extend %clearfix;
+    @extend %section-seperator;
 
     position: relative;
   }

@@ -287,6 +287,22 @@
   }
 }
 
+// Section Seperator
+%section-seperator {
+  &:after {
+    $ratio: 4;
+
+    margin-top: ($primary-heading-margin * 0.5 / $ratio);
+    visibility: visible;
+    height: ($column-span1 / $ratio);
+    line-height: ($column-span1 / $ratio);
+    content: "\002a\0020\002a\0020\002a"; // Asterisk * 3
+    font-size: percentage($ratio);
+    text-align: center;
+    opacity: 0.1;
+  }
+}
+
 // Article Meta-info
 %article-metainfo {
   color: mix($fg, $bg);
