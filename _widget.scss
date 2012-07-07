@@ -293,13 +293,7 @@
 }
 
 // Shots on iine!
-@mixin transition($value) {
-  -moz-transition: $value;
-  -webkit-transition: $value;
-  -o-transition: $value;
-  -ms-transition: $value;
-  transition: $value;
-}
+@import "scss-partials/vendor-extension";
 
 #iine {
   padding-bottom: ($default-margin * 2);
