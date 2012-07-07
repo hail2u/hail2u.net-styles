@@ -1,3 +1,76 @@
+// Header Logo
+[role="banner"] h1 {
+  font-size: 100%;
+
+  a,
+  mark {
+    box-shadow: inset 0 -0.25em 0 0 $darkest, inset 0 -0.5em 0 0 $base;
+    display: block;
+    position: relative;
+    width: $logo-width;
+    height: $logo-height;
+    overflow: hidden;
+    line-height: $logo-height;
+    color: $bg;
+    background-color: $lightest;
+    background-image: $logo-texture;
+
+    &:before {
+      $ratio: 2.25;
+
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "H";
+      font-family: $stack-logo;
+      font-size: percentage($ratio);
+      text-align: center;
+      text-shadow: 0 -1px 0 mixxd($darkest, $lightest, 0.5);
+      text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
+    }
+  }
+}
+
+// Golbal Navigation
+[role="banner"] nav {
+  height: $nav-height;
+  line-height: $nav-height;
+  font-family: $stack-nav;
+  text-transform: uppercase;
+
+  mark {
+    color: $fg;
+    background-color: transparent;
+  }
+}
+
+// Section Seperator
+[role="main"] > section,
+[role="main"] > article {
+  &:after {
+    $ratio: 4;
+
+    margin-top: ($primary-heading-margin * 0.5 / $ratio);
+    visibility: visible;
+    height: ($column-span1 / $ratio);
+    line-height: ($column-span1 / $ratio);
+    content: "\002a\0020\002a\0020\002a"; // Asterisk * 3
+    font-size: percentage($ratio);
+    text-align: center;
+    opacity: 0.1;
+  }
+}
+
+// Article Meta-info
+[role="main"] h2 + footer {
+  color: mix($fg, $bg);
+  font-family: $stack-point;
+
+  time {
+    color: $fg;
+  }
+}
+
 // Google AdSense
 .adsense {
   $adsense-border:     rgb(255, 248, 231);
@@ -46,67 +119,6 @@
 .lit,
 .atn {
   color: #690;
-}
-
-// Paging
-.paging {
-  margin-top: ($default-margin * 3);
-  text-align: center;
-
-  ul {
-    @extend %hanging-block;
-
-    margin-top: 0;
-    padding-left: 0;
-    display: inline-table;
-  }
-
-  li {
-    padding-right: $gap;
-    padding-left: $gap;
-    display: table-cell;
-  }
-
-  a {
-    @extend %ir;
-
-    border-radius: #{($column-span1 * 0.5)}/#{($column-span1 * 0.5)};
-    display: block;
-    width: $column-span1;
-    height: $column-span1;
-    color: $bg;
-    background-color: $fg;
-    opacity: 0.1;
-
-    &:hover {
-      background-color: $lightest;
-      opacity: 1;
-    }
-
-    &[rel="prev"]:before {
-      background-image: $left-arrow;
-    }
-
-    &[rel="next"]:before {
-      background-image: $right-arrow;
-    }
-  }
-
-  @media (min-width: $safe-for-full) {
-    margin-top: 0;
-    position: relative;
-    width: auto;
-
-    ul {
-      top: auto;
-      bottom: 0;
-    }
-
-    li {
-      padding-right: $gutter;
-      padding-left: 0;
-    }
-  }
 }
 
 // Seemore (inherit Elegant Button)
@@ -188,22 +200,64 @@
   }
 }
 
-// Posts (inherit News List)
-#posts {
-  @extend %news-list;
-}
-
-// News (inherit News List)
+// Posts and News
+#posts,
 #news {
-  @extend %news-list;
+  ul {
+    padding-left: 6em;
+
+    @media (min-width: $safe-for-full) {
+      padding-right: 6em;
+      padding-left: 0;
+    }
+  }
+
+  li {
+    position: relative;
+    list-style-type: none;
+
+    time {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 6em;
+      color: mixxd($fg, $bg, 0.6);
+      font-family: $stack-point;
+
+      @media (min-width: $safe-for-full) {
+        text-align: right;
+        right: auto;
+        left: 100%;
+      }
+    }
+  }
 }
 
 // Monthly Archives (inherit Flat Description List)
 #by-month dl {
-  @extend %flat;
+  @extend %clearfix;
 
   dd {
+    margin-left: 1em;
+    display: inline;
     color: mixxd($fg, $bg, 0.6);
+    white-space: nowrap;
+  }
+
+  @media (min-width: $safe-for-content) {
+    dt {
+      display: inline;
+
+      &:after {
+        content: "\003a"; // Colon
+      }
+    }
+
+    dd + dt:before {
+      content: "\000a"; // Line Feed
+      white-space: pre;
+    }
   }
 }
 
@@ -242,6 +296,67 @@
       margin-right: 0.5em;
       content: "\2764"; // Heavy Black Heart
       color: rgb(204, 0, 34)
+    }
+  }
+}
+
+// Paging
+.paging {
+  margin-top: ($default-margin * 3);
+  text-align: center;
+
+  ul {
+    @extend %hanging-block;
+
+    margin-top: 0;
+    padding-left: 0;
+    display: inline-table;
+  }
+
+  li {
+    padding-right: $gap;
+    padding-left: $gap;
+    display: table-cell;
+  }
+
+  a {
+    @extend %ir;
+
+    border-radius: #{($column-span1 * 0.5)}/#{($column-span1 * 0.5)};
+    display: block;
+    width: $column-span1;
+    height: $column-span1;
+    color: $bg;
+    background-color: $fg;
+    opacity: 0.1;
+
+    &:hover {
+      background-color: $lightest;
+      opacity: 1;
+    }
+
+    &[rel="prev"]:before {
+      background-image: $left-arrow;
+    }
+
+    &[rel="next"]:before {
+      background-image: $right-arrow;
+    }
+  }
+
+  @media (min-width: $safe-for-full) {
+    margin-top: 0;
+    position: relative;
+    width: auto;
+
+    ul {
+      top: auto;
+      bottom: 0;
+    }
+
+    li {
+      padding-right: $gutter;
+      padding-left: 0;
     }
   }
 }
@@ -289,6 +404,33 @@
     padding-left: ($gap + $suppli-width + $gap);
     max-width: $content-width;
     text-align: left;
+  }
+}
+
+// Global Footer
+[role="contentinfo"] {
+  border-top: $footer-border-size solid $light;
+  color: $dark;
+  background-color: mixxd($fg, $dark, 0.3);
+  background-image: $footer-texture;
+  font-family: $stack-point;
+
+  a {
+    color: mix($link, white);
+
+    &:hover {
+      color: mix($hover, white);
+    }
+  }
+
+  mark {
+    color: inherit;
+    background-color: transparent;
+  }
+
+  address + p {
+    border-top: 1px solid mixxd($fg, $dark, 0.45);
+    box-shadow: 0 -1px 0 0 mixxd($fg, $dark, 0.35);
   }
 }
 
