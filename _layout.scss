@@ -114,10 +114,24 @@
   }
 }
 
+// Complementary
+[role="complementary"] {
+  margin-top: $primary-heading-margin;
+  margin-bottom: ($primary-heading-margin * 0.333);
+  text-align: center;
+
+  @media (min-width: $safe-for-full) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: ($gap + $column-span1 + $gap);
+    padding-left: ($gap + $suppli-width + $gap);
+    max-width: $content-width;
+    text-align: left;
+  }
+}
+
 // Footer
 [role="contentinfo"] {
-  @extend %global-footer;
-
   padding-bottom: $default-margin;
   text-align: center;
 
