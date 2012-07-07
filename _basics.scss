@@ -293,6 +293,9 @@ kbd {
 
 kbd {
   @extend %white-keytop;
+
+  margin-right: 0.25em;
+  margin-left: 0.25em;
 }
 
 @import "normalize.scss/typography/sub-and-sup";
