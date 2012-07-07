@@ -222,7 +222,6 @@
     &:before {
       margin-right: 0.5em;
       content: "\2764"; // Heavy Black Heart
-      color: rgb(204, 0, 34)
     }
   }
 }
@@ -258,8 +257,7 @@
     opacity: 0.1;
 
     &:hover {
-      background-color: $lightest;
-      opacity: 1;
+      opacity: 0.2;
     }
 
     &[rel="prev"]:before {
