@@ -123,8 +123,6 @@
     background-size: auto;
   }
 
-  $adjuster: (($icon-size - 32px) * 0.5);
-
   &[href="https://www.facebook.com/hail2u"] {
     &:hover {
       background-color: $cc-facebook;
