@@ -425,7 +425,7 @@
     }
 
     &:before {
-      background-image: $icon-facebook;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAAEzo7pQAAAAflBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+yfIzaAAAAKXRSTlMAAgMJEhQWFxkqLS43PkdKVVpqa2x9hIWMlZeZnZ6gorO2uMXw8fL4/m4XGSQAAACESURBVDjLY2CAAE1UAgxUGXAAXk1+ZG34AQtMjRIflCHBgM4QZyAPSKDZL6+pqSmDVwWmAH0A0GFCqALSqAoENBVEWNF0aLKhahFDN5QMAVGGoQS4lNXUVZQFccoLa2pqSMlJ8uBJIRhBgJ5gQECRE4cCDmZZTU0pJm52RnKtoIuCAQEAVAIMoOr46RgAAAAASUVORK5CYII=");
     }
   }
 
@@ -435,7 +435,7 @@
     }
 
     &:before {
-      background-image: $icon-twitter;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAAEzo7pQAAAA21BMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9mUQOSAAAASHRSTlMAAQIDBwsQFhgZGxweICEiKCkwMTM2OTo7Q0VGR09QUVJebXBydnd6gYyPkpeepaisu7y9vr/AwcjQ09jZ3+Di6u3v9vf5/f4hSEowAAAA0klEQVQYGdXBdzdCcQCA4ZeQvbNCRmaUmcjISO/3/0Tuvb/ScpzjH4fnoeUAHgSG+fQOKHBKF68bktBbvpeCSpqYM0rMCLExJbG/w88tCLypZYL5RwNa9kys0bRSM5Lnl6WIbHhGhsBNGFLruwQXup1VazTVDSo0jRss02JA27ERPp0beafD+snREv/NauFwDpig0+hTlmDLWP25PEmnabU0BWRsKtIlPVs10WiYeKLHnd0K9Fq8tsM9/Yq2lfhK7sbgcoA+g7li9VV9ucqP8Od8APM3OKuo2w31AAAAAElFTkSuQmCC");
     }
   }
 
@@ -445,7 +445,7 @@
     }
 
     &:before {
-      background-image: $icon-github;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAAEEfUpiAAACZklEQVR42mL8//8/AzJgQmL/RxdgYGBg4EQWyGdgYPgOAAAA//9ixGXGf2QzJFCU/P//n+H////ZUJoBAAAA///CMAMdINvqjGT2f3QjYfj/////9yKLsaCZyIhuBQAAAP//IskNWAELeuChW4XLhL/oCoTQFFgxMDBIojvyJwMDwwUGBgZuBgYGHWxWsDMwMHxjYGBYTZI3AQAAAP//IqiAEMDly1IsYilYVaLFJXKcYgPR6GqxaVbCY8CL////MyKrx+aFVGhMiiHFbgNUTAItxgmG8jMGBoYbUM2OdI0FogEAAAD//xp4F9DEAF4GBgYzLOKhxKbEUByJ6Ca2VIvNBbo4XKtGbCzgixZhBgaGd/gMYGRgYPhHoBD7iysQpRgYGDgZGBj08KUbaPklgS8QH0PpYmjg/fv//78WjmyP1QBmpJDf/f///ze4NOOKhb9Qp+6ABugXclPiCQYGhl0MDAyPGBgYCodxZgIAAAD//+zWvUpDQRAF4A8MBGzFWCmKClEQ1NZC8hD+PYEP5AtISOEDWNumthEEK0klWohNMMLYTBFEcW+8aqELh4XLZefszuGc+fIVfv0Gf4bAZmr6CgeYww72E9tYwQle0C8l0Cj87zH3NZyVaKtOEc7iboLXvcFqHS3YmLC9i0m+cgtmMteaGOE67WihIoHLPGM56zzjCfcl09k4tnJvpzt/tvoR0Sk498M4eA8XEXGbUSEiullsmIiIOC0tOo4qTtjEMaZxiGHO5FPZtgfs/oQVt1Lhg8y6RpKbx3p+V7cPvB1vlnCE8xTXHnrpE4PvfoH/MKp1vQ4AiUpzG47F5XYAAAAASUVORK5CYII=");
     }
   }
 
@@ -455,7 +455,7 @@
     }
 
     &:before {
-      background-image: $icon-lastfm;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAAEEfUpiAAACm0lEQVR42mL8//8/AzJgYkADMAF2BgaG/wwMDP8Z0bUAAAAA//9iJNoMBgYGhiNYtQAAAAD//8IQwGfEfwYGhiwGBgYxBgaGL1A+A8P///9hGAYMkdgMLMjWYWMDAAAA//8iyQ2UKXjCwMAgB3X5VgYGBj50X/yH0qpI/PD////DTahiYGB4w8DAcBKq8xkDA4MXdXwBAAAA//8iaALFwUCOAf1Qjz5gYGAwQBJfDhU/gaIaKTHAgk8PiX/5//////7//7/x////f////6+Aph6rC9yQ2LrQhHOWgYGBGeqqHHgkMjCgpDZYKrNgYGCYyMDAcJGBgWEeVIyPgYGhloGBQZCBgWEPSamR5rEAAAAA//8anOlgiBsgwsDAcAeaUJYiicsxMDC8hoqnEUrKHf///5dGLtugtMv///8NoOwimB5kzb1IGtCLmv////+vRc8H6Abc+f///08sBqz+//+/0X9UwIjNgCIsLqjB4arZ2AxALt8/oTn//////58hsVVgerDlxgoGBgYhBgaG6Uhi/gwMDI4MDAzPGRgYOkfzAioAAAAA///slTELAXEYxt9BKeV2g1JK8QEUGUxSio/Bomw+g+yyW01uNBnEB7ArGRQlKZt+lvfq7bo7VwbLPfUO93+fe+55/1fv8/Md/H2CxMCvSMXgZEWkLSJNXWdbrVMIv6DZWhWRi4isRWQTqh60obRKmuZR6Bl++Qu3D6SjtqGtlnlxEdBvm/5Szw76vPdx68AI6OhQsQzsVewNZEM4Y2OiouJ+3ABX17l8ywNbrhHJR/yms3JevvMMUAPmRucBDOIayPkmaZleA7iaWLSYAI7hOhpoHqZxDXg1BI4BV7sDuoZXBFbAM4B7B2Zh30hWcWLg7wY+AwAzuk/t1lAtdgAAAABJRU5ErkJggg==");
     }
   }
 
@@ -465,7 +465,7 @@
     }
 
     &:before {
-      background-image: $icon-delicious;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAgMAAAF5E6LxAAAADFBMVEX///9/f3+/v7////+EYmsMAAAAAXRSTlMAQObYZgAAAEdJREFUGNNjYGDgYjAFQgYGDoYvQMiwAoTsQxigYAVCBIIQYNUCJIL/f2gAEoEBUBTj10vIKHSTV60ilfH////Q0FBSGegAAAjYRroWwWiBAAAAAElFTkSuQmCC");
     }
   }
 }
