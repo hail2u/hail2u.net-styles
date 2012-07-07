@@ -6,8 +6,6 @@
   max-width: $content-width;
 
   h1 {
-    @extend %header-logo;
-
     margin-top: 0;
     line-height: 1;
 
@@ -16,10 +14,6 @@
       margin-right: auto;
       margin-left: auto;
     }
-  }
-
-  nav {
-    @extend %global-nav;
   }
 
   ul {
@@ -88,14 +82,11 @@
   > section,
   > article {
     @extend %clearfix;
-    @extend %section-seperator;
 
     position: relative;
   }
 
   h2 + footer {
-    @extend %article-metainfo;
-
     p {
       @extend %mini-margin;
       @extend %hanging-block;

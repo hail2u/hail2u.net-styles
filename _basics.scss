@@ -384,3 +384,103 @@ textarea {
 svg:not(:root) {
   overflow: hidden;
 }
+
+// Header Logo
+[role="banner"] h1 {
+  font-size: 100%;
+
+  a,
+  mark {
+    box-shadow: inset 0 -0.25em 0 0 $darkest, inset 0 -0.5em 0 0 $base;
+    display: block;
+    position: relative;
+    width: $logo-width;
+    height: $logo-height;
+    overflow: hidden;
+    line-height: $logo-height;
+    color: $bg;
+    background-color: $lightest;
+    background-image: $logo-texture;
+
+    &:before {
+      $ratio: 2.25;
+
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "H";
+      font-family: $stack-logo;
+      font-size: percentage($ratio);
+      text-align: center;
+      text-shadow: 0 -1px 0 mixxd($darkest, $lightest, 0.5);
+      text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
+    }
+  }
+}
+
+// Golbal Navigation
+[role="banner"] nav {
+  height: $nav-height;
+  line-height: $nav-height;
+  font-family: $stack-nav;
+  text-transform: uppercase;
+
+  mark {
+    color: $fg;
+    background-color: transparent;
+  }
+}
+
+// Section Seperator
+[role="main"] > section,
+[role="main"] > article {
+  &:after {
+    $ratio: 4;
+
+    margin-top: ($primary-heading-margin * 0.5 / $ratio);
+    visibility: visible;
+    height: ($column-span1 / $ratio);
+    line-height: ($column-span1 / $ratio);
+    content: "\002a\0020\002a\0020\002a"; // Asterisk * 3
+    font-size: percentage($ratio);
+    text-align: center;
+    opacity: 0.1;
+  }
+}
+
+// Article Meta-info
+[role="main"] h2 + footer {
+  color: mix($fg, $bg);
+  font-family: $stack-point;
+
+  time {
+    color: $fg;
+  }
+}
+
+// Global Footer
+[role="contentinfo"] {
+  border-top: $footer-border-size solid $light;
+  color: $dark;
+  background-color: mixxd($fg, $dark, 0.3);
+  background-image: $footer-texture;
+  font-family: $stack-point;
+
+  a {
+    color: mix($link, white);
+
+    &:hover {
+      color: mix($hover, white);
+    }
+  }
+
+  mark {
+    color: inherit;
+    background-color: transparent;
+  }
+
+  address + p {
+    border-top: 1px solid mixxd($fg, $dark, 0.45);
+    box-shadow: 0 -1px 0 0 mixxd($fg, $dark, 0.35);
+  }
+}
