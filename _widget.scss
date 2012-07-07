@@ -6,7 +6,7 @@
   $adsense-text:       rgb( 23,  23,  23);
   $adsense-url:        rgb(  0, 128,  42);
 
-  margin: ($default-margin * 3) 0 0 0;
+  margin-top: ($default-margin * 3);
   padding: 15px;
   border: 1px solid darken($adsense-border, 15%);
   height: 90px;
@@ -62,7 +62,8 @@
   }
 
   li {
-    padding: 0 $gap;
+    padding-right: $gap;
+    padding-left: $gap;
     display: table-cell;
   }
 
@@ -102,7 +103,8 @@
     }
 
     li {
-      padding: 0 $gutter 0 0;
+      padding-right: $gutter;
+      padding-left: 0;
     }
   }
 }
@@ -259,7 +261,7 @@
   }
 
   input[type="text"] {
-    margin: 0 -8px 0 0;
+    margin-right: -8px;
     padding: 0 8px !important;
     border: 1px solid white !important;
     border-radius: 4px;
@@ -328,7 +330,8 @@
   ol {
     @extend %column-container;
 
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 0;
     max-width: 320px;
     list-style-type: none;
