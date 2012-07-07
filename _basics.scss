@@ -385,6 +385,8 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+// Following components should be separated to another SCSS partial
+
 // Header Logo
 [role="banner"] h1 {
   font-size: 100%;
