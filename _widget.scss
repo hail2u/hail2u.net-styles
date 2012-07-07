@@ -6,7 +6,7 @@
   $adsense-text:       rgb( 23,  23,  23);
   $adsense-url:        rgb(  0, 128,  42);
 
-  margin-top: ($default-margin * 3);
+  margin-top: $heading-margin;
   padding: 15px;
   border: 1px solid darken($adsense-border, 15%);
   height: 90px;
@@ -229,7 +229,7 @@
 
 // Paging
 .paging {
-  margin-top: ($default-margin * 3);
+  margin-top: $heading-margin;
   text-align: center;
 
   ul {
@@ -325,7 +325,7 @@
 @import "scss-partials/vendor-extension";
 
 #iine {
-  padding-bottom: ($default-margin * 2);
+  padding-bottom: $heading-margin;
   background-color: mixxd($fg, $dark, 0.2);
   background-image: $footer-texture;
   text-align: center;
@@ -334,7 +334,7 @@
     $ratio: 1;
 
     margin-top: 0;
-    padding-top: ($default-margin * 2 / $ratio);
+    padding-top: ($heading-margin / $ratio);
     font-size: percentage($ratio);
 
     a {

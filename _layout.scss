@@ -117,7 +117,6 @@
 // Complementary
 [role="complementary"] {
   margin-top: $primary-heading-margin;
-  margin-bottom: ($primary-heading-margin * 0.333);
   text-align: center;
 
   @media (min-width: $safe-for-full) {
@@ -132,6 +131,7 @@
 
 // Footer
 [role="contentinfo"] {
+  margin-top: $heading-margin;
   padding-bottom: $default-margin;
   text-align: center;
 
