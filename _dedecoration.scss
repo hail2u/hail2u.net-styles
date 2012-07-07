@@ -80,18 +80,24 @@
   [role="banner"] h1 {
     $ratio: 2.25;
 
-    margin-top: ($default-margin * 2 / $ratio);
+    margin-top: ($heading-margin / $ratio);
     font-size: percentage($ratio);
 
     a,
     mark {
       width: auto;
+      height: auto;
       line-height: 1;
 
       &:before {
         display: none;
       }
     }
+  }
+
+  [role="main"] > section:after,
+  [role="main"] > article:after {
+    display: none;
   }
 
   [role="main"] h2 + footer {
@@ -103,12 +109,17 @@
   }
 
   [role="contentinfo"] {
+    border-top: 1px solid black;
     font-family: inherit;
-    text-align: Left;
+    text-align: right;
 
     section,
-    .subscribe {
+    > p {
       display: none;
     }
+  }
+
+  #links li {
+    white-space: normal;
   }
 }
