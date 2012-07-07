@@ -56,6 +56,10 @@ body {
 
 h1 {
   @extend %heading;
+  $ratio: 2.25;
+
+  margin: ($default-margin / $ratio) 0 0 0;
+  font-size: percentage($ratio);
 }
 
 h2 {

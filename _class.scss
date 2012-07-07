@@ -18,6 +18,12 @@
   }
 }
 
+// Heading
+%heading {
+  line-height: $heading-line-height;
+  font-family: $stack-heading;
+}
+
 // Default Margin
 %default-margin {
   margin: $default-margin 0 0 0;
@@ -26,12 +32,6 @@
 // Mini Margin
 %mini-margin {
   margin: ($default-margin * 0.25) 0 0 0;
-}
-
-// Heading
-%heading {
-  line-height: $heading-line-height;
-  font-family: $stack-heading;
 }
 
 // Ornament Separator
