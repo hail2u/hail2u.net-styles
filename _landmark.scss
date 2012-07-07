@@ -62,7 +62,7 @@
 }
 
 // Article Meta-info
-[role="main"] > article h2 + footer {
+[role="main"] h2 + footer {
   color: mix($fg, $bg);
   font-family: $stack-point;
 
