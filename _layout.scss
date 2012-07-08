@@ -122,10 +122,10 @@
   @media (min-width: $safe-for-full) {
     margin-right: auto;
     margin-left: auto;
-    padding-right: ($gap + $column-span1 + $gap);
-    padding-left: ($gap + $suppli-width + $gap);
-    max-width: $content-width;
-    text-align: left;
+    // padding-right: ($gap + $column-span1 + $gap);
+    // padding-left: ($gap + $suppli-width + $gap);
+    max-width: $full-width;
+    text-align: right;
   }
 }
 
