@@ -76,16 +76,8 @@
 }
 
 // Seealso
-.seealso {
-  position: relative;
-
-  &:before {
-    @extend %hanging-block;
-
-    margin-right: 0.5em;
-    content: "\27b2"; // Circled Heavy White Rightwards Arrow + Non-breaking Space
-    text-align: right;
-  }
+.seealso a {
+  font-weight: bold;
 }
 
 // Sidenote (inherit Hanging Block)
