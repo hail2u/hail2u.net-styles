@@ -139,13 +139,19 @@
 #posts,
 #news {
   $ratio: 1.125;
+  $date-width: 7em;
+  $safe-for-date-and-text: ($gap + $column-span5 + $gap);
 
   ul {
-    padding-left: (($column-span2 + $gutter) / $ratio);
+    padding-left: 0;
     font-size: percentage($ratio);
 
-    @media (min-width: $safe-for-full) {
-      padding-right: (($column-span2 + $gutter) / $ratio);
+    @media (min-width: $safe-for-date-and-text) {
+      padding-left: (($date-width + $gutter) / $ratio);
+    }
+
+    @media (min-width: $safe-for-content) {
+      padding-right: (($date-width + $gutter) / $ratio);
       padding-left: 0;
     }
   }
@@ -156,21 +162,25 @@
     list-style-type: none;
 
     time {
-      margin-right: ($gutter / $ratio);
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      right: 100%;
-      width: ($column-span2 / $ratio);
+      display: block;
       color: mixxd($fg, $bg, 0.6);
       font-family: $stack-point;
 
-      @media (min-width: $safe-for-full) {
+      @media (min-width: $safe-for-date-and-text) {
+        margin-right: ($gutter / $ratio);
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: ($date-width / $ratio);
+      }
+
+      @media (min-width: $safe-for-content) {
         margin-right: 0;
         margin-left: ($gutter / $ratio);
-        text-align: right;
         right: auto;
         left: 100%;
+        text-align: right;
       }
     }
   }
