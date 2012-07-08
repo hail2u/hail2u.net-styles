@@ -285,13 +285,12 @@
   }
 
   @media (min-width: $safe-for-full) {
-    margin-top: 0;
+    margin-top: $primary-heading-margin;
     position: relative;
     width: auto;
 
     ul {
-      top: auto;
-      bottom: 0;
+      top: ((2em - $column-span1) * 0.5);
     }
 
     li {
