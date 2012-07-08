@@ -308,7 +308,7 @@
 
   input[type="text"] {
     padding: 0 0.5em !important;
-    border: 0.0625em solid mixxd($bg, $fg, 0.1) !important;
+    border: 1px solid mixxd($bg, $fg, 0.1) !important;
     width: 192px;
     height: 2em;
     vertical-align: middle;
