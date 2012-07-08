@@ -48,14 +48,30 @@
   color: #690;
 }
 
-// Seemore (inherit Elegant Button)
+// Seemore
 .seemore a {
-  @extend %elegant-btn;
-
-  line-height: 2em;
+  padding: 0.5em 0.5em 0.5em 1em;
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+  color: $bg;
+  background-color: $lightest;
+  font-family: $stack-point;
+  font-style: italic;
+  text-decoration: none;
 
   &:after {
-    content: "\0020\00bb"; // Space + Right Arrow Quote
+    border: 1em solid $lightest;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    content: "";
   }
 }
 
