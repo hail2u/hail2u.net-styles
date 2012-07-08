@@ -130,25 +130,30 @@
 // Posts and News
 #posts,
 #news {
+  $ratio: 1.3125;
+
   ul {
-    padding-left: 6em;
+    padding-left: (($column-span2 + $gutter) / $ratio);
+    font-size: percentage($ratio);
 
     @media (min-width: $safe-for-full) {
-      padding-right: 6em;
+      padding-right: (($column-span2 + $gutter) / $ratio);
       padding-left: 0;
     }
   }
 
   li {
+    margin-top: (($default-margin - 1) / $ratio);
     position: relative;
     list-style-type: none;
 
     time {
+      margin-right: ($gutter / $ratio);
       display: inline-block;
       position: absolute;
       top: 0;
       right: 100%;
-      width: 6em;
+      width: ($column-span2 / $ratio);
       color: mixxd($fg, $bg, 0.6);
       font-family: $stack-point;
 
