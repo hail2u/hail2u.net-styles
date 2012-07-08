@@ -304,33 +304,33 @@
 // Google Custom Search Engine
 #cse-search-box {
   div {
-    padding: 6px;
-    border-radius: 6px;
     display: inline-block;
-    background-color: mixxd($fg, $bg, 0.92);
-    background-color: transparentize($fg, 0.92);
   }
 
   input[type="text"] {
-    margin-right: -8px;
-    padding: 0 8px !important;
-    border: 1px solid white !important;
-    border-radius: 4px;
-    width: 197px;
+    padding: 0 0.5em !important;
+    border: 0.0625em solid mixxd($bg, $fg, 0.1) !important;
+    width: 192px;
     height: 2em;
     vertical-align: middle;
     color: black;
     background-color: white;
-    background-position: 8px 50% !important;
+    background-position: 0.5em 50% !important;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   // inherit Elegant Button
   input[type="submit"] {
-    @extend %elegant-btn;
-
+    border: none;
+    width: 80px;
+    height: 2em;
     vertical-align: middle;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
+    color: white;
+    background-color: mixxd($bg, $fg, 0.2);
+    font-family: $stack-point;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 
