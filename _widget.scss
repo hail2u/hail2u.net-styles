@@ -138,7 +138,7 @@
 // Posts and News
 #posts,
 #news {
-  $ratio: 1.3125;
+  $ratio: 1.125;
 
   ul {
     padding-left: (($column-span2 + $gutter) / $ratio);
