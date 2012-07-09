@@ -146,6 +146,7 @@
 
   ul {
     padding-left: 0;
+    line-height: 2;
     font-size: percentage($ratio);
 
     @media (min-width: $safe-for-date-and-text) {
@@ -159,7 +160,6 @@
   }
 
   li {
-    margin-top: (($default-margin - 1) / $ratio);
     position: relative;
     list-style-type: none;
 
