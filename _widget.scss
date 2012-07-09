@@ -322,7 +322,7 @@ $searchbox-height: 2em;
   input[type="text"] {
     padding: 0 0.25em !important;
     border: 1px solid mixxd($bg, $fg, 0.1) !important;
-    width: 192px;
+    width: 15em;
     height: $searchbox-height;
     vertical-align: middle;
     color: black;
@@ -334,7 +334,7 @@ $searchbox-height: 2em;
 
   input[type="submit"] {
     border: 1px solid mixxd($bg, $fg, 0.1);
-    width: 80px;
+    width: 5em;
     height: $searchbox-height;
     vertical-align: middle;
     color: white;
