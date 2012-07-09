@@ -318,19 +318,18 @@
   }
 
   input[type="text"] {
-    padding: 0 0.5em !important;
+    padding: 0 0.25em !important;
     border: 1px solid mixxd($bg, $fg, 0.1) !important;
     width: 192px;
     height: 2em;
     vertical-align: middle;
     color: black;
     background-color: white;
-    background-position: 0.5em 50% !important;
+    background-position: 0.25em 50% !important;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  // inherit Elegant Button
   input[type="submit"] {
     border: none;
     width: 80px;
