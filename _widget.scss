@@ -58,7 +58,7 @@
   background-color: $fg;
   font-family: $stack-point;
   font-style: italic;
-  font-size: 131.25%;
+  font-size: 112.5%;
   text-decoration: none;
   opacity: 0.2;
 
@@ -285,10 +285,6 @@
     color: $bg;
     background-color: $fg;
     opacity: 0.1;
-
-    &:hover {
-      opacity: 0.2;
-    }
 
     &[rel="prev"]:before {
       background-image: $left-arrow;
