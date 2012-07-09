@@ -55,13 +55,14 @@
   position: relative;
   line-height: 1;
   color: $bg;
-  background-color: $lightest;
+  background-color: $fg;
   font-family: $stack-point;
   font-style: italic;
   text-decoration: none;
+  opacity: 0.2;
 
   &:after {
-    border: 1em solid $lightest;
+    border: 1em solid $fg;
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
