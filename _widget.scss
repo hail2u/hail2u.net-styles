@@ -331,7 +331,7 @@
   }
 
   input[type="submit"] {
-    border: none;
+    border: 1px solid mixxd($bg, $fg, 0.1);
     width: 80px;
     height: 2em;
     vertical-align: middle;
