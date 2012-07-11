@@ -78,8 +78,12 @@
 }
 
 // Seealso
-.seealso a {
+.seealso:before {
+  margin-right: 0.5em;
+  content: "\223D"; // Reversed Tilde
   font-weight: bold;
+  font-size: 112.5%;
+  opacity: 0.2;
 }
 
 // Sidenote (inherit Hanging Block)
