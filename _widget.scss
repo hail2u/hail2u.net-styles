@@ -50,7 +50,10 @@
 
 // Seemore
 .seemore a {
-  padding: 0.5em 0.5em 0.5em 0.75em;
+  $ratio: 1.125;
+  $h: 2em;
+
+  padding: (($h - 1) * 0.5) (($h - 1) * 0.5) (($h - 1) * 0.5) (($h - 1) * 0.5 * 1.5);
   display: inline-block;
   position: relative;
   line-height: 1;
@@ -58,22 +61,20 @@
   background-color: $fg;
   font-family: $stack-point;
   font-style: italic;
-  font-size: 112.5%;
+  font-size: percentage($ratio);
   text-decoration: none;
   opacity: 0.2;
 
   &:after {
-    border: 1em solid $fg;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
     display: block;
     position: absolute;
     top: 0;
     left: 100%;
-    width: 0;
-    height: 0;
-    content: "";
+    width: ($h * 0.5);
+    height: $h;
+    content: "\00a0";
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKdmlld2JveD0iMCAwIDI1NiA1MTIiCndpZHRoPSIyNTYiCmhlaWdodD0iNTEyIgp2ZXJzaW9uPSIxLjEiCnhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoCmQ9Ik0gMCw1MTIgMCwyNTYgMCwwIDEyOCwxMjggMjU2LDI1NiAxMjgsMzg0IHoiCnN0eWxlPSJmaWxsOiMwOTA5MDkiLz4KPC9zdmc+Cg==");
+    background-size: contain;
   }
 }
 
