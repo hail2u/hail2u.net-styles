@@ -27,6 +27,8 @@ body.debug {
 }
 
 // Colors
+@import "scss-partials/vendor-extension";
+
 .colors {
   @extend %column-container;
 
@@ -34,6 +36,7 @@ body.debug {
 
   li {
     @extend %column-1;
+    @include box-sizing(border-box);
 
     margin-bottom: $gutter;
     border: 1px solid black;
@@ -41,8 +44,6 @@ body.debug {
     direction: ltr;
     height: $column-span1;
     text-indent: -9999em;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 
     &:nth-child(1) {
       background-color: $base;

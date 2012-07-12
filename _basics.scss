@@ -115,13 +115,14 @@ p {
   }
 }
 
+@import "scss-partials/vendor-extension";
+
 hr {
   @extend %default-margin;
   @extend %ornament-separator;
+  @include box-sizing(content-box);
 
   clear: both;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
 }
 
 pre {
@@ -306,11 +307,13 @@ del {
 }
 
 // Embedded Content
+@import "scss-partials/vendor-extension";
+
 img {
+  @include box-sizing(content-box);
+
   border: 0;
   max-width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   -ms-interpolation-mode: bicubic;
 
   figure & {

@@ -327,12 +327,16 @@ $searchbox-height: 2em;
 }
 
 // Google Custom Search Engine
+@import "scss-partials/vendor-extension";
+
 #cse-search-box {
   div {
     display: inline-block;
   }
 
   input[type="text"] {
+    @include box-sizing(border-box);
+
     padding: 0 0.25em !important;
     border: 1px solid mixxd($bg, $fg, 0.1) !important;
     width: 15em;
@@ -341,11 +345,11 @@ $searchbox-height: 2em;
     color: black;
     background-color: white;
     background-position: 0.25em 50% !important;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
   }
 
   input[type="submit"] {
+    @include box-sizing(border-box);
+
     border: 1px solid mixxd($bg, $fg, 0.1);
     width: 5em;
     height: $searchbox-height;
@@ -353,8 +357,6 @@ $searchbox-height: 2em;
     color: white;
     background-color: mixxd($bg, $fg, 0.2);
     font-family: $stack-point;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 
     &:focus,
     &:hover {
@@ -440,6 +442,7 @@ $searchbox-height: 2em;
   }
 
   figcaption {
+    @include box-sizing(border-box);
     @include transition(all 0.2s ease-in);
 
     margin-right: 0;
@@ -454,8 +457,6 @@ $searchbox-height: 2em;
     background-color: transparentize(black, 0.2);
     font-family: $stack-point;
     text-align: center;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
   }
 
   p {
