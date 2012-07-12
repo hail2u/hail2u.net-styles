@@ -1,7 +1,7 @@
 // Selection
 @mixin selection {
-  color: $bg;
-  background-color: $base;
+  color: grayscale($bg);
+  background-color: grayscale($darkest);
   text-shadow: none;
 }
 
