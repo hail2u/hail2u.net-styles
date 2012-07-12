@@ -78,3 +78,10 @@ body.debug {
     }
   }
 }
+
+// Selection
+@import "scss-partials/selection";
+
+.selection {
+  @include selection($selection-fg, $selection-bg);
+}

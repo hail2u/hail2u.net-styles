@@ -1,18 +1,3 @@
-// Selection
-@mixin selection {
-  color: grayscale($bg);
-  background-color: grayscale($darkest);
-  text-shadow: none;
-}
-
-::-moz-selection {
-  @include selection;
-}
-
-::selection {
-  @include selection;
-}
-
 // The Root Element
 @mixin adjust-font-size($sizes) {
   @each $s in $sizes {

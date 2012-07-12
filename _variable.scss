@@ -22,6 +22,8 @@ $link: $base;
 $focus: $lightest;
 $hover: $darkest;
 $mark: rgb(255, 238,   0);
+$selection-fg: grayscale($bg);
+$selection-bg: grayscale($darkest);
 
 // Ratio
 $golden-ratio: 1.618;
