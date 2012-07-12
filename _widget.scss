@@ -419,7 +419,7 @@ $searchbox-height: 2em;
       color: $link;
 
       figcaption {
-        @include transition(all 0.3s ease-out);
+        @include transition(all 0.1s ease-out);
 
         bottom: -3em;
       }
@@ -440,7 +440,7 @@ $searchbox-height: 2em;
   }
 
   figcaption {
-    @include transition(all 0.3s ease-out);
+    @include transition(all 0.2s ease-in);
 
     margin-right: 0;
     padding: 1em;
