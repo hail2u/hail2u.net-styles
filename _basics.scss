@@ -295,7 +295,7 @@ del {
 @import "scss-partials/vendor-extension";
 
 img {
-  @include box-sizing(content-box);
+  @include box-sizing(border-box);
 
   border: 0;
   max-width: 100%;
