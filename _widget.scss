@@ -320,6 +320,10 @@ $searchbox-height: 2em;
 @import "scss-partials/vendor-extension";
 
 #cse-search-box {
+  [role="main"] & {
+    @extend %default-margin;
+  }
+
   div {
     display: inline-block;
     position: relative;
