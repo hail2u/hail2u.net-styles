@@ -3,11 +3,11 @@
   @each $s in $sizes {
     $r: $s / 16px;
     $f: min-width;
-    $v: $safe-for-full * $r * $r;
+    $v: $safe-for-full * pow($r, 2);
 
     @if ($r < 1) {
       $f: max-width;
-      $v: $safe-for-content * $r * $r;
+      $v: $safe-for-content * pow($r, 2);
     }
 
     @media ($f: $v) {
