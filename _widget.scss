@@ -72,12 +72,24 @@
 }
 
 // Seealso
-.seealso:before {
-  margin-right: 0.5em;
-  content: "\223D"; // Reversed Tilde
-  font-weight: bold;
-  font-size: 112.5%;
-  opacity: 0.2;
+@import "datauri/_seealso-icon.scss";
+
+.seealso {
+  $chain-height: 1.5em;
+
+  line-height: $chain-height;
+
+  &:before {
+    margin-right: 0.5em;
+    display: inline-block;
+    width: $chain-height;
+    height: $chain-height;
+    content: "\00a0";
+    background-image: $chain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+  }
 }
 
 // Sidenote (inherit Hanging Block)
