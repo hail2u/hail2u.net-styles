@@ -98,8 +98,7 @@
   }
 
   @media (min-width: $safe-for-full) {
-    padding-right: ($gap + $column-span1 + $gap);
-    padding-left: ($gap + $suppli-width + $gap);
+    padding-left: ($gap + $suppli-width + $gutter);
 
     h2 + footer {
       p {
