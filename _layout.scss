@@ -131,8 +131,8 @@
 
 // Footer
 [role="contentinfo"] {
-  margin-top: $heading-margin;
-  padding-bottom: $default-margin;
+  margin-top: $primary-heading-margin;
+  padding-bottom: $heading-margin;
   text-align: center;
 
   section,
@@ -145,7 +145,7 @@
   section {
     ul {
       margin-top: 0;
-      padding-top: $default-margin;
+      padding-top: $heading-margin;
       padding-left: 0;
       display: inline-table;
     }
@@ -186,7 +186,7 @@
     }
 
     address {
-      padding-top: $default-margin;
+      padding-top: $heading-margin;
       line-height: $icon-size;
     }
 
