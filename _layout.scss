@@ -8,12 +8,7 @@
   h1 {
     margin-top: 0;
     line-height: 1;
-
-    a,
-    mark {
-      margin-right: auto;
-      margin-left: auto;
-    }
+    text-align: center;
   }
 
   ul {
@@ -33,11 +28,7 @@
     height: $logo-height;
 
     h1 {
-      a,
-      mark {
-        margin-right: 0;
-        margin-left: 0;
-      }
+      text-align: left;
     }
 
     nav {
