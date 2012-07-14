@@ -54,7 +54,7 @@
     visibility: visible;
     height: ($column-span1 / $ratio);
     line-height: ($column-span1 / $ratio);
-    content: "\002a\0020\002a\0020\002a"; // Asterisk * 3
+    content: "\0020"; // Space
     font-size: percentage($ratio);
     text-align: center;
     opacity: 0.1;

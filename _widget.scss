@@ -303,6 +303,7 @@ $searchbox-height: 2em;
     width: auto;
 
     ul {
+      display: block;
       top: (($searchbox-height - $column-span1) * 0.5);
     }
 
