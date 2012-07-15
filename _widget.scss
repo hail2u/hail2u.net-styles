@@ -66,8 +66,8 @@
   font-size: percentage($ratio);
   text-decoration: none;
 
-  &:before {
-    content: "\00bb\0020"; // Right-Pointing Double Angle Quotation Mark
+  &:after {
+    content: "\0020\2192"; // Rightwards Arrow
   }
 }
 
