@@ -82,10 +82,6 @@
       @extend %mini-margin;
       @extend %hanging-block;
     }
-
-    br {
-      display: none;
-    }
   }
 
   @media (min-width: $safe-for-full) {
@@ -97,8 +93,9 @@
         top: auto;
       }
 
-      br {
-        display: inline;
+      time:after {
+        content: "\000a"; // Line Feed
+        white-space: pre;
       }
     }
   }
