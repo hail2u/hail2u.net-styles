@@ -334,6 +334,10 @@ $searchbox-height: 2em;
 #cse-search-box {
   [role="main"] & {
     @extend %default-margin;
+
+    input[type="text"] {
+      width: $column-span4;
+    }
   }
 
   div {
