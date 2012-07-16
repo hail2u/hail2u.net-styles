@@ -67,7 +67,8 @@
   margin-top: (- $primary-heading-margin + $logo-height - $body-border-size - $nav-height);
   margin-right: auto;
   margin-left: auto;
-  padding: 0 $gap;
+  padding-left: $gap;
+  padding-right: ($full-width - $suppli-width - $gutter - $content-width + $gap);
   max-width: $content-width;
 
   > section,
@@ -82,6 +83,10 @@
       @extend %mini-margin;
       @extend %hanging-block;
     }
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $safe-for-full) {
@@ -93,9 +98,8 @@
         top: auto;
       }
 
-      time:after {
-        content: "\000a"; // Line Feed
-        white-space: pre;
+      br {
+        display: inline;
       }
     }
   }
