@@ -39,16 +39,15 @@
 
 %ornament-separator {
   @extend %ir;
-  $h: 3em;
+  $h: 2.25em;
 
   border: none;
   height: ($h * 2);
   background-color: transparent;
 
   &:before {
-    margin-top: ($h * 0.5);
-    height: $h;
     background-image: $ornament;
+    background-size: auto $h;
     opacity: 0.1;
   }
 }
