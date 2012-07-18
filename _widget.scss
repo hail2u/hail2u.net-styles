@@ -151,7 +151,7 @@
 #news {
   $ratio: 1.125;
   $date-width: 7em;
-  $safe-for-date-and-text: ($gap + $column-span5 + $gap);
+  $safe-for-date-and-text: ($gap + $colspan5 + $gap);
 
   ul {
     padding-left: 0;
@@ -287,10 +287,10 @@ $searchbox-height: 2em;
   a {
     @extend %ir;
 
-    border-radius: #{($column-span1 * 0.5)}/#{($column-span1 * 0.5)};
+    border-radius: #{($colspan1 * 0.5)}/#{($colspan1 * 0.5)};
     display: block;
-    width: $column-span1;
-    height: $column-span1;
+    width: $colspan1;
+    height: $colspan1;
     color: $bg;
     background-color: $fg;
     opacity: 0.1;
@@ -315,7 +315,7 @@ $searchbox-height: 2em;
 
     ul {
       display: block;
-      top: (($searchbox-height - $column-span1) * 0.5);
+      top: (($searchbox-height - $colspan1) * 0.5);
     }
 
     li {
@@ -335,7 +335,7 @@ $searchbox-height: 2em;
     @extend %default-margin;
 
     input[type="text"] {
-      width: $column-span4;
+      width: $colspan4;
     }
   }
 
@@ -349,7 +349,7 @@ $searchbox-height: 2em;
 
     padding: 0 ($searchbox-height + 0.25em) 0 0.25em !important;
     border: 1px solid mixxd($bg, $fg, 0.1) !important;
-    width: $column-span3;
+    width: $colspan3;
     height: $searchbox-height;
     vertical-align: middle;
     color: black;

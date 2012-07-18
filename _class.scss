@@ -129,7 +129,7 @@
       margin-right: $gap;
       margin-left: $gap;
       float: left;
-      width: (($column + $gutter) * $i - $gutter);
+      width: nth($colspan, $i);
     }
   }
 }
