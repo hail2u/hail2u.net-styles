@@ -21,7 +21,7 @@ $lightest: rgb(154, 192, 204);
 $link: $base;
 $focus: $lightest;
 $hover: $darkest;
-$mark: rgb(255, 238,   0);
+$mark: rgb(255, 238, 0);
 $selection-fg: grayscale($bg);
 $selection-bg: grayscale($darkest);
 
@@ -44,7 +44,7 @@ $primary-heading-margin: ($heading-margin * 2);
 $column: 3.5em;
 $gutter: 2em;
 
-@import "./scss-column-equation/sce.scss";
+@import "scss-column-equation/sce.scss";
 
 $content-width: $colspan9;
 $suppli-width: $colspan2;
@@ -58,8 +58,8 @@ $safe-for-content: ($gap + $content-width + $gap);
 $safe-for-full: ($gap + $full-width + $gap);
 
 // Widget
-$body-border-size: 0.25em;
-$footer-border-size: $body-border-size;
+$header-border-size: 0.25em;
+$footer-border-size: $header-border-size;
 
 $icon-size: 2.5em;
 

@@ -4,7 +4,7 @@
 
   a,
   mark {
-    box-shadow: inset 0 (- $body-border-size) 0 0 $darkest, inset 0 (- $body-border-size * 2) 0 0 $base;
+    box-shadow: inset 0 (- $header-border-size) 0 0 $darkest, inset 0 (- $header-border-size * 2) 0 0 $base;
     display: inline-block;
     position: relative;
     width: $logo-width;
