@@ -228,8 +228,8 @@ a {
     color: $hover;
   }
 
-  section p &,
-  article p & {
+  section > p &,
+  article > p & {
     text-decoration: underline;
   }
 }
@@ -251,14 +251,14 @@ cite {
 
 q {
   quotes: none;
-}
 
-q:before {
-  content: "\300c"; // Left Corner Bracket
-}
+  &:before {
+    content: "\300c"; // Left Corner Bracket
+  }
 
-q:after {
-  content: "\300d"; // Right Corner Bracket
+  &:after {
+    content: "\300d"; // Right Corner Bracket
+  }
 }
 
 @import "normalize.scss/typography/dfn";
@@ -338,18 +338,7 @@ table {
 @import "normalize.scss/forms/form";
 @import "normalize.scss/forms/fieldset";
 @import "normalize.scss/forms/legend";
-
-button,
-input,
-select,
-textarea {
-  margin: 0;
-  font-family: sans-serif;
-  font-size: 100%;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-
+@import "normalize.scss/forms/fix-font";
 @import "normalize.scss/forms/fix-line-height";
 @import "normalize.scss/forms/buttons";
 @import "normalize.scss/forms/disabled";

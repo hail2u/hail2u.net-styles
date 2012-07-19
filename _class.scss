@@ -99,20 +99,6 @@
   }
 }
 
-// White Keytop
-%white-keytop {
-  padding: 0.125em 0.375em;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-shadow: 0 2px 0 0 #ccc;
-  display: inline-block;
-  position: relative;
-  top: -2px;
-  line-height: 1;
-  color: #666;
-  background-color: #f9f9f9;
-}
-
 // Column
 %column-container {
   @extend %clearfix;

@@ -11,11 +11,11 @@
 
 // Google AdSense
 .adsense {
-  $adsense-border:     rgb(255, 248, 231);
-  $adsense-title:      rgb( 14,  28, 179);
+  $adsense-border: rgb(255, 248, 231);
+  $adsense-title: rgb(14, 28, 179);
   $adsense-background: rgb(255, 248, 231);
-  $adsense-text:       rgb( 23,  23,  23);
-  $adsense-url:        rgb(  0, 128,  42);
+  $adsense-text: rgb(23, 23, 23);
+  $adsense-url: rgb(0, 128, 42);
 
   padding: 15px;
   border: 1px solid darken($adsense-border, 15%);
@@ -63,7 +63,6 @@
   $ratio: 1.125;
 
   font-size: percentage($ratio);
-  text-decoration: none;
 
   &:after {
     content: "\0020\2192"; // Rightwards Arrow
@@ -74,15 +73,15 @@
 @import "datauri/_seealso-icon.scss";
 
 .seealso {
-  $chain-height: 1.5em;
+  $chain-size: 1.5em;
 
-  line-height: $chain-height;
+  line-height: $chain-size;
 
   &:before {
     margin-right: 0.5em;
     display: inline-block;
-    width: $chain-height;
-    height: $chain-height;
+    width: $chain-size;
+    height: $chain-size;
     content: "\00a0";
     background-image: $chain;
     background-repeat: no-repeat;
@@ -111,9 +110,8 @@
 
 // Messages
 @mixin message-coloring($color) {
-  padding: 0.25em 0.5em;
+  padding: 0.5em 1em;
   border: 1px solid $color;
-  // border-radius: 2px;
   color: mixxd($color, $fg, 0.3);
   background-color: mixxd($color, $bg, 0.9);
 
@@ -197,7 +195,7 @@
   }
 }
 
-// Monthly Archives (inherit Flat Description List)
+// Monthly Archives
 #by-month dl {
   @extend %clearfix;
 
