@@ -68,7 +68,7 @@
   margin-right: auto;
   margin-left: auto;
   padding-left: $gap;
-  padding-right: ($full-width - $suppli-width - $gutter - $content-width + $gap);
+  padding-right: $gap;
   max-width: $content-width;
 
   > section,
@@ -91,6 +91,7 @@
 
   @media (min-width: $safe-for-full) {
     padding-left: ($gap + $suppli-width + $gutter);
+    padding-right: ($full-width - $suppli-width - $gutter - $content-width + $gap);
 
     h2 + footer {
       p {
