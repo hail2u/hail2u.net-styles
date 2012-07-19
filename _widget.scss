@@ -73,15 +73,15 @@
 @import "datauri/_seealso-icon.scss";
 
 .seealso {
-  $chain-size: 1.5em;
+  $seealso-height: 1.5em;
 
-  line-height: $chain-size;
+  line-height: $seealso-height;
 
   &:before {
     margin-right: 0.5em;
     display: inline-block;
-    width: $chain-size;
-    height: $chain-size;
+    width: $seealso-height;
+    height: $seealso-height;
     content: "\00a0";
     background-image: $chain;
     background-repeat: no-repeat;
