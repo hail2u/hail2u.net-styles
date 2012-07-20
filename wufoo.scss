@@ -6,11 +6,13 @@
  * LICENSE: http://hail2u.mit-license.org/2010
  */
 
+@import "image";
+
 html {
   display: table;
   width: 100%;
   height: 100%;
-  background-image: url("../images/denim-light.png");
+  background-image: $footer-texture;
 }
 
 body {
@@ -22,11 +24,11 @@ body {
 
 #container {
   border: 1px solid #ccc;
-  background-image: url("../images/noise-dark.png");
+  background-image: $body-texture;
 }
 
 #logo {
-  background-image: url("../images/canvas-light.png");
+  background-image: $logo-texture;
 }
 
 form.wufoo {

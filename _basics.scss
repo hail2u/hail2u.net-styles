@@ -19,7 +19,7 @@
 html {
   overflow-y: scroll;
   background-color: mixxd($fg, $dark, 0.4);
-  background-image: $footer-texture;
+  background-image: $texture-footer;
   font-family: sans-serif;
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -35,7 +35,7 @@ body {
   line-height: $default-line-height;
   color: $fg;
   background-color: $bg;
-  background-image: $body-texture;
+  background-image: $texture-body;
   font-family: $stack-body;
 }
 
@@ -104,7 +104,7 @@ p {
 
 hr {
   @extend %default-margin;
-  @extend %ornament-separator;
+  @extend %section-divider;
   @include box-sizing(content-box);
 
   clear: both;
