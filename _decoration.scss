@@ -110,7 +110,6 @@
   width: $icon-size;
   height: $icon-size;
   line-height: $icon-size;
-  overflow: hidden;
   background-color: $fg;
   opacity: 0.2;
 
@@ -119,8 +118,7 @@
   }
 
   &:before {
-    background-position: center center;
-    background-size: 1.5em 1.5em;
+    background-size: 60% 60%;
   }
 
   &[href="https://www.facebook.com/hail2u"] {
