@@ -70,8 +70,6 @@
 }
 
 // Seealso
-@import "datauri/_seealso-icon.scss";
-
 .seealso {
   $seealso-height: 1.5em;
 
@@ -83,7 +81,7 @@
     width: $seealso-height;
     height: $seealso-height;
     content: "\00a0";
-    background-image: $chain;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICB2aWV3Qm94PSIwIDAgNTEyIDUxMiIKICB3aWR0aD0iNTEyIgogIGhlaWdodD0iNTEyIgogIHZlcnNpb249IjEuMSIKICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoCiAgICBkPSJtMjQ0LjY5LDE3Ni44LDU2LjU2OS01Ni41NjljMjUuMDcxLTI1LjA3MSw2NS40MzgtMjUuMDcxLDkwLjUxLDAsMjUuMDcxLDI1LjA3MSwyNS4wNzEsNjUuNDM4LDAsOTAuNTFsLTY3Ljg4Miw2Ny44ODJjLTI1LjA3MSwyNS4wNzEtNjUuNDM4LDI1LjA3MS05MC41MSwwLTYuMTM0NS02LjEzNDUtMTAuNzY4LTEzLjE4NS0xMy45LTIwLjcwMyIKICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MzI7ZmlsbDpub25lIi8+CiAgPHBhdGgKICAgIGQ9Im0yNjcuMzEsMzM1LjItNTYuNTY5LDU2LjU2OWMtMjUuMDcxLDI1LjA3MS02NS40MzgsMjUuMDcxLTkwLjUxLDAtMjUuMDcxLTI1LjA3MS0yNS4wNzEtNjUuNDM4LDAtOTAuNTFsNjcuODgyLTY3Ljg4MmMyNS4wNzEtMjUuMDcxLDY1LjQzOC0yNS4wNzEsOTAuNTEsMCw2LjEzNDUsNi4xMzQ1LDEwLjc2OCwxMy4xODUsMTMuOSwyMC43MDMiCiAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjMyO2ZpbGw6bm9uZSIvPgo8L3N2Zz4K");
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 0.2;
@@ -261,7 +259,6 @@
 }
 
 // Paging
-@import "datauri/paging-icon";
 $searchbox-height: 2em;
 
 .paging {
@@ -298,11 +295,11 @@ $searchbox-height: 2em;
     }
 
     &[rel="prev"]:before {
-      background-image: $left-arrow;
+      background-image: url("data:image/svg+xml;base64,PD94bWwKdmVyc2lvbj0iMS4wIgplbmNvZGluZz0iVVRGLTgiCnN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKdmlld2JveD0iMCAwIDExMiAxMTIiCndpZHRoPSIxMTIiCmhlaWdodD0iMTEyIgp2ZXJzaW9uPSIxLjEiCnhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoCmQ9Ik0gNjMuMzE0MTI2LDIyLjA1ODg3MiA3NC42Mjc4MzQsMzMuMzcyNTggNTIuMDAwNDE4LDU1Ljk5OTk5NyA3NC42Mjc4MzQsNzguNjI3NDE4IDYzLjMxNDEyNiw4OS45NDExMjggMjkuMzczLDU1Ljk5OTk5NyB6IgpzdHlsZT0iZmlsbDojZmZmZmZmIi8+Cjwvc3ZnPgo=");
     }
 
     &[rel="next"]:before {
-      background-image: $right-arrow;
+      background-image: url("data:image/svg+xml;base64,PD94bWwKdmVyc2lvbj0iMS4wIgplbmNvZGluZz0iVVRGLTgiCnN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKdmlld2JveD0iMCAwIDExMiAxMTIiCndpZHRoPSIxMTIiCmhlaWdodD0iMTEyIgp2ZXJzaW9uPSIxLjEiCnhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoCmQ9Ik0gNDguNjg2NzA4LDIyLjA1ODg3MiAzNy4zNzMsMzMuMzcyNTggNjAuMDAwNDE2LDU1Ljk5OTk5NyAzNy4zNzMsNzguNjI3NDE4IDQ4LjY4NjcwOCw4OS45NDExMjggODIuNjI3ODM0LDU1Ljk5OTk5NyB6IgpzdHlsZT0iZmlsbDojZmZmZmZmIi8+Cjwvc3ZnPgo=");
     }
   }
 
@@ -326,7 +323,6 @@ $searchbox-height: 2em;
 // Google Custom Search Engine
 @import "scss-partials/image-replacement";
 @import "scss-partials/vendor-extension";
-@import "datauri/searchbox-icon";
 
 #cse-search-box {
   [role="main"] & {
@@ -366,10 +362,10 @@ $searchbox-height: 2em;
     width: $searchbox-height;
     height: $searchbox-height;
     background-color: transparent;
-    background-image: $magnifying-glass;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICB2aWV3Qm94PSIwIDAgNTEyIDUxMiIKICB3aWR0aD0iNTEyIgogIGhlaWdodD0iNTEyIgogIHZlcnNpb249IjEuMSIKICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoCiAgICBkPSJtIDMyOCwyMDggYSAxMjAsMTIwIDAgMCAxIC0yNDAsMCAxMjAsMTIwIDAgMSAxIDI0MCwwIHoiCiAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDo0OCIvPgogIDxwYXRoCiAgICBkPSJNIDI3OC4yOTQzOCwzMTIuMjM1NSAzMTIuMjM1NSwyNzguMjk0MzggNDQ4LDQxNC4wNTg4OCA0MTQuMDU4ODgsNDQ4IHoiCiAgICBzdHlsZT0iZmlsbDojMDAwMDAwIi8+Cjwvc3ZnPgo=");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 50% 50%;
+    background-size: 75% 75%;
     opacity: 0.1;
 
     &:focus,
@@ -381,7 +377,6 @@ $searchbox-height: 2em;
 
 // Shots on iine!
 @import "scss-partials/vendor-extension";
-@import "datauri/iine-icon";
 
 #iine {
   padding-bottom: $heading-margin;
@@ -404,7 +399,7 @@ $searchbox-height: 2em;
       height: 32px;
 
       &:before {
-        background-image: $iine-logo;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAAEzo7pQAAABm1BMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAABAQECAgIEBAQFBQULCwsNDQ0WFhYYGBghISEmJiYoKCgxMTE3Nzc6OjpNTU1PT09RUVFWVlZgYGBjY2NnZ2dxcXFzc3N0dHR2dnZ4eHh/f3+BgYGFhYWJiYmTk5OYmJihoaGjo6Onp6ezs7O5ubm7u7u8vLy+vr7FxcXJycnPz8/U1NTX19fa2trd3d3g4ODi4uLk5OTl5eXp6ent7e3v7+/z8/P19fX4+Pj5+fn7+/v+/v7///+X+x46AAAAS3RSTlMAAwkQEhMZGhwdJygrLS8wNjc5OkFCQ0lNUFNVXGFiZGdsbXN3eXx+iIyNkpScoKGlqqyyu73DxcjL1NXa29/g4+Xr8fT19vv8/f4w6Q+tAAABWklEQVQYGX3BCVdNUQCG4Y9QXJQ54yWZCSFkzuwl85TMcxEiuoYk1PeznbNrtU9r7et5NAFlUAZNKCFp02FJnFFuRhcblVvKXwWHRjTuOQs11R8qCgaxgn5qFLy8pXEeVWCuKjBWtKLVY1ZUOwR4ribVf4an2xWtegtWwe5u3qxWdLwPvFKRgZtHVHDQXqb/23rMY+sVnXpxA6zobCd07VNkoDJPkQGrwHD9pAoMvU0qMFhFBqtglv21TdF0X6bbinY+AH7N1KT9dwErajA8tgqW2O2qas7mEx1lpe1w5lvPtXs+2qiE2Re+XyR3Zfj0WiXUnf9xiVyvm5VS8iC5225X0iJ/IvfBy5XU6Hdk7nuP0ta5h8wXz1faFj8BHrpFVezyM6DikpIW278HBkbsViWV/ZHgkfcq5YDvEHQOnatVwja/JnjlFiU128P973/aG1RV/Zrygmma4h+h9mvGxdAD9gAAAABJRU5ErkJggg==");
       }
     }
   }
