@@ -105,11 +105,11 @@
 [role="contentinfo"] section a {
   @extend %ir;
 
-  border-radius: #{($icon-size * 0.5)}/#{($icon-size * 0.5)};
+  border-radius: #{($footer-icon-size * 0.5)}/#{($footer-icon-size * 0.5)};
   display: block;
-  width: $icon-size;
-  height: $icon-size;
-  line-height: $icon-size;
+  width: $footer-icon-size;
+  height: $footer-icon-size;
+  line-height: $footer-icon-size;
   background-color: $fg;
   opacity: 0.2;
 
