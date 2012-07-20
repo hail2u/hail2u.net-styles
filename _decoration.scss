@@ -45,23 +45,6 @@
   }
 }
 
-// Section Seperator
-[role="main"] > section,
-[role="main"] > article {
-  &:after {
-    $ratio: 4;
-
-    margin-top: ($primary-heading-margin * 0.5 / $ratio);
-    visibility: visible;
-    height: ($colspan1 / $ratio);
-    line-height: ($colspan1 / $ratio);
-    content: "\0020"; // Space
-    font-size: percentage($ratio);
-    text-align: center;
-    opacity: 0.1;
-  }
-}
-
 // Article Meta-info
 [role="main"] h2 + footer {
   color: mix($fg, $bg);
