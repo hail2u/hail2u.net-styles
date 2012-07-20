@@ -293,16 +293,16 @@ $searchbox-height: 2em;
     background-color: $fg;
     opacity: 0.1;
 
+    &:hover {
+      opacity: 0.2;
+    }
+
     &[rel="prev"]:before {
       background-image: $left-arrow;
     }
 
     &[rel="next"]:before {
       background-image: $right-arrow;
-    }
-
-    &:hover {
-      opacity: 0.2;
     }
   }
 
