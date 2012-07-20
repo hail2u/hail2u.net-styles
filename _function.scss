@@ -1,11 +1,10 @@
 // adjust-rgb() - Adjust RGB properties at once with fixed amount.
 //
 // @param {color}  $color
-// @param {number} $amount Adjust amount number between 0 and 1
+// @param {number} $amount A number between 0 and 255
+// @return {color}
 @function adjust-rgb($color, $amount) {
-  $number: 255 * $amount;
-
-  @return adjust-color($color, $red: $number, $blue: $number, $green: $number);
+  @return adjust-color($color, $red: $amount, $blue: $amount, $green: $amount);
 }
 
 
@@ -13,7 +12,8 @@
 //
 // @param {color}   $color-1
 // @param {color}   $color-2
-// @param {number=} $weight  Mix weight number between 0 and 1
+// @param {number=} $weight  A number between 0 and 1
+// @return {color}
 @function mixxd($color-1, $color-2, $weight: 0.5) {
   $percentage: percentage(1 - $weight);
 
@@ -24,21 +24,23 @@
 // em() - Convert unitless number to an em.
 //
 // @param {number} $number
+// @return {number}
 @function em($number) {
-  $number: (1em * $number);
+  $number: ($number * 1em);
 
   @return $number;
 }
 
 
-// pow() - Raise number to the nth power
+// pow() - Raise number to the nth power.
 //
-// @param {number} $base      The base number
-// @param {number} $exponents The exponent to which to raise $base
-@function pow($base, $exponents) {
+// @param {number} $base
+// @param {number} $exponent An integer
+// @returns {number}
+@function pow($base, $exponent) {
   $raised: 1;
 
-  @for $i from 1 through $exponents {
+  @for $i from 1 through $exponent {
     $raised: $raised * $base;
   }
 
