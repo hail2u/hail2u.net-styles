@@ -42,7 +42,7 @@ body.debug {
     border: 1px solid black;
     display: block;
     direction: ltr;
-    height: $column-span1;
+    height: $colspan1;
     text-indent: -9999em;
 
     &:nth-child(1) {
