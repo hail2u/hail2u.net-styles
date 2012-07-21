@@ -38,6 +38,9 @@ $default-margin: em($default-line-height);
 $heading-margin: ($default-margin * 2);
 $primary-heading-margin: ($heading-margin * 2);
 
+// Indent
+$default-indent: 2.5em;
+
 // Column
 $column: 3.5em;
 $gutter: 2em;

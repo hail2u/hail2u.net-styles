@@ -113,7 +113,7 @@ hr {
 pre {
   @extend %default-margin;
 
-  margin-left: 2.5em;
+  margin-left: $default-indent;
   clear: both;
   line-height: 1.25;
   font-family: $stack-code;
@@ -127,14 +127,14 @@ pre {
 blockquote {
   @extend %quote-mark;
 
-  margin: 0 0 0 2.5em;
+  margin: 0 0 0 $default-indent;
   clear: both;
 
   + p,
   + figcaption {
     @extend %mini-margin;
 
-    margin-left: 2.5em;
+    margin-left: $default-indent;
   }
 
   @media (min-width: $safe-for-full) {
@@ -157,7 +157,7 @@ ul,
 ol {
   @extend %default-margin;
 
-  padding: 0 0 0 2.5em;
+  padding: 0 0 0 $default-indent;
   clear: both;
 
   ul,
@@ -170,7 +170,7 @@ ol {
 
     ul,
     ol {
-      padding-left: 2.5em; // revert default size
+      padding-left: $default-indent; // Revert to default indentation size
     }
   }
 }
@@ -185,7 +185,7 @@ dl {
   }
 
   dd {
-    margin-left: 2.5em;
+    margin-left: $default-indent;
   }
 
   dl {
