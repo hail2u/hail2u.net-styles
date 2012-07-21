@@ -349,6 +349,4 @@ table {
 @import "normalize.scss/forms/textarea";
 
 // SVG
-svg:not(:root) {
-  overflow: hidden;
-}
+@import "normalize.scss/embed/svg";
