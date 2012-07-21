@@ -219,13 +219,13 @@ a {
     outline: 1px dotted $focus;
   }
 
-  &:active,
-  &:hover {
+  &:active {
     outline: 0;
   }
 
   &:hover {
     color: $hover;
+    outline: 0;
   }
 
   section > p &,
