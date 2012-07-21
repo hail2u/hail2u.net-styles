@@ -4,46 +4,41 @@
   padding: 0 $gap;
   position: relative;
   max-width: $content-width;
+  text-align: center;
 
   h1 {
     margin-top: 0;
     line-height: 1;
-    text-align: center;
   }
 
-  ul {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    display: table;
-  }
+  nav {
+    ul {
+      padding-left: 0;
+    }
 
-  li {
-    padding-right: ($gutter * 0.5);
-    padding-left: ($gutter * 0.5);
-    display: table-cell;
+    li {
+      padding-right: ($gutter * 0.5);
+      padding-left: ($gutter * 0.5);
+    }
   }
 
   @media (min-width: $safe-for-content) {
     height: $logo-height;
-
-    h1 {
-      text-align: left;
-    }
+    text-align: left;
 
     nav {
       position: absolute;
       bottom: 0;
       right: $gap;
-    }
 
-    ul {
-      margin-top: 0;
-    }
+      ul {
+        margin-top: 0;
+      }
 
-    li {
-      padding-right: 0;
-      padding-left: $gutter;
+      li {
+        padding-right: 0;
+        padding-left: $gutter;
+      }
     }
   }
 
@@ -53,11 +48,11 @@
     nav {
       right: auto;
       left: ($gap + $suppli-width + $gutter);
-    }
 
-    li {
-      padding-right: ($gap * 2);
-      padding-left: 0;
+      li {
+        padding-right: ($gap * 2);
+        padding-left: 0;
+      }
     }
   }
 }

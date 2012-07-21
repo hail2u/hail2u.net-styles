@@ -39,6 +39,14 @@
   font-family: $stack-nav;
   text-transform: uppercase;
 
+  ul {
+    display: inline-table;
+  }
+
+  li {
+    display: table-cell;
+  }
+
   mark {
     color: $fg;
     background-color: transparent;
