@@ -6,11 +6,13 @@
   max-width: $content-width;
   text-align: center;
 
+  // Header logo
   h1 {
     margin-top: 0;
     line-height: 1;
   }
 
+  // Global Navigation
   nav {
     ul {
       padding-left: 0;
@@ -26,6 +28,7 @@
     height: $logo-height;
     text-align: left;
 
+    // Global Navigation
     nav {
       position: absolute;
       bottom: 0;
@@ -45,6 +48,7 @@
   @media (min-width: $safe-for-full) {
     max-width: $full-width;
 
+    // Global Navigation
     nav {
       right: auto;
       left: ($gap + $suppli-width + $gutter);
@@ -73,6 +77,7 @@
     position: relative;
   }
 
+  // Article Meta-info
   h2 + footer {
     p {
       @extend %mini-margin;
@@ -88,6 +93,7 @@
     padding-left: ($gap + $suppli-width + $gutter);
     padding-right: ($full-width - $suppli-width - $gutter - $content-width + $gap);
 
+    // Article Meta-info
     h2 + footer {
       p {
         margin-top: $default-margin;
@@ -127,6 +133,7 @@
     max-width: $content-width;
   }
 
+  // Elsewhere
   section {
     ul {
       margin-top: 0;
@@ -155,6 +162,7 @@
       max-width: $content-width;
     }
 
+    // Elsewhere
     section {
       position: relative;
 
