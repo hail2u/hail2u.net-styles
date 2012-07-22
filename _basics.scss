@@ -204,9 +204,11 @@ figcaption {
 
   font-family: $stack-point;
 
-  @media screen and (min-width: $safe-for-full) {
-    top: auto;
-    bottom: em($default-line-height - 1);
+  figure &:last-child {
+    @media screen and (min-width: $safe-for-full) {
+      top: auto;
+      bottom: em(($default-line-height - 1) * 0.5);
+    }
   }
 }
 
@@ -304,6 +306,7 @@ img {
   figure & {
     border: 1px solid mixxd($fg, white, 0.8);
     padding: ($gap * 0.5);
+    vertical-align: text-bottom;
     background-color: white;
   }
 }
