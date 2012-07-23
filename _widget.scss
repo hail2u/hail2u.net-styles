@@ -241,6 +241,45 @@
   }
 }
 
+// Yearly Archives
+.by-year {
+  h2 {
+    @extend %hanging-block;
+
+    margin-top: 0;
+    font-size: 100%;
+
+    time {
+      $ratio: 1.875;
+
+      font-family: $stack-point;
+      font-style: italic;
+      font-size: percentage($ratio);
+    }
+  }
+
+  ol {
+    $ratio: 1.125;
+
+    margin-top: ($primary-heading-margin / $ratio);
+    font-size: percentage($ratio);
+  }
+
+  li {
+    display: inline;
+    list-style-type: none;
+
+    &:after {
+      content: " /"; // Space + Slash
+      color: mixxd($fg, $bg, 0.8);
+    }
+
+    &:last-child:after {
+      content: "";
+    }
+  }
+}
+
 // Links on Delicious
 #links {
   ol {
