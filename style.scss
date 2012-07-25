@@ -11,7 +11,7 @@ $version: "6.34";
 @import "function";
 
 // Embed
-@import "embed";
+@import "image", "font";
 
 // Variable
 @import "variable";
