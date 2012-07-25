@@ -202,8 +202,6 @@ figure {
 figcaption {
   @extend %hanging-block;
 
-  font-family: $stack-point;
-
   figure &:last-child {
     @media screen and (min-width: $safe-for-full) {
       top: auto;

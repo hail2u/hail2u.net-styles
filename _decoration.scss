@@ -36,7 +36,6 @@
 [role="banner"] nav {
   height: $nav-height;
   line-height: $nav-height;
-  font-family: $stack-nav;
   text-transform: uppercase;
 
   ul {
@@ -56,7 +55,6 @@
 // Article Meta-info
 [role="main"] h2 + footer {
   color: mix($fg, $bg);
-  font-family: $stack-point;
 
   time {
     color: $fg;
@@ -69,7 +67,6 @@
   color: $dark;
   background-color: mixxd($fg, $dark, 0.3);
   background-image: $texture-footer;
-  font-family: $stack-point;
 
   a {
     color: mix($link, white);

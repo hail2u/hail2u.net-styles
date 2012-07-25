@@ -173,7 +173,6 @@
     time {
       display: block;
       color: mixxd($fg, $bg, 0.6);
-      font-family: $stack-point;
 
       @media (min-width: $safe-for-date-and-text) {
         margin-right: ($gutter / $ratio);
@@ -252,7 +251,6 @@
     time {
       $ratio: 1.875;
 
-      font-family: $stack-point;
       font-style: italic;
       font-size: percentage($ratio);
     }
@@ -514,7 +512,6 @@ $searchbox-height: 2em;
     color: white;
     background-color: mixxd(black, white, 0.2);
     background-color: transparentize(black, 0.2);
-    font-family: $stack-point;
     text-align: center;
   }
 
