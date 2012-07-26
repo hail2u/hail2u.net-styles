@@ -10,11 +10,11 @@ $version: "6.34";
 // Function
 @import "function";
 
-// Embed
-@import "image", "font";
-
 // Variable
-@import "variable", "column";
+@import "variable";
+@import "column";
+@import "image";
+@import "font";
 
 // Class
 @import "class";
