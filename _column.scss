@@ -1,0 +1,17 @@
+// Column Config
+$column: 3.5em;
+$gutter: 2em;
+
+@import "scss-column-equation/sce.scss";
+
+// Main Component Size
+$content-width: $colspan9;
+$suppli-width: $colspan2;
+$full-width: $colspan12;
+$logo-width: $colspan1;
+$logo-height: ($logo-width * $golden-ratio);
+$nav-height: em(1);
+
+// Breakpoint
+$safe-for-content: ($gap + $content-width + $gap);
+$safe-for-full: ($gap + $full-width + $gap);
