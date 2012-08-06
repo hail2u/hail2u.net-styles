@@ -5,5 +5,5 @@ $font-logo: url("data:application/x-font-woff;base64,d09GRgABAAAAAAXwAA0AAAAACUQ
   font-family: "Logo";
   font-style: normal;
   font-weight: 400;
-  src: $font-logo format("woff");
+  src: local("Kreon"), $font-logo format("woff");
 }
