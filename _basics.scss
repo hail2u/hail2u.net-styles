@@ -302,10 +302,11 @@ img {
   -ms-interpolation-mode: bicubic;
 
   figure & {
-    border: 1px solid mixxd($fg, white, 0.8);
-    padding: 0.5em;
+    $showdow-size: $default-margin / 4;
+
+    border: 1px solid mixxd($fg, $bg, 0.8);
     vertical-align: text-bottom;
-    background-color: white;
+    box-shadow: 0 ($showdow-size / 2) $showdow-size transparentize($fg, 0.9);
   }
 }
 
