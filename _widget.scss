@@ -524,3 +524,28 @@ $searchbox-height: 2em;
     font-style: italic;
   }
 }
+
+// Social Buttons
+.buttons {
+  li {
+    float: left;
+    line-height: normal;
+    list-style-type: none;
+  }
+
+  .facebook div {
+    display: inline-block;
+    width: 90px;
+    height: 20px;
+    font-size: 1px;
+  }
+
+  .google div {
+  }
+
+  .twitter div {
+    display: inline-block;
+    height: 20px;
+    font-size: 1px;
+  }
+}
