@@ -147,6 +147,16 @@
       }
     }
 
+    &[href="http://pinterest.com/hail2u/"] {
+      &:hover {
+        background-color: $cc-pinterest;
+      }
+
+      &:before {
+        background-image: $icon-elsewhere-pinterest;
+      }
+    }
+
     &[href="http://www.last.fm/user/hail2u"] {
       &:hover {
         background-color: $cc-lastfm;
