@@ -108,74 +108,38 @@
     height: $footer-icon-size;
     line-height: $footer-icon-size;
     background-color: $fg;
-    opacity: 0.2;
+    opacity: 0.1;
 
     &:hover {
-      opacity: 0.8;
+      opacity: 0.3;
     }
 
     &:before {
       background-size: 60% 60%;
     }
 
-    &[href="https://www.facebook.com/hail2u"] {
-      &:hover {
-        background-color: $cc-facebook;
-      }
-
-      &:before {
-        background-image: $icon-elsewhere-facebook;
-      }
+    &[href="https://www.facebook.com/hail2u"]:before {
+      background-image: $icon-elsewhere-facebook;
     }
 
-    &[href="https://twitter.com/hail2u_"] {
-      &:hover {
-        background-color: $cc-twitter;
-      }
-
-      &:before {
+    &[href="https://twitter.com/hail2u_"]:before {
         background-image: $icon-elsewhere-twitter;
-      }
     }
 
-    &[href="https://github.com/hail2u"] {
-      &:hover {
-        background-color: $cc-github;
-      }
-
-      &:before {
+    &[href="https://github.com/hail2u"]:before {
         background-image: $icon-elsewhere-github;
-      }
     }
 
-    &[href="http://pinterest.com/hail2u/"] {
-      &:hover {
-        background-color: $cc-pinterest;
-      }
-
-      &:before {
+    &[href="http://pinterest.com/hail2u/"]:before {
         background-image: $icon-elsewhere-pinterest;
-      }
     }
 
-    &[href="http://www.last.fm/user/hail2u"] {
-      &:hover {
-        background-color: $cc-lastfm;
-      }
-
-      &:before {
+    &[href="http://www.last.fm/user/hail2u"]:before {
         background-image: $icon-elsewhere-lastfm;
-      }
     }
 
-    &[href="http://delicious.com/hail2u"] {
-      &:hover {
-        background-color: $cc-delicious;
-      }
-
-      &:before {
+    &[href="http://delicious.com/hail2u"]:before {
         background-image: $icon-elsewhere-delicious;
-      }
     }
   }
 }
