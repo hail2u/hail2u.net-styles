@@ -36,7 +36,6 @@
 [role="banner"] nav {
   height: $nav-height;
   line-height: $nav-height;
-  letter-spacing: -1px;
   text-transform: uppercase;
 
   ul {
@@ -49,6 +48,7 @@
 
   a {
     color: $fg;
+    letter-spacing: -1px;
     opacity: 0.3;
 
     &:hover {
@@ -59,6 +59,7 @@
   mark {
     color: $fg;
     background-color: transparent;
+    font-weight: bold;
   }
 }
 
