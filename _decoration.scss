@@ -15,7 +15,7 @@
     background-color: $lightest;
     background-image: $texture-logo;
 
-    &:before {
+    &::before {
       $ratio: 2;
 
       display: block;
@@ -114,31 +114,31 @@
       opacity: 0.3;
     }
 
-    &:before {
+    &::before {
       background-size: 60% 60%;
     }
 
-    &[href="https://www.facebook.com/hail2u"]:before {
+    &[href="https://www.facebook.com/hail2u"]::before {
       background-image: $icon-elsewhere-facebook;
     }
 
-    &[href="https://twitter.com/hail2u_"]:before {
+    &[href="https://twitter.com/hail2u_"]::before {
         background-image: $icon-elsewhere-twitter;
     }
 
-    &[href="https://github.com/hail2u"]:before {
+    &[href="https://github.com/hail2u"]::before {
         background-image: $icon-elsewhere-github;
     }
 
-    &[href="http://pinterest.com/hail2u/"]:before {
+    &[href="http://pinterest.com/hail2u/"]::before {
         background-image: $icon-elsewhere-pinterest;
     }
 
-    &[href="http://www.last.fm/user/hail2u"]:before {
+    &[href="http://www.last.fm/user/hail2u"]::before {
         background-image: $icon-elsewhere-lastfm;
     }
 
-    &[href="http://delicious.com/hail2u"]:before {
+    &[href="http://delicious.com/hail2u"]::before {
         background-image: $icon-elsewhere-delicious;
     }
   }

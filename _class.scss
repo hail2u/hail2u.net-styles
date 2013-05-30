@@ -11,7 +11,7 @@
 %ir {
   @include ir-pseudo-element;
 
-  &:before {
+  &::before {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -42,7 +42,7 @@
   height: ($h * 2);
   background-color: transparent;
 
-  &:before {
+  &::before {
     background-image: $divider;
     background-size: auto $h;
     opacity: 0.1;
@@ -69,7 +69,7 @@
   min-height: $size;
   overflow: visible;
 
-  &:before {
+  &::before {
     @extend %hanging-block;
 
     margin-right: 1em;
@@ -87,7 +87,7 @@
 
     min-height: $size;
 
-    &:before {
+    &::before {
       width: $size;
       height: $size;
     }

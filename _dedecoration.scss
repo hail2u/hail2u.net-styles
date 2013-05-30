@@ -30,7 +30,7 @@
     width: 80%;
     height: 0;
 
-    &:before {
+    &::before {
       display: none;
     }
   }
@@ -68,7 +68,7 @@
   a {
     color: inherit;
 
-    &[href]:after {
+    &[href]::after {
       content: " (" attr(href) ")";
     }
   }
@@ -89,14 +89,14 @@
       height: auto;
       line-height: 1;
 
-      &:before {
+      &::before {
         display: none;
       }
     }
   }
 
-  [role="main"] > section:after,
-  [role="main"] > article:after {
+  [role="main"] > section::after,
+  [role="main"] > article::after {
     display: none;
   }
 

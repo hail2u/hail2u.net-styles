@@ -65,7 +65,7 @@
 
   font-size: percentage($ratio);
 
-  &:after {
+  &::after {
     content: "\0020\2192"; // Rightwards Arrow
   }
 }
@@ -78,7 +78,7 @@
 
   line-height: $seealso-height;
 
-  &:before {
+  &::before {
     margin-right: 0.5em;
     display: inline-block;
     width: $seealso-height;
@@ -116,7 +116,7 @@
   color: mixxd($color, $fg, 0.3);
   background-color: mixxd($color, $bg, 0.9);
 
-  &:before {
+  &::before {
     font-weight: bold;
   }
 }
@@ -124,7 +124,7 @@
 .warning {
   @include message-coloring(rgb(255, 217, 0));
 
-  &:before {
+  &::before {
     content: "Warning: ";
   }
 }
@@ -132,7 +132,7 @@
 .error {
   @include message-coloring(rgb(251, 28, 42));
 
-  &:before {
+  &::before {
     content: "Error: ";
   }
 }
@@ -140,7 +140,7 @@
 .information {
   @include message-coloring(rgb(11, 73, 157));
 
-  &:before {
+  &::before {
     content: "Information: ";
   }
 }
@@ -210,12 +210,12 @@
     dt {
       display: inline;
 
-      &:after {
+      &::after {
         content: "\003a"; // Colon
       }
     }
 
-    dd + dt:before {
+    dd + dt::before {
       content: "\000a"; // Line Feed
       white-space: pre;
     }
@@ -272,12 +272,12 @@
     display: inline;
     list-style-type: none;
 
-    &:after {
+    &::after {
       content: " /"; // Space + Slash
       color: mixxd($fg, $bg, 0.8);
     }
 
-    &:last-child:after {
+    &:last-child::after {
       content: "";
     }
   }
@@ -295,7 +295,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    &:before {
+    &::before {
       margin-right: 0.5em;
       content: "\2764"; // Heavy Black Heart
     }
@@ -341,11 +341,11 @@ $searchbox-height: 2em;
       opacity: 0.2;
     }
 
-    &[rel="prev"]:before {
+    &[rel="prev"]::before {
       background-image: $icon-paging-prev;
     }
 
-    &[rel="next"]:before {
+    &[rel="next"]::before {
       background-image: $icon-paging-next;
     }
   }
@@ -450,7 +450,7 @@ $searchbox-height: 2em;
       width: 32px;
       height: 32px;
 
-      &:before {
+      &::before {
         background-image: $icon-iine;
       }
     }

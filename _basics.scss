@@ -252,11 +252,11 @@ cite {
 q {
   quotes: none;
 
-  &:before {
+  &::before {
     content: "\300c"; // Left Corner Bracket
   }
 
-  &:after {
+  &::after {
     content: "\300d"; // Right Corner Bracket
   }
 }
