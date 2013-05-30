@@ -527,25 +527,24 @@ $searchbox-height: 2em;
 
 // Social Buttons
 .buttons {
-  li {
-    float: left;
-    line-height: normal;
+  ul {
+    padding-left: 0;
     list-style-type: none;
   }
 
-  .facebook div {
-    display: inline-block;
-    width: 90px;
+  li {
+    width: 110px;
     height: 20px;
+    line-height: normal;
     font-size: 1px;
-  }
 
-  .google div {
-  }
+    @media (min-width: $safe-for-content) {
+      display: inline-block;
+      line-height: 1;
+    }
 
-  .twitter div {
-    display: inline-block;
-    height: 20px;
-    font-size: 1px;
+    div {
+      display: inline-block;
+    }
   }
 }
