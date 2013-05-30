@@ -36,7 +36,6 @@
 [role="banner"] nav {
   height: $nav-height;
   line-height: $nav-height;
-  font-weight: bold;
   text-transform: uppercase;
 
   ul {
@@ -45,6 +44,15 @@
 
   li {
     display: table-cell;
+  }
+
+  a {
+    color: $fg;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.65;
+    }
   }
 
   mark {
