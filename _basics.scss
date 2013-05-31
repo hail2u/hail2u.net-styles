@@ -36,7 +36,7 @@ body {
   color: $fg;
   background-color: $bg;
   background-image: $texture-body;
-  font-family: $stack-body;
+  font-family: $font-stack-body;
 }
 
 h1 {
@@ -116,7 +116,7 @@ pre {
   margin-left: $default-indent;
   clear: both;
   line-height: 1.25;
-  font-family: $stack-code;
+  font-family: $font-stack-code;
   font-size: 1em;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -271,7 +271,7 @@ code,
 var,
 samp,
 kbd {
-  font-family: $stack-code;
+  font-family: $font-stack-code;
   font-size: 1em;
 }
 

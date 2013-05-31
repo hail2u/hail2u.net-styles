@@ -22,7 +22,7 @@
       width: 100%;
       height: 100%;
       content: "H";
-      font-family: $stack-logo;
+      font-family: $font-stack-logo;
       font-size: percentage($ratio);
       font-weight: normal;
       text-align: center;
@@ -35,6 +35,7 @@
 // Global Navigation
 [role="banner"] nav {
   height: $nav-height;
+  font-family: $font-stack-nav;
   line-height: $nav-height;
   text-transform: uppercase;
 
