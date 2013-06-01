@@ -4,25 +4,25 @@
 
   a,
   mark {
-    box-shadow: inset 0 (- $header-border-size) 0 0 $darkest, inset 0 (- $header-border-size * 2) 0 0 $base;
+    $ratio: 2;
+
+    box-shadow: inset 0 (- $header-border-size / $ratio) 0 0 $darkest, inset 0 (- ($header-border-size * 2) / $ratio) 0 0 $base;
     display: inline-block;
     position: relative;
-    width: $logo-width;
-    height: $logo-height;
+    width: ($logo-width / $ratio);
+    height: ($logo-height / $ratio);
     overflow: hidden;
-    line-height: ($logo-height - $header-border-size);
+    line-height: (($logo-height - $header-border-size) / $ratio);
     color: $bg;
     background-color: $lightest;
     background-image: $texture-logo;
+    font-size: percentage($ratio);
 
     &::first-letter {
-      $ratio: 2;
-
       // TODO: Must calcurate this value
       margin-left: 0.4em;
       margin-right: ($logo-width / $ratio);
       font-family: $font-stack-logo;
-      font-size: percentage($ratio);
       text-transform: uppercase;
       text-shadow: 0 -1px 0 mixxd($darkest, $lightest, 0.5);
       text-shadow: 0 -1px 0 transparentize($darkest, 0.5);
