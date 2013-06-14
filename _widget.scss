@@ -526,7 +526,34 @@ $searchbox-height: 2em;
 }
 
 // Social Buttons
+@import "scss-partials/corporate-colors";
+
 .buttons {
+  $image-twitterbird: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgdmVyc2lvbj0iMS4xIgogIHdpZHRoPSI1MTIiCiAgaGVpZ2h0PSI1MTIiCiAgdmlld2JveD0iMCAwIDUxMiA1MTIiPgogIDxwYXRoCiAgICBkPSJtIDQ5Mi4yNTUxMywxMDkuNDU1NTQgYyAtMTcuMzgzNyw3LjcxMTM3IC0zNi4wNjkwOSwxMi45MjA4IC01NS42NzU4OSwxNS4yNjQ0NSAyMC4wMTA4LC0xMS45OTcwNCAzNS4zODM5LC0zMC45OTQzNCA0Mi42MjI4LC01My42MzIzMiAtMTguNzMyNywxMS4xMTEwOCAtMzkuNDc4MywxOS4xNzY4NCAtNjEuNTYxMSwyMy41MjM5NCBDIDM5OS45NTk2NCw3NS43NzAyNSAzNzQuNzY1MzMsNjQgMzQ2Ljg4MjQzLDY0IGMgLTUzLjUzNTQsMCAtOTYuOTQyMTQsNDMuNDAyNDggLTk2Ljk0MjE0LDk2LjkzNzk0IDAsNy41OTc5NyAwLjg1NzE0LDE0Ljk5NzQ5IDIuNTEwMjEsMjIuMDkyMjQgLTgwLjU2Njg1LC00LjA0MjMzIC0xNTEuOTk5MTMsLTQyLjYzNzAxIC0xOTkuODEwMzU1LC0xMDEuMjg3NCAtOC4zNDU0OSwxNC4zMTcwNyAtMTMuMTI1OTUsMzAuOTcwNzEgLTEzLjEyNTk1LDQ4LjczNzEyIDAsMzMuNjMzMzEgMTcuMTEzNyw2My4zMDQ2MiA0My4xMjY4Myw4MC42ODgyOSAtMTUuODkxLC0wLjUwMzIzIC0zMC44Mzk1OSwtNC44NjQ1IC00My45MDg1LC0xMi4xMjQ2MyAtMC4wMDksMC40MDQgLTAuMDA5LDAuODA4IC0wLjAwOSwxLjIxOTA4IDAsNDYuOTY4MjcgMzMuNDE2Miw4Ni4xNDY5NiA3Ny43NjIyNjUsOTUuMDU1NDYgLTguMTMzMzMsMi4yMTQ5IC0xNi42OTc1NzUsMy40MDA5IC0yNS41Mzg3MjUsMy40MDA5IC02LjI0NjgzLDAgLTEyLjMxOTU0LC0wLjYwOTEgLTE4LjIzOTYyLC0xLjczOTggMTIuMzM2MDcsMzguNTExNSA0OC4xMzcwMjUsNjYuNTQxMSA5MC41NTc2MjUsNjcuMzIgLTMzLjE3NzEsMjYuMDAyOCAtNzQuOTc1ODc1LDQxLjUwMDYgLTEyMC4zOTUwNzUsNDEuNTAwNiAtNy44MjUwMywwIC0xNS41NDIwOCwtMC40NjA0IC0yMy4xMjUzMywtMS4zNTU2IEMgNjIuNjQ1MzI1LDQzMS45NDg1IDExMy42MDE4Myw0NDggMTY4LjM0NjQ1LDQ0OCBjIDE3OC4zMDk0OSwwIDI3NS44MTkwOCwtMTQ3LjcxNTggMjc1LjgxOTA4LC0yNzUuODIxMDMgMCwtNC4yMDI5OSAtMC4wOTcsLTguMzgyMzQgLTAuMjgzNSwtMTIuNTQwNDQgMTguOTQzLC0xMy42Njk3MyAzNS4zNzY5LC0zMC43NDE1NCA0OC4zNzMzLC01MC4xODMiCiAgICBzdHlsZT0iZmlsbDojMDBBQ0VFIi8+Cjwvc3ZnPgo=");
+
+  position: relative;
+
+  p.twitter {
+    @extend %hanging-block;
+
+    $bird-size: em($default-line-height);
+
+    top: (- ($default-margin + $default-line-height));
+    background-image: $image-twitterbird;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto $bird-size;
+
+    a {
+      padding-left: ($bird-size * 1.2);
+      color: $cc-twitter;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   ul {
     padding-left: 0;
     list-style-type: none;
