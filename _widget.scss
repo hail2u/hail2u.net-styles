@@ -11,21 +11,10 @@
 
 // Google AdSense
 .adsense {
-  $adsense-border: rgb(255, 248, 231);
-  $adsense-title: rgb(14, 28, 179);
-  $adsense-background: rgb(255, 248, 231);
-  $adsense-text: rgb(23, 23, 23);
-  $adsense-url: rgb(0, 128, 42);
-
   margin-top: $heading-margin;
-  padding: 15px 7px;
-  border: 1px solid darken($adsense-border, 15%);
-  height: 90px;
   clear: both;
   overflow: hidden;
-  color: $adsense-text;
-  background-color: $adsense-background;
-  text-align: center;
+  line-height: 1;
 }
 
 // Code Highlight
