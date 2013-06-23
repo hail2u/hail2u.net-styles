@@ -1,0 +1,14 @@
+// Complementary
+[role="complementary"] {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $gap;
+  padding-left: $gap;
+  max-width: $content-width;
+  text-align: center;
+
+  @media (min-width: $safe-for-full) {
+    padding-left: ($gap + $suppli-width + $gutter);
+    text-align: left;
+  }
+}

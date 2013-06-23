@@ -1,0 +1,52 @@
+// Google Custom Search Engine
+@import "scss-partials/image-replacement";
+@import "scss-partials/vendor-extension";
+
+#cse-search-box {
+  div {
+    margin-top: $primary-heading-margin;
+    display: inline-block;
+    position: relative;
+  }
+
+  input[type="text"] {
+    @include box-sizing(border-box);
+
+    padding: 0 ($searchbox-height + 0.25em) 0 0.25em !important;
+    border: 1px solid mixxd($fg, $bg, 0.9) !important;
+    width: $searchbox-width;
+    height: $searchbox-height;
+    vertical-align: middle;
+    color: black;
+    background-color: white;
+    background-position: 0.25em center !important;
+  }
+
+  input[type="submit"] {
+    @include ir-text-indent; // ir-pseudo-element does not work on `input`
+    @include box-sizing(border-box);
+
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: $searchbox-height;
+    height: $searchbox-height;
+    background-color: transparent;
+    background-image: $magnifying-glass;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 75% 75%;
+    opacity: 0.1;
+  }
+
+  input[type="text"]:focus + input[type="submit"],
+  input[type="submit"]:hover {
+    opacity: 0.3;
+  }
+
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,9 @@
+// Default Margin
+%default-margin {
+  margin: $default-margin 0 0 0;
+}
+
+// Mini Margin
+%mini-margin {
+  margin: ($default-margin * 0.333) 0 0 0;
+}

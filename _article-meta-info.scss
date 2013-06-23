@@ -1,0 +1,25 @@
+// Article Meta-info
+[role="main"] h2 + footer {
+  @extend %hanging-block;
+
+  position: absolute;
+  bottom: 100%;
+  color: mixxd($fg, $bg, 0.6);
+
+  br {
+    display: none;
+  }
+
+  time {
+    color: $fg;
+  }
+
+  @media (min-width: $safe-for-full) {
+    top: auto;
+    bottom: auto;
+
+    br {
+      display: inline;
+    }
+  }
+}

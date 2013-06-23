@@ -10,6 +10,7 @@
       $v: $safe-for-content * $r * 0.75;
     }
 
+    // @media ($f: $v) and (resolution: 96dpi) {
     @media ($f: $v) {
       font-size: percentage($r);
     }
@@ -17,9 +18,6 @@
 }
 
 html {
-  overflow-y: scroll;
-  background-color: mixxd($fg, $dark, 0.4);
-  background-image: $texture-footer;
   font-family: sans-serif;
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -31,61 +29,57 @@ html {
 // Sections
 body {
   margin: 0;
-  box-shadow: inset 0 $header-border-size 0 0 $lightest;
   line-height: $default-line-height;
   color: $fg;
   background-color: $bg;
-  background-image: $texture-body;
   font-family: $font-stack-body;
 }
 
-h1 {
-  @extend %heading;
-  $ratio: 2.25;
+@mixin heading {
+  line-height: $heading-line-height;
+}
 
-  margin: ($default-margin / $ratio) 0 0 0;
-  font-size: percentage($ratio);
+h1 {
+  @include heading;
+
+  margin: ($default-margin / $h1-ratio) 0 0 0;
+  font-size: percentage($h1-ratio);
 }
 
 h2 {
-  @extend %heading;
-  $ratio: 1.875;
+  @include heading;
 
-  margin: ($primary-heading-margin / $ratio) 0 0 0;
+  margin: ($primary-heading-margin / $h2-ratio) 0 0 0;
   font-weight: normal;
-  font-size: percentage($ratio);
+  font-size: percentage($h2-ratio);
 }
 
 h3 {
-  @extend %heading;
-  $ratio: 1.3125;
+  @include heading;
 
-  margin: ($heading-margin / $ratio) 0 0 0;
-  font-size: percentage($ratio);
+  margin: ($heading-margin / $h3-ratio) 0 0 0;
+  font-size: percentage($h3-ratio);
 }
 
 h4 {
-  @extend %heading;
-  $ratio: 1.125;
+  @include heading;
 
-  margin: ($heading-margin / $ratio) 0 0 0;
-  font-size: percentage($ratio);
+  margin: ($heading-margin / $h4-ratio) 0 0 0;
+  font-size: percentage($h4-ratio);
 }
 
 h5 {
-  @extend %heading;
-  $ratio: 1;
+  @include heading;
 
-  margin: ($heading-margin / $ratio) 0 0 0;
-  font-size: percentage($ratio);
+  margin: ($heading-margin / $h5-ratio) 0 0 0;
+  font-size: percentage($h5-ratio);
 }
 
 h6 {
-  @extend %heading;
-  $ratio: 0.875;
+  @include heading;
 
-  margin: ($heading-margin / $ratio) 0 0 0;
-  font-size: percentage($ratio);
+  margin: ($heading-margin / $h6-ratio) 0 0 0;
+  font-size: percentage($h6-ratio);
 }
 
 // Grouping Content
@@ -103,19 +97,36 @@ p {
 @import "scss-partials/vendor-extension";
 
 hr {
+  @extend %ir;
   @extend %default-margin;
-  @extend %section-divider;
   @include box-sizing(content-box);
 
+  $height: em($default-line-height);
+
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
   clear: both;
+  width: $colspan3;
+  height: ($default-margin + $height + $default-margin);
+  background-color: transparent;
+  opacity: 0.1;
+
+  &::before {
+    background-image: $seven-circles;
+  }
 }
 
 pre {
   @extend %default-margin;
 
-  margin-left: $default-indent;
+  margin-right: (- $gap);
+  margin-left: (- $gap);
+  padding: $gap;
   clear: both;
   line-height: 1.25;
+  color: $fg;
+  background-color: mixxd($fg, $bg, 0.98);
   font-family: $font-stack-code;
   font-size: 1em;
   word-wrap: break-word;
@@ -125,12 +136,27 @@ pre {
 }
 
 blockquote {
-  @extend %quote-mark;
+  @extend %ir;
+
+  $size: ($default-indent - 1em);
 
   margin: 0 0 0 $default-indent;
+  position: relative;
+  min-height: $size;
+  overflow: visible;
   clear: both;
 
-  + p,
+  &::before {
+    margin-right: 1em;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: $size;
+    height: $size;
+    background-image: $double-opening-quote;
+    opacity: 0.1;
+  }
+
   + figcaption {
     @extend %mini-margin;
 
@@ -138,15 +164,20 @@ blockquote {
   }
 
   @media (min-width: $safe-for-full) {
-    margin-left: 0;
+    $size: ($colspan1 * 2 / 3);
 
-    + p,
-    + figcaption {
-      margin-left: 0;
+    margin-left: 0;
+    min-height: $size;
+
+    &::before {
+      margin-right: $gutter;
+      width: $size;
+      height: $size;
     }
 
     + figcaption {
       margin-right: 0;
+      margin-left: 0;
       position: static;
       width: auto;
     }
@@ -202,8 +233,8 @@ figure {
 figcaption {
   @extend %hanging-block;
 
-  figure &:last-child {
-    @media screen and (min-width: $safe-for-full) {
+  @media screen and (min-width: $safe-for-full) {
+    figure &:last-child {
       top: auto;
       bottom: em(($default-line-height - 1) * 0.5);
     }
@@ -220,6 +251,7 @@ a {
   }
 
   &:active {
+    background-color: transparent;
     outline: 0;
   }
 
@@ -229,7 +261,8 @@ a {
   }
 
   section > p &,
-  article > p & {
+  article > p &,
+  div[itemprop="articleBody"] > p & {
     text-decoration: underline;
   }
 }
@@ -298,15 +331,12 @@ img {
   @include box-sizing(border-box);
 
   border: 0;
+  height: auto;
   max-width: 100%;
   -ms-interpolation-mode: bicubic;
 
   figure & {
-    $showdow-size: $default-margin / 4;
-
-    border: 1px solid mixxd($fg, $bg, 0.8);
     vertical-align: text-bottom;
-    box-shadow: 0 ($showdow-size / 2) $showdow-size transparentize($fg, 0.9);
   }
 }
 
@@ -323,7 +353,6 @@ table {
     border: 1px solid mixxd($fg, $bg, 0.8);
     vertical-align: top;
     background-color: mixxd($fg, $bg, 0.9);
-    background-color: transparentize($fg, 0.9);
     text-align: left;
   }
 
@@ -332,7 +361,6 @@ table {
     border: 1px solid mixxd($fg, $bg, 0.8);
     vertical-align: top;
     background-color: mixxd($fg, $bg, 0.98);
-    background-color: transparentize($fg, 0.98);
   }
 }
 
@@ -341,6 +369,7 @@ table {
 @import "normalize.scss/forms/legend";
 @import "normalize.scss/forms/fix-font";
 @import "normalize.scss/forms/fix-line-height";
+@import "normalize.scss/forms/fix-text-transform";
 @import "normalize.scss/forms/buttons";
 @import "normalize.scss/forms/disabled";
 @import "normalize.scss/forms/checkbox-and-radio";

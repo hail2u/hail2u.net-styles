@@ -1,0 +1,10 @@
+// Selection
+@import "scss-partials/selection";
+
+::-moz-selection {
+  @include selection($selection-fg, $selection-bg);
+}
+
+::selection {
+  @include selection($selection-fg, $selection-bg);
+}

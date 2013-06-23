@@ -1,0 +1,57 @@
+// Global Navigation
+[role="banner"] nav {
+  height: $nav-height;
+  line-height: $nav-height;
+  text-transform: uppercase;
+
+  ul {
+    margin-top: 0;
+    padding-left: 0;
+    display: inline-table;
+  }
+
+  li {
+    padding-right: ($nav-height * 0.125);
+    padding-left: ($nav-height * 0.125);
+    display: table-cell;
+  }
+
+  a {
+    color: grayscale($lightest);
+
+    &:hover {
+      color: $hover;
+    }
+  }
+
+  mark {
+    color: grayscale($darkest);
+    background-color: transparent;
+    font-weight: bold;
+  }
+
+  @media (min-width: $safe-for-content) {
+    position: absolute;
+    bottom: 0;
+    right: $gap;
+
+    ul {
+      margin-top: 0;
+    }
+
+    li {
+      padding-right: 0;
+      padding-left: ($nav-height * 0.5);
+    }
+  }
+
+  @media (min-width: $safe-for-full) {
+    right: auto;
+    left: ($gap + $suppli-width + $gutter);
+
+    li {
+      padding-right: ($nav-height * 0.5);
+      padding-left: 0;
+    }
+  }
+}

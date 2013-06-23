@@ -1,0 +1,24 @@
+// Main
+[role="main"] {
+  margin-top: (- $primary-heading-margin + $heading-margin + em($default-line-height));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $gap;
+  padding-left: $gap;
+  max-width: $content-width;
+
+  > section,
+  > article {
+    @extend %clearfix;
+
+    position: relative;
+  }
+
+  @media (min-width: $safe-for-content) {
+    margin-top: (- $primary-heading-margin + (($heading-margin + $primary-heading-margin) / 2) + em($default-line-height));
+  }
+
+  @media (min-width: $safe-for-full) {
+    padding-left: ($gap + $suppli-width + $gutter);
+  }
+}

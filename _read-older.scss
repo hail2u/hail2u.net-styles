@@ -1,0 +1,33 @@
+// Read Older
+.read-older {
+  text-align: center;
+
+  p {
+    margin-top: $heading-margin;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  a[rel="prev"]::before {
+    display: inline;
+    content: "Read Older:\000a";
+    color: $fg;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: pre;
+  }
+
+  @media (min-width: $safe-for-full) {
+    text-align: left;
+
+    p {
+      margin-top: $primary-heading-margin;
+      margin-left: (- ($suppli-width + $gutter));
+    }
+
+    a[rel="prev"]::before {
+      content: "Read Older:\0020";
+    }
+  }
+}

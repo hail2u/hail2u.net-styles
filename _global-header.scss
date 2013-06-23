@@ -1,0 +1,23 @@
+// Global Header
+[role="banner"] {
+  margin-top: $heading-margin;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $gap;
+  padding-left: $gap;
+  position: relative;
+  max-width: $content-width;
+  height: ($logo-height + $nav-height);
+  text-align: center;
+
+  @media (min-width: $safe-for-content) {
+    margin-top: (($heading-margin + $primary-heading-margin) / 2);
+    height: $logo-height;
+    text-align: left;
+  }
+
+  @media (min-width: $safe-for-full) {
+    margin-top: $primary-heading-margin;
+    max-width: $full-width;
+  }
+}

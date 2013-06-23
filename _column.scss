@@ -1,17 +1,21 @@
-// Column Config
-$column: 3em;
-$gutter: ($column / $golden-ratio);
+// Column Container
+%column-container {
+  @extend %clearfix;
 
-@import "scss-column-equation/sce.scss";
+  @media (min-width: $safe-for-content) {
+    margin-right: (- $gap);
+    margin-left: (- $gap);
+  }
+}
 
-// Main Component Size
-$content-width: $colspan9;
-$suppli-width: $colspan3;
-$full-width: $colspan12;
-$logo-width: $colspan1;
-$logo-height: ($logo-width * $golden-ratio);
-$nav-height: em(1);
-
-// Breakpoint
-$safe-for-content: ($gap + $content-width + $gap);
-$safe-for-full: ($gap + $full-width + $gap);
+// Column
+@for $i from 1 through 12 {
+  %column-#{$i} {
+    @media (min-width: $safe-for-content) {
+      margin-right: $gap;
+      margin-left: $gap;
+      float: left;
+      width: nth($colspan, $i);
+    }
+  }
+}

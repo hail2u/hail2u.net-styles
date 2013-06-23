@@ -1,0 +1,38 @@
+// Recent Posts
+#posts {
+  $ratio: $h4-ratio;
+  $date-width: $colspan2;
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    position: relative;
+    overflow: hidden;
+    list-style-type: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    time {
+      display: block;
+      color: mixxd($fg, $bg, 0.6);
+    }
+  }
+
+  @media (min-width: $safe-for-content) {
+    li {
+      padding-right: (($date-width + $gutter) / $ratio);
+      font-size: percentage($ratio);
+
+      time {
+        margin-right: 0;
+        margin-left: ($gutter / $ratio);
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: right;
+      }
+    }
+  }
+}

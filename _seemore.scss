@@ -1,0 +1,10 @@
+// Seemore
+.seemore a {
+  &::after {
+    content: "\0020\2192"; // Rightwards Arrow
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

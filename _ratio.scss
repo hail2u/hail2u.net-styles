@@ -1,0 +1,17 @@
+// Basic
+$golden-ratio: 1.61803;
+$silver-ratio: 2.41421;
+$bronze-ratio: 3.30378;
+$yamato-ratio: 1.41421;
+
+// Text Size
+$primary-text-size-ratio: (16px / 16px);
+$secondary-text-size-ratio: (30px / 16px);
+
+// Heading Ratio
+$h1-ratio: ($primary-text-size-ratio * pow($golden-ratio, 2));
+$h2-ratio: $secondary-text-size-ratio;
+$h3-ratio: ($primary-text-size-ratio * $golden-ratio);
+$h4-ratio: ($secondary-text-size-ratio / $golden-ratio);
+$h5-ratio: $primary-text-size-ratio;
+$h6-ratio: ($secondary-text-size-ratio / pow($golden-ratio, 2));

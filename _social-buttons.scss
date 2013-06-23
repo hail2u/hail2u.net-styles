@@ -1,0 +1,25 @@
+// Social Buttons
+.buttons {
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  li {
+    min-width: 110px;
+    height: 20px;
+    line-height: normal;
+    font-size: 1px;
+
+    div {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: $safe-for-content) {
+    li {
+      display: inline-block;
+      line-height: 1;
+    }
+  }
+}

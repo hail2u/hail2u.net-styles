@@ -1,0 +1,12 @@
+// Image Replacement
+@import "scss-partials/image-replacement";
+
+%ir {
+  @include ir-pseudo-element;
+
+  &::before {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}

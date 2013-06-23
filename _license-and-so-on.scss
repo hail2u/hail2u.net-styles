@@ -1,0 +1,22 @@
+// License and so on
+[role="contentinfo"] > ul {
+  padding-left: 0;
+  color: mix($fg, $bg);
+
+  li {
+    display: inline;
+
+    &::before {
+      content: "\2219\0020";
+    }
+
+    &:first-child::before {
+      content: "";
+    }
+  }
+
+  @media (min-width: $safe-for-full) {
+    margin-top: 0;
+    text-align: right;
+  }
+}

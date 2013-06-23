@@ -1,0 +1,118 @@
+// Shots on iine!
+@import "scss-partials/vendor-extension";
+
+#iine {
+  margin-top: ($primary-heading-margin - $heading-margin);
+  margin-bottom: (- ($primary-heading-margin - $heading-margin));
+  padding-top: $heading-margin;
+  padding-right: 0;
+  padding-bottom: $heading-margin;
+  padding-left: 0;
+  max-width: none;
+  color: black;
+  background-color: mixxd(black, $bg, 0.96);
+
+  h2 {
+    $ratio: 1;
+
+    margin-top: 0;
+    font-size: percentage($ratio);
+
+    a {
+      @extend %ir;
+
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+
+      &::before {
+        background-image: $logo-iine;
+      }
+    }
+  }
+
+  ol {
+    @extend %clearfix;
+
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    max-width: $content-width;
+    list-style-type: none;
+  }
+
+  li {
+    line-height: 1;
+  }
+
+  a {
+    &:hover {
+      color: $link;
+
+      figcaption {
+        @include transition(all 0.1s ease-out);
+
+        bottom: (- (0.7em * 2 + 1));
+      }
+    }
+  }
+
+  figure {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  figcaption {
+    @include box-sizing(border-box);
+    @include transition(all 0.2s ease-in);
+
+    margin-right: 0;
+    padding: 0.7em 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 1;
+    color: white;
+    background-color: black;
+    text-align: center;
+    opacity: 0.6;
+  }
+
+  p {
+    font-style: italic;
+  }
+
+  & + [role="contentinfo"] section {
+    border-top: none;
+  }
+
+  @media (min-width: $safe-for-content) {
+    ol {
+      max-width: ($gap + $content-width + $gap);
+    }
+
+    li {
+      margin-right: $gap;
+      margin-left: $gap;
+      float: left;
+      width: $colspan3;
+    }
+  }
+
+  @media (min-width: $safe-for-full) {
+    margin-bottom: (- ($primary-heading-margin - $default-margin));
+    text-align: center;
+
+    ol {
+      max-width: ($gap + $full-width + $gap);
+    }
+
+    li {
+      width: $colspan4;
+    }
+  }
+}

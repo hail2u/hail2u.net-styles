@@ -1,0 +1,82 @@
+// Elsewhere
+[role="contentinfo"] section {
+  $footer-icon-size: em($default-line-height);
+
+  border-top: 1px solid mixxd($fg, $bg, 0.9);
+  padding-top: $heading-margin;
+  position: relative;
+
+  ul {
+    margin-top: 0;
+    padding-left: 0;
+    display: inline-table;
+  }
+
+  li {
+    padding-right: ($footer-icon-size * 0.125);
+    padding-left: ($footer-icon-size * 0.125);
+    display: table-cell;
+  }
+
+  a {
+    @extend %ir;
+
+    border-radius: 50%;
+    display: block;
+    width: $footer-icon-size;
+    height: $footer-icon-size;
+    line-height: $footer-icon-size;
+    background-color: $fg;
+    opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+
+    &::before {
+      background-size: 60%;
+    }
+
+    &[href="https://www.facebook.com/hail2u"]::before {
+      background-image: $icon-facebook;
+    }
+
+    &[href="https://twitter.com/hail2u_"]::before {
+      background-image: $icon-twitter;
+    }
+
+    &[href="https://github.com/hail2u"]::before {
+      background-image: $icon-github;
+    }
+
+    &[href="http://pinterest.com/hail2u/"]::before {
+      background-image: $icon-pinterest;
+    }
+
+    &[href="http://www.last.fm/user/hail2u"]::before {
+      background-image: $icon-lastfm;
+    }
+
+    &[href="https://delicious.com/hail2u"]::before {
+      background-image: $icon-delicious;
+    }
+  }
+
+  @media (min-width: $safe-for-full) {
+    margin-left: (- ($suppli-width + $gutter));
+    padding-top: $default-margin;
+
+    ul {
+      position: absolute;
+    }
+
+    li {
+      padding-right: ($footer-icon-size * 0.25);
+      padding-left: 0;
+    }
+  }
+}

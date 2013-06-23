@@ -1,0 +1,28 @@
+// Monthly Archives
+#by-month dl {
+  @extend %clearfix;
+
+  dd {
+    margin-right: 1em;
+    margin-left: 0;
+    display: inline;
+    color: mixxd($fg, $bg, 0.8);
+    white-space: nowrap;
+  }
+
+  @media (min-width: $safe-for-content) {
+    dt {
+      margin-right: 1em;
+      display: inline;
+
+      &::after {
+        content: "\003a"; // Colon
+      }
+    }
+
+    dd + dt::before {
+      content: "\000a"; // Line Feed
+      white-space: pre;
+    }
+  }
+}

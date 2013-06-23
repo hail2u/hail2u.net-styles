@@ -1,0 +1,6 @@
+// Clearfix
+@import "scss-partials/clearfix";
+
+%clearfix {
+  @include clearfix;
+}

@@ -6,33 +6,30 @@
  * LICENSE: http://hail2u.mit-license.org/2010
  */
 
-@import "image";
-
 html {
+  margin: 0;
+  padding: 0;
   display: table;
   width: 100%;
   height: 100%;
-  background-image: $footer-texture;
+  background-image: url("http://placeimg.com/1000/1000/any");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 body {
+  margin: 0;
   display: table-cell;
   width: 100%;
   height: 100%;
   vertical-align: middle;
-}
-
-#container {
-  border: 1px solid #ccc;
-  background-image: $body-texture;
-}
-
-#logo {
-  background-image: $logo-texture;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 form.wufoo {
-  font-family: "Gill Sans", "Calibri", sans-serif;
+  font-family: "Helvetica", "Calibri", sans-serif;
 }
 
 .wufoo .info div {

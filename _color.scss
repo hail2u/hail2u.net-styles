@@ -1,0 +1,15 @@
+// Basic
+$fg: rgb(51, 51, 51);
+$bg: rgb(252, 249, 240);
+$base: rgb(17, 136, 187);
+$darkest: rgb(6, 87, 122);
+$dark: rgb(45, 111, 140);
+$light: rgb(70, 176, 221);
+$lightest: rgb(111, 188, 221);
+
+// Semantic
+$link: $base;
+$visited: $dark;
+$focus: $lightest;
+$hover: $darkest;
+$mark: rgb(255, 238, 0);

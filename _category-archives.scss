@@ -1,0 +1,20 @@
+// Category Archives
+#by-category {
+  ul {
+    @extend %column-container;
+  }
+
+  li {
+    @extend %column-3;
+  }
+
+  @media (min-width: $safe-for-content) {
+    ul {
+      padding-left: 0;
+    }
+
+    li {
+      display: block;
+    }
+  }
+}

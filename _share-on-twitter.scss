@@ -1,0 +1,27 @@
+// Share on Twitter
+@import "scss-partials/corporate-colors";
+
+.share-on-twitter {
+  $bird-size: em($default-line-height);
+
+  position: relative;
+
+  p {
+    @extend %hanging-block;
+
+    top: (- ($default-margin + $default-line-height));
+    background-image: $twitterbird;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto $bird-size;
+
+    a {
+      padding-left: ($bird-size * 1.2);
+      color: $cc-twitter;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

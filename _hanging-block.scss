@@ -1,0 +1,10 @@
+// Hanging Block
+%hanging-block {
+  @media (min-width: $safe-for-full) {
+    margin-right: $gutter;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: $suppli-width;
+  }
+}

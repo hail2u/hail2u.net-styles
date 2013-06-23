@@ -1,0 +1,23 @@
+// Global Footer
+[role="contentinfo"] {
+  margin-top: ($primary-heading-margin - $heading-margin);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $gap;
+  padding-bottom: ($default-margin * 3);
+  padding-left: $gap;
+  position: relative;
+  max-width: $content-width;
+  text-align: center;
+
+  mark {
+    color: inherit;
+    background-color: transparent;
+  }
+
+  @media (min-width: $safe-for-full) {
+    margin-top: ($primary-heading-margin - $default-margin);
+    padding-left: ($gap + $suppli-width + $gutter);
+    text-align: left;
+  }
+}

@@ -1,0 +1,30 @@
+// Line Height
+$default-line-height: $golden-ratio;
+$heading-line-height: 1.25;
+
+// Margin
+$default-margin: em($default-line-height);
+$heading-margin: ($default-margin * 2);
+$primary-heading-margin: ($heading-margin * 2);
+
+// Indent
+$default-indent: em(pow($golden-ratio, 2));
+
+// Column
+$gutter: em($golden-ratio);
+$column: ($gutter * 2);
+
+@import "scss-column-equation/sce.scss";
+
+// Main Component
+$content-width: $colspan9;
+$suppli-width: $colspan3;
+$full-width: $colspan12;
+$logo-width: $colspan1;
+$logo-height: $colspan1;
+$nav-height: $logo-height;
+
+// Breakpoint
+$safe-for-content: ($gap + $colspan1 + $gutter + $content-width + $gutter + $colspan1 + $gap);
+$safe-for-full: ($gap + $colspan1 + $gutter + $full-width + $gutter + $colspan1 + $gap);
+

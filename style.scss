@@ -1,4 +1,4 @@
-$version: "6.35.2";
+$version: "6.35.3";
 
 /*!
  * style.css v#{$version}
@@ -11,19 +11,62 @@ $version: "6.35.2";
 @import "function";
 
 // Variable
-@import "variable";
-@import "column";
-@import "image";
 @import "font";
+@import "color";
+@import "image";
+@import "ratio";
+@import "size";
 
 // Class
-@import "class";
+@import "clearfix";
+@import "image-replacement";
+@import "margin";
+@import "hanging-block";
+@import "column";
 
-// Screen
-@import "basics";
-@import "decoration";
-@import "layout";
-@import "widget";
+// Core
+@import "core";
+
+// Header
+@import "global-header";
+@import "header-logo";
+@import "global-navigation";
+
+// Main
+@import "global-main";
+@import "article-meta-info";
+
+// Complementary
+@import "global-complementary";
+
+// Footer
+@import "global-footer";
+@import "elsewhere";
+@import "author-info";
+@import "license-and-so-on";
+
+// Widget
+@import "widget-color";
+@import "widget-image";
+@import "widget-size";
+
+@import "selection";
+@import "share-on-twitter";
+@import "social-buttons";
+@import "google-adsense";
+@import "code-highlight";
+@import "seemore";
+@import "seealso";
+@import "sidenote";
+@import "messages";
+@import "recent-posts";
+@import "recent-news";
+@import "monthly-archives";
+@import "category-archives";
+@import "read-older";
+@import "paging";
+@import "google-cse";
+@import "shots-on-iine";
 
 // Print
 @import "dedecoration";

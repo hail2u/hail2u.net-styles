@@ -1,0 +1,11 @@
+// Author Info
+[role="contentinfo"] address {
+  @extend %mini-margin;
+
+  font-style: normal;
+
+  @media (min-width: $safe-for-full) {
+    margin-top: 0;
+    position: absolute;
+  }
+}

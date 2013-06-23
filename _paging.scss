@@ -1,0 +1,59 @@
+// Paging
+.paging {
+  $paging-icon-size: $colspan1;
+
+  text-align: center;
+
+  ul {
+    @extend %hanging-block;
+
+    margin-top: $heading-margin;
+    padding-left: 0;
+    display: inline-table;
+  }
+
+  li {
+    padding-right: ($gutter / 2);
+    padding-left: ($gutter / 2);
+    display: table-cell;
+  }
+
+  a {
+    @extend %ir;
+
+    border-radius: 50%;
+    display: block;
+    width: $paging-icon-size;
+    height: $paging-icon-size;
+    color: $bg;
+    background-color: $fg;
+    opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &[rel="prev"]::before {
+      background-image: $left-arrow;
+    }
+
+    &[rel="next"]::before {
+      background-image: $right-arrow;
+    }
+  }
+
+  @media (min-width: $safe-for-full) {
+    position: relative;
+
+    ul {
+      margin-top: $primary-heading-margin;
+      display: block;
+      top: (($searchbox-height - $paging-icon-size) / 2);
+    }
+
+    li {
+      padding-right: $gutter;
+      padding-left: 0;
+    }
+  }
+}
