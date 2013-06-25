@@ -1,18 +1,24 @@
 // The Root Element
 @mixin adjust-font-size($sizes) {
-  @each $s in $sizes {
-    $r: $s / 16px;
-    $f: min-width;
-    $v: $safe-for-full * $r * 1.25;
+  @each $size in $sizes {
+    $ratio: $size / 16px;
+    $feature-prefix: min-;
+    $horizontal: $safe-for-content * pow($ratio, 2);
 
-    @if ($r < 1) {
-      $f: max-width;
-      $v: $safe-for-content * $r * 0.75;
+    @if ($ratio < ($safe-for-full / $safe-for-content)) {
+      $horizontal: $safe-for-content * pow($ratio, 2);
     }
 
-    // @media ($f: $v) and (resolution: 96dpi) {
-    @media ($f: $v) {
-      font-size: percentage($r);
+    $vertical: $horizontal * (9 / 16);
+
+    @if ($ratio < 1) {
+      $feature-prefix: max-;
+      $horizontal: $safe-for-content * pow($ratio, 2);
+      $vertical: $horizontal * (3 / 2);
+    }
+
+    @media (#{$feature-prefix}width: $horizontal) and (#{$feature-prefix}height: $vertical){
+      font-size: percentage($ratio);
     }
   }
 }
@@ -23,7 +29,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 
-  @include adjust-font-size((14px, 18px, 21px, 24px, 27px, 30px));
+  @include adjust-font-size((18px, 20px, 24px, 28px));
 }
 
 // Sections
