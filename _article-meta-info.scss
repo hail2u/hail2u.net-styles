@@ -18,8 +18,9 @@
     top: auto;
     bottom: auto;
 
-    br {
-      display: inline;
+    .rlb::before {
+      content: "\000a"; // Line Feed
+      white-space: pre-line;
     }
   }
 }
