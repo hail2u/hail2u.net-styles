@@ -18,6 +18,7 @@
 
   @media (min-width: $safe-for-content) {
     li {
+      padding-right: 0;
       display: inline-block;
       line-height: 1;
     }
