@@ -18,6 +18,7 @@
 
   a {
     color: grayscale($lightest);
+    font-size: 87.5%;
 
     &:hover {
       color: $hover;
@@ -27,6 +28,7 @@
   mark {
     color: grayscale($darkest);
     background-color: transparent;
+    font-size: 87.5%;
     font-weight: bold;
   }
 
@@ -42,6 +44,11 @@
     li {
       padding-right: 0;
       padding-left: ($nav-height * 0.5);
+    }
+
+    a,
+    mark {
+      font-size: 100%;
     }
   }
 
