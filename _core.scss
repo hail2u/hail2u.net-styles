@@ -3,17 +3,17 @@
   @each $size in $sizes {
     $ratio: $size / 16px;
     $feature-prefix: min-;
-    $horizontal: $safe-for-content * pow($ratio, 2);
+    $horizontal: $content-width * pow($ratio, 2);
 
-    @if ($ratio < ($safe-for-full / $safe-for-content)) {
-      $horizontal: $safe-for-content * pow($ratio, 2);
+    @if ($ratio > ($full-width / $content-width)) {
+      $horizontal: $full-width * pow($ratio, 2);
     }
 
     $vertical: $horizontal * (9 / 16);
 
     @if ($ratio < 1) {
       $feature-prefix: max-;
-      $horizontal: $safe-for-content * pow($ratio, 2);
+      $horizontal: $content-width * pow($ratio, 2);
       $vertical: $horizontal * (3 / 2);
     }
 
