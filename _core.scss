@@ -1,19 +1,21 @@
 // The Root Element
 @mixin adjust-font-size($sizes) {
+  $constant: 1.25;
+
   @each $size in $sizes {
     $ratio: $size / 16px;
     $feature-prefix: min-;
-    $horizontal: $content-width * 1.25 * $ratio;
+    $horizontal: $content-width * $constant * $ratio;
 
-    @if ($ratio > ($full-width / $content-width)) {
-      $horizontal: $full-width * 1.25 * $ratio;
+    @if ($ratio > 1.25) {
+      $horizontal: $full-width * $constant * $ratio;
     }
 
     $vertical: $horizontal * (9 / 16);
 
     @if ($ratio < 1) {
       $feature-prefix: max-;
-      $horizontal: $content-width * 0.75 * $ratio;
+      $horizontal: $content-width / $constant * $ratio;
       $vertical: $horizontal * (3 / 2);
     }
 
