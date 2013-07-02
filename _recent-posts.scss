@@ -7,6 +7,8 @@
     padding-left: 0;
 
     li {
+      @extend %mini-margin;
+
       position: relative;
       overflow: hidden;
       list-style-type: none;
