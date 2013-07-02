@@ -252,6 +252,7 @@ figcaption {
 // Text-level Semantics
 a {
   color: $link;
+  background-color: transparent;
   text-decoration: none;
 
   &:focus {
@@ -259,7 +260,6 @@ a {
   }
 
   &:active {
-    background-color: transparent;
     outline: 0;
   }
 
