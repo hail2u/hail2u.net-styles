@@ -4,10 +4,7 @@
 #iine {
   margin-top: ($primary-heading-margin - $heading-margin);
   margin-bottom: (- ($primary-heading-margin - $heading-margin));
-  padding-top: $heading-margin;
-  padding-right: 0;
-  padding-bottom: $heading-margin;
-  padding-left: 0;
+  padding: $heading-margin 0;
   max-width: none;
   color: black;
   background-color: mixxd(black, $bg, 0.96);
