@@ -1,5 +1,5 @@
 // Article Meta-info
-[role="main"] h2 + footer {
+.wrapper h2 + footer {
   @extend %hanging-block;
 
   position: absolute;

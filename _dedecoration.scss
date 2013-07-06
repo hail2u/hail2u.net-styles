@@ -95,12 +95,12 @@
     }
   }
 
-  [role="main"] > section::after,
-  [role="main"] > article::after {
+  .wrapper > section::after,
+  .wrapper > article::after {
     display: none;
   }
 
-  [role="main"] h2 + footer {
+  .wrapper h2 + footer {
     font-family: inherit;
 
     br {
