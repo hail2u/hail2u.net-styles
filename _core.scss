@@ -52,13 +52,6 @@ body {
   line-height: $heading-line-height;
 }
 
-h1 {
-  @include heading;
-
-  margin: ($default-margin / $h1-ratio) 0 0 0;
-  font-size: percentage($h1-ratio);
-}
-
 h2 {
   @include heading;
 

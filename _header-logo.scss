@@ -2,8 +2,10 @@
 [role="banner"] h1 {
   $ratio: $h1-ratio;
 
+  margin: ($default-margin / $ratio) 0 0 0;
   height: ($logo-height / $ratio);
   line-height: 1;
+  font-size: percentage($ratio);
 
   a,
   mark {
