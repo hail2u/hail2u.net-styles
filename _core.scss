@@ -118,6 +118,7 @@ hr {
   border: none;
   clear: both;
   width: $colspan3;
+  max-width: 80%;
   height: ($default-margin + $height + $default-margin);
   background-color: transparent;
   opacity: 0.1;
