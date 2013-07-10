@@ -24,10 +24,10 @@ $version: "1.0";
 @import "scss-partials/grid-overlay";
 
 body.debug {
-  @include grid-overlay($width-gutter, $width-column);
+  @include grid-overlay($width-gutter, $width-column-1);
 
   @media (min-width: $breakpoint-full) {
-    @include grid-overlay($width-column, $width-gutter);
+    @include grid-overlay($width-column-1, $width-gutter);
   }
 }
 
@@ -98,5 +98,5 @@ body.debug {
 @import "widget-color";
 
 .selection {
-  @include selection($color-selection-fg, $color-selection-bg);
+  @include selection($color-fg-selection, $color-bg-selection);
 }
