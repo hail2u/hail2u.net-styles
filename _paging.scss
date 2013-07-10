@@ -1,6 +1,6 @@
 // Paging
 .paging {
-  $paging-icon-size: $colspan1;
+  $paging-icon-size: $width-column-1;
 
   text-align: center;
 
@@ -13,8 +13,8 @@
   }
 
   li {
-    padding-right: ($gutter / 2);
-    padding-left: ($gutter / 2);
+    padding-right: ($width-gutter / 2);
+    padding-left: ($width-gutter / 2);
     display: table-cell;
   }
 
@@ -52,7 +52,7 @@
     }
 
     li {
-      padding-right: $gutter;
+      padding-right: $width-gutter;
       padding-left: 0;
     }
   }

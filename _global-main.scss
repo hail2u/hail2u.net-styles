@@ -3,8 +3,8 @@
   margin-top: (- $margin-primary-heading + $margin-heading + em($line-height-default));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $gap;
-  padding-left: $gap;
+  padding-right: $width-gap;
+  padding-left: $width-gap;
   max-width: $width-content;
 
   > section,
@@ -19,6 +19,6 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    padding-left: ($gap + $width-suppli + $gutter);
+    padding-left: ($width-gap + $width-suppli + $width-gutter);
   }
 }

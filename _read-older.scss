@@ -23,7 +23,7 @@
 
     p {
       margin-top: $margin-primary-heading;
-      margin-left: (- ($width-suppli + $gutter));
+      margin-left: (- ($width-suppli + $width-gutter));
     }
 
     a[rel="prev"]::before {

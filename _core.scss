@@ -117,7 +117,7 @@ hr {
   margin-left: auto;
   border: none;
   clear: both;
-  width: $colspan3;
+  width: $width-column-3;
   max-width: 80%;
   height: ($margin-default + $height + $margin-default);
   background-color: transparent;
@@ -131,9 +131,9 @@ hr {
 pre {
   @extend %default-margin;
 
-  margin-right: (- $gap);
-  margin-left: (- $gap);
-  padding: $gap;
+  margin-right: (- $width-gap);
+  margin-left: (- $width-gap);
+  padding: $width-gap;
   clear: both;
   line-height: 1.25;
   color: $color-fg;
@@ -175,13 +175,13 @@ blockquote {
   }
 
   @media (min-width: $breakpoint-full) {
-    $size: ($colspan1 * 2 / 3);
+    $size: ($width-column-1 * 2 / 3);
 
     margin-left: 0;
     min-height: $size;
 
     &::before {
-      margin-right: $gutter;
+      margin-right: $width-gutter;
       width: $size;
       height: $size;
     }

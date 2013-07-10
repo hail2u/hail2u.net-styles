@@ -67,7 +67,7 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: (- ($width-suppli + $gutter));
+    margin-left: (- ($width-suppli + $width-gutter));
     padding-top: $margin-default;
 
     ul {

@@ -3,9 +3,9 @@
   margin-top: ($margin-primary-heading - $margin-heading);
   margin-right: auto;
   margin-left: auto;
-  padding-right: $gap;
+  padding-right: $width-gap;
   padding-bottom: ($margin-default * 3);
-  padding-left: $gap;
+  padding-left: $width-gap;
   position: relative;
   max-width: $width-content;
   text-align: center;
@@ -17,7 +17,7 @@
 
   @media (min-width: $breakpoint-full) {
     margin-top: ($margin-primary-heading - $margin-default);
-    padding-left: ($gap + $width-suppli + $gutter);
+    padding-left: ($width-gap + $width-suppli + $width-gutter);
     text-align: left;
   }
 }

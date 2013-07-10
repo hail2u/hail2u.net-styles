@@ -24,10 +24,10 @@ $version: "1.0";
 @import "scss-partials/grid-overlay";
 
 body.debug {
-  @include grid-overlay($gutter, $column);
+  @include grid-overlay($width-gutter, $width-column);
 
   @media (min-width: $breakpoint-full) {
-    @include grid-overlay($column, $gutter);
+    @include grid-overlay($width-column, $width-gutter);
   }
 }
 
@@ -52,11 +52,11 @@ body.debug {
     @extend %column-1;
     @include box-sizing(border-box);
 
-    margin-bottom: $gutter;
+    margin-bottom: $width-gutter;
     border: 1px solid black;
     display: block;
     direction: ltr;
-    height: $colspan1;
+    height: $width-column-1;
     text-indent: -9999em;
 
     &:nth-child(1) {

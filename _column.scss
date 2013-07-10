@@ -3,8 +3,8 @@
   @extend %clearfix;
 
   @media (min-width: $breakpoint-content) {
-    margin-right: (- $gap);
-    margin-left: (- $gap);
+    margin-right: (- $width-gap);
+    margin-left: (- $width-gap);
   }
 }
 
@@ -12,10 +12,10 @@
 @for $i from 1 through 12 {
   %column-#{$i} {
     @media (min-width: $breakpoint-content) {
-      margin-right: $gap;
-      margin-left: $gap;
+      margin-right: $width-gap;
+      margin-left: $width-gap;
       float: left;
-      width: nth($colspan, $i);
+      width: nth($width-column, $i);
     }
   }
 }

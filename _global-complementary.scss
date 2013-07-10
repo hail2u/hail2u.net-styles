@@ -2,13 +2,13 @@
 [role="complementary"] {
   margin-right: auto;
   margin-left: auto;
-  padding-right: $gap;
-  padding-left: $gap;
+  padding-right: $width-gap;
+  padding-left: $width-gap;
   max-width: $width-content;
   text-align: center;
 
   @media (min-width: $breakpoint-full) {
-    padding-left: ($gap + $width-suppli + $gutter);
+    padding-left: ($width-gap + $width-suppli + $width-gutter);
     text-align: left;
   }
 }

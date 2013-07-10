@@ -89,14 +89,14 @@
 
   @media (min-width: $breakpoint-content) {
     ol {
-      max-width: ($gap + $width-content + $gap);
+      max-width: ($width-gap + $width-content + $width-gap);
     }
 
     li {
-      margin-right: $gap;
-      margin-left: $gap;
+      margin-right: $width-gap;
+      margin-left: $width-gap;
       float: left;
-      width: $colspan3;
+      width: $width-column-3;
     }
   }
 
@@ -105,11 +105,11 @@
     text-align: center;
 
     ol {
-      max-width: ($gap + $width-full + $gap);
+      max-width: ($width-gap + $width-full + $width-gap);
     }
 
     li {
-      width: $colspan4;
+      width: $width-column-4;
     }
   }
 }

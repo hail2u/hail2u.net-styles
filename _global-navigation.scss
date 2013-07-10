@@ -35,7 +35,7 @@
   @media (min-width: $breakpoint-content) {
     position: absolute;
     bottom: 0;
-    right: $gap;
+    right: $width-gap;
 
     ul {
       margin-top: 0;
@@ -54,7 +54,7 @@
 
   @media (min-width: $breakpoint-full) {
     right: auto;
-    left: ($gap + $width-suppli + $gutter);
+    left: ($width-gap + $width-suppli + $width-gutter);
 
     li {
       padding-right: ($height-nav * 0.5);
