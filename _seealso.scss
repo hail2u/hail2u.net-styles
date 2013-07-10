@@ -1,6 +1,6 @@
 // Seealso
 .seealso {
-  @extend %default-margin;
+  @extend %margin-default;
 
   $chain-size: em($line-height-default);
 

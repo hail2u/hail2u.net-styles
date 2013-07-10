@@ -7,7 +7,7 @@
     padding-left: 0;
 
     li {
-      @extend %mini-margin;
+      @extend %margin-mini;
 
       position: relative;
       overflow: hidden;

@@ -94,13 +94,13 @@ main {
 
 // Grouping Content
 p {
-  @extend %default-margin;
+  @extend %margin-default;
 
   h3 + &,
   h4 + &,
   h5 + &,
   h6 + & {
-    @extend %mini-margin;
+    @extend %margin-mini;
   }
 }
 
@@ -108,7 +108,7 @@ p {
 
 hr {
   @extend %ir;
-  @extend %default-margin;
+  @extend %margin-default;
   @include box-sizing(content-box);
 
   $height: em($line-height-default);
@@ -129,7 +129,7 @@ hr {
 }
 
 pre {
-  @extend %default-margin;
+  @extend %margin-default;
 
   margin-right: (- $width-gap);
   margin-left: (- $width-gap);
@@ -169,7 +169,7 @@ blockquote {
   }
 
   + figcaption {
-    @extend %mini-margin;
+    @extend %margin-mini;
 
     margin-left: $indent-default;
   }
@@ -197,7 +197,7 @@ blockquote {
 
 ul,
 ol {
-  @extend %default-margin;
+  @extend %margin-default;
 
   padding: 0 0 0 $indent-default;
   clear: both;
@@ -218,7 +218,7 @@ ol {
 }
 
 dl {
-  @extend %default-margin;
+  @extend %margin-default;
 
   clear: both;
 
@@ -236,7 +236,7 @@ dl {
 }
 
 figure {
-  @extend %default-margin;
+  @extend %margin-default;
 
   position: relative;
 }
@@ -353,7 +353,7 @@ img {
 
 // Tabular Data
 table {
-  @extend %default-margin;
+  @extend %margin-default;
 
   clear: both;
   border-collapse: collapse;
