@@ -5,17 +5,17 @@
   @each $size in $sizes {
     $ratio: $size / 16px;
     $feature-prefix: min-;
-    $horizontal: $content-width * $constant * $ratio;
+    $horizontal: $width-content * $constant * $ratio;
 
     @if ($ratio > 1.25) {
-      $horizontal: $full-width * $constant * $ratio;
+      $horizontal: $width-full * $constant * $ratio;
     }
 
     $vertical: $horizontal * (9 / 16);
 
     @if ($ratio < 1) {
       $feature-prefix: max-;
-      $horizontal: $content-width / $constant * $ratio;
+      $horizontal: $width-content / $constant * $ratio;
       $vertical: $horizontal * (3 / 2);
     }
 
@@ -42,50 +42,50 @@ template {
 // Sections
 body {
   margin: 0;
-  line-height: $default-line-height;
-  color: $fg;
-  background-color: $bg;
+  line-height: $line-height-default;
+  color: $color-fg;
+  background-color: $color-bg;
   font-family: $font-stack-body;
 }
 
 @mixin heading {
-  line-height: $heading-line-height;
+  line-height: $line-height-heading;
 }
 
 h2 {
   @include heading;
 
-  margin: ($primary-heading-margin / $h2-ratio) 0 0 0;
+  margin: ($margin-primary-heading / $ratio-h2) 0 0 0;
   font-weight: normal;
-  font-size: percentage($h2-ratio);
+  font-size: percentage($ratio-h2);
 }
 
 h3 {
   @include heading;
 
-  margin: ($heading-margin / $h3-ratio) 0 0 0;
-  font-size: percentage($h3-ratio);
+  margin: ($margin-heading / $ratio-h3) 0 0 0;
+  font-size: percentage($ratio-h3);
 }
 
 h4 {
   @include heading;
 
-  margin: ($heading-margin / $h4-ratio) 0 0 0;
-  font-size: percentage($h4-ratio);
+  margin: ($margin-heading / $ratio-h4) 0 0 0;
+  font-size: percentage($ratio-h4);
 }
 
 h5 {
   @include heading;
 
-  margin: ($heading-margin / $h5-ratio) 0 0 0;
-  font-size: percentage($h5-ratio);
+  margin: ($margin-heading / $ratio-h5) 0 0 0;
+  font-size: percentage($ratio-h5);
 }
 
 h6 {
   @include heading;
 
-  margin: ($heading-margin / $h6-ratio) 0 0 0;
-  font-size: percentage($h6-ratio);
+  margin: ($margin-heading / $ratio-h6) 0 0 0;
+  font-size: percentage($ratio-h6);
 }
 
 main {
@@ -111,7 +111,7 @@ hr {
   @extend %default-margin;
   @include box-sizing(content-box);
 
-  $height: em($default-line-height);
+  $height: em($line-height-default);
 
   margin-right: auto;
   margin-left: auto;
@@ -119,12 +119,12 @@ hr {
   clear: both;
   width: $colspan3;
   max-width: 80%;
-  height: ($default-margin + $height + $default-margin);
+  height: ($margin-default + $height + $margin-default);
   background-color: transparent;
   opacity: 0.1;
 
   &::before {
-    background-image: $seven-circles;
+    background-image: $image-seven-circles;
   }
 }
 
@@ -136,8 +136,8 @@ pre {
   padding: $gap;
   clear: both;
   line-height: 1.25;
-  color: $fg;
-  background-color: mixxd($fg, $bg, 0.98);
+  color: $color-fg;
+  background-color: mixxd($color-fg, $color-bg, 0.98);
   font-family: $font-stack-code;
   font-size: 1em;
   word-wrap: break-word;
@@ -149,9 +149,9 @@ pre {
 blockquote {
   @extend %ir;
 
-  $size: ($default-indent - 1em);
+  $size: ($indent-default - 1em);
 
-  margin: 0 0 0 $default-indent;
+  margin: 0 0 0 $indent-default;
   position: relative;
   min-height: $size;
   overflow: visible;
@@ -164,17 +164,17 @@ blockquote {
     right: 100%;
     width: $size;
     height: $size;
-    background-image: $double-opening-quote;
+    background-image: $image-double-opening-quote;
     opacity: 0.1;
   }
 
   + figcaption {
     @extend %mini-margin;
 
-    margin-left: $default-indent;
+    margin-left: $indent-default;
   }
 
-  @media (min-width: $safe-for-full) {
+  @media (min-width: $breakpoint-full) {
     $size: ($colspan1 * 2 / 3);
 
     margin-left: 0;
@@ -199,7 +199,7 @@ ul,
 ol {
   @extend %default-margin;
 
-  padding: 0 0 0 $default-indent;
+  padding: 0 0 0 $indent-default;
   clear: both;
 
   ul,
@@ -207,12 +207,12 @@ ol {
     margin-top: 0;
   }
 
-  @media (min-width: $safe-for-full) {
+  @media (min-width: $breakpoint-full) {
     padding-left: 0;
 
     ul,
     ol {
-      padding-left: $default-indent; // Revert to default indentation size
+      padding-left: $indent-default; // Revert to default indentation size
     }
   }
 }
@@ -227,7 +227,7 @@ dl {
   }
 
   dd {
-    margin-left: $default-indent;
+    margin-left: $indent-default;
   }
 
   dl {
@@ -244,22 +244,22 @@ figure {
 figcaption {
   @extend %hanging-block;
 
-  @media screen and (min-width: $safe-for-full) {
+  @media screen and (min-width: $breakpoint-full) {
     figure &:last-child {
       top: auto;
-      bottom: em(($default-line-height - 1) * 0.5);
+      bottom: em(($line-height-default - 1) * 0.5);
     }
   }
 }
 
 // Text-level Semantics
 a {
-  color: $link;
+  color: $color-link;
   background-color: transparent;
   text-decoration: none;
 
   &:focus {
-    outline: 1px dotted $focus;
+    outline: 1px dotted $color-focus;
   }
 
   &:active {
@@ -267,7 +267,7 @@ a {
   }
 
   &:hover {
-    color: $hover;
+    color: $color-hover;
     outline: 0;
   }
 
@@ -284,7 +284,7 @@ em {
 }
 
 strong {
-  border-bottom: 1px dashed $fg;
+  border-bottom: 1px dashed $color-fg;
 }
 
 @import "normalize.scss/typography/small";
@@ -322,12 +322,12 @@ kbd {
 @import "normalize.scss/typography/sub-and-sup";
 
 mark {
-  background-color: $mark;
+  background-color: $color-mark;
 }
 
 // Edits
 ins {
-  border-bottom: 3px double $fg;
+  border-bottom: 3px double $color-fg;
   text-decoration: none;
 }
 
@@ -361,17 +361,17 @@ table {
 
   th {
     padding: 0.5em;
-    border: 1px solid mixxd($fg, $bg, 0.8);
+    border: 1px solid mixxd($color-fg, $color-bg, 0.8);
     vertical-align: top;
-    background-color: mixxd($fg, $bg, 0.9);
+    background-color: mixxd($color-fg, $color-bg, 0.9);
     text-align: left;
   }
 
   td {
     padding: 0.5em;
-    border: 1px solid mixxd($fg, $bg, 0.8);
+    border: 1px solid mixxd($color-fg, $color-bg, 0.8);
     vertical-align: top;
-    background-color: mixxd($fg, $bg, 0.98);
+    background-color: mixxd($color-fg, $color-bg, 0.98);
   }
 }
 

@@ -16,7 +16,7 @@
     }
   }
 
-  @media (min-width: $safe-for-content) {
+  @media (min-width: $breakpoint-content) {
     li {
       padding-right: 0;
       display: inline-block;

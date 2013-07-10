@@ -1,7 +1,7 @@
 // Recent Posts
 #posts {
-  $ratio: $h4-ratio;
-  $date-width: $colspan2;
+  $ratio: $ratio-h4;
+  $width-date: $colspan2;
 
   > ul {
     padding-left: 0;
@@ -17,15 +17,15 @@
 
       time {
         display: block;
-        color: mixxd($fg, $bg, 0.6);
+        color: mixxd($color-fg, $color-bg, 0.6);
       }
     }
   }
 
-  @media (min-width: $safe-for-content) {
+  @media (min-width: $breakpoint-content) {
     > ul {
       li {
-        padding-right: (($date-width + $gutter) / $ratio);
+        padding-right: (($width-date + $gutter) / $ratio);
         font-size: percentage($ratio);
 
         time {

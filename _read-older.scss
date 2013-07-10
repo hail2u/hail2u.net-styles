@@ -3,7 +3,7 @@
   text-align: center;
 
   p {
-    margin-top: $heading-margin;
+    margin-top: $margin-heading;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -12,18 +12,18 @@
   a[rel="prev"]::before {
     display: inline;
     content: "Read Older:\000a";
-    color: $fg;
+    color: $color-fg;
     font-weight: bold;
     text-transform: uppercase;
     white-space: pre;
   }
 
-  @media (min-width: $safe-for-full) {
+  @media (min-width: $breakpoint-full) {
     text-align: left;
 
     p {
-      margin-top: $primary-heading-margin;
-      margin-left: (- ($suppli-width + $gutter));
+      margin-top: $margin-primary-heading;
+      margin-left: (- ($width-suppli + $gutter));
     }
 
     a[rel="prev"]::before {

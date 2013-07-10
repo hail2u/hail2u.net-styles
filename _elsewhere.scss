@@ -1,9 +1,9 @@
 // Elsewhere
 [role="contentinfo"] section {
-  $footer-icon-size: em($default-line-height);
+  $footer-icon-size: em($line-height-default);
 
-  border-top: 3px double mixxd($fg, $bg, 0.9);
-  padding-top: $heading-margin;
+  border-top: 3px double mixxd($color-fg, $color-bg, 0.9);
+  padding-top: $margin-heading;
   position: relative;
 
   ul {
@@ -26,7 +26,7 @@
     width: $footer-icon-size;
     height: $footer-icon-size;
     line-height: $footer-icon-size;
-    background-color: $fg;
+    background-color: $color-fg;
     opacity: 0.1;
 
     &:hover {
@@ -66,9 +66,9 @@
     }
   }
 
-  @media (min-width: $safe-for-full) {
-    margin-left: (- ($suppli-width + $gutter));
-    padding-top: $default-margin;
+  @media (min-width: $breakpoint-full) {
+    margin-left: (- ($width-suppli + $gutter));
+    padding-top: $margin-default;
 
     ul {
       position: absolute;

@@ -1,7 +1,7 @@
 // License and so on
 [role="contentinfo"] > ul {
   padding-left: 0;
-  color: mix($fg, $bg);
+  color: mix($color-fg, $color-bg);
 
   li {
     display: inline;
@@ -15,7 +15,7 @@
     }
   }
 
-  @media (min-width: $safe-for-full) {
+  @media (min-width: $breakpoint-full) {
     margin-top: 0;
     text-align: right;
   }

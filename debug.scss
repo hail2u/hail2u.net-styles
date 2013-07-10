@@ -26,7 +26,7 @@ $version: "1.0";
 body.debug {
   @include grid-overlay($gutter, $column);
 
-  @media (min-width: $safe-for-full) {
+  @media (min-width: $breakpoint-full) {
     @include grid-overlay($column, $gutter);
   }
 }
@@ -60,34 +60,34 @@ body.debug {
     text-indent: -9999em;
 
     &:nth-child(1) {
-      background-color: $base;
+      background-color: $color-base;
     }
 
     &:nth-child(2) {
-      background-color: $darkest;
+      background-color: $color-darkest;
     }
 
     &:nth-child(3) {
-      background-color: $dark;
+      background-color: $color-dark;
     }
 
     &:nth-child(4) {
-      background-color: $light;
+      background-color: $color-light;
     }
 
     &:nth-child(5) {
-      background-color: $lightest;
+      background-color: $color-lightest;
     }
 
     &:nth-child(6) {
-      background-color: $fg;
+      background-color: $color-fg;
     }
 
     &:nth-child(7) {
-      background-color: $bg;
+      background-color: $color-bg;
     }
 
-    @media (min-width: $safe-for-content) {
+    @media (min-width: $breakpoint-content) {
       margin-bottom: 0;
     }
   }
@@ -98,5 +98,5 @@ body.debug {
 @import "widget-color";
 
 .selection {
-  @include selection($selection-fg, $selection-bg);
+  @include selection($color-selection-fg, $color-selection-bg);
 }

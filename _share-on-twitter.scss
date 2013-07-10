@@ -2,15 +2,15 @@
 @import "scss-partials/corporate-colors";
 
 .share-on-twitter {
-  $bird-size: em($default-line-height);
+  $bird-size: em($line-height-default);
 
   position: relative;
 
   p {
     @extend %hanging-block;
 
-    top: (- ($default-margin + $default-line-height));
-    background-image: $twitterbird;
+    top: (- ($margin-default + $line-height-default));
+    background-image: $icon-twitterbird;
     background-repeat: no-repeat;
     background-position: left center;
     background-size: auto $bird-size;

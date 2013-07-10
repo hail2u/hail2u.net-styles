@@ -1,11 +1,11 @@
 // Main
 .wrapper {
-  margin-top: (- $primary-heading-margin + $heading-margin + em($default-line-height));
+  margin-top: (- $margin-primary-heading + $margin-heading + em($line-height-default));
   margin-right: auto;
   margin-left: auto;
   padding-right: $gap;
   padding-left: $gap;
-  max-width: $content-width;
+  max-width: $width-content;
 
   > section,
   > article {
@@ -14,11 +14,11 @@
     position: relative;
   }
 
-  @media (min-width: $safe-for-content) {
-    margin-top: (- $primary-heading-margin + (($heading-margin + $primary-heading-margin) / 2) + em($default-line-height));
+  @media (min-width: $breakpoint-content) {
+    margin-top: (- $margin-primary-heading + (($margin-heading + $margin-primary-heading) / 2) + em($line-height-default));
   }
 
-  @media (min-width: $safe-for-full) {
-    padding-left: ($gap + $suppli-width + $gutter);
+  @media (min-width: $breakpoint-full) {
+    padding-left: ($gap + $width-suppli + $gutter);
   }
 }

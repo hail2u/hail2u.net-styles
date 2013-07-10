@@ -4,12 +4,12 @@
 
 #cse-search-box {
   div {
-    margin-top: $default-margin;
+    margin-top: $margin-default;
     display: inline-block;
     position: relative;
 
     [role="complementary"] & {
-      margin-top: $primary-heading-margin;
+      margin-top: $margin-primary-heading;
     }
   }
 
@@ -17,8 +17,8 @@
     @include box-sizing(border-box);
 
     padding: 0 ($searchbox-height + 0.25em) 0 0.25em !important;
-    border: 1px solid mixxd($fg, $bg, 0.9) !important;
-    width: $searchbox-width;
+    border: 1px solid mixxd($color-fg, $color-bg, 0.9) !important;
+    width: $width-searchbox;
     height: $searchbox-height;
     vertical-align: middle;
     color: black;
@@ -37,7 +37,7 @@
     width: $searchbox-height;
     height: $searchbox-height;
     background-color: transparent;
-    background-image: $magnifying-glass;
+    background-image: $image-magnifying-glass;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 75% 75%;

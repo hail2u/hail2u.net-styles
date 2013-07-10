@@ -2,12 +2,12 @@
 @import "scss-partials/vendor-extension";
 
 #iine {
-  margin-top: ($primary-heading-margin - $heading-margin);
-  margin-bottom: (- ($primary-heading-margin - $heading-margin));
-  padding: $heading-margin 0;
+  margin-top: ($margin-primary-heading - $margin-heading);
+  margin-bottom: (- ($margin-primary-heading - $margin-heading));
+  padding: $margin-heading 0;
   max-width: none;
   color: black;
-  background-color: mixxd(black, $bg, 0.96);
+  background-color: mixxd(black, $color-bg, 0.96);
 
   h2 {
     $ratio: 1;
@@ -23,7 +23,7 @@
       height: 32px;
 
       &::before {
-        background-image: $logo-iine;
+        background-image: $icon-iine;
       }
     }
   }
@@ -35,7 +35,7 @@
     margin-right: auto;
     margin-left: auto;
     padding-left: 0;
-    max-width: $content-width;
+    max-width: $width-content;
     list-style-type: none;
   }
 
@@ -45,7 +45,7 @@
 
   a {
     &:hover {
-      color: $link;
+      color: $color-link;
 
       figcaption {
         @include transition(all 0.1s ease-out);
@@ -87,9 +87,9 @@
     border-top: none;
   }
 
-  @media (min-width: $safe-for-content) {
+  @media (min-width: $breakpoint-content) {
     ol {
-      max-width: ($gap + $content-width + $gap);
+      max-width: ($gap + $width-content + $gap);
     }
 
     li {
@@ -100,12 +100,12 @@
     }
   }
 
-  @media (min-width: $safe-for-full) {
-    margin-bottom: (- ($primary-heading-margin - $default-margin));
+  @media (min-width: $breakpoint-full) {
+    margin-bottom: (- ($margin-primary-heading - $margin-default));
     text-align: center;
 
     ol {
-      max-width: ($gap + $full-width + $gap);
+      max-width: ($gap + $width-full + $gap);
     }
 
     li {

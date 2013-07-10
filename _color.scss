@@ -1,15 +1,15 @@
 // Basic
-$fg: rgb(51, 51, 51);
-$bg: rgb(252, 249, 240);
-$base: rgb(17, 136, 187);
-$darkest: rgb(6, 87, 122);
-$dark: rgb(45, 111, 140);
-$light: rgb(70, 176, 221);
-$lightest: rgb(111, 188, 221);
+$color-fg: rgb(51, 51, 51);
+$color-bg: rgb(252, 249, 240);
+$color-base: rgb(17, 136, 187);
+$color-darkest: rgb(6, 87, 122);
+$color-dark: rgb(45, 111, 140);
+$color-light: rgb(70, 176, 221);
+$color-lightest: rgb(111, 188, 221);
 
 // Semantic
-$link: $base;
-$visited: $dark;
-$focus: $lightest;
-$hover: $darkest;
-$mark: rgb(255, 238, 0);
+$color-link: $color-base;
+$color-visited: $color-dark;
+$color-focus: $color-lightest;
+$color-hover: $color-darkest;
+$color-mark: rgb(255, 238, 0);

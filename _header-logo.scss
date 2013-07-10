@@ -1,9 +1,9 @@
 // Header Logo
 [role="banner"] h1 {
-  $ratio: $h1-ratio;
+  $ratio: $ratio-h1;
 
-  margin: ($default-margin / $ratio) 0 0 0;
-  height: ($logo-height / $ratio);
+  margin: ($margin-default / $ratio) 0 0 0;
+  height: ($height-logo / $ratio);
   line-height: 1;
   font-size: percentage($ratio);
 
@@ -13,14 +13,14 @@
 
     border-radius: 50%;
     display: inline-block;
-    width: ($logo-width / $ratio);
+    width: ($width-logo / $ratio);
     height: 100%;
-    line-height: ($logo-height / $ratio);
-    color: $bg;
-    background-color: $light;
+    line-height: ($height-logo / $ratio);
+    color: $color-bg;
+    background-color: $color-light;
 
     &::before {
-      background-image: $logo;
+      background-image: $image-logo;
     }
   }
 }

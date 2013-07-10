@@ -4,7 +4,7 @@
 
   font-style: normal;
 
-  @media (min-width: $safe-for-full) {
+  @media (min-width: $breakpoint-full) {
     margin-top: 0;
     position: absolute;
   }

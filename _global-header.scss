@@ -1,23 +1,23 @@
 // Global Header
 [role="banner"] {
-  margin-top: $heading-margin;
+  margin-top: $margin-heading;
   margin-right: auto;
   margin-left: auto;
   padding-right: $gap;
   padding-left: $gap;
   position: relative;
-  max-width: $content-width;
-  height: ($logo-height + $nav-height);
+  max-width: $width-content;
+  height: ($height-logo + $height-nav);
   text-align: center;
 
-  @media (min-width: $safe-for-content) {
-    margin-top: (($heading-margin + $primary-heading-margin) / 2);
-    height: $logo-height;
+  @media (min-width: $breakpoint-content) {
+    margin-top: (($margin-heading + $margin-primary-heading) / 2);
+    height: $height-logo;
     text-align: left;
   }
 
-  @media (min-width: $safe-for-full) {
-    margin-top: $primary-heading-margin;
-    max-width: $full-width;
+  @media (min-width: $breakpoint-full) {
+    margin-top: $margin-primary-heading;
+    max-width: $width-full;
   }
 }

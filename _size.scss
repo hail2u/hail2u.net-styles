@@ -1,30 +1,29 @@
 // Line Height
-$default-line-height: $golden-ratio;
-$heading-line-height: 1.25;
+$line-height-default: $ratio-golden;
+$line-height-heading: 1.25;
 
 // Margin
-$default-margin: em($default-line-height);
-$heading-margin: ($default-margin * 2);
-$primary-heading-margin: ($heading-margin * 2);
+$margin-default: em($line-height-default);
+$margin-heading: ($margin-default * 2);
+$margin-primary-heading: ($margin-heading * 2);
 
 // Indent
-$default-indent: em(pow($golden-ratio, 2));
+$indent-default: em(pow($ratio-golden, 2));
 
 // Column
-$gutter: em($golden-ratio);
+$gutter: em($ratio-golden);
 $column: ($gutter * 2);
 
 @import "scss-column-equation/sce.scss";
 
 // Main Component
-$content-width: $colspan9;
-$suppli-width: $colspan3;
-$full-width: $colspan12;
-$logo-width: $colspan1;
-$logo-height: $colspan1;
-$nav-height: $logo-height;
+$width-content: $colspan9;
+$width-suppli: $colspan3;
+$width-full: $colspan12;
+$width-logo: $colspan1;
+$height-logo: $colspan1;
+$height-nav: $height-logo;
 
 // Breakpoint
-$safe-for-content: ($gap + $colspan1 + $gutter + $content-width + $gutter + $colspan1 + $gap);
-$safe-for-full: ($gap + $colspan1 + $gutter + $full-width + $gutter + $colspan1 + $gap);
-
+$breakpoint-content: ($gap + $colspan1 + $gutter + $width-content + $gutter + $colspan1 + $gap);
+$breakpoint-full: ($gap + $colspan1 + $gutter + $width-full + $gutter + $colspan1 + $gap);

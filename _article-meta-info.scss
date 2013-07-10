@@ -4,17 +4,17 @@
 
   position: absolute;
   bottom: 100%;
-  color: mixxd($fg, $bg, 0.6);
+  color: mixxd($color-fg, $color-bg, 0.6);
 
   br {
     display: none;
   }
 
   time {
-    color: $fg;
+    color: $color-fg;
   }
 
-  @media (min-width: $safe-for-full) {
+  @media (min-width: $breakpoint-full) {
     top: auto;
     bottom: auto;
 

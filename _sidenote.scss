@@ -2,16 +2,16 @@
 .sidenote {
   @extend %hanging-block;
 
-  color: mixxd($fg, $bg, 0.6);
+  color: mixxd($color-fg, $color-bg, 0.6);
 
   p {
     $ratio: 0.8;
 
-    margin-top: ($default-margin / $ratio);
+    margin-top: ($margin-default / $ratio);
     font-size: percentage($ratio);
   }
 
-  @media (min-width: $safe-for-full) {
+  @media (min-width: $breakpoint-full) {
     top: auto;
   }
 }

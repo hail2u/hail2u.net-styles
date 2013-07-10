@@ -2,7 +2,7 @@
 .seealso {
   @extend %default-margin;
 
-  $chain-size: em($default-line-height);
+  $chain-size: em($line-height-default);
 
   line-height: $chain-size;
 
@@ -11,7 +11,7 @@
     width: $chain-size;
     height: $chain-size;
     content: "\00a0";
-    background-image: $chain;
+    background-image: $image-chain;
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 0.3;

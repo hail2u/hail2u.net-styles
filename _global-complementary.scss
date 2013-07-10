@@ -4,11 +4,11 @@
   margin-left: auto;
   padding-right: $gap;
   padding-left: $gap;
-  max-width: $content-width;
+  max-width: $width-content;
   text-align: center;
 
-  @media (min-width: $safe-for-full) {
-    padding-left: ($gap + $suppli-width + $gutter);
+  @media (min-width: $breakpoint-full) {
+    padding-left: ($gap + $width-suppli + $gutter);
     text-align: left;
   }
 }

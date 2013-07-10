@@ -8,7 +8,7 @@
     @extend %column-3;
   }
 
-  @media (min-width: $safe-for-content) {
+  @media (min-width: $breakpoint-content) {
     ul {
       padding-left: 0;
     }

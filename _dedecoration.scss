@@ -80,7 +80,7 @@
   [role="banner"] h1 {
     $ratio: 2.25;
 
-    margin-top: ($heading-margin / $ratio);
+    margin-top: ($margin-heading / $ratio);
     font-size: percentage($ratio);
 
     a,

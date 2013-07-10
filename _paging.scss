@@ -7,7 +7,7 @@
   ul {
     @extend %hanging-block;
 
-    margin-top: $heading-margin;
+    margin-top: $margin-heading;
     padding-left: 0;
     display: inline-table;
   }
@@ -25,8 +25,8 @@
     display: block;
     width: $paging-icon-size;
     height: $paging-icon-size;
-    color: $bg;
-    background-color: $fg;
+    color: $color-bg;
+    background-color: $color-fg;
     opacity: 0.1;
 
     &:hover {
@@ -34,19 +34,19 @@
     }
 
     &[rel="prev"]::before {
-      background-image: $left-arrow;
+      background-image: $image-left-arrow;
     }
 
     &[rel="next"]::before {
-      background-image: $right-arrow;
+      background-image: $image-right-arrow;
     }
   }
 
-  @media (min-width: $safe-for-full) {
+  @media (min-width: $breakpoint-full) {
     position: relative;
 
     ul {
-      margin-top: $primary-heading-margin;
+      margin-top: $margin-primary-heading;
       display: block;
       top: (($searchbox-height - $paging-icon-size) / 2);
     }

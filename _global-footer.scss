@@ -1,13 +1,13 @@
 // Global Footer
 [role="contentinfo"] {
-  margin-top: ($primary-heading-margin - $heading-margin);
+  margin-top: ($margin-primary-heading - $margin-heading);
   margin-right: auto;
   margin-left: auto;
   padding-right: $gap;
-  padding-bottom: ($default-margin * 3);
+  padding-bottom: ($margin-default * 3);
   padding-left: $gap;
   position: relative;
-  max-width: $content-width;
+  max-width: $width-content;
   text-align: center;
 
   mark {
@@ -15,9 +15,9 @@
     background-color: transparent;
   }
 
-  @media (min-width: $safe-for-full) {
-    margin-top: ($primary-heading-margin - $default-margin);
-    padding-left: ($gap + $suppli-width + $gutter);
+  @media (min-width: $breakpoint-full) {
+    margin-top: ($margin-primary-heading - $margin-default);
+    padding-left: ($gap + $width-suppli + $gutter);
     text-align: left;
   }
 }

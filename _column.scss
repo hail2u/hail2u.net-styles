@@ -2,7 +2,7 @@
 %column-container {
   @extend %clearfix;
 
-  @media (min-width: $safe-for-content) {
+  @media (min-width: $breakpoint-content) {
     margin-right: (- $gap);
     margin-left: (- $gap);
   }
@@ -11,7 +11,7 @@
 // Column
 @for $i from 1 through 12 {
   %column-#{$i} {
-    @media (min-width: $safe-for-content) {
+    @media (min-width: $breakpoint-content) {
       margin-right: $gap;
       margin-left: $gap;
       float: left;

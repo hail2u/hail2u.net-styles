@@ -1,7 +1,7 @@
 // Global Navigation
 [role="banner"] nav {
-  height: $nav-height;
-  line-height: $nav-height;
+  height: $height-nav;
+  line-height: $height-nav;
   text-transform: uppercase;
 
   ul {
@@ -11,28 +11,28 @@
   }
 
   li {
-    padding-right: ($nav-height * 0.125);
-    padding-left: ($nav-height * 0.125);
+    padding-right: ($height-nav * 0.125);
+    padding-left: ($height-nav * 0.125);
     display: table-cell;
   }
 
   a {
-    color: grayscale($lightest);
+    color: grayscale($color-lightest);
     font-size: 87.5%;
 
     &:hover {
-      color: $hover;
+      color: $color-hover;
     }
   }
 
   mark {
-    color: grayscale($darkest);
+    color: grayscale($color-darkest);
     background-color: transparent;
     font-size: 87.5%;
     font-weight: bold;
   }
 
-  @media (min-width: $safe-for-content) {
+  @media (min-width: $breakpoint-content) {
     position: absolute;
     bottom: 0;
     right: $gap;
@@ -43,7 +43,7 @@
 
     li {
       padding-right: 0;
-      padding-left: ($nav-height * 0.5);
+      padding-left: ($height-nav * 0.5);
     }
 
     a,
@@ -52,12 +52,12 @@
     }
   }
 
-  @media (min-width: $safe-for-full) {
+  @media (min-width: $breakpoint-full) {
     right: auto;
-    left: ($gap + $suppli-width + $gutter);
+    left: ($gap + $width-suppli + $gutter);
 
     li {
-      padding-right: ($nav-height * 0.5);
+      padding-right: ($height-nav * 0.5);
       padding-left: 0;
     }
   }
