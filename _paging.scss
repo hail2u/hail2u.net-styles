@@ -25,13 +25,10 @@
     display: block;
     width: $paging-icon-size;
     height: $paging-icon-size;
-    color: $color-bg;
-    background-color: $color-fg;
-    opacity: 0.1;
+    background-color: $color-bg-paging;
 
     &:hover {
-      background-color: $color-light;
-      opacity: 1;
+      background-color: $color-bg-paging-hover;
     }
 
     &[rel="prev"]::before {

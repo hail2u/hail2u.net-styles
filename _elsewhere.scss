@@ -26,13 +26,11 @@
     width: $footer-icon-size;
     height: $footer-icon-size;
     line-height: $footer-icon-size;
-    background-color: $color-fg;
-    opacity: 0.1;
+    background-color: $color-bg-elsewhere;
 
     &:hover,
     &:active {
-      background-color: $color-light;
-      opacity: 1;
+      background-color: $color-bg-elsewhere-hover;
     }
 
     &::before {

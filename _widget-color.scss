@@ -2,6 +2,9 @@
 $color-fg-selection: grayscale($color-bg);
 $color-bg-selection: $color-darkest;
 
+// Read Older
+$color-fg-read-older: $color-fg-body;
+
 // Sidenote
 $color-fg-sidenote: mixxd($color-fg, $color-bg, 0.6);
 
@@ -11,5 +14,10 @@ $color-fg-recent-posts-time: mixxd($color-fg, $color-bg, 0.6);
 // Monthly Archives
 $color-fg-monthly-archives: mixxd($color-fg, $color-bg, 0.8);
 
+// Paging
+$color-bg-paging: $color-bg-elsewhere;
+$color-bg-paging-hover: $color-bg-elsewhere-hover;
+
 // Shots-on-iine!
+$color-fg-iine: $color-fg-body;
 $color-bg-iine: mixxd($color-fg, $color-bg, 0.96);

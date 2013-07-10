@@ -17,16 +17,16 @@
   }
 
   a {
-    color: $color-fg;
+    color: $color-fg-gnav;
     font-size: 87.5%;
 
     &:hover {
-      color: $color-fg-link;
+      color: $color-fg-gnav-hover;
     }
   }
 
   mark {
-    color: $color-fg-link;
+    color: $color-fg-gnav-active;
     background-color: transparent;
     font-size: 87.5%;
     font-weight: bold;

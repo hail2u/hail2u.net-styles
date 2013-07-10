@@ -43,8 +43,8 @@ template {
 body {
   margin: 0;
   line-height: $line-height-default;
-  color: $color-fg;
-  background-color: $color-bg;
+  color: $color-fg-body;
+  background-color: $color-bg-body;
   font-family: $font-stack-body;
 }
 
@@ -267,7 +267,7 @@ a {
   }
 
   &:hover {
-    color: $color-fg-hover;
+    color: $color-fg-link-hover;
     outline: 0;
   }
 
@@ -284,7 +284,7 @@ em {
 }
 
 strong {
-  border-bottom: 1px dashed $color-fg;
+  border-bottom: 1px dashed $color-border-strong;
 }
 
 @import "normalize.scss/typography/small";
@@ -327,7 +327,7 @@ mark {
 
 // Edits
 ins {
-  border-bottom: 3px double $color-fg;
+  border-bottom: 3px double $color-border-ins;
   text-decoration: none;
 }
 

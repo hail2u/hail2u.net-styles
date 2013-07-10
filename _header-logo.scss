@@ -16,8 +16,8 @@
     width: ($width-logo / $ratio);
     height: 100%;
     line-height: ($height-logo / $ratio);
-    color: $color-bg;
-    background-color: $color-light;
+    color: $color-fg-logo;
+    background-color: $color-bg-logo;
 
     &::before {
       background-image: $image-logo;

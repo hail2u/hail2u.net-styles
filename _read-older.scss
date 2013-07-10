@@ -12,7 +12,7 @@
   a[rel="prev"]::before {
     display: inline;
     content: "Read Older:\000a";
-    color: $color-fg;
+    color: $color-fg-read-older;
     font-weight: bold;
     text-transform: uppercase;
     white-space: pre;

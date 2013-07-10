@@ -8,19 +8,31 @@ $color-light: rgb(70, 176, 221);
 $color-lightest: rgb(111, 188, 221);
 
 // Semantic
-$color-fg-pre: $color-fg;
+$color-fg-body: $color-fg;
+$color-fg-pre: $color-fg-body;
 $color-fg-link: $color-base;
-$color-fg-visited: $color-dark;
-$color-fg-hover: $color-darkest;
+$color-fg-link-visited: $color-dark;
+$color-fg-link-hover: $color-darkest;
+$color-fg-logo: $color-bg;
+$color-fg-gnav: $color-fg-body;
+$color-fg-gnav-hover: $color-fg-link;
+$color-fg-gnav-active: $color-fg-gnav-hover;
 $color-fg-article-meta: mixxd($color-fg, $color-bg, 0.6);
+$color-fg-article-meta-time: $color-fg-body;
 $color-fg-license: $color-fg-article-meta;
 
+$color-bg-body: $color-bg;
 $color-bg-pre: mixxd($color-fg, $color-bg, 0.98);
 $color-bg-mark: rgb(255, 238, 0);
 $color-bg-th: mixxd($color-fg, $color-bg, 0.9);
 $color-bg-td: $color-bg-pre;
+$color-bg-logo: $color-light;
+$color-bg-elsewhere: mixxd($color-fg, $color-bg, 0.9);
+$color-bg-elsewhere-hover: $color-bg-logo;
 
 $color-border-focus: $color-lightest;
+$color-border-strong: $color-bg-body;
+$color-border-ins: $color-bg-body;
 $color-border-th: mixxd($color-fg, $color-bg, 0.8);
 $color-border-td: $color-border-th;
 $color-border-footer: mixxd($color-fg, $color-bg, 0.6);
