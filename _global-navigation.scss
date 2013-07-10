@@ -11,14 +11,16 @@
   }
 
   li {
-    padding-right: ($height-nav * 0.125);
-    padding-left: ($height-nav * 0.125);
+    $ratio: 0.875;
+
+    padding-right: ($height-nav * 0.125 / $ratio);
+    padding-left: ($height-nav * 0.125 / $ratio);
     display: table-cell;
+    font-size: percentage($ratio);
   }
 
   a {
     color: $color-fg-gnav;
-    font-size: 87.5%;
 
     &:hover {
       color: $color-fg-gnav-hover;
@@ -28,7 +30,6 @@
   mark {
     color: $color-fg-gnav-active;
     background-color: transparent;
-    font-size: 87.5%;
     font-weight: bold;
   }
 
@@ -44,10 +45,6 @@
     li {
       padding-right: 0;
       padding-left: ($height-nav * 0.5);
-    }
-
-    a,
-    mark {
       font-size: 100%;
     }
   }

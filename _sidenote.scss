@@ -5,7 +5,7 @@
   color: $color-fg-sidenote;
 
   p {
-    $ratio: 0.8;
+    $ratio: 0.875;
 
     margin-top: ($margin-default / $ratio);
     font-size: percentage($ratio);

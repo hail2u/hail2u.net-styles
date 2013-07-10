@@ -1,11 +1,9 @@
 // Header Logo
 [role="banner"] h1 {
-  $ratio: $ratio-h1;
-
-  margin: ($margin-default / $ratio) 0 0 0;
-  height: ($height-logo / $ratio);
+  margin: $margin-default 0 0 0;
+  height: $height-logo;
   line-height: 1;
-  font-size: percentage($ratio);
+  font-size: inherit;
 
   a,
   mark {
@@ -13,9 +11,9 @@
 
     border-radius: 50%;
     display: inline-block;
-    width: ($width-logo / $ratio);
+    width: $width-logo;
     height: 100%;
-    line-height: ($height-logo / $ratio);
+    line-height: $height-logo;
     color: $color-fg-logo;
     background-color: $color-bg-logo;
 

@@ -10,17 +10,15 @@
   background-color: $color-bg-iine;
 
   h2 {
-    $ratio: 1;
-
     margin-top: 0;
-    font-size: percentage($ratio);
+    font-size: inherit;
 
     a {
       @extend %ir;
 
       display: inline-block;
-      width: 32px;
-      height: 32px;
+      width: $width-icon-iine;
+      height: $height-icon-iine;
 
       &::before {
         background-image: $icon-iine;
