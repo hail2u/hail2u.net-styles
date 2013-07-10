@@ -8,8 +8,19 @@ $color-light: rgb(70, 176, 221);
 $color-lightest: rgb(111, 188, 221);
 
 // Semantic
-$color-link: $color-base;
-$color-visited: $color-dark;
-$color-focus: $color-lightest;
-$color-hover: $color-darkest;
-$color-mark: rgb(255, 238, 0);
+$color-fg-pre: $color-fg;
+$color-fg-link: $color-base;
+$color-fg-visited: $color-dark;
+$color-fg-hover: $color-darkest;
+$color-fg-article-meta: mixxd($color-fg, $color-bg, 0.6);
+$color-fg-license: $color-fg-article-meta;
+
+$color-bg-pre: mixxd($color-fg, $color-bg, 0.98);
+$color-bg-mark: rgb(255, 238, 0);
+$color-bg-th: mixxd($color-fg, $color-bg, 0.9);
+$color-bg-td: $color-bg-pre;
+
+$color-border-focus: $color-lightest;
+$color-border-th: mixxd($color-fg, $color-bg, 0.8);
+$color-border-td: $color-border-th;
+$color-border-footer: mixxd($color-fg, $color-bg, 0.6);

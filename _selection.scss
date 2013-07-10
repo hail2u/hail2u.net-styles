@@ -2,9 +2,9 @@
 @import "scss-partials/selection";
 
 ::-moz-selection {
-  @include selection($color-selection-fg, $color-selection-bg);
+  @include selection($color-fg-selection, $color-bg-selection);
 }
 
 ::selection {
-  @include selection($color-selection-fg, $color-selection-bg);
+  @include selection($color-fg-selection, $color-bg-selection);
 }

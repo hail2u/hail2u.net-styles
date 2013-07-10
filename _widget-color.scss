@@ -1,3 +1,18 @@
 // Selection
-$color-selection-fg: grayscale($color-bg);
-$color-selection-bg: $color-darkest;
+$color-fg-selection: grayscale($color-bg);
+$color-bg-selection: $color-darkest;
+
+// Google CSE
+$color-border-cse-text: mixxd($color-fg, $color-bg, 0.9);
+
+// Sidenote
+$color-fg-sidenote: mixxd($color-fg, $color-bg, 0.6);
+
+// Recent Posts
+$color-fg-recent-posts-time: mixxd($color-fg, $color-bg, 0.6);
+
+// Monthly Archives
+$color-fg-monthly-archives: mixxd($color-fg, $color-bg, 0.8);
+
+// Shots-on-iine!
+$color-bg-iine: mixxd($color-fg, $color-bg, 0.96);

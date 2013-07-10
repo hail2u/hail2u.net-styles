@@ -7,7 +7,7 @@
   padding: $margin-heading 0;
   max-width: none;
   color: $color-fg;
-  background-color: mixxd($color-fg, $color-bg, 0.96);
+  background-color: $color-bg-iine;
 
   h2 {
     $ratio: 1;
@@ -45,7 +45,7 @@
 
   a {
     &:hover {
-      color: $color-link;
+      color: $color-fg-link;
 
       figcaption {
         @include transition(all 0.1s ease-out);

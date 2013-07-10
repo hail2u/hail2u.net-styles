@@ -1,7 +1,7 @@
 // License and so on
 [role="contentinfo"] > ul {
   padding-left: 0;
-  color: mix($color-fg, $color-bg);
+  color: $color-fg-license;
 
   li {
     display: inline;

@@ -2,7 +2,7 @@
 [role="contentinfo"] section {
   $footer-icon-size: em($line-height-default);
 
-  border-top: 3px double mixxd($color-fg, $color-bg, 0.9);
+  border-top: 3px double $color-border-footer;
   padding-top: $margin-heading;
   position: relative;
 

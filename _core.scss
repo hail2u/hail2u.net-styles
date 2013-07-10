@@ -136,8 +136,8 @@ pre {
   padding: $width-gap;
   clear: both;
   line-height: 1.25;
-  color: $color-fg;
-  background-color: mixxd($color-fg, $color-bg, 0.98);
+  color: $color-fg-pre;
+  background-color: $color-bg-pre;
   font-family: $font-stack-code;
   font-size: 1em;
   word-wrap: break-word;
@@ -254,12 +254,12 @@ figcaption {
 
 // Text-level Semantics
 a {
-  color: $color-link;
+  color: $color-fg-link;
   background-color: transparent;
   text-decoration: none;
 
   &:focus {
-    outline: 1px dotted $color-focus;
+    outline: 1px dotted $color-border-focus;
   }
 
   &:active {
@@ -267,7 +267,7 @@ a {
   }
 
   &:hover {
-    color: $color-hover;
+    color: $color-fg-hover;
     outline: 0;
   }
 
@@ -322,7 +322,7 @@ kbd {
 @import "normalize.scss/typography/sub-and-sup";
 
 mark {
-  background-color: $color-mark;
+  background-color: $color-bg-mark;
 }
 
 // Edits
@@ -361,17 +361,17 @@ table {
 
   th {
     padding: 0.5em;
-    border: 1px solid mixxd($color-fg, $color-bg, 0.8);
+    border: 1px solid $color-border-th;
     vertical-align: top;
-    background-color: mixxd($color-fg, $color-bg, 0.9);
+    background-color: $color-bg-th;
     text-align: left;
   }
 
   td {
     padding: 0.5em;
-    border: 1px solid mixxd($color-fg, $color-bg, 0.8);
+    border: 1px solid $color-border-td;
     vertical-align: top;
-    background-color: mixxd($color-fg, $color-bg, 0.98);
+    background-color: $color-bg-td;
   }
 }
 
