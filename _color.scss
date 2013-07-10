@@ -27,7 +27,7 @@ $color-bg-mark: rgb(255, 238, 0);
 $color-bg-th: mixxd($color-fg, $color-bg, 0.9);
 $color-bg-td: $color-bg-pre;
 $color-bg-logo: $color-light;
-$color-bg-elsewhere: mixxd($color-fg, $color-bg, 0.9);
+$color-bg-elsewhere: $color-bg-th;
 $color-bg-elsewhere-hover: $color-bg-logo;
 
 $color-border-focus: $color-lightest;
@@ -35,4 +35,4 @@ $color-border-strong: $color-bg-body;
 $color-border-ins: $color-bg-body;
 $color-border-th: mixxd($color-fg, $color-bg, 0.8);
 $color-border-td: $color-border-th;
-$color-border-footer: mixxd($color-fg, $color-bg, 0.6);
+$color-border-elsewhere: $color-bg-elsewhere;
