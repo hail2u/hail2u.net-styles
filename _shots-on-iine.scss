@@ -6,8 +6,8 @@
   margin-bottom: (- ($margin-primary-heading - $margin-heading));
   padding: $margin-heading 0;
   max-width: none;
-  color: black;
-  background-color: mixxd(black, $color-bg, 0.96);
+  color: $color-fg;
+  background-color: mixxd($color-fg, $color-bg, 0.96);
 
   h2 {
     $ratio: 1;
