@@ -4,9 +4,13 @@
 
 #cse-search-box {
   div {
-    margin-top: $primary-heading-margin;
+    margin-top: $default-margin;
     display: inline-block;
     position: relative;
+
+    [role="complementary"] & {
+      margin-top: $primary-heading-margin;
+    }
   }
 
   input[type="text"] {
