@@ -1,6 +1,6 @@
 // Main
 .wrapper {
-  margin-top: (- $margin-primary-heading + $margin-heading + em($line-height-default));
+  margin-top: (- $margin-primary-heading + $margin-default + em($line-height-default));
   margin-right: auto;
   margin-left: auto;
   padding-right: $width-gap;
