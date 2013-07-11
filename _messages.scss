@@ -1,9 +1,13 @@
 // Messages
 @mixin message-coloring($color) {
-  padding: 0.5em 1em;
-  border: 1px solid $color;
+  border-color: $color;
   color: mixxd($color, black, 0.3);
   background-color: mixxd($color, white, 0.8);
+}
+
+.message {
+  padding: 0.5em 1em;
+  border: 1px solid;
 
   &::before {
     font-weight: bold;
