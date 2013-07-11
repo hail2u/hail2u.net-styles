@@ -255,17 +255,8 @@ a {
   background-color: transparent;
   text-decoration: none;
 
-  &:focus {
-    outline: 1px dotted $color-border-focus;
-  }
-
-  &:active {
-    outline: 0;
-  }
-
   &:hover {
     color: $color-fg-link-hover;
-    outline: 0;
   }
 
   section > p &,
