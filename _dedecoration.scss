@@ -77,7 +77,7 @@
     page-break-inside: avoid;
   }
 
-  [role="banner"] h1 {
+  .logo {
     $ratio: 2.25;
 
     margin-top: ($margin-heading / $ratio);
@@ -108,7 +108,7 @@
     }
   }
 
-  [role="contentinfo"] {
+  .global-footer {
     border-top: 1px solid black;
     font-family: inherit;
     text-align: right;

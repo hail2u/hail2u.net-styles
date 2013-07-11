@@ -29,12 +29,12 @@ $version: "6.36";
 
 // Header
 @import "global-header";
-@import "header-logo";
-@import "global-navigation";
+@import "logo";
+@import "site-navigation";
 
 // Main
 @import "global-main";
-@import "article-meta-info";
+@import "article-footer";
 
 // Complementary
 @import "global-complementary";
@@ -42,8 +42,8 @@ $version: "6.36";
 // Footer
 @import "global-footer";
 @import "elsewhere";
-@import "author-info";
-@import "license-and-so-on";
+@import "byline";
+@import "footlinks";
 
 // Widget
 @import "widget-color";
