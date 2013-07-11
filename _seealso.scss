@@ -2,11 +2,19 @@
 .seealso {
   @extend %margin-default;
 
-  $chain-size: em($line-height-default);
+  $chain-size: em($line-height-default * 1.5);
 
+  position: relative;
   line-height: $chain-size;
+  font-weight: bold;
+
+  a {
+    font-weight: normal;
+  }
 
   &::before {
+    @extend %hanging-block;
+
     display: inline-block;
     width: $chain-size;
     height: $chain-size;
