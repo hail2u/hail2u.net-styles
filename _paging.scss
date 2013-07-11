@@ -46,7 +46,7 @@
     ul {
       margin-top: $margin-primary-heading;
       display: block;
-      top: (($searchbox-height - $paging-icon-size) / 2);
+      top: (($height-searchbox - $paging-icon-size) / 2);
     }
 
     li {
