@@ -8,7 +8,7 @@
     display: inline-block;
     position: relative;
 
-    [role="complementary"] & {
+    .global-subcontent & {
       margin-top: $margin-primary-heading;
     }
   }
