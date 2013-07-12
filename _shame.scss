@@ -1,0 +1,18 @@
+// Workarounds for Firefox's decimal handling
+@-moz-document regexp("*") {
+  @media (min-width: $breakpoint-content) {
+    #iine li {
+      width: $width-column-3 - 0.01em;
+    }
+  }
+
+  @media (min-width: $breakpoint-content) {
+    #by-category li {
+      width: $width-column-3 - 0.01em;
+    }
+
+    #iine li {
+      width: $width-column-4 - 0.01em;
+    }
+  }
+}
