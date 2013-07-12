@@ -350,7 +350,7 @@ table {
 
   th {
     padding: 0.5em;
-    border: 1px solid $color-border-th;
+    border: 1px solid $color-border-table;
     vertical-align: top;
     background-color: $color-bg-th;
     text-align: left;
@@ -358,7 +358,7 @@ table {
 
   td {
     padding: 0.5em;
-    border: 1px solid $color-border-td;
+    border: 1px solid $color-border-table;
     vertical-align: top;
     background-color: $color-bg-td;
   }

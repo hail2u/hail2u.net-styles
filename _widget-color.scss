@@ -7,7 +7,7 @@ $color-cse-text: mixxd($color-fg, $color-bg, 0.9);
 $color-cse-text-focus: mixxd($color-fg, $color-bg, 0.7);
 
 // Read Older
-$color-fg-read-older: $color-fg-body;
+$color-fg-read-older: $color-fg;
 
 // Sidenote
 $color-fg-sidenote: mixxd($color-fg, $color-bg, 0.6);
@@ -19,9 +19,11 @@ $color-fg-recent-posts-time: mixxd($color-fg, $color-bg, 0.6);
 $color-fg-monthly-archives: mixxd($color-fg, $color-bg, 0.8);
 
 // Paging
-$color-bg-paging: $color-bg-elsewhere;
-$color-bg-paging-hover: $color-bg-elsewhere-hover;
+$color-bg-paging: mixxd($color-fg, $color-bg, 0.9);
+$color-bg-paging-hover: $color-light;
 
 // Shots-on-iine!
-$color-fg-iine: $color-fg-body;
+$color-fg-iine: $color-fg;
 $color-bg-iine: mixxd($color-fg, $color-bg, 0.96);
+$color-fg-iine-caption: $color-bg;
+$color-bg-iine-caption: transparentize($color-fg, 0.3);
