@@ -71,10 +71,9 @@
     bottom: 0;
     width: 100%;
     line-height: 1;
-    color: white;
-    background-color: black;
+    color: $color-fg-iine-caption;
+    background-color: $color-bg-iine-caption;
     text-align: center;
-    opacity: 0.6;
   }
 
   img {
