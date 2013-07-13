@@ -13,6 +13,7 @@ $color-fg-pre: $color-fg;
 $color-fg-link: $color-base;
 $color-fg-link-visited: $color-dark;
 $color-fg-link-hover: $color-darkest;
+$color-fg-code: complement($color-darkest);
 $color-fg-logo: $color-bg;
 $color-fg-gnav: $color-fg;
 $color-fg-gnav-hover: $color-base;
