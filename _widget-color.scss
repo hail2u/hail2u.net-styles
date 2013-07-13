@@ -19,7 +19,7 @@ $color-fg-recent-posts-time: mixxd($color-fg, $color-bg, 0.6);
 $color-fg-monthly-archives: mixxd($color-fg, $color-bg, 0.8);
 
 // Paging
-$color-bg-paging: mixxd($color-fg, $color-bg, 0.9);
+$color-bg-paging: mix($color-bg, grayscale($color-light));
 $color-bg-paging-hover: $color-light;
 
 // Shots-on-iine!

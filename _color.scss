@@ -28,7 +28,7 @@ $color-bg-mark: rgb(255, 238, 0);
 $color-bg-th: mixxd($color-fg, $color-bg, 0.9);
 $color-bg-td: mixxd($color-fg, $color-bg, 0.98);
 $color-bg-logo: $color-light;
-$color-bg-elsewhere: mixxd($color-fg, $color-bg, 0.9);
+$color-bg-elsewhere: mix($color-bg, grayscale($color-light));
 $color-bg-elsewhere-hover: $color-light;
 
 $color-border-focus: $color-lightest;
