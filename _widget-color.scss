@@ -4,7 +4,7 @@ $color-bg-selection: $color-darkest;
 
 // Google Custom Search Engine
 $color-cse-text: mixxd($color-fg, $color-bg, 0.9);
-$color-cse-text-focus: mixxd($color-fg, $color-bg, 0.7);
+$color-cse-text-focus: $color-dark;
 
 // Read Older
 $color-fg-read-older: $color-fg;
