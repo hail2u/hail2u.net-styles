@@ -8,7 +8,10 @@ $version: "6.37";
  */
 
 // Function
-@import "function";
+@import "function-color-adjust-rgb";
+@import "function-color-mixxd";
+@import "function-math-em";
+@import "function-math-pow";
 
 // Variable
 @import "font";
