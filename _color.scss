@@ -31,7 +31,7 @@ $color-bg-logo: $color-light;
 $color-bg-elsewhere: mix($color-bg, grayscale($color-light));
 $color-bg-elsewhere-hover: $color-light;
 
-$color-border-focus: $color-lightest;
+$color-border-link-focus: $color-lightest;
 $color-border-strong: $color-fg;
 $color-border-ins: $color-fg;
 $color-border-table: mixxd($color-fg, $color-bg, 0.8);
