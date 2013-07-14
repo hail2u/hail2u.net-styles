@@ -32,11 +32,11 @@
     }
 
     &[rel="prev"]::before {
-      background-image: $image-left-arrow;
+      background-image: $image-arrow-left;
     }
 
     &[rel="next"]::before {
-      background-image: $image-right-arrow;
+      background-image: $image-arrow-right;
     }
   }
 
