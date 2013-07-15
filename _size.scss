@@ -6,6 +6,7 @@ $line-height-heading: 1.25;
 $margin-default: em($line-height-default);
 $margin-heading: ($margin-default * 2);
 $margin-primary-heading: ($margin-heading * 2);
+$margin-mini: ($margin-default / 3);
 
 // Indent
 $indent-default: em(pow($ratio-golden, 2));
