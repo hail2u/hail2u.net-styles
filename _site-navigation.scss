@@ -28,7 +28,7 @@
   }
 
   mark {
-    border-bottom-width: 3px;
+    border-bottom-width: $width-border-nav-item-active;
     border-bottom-style: solid;
     color: $color-fg-gnav-active;
     background-color: transparent;

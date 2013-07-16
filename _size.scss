@@ -42,6 +42,9 @@ $width-logo: $width-column-1;
 $height-logo: $width-column-1;
 $height-nav: $height-logo;
 
+// Decoration
+$width-border-nav-item-active: 0.2em;
+
 // Breakpoint
 $breakpoint-content: ($width-gap + $width-column-1 + $width-gutter + $width-content + $width-gutter + $width-column-1 + $width-gap);
 $breakpoint-full: ($width-gap + $width-column-1 + $width-gutter + $width-full + $width-gutter + $width-column-1 + $width-gap);
