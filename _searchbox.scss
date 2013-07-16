@@ -1,8 +1,8 @@
-// Google Custom Search Engine
+// Searchbox
 @import "scss-partials/image-replacement";
 @import "scss-partials/vendor-extension";
 
-#cse-search-box {
+.searchbox {
   div {
     margin-top: $margin-default;
     display: inline-block;

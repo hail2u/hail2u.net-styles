@@ -1,17 +1,13 @@
-// Category Archives
-#by-category {
-  ul {
-    @extend %column-container;
-  }
+// Flat UL
+.flat-ul {
+  @extend %column-container;
 
   li {
     @extend %column-3;
   }
 
   @media (min-width: $breakpoint-content) {
-    ul {
-      padding-left: 0;
-    }
+    padding-left: 0;
 
     li {
       display: block;
