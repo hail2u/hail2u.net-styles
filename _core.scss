@@ -128,13 +128,9 @@ hr {
 pre {
   @extend %margin-default;
 
-  margin-right: (- $width-gap);
-  margin-left: (- $width-gap);
-  padding: $width-gap;
+  margin-left: $indent-default;
   clear: both;
   line-height: 1.25;
-  color: $color-fg-pre;
-  background-color: $color-bg-pre;
   font-family: $font-stack-code;
   font-size: 1em;
   word-wrap: break-word;
