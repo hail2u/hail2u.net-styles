@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $breakpoint-content) {
-    #by-category li {
+    .flat-ul li {
       width: $width-column-3 - 0.01em;
     }
 
