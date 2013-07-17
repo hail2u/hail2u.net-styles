@@ -1,7 +1,9 @@
 // Footlinks
 .footlinks {
-  padding-left: 0;
-  color: $color-fg-license;
+  ul {
+    padding-left: 0;
+    color: $color-fg-license;
+  }
 
   li {
     display: inline;
@@ -16,7 +18,9 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-top: 0;
-    text-align: right;
+    ul{
+      margin-top: 0;
+      text-align: right;
+    }
   }
 }
