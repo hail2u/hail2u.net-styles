@@ -7,15 +7,14 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-  }
 
-  a[rel="prev"]::before {
-    display: inline;
-    content: "Read Older:\000a";
-    color: $color-fg-read-older;
-    font-weight: bold;
-    text-transform: uppercase;
-    white-space: pre;
+    &::before {
+      display: block;
+      content: "Read Older:";
+      color: $color-fg-read-older;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
   }
 
   @media (min-width: $breakpoint-full) {
@@ -23,11 +22,6 @@
 
     p {
       margin-top: $margin-primary-heading;
-      margin-left: (- ($width-suppli + $width-gutter));
-    }
-
-    a[rel="prev"]::before {
-      content: "Read Older:\0020";
     }
   }
 }
