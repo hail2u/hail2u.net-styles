@@ -2,9 +2,8 @@
 .seealso {
   @extend %margin-default;
 
-  $chain-size: em($line-height-default * 1.5);
+  $chain-size: em($line-height-default);
 
-  position: relative;
   line-height: $chain-size;
   font-weight: bold;
 
@@ -13,8 +12,7 @@
   }
 
   &::before {
-    @extend %hanging-block;
-
+    margin-right: 0.25em;
     display: inline-block;
     width: $chain-size;
     height: $chain-size;
