@@ -39,3 +39,11 @@
     content: "Information: ";
   }
 }
+
+.message-okay {
+  @include message-coloring($color-message-okay);
+
+  &::before {
+    content: "OK: ";
+  }
+}
