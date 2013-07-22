@@ -10,12 +10,22 @@ $color-code-highlight-comment: #999;
 $color-code-highlight-number: #096;
 
 // Searchbox
+$color-fg-searchbox-icon: black;
 $color-border-searchbox: mixxd($color-bg, $color-fg, 0.1);
 $color-border-searchbox-focus: mixxd($color-bg, $color-fg, 0.3);
+
+// Share on Twitter
+@import "scss-partials/corporate-colors";
+
+$color-fg-twitter: $cc-twitter;
+$color-fg-twitterbird: $color-fg-twitter;
 
 // Seemore
 $color-fg-seemore: $color-bg;
 $color-bg-seemore: $color-light;
+
+// Seealso
+$color-fg-seealso-chain: $color-fg;
 
 // Sidenote
 $color-fg-sidenote: mixxd($color-fg, $color-bg, 0.6);
@@ -36,6 +46,8 @@ $color-fg-flat-dl: mixxd($color-fg, $color-bg, 0.8);
 $color-fg-read-older-label: $color-fg;
 
 // Paging
+$color-fg-paging: $color-bg;
+$color-fg-paging-arrow: $color-fg-paging;
 $color-bg-paging: $color-light;
 
 // Shots-on-iine!

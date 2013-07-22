@@ -9,6 +9,7 @@ $color-lightest: rgb(111, 188, 221);
 
 // Semantic
 $color-fg-body: $color-fg;
+$color-fg-hr: $color-fg;
 $color-fg-pre: $color-fg;
 $color-fg-link: $color-base;
 $color-fg-link-visited: $color-dark;
@@ -20,6 +21,7 @@ $color-fg-gnav-hover: $color-base;
 $color-fg-gnav-active: $color-base;
 $color-fg-article-meta: mixxd($color-fg, $color-bg, 0.6);
 $color-fg-article-meta-time: $color-fg;
+$color-fg-elsewhere-icon: $color-bg;
 $color-fg-footlinks: mixxd($color-fg, $color-bg, 0.6);
 
 $color-bg-body: $color-bg;
