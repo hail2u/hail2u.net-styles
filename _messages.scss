@@ -1,11 +1,5 @@
 // Messages
-@mixin message-coloring($color) {
-  border-color: $color;
-  color: mixxd($color, black, 0.3);
-  background-color: mixxd($color, white, 0.8);
-}
-
-.message {
+%message {
   padding: 0.5em 1em;
   border: 1px solid;
 
@@ -14,24 +8,32 @@
   }
 }
 
-.warning {
-  @include message-coloring(#ffdd00);
+@mixin message-coloring($color) {
+  @extend %message;
+
+  border-color: mixxd($color, white, 0.6);
+  color: mixxd($color, black, 0.2);
+  background-color: mixxd($color, white, 0.8);
+}
+
+.message-warning {
+  @include message-coloring($color-message-warning);
 
   &::before {
     content: "Warning: ";
   }
 }
 
-.error {
-  @include message-coloring(#ff2233);
+.message-error {
+  @include message-coloring($color-message-error);
 
   &::before {
     content: "Error: ";
   }
 }
 
-.information {
-  @include message-coloring(#115599);
+.message-information {
+  @include message-coloring($color-message-information);
 
   &::before {
     content: "Information: ";

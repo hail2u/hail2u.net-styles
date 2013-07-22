@@ -13,6 +13,11 @@ $color-bg-seemore: $color-lightest;
 // Sidenote
 $color-fg-sidenote: mixxd($color-fg, $color-bg, 0.6);
 
+// Messages
+$color-message-warning: #ffdd00;
+$color-message-error: #ff2233;
+$color-message-information: #115599;
+
 // Posts
 $color-fg-posts-time: mixxd($color-fg, $color-bg, 0.6);
 
