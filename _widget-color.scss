@@ -6,17 +6,17 @@ $color-bg-selection: $color-darkest;
 $color-cse-text: mixxd($color-fg, $color-bg, 0.9);
 $color-cse-text-focus: $color-dark;
 
-// Read Older
-$color-fg-read-older: $color-fg;
-
 // Sidenote
 $color-fg-sidenote: mixxd($color-fg, $color-bg, 0.6);
 
-// Recent Posts
-$color-fg-recent-posts-time: mixxd($color-fg, $color-bg, 0.6);
+// Posts
+$color-fg-posts-time: mixxd($color-fg, $color-bg, 0.6);
 
-// Monthly Archives
-$color-fg-monthly-archives: mixxd($color-fg, $color-bg, 0.8);
+// Flat DL
+$color-fg-flat-dl: mixxd($color-fg, $color-bg, 0.8);
+
+// Read Older
+$color-fg-read-older: $color-fg;
 
 // Paging
 $color-bg-paging: mix($color-bg, grayscale($color-light));
