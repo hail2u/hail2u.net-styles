@@ -1,13 +1,14 @@
-$version: "1.0";
-
 /*!
- * debug.css v#{$version}
+ * debug.css
  *
  * LICENSE: http://hail2u.mit-license.org/2012
  */
 
 // Functions
-@import "function";
+@import "function-color-adjust-rgb";
+@import "function-color-mixxd";
+@import "function-math-em";
+@import "function-math-pow";
 
 // Variables
 @import "font";
