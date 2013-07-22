@@ -1,17 +1,36 @@
+// Dedecoration
 @import "scss-partials/black-prints";
 
 @media print {
   @include black-prints;
 
-  body {
-    font-family: "Georgia", serif;
-  }
-
+  // Hiding
   aside,
-  nav {
+  nav,
+  hr::before,
+  blockquote::before,
+  .logo a::before,
+  .logo mark::before,
+  .elsewhere,
+  .footlinks,
+  .seealso::before {
     display: none;
   }
 
+  // Font
+  body {
+    font-family: $font-stack-body-print;
+  }
+
+  pre,
+  code,
+  var,
+  samp,
+  kbd {
+    font-family: $font-stack-code-print;
+  }
+
+  // Page Break
   h1,
   h2,
   h3,
@@ -20,49 +39,24 @@
   h6 {
     page-break-after: avoid;
     page-break-inside: avoid;
-    font-family: inherit;
   }
 
+  pre,
+  blockquote,
+  ul,
+  ol,
+  dl
+  figure,
+  table {
+    page-break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  // Design Change
   hr {
-    margin-right: auto;
-    margin-left: auto;
     border-top: 1px dashed black;
     width: 80%;
     height: 0;
-
-    &::before {
-      display: none;
-    }
-  }
-
-  pre {
-    font-family: "Courier New", monospace;
-    page-break-inside: avoid;
-  }
-
-  blockquote {
-    page-break-inside: avoid;
-  }
-
-  ul,
-  ol,
-  dl {
-    page-break-before: avoid;
-  }
-
-  figure {
-    page-break-inside: avoid;
-
-    figcaption {
-      font-family: inherit;
-    }
-  }
-
-  code,
-  var,
-  samp,
-  kbd {
-    font-family: "Courier New", monospace;
   }
 
   a {
@@ -73,8 +67,8 @@
     }
   }
 
-  table {
-    page-break-inside: avoid;
+  figure img {
+    border: 0;
   }
 
   .logo {
@@ -88,38 +82,10 @@
       width: auto;
       height: auto;
       line-height: 1;
-
-      &::before {
-        display: none;
-      }
-    }
-  }
-
-  .wrapper > section::after,
-  .wrapper > article::after {
-    display: none;
-  }
-
-  .wrapper h2 + footer {
-    font-family: inherit;
-
-    br {
-      display: none;
     }
   }
 
   .global-footer {
-    border-top: 1px solid black;
-    font-family: inherit;
-    text-align: right;
-
-    section,
-    > p {
-      display: none;
-    }
-  }
-
-  #links li {
-    white-space: normal;
+    text-align: center;
   }
 }
