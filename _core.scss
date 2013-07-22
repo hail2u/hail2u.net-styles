@@ -238,7 +238,7 @@ figcaption {
   @extend %hanging-block;
 
   @media screen and (min-width: $breakpoint-full) {
-    figure &:last-child {
+    &:last-child {
       top: auto;
       bottom: em(($line-height-default - 1) * 0.5);
     }
