@@ -6,6 +6,10 @@ $color-bg-selection: $color-darkest;
 $color-cse-text: mixxd($color-fg, $color-bg, 0.9);
 $color-cse-text-focus: $color-dark;
 
+// Seemore
+$color-fg-seemore: $color-bg;
+$color-bg-seemore: $color-lightest;
+
 // Sidenote
 $color-fg-sidenote: mixxd($color-fg, $color-bg, 0.6);
 
