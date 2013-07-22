@@ -1,17 +1,25 @@
 // Read Older
 .read-older {
+  $ratio: $ratio-h3;
+
   text-align: center;
 
+  a {
+    font-size: percentage($ratio);
+  }
+
   p {
-    margin-top: $margin-heading;
+    margin-top: ($margin-heading / $ratio);
     overflow: hidden;
+    line-height: $line-height-heading;
     white-space: nowrap;
     text-overflow: ellipsis;
 
     &::before {
       display: block;
       content: "Read Older:";
-      color: $color-fg-read-older;
+      color: $color-fg-read-older-label;
+      font-size: percentage(1 / $ratio);
       font-weight: bold;
       text-transform: uppercase;
     }
@@ -21,7 +29,7 @@
     text-align: left;
 
     p {
-      margin-top: $margin-primary-heading;
+      margin-top: ($margin-primary-heading / $ratio);
     }
   }
 }

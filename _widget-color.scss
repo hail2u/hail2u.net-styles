@@ -20,7 +20,7 @@ $color-fg-posts-time: mixxd($color-fg, $color-bg, 0.6);
 $color-fg-flat-dl: mixxd($color-fg, $color-bg, 0.8);
 
 // Read Older
-$color-fg-read-older: $color-fg;
+$color-fg-read-older-label: $color-fg;
 
 // Paging
 $color-bg-paging: mix($color-bg, grayscale($color-light));
