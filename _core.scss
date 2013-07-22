@@ -118,10 +118,10 @@ hr {
   max-width: 80%;
   height: ($margin-default + $height + $margin-default);
   background-color: transparent;
-  opacity: 0.1;
 
   &::before {
     background-image: $image-seven-circles;
+    opacity: 0.1;
   }
 }
 
