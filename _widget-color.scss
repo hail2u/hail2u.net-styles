@@ -8,7 +8,7 @@ $color-cse-text-focus: $color-dark;
 
 // Seemore
 $color-fg-seemore: $color-bg;
-$color-bg-seemore: $color-lightest;
+$color-bg-seemore: $color-light;
 
 // Sidenote
 $color-fg-sidenote: mixxd($color-fg, $color-bg, 0.6);
@@ -29,8 +29,7 @@ $color-fg-flat-dl: mixxd($color-fg, $color-bg, 0.8);
 $color-fg-read-older-label: $color-fg;
 
 // Paging
-$color-bg-paging: mix($color-bg, grayscale($color-light));
-$color-bg-paging-hover: $color-light;
+$color-bg-paging: $color-light;
 
 // Shots-on-iine!
 $color-fg-iine: $color-fg;

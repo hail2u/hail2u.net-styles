@@ -27,10 +27,6 @@
     height: $paging-icon-size;
     background-color: $color-bg-paging;
 
-    &:hover {
-      background-color: $color-bg-paging-hover;
-    }
-
     &[rel="prev"]::before {
       background-image: $image-arrow-left;
     }
