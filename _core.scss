@@ -255,6 +255,18 @@ a {
     color: $color-fg-link-hover;
   }
 
+  h2 &,
+  h3 &,
+  h4 &,
+  h5 &,
+  h6 & {
+    color: inherit;
+
+    &:hover {
+      color: $color-fg-link;
+    }
+  }
+
   section > p &,
   article > p &,
   div[itemprop="articleBody"] > p & {
