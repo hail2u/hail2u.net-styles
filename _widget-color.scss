@@ -2,9 +2,9 @@
 $color-fg-selection: grayscale($color-bg);
 $color-bg-selection: $color-darkest;
 
-// Google Custom Search Engine
-$color-cse-text: mixxd($color-fg, $color-bg, 0.9);
-$color-cse-text-focus: $color-dark;
+// Searchbox
+$color-border-searchbox: mixxd($color-bg, $color-fg, 0.1);
+$color-border-searchbox-focus: mixxd($color-bg, $color-fg, 0.3);
 
 // Seemore
 $color-fg-seemore: $color-bg;

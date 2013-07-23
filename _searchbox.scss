@@ -17,7 +17,7 @@
     @include box-sizing(border-box);
 
     padding: 0 ($height-searchbox + 0.25em) 0 0.25em !important;
-    border: 1px solid $color-cse-text !important;
+    border: 1px solid $color-border-searchbox !important;
     width: $width-searchbox;
     height: $height-searchbox;
     vertical-align: middle;
@@ -26,7 +26,7 @@
     background-position: 0.25em center !important;
 
     &:focus {
-      border-color: $color-cse-text-focus !important;
+      border-color: $color-border-searchbox-focus !important;
     }
   }
 
