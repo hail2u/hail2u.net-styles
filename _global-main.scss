@@ -1,6 +1,6 @@
 // Global Main
 .global-main {
-  margin-top: (- $margin-primary-heading + $margin-default + em($line-height-default));
+  margin-top: (- $margin-primary-heading + em($line-height-default) + $margin-default);
   margin-right: auto;
   margin-left: auto;
   padding-right: $width-gap;
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $breakpoint-content) {
-    margin-top: (- $margin-primary-heading + (($margin-heading + $margin-primary-heading) / 2) + em($line-height-default));
+    margin-top: auto;
   }
 
   @media (min-width: $breakpoint-full) {
