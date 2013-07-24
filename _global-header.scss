@@ -7,12 +7,10 @@
   padding-left: $width-gap;
   position: relative;
   max-width: $width-content;
-  height: ($height-logo + $height-nav);
   text-align: center;
 
   @media (min-width: $breakpoint-content) {
     margin-top: (($margin-heading + $margin-primary-heading) / 2);
-    height: $height-logo;
     text-align: left;
   }
 
