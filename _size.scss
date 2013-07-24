@@ -10,6 +10,7 @@ $margin-mini: ($margin-default / 3);
 
 // Indent
 $indent-default: em(pow($ratio-golden, 2));
+$indent-mini: ($indent-default / 2);
 
 // Column
 $sce-gutter: em($ratio-golden);
@@ -43,6 +44,7 @@ $height-logo: $width-column-1;
 $height-nav: $height-logo;
 
 // Decoration
+$width-border-blockquote: 0.25em;
 $width-border-nav-item-active: 0.2em;
 
 // Breakpoint

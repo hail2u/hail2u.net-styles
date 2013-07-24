@@ -140,51 +140,15 @@ pre {
 }
 
 blockquote {
-  @extend %ir;
-
-  $size: ($indent-default - 1em);
-
-  margin: 0 0 0 $indent-default;
-  position: relative;
-  min-height: $size;
-  overflow: visible;
-  clear: both;
-
-  &::before {
-    margin-right: 1em;
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: $size;
-    height: $size;
-    background-image: $image-double-opening-quote;
-    opacity: 0.1;
-  }
+  margin: 0;
+  border-left: $width-border-blockquote solid $color-border-blockquote;
+  padding-left: ($indent-mini - $width-border-blockquote);
 
   + figcaption {
     @extend %margin-mini;
 
-    margin-left: $indent-default;
-  }
-
-  @media (min-width: $breakpoint-full) {
-    $size: ($width-column-1 * 2 / 3);
-
-    margin-left: 0;
-    min-height: $size;
-
-    &::before {
-      margin-right: $width-gutter;
-      width: $size;
-      height: $size;
-    }
-
-    + figcaption {
-      margin-right: 0;
-      margin-left: 0;
-      position: static;
-      width: auto;
-    }
+    position: static;
+    width: auto;
   }
 }
 

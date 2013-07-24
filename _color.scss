@@ -31,6 +31,7 @@ $color-bg-logo: $color-light;
 $color-bg-elsewhere: mixxd($color-fg, $color-bg, 0.9);
 $color-bg-elsewhere-hover: $color-light;
 
+$color-border-blockquote: mixxd($color-fg, $color-bg, 0.9);
 $color-border-link-focus: $color-lightest;
 $color-border-strong: $color-fg;
 $color-border-ins: $color-fg;
