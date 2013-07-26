@@ -1,0 +1,13 @@
+// fit-icon() - Calcurate icon width to fit given width
+//
+// @param {number}  $width        Container width with any units
+// @param {number=} $count        Icon count
+// @param {number=} $ratio-margin Ratio of margin to icon width
+// @return {number}
+@function fit-icon($width, $count: 4, $ratio-margin: 0.25) {
+  $w: 1 / (1 + $ratio-margin);
+  $m: $w * $ratio-margin;
+  $wm: $w + $m;
+
+  @return ($width / ($wm * $count - $m) * ($wm * $count) / $count * $w);
+}

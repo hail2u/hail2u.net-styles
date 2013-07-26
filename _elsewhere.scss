@@ -1,8 +1,6 @@
 // Elsewhere
 .elsewhere {
-  $footer-icon-size: em($line-height-default);
-
-  border-top: 3px double $color-border-elsewhere;
+  border-top: $width-border-elsewhere double $color-border-elsewhere;
   padding-top: $margin-heading;
   position: relative;
 
@@ -13,8 +11,8 @@
   }
 
   li {
-    padding-right: ($footer-icon-size * 0.125);
-    padding-left: ($footer-icon-size * 0.125);
+    padding-right: ($margin-elsewhere-icon / 2);
+    padding-left: ($margin-elsewhere-icon / 2);
     display: table-cell;
   }
 
@@ -23,9 +21,9 @@
 
     border-radius: 50%;
     display: block;
-    width: $footer-icon-size;
-    height: $footer-icon-size;
-    line-height: $footer-icon-size;
+    width: $width-elsewhere-icon;
+    height: $height-elsewhere-icon;
+    line-height: $height-elsewhere-icon;
     background-color: $color-bg-elsewhere;
 
     &:hover,
@@ -71,7 +69,7 @@
     }
 
     li {
-      padding-right: ($footer-icon-size * 0.25);
+      padding-right: $margin-elsewhere-icon;
       padding-left: 0;
     }
   }

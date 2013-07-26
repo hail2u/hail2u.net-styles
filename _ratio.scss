@@ -15,3 +15,6 @@ $ratio-h3: ($ratio-primary-text * $ratio-golden);
 $ratio-h4: ($ratio-secondary-text / $ratio-golden);
 $ratio-h5: $ratio-primary-text;
 $ratio-h6: ($ratio-secondary-text / pow($ratio-golden, 2));
+
+// Main Component
+$ratio-elsewhere-icon-margin: 0.25;

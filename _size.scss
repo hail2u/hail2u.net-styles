@@ -42,10 +42,14 @@ $width-full: $width-column-12;
 $width-logo: $width-column-1;
 $height-logo: $width-column-1;
 $height-nav: $height-logo;
+$width-elsewhere-icon: fit-icon($width-suppli, 6, $ratio-elsewhere-icon-margin);
+$height-elsewhere-icon: $width-elsewhere-icon;
+$margin-elsewhere-icon: ($width-elsewhere-icon * $ratio-elsewhere-icon-margin);
 
 // Decoration
 $width-border-blockquote: 0.25em;
 $width-border-nav-item-active: 0.2em;
+$width-border-elsewhere: 3px;
 
 // Breakpoint
 $breakpoint-content: ($width-gap + $width-column-1 + $width-gutter + $width-content + $width-gutter + $width-column-1 + $width-gap);

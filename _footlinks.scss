@@ -20,6 +20,8 @@
   @media (min-width: $breakpoint-full) {
     ul{
       margin-top: 0;
+      height: $height-elsewhere-icon;
+      line-height: $height-elsewhere-icon;
       text-align: right;
     }
   }
