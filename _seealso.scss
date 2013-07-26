@@ -2,9 +2,6 @@
 .seealso {
   @extend %margin-default;
 
-  $chain-size: em($line-height-default);
-
-  line-height: $chain-size;
   font-weight: bold;
 
   a {
@@ -12,12 +9,12 @@
   }
 
   &::before {
-    margin-right: 0.25em;
+    margin-right: ($width-seealso-icon / 4);
     display: inline-block;
-    width: $chain-size;
-    height: $chain-size;
+    width: $width-seealso-icon;
     content: "\00a0";
     background-image: $image-chain;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 0.3;
