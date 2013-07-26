@@ -1,7 +1,5 @@
 // Paging
 .paging {
-  $paging-icon-size: $width-column-1;
-
   text-align: center;
 
   ul {
@@ -23,8 +21,8 @@
 
     border-radius: 50%;
     display: block;
-    width: $paging-icon-size;
-    height: $paging-icon-size;
+    width: $width-paging-icon;
+    height: $height-paging-icon;
     background-color: $color-bg-paging;
 
     &[rel="prev"]::before {
@@ -42,7 +40,7 @@
     ul {
       margin-top: $margin-primary-heading;
       display: block;
-      top: (($height-searchbox - $paging-icon-size) / 2);
+      top: (($height-searchbox - $height-paging-icon) / 2);
     }
 
     li {

@@ -2,8 +2,6 @@
 @import "scss-partials/corporate-colors";
 
 .share-on-twitter {
-  $bird-size: em($line-height-default);
-
   position: relative;
 
   p {
@@ -13,10 +11,10 @@
     background-image: $icon-twitterbird;
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: auto $bird-size;
+    background-size: $width-twitterbird auto;
 
     a {
-      padding-left: ($bird-size * 1.2);
+      padding-left: ($width-twitterbird * 1.2);
       color: $cc-twitter;
 
       &:hover {

@@ -1,8 +1,5 @@
 // Posts
 .posts {
-  $ratio: $ratio-h4;
-  $width-date: $width-column-2;
-
   > ul {
     padding-left: 0;
 
@@ -25,12 +22,12 @@
   @media (min-width: $breakpoint-content) {
     > ul {
       li {
-        padding-right: (($width-date + $width-gutter) / $ratio);
-        font-size: percentage($ratio);
+        padding-right: (($width-posts-date + $width-gutter) / $ratio-posts-item);
+        font-size: percentage($ratio-posts-item);
 
         time {
           margin-right: 0;
-          margin-left: ($width-gutter / $ratio);
+          margin-left: ($width-gutter / $ratio-posts-item);
           position: absolute;
           top: 0;
           right: 0;
