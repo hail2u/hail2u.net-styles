@@ -1,7 +1,7 @@
 // pow() - Raise number to the nth power.
 //
-// @param {number} $base
-// @param {number} $exponent An integer
+// @param {number} $base     Base number
+// @param {number} $exponent Exponent
 // @returns {number}
 @function pow($base, $exponent) {
   $raised: 1;
