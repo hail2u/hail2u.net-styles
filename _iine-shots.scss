@@ -9,6 +9,7 @@
   color: $color-fg-iine;
   background-color: $color-bg-iine;
   font-family: $font-stack-iine;
+  font-style: italic;
 
   h2 {
     margin-top: 0;
@@ -79,10 +80,6 @@
 
   img {
     border: none;
-  }
-
-  p {
-    font-style: italic;
   }
 
   & + .global-footer .elsewhere {
