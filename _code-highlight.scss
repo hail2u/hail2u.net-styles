@@ -5,26 +5,26 @@
 .opn,
 .clo,
 .fun {
-  color: #333;
+  color: $color-code-highlight-default;
 }
 
 .str,
 .atv {
-  color: #393;
+  color: $color-code-highlight-string;
 }
 
 .kwd,
 .tag {
-  color: #36c;
+  color: $color-code-highlight-keyword;
 }
 
 .com,
 .dec,
 .var {
-  color: #999;
+  color: $color-code-highlight-comment;
 }
 
 .lit,
 .atn {
-  color: #c63;
+  color: $color-code-highlight-number;
 }

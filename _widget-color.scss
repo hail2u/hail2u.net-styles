@@ -2,6 +2,13 @@
 $color-fg-selection: grayscale($color-bg);
 $color-bg-selection: $color-darkest;
 
+// Code Highlight
+$color-code-highlight-default: #333;
+$color-code-highlight-string: #c03;
+$color-code-highlight-keyword: #06c;
+$color-code-highlight-comment: #999;
+$color-code-highlight-number: #096;
+
 // Searchbox
 $color-border-searchbox: mixxd($color-bg, $color-fg, 0.1);
 $color-border-searchbox-focus: mixxd($color-bg, $color-fg, 0.3);
