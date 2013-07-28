@@ -48,6 +48,7 @@ $color-bg-paging: $color-light;
 
 // iine! Shots
 $color-fg-iine: $color-fg;
-$color-bg-iine: mixxd($color-fg, $color-bg, 0.96);
 $color-fg-iine-caption: $color-bg;
+$color-bg-iine: mixxd($color-fg, $color-bg, 0.96);
 $color-bg-iine-caption: transparentize($color-fg, 0.3);
+$color-stroke-iine: $color-bg;
