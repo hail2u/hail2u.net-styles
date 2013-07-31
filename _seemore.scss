@@ -1,12 +1,7 @@
 // Seemore
 .seemore {
   a {
-    padding: 0 ($height-seemore  / 2);
-    border-radius: #{($height-seemore / 2)}/#{50%};
-    display: inline-block;
-    line-height: $height-seemore;
-    color: $color-fg-seemore;
-    background-color: $color-bg-seemore;
+    font-size: $ratio-seemore;
 
     &::after {
       content: "\0020\2192"; // Rightwards Arrow
