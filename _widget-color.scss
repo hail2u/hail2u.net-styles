@@ -1,6 +1,6 @@
 // Selection
-$color-fg-selection: grayscale($color-bg);
-$color-bg-selection: $color-darkest;
+$color-fg-selection: inherit;
+$color-bg-selection: transparentize($color-darkest, 0.6);
 
 // Code Highlight
 $color-code-highlight-default: #333;
