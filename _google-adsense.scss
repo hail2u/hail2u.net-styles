@@ -4,8 +4,25 @@
   clear: both;
   overflow: hidden;
   line-height: 1;
+}
 
-  ins {
-    border-bottom: none;
+.hail2unet-rwd {
+  border-bottom: none;
+  width: 300px;
+  height: 250px;
+
+  @media (min-width: 500px) {
+    width: 468px;
+    height: 60px;
+  }
+
+  @media (min-width: 960px) {
+    width: 728px;
+    height: 90px;
+  }
+
+  @media (min-width: 1760px) {
+    width: 970px;
+    height: 90px;
   }
 }
