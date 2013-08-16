@@ -1,3 +1,6 @@
+// normalize.css
+@import "normalize";
+
 $version: "6.39.2";
 
 /*!
@@ -6,9 +9,6 @@ $version: "6.39.2";
  * LICENSE:    http://hail2u.mit-license.org/2011
  * REPOSITORY: https://github.com/hail2u/hail2u.net-styles
  */
-
-// normalize.css
-@import "normalize";
 
 // Function
 @import "function-color-adjust-rgb";
