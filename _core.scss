@@ -26,22 +26,13 @@
 }
 
 html {
-  font-family: sans-serif;
   font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
 
   @include adjust-font-size((18px, 21px, 24px, 27px));
 }
 
-// Scripting
-template {
-  display: none;
-}
-
 // Sections
 body {
-  margin: 0;
   line-height: $line-height-default;
   color: $color-fg-body;
   background-color: $color-bg-body;
@@ -106,7 +97,6 @@ p {
 hr {
   @extend %ir;
   @extend %margin-default;
-  @include box-sizing(content-box);
 
   $height: em($line-height-default);
 
@@ -135,8 +125,6 @@ pre {
   font-size: 1em;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  white-space: pre;
-  white-space: pre-wrap;
 }
 
 blockquote {
@@ -212,7 +200,6 @@ figcaption {
 // Text-level Semantics
 a {
   color: $color-fg-link;
-  background-color: transparent;
   text-decoration: none;
 
   &:hover {
@@ -247,8 +234,6 @@ strong {
   border-bottom: 1px dashed $color-border-strong;
 }
 
-@import "normalize.scss/typography/small";
-
 cite {
   font-style: normal;
 }
@@ -265,8 +250,6 @@ q {
   }
 }
 
-@import "normalize.scss/typography/dfn";
-
 abbr {
   font-size: 87.5%;
   letter-spacing: 0.063em;
@@ -278,14 +261,11 @@ var,
 samp,
 kbd {
   font-family: $font-stack-code;
-  font-size: 1em;
 }
 
-@import "normalize.scss/typography/sub-and-sup";
-
 mark {
+  color: inherit;
   background-color: $color-bg-mark;
-  font-weight: bold;
 }
 
 // Edits
@@ -304,7 +284,6 @@ del {
 img {
   @include box-sizing(border-box);
 
-  border: 0;
   max-width: 100%;
   height: auto;
   -ms-interpolation-mode: bicubic;
@@ -320,8 +299,6 @@ table {
   @extend %margin-default;
 
   clear: both;
-  border-collapse: collapse;
-  border-spacing: 0;
 
   th {
     padding: 0.5em;
@@ -338,19 +315,3 @@ table {
     background-color: $color-bg-td;
   }
 }
-
-// Forms
-@import "normalize.scss/forms/fieldset";
-@import "normalize.scss/forms/legend";
-@import "normalize.scss/forms/fix-font";
-@import "normalize.scss/forms/fix-line-height";
-@import "normalize.scss/forms/fix-text-transform";
-@import "normalize.scss/forms/buttons";
-@import "normalize.scss/forms/disabled";
-@import "normalize.scss/forms/checkbox-and-radio";
-@import "normalize.scss/forms/search";
-@import "normalize.scss/forms/fix-focus-inner";
-@import "normalize.scss/forms/textarea";
-
-// SVG
-@import "normalize.scss/embed/svg";
