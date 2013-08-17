@@ -118,7 +118,6 @@ hr {
 pre {
   @extend %margin-default;
 
-  margin-left: $indent-default;
   clear: both;
   line-height: 1.25;
   font-family: $font-stack-code;
