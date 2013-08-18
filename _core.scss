@@ -76,10 +76,6 @@ h6 {
   margin: ($margin-heading / $ratio-h6) 0 0 0;
 }
 
-main {
-  display: block;
-}
-
 // Grouping Content
 p {
   @extend %margin-default;
