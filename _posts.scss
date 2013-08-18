@@ -8,39 +8,37 @@
     }
   }
 
-  > ul {
+  ul {
     padding-left: 0;
+  }
 
-    li {
-      @extend %margin-mini;
+  li {
+    @extend %margin-mini;
 
-      position: relative;
-      overflow: hidden;
-      list-style-type: none;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    list-style-type: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
-      time {
-        display: block;
-        color: $color-fg-posts-time;
-      }
+    time {
+      display: block;
+      color: $color-fg-posts-time;
     }
   }
 
   @media (min-width: $breakpoint-content) {
-    > ul {
-      li {
-        padding-right: (($width-posts-date + $width-gutter) / $ratio-posts-item);
-        font-size: percentage($ratio-posts-item);
+    li {
+      padding-right: (($width-posts-date + $width-gutter) / $ratio-posts-item);
+      font-size: percentage($ratio-posts-item);
 
-        time {
-          margin-right: 0;
-          margin-left: ($width-gutter / $ratio-posts-item);
-          position: absolute;
-          top: 0;
-          right: 0;
-          text-align: right;
-        }
+      time {
+        margin-right: 0;
+        margin-left: ($width-gutter / $ratio-posts-item);
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: right;
       }
     }
   }
