@@ -184,10 +184,12 @@ figure {
 figcaption {
   @extend %hanging-block;
 
+  top: $width-border-img;
+
   @media (min-width: $breakpoint-full) {
     &:last-child {
       top: auto;
-      bottom: em(($line-height-default - 1) * 0.5);
+      bottom: (em(($line-height-default - 1) * 0.5) + $width-border-img);
     }
   }
 }
@@ -284,7 +286,7 @@ img {
   -ms-interpolation-mode: bicubic;
 
   figure & {
-    border: $width-gap solid white;
+    border: $width-border-img solid white;
     vertical-align: text-bottom;
   }
 }
