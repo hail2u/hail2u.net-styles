@@ -1,5 +1,13 @@
 // Posts
 .posts {
+  > a {
+    color: inherit;
+
+    &:hover {
+      color: $color-fg-link-hover;
+    }
+  }
+
   > ul {
     padding-left: 0;
 
@@ -34,6 +42,12 @@
           text-align: right;
         }
       }
+    }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    .article-footer {
+      top: em($ratio-h2 * $line-height-heading);
     }
   }
 }
