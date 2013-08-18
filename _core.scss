@@ -62,18 +62,21 @@ h4 {
   @include heading;
 
   margin: ($margin-heading / $ratio-h4) 0 0 0;
+  font-size: percentage($ratio-h4);
 }
 
 h5 {
   @include heading;
 
   margin: ($margin-heading / $ratio-h5) 0 0 0;
+  font-size: percentage($ratio-h5);
 }
 
 h6 {
   @include heading;
 
   margin: ($margin-heading / $ratio-h6) 0 0 0;
+  font-size: percentage($ratio-h6);
 }
 
 // Grouping Content
