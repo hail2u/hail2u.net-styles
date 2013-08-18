@@ -41,13 +41,13 @@ body {
 
 @mixin heading {
   line-height: $line-height-heading;
+  font-weight: normal;
 }
 
 h2 {
   @include heading;
 
   margin: ($margin-primary-heading / $ratio-h2) 0 0 0;
-  font-weight: normal;
   font-size: percentage($ratio-h2);
 }
 
