@@ -48,7 +48,7 @@
       color: $color-fg-link;
 
       figcaption {
-        @include transition(all 0.1s ease-out);
+        @include transition(bottom 0.1s ease-out);
 
         bottom: (- (0.7em * 2 + 1));
       }
@@ -64,7 +64,7 @@
 
   figcaption {
     @include box-sizing(border-box);
-    @include transition(all 0.2s ease-in);
+    @include transition(bottom 0.2s ease-in);
 
     margin-right: 0;
     padding: 0.7em 0;
