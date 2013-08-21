@@ -83,7 +83,7 @@
     border: none;
   }
 
-  & + .global-footer .elsewhere {
+  & + [role="contentinfo"] .elsewhere {
     border-top: none;
   }
 

@@ -1,5 +1,9 @@
 // Posts
 .posts {
+  footer {
+    @extend %article-footer;
+  }
+
   > a {
     color: inherit;
 
@@ -44,7 +48,7 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    .article-footer {
+    footer {
       top: em($ratio-h2 * $line-height-heading);
     }
   }

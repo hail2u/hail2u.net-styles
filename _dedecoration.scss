@@ -9,8 +9,8 @@
   nav,
   hr::before,
   blockquote::before,
-  .logo a::before,
-  .logo mark::before,
+  [role="banner"] h1 a::before,
+  [role="banner"] h1 mark::before,
   .elsewhere,
   .footlinks,
   .seealso::before {
@@ -70,7 +70,7 @@
     border: 0;
   }
 
-  .logo {
+  [role="banner"] h1 {
     $ratio: 2.25;
 
     margin-top: ($margin-heading / $ratio);
@@ -84,7 +84,7 @@
     }
   }
 
-  .global-footer {
+  [role="contentinfo"] {
     text-align: center;
   }
 }

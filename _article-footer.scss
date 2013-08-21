@@ -1,5 +1,5 @@
 // Article Footer
-.article-footer {
+%article-footer {
   @extend %hanging-block;
 
   position: absolute;
@@ -21,6 +21,14 @@
     .rlb::before {
       content: "\000a"; // Line Feed
       white-space: pre-line;
+    }
+  }
+}
+
+[role="main"] {
+  article {
+    h2 + footer {
+      @extend %article-footer;
     }
   }
 }

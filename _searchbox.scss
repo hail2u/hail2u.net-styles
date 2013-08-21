@@ -2,13 +2,13 @@
 @import "scss-partials/image-replacement";
 @import "scss-partials/vendor-extension";
 
-.searchbox {
-  div {
+[role="search"] {
+  > div {
     margin-top: $margin-default;
     display: inline-block;
     position: relative;
 
-    .global-subcontent & {
+    [role="complementary"] & {
       margin-top: $margin-primary-heading;
     }
   }
