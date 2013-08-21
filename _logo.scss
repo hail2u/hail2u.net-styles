@@ -1,6 +1,4 @@
 // Logo
-@import "scss-partials/vendor-extension";
-
 [role="banner"] h1 {
   margin: 0;
   height: $height-logo;
@@ -10,7 +8,6 @@
   a,
   mark {
     @extend %ir;
-    @include transition(box-shadow 0.1s linear);
 
     border-radius: 50%;
     display: inline-block;
@@ -23,13 +20,5 @@
     &::before {
       background-image: $image-logo;
     }
-  }
-
-  a:hover,
-  a:focus,
-  mark {
-    @include transition(box-shadow 0.2s linear);
-
-    box-shadow: 0 0 0 0.2em $color-fg-logo, 0 0 0 0.4em $color-bg-logo;
   }
 }
