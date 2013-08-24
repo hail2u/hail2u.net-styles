@@ -4,14 +4,6 @@
     @extend %article-footer;
   }
 
-  > a {
-    color: inherit;
-
-    &:hover {
-      color: $color-fg-link-hover;
-    }
-  }
-
   ul {
     padding-left: 0;
   }
@@ -44,12 +36,6 @@
         right: 0;
         text-align: right;
       }
-    }
-  }
-
-  @media (min-width: $breakpoint-full) {
-    footer {
-      top: em($ratio-h2 * $line-height-heading);
     }
   }
 }
