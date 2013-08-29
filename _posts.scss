@@ -12,14 +12,19 @@
     @extend %margin-mini;
 
     position: relative;
-    overflow: hidden;
     list-style-type: none;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 
     time {
       display: block;
       color: $color-fg-posts-time;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 
