@@ -33,6 +33,31 @@ body.debug {
   }
 }
 
+// Breakpoints
+body::after {
+  padding: 0.5em;
+  display: block;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  line-height: 1;
+  content: "Small";
+  color: #fff;
+  background-color: #096;
+}
+
+@media (min-width: $breakpoint-content) {
+  body::after {
+    content: "Medium";
+  }
+}
+
+@media (min-width: $breakpoint-full) {
+  body::after {
+    content: "Large";
+  }
+}
+
 // Fonts
 .font-stack-body {
   font-family: $font-stack-body;
