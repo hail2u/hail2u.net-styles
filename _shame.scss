@@ -4,17 +4,17 @@
 
   @media (min-width: $breakpoint-content) {
     .iine-shots li {
-      width: $width-column-3 - $half-pixel;
+      width: ($width-column-3 - $half-pixel);
     }
   }
 
   @media (min-width: $breakpoint-full) {
     .flat-ul li {
-      width: $width-column-3 - $half-pixel;
+      width: ($width-column-3 - $half-pixel);
     }
 
     .iine-shots li {
-      width: $width-column-4 - $half-pixel;
+      width: ($width-column-4 - $half-pixel);
     }
   }
 }

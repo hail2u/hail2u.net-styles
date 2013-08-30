@@ -3,20 +3,20 @@
   $constant: 1.25;
 
   @each $size in $sizes {
-    $ratio: $size / 16px;
+    $ratio: ($size / 16px);
     $feature-prefix: min-;
-    $horizontal: $width-content * $constant * $ratio;
+    $horizontal: ($width-content * $constant * $ratio);
 
     @if ($ratio > 1.25) {
-      $horizontal: $width-full * $constant * $ratio;
+      $horizontal: ($width-full * $constant * $ratio);
     }
 
-    $vertical: $horizontal * (9 / 16);
+    $vertical: ($horizontal * (9 / 16));
 
     @if ($ratio < 1) {
       $feature-prefix: max-;
-      $horizontal: $width-content / $constant * $ratio;
-      $vertical: $horizontal * (3 / 2);
+      $horizontal: ($width-content / $constant * $ratio);
+      $vertical: ($horizontal * (3 / 2));
     }
 
     @media (#{$feature-prefix}width: $horizontal) and (#{$feature-prefix}height: $vertical){
