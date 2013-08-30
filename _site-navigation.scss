@@ -11,12 +11,10 @@
   }
 
   li {
-    $ratio: 0.875;
-
-    padding-right: ($height-nav * 0.125 / $ratio);
-    padding-left: ($height-nav * 0.125 / $ratio);
+    padding-right: ($height-nav * 0.125 / $ratio-site-navigation);
+    padding-left: ($height-nav * 0.125 / $ratio-site-navigation);
     display: table-cell;
-    font-size: percentage($ratio);
+    font-size: percentage($ratio-site-navigation);
   }
 
   a {

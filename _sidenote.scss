@@ -5,10 +5,8 @@
   color: $color-fg-sidenote;
 
   p {
-    $ratio: 0.875;
-
-    margin-top: ($margin-default / $ratio);
-    font-size: percentage($ratio);
+    margin-top: ($margin-default / $ratio-sidenote);
+    font-size: percentage($ratio-sidenote);
   }
 
   @media (min-width: $breakpoint-full) {

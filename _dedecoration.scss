@@ -71,10 +71,8 @@
   }
 
   [role="banner"] h1 {
-    $ratio: 2.25;
-
-    margin-top: ($margin-heading / $ratio);
-    font-size: percentage($ratio);
+    margin-top: ($margin-heading / $ratio-h1);
+    font-size: percentage($ratio-h1);
 
     a,
     mark {
