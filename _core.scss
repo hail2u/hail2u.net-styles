@@ -91,7 +91,7 @@ p {
   }
 }
 
-@import "scss-partials/vendor-extension";
+@import "./bower_components/hail2u-scss-partials/vendor-extension";
 
 hr {
   @extend %ir;
@@ -278,7 +278,7 @@ del {
 }
 
 // Embedded Content
-@import "scss-partials/vendor-extension";
+@import "./bower_components/hail2u-scss-partials/vendor-extension";
 
 img {
   @include box-sizing(border-box);

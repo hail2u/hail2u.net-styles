@@ -1,6 +1,6 @@
 // Searchbox
-@import "scss-partials/image-replacement";
-@import "scss-partials/vendor-extension";
+@import "./bower_components/hail2u-scss-partials/image-replacement";
+@import "./bower_components/hail2u-scss-partials/vendor-extension";
 
 [role="search"] {
   > div {

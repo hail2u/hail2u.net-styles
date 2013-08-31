@@ -23,7 +23,7 @@
 @import "column";
 
 // Grid Overlay
-@import "scss-partials/grid-overlay";
+@import "./bower_components/hail2u-scss-partials/grid-overlay";
 
 body.debug {
   @include grid-overlay($width-gutter, $width-column-1);
@@ -76,7 +76,7 @@ body::after {
 }
 
 // Colors
-@import "scss-partials/vendor-extension";
+@import "./bower_components/hail2u-scss-partials/vendor-extension";
 
 .colors {
   @extend %column-container;
@@ -129,7 +129,7 @@ body::after {
 }
 
 // Selection
-@import "scss-partials/selection";
+@import "./bower_components/hail2u-scss-partials/selection";
 @import "widget-color";
 
 .selection {

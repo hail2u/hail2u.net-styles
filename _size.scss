@@ -16,7 +16,7 @@ $indent-mini: ($indent-default / 2);
 $sce-gutter: em($ratio-golden);
 $sce-column: ($sce_gutter * 2);
 
-@import "scss-column-equation/sce.scss";
+@import "./bower_components/scss-column-equation/sce";
 
 $width-gutter: $sce-gutter;
 $width-gap: $sce-gap;

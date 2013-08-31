@@ -1,5 +1,5 @@
 // Selection
-@import "scss-partials/selection";
+@import "./bower_components/hail2u-scss-partials/selection";
 
 ::-moz-selection {
   @include selection($color-fg-selection, $color-bg-selection);
