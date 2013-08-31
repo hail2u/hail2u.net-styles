@@ -1,9 +1,0 @@
-[submodule "normalize.scss"]
-	path = normalize.scss
-	url = git://github.com/hail2u/normalize.scss.git
-[submodule "scss-partials"]
-	path = scss-partials
-	url = git://github.com/hail2u/scss-partials.git
-[submodule "scss-column-equation"]
-	path = scss-column-equation
-	url = https://github.com/hail2u/scss-column-equation.git
