@@ -1,6 +1,6 @@
 {
   "name": "hail2u.net-styles",
-  "version": "6.40.1",
+  "version": "6.41.0",
   "private": true,
   "devDependencies": {
     "modularized-normalize-scss": "~2.1.3",
