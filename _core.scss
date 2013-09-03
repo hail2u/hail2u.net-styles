@@ -33,10 +33,11 @@ html {
 
 // Sections
 body {
+  @extend %font-body;
+
   line-height: $line-height-default;
   color: $color-fg-body;
   background-color: $color-bg-body;
-  font-family: $font-stack-body;
 }
 
 @mixin heading {
@@ -115,11 +116,11 @@ hr {
 }
 
 pre {
+  @extend %font-code;
   @extend %margin-default;
 
   clear: both;
   line-height: 1.25;
-  font-family: $font-stack-code;
   font-size: 1em;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -260,7 +261,7 @@ code,
 var,
 samp,
 kbd {
-  font-family: $font-stack-code;
+  @extend %font-code;
 }
 
 mark {

@@ -1,2 +1,9 @@
 // iine! Shots
-$font-stack-iine: "Alegreya", "Georgia", serif;
+$font-stack-iine: "Alegreya", serif;
+$font-stack-iine-print: serif;
+
+%font-iine {
+  .dfl-alegreya & {
+    font-family: $font-stack-iine;
+  }
+}

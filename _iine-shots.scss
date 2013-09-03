@@ -2,13 +2,14 @@
 @import "./bower_components/hail2u-scss-partials/vendor-extension";
 
 .iine-shots {
+  @extend %font-iine;
+
   margin-top: ($margin-primary-heading - $margin-heading);
   margin-bottom: (- ($margin-primary-heading - $margin-heading));
   padding: $margin-heading 0;
   max-width: none;
   color: $color-fg-iine;
   background-color: $color-bg-iine;
-  font-family: $font-stack-iine;
   font-style: italic;
 
   h2 {
