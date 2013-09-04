@@ -1,9 +1,5 @@
 // Posts
 .posts {
-  footer {
-    @extend %article-footer;
-  }
-
   ul {
     padding-left: 0;
   }
