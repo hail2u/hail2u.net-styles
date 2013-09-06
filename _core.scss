@@ -289,8 +289,9 @@ img {
   -ms-interpolation-mode: bicubic;
 
   figure & {
-    border: $width-border-img solid white;
+    border: $width-border-img solid $color-bg-img;
     vertical-align: text-bottom;
+    background-color: $color-bg-img;
   }
 }
 
