@@ -4,9 +4,9 @@
 .iine-shots {
   @extend %font-iine;
 
-  margin-top: ($margin-primary-heading - $margin-heading);
-  margin-bottom: (- ($margin-primary-heading - $margin-heading));
+  margin-bottom: 0;
   padding: $margin-heading 0;
+  border-top: $color-border-global-footer;
   max-width: none;
   color: $color-fg-iine;
   background-color: $color-bg-iine;
@@ -84,10 +84,6 @@
     border: none;
   }
 
-  & + [role="contentinfo"] .elsewhere {
-    border-top: none;
-  }
-
   @media (min-width: $breakpoint-content) {
     ol {
       max-width: ($width-gap + $width-content + $width-gap);
@@ -102,7 +98,6 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-bottom: (- ($margin-primary-heading - $margin-default));
     text-align: center;
 
     ol {

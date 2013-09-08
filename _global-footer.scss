@@ -1,22 +1,25 @@
 // Global Footer
 [role="contentinfo"] {
-  margin-top: ($margin-primary-heading - $margin-heading);
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $width-gap;
-  padding-bottom: $margin-heading;
-  padding-left: $width-gap;
-  position: relative;
-  max-width: $width-content;
-  text-align: center;
+  padding-bottom: $margin-default;
+  border-top: 1px solid $color-border-global-footer;
+  background-color: $color-bg-global-footer;
 
   mark {
     color: inherit;
     background-color: transparent;
   }
+}
+
+%global-footer-section {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $width-gap;
+  padding-left: $width-gap;
+  position: relative;
+  max-width: $width-content;
+  text-align: center;
 
   @media (min-width: $breakpoint-full) {
-    margin-top: ($margin-primary-heading - $margin-default);
     padding-left: ($width-gap + $width-suppli + $width-gutter);
     text-align: left;
   }

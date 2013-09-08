@@ -1,11 +1,9 @@
 // Elsewhere
 .elsewhere {
-  border-top: $width-border-elsewhere double $color-border-elsewhere;
-  padding-top: $margin-heading;
-  position: relative;
+  @extend %global-footer-section;
 
   ul {
-    margin-top: 0;
+    margin-top: $margin-heading;
     padding-left: 0;
     display: inline-table;
   }
@@ -24,12 +22,7 @@
     width: $width-elsewhere-icon;
     height: $height-elsewhere-icon;
     line-height: $height-elsewhere-icon;
-    background-color: $color-bg-elsewhere;
-
-    &:hover,
-    &:active {
-      background-color: $color-bg-elsewhere-hover;
-    }
+    background-color: $color-bg-elsewhere-icon;
 
     &::before {
       background-size: 60%;
@@ -61,11 +54,11 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: (- ($width-suppli + $width-gutter));
-    padding-top: $margin-default;
-
     ul {
+      margin-top: $margin-default;
       position: absolute;
+      left: 0.809em;
+      z-index: 1;
     }
 
     li {

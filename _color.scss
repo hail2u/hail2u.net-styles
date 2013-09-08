@@ -31,12 +31,12 @@ $color-bg-img: white;
 $color-bg-th: mixxd($color-fg, $color-bg, 0.9);
 $color-bg-td: mixxd($color-fg, $color-bg, 0.98);
 $color-bg-logo: $color-light;
-$color-bg-elsewhere: mixxd($color-fg, $color-bg, 0.9);
-$color-bg-elsewhere-hover: $color-light;
+$color-bg-global-footer: mixxd($color-fg, $color-bg, 0.96);
+$color-bg-elsewhere-icon: $color-light;
 
 $color-border-blockquote: mixxd($color-fg, $color-bg, 0.9);
 $color-border-link-focus: $color-lightest;
 $color-border-strong: $color-fg;
 $color-border-ins: $color-fg;
 $color-border-table: mixxd($color-fg, $color-bg, 0.8);
-$color-border-elsewhere: mixxd($color-fg, $color-bg, 0.9);
+$color-border-global-footer: mixxd($color-fg, $color-bg, 0.94);
