@@ -127,11 +127,3 @@ body::after {
     }
   }
 }
-
-// Selection
-@import "./bower_components/hail2u-scss-partials/selection";
-@import "widget-color";
-
-.selection {
-  @include selection($color-fg-selection, $color-bg-selection);
-}
