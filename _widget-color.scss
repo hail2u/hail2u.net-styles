@@ -22,12 +22,6 @@ $color-fg-seealso-chain: $color-fg;
 // Sidenote
 $color-fg-sidenote: mixxd($color-fg, $color-bg, 0.6);
 
-// Messages
-$color-message-warning: #ffdd00;
-$color-message-error: #ff2233;
-$color-message-information: #115599;
-$color-message-okay: #33aa22;
-
 // Posts
 $color-fg-posts-time: mixxd($color-fg, $color-bg, 0.6);
 
