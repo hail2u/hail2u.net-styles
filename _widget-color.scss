@@ -10,11 +10,6 @@ $color-fg-searchbox-icon: black;
 $color-border-searchbox: mixxd($color-bg, $color-fg, 0.1);
 $color-border-searchbox-focus: mixxd($color-bg, $color-fg, 0.3);
 
-// Share on Twitter
-@import "./bower_components/hail2u-scss-partials/corporate-colors";
-
-$color-fg-twitterbird: $cc-twitter;
-
 // Seealso
 $color-fg-seealso-chain: $color-fg;
 
@@ -34,6 +29,11 @@ $color-fg-read-older-label: $color-fg;
 $color-fg-paging: $color-bg;
 $color-fg-paging-arrow: $color-fg-paging;
 $color-bg-paging: $color-light;
+
+// Share on Twitter
+@import "./bower_components/hail2u-scss-partials/corporate-colors";
+
+$color-fg-twitterbird: $cc-twitter;
 
 // iine!
 $color-fg-iine: $color-fg;
