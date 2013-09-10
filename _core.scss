@@ -262,6 +262,12 @@ var,
 samp,
 kbd {
   @extend %font-code;
+
+  &::before,
+  &::after {
+    content: "\0020"; // Space
+    font-size: 0;
+  }
 }
 
 mark {
