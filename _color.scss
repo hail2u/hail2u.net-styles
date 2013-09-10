@@ -10,11 +10,8 @@ $color-lightest: rgb(111, 188, 221);
 // Semantic
 $color-fg-body: $color-fg;
 $color-fg-hr: $color-fg;
-$color-fg-pre: $color-fg;
 $color-fg-link: $color-base;
-$color-fg-link-visited: $color-dark;
 $color-fg-link-hover: $color-darkest;
-$color-fg-code: complement($color-darkest);
 $color-fg-logo: $color-bg;
 $color-fg-gnav: $color-fg;
 $color-fg-gnav-hover: $color-base;
@@ -35,7 +32,5 @@ $color-bg-global-footer: mixxd($color-fg, $color-bg, 0.96);
 $color-bg-elsewhere-icon: $color-light;
 
 $color-border-blockquote: mixxd($color-fg, $color-bg, 0.9);
-$color-border-link-focus: $color-lightest;
 $color-border-strong: $color-fg;
-$color-border-ins: $color-fg;
 $color-border-table: mixxd($color-fg, $color-bg, 0.8);
