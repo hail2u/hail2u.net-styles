@@ -1,5 +1,17 @@
 // Posts
 .posts {
+  > a {
+    color: inherit;
+
+    &:hover h2 {
+      color: $color-fg-link;
+    }
+  }
+
+  .tag {
+    color: $color-fg-posts-tag;
+  }
+
   ul {
     padding-left: 0;
   }
