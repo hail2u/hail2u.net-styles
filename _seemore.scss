@@ -1,7 +1,9 @@
 // Seemore
 .seemore {
   a {
+    border-bottom: 2px dotted;
     font-size: percentage($ratio-seemore);
+    font-weight: bold;
 
     &::after {
       content: "\0020\2192"; // Rightwards Arrow
