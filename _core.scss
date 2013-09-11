@@ -252,6 +252,8 @@ q {
 }
 
 abbr {
+  @extend %auto-breaking;
+
   font-size: 87.5%;
   letter-spacing: 0.063em;
   cursor: help;
@@ -262,12 +264,7 @@ var,
 samp,
 kbd {
   @extend %font-code;
-
-  &::before,
-  &::after {
-    content: "\0020"; // Space
-    font-size: 0;
-  }
+  @extend %auto-breaking;
 }
 
 mark {
