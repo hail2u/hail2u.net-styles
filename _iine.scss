@@ -4,12 +4,16 @@
 #iine {
   @extend %font-iine;
 
-  margin-bottom: 0;
+  margin-top: $margin-heading;
   padding: $margin-heading 0;
   max-width: none;
   color: $color-fg-iine;
   background-color: $color-bg-iine;
   font-style: italic;
+
+  + [role="contentinfo"] {
+    margin-top: 0;
+  }
 
   h2 {
     margin-top: 0;
