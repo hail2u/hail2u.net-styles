@@ -1,7 +1,7 @@
 // Seemore
 .seemore {
   a {
-    border-bottom: 0.125em dotted;
+    border-bottom: $width-border-seemore solid;
     font-size: percentage($ratio-seemore);
     font-weight: bold;
 
