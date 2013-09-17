@@ -3,7 +3,7 @@
   $half-pixel: em(0.5px / 16px);
 
   @media (min-width: $breakpoint-content) {
-    .iine-shots li {
+    #iine li {
       width: ($width-column-3 - $half-pixel);
     }
   }
@@ -13,7 +13,7 @@
       width: ($width-column-3 - $half-pixel);
     }
 
-    .iine-shots li {
+    #iine li {
       width: ($width-column-4 - $half-pixel);
     }
   }
