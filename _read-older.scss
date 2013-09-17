@@ -12,7 +12,7 @@
 
     &::before {
       display: block;
-      content: "\2014\0020Read\0020Older\0020\2014";
+      content: "\2014\0020Read\0020older\0020\2014";
       color: $color-fg-read-older-label;
       font-size: percentage(1 / $ratio-read-older-title);
       font-weight: bold;
@@ -27,7 +27,7 @@
       margin-top: ($margin-primary-heading / $ratio-read-older-title);
 
       &::before {
-        content: "Read Older:";
+        content: "Read older:";
       }
     }
   }
