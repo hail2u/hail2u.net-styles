@@ -28,7 +28,7 @@
 html {
   font-size: 100%;
 
-  @include adjust-font-size((18px, 21px, 24px, 27px));
+  @include adjust-font-size((18px, 21px, 24px, 27px, 30px));
 }
 
 // Sections
