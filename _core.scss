@@ -150,15 +150,6 @@ ol {
   ol {
     margin-top: 0;
   }
-
-  @media (min-width: $breakpoint-full) {
-    padding-left: 0;
-
-    ul,
-    ol {
-      padding-left: $indent-default; // Revert to default indentation size
-    }
-  }
 }
 
 dl {
