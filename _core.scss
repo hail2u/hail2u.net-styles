@@ -292,20 +292,26 @@ img {
 table {
   @extend %margin-default;
 
+  display: block;
   clear: both;
+  max-width: 100%;
+  overflow-x: auto;
+  table-layout: fixed;
 
-  th {
+  th,
+  td {
     padding: 0.5em;
     border: 1px solid $color-border-table;
     vertical-align: top;
+    white-space: nowrap;
+  }
+
+  th {
     background-color: $color-bg-th;
     text-align: left;
   }
 
   td {
-    padding: 0.5em;
-    border: 1px solid $color-border-table;
-    vertical-align: top;
     background-color: $color-bg-td;
   }
 }
