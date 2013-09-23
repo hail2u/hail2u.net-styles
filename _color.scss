@@ -22,7 +22,6 @@ $color-fg-elsewhere-icon: $color-bg;
 $color-fg-footlinks: mixxd($color-fg, $color-bg, 0.6);
 
 $color-bg-body: $color-bg;
-$color-bg-pre: mixxd($color-fg, $color-bg, 0.98);
 $color-bg-mark: rgb(255, 238, 0);
 $color-bg-img: white;
 $color-bg-th: mixxd($color-fg, $color-bg, 0.9);
@@ -32,5 +31,4 @@ $color-bg-global-footer: mixxd($color-fg, $color-bg, 0.96);
 $color-bg-elsewhere-icon: $color-light;
 
 $color-border-blockquote: mixxd($color-fg, $color-bg, 0.9);
-$color-border-strong: $color-fg;
 $color-border-table: mixxd($color-fg, $color-bg, 0.8);

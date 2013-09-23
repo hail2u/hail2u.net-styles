@@ -45,16 +45,5 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 75% 75%;
-    opacity: 0.1;
-  }
-
-  input[type="text"]:focus + input[type="submit"],
-  input[type="submit"]:hover {
-    opacity: 0.3;
-  }
-
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    opacity: 1;
   }
 }

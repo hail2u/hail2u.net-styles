@@ -6,7 +6,7 @@ $color-code-highlight-comment: #999;
 $color-code-highlight-number: #096;
 
 // Searchbox
-$color-fg-searchbox-icon: black;
+$color-fg-searchbox-icon: $color-base;
 $color-border-searchbox: mixxd($color-bg, $color-fg, 0.1);
 $color-border-searchbox-focus: mixxd($color-bg, $color-fg, 0.3);
 

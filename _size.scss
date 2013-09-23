@@ -1,6 +1,7 @@
 // Line Height
 $line-height-default: $ratio-golden;
 $line-height-heading: 1.25;
+$line-height-pre: 1.3;
 
 // Margin
 $margin-default: em($line-height-default);
@@ -10,7 +11,7 @@ $margin-mini: ($margin-default / 3);
 
 // Indent
 $indent-default: em(pow($ratio-golden, 2));
-$indent-mini: ($indent-default / 2);
+$indent-blockquote: 1.25em;
 
 // Column
 $sce-gutter: em($ratio-golden);
@@ -48,7 +49,7 @@ $margin-elsewhere-icon: ($width-elsewhere-icon * $ratio-elsewhere-icon-margin);
 
 // Decoration
 $width-border-blockquote: 0.25em;
-$width-border-img: $width-gap;
+$width-border-img: 1em;
 $width-border-nav-item-active: 0.2em;
 
 // Breakpoint
