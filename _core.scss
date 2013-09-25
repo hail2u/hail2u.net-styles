@@ -314,4 +314,8 @@ table {
   td {
     background-color: $color-bg-td;
   }
+
+  @media aural {
+    display: table;
+  }
 }
