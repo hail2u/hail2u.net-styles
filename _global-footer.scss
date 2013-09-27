@@ -20,7 +20,7 @@
   text-align: center;
 
   @media (min-width: $breakpoint-full) {
-    padding-left: ($width-gap + $width-suppli + $width-gutter);
+    max-width: $width-full;
     text-align: left;
   }
 }

@@ -40,25 +40,13 @@
     &[href="https://github.com/hail2u"]::before {
       background-image: $icon-github;
     }
-
-    &[href="http://pinterest.com/hail2u/"]::before {
-      background-image: $icon-pinterest;
-    }
-
-    &[href="http://www.last.fm/user/hail2u"]::before {
-      background-image: $icon-lastfm;
-    }
-
-    &[href="https://delicious.com/hail2u"]::before {
-      background-image: $icon-delicious;
-    }
   }
 
   @media (min-width: $breakpoint-full) {
     ul {
       margin-top: 0;
       position: absolute;
-      left: $width-gap;
+      left: ($width-gap + $width-suppli + $width-gutter);
       z-index: 1;
     }
 
