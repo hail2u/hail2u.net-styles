@@ -1,13 +1,26 @@
 // Byline
 [role="contentinfo"] address {
-  @extend %margin-mini;
   @extend %global-footer-section;
 
   font-style: normal;
 
+  &::before {
+    margin: $margin-default auto;
+    border-top: $width-border-byline solid $color-border-byline;
+    display: block;
+    width: $width-column-1;
+    content: "";
+  }
+
   @media (min-width: $breakpoint-full) {
-    margin-top: 0;
+    box-sizing: border-box;
+    padding-right: ($width-elsewhere + 1em);
     height: $height-elsewhere-icon;
     line-height: $height-elsewhere-icon;
+    text-align: right;
+
+    &:before {
+      display: none;
+    }
   }
 }

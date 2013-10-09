@@ -2,7 +2,10 @@
 .footlinks {
   @extend %global-footer-section;
 
+  padding-top: $margin-heading;
+
   ul {
+    margin-top: 0;
     padding-left: 0;
     color: $color-fg-footlinks;
   }
@@ -21,10 +24,8 @@
 
   @media (min-width: $breakpoint-full) {
     ul{
-      margin-top: 0;
       position: absolute;
-      top: (- $height-elsewhere-icon);
-      right: $width-gap;
+      z-index: 1;
       height: $height-elsewhere-icon;
       line-height: $height-elsewhere-icon;
     }

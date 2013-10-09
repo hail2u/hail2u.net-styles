@@ -2,9 +2,9 @@
 .elsewhere {
   @extend %global-footer-section;
 
-  padding-top: $margin-heading;
-
   ul {
+    @extend %margin-mini;
+
     padding-left: 0;
     display: inline-table;
   }
@@ -46,13 +46,14 @@
     ul {
       margin-top: 0;
       position: absolute;
-      left: ($width-gap + $width-suppli + $width-gutter);
+      top: (- $height-elsewhere-icon);
+      right: $width-gap;
       z-index: 1;
     }
 
     li {
-      padding-right: $margin-elsewhere-icon;
-      padding-left: 0;
+      padding-right: 0;
+      padding-left: $margin-elsewhere-icon;
     }
   }
 }
