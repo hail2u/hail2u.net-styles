@@ -14,7 +14,7 @@
 
   @media (min-width: $breakpoint-full) {
     box-sizing: border-box;
-    padding-right: ($width-elsewhere + 1em);
+    padding-right: $width-elsewhere;
     height: $height-elsewhere-icon;
     line-height: $height-elsewhere-icon;
     text-align: right;

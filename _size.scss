@@ -43,7 +43,7 @@ $width-full: $width-column-12;
 $width-logo: $width-column-1;
 $height-logo: $width-column-1;
 $height-nav: $height-logo;
-$width-elsewhere-icon: em($line-height-default);
+$width-elsewhere-icon: 1.2em;
 $height-elsewhere-icon: $width-elsewhere-icon;
 $margin-elsewhere-icon: ($width-elsewhere-icon / 4);
 $width-elsewhere: (($width-elsewhere-icon + $margin-elsewhere-icon) * 3);

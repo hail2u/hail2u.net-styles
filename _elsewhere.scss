@@ -18,16 +18,10 @@
   a {
     @extend %ir;
 
-    border-radius: 50%;
     display: block;
     width: $width-elsewhere-icon;
     height: $height-elsewhere-icon;
     line-height: $height-elsewhere-icon;
-    background-color: $color-bg-elsewhere-icon;
-
-    &::before {
-      background-size: 60%;
-    }
 
     &[href="https://www.facebook.com/hail2u"]::before {
       background-image: $icon-facebook;
