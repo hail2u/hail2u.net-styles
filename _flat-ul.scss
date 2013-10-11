@@ -2,9 +2,14 @@
 .flat-ul {
   @extend %clearfix;
 
+  margin-right: (- $width-gap);
+  margin-left: (- $width-gap);
+
   li {
     @include box-sizing(border-box);
 
+    padding-right: $width-gap;
+    padding-left: $width-gap;
     float: left;
     width: (100% / 3);
   }
