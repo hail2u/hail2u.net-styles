@@ -12,6 +12,7 @@
     padding-left: $width-gap;
     float: left;
     width: (100% / 3);
+    list-style-type: none;
   }
 
   @media (min-width: $breakpoint-content) {
