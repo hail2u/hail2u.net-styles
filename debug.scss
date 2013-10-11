@@ -25,10 +25,10 @@
 @import "./bower_components/hail2u-scss-partials/grid-overlay";
 
 body.debug {
-  @include grid-overlay($width-gutter, $width-column-1);
+  @include grid-overlay($width-gutter, nth($width-column, 1));
 
   @media (min-width: $breakpoint-full) {
-    @include grid-overlay($width-column-1, $width-gutter);
+    @include grid-overlay(nth($width-column, 1), $width-gutter);
   }
 }
 
@@ -90,7 +90,7 @@ body::after {
     border: 1px solid black;
     display: block;
     direction: ltr;
-    height: $width-column-1;
+    height: nth($width-column, 1);
     text-indent: -9999em;
 
     &:nth-child(1) {
