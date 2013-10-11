@@ -33,12 +33,11 @@
 
   @media (min-width: $breakpoint-content) {
     li {
-      padding-right: (($width-posts-date + $width-gutter) / $ratio-posts-item);
+      padding-right: $width-posts-date;
       font-size: percentage($ratio-posts-item);
 
       time {
         margin-right: 0;
-        margin-left: ($width-gutter / $ratio-posts-item);
         position: absolute;
         top: 0;
         right: 0;

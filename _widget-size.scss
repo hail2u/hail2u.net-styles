@@ -1,5 +1,5 @@
 // Searchbox
-$width-searchbox: $width-column-4;
+$width-searchbox: 40%;
 $height-searchbox: 2em;
 
 // Seemore
@@ -9,15 +9,15 @@ $width-border-seemore: 0.125em;
 $width-seealso-icon: 1em;
 
 // Posts
-$width-posts-date: $width-column-2;
+$width-posts-date: 18%;
 
 // Paging
-$width-paging-icon: $width-column-1;
+$width-paging-icon: $width-logo;
 $height-paging-icon: $width-paging-icon;
 
 // Twitter Share Button
 $width-twitterbird: em($line-height-default);
 
 // iine!
-$width-icon-iine: $width-column-1;
+$width-icon-iine: $width-logo;
 $height-icon-iine: $width-icon-iine;

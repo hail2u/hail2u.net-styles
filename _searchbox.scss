@@ -7,6 +7,7 @@
     margin-top: $margin-default;
     display: inline-block;
     position: relative;
+    width: $width-searchbox;
 
     [role="complementary"] & {
       margin-top: $margin-primary-heading;
@@ -18,7 +19,7 @@
 
     padding: 0 ($height-searchbox + 0.25em) 0 0.25em !important;
     border: 1px solid $color-border-searchbox !important;
-    width: $width-searchbox;
+    width: 100%;
     height: $height-searchbox;
     vertical-align: middle;
     color: black;

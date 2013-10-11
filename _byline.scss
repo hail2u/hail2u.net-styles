@@ -6,9 +6,9 @@
 
   &::before {
     margin: $margin-default auto;
-    border-top: $width-border-byline solid $color-border-byline;
+    border-top: $height-border-byline solid $color-border-byline;
     display: block;
-    width: $width-column-1;
+    width: $width-border-byline;
     content: "";
   }
 

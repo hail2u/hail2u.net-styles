@@ -93,10 +93,12 @@
     }
 
     li {
-      margin-right: $width-gap;
-      margin-left: $width-gap;
+      @include box-sizing(border-box);
+
+      padding-right: $width-gap;
+      padding-left: $width-gap;
       float: left;
-      width: $width-column-3;
+      width: (100% / 3);
     }
   }
 
@@ -105,10 +107,6 @@
 
     ol {
       max-width: ($width-gap + $width-full + $width-gap);
-    }
-
-    li {
-      width: $width-column-4;
     }
   }
 }

@@ -1,9 +1,12 @@
 // Flat UL
 .flat-ul {
-  @extend %column-container;
+  @extend %clearfix;
 
   li {
-    @extend %column-3;
+    @include box-sizing(border-box);
+
+    float: left;
+    width: (100% / 3);
   }
 
   @media (min-width: $breakpoint-content) {

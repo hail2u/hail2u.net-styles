@@ -52,7 +52,8 @@ $width-elsewhere: (($width-elsewhere-icon + $margin-elsewhere-icon) * 3);
 $width-border-blockquote: 0.25em;
 $width-border-img: 1em;
 $width-border-nav-item-active: 0.2em;
-$width-border-byline: 0.125em;
+$width-border-byline: 6.25em;
+$height-border-byline: 0.125em;
 
 // Breakpoint
 $breakpoint-content: ($width-gap + $width-column-1 + $width-gutter + $width-content + $width-gutter + $width-column-1 + $width-gap);
