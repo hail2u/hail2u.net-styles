@@ -13,7 +13,8 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    box-sizing: border-box;
+    @include box-sizing(border-box);
+
     padding-right: $width-elsewhere;
     height: $height-elsewhere-icon;
     line-height: $height-elsewhere-icon;
