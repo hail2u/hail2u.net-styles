@@ -19,11 +19,10 @@
   a {
     @extend %ir;
 
-    border-radius: 50%;
     display: block;
     width: $width-paging-icon;
     height: $height-paging-icon;
-    background-color: $color-bg-paging;
+    line-height: $height-paging-icon;
 
     &[rel="prev"]::before {
       background-image: $image-arrow-left;

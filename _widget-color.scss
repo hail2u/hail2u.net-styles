@@ -27,9 +27,8 @@ $color-fg-flat-dl: mixxd($color-fg, $color-bg, 0.8);
 $color-fg-read-older-label: $color-fg;
 
 // Paging
-$color-fg-paging: $color-bg;
+$color-fg-paging: $color-light;
 $color-fg-paging-arrow: $color-fg-paging;
-$color-bg-paging: $color-light;
 
 // Twitter Share Button
 @import "./bower_components/hail2u-scss-partials/corporate-colors";
