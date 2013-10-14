@@ -1,22 +1,13 @@
 // Code Highlight
 .prettyprinted {
-  .pln,
-  .typ,
-  .pun,
-  .opn,
-  .clo,
-  .fun {
-    color: $color-code-highlight-default;
-  }
-
   .str,
   .atv {
-    color: $color-code-highlight-string;
+    color: $color-code-highlight-constant;
   }
 
   .kwd,
   .tag {
-    color: $color-code-highlight-keyword;
+    color: $color-code-highlight-statement;
   }
 
   .com,
@@ -25,8 +16,26 @@
     color: $color-code-highlight-comment;
   }
 
+  .typ {
+    color: $color-code-highlight-type;
+  }
+
   .lit,
   .atn {
     color: $color-code-highlight-number;
   }
+
+  .pun,
+  .opn,
+  .clo {
+    color: $color-code-highlight-default;
+  }
+
+  .pln {
+    color: $color-code-highlight-default;
+  }
+
+  .src {}
+
+  .nocode {}
 }
