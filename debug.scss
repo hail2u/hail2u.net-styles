@@ -69,13 +69,13 @@ body::after {
 
 @media (min-width: $breakpoint-content) {
   body::after {
-    content: "Medium";
+    content: "Medium: #{$breakpoint-content}";
   }
 }
 
 @media (min-width: $breakpoint-full) {
   body::after {
-    content: "Large";
+    content: "Large: #{$breakpoint-full}";
   }
 }
 
