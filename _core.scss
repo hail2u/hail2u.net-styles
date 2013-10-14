@@ -119,8 +119,13 @@ pre {
   @extend %font-code;
   @extend %margin-default;
 
+  padding: $width-gap;
+  border-width: 1px 0;
+  border-style: dashed;
+  border-color: $color-border-pre;
   clear: both;
   line-height: $line-height-pre;
+  background-color: $color-bg-pre;
   font-size: 1em;
   word-wrap: break-word;
   overflow-wrap: break-word;
