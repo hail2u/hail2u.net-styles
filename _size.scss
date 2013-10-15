@@ -14,21 +14,15 @@ $indent-default: em(pow($ratio-golden, 2));
 $indent-blockquote: 1.25em;
 
 // Column
-$sce-gutter: em($ratio-golden);
-$sce-column: ($sce_gutter * 2);
-
-@import "./bower_components/scss-column-equation/sce";
-
-$width-gutter: $sce-gutter;
-$width-gap: $sce-gap;
-$width-column: $sce_colspan;
+$width-gutter: em($ratio-golden);
+$width-gap: ($width-gutter / 2);
 
 // Main Component
-$width-content: nth($width-column, 9);
-$width-suppli: nth($width-column, 3);
-$width-full: nth($width-column, 12);
-$width-extra: nth($width-column, 1);
-$width-logo: nth($width-column, 1);
+$width-content: (43em - ($width-gap * 2));
+$width-suppli: ($width-content / pow($ratio-golden, 3));
+$width-full: ($width-suppli + $width-gutter + $width-content);
+$width-extra: ($width-suppli / pow($ratio-golden, 3));
+$width-logo: ($width-suppli / pow($ratio-golden, 2));
 $height-logo: $width-logo;
 $height-nav: $height-logo;
 $width-elsewhere-icon: 1.2em;

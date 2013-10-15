@@ -19,16 +19,38 @@
 
 // Classes
 @import "clearfix";
-@import "column";
 
 // Grid Overlay
-@import "./bower_components/hail2u-scss-partials/grid-overlay";
-
-body.debug {
-  @include grid-overlay($width-gutter, nth($width-column, 1));
+body.debug::before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    #f0f 0,
+    #f0f $width-content
+  );
+  background-position: center center;
+  background-repeat: repeat-y;
+  background-size: $width-content 1px;
+  opacity: 0.05;
+  pointer-events: none;
 
   @media (min-width: $breakpoint-full) {
-    @include grid-overlay(nth($width-column, 1), $width-gutter);
+    background-image: linear-gradient(
+      to right,
+      #f0f 0,
+      #f0f $width-suppli,
+      transparent $width-suppli,
+      transparent ($width-suppli + $width-gutter),
+      #f0f ($width-suppli + $width-gutter),
+      #f0f $width-full
+    );
+    background-size: $width-full 1px;
   }
 }
 
@@ -78,19 +100,18 @@ body::after {
 @import "./bower_components/hail2u-scss-partials/vendor-extension";
 
 .colors {
-  @extend %column-container;
+  @extend %clearfix;
 
   padding-left: 0;
 
   li {
-    @extend %column-1;
     @include box-sizing(border-box);
 
     margin-bottom: $width-gutter;
     border: 1px solid black;
     display: block;
     direction: ltr;
-    height: nth($width-column, 1);
+    height: 3em;
     text-indent: -9999em;
 
     &:nth-child(1) {
@@ -120,9 +141,18 @@ body::after {
     &:nth-child(7) {
       background-color: $color-bg;
     }
+  }
 
-    @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint-content) {
+    margin-right: (- $width-gap);
+    margin-left: (- $width-gap);
+
+    li {
+      margin-right: $width-gap;
       margin-bottom: 0;
+      margin-left: $width-gap;
+      float: left;
+      width: 3em;
     }
   }
 }
