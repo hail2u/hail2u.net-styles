@@ -18,7 +18,7 @@ $color-fg-gnav-hover: $color-darkest;
 $color-fg-gnav-active: $color-base;
 $color-fg-article-meta: mixxd($color-fg, $color-bg, 0.6);
 $color-fg-article-meta-time: $color-fg;
-$color-fg-elsewhere-icon: $color-light;
+$color-fg-elsewhere-icon: $color-bg;
 $color-fg-footlinks: mixxd($color-fg, $color-bg, 0.6);
 
 $color-bg-body: $color-bg;
@@ -29,6 +29,7 @@ $color-bg-th: mixxd($color-fg, $color-bg, 0.9);
 $color-bg-td: mixxd($color-fg, $color-bg, 0.98);
 $color-bg-logo: $color-light;
 $color-bg-global-footer: mixxd($color-fg, $color-bg, 0.96);
+$color-bg-elsewhere-icon: $color-light;
 
 $color-border-blockquote: mixxd($color-fg, $color-bg, 0.9);
 $color-border-pre: mixxd($color-fg, $color-bg, 0.9);

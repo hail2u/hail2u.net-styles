@@ -25,7 +25,7 @@ $width-extra: ($width-suppli / pow($ratio-golden, 3));
 $width-logo: ($width-suppli / pow($ratio-golden, 2));
 $height-logo: $width-logo;
 $height-nav: $height-logo;
-$width-elsewhere-icon: 1.2em;
+$width-elsewhere-icon: em($ratio-golden);
 $height-elsewhere-icon: $width-elsewhere-icon;
 $margin-elsewhere-icon: ($width-elsewhere-icon / 4);
 $width-elsewhere: (($width-elsewhere-icon + $margin-elsewhere-icon) * 3);
