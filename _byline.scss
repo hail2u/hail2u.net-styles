@@ -20,7 +20,7 @@
     line-height: $height-elsewhere-icon;
     text-align: right;
 
-    &:before {
+    &::before {
       display: none;
     }
   }
