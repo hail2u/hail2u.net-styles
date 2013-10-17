@@ -29,6 +29,8 @@ $width-elsewhere-icon: em($ratio-golden);
 $height-elsewhere-icon: $width-elsewhere-icon;
 $margin-elsewhere-icon: ($width-elsewhere-icon / 4);
 $width-elsewhere: (($width-elsewhere-icon + $margin-elsewhere-icon) * 3);
+$width-watermark: ($width-elsewhere-icon * $ratio-golden);
+$height-watermark: $width-watermark;
 
 // Decoration
 $width-border-blockquote: 0.25em;

@@ -2,7 +2,7 @@
 .footlinks {
   @extend %global-footer-section;
 
-  padding-top: $margin-heading;
+  padding-top: ($height-watermark + $margin-default + $margin-heading);
 
   ul {
     margin-top: 0;
@@ -23,6 +23,8 @@
   }
 
   @media (min-width: $breakpoint-full) {
+    padding-top: $margin-heading;
+
     ul{
       position: absolute;
       z-index: 1;

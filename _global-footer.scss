@@ -2,7 +2,31 @@
 [role="contentinfo"] {
   margin-top: $margin-heading;
   padding-bottom: $margin-heading;
+  position: relative;
   background-color: $color-bg-global-footer;
+
+  &::before {
+    margin: auto;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: $margin-heading;
+    right: 0;
+    left: 0;
+    width: $width-watermark;
+    height: $height-watermark;
+    content: "\00a0";
+    background-color: $color-bg-watermark;
+    background-image: $image-logo;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    @media (min-width: $breakpoint-full) {
+      top: 0;
+      bottom: 0;
+    }
+  }
 }
 
 %global-footer-section {
