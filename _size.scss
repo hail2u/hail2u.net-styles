@@ -21,7 +21,7 @@ $width-gap: ($width-gutter / 2);
 $width-content: (43em - ($width-gap * 2));
 $width-suppli: ($width-content / pow($ratio-golden, 3));
 $width-full: ($width-suppli + $width-gutter + $width-content);
-$width-extra: ($width-suppli / pow($ratio-golden, 3));
+$width-extra: ($width-suppli / $ratio-golden);
 $width-logo: ($width-suppli / pow($ratio-golden, 2));
 $height-logo: $width-logo;
 $height-nav: $height-logo;
@@ -38,5 +38,5 @@ $width-border-byline: 6.25em;
 $height-border-byline: 0.125em;
 
 // Breakpoint
-$breakpoint-content: ($width-gap + $width-extra + $width-content + $width-extra + $width-gap);
-$breakpoint-full: ($width-gap + $width-extra + $width-full + $width-extra + $width-gap);
+$breakpoint-content: ($width-extra + $width-gap + $width-content + $width-gap + $width-extra);
+$breakpoint-full: ($width-extra + $width-gap + $width-full + $width-gap + $width-extra);
