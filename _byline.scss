@@ -12,6 +12,11 @@
     content: "";
   }
 
+  mark {
+    color: inherit;
+    background-color: transparent;
+  }
+
   @media (min-width: $breakpoint-full) {
     @include box-sizing(border-box);
 
