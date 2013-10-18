@@ -6,11 +6,12 @@
   background-color: $color-bg-global-footer;
 
   &::before {
+    border: $width-border-watermark solid $color-bg-global-footer;
     margin: auto;
     border-radius: 50%;
     display: block;
     position: absolute;
-    top: $margin-heading;
+    top: (- ($height-watermark / 2));
     right: 0;
     left: 0;
     width: $width-watermark;
@@ -21,11 +22,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-
-    @media (min-width: $breakpoint-full) {
-      top: 0;
-      bottom: 0;
-    }
   }
 }
 
