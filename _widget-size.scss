@@ -12,7 +12,8 @@ $width-seealso-icon: 1em;
 $width-posts-date: 18%;
 
 // Paging
-$width-paging-icon: $width-logo;
+$margin-paging-icon: $width-gutter;
+$width-paging-icon: (($width-suppli - $margin-paging-icon) / 2);
 $height-paging-icon: $width-paging-icon;
 
 // Twitter Share Button

@@ -11,8 +11,8 @@
   }
 
   li {
-    padding-right: ($width-gutter / 2);
-    padding-left: ($width-gutter / 2);
+    padding-right: ($margin-paging-icon / 2);
+    padding-left: ($margin-paging-icon / 2);
     display: table-cell;
   }
 
@@ -43,7 +43,7 @@
     }
 
     li {
-      padding-right: $width-gutter;
+      padding-right: $margin-paging-icon;
       padding-left: 0;
     }
   }
