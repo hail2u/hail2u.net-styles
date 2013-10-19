@@ -68,13 +68,13 @@ body::after {
 
 @media (min-width: $breakpoint-content) {
   body::after {
-    content: "Medium: #{$breakpoint-content}";
+    content: "Medium: #{(($breakpoint-content / 1em) * 16px)}";
   }
 }
 
 @media (min-width: $breakpoint-full) {
   body::after {
-    content: "Large: #{$breakpoint-full}";
+    content: "Large: #{(($breakpoint-full / 1em) * 16px)}";
   }
 }
 
