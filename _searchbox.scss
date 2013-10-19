@@ -14,34 +14,39 @@
     }
   }
 
-  input[type="text"] {
+  input {
     @include box-sizing(border-box);
 
-    padding: 0 ($height-searchbox + 0.25em) 0 0.25em !important;
-    border: 1px solid $color-border-searchbox !important;
+    border-style: solid;
+    border-color: $color-border-searchbox !important;
+  }
+
+  input[type="text"] {
+    padding: 0 ($height-searchbox + $margin-searchbox) 0 $margin-searchbox !important;
+    border-width: 1px;
     width: 100%;
     height: $height-searchbox;
     vertical-align: middle;
     color: black;
     background-color: white;
-    background-position: 0.25em center !important;
+    background-position: $margin-searchbox center !important;
 
-    &:focus {
+    &:focus,
+    &:focus + input[type="submit"] {
       border-color: $color-border-searchbox-focus !important;
     }
   }
 
   input[type="submit"] {
     @include ir-text-indent; // ir-pseudo-element does not work on `input`
-    @include box-sizing(border-box);
 
-    border: none;
+    border-width: 1px 1px 1px 0;
     position: absolute;
     top: 0;
     right: 0;
     width: $height-searchbox;
     height: $height-searchbox;
-    background-color: transparent;
+    background-color: $color-bg-searchbox-icon;
     background-image: $image-magnifying-glass;
     background-repeat: no-repeat;
     background-position: center center;

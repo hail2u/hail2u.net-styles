@@ -10,7 +10,8 @@ $color-code-highlight-type: #399;
 $color-code-highlight-special: #c90;
 
 // Searchbox
-$color-fg-searchbox-icon: $color-base;
+$color-fg-searchbox-icon: $color-bg;
+$color-bg-searchbox-icon: $color-light;
 $color-border-searchbox: mixxd($color-bg, $color-fg, 0.1);
 $color-border-searchbox-focus: mixxd($color-bg, $color-fg, 0.3);
 
