@@ -9,6 +9,7 @@ $color-lightest: rgb(111, 188, 221);
 
 // Semantic
 $color-fg-body: $color-fg;
+$color-fg-heading: mix($color-fg, black);
 $color-fg-hr: $color-fg;
 $color-fg-link: $color-base;
 $color-fg-link-hover: $color-darkest;
