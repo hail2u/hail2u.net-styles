@@ -111,8 +111,7 @@ hr {
   background-color: transparent;
 
   &::before {
-    background-image: $image-seven-circles;
-    opacity: 0.1;
+    background-image: $image-three-asterisks;
   }
 }
 
