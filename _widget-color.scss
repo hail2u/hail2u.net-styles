@@ -12,8 +12,8 @@ $color-code-highlight-special: #c90;
 // Searchbox
 $color-fg-searchbox-icon: $color-bg;
 $color-bg-searchbox-icon: $color-light;
-$color-border-searchbox: mixxd($color-bg, $color-fg, 0.1);
-$color-border-searchbox-focus: mixxd($color-bg, $color-fg, 0.3);
+$color-border-searchbox: mixxd($color-bg, $color-fg, 0.12);
+$color-border-searchbox-focus: mixxd($color-bg, $color-fg, 0.32);
 
 // Seealso
 $color-fg-seealso-chain: $color-fg;
@@ -45,5 +45,5 @@ $color-fg-iine: $color-fg;
 $color-fg-iine-logo: #000;
 $color-fg-iine-caption: $color-bg;
 $color-bg-iine: mixxd($color-fg, $color-bg, 0.92);
-$color-bg-iine-caption: transparentize($color-fg, 0.3);
+$color-bg-iine-caption: transparentize($color-fg, 0.32);
 $color-stroke-iine-logo: #fff;

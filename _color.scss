@@ -10,7 +10,7 @@ $color-lightest: rgb(111, 188, 221);
 // Semantic
 $color-fg-body: $color-fg;
 $color-fg-heading: mix($color-fg, black);
-$color-fg-hr: mixxd($color-fg, $color-bg, 0.9);
+$color-fg-hr: mixxd($color-fg, $color-bg, 0.92);
 $color-fg-link: $color-base;
 $color-fg-link-hover: $color-darkest;
 $color-fg-logo: $color-bg;
@@ -26,14 +26,14 @@ $color-bg-body: $color-bg;
 $color-bg-pre: mixxd($color-fg, $color-bg, 0.98);
 $color-bg-mark: rgb(255, 238, 0);
 $color-bg-img: white;
-$color-bg-th: mixxd($color-fg, $color-bg, 0.9);
+$color-bg-th: mixxd($color-fg, $color-bg, 0.92);
 $color-bg-td: mixxd($color-fg, $color-bg, 0.98);
 $color-bg-logo: $color-light;
 $color-bg-global-footer: mixxd($color-fg, $color-bg, 0.96);
 $color-bg-elsewhere-icon: $color-light;
 $color-bg-watermark: mixxd($color-fg, $color-bg, 0.92);
 
-$color-border-blockquote: mixxd($color-fg, $color-bg, 0.9);
-$color-border-pre: mixxd($color-fg, $color-bg, 0.9);
+$color-border-blockquote: mixxd($color-fg, $color-bg, 0.92);
+$color-border-pre: mixxd($color-fg, $color-bg, 0.88);
 $color-border-table: mixxd($color-fg, $color-bg, 0.8);
-$color-border-byline: mixxd($color-fg, $color-bg, 0.9);
+$color-border-byline: mixxd($color-fg, $color-bg, 0.92);
