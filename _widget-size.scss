@@ -1,8 +1,3 @@
-// Searchbox
-$margin-searchbox: 0.25em;
-$width-searchbox: 50%;
-$height-searchbox: 2em;
-
 // Seemore
 $width-border-seemore: 0.125em;
 
@@ -16,6 +11,11 @@ $width-posts-date: 18%;
 $margin-paging-icon: $width-gutter;
 $width-paging-icon: (($width-suppli - $margin-paging-icon) / 2);
 $height-paging-icon: $width-paging-icon;
+
+// Searchbox
+$margin-searchbox: 0.25em;
+$width-searchbox: 50%;
+$height-searchbox: 2em;
 
 // Twitter Share Button
 $width-twitterbird: 1.5em;

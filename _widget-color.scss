@@ -9,12 +9,6 @@ $color-code-highlight-preproc: #c33;
 $color-code-highlight-type: #399;
 $color-code-highlight-special: #c90;
 
-// Searchbox
-$color-fg-searchbox-icon: $color-bg;
-$color-bg-searchbox-icon: $color-light;
-$color-border-searchbox: mixxd($color-bg, $color-fg, 0.12);
-$color-border-searchbox-focus: mixxd($color-bg, $color-fg, 0.32);
-
 // Seealso
 $color-fg-seealso-chain: $color-fg;
 
@@ -34,6 +28,12 @@ $color-fg-read-older-label: $color-fg;
 // Paging
 $color-fg-paging: $color-light;
 $color-fg-paging-arrow: $color-fg-paging;
+
+// Searchbox
+$color-fg-searchbox-icon: $color-bg;
+$color-bg-searchbox-icon: $color-light;
+$color-border-searchbox: mixxd($color-bg, $color-fg, 0.12);
+$color-border-searchbox-focus: mixxd($color-bg, $color-fg, 0.32);
 
 // Twitter Share Button
 @import "./bower_components/hail2u-scss-partials/corporate-colors";
