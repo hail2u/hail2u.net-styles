@@ -11,11 +11,12 @@
 
   @media (min-width: $breakpoint-content) {
     margin-top: (($margin-heading + $margin-primary-heading) / 2);
-    text-align: left;
+    text-align: right;
   }
 
   @media (min-width: $breakpoint-full) {
     margin-top: $margin-primary-heading;
     max-width: $width-full;
+    text-align: left;
   }
 }

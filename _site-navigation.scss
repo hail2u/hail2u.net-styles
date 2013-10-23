@@ -34,10 +34,6 @@
   }
 
   @media (min-width: $breakpoint-content) {
-    position: absolute;
-    bottom: 0;
-    right: $width-gap;
-
     li {
       padding-right: 0;
       padding-left: ($height-nav * 0.5);
@@ -46,12 +42,17 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    right: auto;
-    left: ($width-gap + $width-suppli + $width-gutter);
+    margin-left: ($width-suppli + $width-gutter);
 
     li {
       padding-right: ($height-nav * 0.5);
       padding-left: 0;
+
+      &:last-child {
+        padding-right: $width-gap;
+        position: absolute;
+        right: 0;
+      }
     }
   }
 }
