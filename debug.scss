@@ -80,11 +80,15 @@ body::after {
 
 // Fonts
 .font-stack-body {
-  font-family: $font-stack-body;
+  @extend %font-body;
 }
 
 .font-stack-code {
-  font-family: $font-stack-code;
+  @extend %font-code;
+}
+
+.font-stack-quote {
+  @extend %font-quote;
 }
 
 .italic {
