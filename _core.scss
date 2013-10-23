@@ -126,7 +126,7 @@ pre {
   clear: both;
   line-height: $line-height-pre;
   background-color: $color-bg-pre;
-  font-size: 1em;
+  font-size: em($ratio-code);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -261,6 +261,12 @@ samp,
 kbd {
   @extend %font-code;
   @extend %auto-breaking;
+
+  font-size: em($ratio-code);
+
+  pre & {
+    font-size: 1em;
+  }
 }
 
 mark {

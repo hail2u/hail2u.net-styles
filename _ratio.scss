@@ -7,6 +7,7 @@ $ratio-yamato: 1.41421;
 // Text Size
 $ratio-primary-text: (16px / 16px);
 $ratio-secondary-text: (30px / 16px);
+$ratio-code: 0.875;
 
 // Heading Ratio
 $ratio-h1: ($ratio-primary-text * pow($ratio-golden, 2));
