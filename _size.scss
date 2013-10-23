@@ -42,4 +42,4 @@ $height-border-byline: 0.125em;
 // Breakpoint
 $width-scrollbar: 1.5em;
 $breakpoint-content: ($width-gap + $width-content + $width-gap + $width-scrollbar);
-$breakpoint-full: (($width-gap + $width-full + $width-gap + $width-scrollbar) * 1.125);
+$breakpoint-full: (($width-gap + $width-full + $width-gap + $width-scrollbar) * 1.25);
