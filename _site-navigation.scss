@@ -51,6 +51,7 @@
       &:last-child {
         padding-right: $width-gap;
         position: absolute;
+        top: 0;
         right: 0;
       }
     }
