@@ -1,18 +1,22 @@
 // Twitter Share Button
 .twitter-share-button {
-  position: relative;
+  @extend %hanging-block;
+
+  top: auto;
 
   p {
-    @extend %hanging-block;
-
-    top: (- ($margin-default + $line-height-default));
+    margin-top: (- em($line-height-default));
+    overflow: hidden;
     background-image: $icon-twitterbird;
     background-repeat: no-repeat;
     background-position: left center;
     background-size: $width-twitterbird auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
     a {
       padding-left: ($width-twitterbird * 1.2);
+      color: $color-fg-twitterbird;
 
       &:hover {
         text-decoration: underline;
