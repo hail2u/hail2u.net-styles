@@ -17,3 +17,13 @@ $font-stack-code-print: monospace;
     font-family: $font-stack-code;
   }
 }
+
+// Quote
+$font-stack-quote: "Alegreya", serif;
+$font-stack-quote-print: inherit;
+
+%font-quote {
+  .dfl-alegreya & {
+    font-family: $font-stack-quote;
+  }
+}

@@ -132,6 +132,8 @@ pre {
 }
 
 blockquote {
+  @extend %font-quote;
+
   margin: 0;
   border-left: $width-border-blockquote solid $color-border-blockquote;
   padding-left: $indent-blockquote;
@@ -236,6 +238,8 @@ cite {
 }
 
 q {
+  @extend %font-quote;
+
   quotes: none;
 
   &::before {
