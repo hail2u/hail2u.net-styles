@@ -186,9 +186,9 @@ figure {
 figcaption {
   @extend %hanging-block;
 
-  top: 0;
-
   @media (min-width: $breakpoint-full) {
+    top: 0;
+
     &:last-child {
       top: auto;
       bottom: 0;
