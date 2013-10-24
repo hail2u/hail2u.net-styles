@@ -7,10 +7,14 @@
     margin-top: $margin-default;
     display: inline-block;
     position: relative;
-    width: $width-searchbox;
+    width: ($width-searchbox * 1.5);
 
     [role="complementary"] & {
       margin-top: $margin-primary-heading;
+    }
+
+    @media (min-width: $breakpoint-content) {
+      width: $width-searchbox;
     }
   }
 
