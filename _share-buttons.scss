@@ -1,0 +1,56 @@
+// Twitter Share Button
+.share-buttons {
+  @extend %hanging-block;
+
+  text-align: center;
+
+  ul {
+    margin-top: $margin-heading;
+    padding-left: 0;
+    display: inline-table;
+  }
+
+  li {
+    display: table-cell;
+    height: $height-share-buttons;
+  }
+
+  a {
+    margin-right: 1em;
+    margin-left: 1em;
+    padding-left: ($width-share-buttons-icon + 0.25em);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: $width-share-buttons-icon;
+    font-size: percentage($ratio-share-buttons);
+
+    &[href^="https://www.facebook.com/"] {
+      color: $color-fg-facebookf;
+      background-image: $icon-facebookf;
+    }
+
+    &[href^="https://twitter.com/"] {
+      color: $color-fg-twitterbird;
+      background-image: $icon-twitterbird;
+    }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    top: auto;
+    text-align: left;
+
+    ul {
+      margin-top: (- ($height-share-buttons * 2));
+    }
+
+    li {
+      display: block;
+    }
+
+    a {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}

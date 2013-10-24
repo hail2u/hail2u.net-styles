@@ -35,9 +35,10 @@ $color-bg-searchbox-icon: $color-light;
 $color-border-searchbox: mixxd($color-bg, $color-fg, 0.12);
 $color-border-searchbox-focus: mixxd($color-bg, $color-fg, 0.32);
 
-// Twitter Share Button
+// Share Buttons
 @import "./bower_components/hail2u-scss-partials/corporate-colors";
 
+$color-fg-facebookf: $cc-facebook;
 $color-fg-twitterbird: $cc-twitter;
 
 // iine!
