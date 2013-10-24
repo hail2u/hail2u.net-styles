@@ -16,8 +16,8 @@
   }
 
   a {
-    margin-right: 1em;
-    margin-left: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
     padding-left: ($width-share-buttons-icon + 0.25em);
     display: inline-block;
     background-repeat: no-repeat;
@@ -34,6 +34,11 @@
       color: $color-fg-twitterbird;
       background-image: $icon-twitterbird;
     }
+  }
+
+  @media (min-width: $breakpoint-content) {
+    margin-right: 1em;
+    margin-left: 1em;
   }
 
   @media (min-width: $breakpoint-full) {
