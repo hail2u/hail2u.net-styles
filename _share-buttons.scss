@@ -37,8 +37,10 @@
   }
 
   @media (min-width: $breakpoint-content) {
-    margin-right: 1em;
-    margin-left: 1em;
+    a {
+      margin-right: 1em;
+      margin-left: 1em;
+    }
   }
 
   @media (min-width: $breakpoint-full) {
