@@ -12,10 +12,6 @@
     [role="complementary"] & {
       margin-top: $margin-primary-heading;
     }
-
-    @media (min-width: $breakpoint-content) {
-      width: $width-searchbox;
-    }
   }
 
   input {
@@ -55,5 +51,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 75% 75%;
+  }
+
+  @media (min-width: $breakpoint-content) {
+    > div {
+      width: $width-searchbox;
+    }
   }
 }
