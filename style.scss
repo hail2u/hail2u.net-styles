@@ -27,12 +27,12 @@ $version: "6.43.6";
 @import "size";
 
 // Class
-@import "clearfix";
-@import "image-replacement";
 @import "margin";
-@import "centering-block";
-@import "hanging-block";
+@import "image-replacement";
 @import "auto-breaking";
+@import "centering-block";
+@import "clearfix";
+@import "hanging-block";
 
 // Core
 @import "core";
