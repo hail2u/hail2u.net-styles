@@ -140,9 +140,13 @@ blockquote {
 
   + figcaption {
     @extend %margin-mini;
+  }
 
-    position: static;
-    width: auto;
+  @media (min-width: $breakpoint-full) {
+    + figcaption {
+      position: static;
+      width: auto;
+    }
   }
 }
 
@@ -330,7 +334,7 @@ table {
     background-color: $color-bg-td;
   }
 
-  @media aural {
+  @media not screen {
     display: table;
   }
 }
