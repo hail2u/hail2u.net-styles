@@ -1,22 +1,14 @@
 // Global Header
 [role="banner"] {
+  @extend %centering-block;
+
   margin-top: $margin-heading;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $width-gap;
-  padding-left: $width-gap;
-  position: relative;
-  max-width: $width-content;
-  text-align: center;
 
   @media (min-width: $breakpoint-content) {
     margin-top: (($margin-heading + $margin-primary-heading) / 2);
-    text-align: right;
   }
 
   @media (min-width: $breakpoint-full) {
     margin-top: $margin-primary-heading;
-    max-width: $width-full;
-    text-align: left;
   }
 }

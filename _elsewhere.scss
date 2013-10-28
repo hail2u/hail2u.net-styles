@@ -1,6 +1,6 @@
 // Elsewhere
 .elsewhere {
-  @extend %global-footer-section;
+  @extend %centering-block;
 
   ul {
     @extend %margin-mini;

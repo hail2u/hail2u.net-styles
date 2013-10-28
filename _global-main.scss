@@ -1,11 +1,9 @@
 // Global Main
 [role="main"] {
+  @extend %centering-block;
+
   margin-top: (- $margin-primary-heading + em($line-height-default) + $margin-default);
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $width-gap;
-  padding-left: $width-gap;
-  max-width: $width-content;
+  text-align: left;
 
   > section,
   > article {
@@ -16,9 +14,5 @@
 
   @media (min-width: $breakpoint-content) {
     margin-top: auto;
-  }
-
-  @media (min-width: $breakpoint-full) {
-    padding-left: ($width-gap + $width-suppli + $width-gutter);
   }
 }

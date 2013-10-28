@@ -26,16 +26,5 @@
 }
 
 %global-footer-section {
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $width-gap;
-  padding-left: $width-gap;
-  position: relative;
-  max-width: $width-content;
-  text-align: center;
-
-  @media (min-width: $breakpoint-full) {
-    max-width: $width-full;
-    text-align: left;
-  }
+  @extend %centering-block;
 }

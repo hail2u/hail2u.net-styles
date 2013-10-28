@@ -1,6 +1,6 @@
 // Byline
 [role="contentinfo"] address {
-  @extend %global-footer-section;
+  @extend %centering-block;
 
   font-style: normal;
 
@@ -20,7 +20,6 @@
   @media (min-width: $breakpoint-full) {
     @include box-sizing(border-box);
 
-    padding-right: ($width-elsewhere + $width-gap);
     height: $height-elsewhere-icon;
     line-height: $height-elsewhere-icon;
     text-align: right;

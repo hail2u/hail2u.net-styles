@@ -24,5 +24,6 @@
 
   @media (min-width: $breakpoint-content) {
     position: absolute;
+    left: $width-gap;
   }
 }

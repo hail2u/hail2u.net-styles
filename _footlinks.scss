@@ -1,6 +1,6 @@
 // Footlinks
 .footlinks {
-  @extend %global-footer-section;
+  @extend %centering-block;
 
   padding-top: $margin-heading;
 
@@ -25,6 +25,7 @@
   @media (min-width: $breakpoint-full) {
     ul{
       position: absolute;
+      left: $width-gap;
       z-index: 1;
       height: $height-elsewhere-icon;
       line-height: $height-elsewhere-icon;

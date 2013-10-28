@@ -32,6 +32,11 @@
   }
 
   @media (min-width: $breakpoint-content) {
+    ul {
+      margin-left: auto;
+      display: table;
+    }
+
     li {
       padding-right: 0;
       padding-left: ($height-nav * 0.5);
@@ -40,7 +45,9 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: ($width-suppli + $width-gutter);
+    ul {
+      margin-left: 0;
+    }
 
     li {
       padding-right: ($height-nav * 0.5);
