@@ -7,7 +7,7 @@
     margin-top: $margin-default;
     display: inline-block;
     position: relative;
-    width: ($width-searchbox * 1.5);
+    width: ($width-google-cse * 1.5);
 
     [role="complementary"] & {
       margin-top: $margin-primary-heading;
@@ -18,22 +18,22 @@
     @include box-sizing(border-box);
 
     border-style: solid;
-    border-color: $color-border-searchbox !important;
+    border-color: $color-border-google-cse !important;
   }
 
   input[type="text"] {
-    padding: 0 ($height-searchbox + $margin-searchbox) 0 $margin-searchbox !important;
+    padding: 0 ($height-google-cse + $margin-google-cse) 0 $margin-google-cse !important;
     border-width: 1px;
     width: 100%;
-    height: $height-searchbox;
+    height: $height-google-cse;
     vertical-align: middle;
     color: black;
     background-color: white;
-    background-position: $margin-searchbox center !important;
+    background-position: $margin-google-cse center !important;
 
     &:focus,
     &:focus + input[type="submit"] {
-      border-color: $color-border-searchbox-focus !important;
+      border-color: $color-border-google-cse-focus !important;
     }
   }
 
@@ -44,9 +44,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: $height-searchbox;
-    height: $height-searchbox;
-    background-color: $color-bg-searchbox-icon;
+    width: $height-google-cse;
+    height: $height-google-cse;
+    background-color: $color-bg-google-cse-icon;
     background-image: $image-magnifying-glass;
     background-repeat: no-repeat;
     background-position: center center;
@@ -55,7 +55,7 @@
 
   @media (min-width: $breakpoint-content) {
     > div {
-      width: $width-searchbox;
+      width: $width-google-cse;
     }
   }
 }

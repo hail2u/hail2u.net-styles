@@ -2,37 +2,37 @@
 .prettyprinted {
   .str,
   .atv {
-    color: $color-code-highlight-constant;
+    color: $color-google-code-prettify-constant;
   }
 
   .kwd,
   .tag {
-    color: $color-code-highlight-statement;
+    color: $color-google-code-prettify-statement;
   }
 
   .com,
   .dec,
   .var {
-    color: $color-code-highlight-comment;
+    color: $color-google-code-prettify-comment;
   }
 
   .typ {
-    color: $color-code-highlight-type;
+    color: $color-google-code-prettify-type;
   }
 
   .lit,
   .atn {
-    color: $color-code-highlight-number;
+    color: $color-google-code-prettify-number;
   }
 
   .pun,
   .opn,
   .clo {
-    color: $color-code-highlight-default;
+    color: $color-google-code-prettify-default;
   }
 
   .pln {
-    color: $color-code-highlight-default;
+    color: $color-google-code-prettify-default;
   }
 
   .src {}
