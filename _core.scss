@@ -200,6 +200,8 @@ figcaption {
 
 // Text-level Semantics
 a {
+  @extend %auto-breaking;
+
   color: $color-fg-link;
   text-decoration: none;
 
