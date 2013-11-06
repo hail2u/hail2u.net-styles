@@ -2,11 +2,9 @@
 [role="main"] * h2 + footer {
   @extend %hanging-block;
 
+  position: absolute;
+  bottom: 100%;
   color: $color-fg-article-meta;
-
-  p {
-    margin-top: 0;
-  }
 
   time {
     color: $color-fg-article-meta-time;
@@ -14,10 +12,7 @@
 
   @media (min-width: $breakpoint-full) {
     top: auto;
-
-    p {
-      margin-top: $margin-default;
-    }
+    bottom: auto;
 
     .rlb::before {
       content: "\000a"; // Line Feed
