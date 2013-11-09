@@ -8,8 +8,7 @@
   li {
     min-width: 110px;
     height: 20px;
-    line-height: normal;
-    font-size: 1px;
+    line-height: 1;
   }
 
   div {
@@ -18,9 +17,9 @@
 
   @media (min-width: $breakpoint-content) {
     li {
+      margin-top: 0;
       padding-right: 0;
       display: inline-block;
-      line-height: 1;
     }
   }
 }
