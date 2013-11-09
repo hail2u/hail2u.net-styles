@@ -200,8 +200,6 @@ figcaption {
 
 // Text-level Semantics
 a {
-  @extend %auto-breaking;
-
   color: $color-fg-link;
   text-decoration: none;
 
@@ -224,6 +222,8 @@ a {
   section > p &,
   article > p &,
   div[itemprop="articleBody"] > p & {
+    @extend %auto-breaking;
+
     text-decoration: underline;
   }
 }
