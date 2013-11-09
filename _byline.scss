@@ -1,31 +1,14 @@
 // Byline
-[role="contentinfo"] address {
-  @extend %centering-block;
-
-  font-style: normal;
-
-  &::before {
-    margin: $margin-default auto;
-    border-top: $height-border-byline solid $color-border-byline;
-    display: block;
-    width: $width-border-byline;
-    content: "";
-  }
-
+.byline {
   mark {
     color: inherit;
     background-color: transparent;
   }
 
   @media (min-width: $breakpoint-full) {
-    @include box-sizing(border-box);
-
+    margin-top: 0;
+    margin-right: (($width-elsewhere-icon + $margin-elsewhere-icon) * 3 + 0.5em);
     height: $height-elsewhere-icon;
     line-height: $height-elsewhere-icon;
-    text-align: right;
-
-    &::before {
-      display: none;
-    }
   }
 }

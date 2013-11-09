@@ -1,13 +1,9 @@
 // Elsewhere
 .elsewhere {
-  @extend %centering-block;
+  @extend %margin-mini;
 
-  ul {
-    @extend %margin-mini;
-
-    padding-left: 0;
-    display: inline-table;
-  }
+  padding-left: 0;
+  display: inline-table;
 
   li {
     padding-right: ($margin-elsewhere-icon / 2);
@@ -44,13 +40,11 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    ul {
-      margin-top: 0;
-      position: absolute;
-      top: (- $height-elsewhere-icon);
-      right: $width-gap;
-      z-index: 1;
-    }
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right: $width-gap;
+    z-index: 1;
 
     li {
       padding-right: 0;

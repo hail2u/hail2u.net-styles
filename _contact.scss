@@ -1,0 +1,22 @@
+// Contact
+[role="contentinfo"] address {
+  @extend %centering-block;
+
+  font-style: normal;
+
+  &::before {
+    margin-top: $margin-default;
+    border-top: $height-border-byline solid $color-border-byline;
+    display: inline-block;
+    width: $width-border-byline;
+    content: "";
+  }
+
+  @media (min-width: $breakpoint-full) {
+    text-align: right;
+
+    &::before {
+      display: none;
+    }
+  }
+}
