@@ -3,9 +3,7 @@ $font-stack-body: "Source Sans Pro", sans-serif;
 $font-stack-body-print: serif;
 
 %font-body {
-  .dfl-source_sans_pro & {
-    font-family: $font-stack-body;
-  }
+  font-family: $font-stack-body;
 }
 
 // Code
@@ -13,9 +11,7 @@ $font-stack-code: "Source Code Pro", monospace;
 $font-stack-code-print: monospace;
 
 %font-code {
-  .dfl-source_code_pro & {
-    font-family: $font-stack-code;
-  }
+  font-family: $font-stack-code;
 }
 
 // Quote
@@ -23,7 +19,5 @@ $font-stack-quote: "Alegreya", serif;
 $font-stack-quote-print: inherit;
 
 %font-quote {
-  .dfl-alegreya & {
-    font-family: $font-stack-quote;
-  }
+  font-family: $font-stack-quote;
 }

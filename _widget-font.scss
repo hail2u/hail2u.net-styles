@@ -3,7 +3,5 @@ $font-stack-iine: "Alegreya", serif;
 $font-stack-iine-print: serif;
 
 %font-iine {
-  .dfl-alegreya & {
-    font-family: $font-stack-iine;
-  }
+  font-family: $font-stack-iine;
 }
