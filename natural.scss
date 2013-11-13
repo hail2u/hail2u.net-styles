@@ -11,3 +11,11 @@ $sans-serif: "Helvetica Neue", "Calibri", sans-serif;
 $monospace: "Menlo", "Consolas", monospace;
 
 @import "./bower_components/hail2u-scss-partials/natural";
+
+body {
+  margin: 16px;
+
+  @media (min-width: 500px) {
+    margin: 64px;
+  }
+}
