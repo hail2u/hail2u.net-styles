@@ -13,11 +13,3 @@ $font-stack-code-print: monospace;
 %font-code {
   font-family: $font-stack-code;
 }
-
-// Quote
-$font-stack-quote: "Alegreya", serif;
-$font-stack-quote-print: inherit;
-
-%font-quote {
-  font-family: $font-stack-quote;
-}
