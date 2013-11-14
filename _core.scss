@@ -43,7 +43,6 @@ body {
 @mixin heading {
   line-height: $line-height-heading;
   color: $color-fg-heading;
-  font-weight: normal;
 }
 
 h2 {
