@@ -60,35 +60,11 @@ h3 {
   font-size: percentage($ratio-h3);
 }
 
-h4 {
-  @include heading;
-
-  margin: ($margin-heading / $ratio-h4) 0 0 0;
-  font-size: percentage($ratio-h4);
-}
-
-h5 {
-  @include heading;
-
-  margin: ($margin-heading / $ratio-h5) 0 0 0;
-  font-size: percentage($ratio-h5);
-}
-
-h6 {
-  @include heading;
-
-  margin: ($margin-heading / $ratio-h6) 0 0 0;
-  font-size: percentage($ratio-h6);
-}
-
 // Grouping Content
 p {
   @extend %margin-default;
 
-  h3 + &,
-  h4 + &,
-  h5 + &,
-  h6 + & {
+  h3 + & {
     @extend %margin-mini;
   }
 }
@@ -206,10 +182,7 @@ a {
   }
 
   h2 &,
-  h3 &,
-  h4 &,
-  h5 &,
-  h6 & {
+  h3 & {
     color: inherit;
 
     &:hover {
