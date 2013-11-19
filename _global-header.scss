@@ -2,13 +2,9 @@
 [role="banner"] {
   @extend %centering-block;
 
-  margin-top: $margin-heading;
+  margin-top: ($height-logo / $ratio-golden);
 
   @media (min-width: $breakpoint-content) {
-    margin-top: (($margin-heading + $margin-primary-heading) / 2);
-  }
-
-  @media (min-width: $breakpoint-full) {
-    margin-top: $margin-primary-heading;
+    margin-top: ($margin-primary-heading / $ratio-golden);
   }
 }

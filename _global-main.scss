@@ -2,7 +2,7 @@
 [role="main"] {
   @extend %centering-block;
 
-  margin-top: (- $margin-primary-heading + em($line-height-default) + $margin-default);
+  margin-top: (- $height-nav);
   text-align: left;
 
   > section,
@@ -14,5 +14,9 @@
 
   @media (min-width: $breakpoint-content) {
     margin-top: auto;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    margin-top: (- $margin-primary-heading - $height-logo + $width-suppli);
   }
 }
