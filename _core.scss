@@ -98,6 +98,7 @@ pre {
   border-color: $color-border-pre;
   clear: both;
   line-height: $line-height-pre;
+  color: $color-fg-pre;
   background-color: $color-bg-pre;
   font-size: em($ratio-code);
   word-wrap: break-word;
@@ -108,6 +109,7 @@ blockquote {
   margin: 0;
   border-left: $width-border-blockquote solid $color-border-blockquote;
   padding-left: $indent-blockquote;
+  color: $color-fg-blockquote;
 
   + figcaption {
     @extend %margin-mini;
@@ -140,6 +142,7 @@ dl {
   clear: both;
 
   dt {
+    color: $color-fg-dt;
     font-weight: bold;
   }
 
@@ -199,11 +202,13 @@ a {
 }
 
 em {
+  color: $color-fg-em;
   font-style: normal;
   font-weight: bold;
 }
 
 strong {
+  color: $color-fg-strong;
   border-bottom: 1px dashed;
 }
 
@@ -294,6 +299,7 @@ table {
   }
 
   th {
+    color: $color-fg-th;
     background-color: $color-bg-th;
     text-align: left;
   }

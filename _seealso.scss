@@ -2,6 +2,7 @@
 .seealso {
   @extend %margin-default;
 
+  color: $color-fg-seealso;
   font-weight: bold;
 
   a {

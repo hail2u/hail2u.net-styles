@@ -9,10 +9,16 @@ $color-lightest: rgb(111, 188, 221);
 
 // Semantic
 $color-fg-body: $color-fg;
-$color-fg-heading: mix($color-fg, black);
+$color-fg-heading: mixxd($color-fg, $color-bg, 0.08);
 $color-fg-hr: mixxd($color-fg, $color-bg, 0.92);
+$color-fg-blockquote: mixxd($color-fg, $color-bg, 0.28);
+$color-fg-pre: mixxd($color-fg, $color-bg, 0.16);
+$color-fg-dt: mixxd($color-fg, $color-bg, 0.08);
 $color-fg-link: $color-base;
 $color-fg-link-hover: $color-darkest;
+$color-fg-em: mixxd($color-fg, $color-bg, 0.08);
+$color-fg-strong: mixxd($color-fg, $color-bg, 0.08);
+$color-fg-th: mixxd($color-fg, $color-bg, 0.08);
 $color-fg-logo: $color-bg;
 $color-fg-gnav: inherit;
 $color-fg-gnav-hover: $color-darkest;

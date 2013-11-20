@@ -1,8 +1,9 @@
 // Seealso
+$color-fg-seealso: mixxd($color-fg, $color-bg, 0.08);
 $color-fg-seealso-chain: $color-fg;
 
 // Sidenote
-$color-fg-sidenote: mixxd($color-fg, $color-bg, 0.6);
+$color-fg-sidenote: mixxd($color-fg, $color-bg, 0.48);
 
 // Posts
 $color-fg-posts-tag: $color-fg;
@@ -12,7 +13,7 @@ $color-fg-posts-time: mixxd($color-fg, $color-bg, 0.6);
 $color-fg-flat-dl: mixxd($color-fg, $color-bg, 0.8);
 
 // Read Older
-$color-fg-read-older-label: $color-fg;
+$color-fg-read-older-label: mixxd($color-fg, $color-bg, 0.08);
 
 // Paging
 $color-fg-paging: $color-light;
@@ -25,7 +26,7 @@ $color-fg-facebookf: $cc-facebook;
 $color-fg-twitterbird: $cc-twitter;
 
 // Google Code Prettify
-$color-google-code-prettify-default: #000;
+$color-google-code-prettify-default: #333;
 $color-google-code-prettify-comment: #999;
 $color-google-code-prettify-constant: #390;
 $color-google-code-prettify-number: #939;
