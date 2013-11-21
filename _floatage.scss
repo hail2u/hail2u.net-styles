@@ -1,0 +1,12 @@
+// Floatage
+@media (min-width: $breakpoint-content) {
+  .floatage-left {
+    margin-right: $width-gap;
+    float: left;
+  }
+
+  .floatage-right {
+    margin-left: $width-gap;
+    float: right;
+  }
+}
