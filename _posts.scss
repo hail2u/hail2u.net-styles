@@ -51,9 +51,9 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    $h: ((em($line-height-default) * 5 + $margin-mini * 4) * $ratio-posts-item);
-
     > figure {
+      $h: ((em($line-height-default) * 5 + $margin-mini * 4) * $ratio-posts-item);
+
       position: absolute;
       margin-left: (- ($width-suppli + $width-gutter));
       height: $h;
