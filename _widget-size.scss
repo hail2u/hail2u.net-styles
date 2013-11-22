@@ -5,7 +5,7 @@ $width-border-seemore: 0.125em;
 $width-seealso-icon: 1em;
 
 // Posts
-$width-posts-date: 18%;
+$width-posts-date: (5em + $width-gap);
 
 // Paging
 $margin-paging-icon: $width-gutter;
