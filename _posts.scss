@@ -51,6 +51,23 @@
   }
 
   @media (min-width: $breakpoint-full) {
+    h2 {
+      position: relative;
+
+      &::before {
+        @extend %hanging-block;
+
+        margin-top: auto;
+        margin-bottom: auto;
+        display: block;
+        top: 0;
+        bottom: 0;
+        height: $height-posts-heading-label;
+        content: attr(data-label);
+        font-size: percentage($ratio-posts-heading-label);
+      }
+    }
+
     > figure {
       $h: ((em($line-height-default) * 5 + $margin-mini * 4) * $ratio-posts-item);
 
