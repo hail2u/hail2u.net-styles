@@ -49,4 +49,23 @@
       }
     }
   }
+
+  @media (min-width: $breakpoint-full) {
+    $h: ((em($line-height-default) * 5 + $margin-mini * 4) * $ratio-posts-item);
+
+    > figure {
+      position: absolute;
+      margin-left: (- ($width-suppli + $width-gutter));
+      height: $h;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+
+      + ul {
+        padding-left: (($h - $width-border-img * 2) / 9 * 16 + $width-border-img * 2 - $width-suppli);
+      }
+    }
+  }
 }
