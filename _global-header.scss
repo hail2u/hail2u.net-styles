@@ -2,7 +2,7 @@
 [role="banner"] {
   @extend %centering-block;
 
-  margin-top: ($height-logo / $ratio-golden);
+  margin-top: $height-logo;
 
   @media (min-width: $breakpoint-content) {
     margin-top: ($margin-primary-heading / $ratio-golden);

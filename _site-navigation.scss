@@ -1,5 +1,7 @@
 // Site Navigation
 [role="banner"] nav {
+  position: relative;
+  top: (- $height-nav * 2);
   height: $height-nav;
   line-height: $height-nav;
   text-transform: uppercase;
@@ -32,6 +34,8 @@
   }
 
   @media (min-width: $breakpoint-content) {
+    top: auto;
+
     ul {
       margin-left: auto;
       display: table;

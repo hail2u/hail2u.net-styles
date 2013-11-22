@@ -2,7 +2,7 @@
 [role="main"] {
   @extend %centering-block;
 
-  margin-top: (- $height-nav);
+  margin-top: (- $margin-primary-heading);
   text-align: left;
 
   > section,
