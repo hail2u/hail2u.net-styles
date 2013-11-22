@@ -1,0 +1,34 @@
+// Section Header
+[role="main"] * h2 {
+  position: relative;
+  text-align: center;
+
+  &::before {
+    @extend %hanging-block;
+
+    margin-bottom: $margin-mini;
+    display: block;
+    height: $height-section-header-label;
+    content: "";
+    background-image: linear-gradient($color-fg-section-header-label 0, $color-fg-section-header-label 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $width-logo $height-section-header-label;
+    font-size: percentage($ratio-section-header-label);
+  }
+
+  @media (min-width: $breakpoint-content) {
+    text-align: left;
+
+    &::before {
+      background-position: left center;
+    }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    &::before {
+      margin-bottom: 0;
+      height: 100%;
+    }
+  }
+}

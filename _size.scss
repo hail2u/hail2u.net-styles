@@ -24,6 +24,7 @@ $width-full: ($width-suppli + $width-gutter + $width-content);
 $width-logo: ($width-suppli / pow($ratio-golden, 2));
 $height-logo: $width-logo;
 $height-nav: $height-logo;
+$height-section-header-label: 0.25em;
 $width-elsewhere-icon: em($ratio-golden);
 $height-elsewhere-icon: $width-elsewhere-icon;
 $margin-elsewhere-icon: ($width-elsewhere-icon / 4);
@@ -37,6 +38,7 @@ $width-border-img: 1em;
 $width-border-watermark: 0.25em;
 $width-border-byline: 6.25em;
 $height-border-byline: 0.125em;
+
 
 // Breakpoint
 $width-scrollbar: 1.5em;
