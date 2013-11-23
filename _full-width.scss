@@ -1,0 +1,18 @@
+// Full Width
+.full-width {
+  figure {
+    margin-right: (- $width-gap);
+    margin-left: (- $width-gap);
+
+    img,
+    video,
+    canvas {
+      width: 100%;
+      border: 0;
+    }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    margin-left: (- ($width-gap + $width-suppli + $width-gutter));
+  }
+}
