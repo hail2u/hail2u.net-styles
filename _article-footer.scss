@@ -1,5 +1,5 @@
 // Article Footer
-[role="main"] * h2 + footer {
+main * h2 + footer {
   @extend %hanging-block;
 
   color: $color-fg-article-meta;

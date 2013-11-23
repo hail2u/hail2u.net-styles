@@ -1,5 +1,5 @@
 // Global Main
-[role="main"] {
+main {
   @extend %centering-block;
 
   margin-top: (- $margin-primary-heading);
