@@ -91,10 +91,6 @@ body::after {
   @extend %font-code;
 }
 
-.font-stack-quote {
-  @extend %font-quote;
-}
-
 .italic {
   font-style: italic;
 }
