@@ -1,30 +1,28 @@
 // Pull Quote
-$ratio-pull-quote: $ratio-h2;
+.pull-quote {
+  margin-right: $indent-default;
+  margin-left: $indent-default;
+  text-align: center;
 
-@media (min-width: $breakpoint-full) {
-  .pull-quote {
+  p {
+    margin-top: ($margin-default / $ratio-pull-quote);
+    quotes: "\201c" "\201d"; // Left Double Quotation Mark, Double Low-9 Quotation Mark
+    color: $color-fg-pull-quote;
+    font-size: percentage($ratio-pull-quote);
+
+    &::before {
+      content: open-quote;
+    }
+
+    &::after {
+      content: close-quote;
+    }
+  }
+
+  @media (min-width: $breakpoint-full) {
     margin-right: $width-gutter;
     margin-left: (- ($width-suppli + $width-gutter));
     float: left;
-    text-align: center;
-
-    blockquote {
-      border-left: none;
-      padding-left: 0;
-      width: ($width-suppli * 2 / $ratio-pull-quote);
-      font-size: percentage($ratio-pull-quote);
-    }
-
-    p {
-      margin-top: 0;
-
-      &::before {
-        content: "\201c"; // Left Double Quotation Mark
-      }
-
-      &::after {
-        content: "\201d"; // Double Low-9 Quotation Mark
-      }
-    }
+    width: ($width-suppli * 2);
   }
 }
