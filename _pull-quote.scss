@@ -12,10 +12,12 @@
 
     &::before {
       content: open-quote;
+      font-weight: bold;
     }
 
     &::after {
       content: close-quote;
+      font-weight: bold;
     }
   }
 
