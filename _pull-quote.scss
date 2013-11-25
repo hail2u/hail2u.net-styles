@@ -23,6 +23,6 @@
     margin-right: $width-gutter;
     margin-left: (- ($width-suppli + $width-gutter));
     float: left;
-    width: ($width-suppli * 2);
+    width: ($width-suppli + $width-gutter + $width-suppli);
   }
 }
