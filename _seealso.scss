@@ -1,6 +1,7 @@
 // Seealso
 .seealso {
   @extend %margin-default;
+  @extend %ir;
 
   color: $color-fg-seealso;
   font-weight: bold;
@@ -10,14 +11,9 @@
   }
 
   &::before {
-    margin-right: ($width-seealso-icon / 4);
     display: inline-block;
     width: $width-seealso-icon;
-    content: "\00a0";
     background-image: $image-chain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
     opacity: 0.3;
   }
 }
