@@ -6,6 +6,8 @@
   }
 
   li {
+    @extend %margin-mini;
+
     min-width: 110px;
     height: 20px;
     line-height: 1;
