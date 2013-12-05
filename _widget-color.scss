@@ -3,7 +3,7 @@ $color-fg-pull-quote: $color-fg-blockquote;
 
 // Seealso
 $color-fg-seealso: mixxd($color-fg, $color-bg, 0.08);
-$color-fg-seealso-chain: $color-fg;
+$color-fg-seealso-icon: $color-fg;
 
 // Sidenote
 $color-fg-sidenote: mixxd($color-fg, $color-bg, 0.48);
@@ -20,24 +20,24 @@ $color-fg-read-older-label: mixxd($color-fg, $color-bg, 0.08);
 
 // Paging
 $color-fg-paging: $color-light;
-$color-fg-paging-arrow: $color-fg-paging;
+$color-fg-paging-icon: $color-fg-paging;
 
 // Share Buttons
 @import "./bower_components/hail2u-scss-partials/corporate-colors";
 
-$color-fg-facebookf: $cc-facebook;
-$color-fg-twitterbird: $cc-twitter;
+$color-fg-social-buttons-facebook: $cc-facebook;
+$color-fg-social-buttons-twitter: $cc-twitter;
 
 // Google Code Prettify
-$color-google-code-prettify-default: #333;
-$color-google-code-prettify-comment: #999;
-$color-google-code-prettify-constant: #390;
-$color-google-code-prettify-number: #939;
-$color-google-code-prettify-identifier: #c39;
-$color-google-code-prettify-statement: #c30;
-$color-google-code-prettify-preproc: #c33;
-$color-google-code-prettify-type: #399;
-$color-google-code-prettify-special: #c90;
+$color-fg-google-code-prettify-default: #333;
+$color-fg-google-code-prettify-comment: #999;
+$color-fg-google-code-prettify-constant: #390;
+$color-fg-google-code-prettify-number: #939;
+$color-fg-google-code-prettify-identifier: #c39;
+$color-fg-google-code-prettify-statement: #c30;
+$color-fg-google-code-prettify-preproc: #c33;
+$color-fg-google-code-prettify-type: #399;
+$color-fg-google-code-prettify-special: #c90;
 
 // Google Custom Search Engine
 $color-fg-google-cse-icon: $color-bg;
