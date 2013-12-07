@@ -1,20 +1,12 @@
 // Logo
 #logo {
   margin: 0 auto;
+  border-radius: 50%;
   display: block;
   width: $width-logo;
   height: $height-logo;
-  font-size: inherit;
-
-  a,
-  mark {
-    border-radius: 50%;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    color: $color-fg-logo;
-    background-color: $color-bg-logo;
-  }
+  color: $color-fg-logo;
+  background-color: $color-bg-logo;
 
   @media (min-width: $breakpoint-content) {
     position: absolute;
