@@ -34,6 +34,7 @@
   }
 
   @media (min-width: $breakpoint-content) {
+    margin-left: $width-logo;
     top: auto;
 
     ul {
@@ -49,6 +50,8 @@
   }
 
   @media (min-width: $breakpoint-full) {
+    margin-left: 0;
+
     ul {
       margin-left: 0;
     }
