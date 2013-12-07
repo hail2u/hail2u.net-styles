@@ -1,29 +1,34 @@
 // Article Footer
-main * h2 + footer {
-  @extend %hanging-block;
+main {
+  section,
+  article {
+    h1 + footer {
+      @extend %hanging-block;
 
-  position: absolute;
-  bottom: 100%;
-  width: 100%;
-  color: $color-fg-article-meta;
-  text-align: center;
+      position: absolute;
+      bottom: 100%;
+      width: 100%;
+      color: $color-fg-article-meta;
+      text-align: center;
 
-  time {
-    color: $color-fg-article-meta-time;
-  }
+      time {
+        color: $color-fg-article-meta-time;
+      }
 
-  @media (min-width: $breakpoint-content) {
-    text-align: left;
-  }
+      @media (min-width: $breakpoint-content) {
+        text-align: left;
+      }
 
-  @media (min-width: $breakpoint-full) {
-    top: auto;
-    bottom: auto;
-    width: $width-suppli;
+      @media (min-width: $breakpoint-full) {
+        top: auto;
+        bottom: auto;
+        width: $width-suppli;
 
-    .rlb::before {
-      content: "\000a"; // Line Feed
-      white-space: pre-line;
+        .rlb::before {
+          content: "\000a"; // Line Feed
+          white-space: pre-line;
+        }
+      }
     }
   }
 }

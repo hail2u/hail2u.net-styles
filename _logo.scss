@@ -1,6 +1,7 @@
 // Logo
-[role="banner"] h1 {
+#logo {
   margin: 0 auto;
+  display: block;
   width: $width-logo;
   height: $height-logo;
   font-size: inherit;

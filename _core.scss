@@ -45,25 +45,25 @@ body {
   color: $color-fg-heading;
 }
 
+h1 {
+  @include heading;
+
+  margin: ($margin-primary-heading / $ratio-h1) 0 0 0;
+  font-size: percentage($ratio-h1);
+}
+
 h2 {
   @include heading;
 
-  margin: ($margin-primary-heading / $ratio-h2) 0 0 0;
+  margin: ($margin-heading / $ratio-h2) 0 0 0;
   font-size: percentage($ratio-h2);
-}
-
-h3 {
-  @include heading;
-
-  margin: ($margin-heading / $ratio-h3) 0 0 0;
-  font-size: percentage($ratio-h3);
 }
 
 // Grouping Content
 p {
   @extend %margin-default;
 
-  h3 + & {
+  h2 + & {
     @extend %margin-mini;
   }
 }
@@ -185,8 +185,8 @@ a {
     color: $color-fg-link-hover;
   }
 
-  h2 &,
-  h3 & {
+  h1 &,
+  h2 & {
     color: inherit;
 
     &:hover {

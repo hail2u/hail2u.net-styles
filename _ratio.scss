@@ -10,14 +10,14 @@ $ratio-secondary-text: (30px / 16px);
 $ratio-code: 0.875;
 
 // Heading Ratio
-$ratio-h1: $ratio-secondary-text;
-$ratio-h2: ($ratio-primary-text * $ratio-golden);
-$ratio-h3: ($ratio-secondary-text / $ratio-golden);
-$ratio-h4: $ratio-primary-text;
-$ratio-h5: ($ratio-secondary-text / pow($ratio-golden, 2));
-$ratio-h6: ($ratio-primary-text / $ratio-golden);
+$ratio-h1: ($ratio-primary-text * $ratio-golden);
+$ratio-h2: ($ratio-secondary-text / $ratio-golden);
+$ratio-h3: $ratio-primary-text;
+$ratio-h4: ($ratio-secondary-text / pow($ratio-golden, 2));
+$ratio-h5: ($ratio-primary-text / $ratio-golden);
+$ratio-h6: ($ratio-secondary-text / pow($ratio-golden, 3));
 
 // Main Component
 $ratio-site-navigation: 0.875;
-$ratio-section-header-label: (1 / $ratio-h2);
+$ratio-section-header-label: (1 / $ratio-h1);
 $ratio-elsewhere-icon-margin: 0.25;

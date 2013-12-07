@@ -1,37 +1,42 @@
 // Section Header
-main * h2 {
-  position: relative;
-  text-align: center;
+main {
+  section,
+  article {
+    h1 {
+      position: relative;
+      text-align: center;
 
-  &::after {
-    @extend %hanging-block;
+      &::after {
+        @extend %hanging-block;
 
-    margin-top: $margin-mini;
-    display: block;
-    height: $height-section-header-label;
-    content: "";
-    background-image: linear-gradient(
-      $color-fg-section-header-label 0,
-      $color-fg-section-header-label 100%
-    );
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: $width-logo $height-section-header-label;
-    font-size: percentage($ratio-section-header-label);
-  }
+        margin-top: $margin-mini;
+        display: block;
+        height: $height-section-header-label;
+        content: "";
+        background-image: linear-gradient(
+          $color-fg-section-header-label 0,
+          $color-fg-section-header-label 100%
+        );
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: $width-logo $height-section-header-label;
+        font-size: percentage($ratio-section-header-label);
+      }
 
-  @media (min-width: $breakpoint-content) {
-    text-align: left;
+      @media (min-width: $breakpoint-content) {
+        text-align: left;
 
-    &::after {
-      background-position: left center;
-    }
-  }
+        &::after {
+          background-position: left center;
+        }
+      }
 
-  @media (min-width: $breakpoint-full) {
-    &::after {
-      margin-top: 0;
-      height: 100%;
+      @media (min-width: $breakpoint-full) {
+        &::after {
+          margin-top: 0;
+          height: 100%;
+        }
+      }
     }
   }
 }
