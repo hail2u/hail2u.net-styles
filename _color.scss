@@ -26,6 +26,7 @@ $color-fg-gnav-active: $color-base;
 $color-fg-section-header-label: mixxd($color-fg, $color-bg, 0.92);
 $color-fg-article-meta: mixxd($color-fg, $color-bg, 0.6);
 $color-fg-article-meta-time: $color-fg;
+$color-fg-watermark: $color-bg;
 $color-fg-elsewhere-icon: $color-bg;
 $color-fg-footlinks: mixxd($color-fg, $color-bg, 0.6);
 
@@ -37,8 +38,8 @@ $color-bg-th: mixxd($color-fg, $color-bg, 0.92);
 $color-bg-td: mixxd($color-fg, $color-bg, 0.98);
 $color-bg-logo: $color-light;
 $color-bg-global-footer: mixxd($color-fg, $color-bg, 0.96);
-$color-bg-elsewhere-icon: $color-light;
 $color-bg-watermark: mixxd($color-fg, $color-bg, 0.92);
+$color-bg-elsewhere-icon: $color-light;
 
 $color-border-blockquote: mixxd($color-fg, $color-bg, 0.92);
 $color-border-pre: mixxd($color-fg, $color-bg, 0.88);
