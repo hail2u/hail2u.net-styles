@@ -2,24 +2,20 @@
 .flat-ul {
   @extend %clearfix;
 
-  margin-right: (- $width-gap);
-  margin-left: (- $width-gap);
-
-  li {
-    @include box-sizing(border-box);
-
-    padding-right: $width-gap;
-    padding-left: $width-gap;
-    float: left;
-    width: (100% / 3);
-    list-style-type: none;
-  }
-
   @media (min-width: $breakpoint-content) {
+    margin-right: (- $width-gap);
+    margin-left: (- $width-gap);
     padding-left: 0;
 
     li {
+      @include box-sizing(border-box);
+
+      padding-right: $width-gap;
+      padding-left: $width-gap;
       display: block;
+      float: left;
+      width: (100% / 3);
+      list-style-type: none;
     }
   }
 }
