@@ -9,8 +9,9 @@
   nav,
   hr::before,
   blockquote::before,
-  [role="banner"] h1 a::before,
-  [role="banner"] h1 mark::before,
+  #logo,
+  [role="contentinfo"]::before,
+  [role="contentinfo"] address::before,
   .elsewhere,
   .footlinks,
   .seealso::before {
@@ -58,6 +59,10 @@
     height: 0;
   }
 
+  pre {
+    border: 0;
+  }
+
   a {
     color: inherit;
 
@@ -70,19 +75,27 @@
     border: 0;
   }
 
-  [role="banner"] h1 {
-    margin-top: ($margin-heading / $ratio-h1);
-    font-size: percentage($ratio-h1);
-
-    a,
-    mark {
-      width: auto;
-      height: auto;
-      line-height: 1;
-    }
+  [role="banner"],
+  main,
+  [role="contentinfo"] address {
+    max-width: none;
   }
 
-  [role="contentinfo"] {
-    text-align: center;
+  [role="banner"],
+  main section h1,
+  main article h1,
+  main section h1 + footer,
+  main article h1 + footer,
+  [role="contentinfo"] address {
+    text-align: left;
+  }
+
+  [role="banner"] h1 {
+    margin-top: $margin-default;
+    display: block;
+  }
+
+  main {
+    margin-top: 0;
   }
 }

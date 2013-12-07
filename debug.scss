@@ -68,6 +68,10 @@ body::after {
   color: #fff;
   background-color: #096;
   font-size: 87.5%;
+
+  @media print {
+    display: none;
+  }
 }
 
 @media (min-width: $breakpoint-content) {
