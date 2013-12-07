@@ -69,20 +69,16 @@ body::after {
   background-color: #096;
   font-size: 87.5%;
 
-  @media print {
-    display: none;
-  }
-}
-
-@media (min-width: $breakpoint-content) {
-  body::after {
+  @media (min-width: $breakpoint-content) {
     content: "Medium: #{(($breakpoint-content / 1em) * 16px)}";
   }
-}
 
-@media (min-width: $breakpoint-full) {
-  body::after {
+  @media (min-width: $breakpoint-full) {
     content: "Large: #{(($breakpoint-full / 1em) * 16px)}";
+  }
+
+  @media print {
+    display: none;
   }
 }
 
