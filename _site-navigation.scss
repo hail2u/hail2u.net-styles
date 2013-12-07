@@ -1,15 +1,16 @@
 // Site Navigation
 [role="banner"] nav {
   position: relative;
-  top: (- $height-nav * 2);
-  height: $height-nav;
-  line-height: $height-nav;
-  text-transform: uppercase;
 
   ul {
     margin-top: 0;
     padding-left: 0;
     display: inline-table;
+    position: relative;
+    top: (- $height-nav * 2);
+    height: $height-nav;
+    line-height: $height-nav;
+    text-transform: uppercase;
   }
 
   li {
@@ -34,10 +35,8 @@
   }
 
   @media (min-width: $breakpoint-content) {
-    margin-left: $width-logo;
-    top: auto;
-
     ul {
+      top: (- $height-nav);
       margin-left: auto;
       display: table;
     }
@@ -50,9 +49,8 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: 0;
-
     ul {
+      position: static;
       margin-left: 0;
     }
 
