@@ -1,13 +1,11 @@
 // Site Navigation
 [role="banner"] nav {
-  position: relative;
-
   ul {
     margin-top: 0;
     padding-left: 0;
     display: inline-table;
     position: relative;
-    top: (- $height-site-navigation * 2);
+    top: (- ($height-logo + $height-site-navigation));
     height: $height-site-navigation;
     line-height: $height-site-navigation;
     text-transform: uppercase;
@@ -52,8 +50,8 @@
 
   @media (min-width: $breakpoint-full) {
     ul {
-      position: static;
       margin-left: 0;
+      position: static;
     }
 
     li {

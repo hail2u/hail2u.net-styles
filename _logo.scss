@@ -12,6 +12,6 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-right: ($width-suppli + $width-gutter - $width-logo);
+    margin-right: (- ($width-gap + $width-logo));
   }
 }
