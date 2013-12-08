@@ -23,7 +23,7 @@ $width-suppli: ($width-content / pow($ratio-golden, 3));
 $width-full: ($width-suppli + $width-gutter + $width-content);
 $width-logo: ($width-suppli / pow($ratio-golden, 2));
 $height-logo: $width-logo;
-$height-nav: $height-logo;
+$height-site-navigation: $height-logo;
 $height-section-header-label: 0.25em;
 $width-watermark: ($width-logo / $ratio-golden);
 $height-watermark: $width-watermark;

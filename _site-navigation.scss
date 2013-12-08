@@ -7,43 +7,45 @@
     padding-left: 0;
     display: inline-table;
     position: relative;
-    top: (- $height-nav * 2);
-    height: $height-nav;
-    line-height: $height-nav;
+    top: (- $height-site-navigation * 2);
+    height: $height-site-navigation;
+    line-height: $height-site-navigation;
     text-transform: uppercase;
   }
 
   li {
-    padding-right: ($height-nav * 0.125 / $ratio-site-navigation);
-    padding-left: ($height-nav * 0.125 / $ratio-site-navigation);
+    padding-right: ($height-site-navigation * 0.125 / $ratio-site-navigation);
+    padding-left: ($height-site-navigation * 0.125 / $ratio-site-navigation);
     display: table-cell;
     font-size: percentage($ratio-site-navigation);
   }
 
   a {
-    color: $color-fg-gnav;
+    color: $color-fg-site-navigation;
 
-    &:hover {
-      color: $color-fg-gnav-hover;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-fg-site-navigation-hover;
     }
   }
 
   mark {
-    color: $color-fg-gnav-active;
+    color: $color-fg-site-navigation-mark;
     background-color: transparent;
     font-weight: bold;
   }
 
   @media (min-width: $breakpoint-content) {
     ul {
-      top: (- $height-nav);
       margin-left: auto;
       display: table;
+      top: (- $height-site-navigation);
     }
 
     li {
       padding-right: 0;
-      padding-left: ($height-nav * 0.5);
+      padding-left: ($height-site-navigation * 0.5);
       font-size: 100%;
     }
   }
@@ -55,7 +57,7 @@
     }
 
     li {
-      padding-right: ($height-nav * 0.5);
+      padding-right: ($height-site-navigation * 0.5);
       padding-left: 0;
 
       &:last-child {
