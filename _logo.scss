@@ -1,18 +1,17 @@
 // Logo
 #logo {
-  @extend %hanging-block;
-
-  margin: 0 auto;
+  margin: auto;
   display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: $width-logo;
   height: $height-logo;
   background-color: transparent;
 
   @media (min-width: $breakpoint-content) {
-    margin-left: 0;
-  }
-
-  @media (min-width: $breakpoint-full) {
-    margin-right: (- ($width-gap + $width-logo));
+    right: auto;
+    left: $width-gap;
   }
 }

@@ -2,19 +2,10 @@
 main {
   @extend %centering-block;
 
-  margin-top: (- $height-site-navigation - $margin-primary-heading + em($line-height-default) + $margin-heading);
   text-align: left;
 
   > section,
   > article {
     position: relative;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    margin-top: (- $height-site-navigation);
-  }
-
-  @media (min-width: $breakpoint-full) {
-    margin-top: (- $margin-primary-heading - $height-logo + $width-suppli);
   }
 }

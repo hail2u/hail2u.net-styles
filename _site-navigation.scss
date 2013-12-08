@@ -4,8 +4,6 @@ body > header nav {
     margin-top: 0;
     padding-left: 0;
     display: inline-table;
-    position: relative;
-    top: (- ($height-logo + $height-site-navigation));
     height: $height-site-navigation;
     line-height: $height-site-navigation;
     text-transform: uppercase;
@@ -36,9 +34,9 @@ body > header nav {
 
   @media (min-width: $breakpoint-content) {
     ul {
+      margin-top: ($margin-primary-heading / $ratio-golden);
       margin-left: auto;
       display: table;
-      top: (- $height-site-navigation);
     }
 
     li {
@@ -51,7 +49,6 @@ body > header nav {
   @media (min-width: $breakpoint-full) {
     ul {
       margin-left: 0;
-      position: static;
     }
 
     li {
@@ -62,7 +59,7 @@ body > header nav {
         padding-right: 0;
         position: absolute;
         top: 0;
-        right: 0;
+        right: $width-gap;
       }
     }
   }

@@ -2,13 +2,13 @@
 body > header {
   @extend %centering-block;
 
-  margin-top: $height-logo;
+  height: ($height-site-navigation + $height-logo);
 
   h1 {
     display: none;
   }
 
   @media (min-width: $breakpoint-content) {
-    margin-top: ($margin-primary-heading / $ratio-golden);
+    height: $height-logo;
   }
 }
