@@ -1,5 +1,5 @@
 // Global Header
-[role="banner"] {
+body > header {
   @extend %centering-block;
 
   margin-top: $height-logo;

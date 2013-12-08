@@ -10,8 +10,8 @@
   hr::before,
   blockquote::before,
   #logo,
-  [role="contentinfo"]::before,
-  [role="contentinfo"] address::before,
+  body > footer::before,
+  body > footer address::before,
   .elsewhere,
   .footlinks,
   .seealso::before {
@@ -75,22 +75,22 @@
     border: 0;
   }
 
-  [role="banner"],
+  body > header,
   main,
-  [role="contentinfo"] address {
+  body > footer address {
     max-width: none;
   }
 
-  [role="banner"],
+  body > header
   main section h1,
   main article h1,
   main section h1 + footer,
   main article h1 + footer,
-  [role="contentinfo"] address {
+  body > footer address {
     text-align: left;
   }
 
-  [role="banner"] h1 {
+  body > header h1 {
     margin-top: $margin-default;
     display: block;
   }

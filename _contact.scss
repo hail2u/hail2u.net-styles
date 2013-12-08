@@ -1,5 +1,5 @@
 // Contact
-[role="contentinfo"] address {
+body > footer address {
   @extend %centering-block;
 
   font-style: normal;

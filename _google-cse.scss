@@ -2,14 +2,14 @@
 @import "./bower_components/hail2u-scss-partials/image-replacement";
 @import "./bower_components/hail2u-scss-partials/vendor-extension";
 
-[role="search"] {
+#cse-search-box {
   > div {
     margin-top: $margin-default;
     display: inline-block;
     position: relative;
     width: ($width-google-cse * 1.5);
 
-    [role="complementary"] & {
+    body > aside & {
       margin-top: $margin-primary-heading;
     }
   }
