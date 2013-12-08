@@ -6,6 +6,7 @@
   display: block;
   width: $width-logo;
   height: $height-logo;
+  background-color: transparent;
 
   @media (min-width: $breakpoint-content) {
     margin-left: 0;
