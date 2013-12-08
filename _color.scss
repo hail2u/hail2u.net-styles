@@ -7,41 +7,63 @@ $color-dark: rgb(45, 111, 140);
 $color-light: rgb(70, 176, 221);
 $color-lightest: rgb(111, 188, 221);
 
-// Semantic
+// Core
 $color-fg-body: $color-fg;
+$color-bg-body: $color-bg;
+
 $color-fg-heading: mixxd($color-fg, $color-bg, 0.08);
+
 $color-fg-hr: mixxd($color-fg, $color-bg, 0.92);
+
 $color-fg-blockquote: mixxd($color-fg, $color-bg, 0.36);
+$color-border-blockquote: mixxd($color-fg, $color-bg, 0.92);
+
 $color-fg-pre: mixxd($color-fg, $color-bg, 0.16);
+$color-bg-pre: mixxd($color-fg, $color-bg, 0.98);
+$color-border-pre: mixxd($color-fg, $color-bg, 0.88);
+
 $color-fg-dt: mixxd($color-fg, $color-bg, 0.08);
+
 $color-fg-link: $color-base;
 $color-fg-link-hover: $color-darkest;
+
 $color-fg-em: mixxd($color-fg, $color-bg, 0.08);
+
 $color-fg-strong: mixxd($color-fg, $color-bg, 0.08);
+
+$color-bg-mark: rgb(255, 238, 0);
+
+$color-bg-img: white;
+
+$color-border-table: mixxd($color-fg, $color-bg, 0.8);
+
 $color-fg-th: mixxd($color-fg, $color-bg, 0.08);
+$color-bg-th: mixxd($color-fg, $color-bg, 0.92);
+
+$color-bg-td: mixxd($color-fg, $color-bg, 0.98);
+
+// Header
 $color-fg-logo: $color-bg;
+$color-bg-logo: $color-light;
+
 $color-fg-site-navigation: inherit;
 $color-fg-site-navigation-hover: $color-darkest;
 $color-fg-site-navigation-mark: $color-base;
+
+// Main
 $color-fg-section-header-label: mixxd($color-fg, $color-bg, 0.92);
 $color-fg-article-footer: mixxd($color-fg, $color-bg, 0.6);
 $color-fg-article-footer-time: $color-fg;
+
+// Footer
+$color-bg-global-footer: mixxd($color-fg, $color-bg, 0.96);
+
 $color-fg-watermark: $color-bg;
-$color-fg-elsewhere-icon: $color-bg;
+$color-bg-watermark: mixxd($color-fg, $color-bg, 0.92);
+
 $color-fg-footlinks: mixxd($color-fg, $color-bg, 0.6);
 
-$color-bg-body: $color-bg;
-$color-bg-pre: mixxd($color-fg, $color-bg, 0.98);
-$color-bg-mark: rgb(255, 238, 0);
-$color-bg-img: white;
-$color-bg-th: mixxd($color-fg, $color-bg, 0.92);
-$color-bg-td: mixxd($color-fg, $color-bg, 0.98);
-$color-bg-logo: $color-light;
-$color-bg-global-footer: mixxd($color-fg, $color-bg, 0.96);
-$color-bg-watermark: mixxd($color-fg, $color-bg, 0.92);
-$color-bg-elsewhere-icon: $color-light;
-
-$color-border-blockquote: mixxd($color-fg, $color-bg, 0.92);
-$color-border-pre: mixxd($color-fg, $color-bg, 0.88);
-$color-border-table: mixxd($color-fg, $color-bg, 0.8);
 $color-border-byline: mixxd($color-fg, $color-bg, 0.92);
+
+$color-fg-elsewhere-icon: $color-bg;
+$color-bg-elsewhere-icon: $color-light;
