@@ -8,11 +8,11 @@ main {
       position: absolute;
       bottom: 100%;
       width: 100%;
-      color: $color-fg-article-meta;
+      color: $color-fg-article-footer;
       text-align: center;
 
       time {
-        color: $color-fg-article-meta-time;
+        color: $color-fg-article-footer-time;
       }
 
       @media (min-width: $breakpoint-content) {
