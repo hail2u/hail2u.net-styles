@@ -16,8 +16,8 @@
   }
 
   a {
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+    margin-right: ($margin-share-buttons / 2);
+    margin-left: ($margin-share-buttons / 2);
     padding-left: ($width-share-buttons-icon + 0.125em);
     display: inline-block;
     background-repeat: no-repeat;
@@ -38,8 +38,8 @@
 
   @media (min-width: $breakpoint-content) {
     a {
-      margin-right: 1em;
-      margin-left: 1em;
+      margin-right: $margin-share-buttons;
+      margin-left: $margin-share-buttons;
     }
   }
 

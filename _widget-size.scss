@@ -15,6 +15,7 @@ $width-paging-icon: (($width-suppli - $margin-paging-icon) / 2);
 $height-paging-icon: $width-paging-icon;
 
 // Share Buttons
+$margin-share-buttons: 1em;
 $height-share-buttons: em($line-height-default);
 $width-share-buttons-icon: 1.5em;
 $height-share-buttons-icon: $width-share-buttons-icon;
@@ -27,3 +28,4 @@ $height-google-cse: 2em;
 // Iine!
 $width-icon-iine: $width-logo;
 $height-icon-iine: $width-icon-iine;
+$margin-iine-caption: 0.75em;

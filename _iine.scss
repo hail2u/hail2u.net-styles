@@ -47,7 +47,7 @@
     @include transition(bottom 0.2s ease-in);
 
     margin-right: 0;
-    padding: 0.7em 0;
+    padding: $margin-iine-caption 0;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -61,7 +61,7 @@
   a:hover figcaption {
     @include transition(bottom 0.1s ease-out);
 
-    bottom: (- (0.7em * 2 + 1));
+    bottom: (- ($margin-iine-caption * 2 + 1));
   }
 
   img {
