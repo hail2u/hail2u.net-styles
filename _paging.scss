@@ -23,7 +23,6 @@
     display: block;
     width: $width-paging-icon;
     height: $height-paging-icon;
-    line-height: $height-paging-icon;
 
     &[rel="prev"]::before {
       background-image: $image-arrow-left;

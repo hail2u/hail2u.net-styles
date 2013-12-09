@@ -18,7 +18,6 @@
     display: block;
     width: $width-elsewhere-icon;
     height: $height-elsewhere-icon;
-    line-height: $height-elsewhere-icon;
     color: $color-fg-elsewhere-icon;
     background-color: $color-bg-elsewhere-icon;
 
@@ -44,7 +43,6 @@
     position: absolute;
     top: 0;
     right: $width-gap;
-    z-index: 1;
 
     li {
       padding-right: 0;
