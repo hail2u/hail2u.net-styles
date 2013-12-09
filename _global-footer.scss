@@ -1,7 +1,7 @@
 // Global Footer
 body > footer {
   margin-top: $margin-heading;
-  padding-bottom: $margin-heading;
+  padding: $margin-heading 0;
   position: relative;
   background-color: $color-bg-global-footer;
 
