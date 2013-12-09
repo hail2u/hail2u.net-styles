@@ -1,6 +1,5 @@
 // Seealso
 .seealso {
-  @extend %margin-default;
   @extend %ir;
 
   color: $color-fg-seealso;
@@ -11,6 +10,7 @@
   }
 
   &::before {
+    margin-right: $margin-seealso-icon;
     display: inline-block;
     width: $width-seealso-icon;
     background-image: $image-chain;
