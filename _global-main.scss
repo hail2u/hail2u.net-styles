@@ -3,9 +3,4 @@ main {
   @extend %centering-block;
 
   text-align: left;
-
-  > section,
-  > article {
-    position: relative;
-  }
 }

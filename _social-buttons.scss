@@ -2,7 +2,6 @@
 .social-buttons {
   ul {
     padding-left: 0;
-    list-style-type: none;
   }
 
   li {
@@ -11,6 +10,7 @@
     min-width: 110px;
     height: 20px;
     line-height: 1;
+    list-style-type: none;
   }
 
   div {

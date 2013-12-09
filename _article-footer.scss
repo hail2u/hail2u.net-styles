@@ -2,6 +2,8 @@
 main {
   > article,
   > section {
+    position: relative;
+
     h1 + footer {
       @extend %hanging-block;
 

@@ -1,5 +1,6 @@
 // Paging
 .paging {
+  position: relative;
   text-align: center;
 
   ul {
@@ -34,8 +35,6 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    position: relative;
-
     ul {
       margin-top: $margin-primary-heading;
       display: block;
