@@ -1,6 +1,5 @@
 {
   "name": "hail2u.net-styles",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -9,8 +8,9 @@
     "tests"
   ],
   "devDependencies": {
-    "hail2u-scss-partials": "~1.1.1",
+    "hail2u-scss-partials": "~1.2.1",
     "modularized-normalize-scss": "~2.1.4",
     "scss-column-equation": "~1.0.0"
-  }
+  },
+  "private": true
 }
