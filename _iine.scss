@@ -11,10 +11,6 @@
   background-color: $color-bg-iine;
   font-style: italic;
 
-  + footer {
-    margin-top: 0;
-  }
-
   h1 {
     margin-top: 0;
 
@@ -41,18 +37,6 @@
     line-height: 1;
   }
 
-  a {
-    &:hover {
-      color: $color-fg-link;
-
-      figcaption {
-        @include transition(bottom 0.1s ease-out);
-
-        bottom: (- (0.7em * 2 + 1));
-      }
-    }
-  }
-
   figure {
     display: inline-block;
     position: relative;
@@ -77,8 +61,18 @@
     text-align: center;
   }
 
+  a:hover figcaption {
+    @include transition(bottom 0.1s ease-out);
+
+    bottom: (- (0.7em * 2 + 1));
+  }
+
   img {
     border: none;
+  }
+
+  + footer {
+    margin-top: 0;
   }
 
   @media (min-width: $breakpoint-content) {
