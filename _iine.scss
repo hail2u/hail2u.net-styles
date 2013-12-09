@@ -17,12 +17,11 @@
 
   h1 {
     margin-top: 0;
-    font-size: inherit;
 
     a {
       display: inline-block;
-      width: $width-icon-iine;
-      height: $height-icon-iine;
+      width: ($width-icon-iine / $ratio-h1);
+      height: ($height-icon-iine / $ratio-h1);
     }
   }
 
