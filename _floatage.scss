@@ -3,10 +3,12 @@
   .floatage-left {
     margin-right: $width-gap;
     float: left;
+    max-width: 50%;
   }
 
   .floatage-right {
     margin-left: $width-gap;
     float: right;
+    max-width: 50%;
   }
 }
