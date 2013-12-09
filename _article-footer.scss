@@ -1,7 +1,7 @@
 // Article Footer
 main {
-  section,
-  article {
+  > article,
+  > section {
     h1 + footer {
       @extend %hanging-block;
 

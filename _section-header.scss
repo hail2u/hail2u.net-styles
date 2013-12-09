@@ -1,7 +1,7 @@
 // Section Header
 main {
-  section,
-  article {
+  > article,
+  > section {
     h1 {
       position: relative;
       text-align: center;
