@@ -37,15 +37,16 @@
   }
 
   @media (min-width: $breakpoint-content) {
+    text-align: left;
+
     a {
       margin-right: $margin-share-buttons;
-      margin-left: $margin-share-buttons;
+      margin-left: 0;
     }
   }
 
   @media (min-width: $breakpoint-full) {
     top: auto;
-    text-align: left;
 
     ul {
       margin-top: (- ($height-share-buttons * 2));
@@ -58,7 +59,6 @@
 
     a {
       margin-right: 0;
-      margin-left: 0;
     }
   }
 }

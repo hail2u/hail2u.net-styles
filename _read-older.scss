@@ -20,15 +20,19 @@
     }
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint-content) {
     text-align: left;
 
     p {
-      margin-top: ($margin-primary-heading / $ratio-read-older-title);
-
       &::before {
         content: "Read older:";
       }
+    }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    p {
+      margin-top: ($margin-primary-heading / $ratio-read-older-title);
     }
   }
 }

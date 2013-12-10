@@ -5,7 +5,9 @@
   line-height: 1;
   text-align: center;
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint-content) {
+    margin-right: 0;
+    margin-left: 0;
     text-align: left;
   }
 }
