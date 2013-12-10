@@ -72,19 +72,17 @@ hr {
   @extend %ir;
   @extend %margin-default;
 
-  $height: em($line-height-default);
-
   margin-right: auto;
   margin-left: auto;
   border: none;
   clear: both;
-  width: 33%;
-  max-width: 80%;
-  height: ($margin-default + $height + $margin-default);
+  width: $width-hr;
+  height: $height-hr;
   background-color: transparent;
 
   &::before {
-    background-image: $image-three-asterisks;
+    background-image: $image-asterisk;
+    background-repeat: repeat-x;
   }
 }
 
