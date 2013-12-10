@@ -17,7 +17,11 @@ $ratio-h4: ($ratio-secondary-text / pow($ratio-golden, 2));
 $ratio-h5: ($ratio-primary-text / $ratio-golden);
 $ratio-h6: ($ratio-secondary-text / pow($ratio-golden, 3));
 
-// Main Component
+// Header
 $ratio-site-navigation: 0.875;
+
+// Main
 $ratio-section-header-label: (1 / $ratio-h1);
+
+// Footer
 $ratio-elsewhere-icon-margin: 0.25;
