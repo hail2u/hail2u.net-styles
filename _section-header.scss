@@ -9,7 +9,7 @@ main {
       &::after {
         @extend %hanging-block;
 
-        margin-top: $margin-mini;
+        margin-top: $margin-default;
         display: block;
         height: $height-section-header-label;
         content: "";

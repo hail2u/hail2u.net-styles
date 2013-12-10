@@ -10,7 +10,7 @@
     width: ($width-google-cse * 1.5);
 
     body > aside & {
-      margin-top: $margin-primary-heading;
+      margin-top: $margin-heading;
     }
   }
 
@@ -56,6 +56,14 @@
   @media (min-width: $breakpoint-content) {
     > div {
       width: $width-google-cse;
+    }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    > div {
+       body > aside & {
+         margin-top: $margin-primary-heading;
+       }
     }
   }
 }
