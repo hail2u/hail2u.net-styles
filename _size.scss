@@ -11,7 +11,6 @@ $margin-mini: ($margin-default / 3);
 
 // Indent
 $indent-default: em(pow($ratio-golden, 2));
-$indent-blockquote: 1.25em;
 
 // Column
 $width-gutter: em($ratio-golden);
@@ -21,26 +20,37 @@ $width-gap: ($width-gutter / 2);
 $width-content: 42em;
 $width-suppli: ($width-content / pow($ratio-golden, 3));
 $width-full: ($width-suppli + $width-gutter + $width-content);
-$width-hr: (($margin-default + em($line-height-default) + $margin-default) * 3);
-$height-hr: ($width-hr / 3);
+
+// Core
+$height-hr: ($margin-default + em($line-height-default) + $margin-default);
+$width-hr: ($height-hr * 3);
+
+$indent-blockquote: 1.25em;
+$width-border-blockquote: 0.25em;
+
+$width-border-img: 1em;
+
+// Header
 $width-logo: ($width-suppli / pow($ratio-golden, 2));
 $height-logo: $width-logo;
+
 $height-site-navigation: $height-logo;
+
+// Main
 $height-section-header-label: 0.25em;
+
+// Footer
 $width-watermark: ($width-logo / $ratio-golden);
 $height-watermark: $width-watermark;
+$width-border-watermark: 0.25em;
+
+$width-border-byline: ($width-logo * $ratio-golden);
+$height-border-byline: 0.125em;
+
 $width-elsewhere-icon: em($ratio-golden);
 $height-elsewhere-icon: $width-elsewhere-icon;
 $margin-elsewhere-icon: ($width-elsewhere-icon / 4);
 $width-elsewhere: (($width-elsewhere-icon + $margin-elsewhere-icon) * 3);
-
-// Decoration
-$width-border-blockquote: 0.25em;
-$width-border-img: 1em;
-$width-border-watermark: 0.25em;
-$width-border-byline: ($width-logo * $ratio-golden);
-$height-border-byline: 0.125em;
-
 
 // Breakpoint
 $width-scrollbar: 1.5em;
