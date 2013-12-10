@@ -25,12 +25,12 @@
     font-size: percentage($ratio-share-buttons);
 
     &[href^="https://www.facebook.com/"] {
-      color: $color-fg-social-buttons-facebook;
+      color: $color-fg-share-buttons-facebook;
       background-image: $icon-facebookf;
     }
 
     &[href^="https://twitter.com/"] {
-      color: $color-fg-social-buttons-twitter;
+      color: $color-fg-share-buttons-twitter;
       background-image: $icon-twitterbird;
     }
   }
