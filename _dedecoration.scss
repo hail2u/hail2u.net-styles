@@ -60,6 +60,7 @@
   }
 
   pre {
+    padding: 0;
     border: 0;
   }
 
@@ -71,6 +72,16 @@
     }
   }
 
+  figure,
+  body > header,
+  main section h1,
+  main article h1,
+  main section h1 + footer,
+  main article h1 + footer,
+  body > footer address {
+    text-align: left;
+  }
+
   figure img {
     border: 0;
   }
@@ -79,15 +90,6 @@
   main,
   body > footer address {
     max-width: none;
-  }
-
-  body > header
-  main section h1,
-  main article h1,
-  main section h1 + footer,
-  main article h1 + footer,
-  body > footer address {
-    text-align: left;
   }
 
   body > header h1 {

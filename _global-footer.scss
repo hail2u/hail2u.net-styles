@@ -4,6 +4,7 @@ body > footer {
   padding: $margin-heading 0;
   position: relative;
   background-color: $color-bg-global-footer;
+  text-align: center;
 
   &::before {
     border: $width-border-watermark solid $color-bg-global-footer;
@@ -22,5 +23,9 @@ body > footer {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    text-align: right;
   }
 }

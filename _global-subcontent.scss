@@ -1,4 +1,10 @@
 // Global Subcontent
 body > aside {
   @extend %centering-block;
+
+  text-align: center;
+
+  @media (min-width: $breakpoint-full) {
+    text-align: left;
+  }
 }

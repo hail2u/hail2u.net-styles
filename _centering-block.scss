@@ -5,10 +5,8 @@
   padding-left: $width-gap;
   position: relative;
   max-width: $width-content;
-  text-align: center;
 
   @media (min-width: $breakpoint-full) {
     padding-left: ($width-gap + $width-suppli + $width-gutter);
-    text-align: left;
   }
 }

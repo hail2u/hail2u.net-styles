@@ -33,20 +33,16 @@
     }
   }
 
-  @media (min-width: $breakpoint-content) {
-    text-align: left;
-
-    li {
-      padding-right: $margin-paging-icon;
-      padding-left: 0;
-    }
-  }
-
   @media (min-width: $breakpoint-full) {
     ul {
       margin-top: $margin-primary-heading;
       display: block;
       top: (($height-google-cse - $height-paging-icon) / 2);
+    }
+
+    li {
+      padding-right: $margin-paging-icon;
+      padding-left: 0;
     }
   }
 }

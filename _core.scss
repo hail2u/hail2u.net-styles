@@ -157,6 +157,11 @@ figure {
   @extend %margin-default;
 
   position: relative;
+  text-align: center;
+
+  @media (min-width: $breakpoint-content) {
+    text-align: left;
+  }
 }
 
 figcaption {

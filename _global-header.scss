@@ -3,6 +3,7 @@ body > header {
   @extend %centering-block;
 
   height: ($height-site-navigation + $height-logo);
+  text-align: center;
 
   h1 {
     display: none;
@@ -10,5 +11,6 @@ body > header {
 
   @media (min-width: $breakpoint-content) {
     height: $height-logo;
+    text-align: left;
   }
 }

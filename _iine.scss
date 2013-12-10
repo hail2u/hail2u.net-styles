@@ -10,6 +10,7 @@
   color: $color-fg-iine;
   background-color: $color-bg-iine;
   font-style: italic;
+  text-align: center;
 
   h1 {
     margin-top: 0;
@@ -88,8 +89,6 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    text-align: center;
-
     ol {
       max-width: ($width-gap + $width-full + $width-gap);
     }

@@ -13,8 +13,6 @@ body > footer address {
   }
 
   @media (min-width: $breakpoint-full) {
-    text-align: right;
-
     &::before {
       display: none;
     }
