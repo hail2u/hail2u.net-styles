@@ -1,8 +1,9 @@
 // Google AdSense
 .adsense {
   margin-top: $margin-heading;
+  margin-right: (- $width-gap);
+  margin-left: (- $width-gap);
   overflow: hidden;
-  line-height: 1;
   text-align: center;
 
   @media (min-width: $breakpoint-content) {
@@ -13,22 +14,11 @@
 }
 
 .hail2unet-main {
-  border-bottom: none;
   width: 300px;
   height: 250px;
 
-  @media (min-width: 520px) {
-    width: 468px;
-    height: 60px;
-  }
-
-  @media (min-width: 960px) {
+  @media (min-width: $breakpoint-full) {
     width: 728px;
-    height: 90px;
-  }
-
-  @media (min-width: 1640px) {
-    width: 970px;
     height: 90px;
   }
 }
