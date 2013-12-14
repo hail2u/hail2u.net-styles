@@ -1,12 +1,5 @@
 {
   "name": "hail2u.net-styles",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "devDependencies": {
     "hail2u-scss-partials": "~1.2.1",
     "modularized-normalize-scss": "~2.1.4",
