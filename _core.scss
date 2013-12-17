@@ -90,10 +90,9 @@ pre {
   @extend %font-code;
   @extend %margin-default;
 
+  margin-right: (- $width-gap);
+  margin-left: (- $width-gap);
   padding: $width-gap;
-  border-width: 1px 0;
-  border-style: dashed;
-  border-color: $color-border-pre;
   clear: both;
   line-height: $line-height-pre;
   color: $color-fg-pre;
