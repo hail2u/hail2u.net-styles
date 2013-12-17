@@ -10,10 +10,6 @@
   height: $height-logo;
   background-color: transparent;
 
-  img {
-    width: 100%;
-  }
-
   @media (min-width: $breakpoint-content) {
     right: auto;
     left: $width-gap;
