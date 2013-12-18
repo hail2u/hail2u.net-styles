@@ -4,10 +4,4 @@
     color: inherit;
     background-color: transparent;
   }
-
-  @media (min-width: $breakpoint-full) {
-    margin-top: 0;
-    margin-right: (($width-elsewhere-icon + $margin-elsewhere-icon) * 3 + 0.5em);
-    line-height: $height-elsewhere-icon;
-  }
 }

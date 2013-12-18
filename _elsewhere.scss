@@ -37,16 +37,4 @@
       background-image: $icon-github;
     }
   }
-
-  @media (min-width: $breakpoint-full) {
-    margin-top: 0;
-    position: absolute;
-    top: 0;
-    right: $width-gap;
-
-    li {
-      padding-right: 0;
-      padding-left: $margin-elsewhere-icon;
-    }
-  }
 }

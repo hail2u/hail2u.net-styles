@@ -23,8 +23,4 @@ body > footer {
     background-position: center center;
     background-size: contain;
   }
-
-  @media (min-width: $breakpoint-full) {
-    text-align: right;
-  }
 }

@@ -1,7 +1,5 @@
 // Contact
 body > footer address {
-  @extend %centering-block;
-
   font-style: normal;
 
   &::before {
@@ -10,11 +8,5 @@ body > footer address {
     display: inline-block;
     width: $width-border-byline;
     content: "";
-  }
-
-  @media (min-width: $breakpoint-full) {
-    &::before {
-      display: none;
-    }
   }
 }
