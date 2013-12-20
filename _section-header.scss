@@ -27,6 +27,7 @@ main {
         text-align: left;
 
         &::after {
+          margin-top: $margin-mini;
           background-position: left center;
         }
       }
