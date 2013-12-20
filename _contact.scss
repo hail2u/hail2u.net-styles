@@ -13,6 +13,8 @@ body > footer address {
   }
 
   @media (min-width: $breakpoint-full) {
+    top: (- $height-elsewhere-icon);
+
     &::before {
       display: none;
     }

@@ -25,7 +25,7 @@ body > footer {
   }
 
   @media (min-width: $breakpoint-full) {
-    text-align: right;
+    text-align: left;
 
     &::before {
       margin-left: (- $width-full / 2);

@@ -22,9 +22,6 @@
 
   @media (min-width: $breakpoint-full) {
     ul{
-      position: absolute;
-      left: $width-gap;
-      z-index: 1;
       line-height: $height-elsewhere-icon;
     }
   }
