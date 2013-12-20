@@ -1,5 +1,7 @@
 // Footlinks
 .footlinks {
+  @extend %centering-block;
+
   ul {
     margin-top: 0;
     padding-left: 0;
@@ -15,6 +17,15 @@
 
     &:first-child::before {
       content: "";
+    }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    ul{
+      position: absolute;
+      left: $width-gap;
+      z-index: 1;
+      line-height: $height-elsewhere-icon;
     }
   }
 }
