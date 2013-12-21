@@ -21,6 +21,10 @@
   }
 
   @media (min-width: $breakpoint-full) {
+    padding-left: $width-gap;
+    left: ($width-watermark + $width-gap);
+    max-width: $width-full;
+
     ul{
       line-height: $height-elsewhere-icon;
     }
