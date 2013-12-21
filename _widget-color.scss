@@ -2,7 +2,7 @@
 $color-fg-pull-quote: $color-fg-blockquote;
 
 // Seealso
-$color-fg-seealso: mixxd($color-fg, $color-bg, 0.08);
+$color-fg-seealso: mixxd($color-fg, $color-bg, 0.12);
 $color-fg-seealso-icon: $color-fg;
 
 // Sidenote
@@ -16,7 +16,7 @@ $color-fg-posts-time: mixxd($color-fg, $color-bg, 0.6);
 $color-fg-flat-dl: mixxd($color-fg, $color-bg, 0.8);
 
 // Read Older
-$color-fg-read-older-label: mixxd($color-fg, $color-bg, 0.08);
+$color-fg-read-older-label: mixxd($color-fg, $color-bg, 0.12);
 
 // Paging
 $color-fg-paging: $color-light;

@@ -11,7 +11,7 @@ $color-lightest: rgb(111, 188, 221);
 $color-fg-body: $color-fg;
 $color-bg-body: $color-bg;
 
-$color-fg-heading: mixxd($color-fg, $color-bg, 0.08);
+$color-fg-heading: mixxd($color-fg, $color-bg, 0.12);
 
 $color-fg-hr: mixxd($color-fg, $color-bg, 0.92);
 
@@ -22,14 +22,14 @@ $color-fg-pre: mixxd($color-fg, $color-bg, 0.16);
 $color-bg-pre: mixxd($color-fg, $color-bg, 0.98);
 $color-border-pre: mixxd($color-fg, $color-bg, 0.88);
 
-$color-fg-dt: mixxd($color-fg, $color-bg, 0.08);
+$color-fg-dt: mixxd($color-fg, $color-bg, 0.12);
 
 $color-fg-link: $color-base;
 $color-fg-link-hover: $color-darkest;
 
-$color-fg-em: mixxd($color-fg, $color-bg, 0.08);
+$color-fg-em: mixxd($color-fg, $color-bg, 0.12);
 
-$color-fg-strong: mixxd($color-fg, $color-bg, 0.08);
+$color-fg-strong: mixxd($color-fg, $color-bg, 0.12);
 
 $color-bg-mark: rgb(255, 238, 0);
 
@@ -37,9 +37,10 @@ $color-bg-img: white;
 
 $color-border-table: mixxd($color-fg, $color-bg, 0.8);
 
-$color-fg-th: mixxd($color-fg, $color-bg, 0.08);
+$color-fg-th: mixxd($color-fg, $color-bg, 0.12);
 $color-bg-th: mixxd($color-fg, $color-bg, 0.92);
 
+$color-fg-td: mixxd($color-fg, $color-bg, 0.12);
 $color-bg-td: mixxd($color-fg, $color-bg, 0.98);
 
 // Header
