@@ -2,17 +2,16 @@
 body > footer {
   margin-top: $margin-primary-heading;
   margin-bottom: $margin-heading;
-  padding: $margin-heading 0;
+  padding-top: ($margin-heading + $height-watermark + $margin-default);
+  padding-bottom: $margin-heading;
   position: relative;
   text-align: center;
 
   &::before {
-    border: $width-border-watermark solid $color-bg-global-footer;
     margin: auto;
-    border-radius: 50%;
     display: block;
     position: absolute;
-    top: (- ($height-watermark / 2));
+    top: $margin-heading;
     right: 0;
     left: 0;
     width: $width-watermark;
@@ -25,11 +24,11 @@ body > footer {
   }
 
   @media (min-width: $breakpoint-full) {
+    padding-top: $margin-heading;
     text-align: left;
 
     &::before {
       margin-left: (- $width-full / 2);
-      border: 0;
       top: 0;
       right: auto;
       bottom: 0;
