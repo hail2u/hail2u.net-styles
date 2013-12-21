@@ -20,7 +20,6 @@ $color-border-blockquote: mixxd($color-fg, $color-bg, 0.92);
 
 $color-fg-pre: mixxd($color-fg, $color-bg, 0.16);
 $color-bg-pre: mixxd($color-fg, $color-bg, 0.98);
-$color-border-pre: mixxd($color-fg, $color-bg, 0.88);
 
 $color-fg-dt: mixxd($color-fg, $color-bg, 0.12);
 
@@ -61,8 +60,6 @@ $color-border-global-footer: mixxd($color-fg, $color-bg, 0.88);
 
 $color-fg-watermark: $color-bg;
 $color-bg-watermark: mixxd($color-fg, $color-bg, 0.92);
-
-$color-fg-footlinks: mixxd($color-fg, $color-bg, 0.6);
 
 $color-border-byline: mixxd($color-fg, $color-bg, 0.92);
 
