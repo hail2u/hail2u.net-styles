@@ -3,6 +3,7 @@ $color-fg-pull-quote: $color-fg-blockquote;
 
 // Seealso
 $color-fg-seealso: mixxd($color-fg, $color-bg, 0.12);
+
 $color-fg-seealso-icon: $color-fg;
 
 // Sidenote
@@ -20,6 +21,7 @@ $color-fg-read-older-label: mixxd($color-fg, $color-bg, 0.12);
 
 // Paging
 $color-fg-paging: $color-light;
+
 $color-fg-paging-icon: $color-fg-paging;
 
 // Share Buttons
@@ -40,10 +42,11 @@ $color-fg-google-code-prettify-type: #399;
 $color-fg-google-code-prettify-special: #c90;
 
 // Google Custom Search Engine
-$color-fg-google-cse-icon: $color-bg;
-$color-bg-google-cse-icon: $color-light;
 $color-border-google-cse: mixxd($color-bg, $color-fg, 0.12);
 $color-border-google-cse-focus: mixxd($color-bg, $color-fg, 0.32);
+
+$color-fg-google-cse-icon: $color-bg;
+$color-bg-google-cse-icon: $color-light;
 
 // Iine!
 $color-border-iine: $color-border-global-footer;
