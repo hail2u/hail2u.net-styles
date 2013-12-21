@@ -46,5 +46,7 @@ $color-border-google-cse: mixxd($color-bg, $color-fg, 0.12);
 $color-border-google-cse-focus: mixxd($color-bg, $color-fg, 0.32);
 
 // Iine!
+$color-border-iine: $color-border-global-footer;
+
 $color-fg-iine-caption: $color-bg;
 $color-bg-iine-caption: transparentize($color-fg, 0.32);

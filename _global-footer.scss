@@ -4,6 +4,7 @@ body > footer {
   margin-bottom: $margin-heading;
   padding-top: ($margin-heading + $height-watermark + $margin-default);
   padding-bottom: $margin-heading;
+  border-top: 1px dashed $color-border-global-footer;
   position: relative;
   text-align: center;
 
