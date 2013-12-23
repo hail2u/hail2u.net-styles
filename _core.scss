@@ -195,14 +195,6 @@ a {
       color: $color-fg-link;
     }
   }
-
-  section > p &,
-  article > p &,
-  div[itemprop="articleBody"] > p & {
-    @extend %auto-breaking;
-
-    text-decoration: underline;
-  }
 }
 
 em {

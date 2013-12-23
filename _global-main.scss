@@ -1,4 +1,14 @@
 // Global Main
 main {
   @extend %centering-block;
+
+  section,
+  article,
+  div[itemprop="articleBody"] {
+    > p a {
+      @extend %auto-breaking;
+
+      text-decoration: underline;
+    }
+  }
 }
