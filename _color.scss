@@ -44,8 +44,8 @@ $color-bg-td: mixxd($color-fg, $color-bg, 0.98);
 
 // Header
 $color-fg-site-navigation: inherit;
-$color-fg-site-navigation-hover: $color-darkest;
-$color-fg-site-navigation-mark: $color-base;
+$color-fg-site-navigation-hover: $color-base;
+$color-fg-site-navigation-mark: $color-light;
 
 // Main
 $color-fg-section-header-label: mixxd($color-fg, $color-bg, 0.92);
