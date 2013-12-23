@@ -17,6 +17,10 @@
     &:first-child::before {
       content: "";
     }
+
+    &:last-child::before {
+      content: "\2026\0020";
+    }
   }
 
   @media (min-width: $breakpoint-full) {
