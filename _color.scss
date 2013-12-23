@@ -43,9 +43,6 @@ $color-fg-td: mixxd($color-fg, $color-bg, 0.12);
 $color-bg-td: mixxd($color-fg, $color-bg, 0.98);
 
 // Header
-$color-fg-logo: $color-bg;
-$color-bg-logo: $color-light;
-
 $color-fg-site-navigation: inherit;
 $color-fg-site-navigation-hover: $color-darkest;
 $color-fg-site-navigation-mark: $color-base;
