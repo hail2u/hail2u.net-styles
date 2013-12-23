@@ -24,11 +24,8 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    padding-left: $width-gap;
-    left: ($width-watermark + $width-gap);
-    max-width: $width-full;
-
     ul {
+      margin-left: (- ($width-suppli + $width-gutter));
       line-height: $height-elsewhere-icon;
     }
   }
