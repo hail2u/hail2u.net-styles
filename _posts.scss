@@ -12,6 +12,12 @@
     color: $color-fg-posts-tag;
   }
 
+  .more {
+    color: $color-fg-posts-more;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
   ul {
     padding-left: 0;
   }
