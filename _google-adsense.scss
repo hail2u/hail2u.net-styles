@@ -4,21 +4,4 @@
   margin-right: (- $width-gap);
   margin-left: (- $width-gap);
   overflow: hidden;
-  text-align: center;
-
-  @media (min-width: $breakpoint-content) {
-    margin-right: 0;
-    margin-left: 0;
-    text-align: left;
-  }
-}
-
-.hail2unet-main {
-  width: 300px;
-  height: 250px;
-
-  @media (min-width: $breakpoint-full) {
-    width: 728px;
-    height: 90px;
-  }
 }
