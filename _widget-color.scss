@@ -46,8 +46,8 @@ $color-fg-google-code-prettify-special: #c90;
 $color-border-google-cse: mixxd($color-bg, $color-fg, 0.12);
 $color-border-google-cse-focus: mixxd($color-bg, $color-fg, 0.32);
 
-$color-fg-google-cse-icon: $color-bg;
-$color-bg-google-cse-icon: $color-light;
+$color-fg-google-cse-icon: $color-light;
+$color-bg-google-cse-icon: transparent;
 
 // Iine!
 $color-border-iine: $color-border-global-footer;
