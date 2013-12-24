@@ -10,6 +10,10 @@
     .more {
       font-weight: bold;
       text-transform: uppercase;
+
+      &::after {
+        content: "\0020\2192"; // Rightwards Arrow
+      }
     }
 
     &:hover {
