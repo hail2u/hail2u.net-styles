@@ -9,6 +9,7 @@
 
     .more {
       font-weight: bold;
+      color: $color-fg-posts-more;
       text-transform: uppercase;
 
       &::after {
@@ -19,10 +20,6 @@
     &:hover {
       h1 {
         color: $color-fg-link;
-      }
-
-      .more {
-        color: $color-fg-posts-more;
       }
     }
   }
