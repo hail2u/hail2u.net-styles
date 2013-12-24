@@ -32,8 +32,7 @@
   }
 
   li {
-    @extend %margin-mini;
-
+    margin-top: $margin-mini;
     position: relative;
     overflow: hidden;
     list-style-type: none;
@@ -48,6 +47,7 @@
 
   @media (min-width: $breakpoint-content) {
     li {
+      margin-top: ($margin-mini / $ratio-posts-item);
       padding-right: $width-posts-date;
       font-size: percentage($ratio-posts-item);
 
