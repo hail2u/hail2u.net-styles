@@ -3,19 +3,24 @@
   > a {
     color: inherit;
 
-    &:hover h1 {
-      color: $color-fg-link;
+    .tag {
+      color: $color-fg-posts-tag;
     }
-  }
 
-  .tag {
-    color: $color-fg-posts-tag;
-  }
+    .more {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
 
-  .more {
-    color: $color-fg-posts-more;
-    text-decoration: underline;
-    text-transform: uppercase;
+    &:hover {
+      h1 {
+        color: $color-fg-link;
+      }
+
+      .more {
+        color: $color-fg-posts-more;
+      }
+    }
   }
 
   ul {
