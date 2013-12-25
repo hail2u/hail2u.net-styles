@@ -3,44 +3,59 @@
 @import "./bower_components/hail2u-scss-partials/vendor-extension";
 
 #cse-search-box {
-  > div {
-    margin-top: $margin-default;
-    display: inline-block;
-    position: relative;
-    width: ($width-google-cse * 1.5);
+  margin-top: $margin-default;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  width: $width-google-cse;
 
-    body > aside & {
-      margin-top: $margin-heading;
-    }
-  }
-
-  input {
-    @include box-sizing(border-box);
-
-    border-style: solid;
-    border-color: $color-border-google-cse !important;
+  body > aside & {
+    margin-top: $margin-heading;
   }
 
   input[type="text"] {
-    padding: 0 ($height-google-cse + $margin-google-cse) 0 $margin-google-cse !important;
-    border-width: 1px;
+    @include box-sizing(border-box);
+
+    padding: 0 ($height-google-cse + $margin-google-cse) 0 $margin-google-cse;
+    border: 1px solid $color-border-google-cse;
     width: 100%;
     height: $height-google-cse;
-    vertical-align: middle;
     color: black;
     background-color: white;
-    background-position: $margin-google-cse center !important;
 
-    &:focus,
-    &:focus + input[type="submit"] {
-      border-color: $color-border-google-cse-focus !important;
+    &:focus {
+      border-color: $color-border-google-cse-focus;
+    }
+
+    &::-moz-placeholder {
+      background-image: url("../images/google-cse-watermark.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+
+    &::-webkit-input-placeholder {
+      background-image: url("../images/google-cse-watermark.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+
+    &:-ms-input-placeholder {
+      background-image: url("../images/google-cse-watermark.png");
+      background-repeat: no-repeat;
+      background-position: $margin-google-cse center;
+    }
+
+    &:placeholder-shown {
+      background-image: url("../images/google-cse-watermark.png");
+      background-repeat: no-repeat;
+      background-position: $margin-google-cse center;
     }
   }
 
   input[type="submit"] {
     @include ir-text-indent; // ir-pseudo-element does not work on `input`
 
-    border-width: 1px 1px 1px 0;
+    border: 0;
     position: absolute;
     top: 0;
     right: 0;
@@ -54,16 +69,14 @@
   }
 
   @media (min-width: $breakpoint-content) {
-    > div {
-      width: $width-google-cse;
-    }
+    width: ($width-google-cse * 0.667);
   }
 
   @media (min-width: $breakpoint-full) {
-    > div {
-       body > aside & {
-         margin-top: $margin-primary-heading;
-       }
+    margin-left: 0;
+
+    body > aside & {
+      margin-top: $margin-primary-heading;
     }
   }
 }
