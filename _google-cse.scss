@@ -26,30 +26,6 @@
     &:focus {
       border-color: $color-border-google-cse-focus;
     }
-
-    &::-moz-placeholder {
-      background-image: url("../images/google-cse-watermark.png");
-      background-repeat: no-repeat;
-      background-position: left center;
-    }
-
-    &::-webkit-input-placeholder {
-      background-image: url("../images/google-cse-watermark.png");
-      background-repeat: no-repeat;
-      background-position: left center;
-    }
-
-    &:-ms-input-placeholder {
-      background-image: url("../images/google-cse-watermark.png");
-      background-repeat: no-repeat;
-      background-position: $margin-google-cse center;
-    }
-
-    &:placeholder-shown {
-      background-image: url("../images/google-cse-watermark.png");
-      background-repeat: no-repeat;
-      background-position: $margin-google-cse center;
-    }
   }
 
   input[type="submit"] {
