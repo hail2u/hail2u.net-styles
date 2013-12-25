@@ -7,7 +7,7 @@
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  width: $width-google-cse;
+  width: $width-google-cse-form;
 
   body > aside & {
     margin-top: $margin-heading;
@@ -16,15 +16,15 @@
   input[type="text"] {
     @include box-sizing(border-box);
 
-    padding: 0 ($height-google-cse + $margin-google-cse) 0 $margin-google-cse;
-    border: 1px solid $color-border-google-cse;
+    padding: 0 ($height-google-cse-form + $margin-google-cse-form) 0 $margin-google-cse-form;
+    border: 1px solid $color-border-google-cse-form;
     width: 100%;
-    height: $height-google-cse;
-    color: black;
-    background-color: white;
+    height: $height-google-cse-form;
+    color: $color-fg-google-cse-form;
+    background-color: $color-bg-google-cse-form;
 
     &:focus {
-      border-color: $color-border-google-cse-focus;
+      border-color: $color-border-google-cse-form-focus;
     }
   }
 
@@ -35,8 +35,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: $height-google-cse;
-    height: $height-google-cse;
+    width: $height-google-cse-form;
+    height: $height-google-cse-form;
     background-color: $color-bg-google-cse-icon;
     background-image: $image-magnifying-glass;
     background-repeat: no-repeat;
@@ -45,7 +45,7 @@
   }
 
   @media (min-width: $breakpoint-content) {
-    width: ($width-google-cse * 0.667);
+    width: ($width-google-cse-form * 0.667);
   }
 
   @media (min-width: $breakpoint-full) {
