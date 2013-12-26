@@ -14,10 +14,10 @@ $version: "6.45.6";
 @import "./bower_components/modularized-normalize-scss/normalize";
 
 // Function
-@import "function-color-mixxd";
-@import "function-color-encode-color";
-@import "function-math-em";
-@import "function-math-pow";
+@import "./bower_components/hail2u-scss-functions/color/mixxd";
+@import "./bower_components/hail2u-scss-functions/color/encode-color";
+@import "./bower_components/hail2u-scss-functions/number/em";
+@import "./bower_components/hail2u-scss-functions/number/pow";
 
 // Variable
 @import "font";
