@@ -33,11 +33,10 @@ html {
 
 // Sections
 body {
-  @extend %font-body;
-
   line-height: $line-height-default;
   color: $color-fg-body;
   background-color: $color-bg-body;
+  font-family: $font-stack-body;
 }
 
 @mixin heading {
@@ -87,7 +86,6 @@ hr {
 }
 
 pre {
-  @extend %font-code;
   @extend %margin-default;
 
   margin-right: (- $width-gap);
@@ -97,6 +95,7 @@ pre {
   line-height: $line-height-pre;
   color: $color-fg-pre;
   background-color: $color-bg-pre;
+  font-family: $font-stack-code;
   font-size: em($ratio-code);
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -240,9 +239,9 @@ code,
 var,
 samp,
 kbd {
-  @extend %font-code;
   @extend %auto-breaking;
 
+  font-family: $font-stack-code;
   font-size: em($ratio-code);
 
   pre & {

@@ -92,11 +92,11 @@ body::after {
 
 // Fonts
 .font-stack-body {
-  @extend %font-body;
+  font-family: $font-stack-body;
 }
 
 .font-stack-code {
-  @extend %font-code;
+  font-family: $font-stack-code;
 }
 
 .italic {
