@@ -198,12 +198,16 @@ a {
 }
 
 em {
+  @extend %auto-breaking;
+
   color: $color-fg-em;
   font-style: normal;
   font-weight: bold;
 }
 
 strong {
+  @extend %auto-breaking;
+
   color: $color-fg-strong;
   border-bottom: 1px dashed;
 }
@@ -247,6 +251,8 @@ kbd {
 }
 
 mark {
+  @extend %auto-breaking;
+
   color: inherit;
   background-color: $color-bg-mark;
 }
