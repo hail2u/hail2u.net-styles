@@ -1,6 +1,6 @@
 // The Root Element
 @mixin adjust-font-size($sizes) {
-  $constant: 1.25;
+  $constant: $ratio-golden;
 
   @each $size in $sizes {
     $ratio: ($size / 16px);
@@ -11,7 +11,7 @@
       $horizontal: ($width-full * $constant * $ratio);
     }
 
-    $vertical: ($horizontal * (9 / 16));
+    $vertical: ($horizontal / $constant);
 
     @if ($ratio < 1) {
       $feature-prefix: max-;
