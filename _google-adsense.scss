@@ -1,12 +1,5 @@
 // Google AdSense
 .adsense {
   margin-top: $margin-default;
-  margin-right: (- $width-gap);
-  margin-left: (- $width-gap);
   overflow: hidden;
-
-  @media (min-width: $breakpoint-content) {
-    margin-right: 0;
-    margin-left: 0;
-  }
 }
