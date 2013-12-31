@@ -24,4 +24,4 @@ $ratio-site-navigation: 0.875;
 $ratio-section-header-label: (1 / $ratio-beta);
 
 // Footer
-$ratio-elsewhere-icon-margin: 0.25;
+$ratio-elsewhere-icon-margin: ($ratio-secondary-text / pow($ratio-golden, 3));

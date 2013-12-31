@@ -49,7 +49,7 @@ $height-border-byline: 0.125em;
 
 $width-elsewhere-icon: em($ratio-golden);
 $height-elsewhere-icon: $width-elsewhere-icon;
-$margin-elsewhere-icon: ($width-elsewhere-icon / 4);
+$margin-elsewhere-icon: em($ratio-elsewhere-icon-margin);
 $width-elsewhere: (($width-elsewhere-icon + $margin-elsewhere-icon) * 3);
 
 // Breakpoint
