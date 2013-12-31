@@ -1,11 +1,18 @@
 // Basic
 $color-fg: rgb(51, 51, 51);
 $color-bg: rgb(252, 249, 240);
+
 $color-base: rgb(17, 136, 187);
 $color-darkest: rgb(6, 87, 122);
 $color-dark: rgb(45, 111, 140);
 $color-light: rgb(70, 176, 221);
 $color-lightest: rgb(111, 188, 221);
+
+$color-complement-base: rgb(255, 140, 12);
+$color-complement-darkest: rgb(255, 192, 121);
+$color-complement-dark: rgb(255, 169, 73);
+$color-complement-light: rgb(191, 127, 55);
+$color-complement-lightest: rgb(166, 89, 4);
 
 // Core
 $color-fg-body: $color-fg;
@@ -30,7 +37,7 @@ $color-fg-em: mixxd($color-fg, $color-bg, 0.12);
 
 $color-fg-strong: mixxd($color-fg, $color-bg, 0.12);
 
-$color-bg-mark: rgb(255, 238, 0);
+$color-bg-mark: $color-complement-base;
 
 $color-bg-img: white;
 
