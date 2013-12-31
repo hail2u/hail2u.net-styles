@@ -12,4 +12,4 @@ $ratio-posts-item: $ratio-gamma;
 $ratio-read-older-title: $ratio-alpha;
 
 // Share Buttons
-$ratio-share-buttons: $ratio-site-navigation;
+$ratio-share-buttons: pow($ratio-small-text, 2);

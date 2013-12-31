@@ -7,9 +7,9 @@ $ratio-yamato: 1.41421;
 // Text Size
 $ratio-primary-text: (16px / 16px);
 $ratio-secondary-text: (30px / 16px);
-$ratio-code: 0.875;
+$ratio-small-text: (14px / 16px);
 
-// Heading Ratio
+// Harmony Ratio
 $ratio-alpha: $ratio-secondary-text;
 $ratio-beta: ($ratio-primary-text * $ratio-golden);
 $ratio-gamma: ($ratio-secondary-text / $ratio-golden);
@@ -17,8 +17,11 @@ $ratio-delta: $ratio-primary-text;
 $ratio-epsilon: ($ratio-secondary-text / pow($ratio-golden, 2));
 $ratio-zeta: ($ratio-primary-text / $ratio-golden);
 
+// Core
+$ratio-code: $ratio-small-text;
+
 // Header
-$ratio-site-navigation: 0.875;
+$ratio-site-navigation: $ratio-small-text;
 
 // Main
 $ratio-section-header-label: (1 / $ratio-beta);
