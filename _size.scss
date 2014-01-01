@@ -17,9 +17,9 @@ $width-gutter: em($ratio-golden);
 $width-gap: ($width-gutter / 2);
 
 // Main Component
-$width-full: em(pow($ratio-golden, 8));
-$width-content: (($width-full + $width-gutter) * 0.75 - $width-gap * 2);
-$width-suppli: (($width-full + $width-gutter) * 0.25 - $width-gap * 2);
+$width-content: 36em;
+$width-suppli: ($width-content / pow($ratio-golden, 3));
+$width-full: ($width-suppli + $width-gutter + $width-content);
 
 // Core
 $height-hr: ($margin-default + em($line-height-default) + $margin-default);
@@ -31,7 +31,7 @@ $width-border-blockquote: 0.25em;
 $width-border-img: 1em;
 
 // Header
-$width-logo: ($width-suppli / 3);
+$width-logo: ($width-suppli / pow($ratio-golden, 2));
 $height-logo: $width-logo;
 
 $height-site-navigation: $height-logo;
