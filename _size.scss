@@ -5,9 +5,9 @@ $line-height-pre: 1.3;
 
 // Margin
 $margin-default: em($line-height-default);
-$margin-heading: ($margin-default * 2);
-$margin-primary-heading: ($margin-heading * 2);
-$margin-mini: ($margin-default / 3);
+$margin-heading: ($margin-default * pow($ratio-golden, 2));
+$margin-primary-heading: ($margin-heading * $ratio-golden);
+$margin-mini: ($margin-default / pow($ratio-golden, 2));
 
 // Indent
 $indent-default: em(pow($ratio-golden, 2));
