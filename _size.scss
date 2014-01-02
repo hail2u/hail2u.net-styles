@@ -55,4 +55,4 @@ $width-elsewhere: (($width-elsewhere-icon + $margin-elsewhere-icon) * 3);
 // Breakpoint
 $width-scrollbar: 1.5em;
 $breakpoint-content: ($width-gap + $width-content + $width-gap + $width-scrollbar);
-$breakpoint-full: (($width-gap + $width-full + $width-gap + $width-scrollbar) * 1.25);
+$breakpoint-full: (($width-gap + $width-full + $width-gap + $width-scrollbar) * (21px / 16px));
