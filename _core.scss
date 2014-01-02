@@ -63,7 +63,7 @@ p {
   @extend %margin-default;
 
   h2 + & {
-    @extend %margin-mini;
+    margin-top: $margin-mini;
   }
 }
 
@@ -99,6 +99,10 @@ pre {
   font-size: em($ratio-code);
   word-wrap: break-word;
   overflow-wrap: break-word;
+
+  h2 + & {
+    margin-top: $margin-mini;
+  }
 }
 
 blockquote {
@@ -126,6 +130,10 @@ ol {
   padding: 0 0 0 $indent-default;
   clear: both;
 
+  h2 + & {
+    margin-top: $margin-mini;
+  }
+
   ul,
   ol {
     margin-top: 0;
@@ -136,6 +144,10 @@ dl {
   @extend %margin-default;
 
   clear: both;
+
+  h2 + & {
+    margin-top: $margin-mini;
+  }
 
   dt {
     color: $color-fg-dt;
@@ -156,6 +168,10 @@ figure {
 
   position: relative;
   text-align: center;
+
+  h2 + & {
+    margin-top: $margin-mini;
+  }
 
   @media (min-width: $breakpoint-content) {
     text-align: left;
@@ -290,6 +306,10 @@ table {
   max-width: 100%;
   overflow-x: auto;
   table-layout: fixed;
+
+  h2 + & {
+    margin-top: $margin-mini;
+  }
 
   th,
   td {
