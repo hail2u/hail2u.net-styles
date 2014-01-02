@@ -118,38 +118,46 @@ body::after {
   li {
     @include box-sizing(border-box);
 
-    margin-bottom: $width-gutter;
-    border: 1px solid black;
     display: block;
-    direction: ltr;
+    width: 100%;
     height: 3em;
-    text-indent: -9999em;
+    overflow: hidden;
 
-    &:nth-child(1) {
+    &::before {
+      @include box-sizing(border-box);
+
+      border: 1px solid black;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "";
+    }
+
+    &:nth-child(1)::before {
       background-color: $color-base;
     }
 
-    &:nth-child(2) {
+    &:nth-child(2)::before {
       background-color: $color-darkest;
     }
 
-    &:nth-child(3) {
+    &:nth-child(3)::before {
       background-color: $color-dark;
     }
 
-    &:nth-child(4) {
+    &:nth-child(4)::before {
       background-color: $color-light;
     }
 
-    &:nth-child(5) {
+    &:nth-child(5)::before {
       background-color: $color-lightest;
     }
 
-    &:nth-child(6) {
+    &:nth-child(6)::before {
       background-color: $color-fg;
     }
 
-    &:nth-child(7) {
+    &:nth-child(7)::before {
       background-color: $color-bg;
     }
   }
@@ -159,11 +167,10 @@ body::after {
     margin-left: (- $width-gap);
 
     li {
-      margin-right: $width-gap;
-      margin-bottom: 0;
-      margin-left: $width-gap;
+      padding-right: $width-gap;
+      padding-left: $width-gap;
       float: left;
-      width: 3em;
+      width: (100% / 7);
     }
   }
 }
