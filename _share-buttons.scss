@@ -15,8 +15,8 @@
   }
 
   a {
-    margin-right: ($margin-share-buttons / 2);
-    margin-left: ($margin-share-buttons / 2);
+    margin-right: ($margin-share-buttons / 2 / $ratio-share-buttons);
+    margin-left: ($margin-share-buttons / 2 / $ratio-share-buttons);
     padding-left: ($width-share-buttons-icon + 0.125em);
     display: inline-block;
     background-repeat: no-repeat;
