@@ -116,6 +116,11 @@ blockquote {
     margin-top: $margin-mini;
   }
 
+  figure > &,
+  figure > & + figcaption {
+    text-align: left;
+  }
+
   @media (min-width: $breakpoint-full) {
     + figcaption {
       position: static;
