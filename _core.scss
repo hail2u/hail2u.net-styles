@@ -267,9 +267,6 @@ kbd {
 
 mark {
   @extend %auto-breaking;
-
-  color: inherit;
-  background-color: $color-bg-mark;
 }
 
 // Edits
