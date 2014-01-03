@@ -12,12 +12,13 @@
   li {
     display: table-cell;
     height: $height-share-buttons;
+    line-height: $height-share-buttons;
   }
 
   a {
     margin-right: ($margin-share-buttons / 2 / $ratio-share-buttons);
     margin-left: ($margin-share-buttons / 2 / $ratio-share-buttons);
-    padding-left: ($width-share-buttons-icon + 0.125em);
+    padding-left: ($width-share-buttons-icon * 1.125);
     display: inline-block;
     background-repeat: no-repeat;
     background-position: left center;
