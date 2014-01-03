@@ -1,7 +1,6 @@
 // Elsewhere
 .elsewhere {
-  @extend %margin-mini;
-
+  margin-top: $margin-mini;
   padding-left: 0;
   display: inline-table;
 

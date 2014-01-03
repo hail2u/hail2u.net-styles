@@ -113,7 +113,7 @@ blockquote {
   color: $color-fg-blockquote;
 
   + figcaption {
-    @extend %margin-mini;
+    margin-top: $margin-mini;
   }
 
   @media (min-width: $breakpoint-full) {
