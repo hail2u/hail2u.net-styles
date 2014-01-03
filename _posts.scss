@@ -17,7 +17,9 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
       h1 {
         color: $color-fg-link;
       }
