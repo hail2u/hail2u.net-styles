@@ -2,7 +2,7 @@
 .pull-quote {
   margin-right: $indent-default;
   margin-left: $indent-default;
-  line-height: $line-height-heading;
+  line-height: ($line-height-default * 1.5 / $ratio-pull-quote);
   text-align: center;
 
   p {
@@ -24,7 +24,6 @@
 
   @media (min-width: $breakpoint-full) {
     margin-right: $width-gutter;
-    margin-bottom: $margin-default;
     margin-left: (- ($width-suppli + $width-gutter));
     float: left;
     width: ($width-suppli + $width-gutter + $width-suppli);
