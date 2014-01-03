@@ -88,9 +88,9 @@ hr {
 pre {
   @extend %margin-default;
 
-  margin-right: (- $width-gap);
-  margin-left: (- $width-gap);
-  padding: $width-gap;
+  margin-right: (- $width-gap / $ratio-code);
+  margin-left: (- $width-gap / $ratio-code);
+  padding: ($width-gap / $ratio-code);
   clear: both;
   line-height: $line-height-pre;
   color: $color-fg-pre;
@@ -101,7 +101,7 @@ pre {
   overflow-wrap: break-word;
 
   h2 + & {
-    margin-top: $margin-mini;
+    margin-top: ($margin-mini / $ratio-code);
   }
 }
 
