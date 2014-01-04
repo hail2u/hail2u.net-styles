@@ -1,0 +1,8 @@
+// Drop
+.drop {
+  @extend .floatage-left;
+
+  @media (min-width: $breakpoint-full) {
+    margin-left: (- ($width-suppli + $width-gutter));
+  }
+}
