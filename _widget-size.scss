@@ -13,8 +13,8 @@ $width-posts-date: (5em + $width-gap);
 $width-border-seemore: 0.125em;
 
 // Flat DL
-$margin-flat-dl-dt: $width-gap;
-$margin-flat-dl-dd: ($margin-flat-dl-dt / 2);
+$margin-flat-dl-dt: ($width-gap / 2);
+$margin-flat-dl-dd: $width-gap;
 
 // Paging
 $margin-paging-icon: $width-gutter;
