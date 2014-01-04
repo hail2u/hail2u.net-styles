@@ -9,7 +9,7 @@ $ratio-primary-text: (16px / 16px);
 $ratio-secondary-text: (30px / 16px);
 $ratio-small-text: (14px / 16px);
 
-// Harmony Ratio
+// Harmonic Ratio
 $ratio-alpha: $ratio-secondary-text;
 $ratio-beta: ($ratio-primary-text * $ratio-golden);
 $ratio-gamma: ($ratio-secondary-text / $ratio-golden);
@@ -24,7 +24,10 @@ $ratio-code: $ratio-small-text;
 $ratio-site-navigation: $ratio-small-text;
 
 // Main
-$ratio-section-header-label: (1 / $ratio-beta);
+$ratio-section-header: $ratio-beta;
+$ratio-section-header-label: (1 / $ratio-section-header);
+
+$ratio-section-sub-header: $ratio-gamma;
 
 // Footer
 $ratio-elsewhere-icon-margin: ($ratio-secondary-text / pow($ratio-golden, 3));
