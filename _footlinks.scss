@@ -9,6 +9,7 @@
 
   li {
     display: inline;
+    font-size: percentage($ratio-footlinks);
 
     &::before {
       content: "\2219\0020";
@@ -20,6 +21,12 @@
 
     &:last-child::before {
       content: "\2026\0020";
+    }
+  }
+
+  @media (min-width: $breakpoint-content) {
+    li {
+      font-size: 100%;
     }
   }
 
