@@ -90,6 +90,15 @@
     border: 0;
   }
 
+  table {
+    table-layout: auto;
+
+    th,
+    td {
+      white-space: normal;
+    }
+  }
+
   body > header,
   main,
   body > footer address {
