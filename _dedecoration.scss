@@ -54,7 +54,10 @@
 
   // Design Change
   hr {
+    margin-top: ($margin-default * 2);
+    margin-bottom: ($margin-default * 2);
     border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
     width: 80%;
     height: 0;
   }
