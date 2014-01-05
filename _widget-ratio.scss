@@ -2,7 +2,7 @@
 $ratio-pull-quote: $ratio-beta;
 
 // Sidenote
-$ratio-sidenote: $ratio-epsilon;
+$ratio-sidenote: $ratio-tiny-text;
 
 // Posts
 $ratio-posts-item: $ratio-gamma;
@@ -11,4 +11,4 @@ $ratio-posts-item: $ratio-gamma;
 $ratio-read-older-title: $ratio-alpha;
 
 // Share Buttons
-$ratio-share-buttons: pow($ratio-small-text, 2);
+$ratio-share-buttons: $ratio-tiny-text;
