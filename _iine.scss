@@ -68,6 +68,14 @@
     border: none;
   }
 
+  p {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $width-gap;
+    padding-left: $width-gap;
+    max-width: $width-content;
+  }
+
   + footer {
     margin-top: 0;
   }
@@ -90,6 +98,14 @@
   @media (min-width: $breakpoint-full) {
     ol {
       max-width: $width-full-with-gap;
+    }
+
+    p {
+      max-width: $width-full-with-gap;
+
+      br {
+        display: none;
+      }
     }
   }
 }
