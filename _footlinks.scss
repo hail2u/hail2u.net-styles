@@ -20,7 +20,7 @@
     }
 
     &:last-child::before {
-      content: "\2026\0020";
+      content: "\00a0\0020";
     }
   }
 
