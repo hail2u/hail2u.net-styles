@@ -1,26 +1,24 @@
-// The Root Element
+// Root
 @mixin adjust-font-size($sizes) {
-  $constant: $ratio-golden;
   $threshold: 1.2;
 
   @each $size in $sizes {
     $feature-prefix: min-;
     $ratio: ($size / 16px);
-    $horizontal: ($width-content * $ratio);
-    $vertical: ($horizontal / $constant);
-
-    @if ($ratio > $threshold) {
-      $horizontal: ($width-full * $constant * $threshold * $ratio);
-      $vertical: ($horizontal / $constant / $threshold);
-    }
+    $horizontal: ($width-content-with-gap * pow($ratio, 2));
+    $vertical: ($horizontal / 2);
 
     @if ($ratio < 1) {
       $feature-prefix: max-;
-      $horizontal: ($width-content / $constant * $ratio);
       $vertical: ($horizontal * (3 / 2));
     }
 
-    @media (#{$feature-prefix}width: $horizontal) and (#{$feature-prefix}height: $vertical){
+    @if ($ratio > $threshold) {
+      $horizontal: ($width-full-with-gap * pow($ratio, 2) * $threshold);
+      $vertical: ($horizontal / 2);
+    }
+
+    @media (#{$feature-prefix}width: $horizontal) and (#{$feature-prefix}height: $vertical) {
       font-size: percentage($ratio);
     }
   }
@@ -29,7 +27,7 @@
 html {
   font-size: 100%;
 
-  @include adjust-font-size((18px, 21px, 24px));
+  @include adjust-font-size($font-sizes-html);
 }
 
 // Sections

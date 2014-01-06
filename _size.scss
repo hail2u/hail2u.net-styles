@@ -24,6 +24,9 @@ $width-suppli-with-gap: ($width-gap + $width-suppli + $width-gap);
 $width-full: ($width-suppli + $width-gutter + $width-content);
 $width-full-with-gap: ($width-gap + $width-full + $width-gap);
 
+// Root
+$font-sizes-html: (18px, 21px, 24px);
+
 // Core
 $height-hr: ($margin-default + em($line-height-default) + $margin-default);
 $width-hr: ($height-hr * 3);
