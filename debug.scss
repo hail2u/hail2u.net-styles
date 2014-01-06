@@ -38,11 +38,11 @@ body.debug::before {
     #f0f $width-gap,
     #f0f ($width-gap + $width-content),
     #0f0 ($width-gap + $width-content),
-    #0f0 ($width-gap + $width-content + $width-gap)
+    #0f0 $width-content-with-gap
   );
   background-position: center center;
   background-repeat: repeat-y;
-  background-size: ($width-gap + $width-content + $width-gap) 1px;
+  background-size: $width-content-with-gap 1px;
   opacity: 0.05;
   pointer-events: none;
 
@@ -58,9 +58,9 @@ body.debug::before {
       #f0f ($width-gap + $width-suppli + $width-gutter),
       #f0f ($width-gap + $width-full),
       #0f0 ($width-gap + $width-full),
-      #0f0 ($width-gap + $width-full + $width-gap)
+      #0f0 $width-full-with-gap
     );
-    background-size: ($width-gap + $width-full + $width-gap) 1px;
+    background-size: $width-full-with-gap 1px;
   }
 }
 

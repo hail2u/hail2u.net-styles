@@ -74,7 +74,7 @@
 
   @media (min-width: $breakpoint-content) {
     ol {
-      max-width: ($width-gap + $width-content + $width-gap);
+      max-width: $width-content-with-gap;
     }
 
     li {
@@ -89,7 +89,7 @@
 
   @media (min-width: $breakpoint-full) {
     ol {
-      max-width: ($width-gap + $width-full + $width-gap);
+      max-width: $width-full-with-gap;
     }
   }
 }

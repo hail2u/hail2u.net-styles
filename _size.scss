@@ -18,8 +18,11 @@ $width-gap: ($width-gutter / 2);
 
 // Main Component
 $width-content: 36em;
+$width-content-with-gap: ($width-gap + $width-content + $width-gap);
 $width-suppli: ($width-content / pow($ratio-golden, 3));
+$width-suppli-with-gap: ($width-gap + $width-suppli + $width-gap);
 $width-full: ($width-suppli + $width-gutter + $width-content);
+$width-full-with-gap: ($width-gap + $width-full + $width-gap);
 
 // Core
 $height-hr: ($margin-default + em($line-height-default) + $margin-default);
@@ -54,5 +57,5 @@ $width-elsewhere: (($width-elsewhere-icon + $margin-elsewhere-icon) * 3);
 
 // Breakpoint
 $width-scrollbar: 1.5em;
-$breakpoint-content: ($width-gap + $width-content + $width-gap + $width-scrollbar);
-$breakpoint-full: (($width-gap + $width-full + $width-gap + $width-scrollbar) * (21px / 16px));
+$breakpoint-content: ($width-content-with-gap + $width-scrollbar);
+$breakpoint-full: (($width-full-with-gap + $width-scrollbar) * (nth($font-sizes-html, length($font-sizes-html)) / 16px));
