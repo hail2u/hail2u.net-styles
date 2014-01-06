@@ -24,12 +24,6 @@
     }
   }
 
-  @media (min-width: $breakpoint-content) {
-    li {
-      font-size: 100%;
-    }
-  }
-
   @media (min-width: $breakpoint-full) {
     ul {
       margin-left: (- ($width-suppli + $width-gutter));
