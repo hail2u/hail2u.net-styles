@@ -41,8 +41,7 @@ body > header nav {
 
     li {
       padding-right: 0;
-      padding-left: ($height-site-navigation * 0.5);
-      font-size: 100%;
+      padding-left: ($height-site-navigation * 0.5 / $ratio-site-navigation);
     }
   }
 
@@ -52,14 +51,14 @@ body > header nav {
     }
 
     li {
-      padding-right: ($height-site-navigation * 0.5);
+      padding-right: ($height-site-navigation * 0.5 / $ratio-site-navigation);
       padding-left: 0;
 
       &:last-child {
         padding-right: 0;
         position: absolute;
         top: 0;
-        right: $width-gap;
+        right: ($width-gap / $ratio-site-navigation);
       }
     }
   }
