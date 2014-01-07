@@ -61,20 +61,4 @@
       }
     }
   }
-
-  @media (min-width: $breakpoint-full) {
-    ol {
-      margin-left: (- ($width-suppli + $width-gutter));
-    }
-
-    li {
-      padding-right: 0;
-      padding-left: (($width-suppli + $width-gutter) / $ratio-posts-list-item);
-
-      time {
-        right: auto;
-        left: 0;
-      }
-    }
-  }
 }
