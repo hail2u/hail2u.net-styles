@@ -44,15 +44,15 @@
 
     time {
       display: block;
-      color: $color-fg-posts-time;
+      color: $color-fg-posts-list-time;
     }
   }
 
   @media (min-width: $breakpoint-content) {
     li {
-      margin-top: ($margin-mini / $ratio-posts-item);
-      padding-right: $width-posts-date;
-      font-size: percentage($ratio-posts-item);
+      margin-top: ($margin-mini / $ratio-posts-list-item);
+      padding-right: $width-posts-list-date;
+      font-size: percentage($ratio-posts-list-item);
 
       time {
         position: absolute;
