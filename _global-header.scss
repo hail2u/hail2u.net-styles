@@ -5,10 +5,6 @@ body > header {
   height: ($height-site-navigation + $height-logo);
   text-align: center;
 
-  h1 {
-    display: none;
-  }
-
   @media (min-width: $breakpoint-content) {
     height: $height-logo;
     text-align: left;
