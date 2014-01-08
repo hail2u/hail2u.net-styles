@@ -4,6 +4,7 @@ main {
 
   section,
   article,
+  aside,
   div[itemprop="articleBody"] {
     > p a {
       @extend %auto-breaking;
