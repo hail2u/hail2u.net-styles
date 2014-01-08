@@ -15,3 +15,12 @@
     left: $width-gap;
   }
 }
+
+.home #logo {
+  margin-top: ($margin-default + $height-site-navigation);
+  position: static;
+
+  @media (min-width: $breakpoint-content) {
+    margin-top: ($margin-heading + $height-site-navigation);
+  }
+}

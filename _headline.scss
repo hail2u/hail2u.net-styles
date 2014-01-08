@@ -2,3 +2,18 @@
 body > header h1 {
   display: none;
 }
+
+.home > header h1 {
+  margin: ($margin-heading / $ratio-headline) auto;
+  padding-right: ($width-gap / $ratio-headline);
+  padding-left: ($width-gap / $ratio-headline);
+  display: block;
+  max-width: ($width-content / $ratio-headline);
+  font-family: $font-stack-headline;
+  font-weight: 200;
+  font-size: percentage($ratio-headline);
+
+  em {
+    font-weight: 400;
+  }
+}

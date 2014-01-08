@@ -50,6 +50,8 @@ $color-fg-td: mixxd($color-fg, $color-bg, 0.12);
 $color-bg-td: mixxd($color-fg, $color-bg, 0.98);
 
 // Header
+$color-border-global-header: mixxd($color-fg, $color-bg, 0.88);
+
 $color-fg-site-navigation: inherit;
 $color-fg-site-navigation-hover: $color-base;
 $color-fg-site-navigation-mark: $color-light;

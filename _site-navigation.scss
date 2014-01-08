@@ -66,3 +66,29 @@ body > header nav {
     }
   }
 }
+
+.home > header nav {
+  margin-right: auto;
+  margin-bottom: $margin-default;
+  margin-left: auto;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  left: 0;
+
+  @media (min-width: $breakpoint-content) {
+    ul {
+      display: inline-table;
+    }
+
+    li:first-child {
+      padding-left: 0;
+    }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    li:last-child {
+      position: static;
+    }
+  }
+}
