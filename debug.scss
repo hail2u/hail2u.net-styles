@@ -34,17 +34,37 @@ body.debug::before {
   background-image: linear-gradient(
     to right,
     #0f0 0,
-    #0f0 $width-gap,
-    #f0f $width-gap,
-    #f0f ($width-gap + $width-content),
-    #0f0 ($width-gap + $width-content),
-    #0f0 $width-content-with-gap
+    #0f0 100%
+  ),
+  linear-gradient(
+    to right,
+    #0f0 0,
+    #0f0 100%
+  ),
+  linear-gradient(
+    to right,
+    #f0f 0,
+    #f0f 100%
   );
-  background-position: center center;
+  background-position: left center, right center, center;
   background-repeat: repeat-y;
-  background-size: $width-content-with-gap 1px;
+  background-size: $width-gap, $width-gap, 100%;
   opacity: 0.05;
   pointer-events: none;
+
+  @media (min-width: $breakpoint-content) {
+    background-image: linear-gradient(
+      to right,
+      #0f0 0,
+      #0f0 $width-gap,
+      #f0f $width-gap,
+      #f0f ($width-gap + $width-content),
+      #0f0 ($width-gap + $width-content),
+      #0f0 $width-content-with-gap
+    );
+    background-position: center;
+    background-size: $width-content-with-gap 1px;
+  }
 
   @media (min-width: $breakpoint-full) {
     background-image: linear-gradient(
