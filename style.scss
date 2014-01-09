@@ -27,13 +27,15 @@ $version: "6.47.0";
 @import "ratio";
 @import "size";
 
-// Class
-@import "margin";
-@import "image-replacement";
-@import "auto-breaking";
-@import "centering-block";
+// Placeholder Class
 @import "clearfix";
+@import "image-replacement";
+
+@import "auto-breaking";
+
+@import "margin";
 @import "hanging-block";
+@import "centering-block";
 
 // Core
 @import "core";
