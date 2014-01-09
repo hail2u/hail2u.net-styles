@@ -2,8 +2,8 @@
 main {
   @extend %centering-block;
 
-  section,
   article,
+  section,
   aside,
   div[itemprop="articleBody"] {
     > p a {
