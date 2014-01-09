@@ -40,4 +40,9 @@ body > header nav {
   @media (min-width: $breakpoint-content) {
     top: (($height-logo - $height-site-navigation) / 2);
   }
+
+  @media (min-width: $breakpoint-full) {
+    margin-left: (- $height-site-navigation * 0.25);
+    right: auto;
+  }
 }
