@@ -15,10 +15,10 @@
 
   a {
     margin-right: ($margin-share-buttons / $ratio-share-buttons);
-    padding-left: $width-share-buttons-icon;
+    padding-left: ($width-share-buttons-icon * 1.25);
     display: inline-block;
     background-repeat: no-repeat;
-    background-position: (- $width-share-buttons-icon * 64 / 512) center;
+    background-position: left center;
     background-size: $width-share-buttons-icon;
     font-size: percentage($ratio-share-buttons);
 
