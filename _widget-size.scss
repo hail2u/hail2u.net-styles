@@ -16,8 +16,8 @@ $margin-flat-dl-dd: $width-gap;
 
 // Paging
 $margin-paging-icon: $width-gutter;
-$width-paging-icon: (($width-suppli - $margin-paging-icon) / 2);
-$height-paging-icon: $width-paging-icon;
+$width-paging-icon: (($width-logo - $margin-paging-icon) / 2);
+$height-paging-icon: ($width-paging-icon / 256 * 384);
 
 // Share Buttons
 $margin-share-buttons: 1em;

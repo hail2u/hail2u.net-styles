@@ -5,7 +5,7 @@
 #cse-search-box {
   margin-top: $margin-default;
   margin-right: auto;
-  margin-left: ($width-paging-icon * 2 + $margin-paging-icon);
+  margin-left: (($width-paging-icon + $margin-paging-icon) * 2);
   position: relative;
 
   body > aside & {
