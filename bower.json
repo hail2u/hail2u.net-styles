@@ -4,7 +4,7 @@
     "hail2u-scss-partials": "~1.2.1",
     "modularized-normalize-scss": "~2.1.4",
     "scss-column-equation": "~1.0.0",
-    "hail2u-scss-functions": "~1.0.0"
+    "hail2u-scss-functions": "~1.1.0"
   },
   "private": true
 }
