@@ -9,8 +9,6 @@ main {
   aside,
   div[itemprop="articleBody"] {
     > p a {
-      @extend %auto-breaking;
-
       text-decoration: underline;
     }
   }
