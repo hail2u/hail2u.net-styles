@@ -9,7 +9,6 @@ main {
       &::after {
         @extend %hanging-block;
 
-        margin-top: $margin-default;
         display: block;
         height: em($line-height-default);
         content: "";
