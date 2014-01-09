@@ -11,7 +11,7 @@ main {
 
         margin-top: $margin-default;
         display: block;
-        height: $height-section-header-label;
+        height: em($line-height-default);
         content: "";
         background-image: linear-gradient(
           $color-fg-section-header-label 0,
@@ -25,9 +25,10 @@ main {
 
       @media (min-width: $breakpoint-full) {
         margin-top: ($margin-primary-heading / $ratio-section-header);
+
         &::after {
           margin-top: 0;
-          height: 100%;
+          height: em($ratio-section-header * $line-height-heading);
         }
       }
     }
