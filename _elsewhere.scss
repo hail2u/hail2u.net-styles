@@ -1,12 +1,13 @@
 // Elsewhere
 .elsewhere {
-  margin-top: $margin-mini;
+  margin-top: 0;
   padding-left: 0;
-  display: inline-table;
+  position: absolute;
+  bottom: 0;
+  right: $width-gap;
 
   li {
-    padding-right: ($margin-elsewhere-icon / 2);
-    padding-left: ($margin-elsewhere-icon / 2);
+    padding-left: $margin-elsewhere-icon;
     display: table-cell;
   }
 
@@ -34,18 +35,6 @@
 
     &[href="https://github.com/hail2u"]::before {
       background-image: $icon-github;
-    }
-  }
-
-  @media (min-width: $breakpoint-full) {
-    margin-top: 0;
-    position: absolute;
-    top: 0;
-    right: $width-gap;
-
-    li {
-      padding-right: 0;
-      padding-left: $margin-elsewhere-icon;
     }
   }
 }

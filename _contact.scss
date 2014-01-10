@@ -6,15 +6,14 @@ body > footer address {
 
   &::before {
     margin-top: $margin-default;
-    border-top: $height-border-byline solid $color-border-byline;
-    display: inline-block;
-    width: $width-border-byline;
+    margin-right: (- 2px);
+    margin-left: (- 2px);
+    border-top: 1px dotted $color-border-byline;
+    display: block;
     content: "";
   }
 
   @media (min-width: $breakpoint-full) {
-    top: (- $height-elsewhere-icon);
-
     &::before {
       display: none;
     }

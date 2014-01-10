@@ -1,14 +1,6 @@
 // Headline
 body > header h1 {
-  display: none;
-}
-
-.home > header h1 {
-  margin: ($margin-heading / $ratio-headline) auto;
-  padding-right: ($width-gap / $ratio-headline);
-  padding-left: ($width-gap / $ratio-headline);
-  display: block;
-  max-width: ($width-content / $ratio-headline);
+  margin-top: ($margin-heading / $ratio-headline);
   font-family: $font-stack-headline;
   font-weight: 200;
   font-size: percentage($ratio-headline);
@@ -16,4 +8,12 @@ body > header h1 {
   em {
     font-weight: 400;
   }
+
+  @media (min-width: $breakpoint-full) {
+    margin-left: (- ($width-suppli + $width-gutter) / $ratio-headline);
+  }
+}
+
+.permalink > header h1 {
+  display: none;
 }

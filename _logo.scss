@@ -1,26 +1,16 @@
 // Logo
 #logo {
-  margin: auto;
+  margin-top: $height-site-navigation;
   display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
   width: $width-logo;
   height: $height-logo;
   background-color: transparent;
 
   @media (min-width: $breakpoint-content) {
-    right: auto;
-    left: $width-gap;
+    margin-top: $margin-heading;
   }
-}
 
-.home #logo {
-  margin-top: ($margin-default + $height-site-navigation);
-  position: static;
-
-  @media (min-width: $breakpoint-content) {
-    margin-top: ($margin-heading + $height-site-navigation);
+  @media (min-width: $breakpoint-full) {
+    margin-left: (- ($width-suppli + $width-gutter));
   }
 }

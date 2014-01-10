@@ -12,14 +12,9 @@ main {
       bottom: 100%;
       width: 100%;
       color: $color-fg-article-footer;
-      text-align: center;
 
       time {
         color: $color-fg-article-footer-time;
-      }
-
-      @media (min-width: $breakpoint-content) {
-        text-align: left;
       }
 
       @media (min-width: $breakpoint-full) {

@@ -171,14 +171,9 @@ figure {
   @extend %margin-default;
 
   position: relative;
-  text-align: center;
 
   h2 + & {
     margin-top: $margin-mini;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    text-align: left;
   }
 }
 

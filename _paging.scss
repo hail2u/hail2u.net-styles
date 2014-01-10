@@ -1,20 +1,22 @@
 // Paging
 .paging {
   position: relative;
-  text-align: center;
 
   ul {
     @extend %hanging-block;
 
     margin-top: $margin-heading;
+    position: absolute;
+    top: (($height-google-cse-form - $height-paging-icon) / 2);
     padding-left: 0;
-    display: inline-table;
   }
 
   li {
-    padding-right: ($margin-paging-icon / 2);
-    padding-left: ($margin-paging-icon / 2);
     display: table-cell;
+
+    &:first-child {
+      padding-right: $margin-paging-icon;
+    }
   }
 
   a {
@@ -36,13 +38,6 @@
   @media (min-width: $breakpoint-full) {
     ul {
       margin-top: $margin-primary-heading;
-      display: block;
-      top: (($height-google-cse-form - $height-paging-icon) / 2);
-    }
-
-    li {
-      padding-right: $margin-paging-icon;
-      padding-left: 0;
     }
   }
 }

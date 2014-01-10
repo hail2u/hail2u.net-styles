@@ -2,8 +2,6 @@
 .share-buttons {
   @extend %hanging-block;
 
-  text-align: center;
-
   ul {
     padding-left: 0;
     display: inline-table;
@@ -16,12 +14,11 @@
   }
 
   a {
-    margin-right: ($margin-share-buttons / 2 / $ratio-share-buttons);
-    margin-left: ($margin-share-buttons / 2 / $ratio-share-buttons);
-    padding-left: ($width-share-buttons-icon * 1.125);
+    margin-right: ($margin-share-buttons / $ratio-share-buttons);
+    padding-left: $width-share-buttons-icon;
     display: inline-block;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: (- $width-share-buttons-icon * 64 / 512) center;
     background-size: $width-share-buttons-icon;
     font-size: percentage($ratio-share-buttons);
 
@@ -36,21 +33,11 @@
     }
   }
 
-  @media (min-width: $breakpoint-content) {
-    text-align: left;
-
-    a {
-      margin-right: $margin-share-buttons;
-      margin-left: 0;
-    }
-  }
-
   @media (min-width: $breakpoint-full) {
     top: auto;
 
     ul {
       margin-top: (- ($height-share-buttons * 2));
-      display: block;
     }
 
     li {
@@ -59,6 +46,7 @@
 
     a {
       margin-right: 0;
+      margin-left: 0;
     }
   }
 }

@@ -1,5 +1,9 @@
 // Site Navigation
 body > header nav {
+  position: absolute;
+  bottom: 100%;
+  left: $width-gap;
+
   ul {
     margin-top: 0;
     padding-left: 0;
@@ -10,8 +14,7 @@ body > header nav {
   }
 
   li {
-    padding-right: ($height-site-navigation * 0.125 / $ratio-site-navigation);
-    padding-left: ($height-site-navigation * 0.125 / $ratio-site-navigation);
+    padding-right: ($height-site-navigation * 0.25 / $ratio-site-navigation);
     display: table-cell;
     font-size: percentage($ratio-site-navigation);
   }
@@ -36,59 +39,14 @@ body > header nav {
   }
 
   @media (min-width: $breakpoint-content) {
-    ul {
-      margin-top: ($margin-primary-heading / $ratio-golden);
-      margin-left: auto;
-      display: table;
-    }
+    top: (($height-logo - $height-site-navigation) / 2);
+    right: $width-gap;
+    bottom: auto;
+    left: auto;
 
     li {
       padding-right: 0;
-      padding-left: ($height-site-navigation * 0.5 / $ratio-site-navigation);
-    }
-  }
-
-  @media (min-width: $breakpoint-full) {
-    ul {
-      margin-left: 0;
-    }
-
-    li {
-      padding-right: ($height-site-navigation * 0.5 / $ratio-site-navigation);
-      padding-left: 0;
-
-      &:last-child {
-        padding-right: 0;
-        position: absolute;
-        top: 0;
-        right: ($width-gap / $ratio-site-navigation);
-      }
-    }
-  }
-}
-
-.home > header nav {
-  margin-right: auto;
-  margin-bottom: $margin-default;
-  margin-left: auto;
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  left: 0;
-
-  @media (min-width: $breakpoint-content) {
-    ul {
-      display: inline-table;
-    }
-
-    li:first-child {
-      padding-left: 0;
-    }
-  }
-
-  @media (min-width: $breakpoint-full) {
-    li:last-child {
-      position: static;
+      padding-left: ($height-site-navigation * 0.25 / $ratio-site-navigation);
     }
   }
 }

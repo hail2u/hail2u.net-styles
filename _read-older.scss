@@ -1,7 +1,5 @@
 // Read Older
 .read-older {
-  text-align: center;
-
   p {
     margin-top: ($margin-heading / $ratio-read-older-title);
     overflow: hidden;
@@ -12,27 +10,11 @@
 
     &::before {
       display: block;
-      content: "\2014\0020Read\0020older\0020\2014";
+      content: "Read older:";
       color: $color-fg-read-older-label;
       font-size: percentage(1 / $ratio-read-older-title);
       font-weight: bold;
       text-transform: uppercase;
-    }
-  }
-
-  @media (min-width: $breakpoint-content) {
-    text-align: left;
-
-    p {
-      &::before {
-        content: "Read older:";
-      }
-    }
-  }
-
-  @media (min-width: $breakpoint-full) {
-    p {
-      margin-top: ($margin-primary-heading / $ratio-read-older-title);
     }
   }
 }

@@ -2,6 +2,9 @@
 .footlinks {
   @extend %centering-block;
 
+  height: $height-elsewhere-icon;
+  line-height: $height-elsewhere-icon;
+
   ul {
     margin-top: 0;
     padding-left: 0;
@@ -19,8 +22,13 @@
       content: "";
     }
 
-    &:last-child::before {
-      content: "\00a0\0020";
+    &:last-child {
+      position: absolute;
+      right: ($width-gap / $ratio-footlinks);
+
+      &::before {
+        content: "\00a0\0020";
+      }
     }
   }
 
@@ -28,6 +36,10 @@
     ul {
       margin-left: (- ($width-suppli + $width-gutter));
       line-height: remove-unit($height-elsewhere-icon);
+    }
+
+    li:last-child {
+      position: static;
     }
   }
 }

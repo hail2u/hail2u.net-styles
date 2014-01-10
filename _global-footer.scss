@@ -2,37 +2,8 @@
 body > footer {
   margin-top: $margin-primary-heading;
   margin-bottom: $margin-heading;
-  padding-top: ($margin-heading + $height-watermark + $margin-default);
+  padding-top: $margin-heading;
   padding-bottom: $margin-heading;
   border-top: 1px dashed $color-border-global-footer;
   position: relative;
-  text-align: center;
-
-  &::before {
-    margin: auto;
-    display: block;
-    position: absolute;
-    top: $margin-heading;
-    right: 0;
-    left: 0;
-    width: $width-watermark;
-    height: $height-watermark;
-    content: "\00a0";
-    background-image: $image-watermark;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-  }
-
-  @media (min-width: $breakpoint-full) {
-    padding-top: $margin-heading;
-    text-align: left;
-
-    &::before {
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-  }
 }

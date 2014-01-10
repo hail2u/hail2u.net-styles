@@ -1,28 +1,4 @@
 // Global Header
 body > header {
   @extend %centering-block;
-
-  height: ($height-site-navigation + $height-logo);
-  text-align: center;
-
-  @media (min-width: $breakpoint-content) {
-    height: $height-logo;
-    text-align: left;
-  }
-}
-
-.home > header {
-  border-bottom: 1px dashed $color-border-global-header;
-  max-width: none;
-  height: auto;
-  text-align: center;
-
-  @media (min-width: $breakpoint-content) {
-    height: auto;
-    text-align: center;
-  }
-
-  @media (min-width: $breakpoint-full) {
-    padding-left: $width-gap;
-  }
 }

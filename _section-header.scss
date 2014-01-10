@@ -3,8 +3,8 @@ main {
   > article,
   > section {
     h1 {
+      margin-top: (($margin-primary-heading + em($line-height-default) + $margin-mini) / $ratio-section-header);
       position: relative;
-      text-align: center;
 
       &::after {
         @extend %hanging-block;
@@ -17,22 +17,14 @@ main {
           $color-fg-section-header-label 0,
           $color-fg-section-header-label 100%
         );
-        background-position: center;
+        background-position: left center;
         background-repeat: no-repeat;
-        background-size: $width-logo $height-section-header-label;
+        background-size: $width-section-header-label $height-section-header-label;
         font-size: percentage($ratio-section-header-label);
       }
 
-      @media (min-width: $breakpoint-content) {
-        text-align: left;
-
-        &::after {
-          margin-top: $margin-mini;
-          background-position: left center;
-        }
-      }
-
       @media (min-width: $breakpoint-full) {
+        margin-top: ($margin-primary-heading / $ratio-section-header);
         &::after {
           margin-top: 0;
           height: 100%;

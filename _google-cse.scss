@@ -5,9 +5,8 @@
 #cse-search-box {
   margin-top: $margin-default;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: ($width-paging-icon * 2 + $margin-paging-icon);
   position: relative;
-  width: $width-google-cse-form;
 
   body > aside & {
     margin-top: $margin-heading;
@@ -44,12 +43,9 @@
     background-size: 75% 75%;
   }
 
-  @media (min-width: $breakpoint-content) {
-    width: ($width-google-cse-form * 0.667);
-  }
-
   @media (min-width: $breakpoint-full) {
     margin-left: 0;
+    width: $width-google-cse-form;
 
     body > aside & {
       margin-top: $margin-primary-heading;
