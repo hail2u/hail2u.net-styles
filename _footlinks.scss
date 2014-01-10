@@ -27,7 +27,7 @@
   @media (min-width: $breakpoint-full) {
     ul {
       margin-left: (- ($width-suppli + $width-gutter));
-      line-height: $height-elsewhere-icon;
+      line-height: remove-unit($height-elsewhere-icon);
     }
   }
 }

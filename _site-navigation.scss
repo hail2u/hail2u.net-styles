@@ -5,7 +5,7 @@ body > header nav {
     padding-left: 0;
     display: inline-table;
     height: $height-site-navigation;
-    line-height: $height-site-navigation;
+    line-height: remove-unit($height-site-navigation);
     text-transform: uppercase;
   }
 
