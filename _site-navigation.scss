@@ -13,7 +13,7 @@ body > header nav {
   }
 
   li {
-    padding-left: ($height-site-navigation * 0.25 / $ratio-site-navigation);
+    padding-left: ($width-site-navigation-gutter * 0.25 / $ratio-site-navigation);
     display: table-cell;
     font-size: percentage($ratio-site-navigation);
   }
@@ -39,10 +39,18 @@ body > header nav {
 
   @media (min-width: $breakpoint-content) {
     top: (($height-logo - $height-site-navigation) / 2);
+
+    li {
+      padding-left: ($width-site-navigation-gutter * 0.5 / $ratio-site-navigation);
+    }
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: (- $height-site-navigation * 0.25);
     right: auto;
+
+    li {
+      padding-right: ($width-site-navigation-gutter / $ratio-site-navigation);
+      padding-left: 0;
+    }
   }
 }

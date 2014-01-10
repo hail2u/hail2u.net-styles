@@ -41,6 +41,7 @@ $width-logo: ($width-suppli / pow($ratio-golden, 2));
 $height-logo: $width-logo;
 
 $height-site-navigation: $height-logo;
+$width-site-navigation-gutter: 2em;
 
 // Main
 $width-section-header-label: $width-logo;
