@@ -7,14 +7,14 @@ body > header nav {
   ul {
     margin-top: 0;
     padding-left: 0;
-    height: $height-site-navigation;
-    line-height: remove-unit($height-site-navigation);
     text-transform: uppercase;
   }
 
   li {
     padding-left: ($width-site-navigation-gutter * 0.25 / $ratio-site-navigation);
     display: table-cell;
+    height: ($height-site-navigation / $ratio-site-navigation);
+    line-height: remove-unit($height-site-navigation / $ratio-site-navigation);
     font-size: percentage($ratio-site-navigation);
   }
 
