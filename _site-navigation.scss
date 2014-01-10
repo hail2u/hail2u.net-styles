@@ -1,20 +1,19 @@
 // Site Navigation
 body > header nav {
   position: absolute;
-  bottom: 100%;
-  left: $width-gap;
+  top: (($height-logo / $ratio-golden - $height-site-navigation) / 2);
+  right: $width-gap;
 
   ul {
     margin-top: 0;
     padding-left: 0;
-    display: inline-table;
     height: $height-site-navigation;
     line-height: remove-unit($height-site-navigation);
     text-transform: uppercase;
   }
 
   li {
-    padding-right: ($height-site-navigation * 0.25 / $ratio-site-navigation);
+    padding-left: ($height-site-navigation * 0.25 / $ratio-site-navigation);
     display: table-cell;
     font-size: percentage($ratio-site-navigation);
   }
@@ -40,13 +39,5 @@ body > header nav {
 
   @media (min-width: $breakpoint-content) {
     top: (($height-logo - $height-site-navigation) / 2);
-    right: $width-gap;
-    bottom: auto;
-    left: auto;
-
-    li {
-      padding-right: 0;
-      padding-left: ($height-site-navigation * 0.25 / $ratio-site-navigation);
-    }
   }
 }
