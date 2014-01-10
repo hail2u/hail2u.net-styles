@@ -2,6 +2,8 @@
 main {
   @extend %centering-block;
 
+  margin-top: (- $margin-primary-heading + $margin-heading + em($line-height-default) + $margin-mini);
+
   article,
   section,
   aside,
@@ -11,5 +13,9 @@ main {
 
       text-decoration: underline;
     }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    margin-top: (- $margin-primary-heading + $margin-heading + (($height-site-navigation - 1em) / 2));
   }
 }
