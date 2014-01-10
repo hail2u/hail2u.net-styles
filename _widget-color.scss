@@ -4,7 +4,7 @@ $color-fg-pull-quote: $color-fg-blockquote;
 // Seealso
 $color-fg-seealso: mixxd($color-fg, $color-bg, 0.12);
 
-$color-fg-seealso-icon: $color-fg;
+$color-fg-seealso-icon: mixxd($color-fg, $color-bg, 0.72);
 
 // Sidenote
 $color-fg-sidenote: mixxd($color-fg, $color-bg, 0.48);

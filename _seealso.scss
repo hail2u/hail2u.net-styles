@@ -10,10 +10,9 @@
   }
 
   &::before {
-    margin-right: $margin-seealso-icon;
+    margin-right: ($width-seealso-icon * 0.25);
     display: inline-block;
     width: $width-seealso-icon;
     background-image: $image-chain;
-    opacity: 0.3;
   }
 }
