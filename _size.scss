@@ -48,10 +48,8 @@ $width-section-header-label: $width-logo;
 $height-section-header-label: 0.25em;
 
 // Footer
-$width-elsewhere-icon: em($ratio-golden);
-$height-elsewhere-icon: $width-elsewhere-icon;
-$margin-elsewhere-icon: em($ratio-elsewhere-icon-margin);
-$width-elsewhere: (($width-elsewhere-icon + $margin-elsewhere-icon) * 3);
+$width-elsewhere-label: $width-logo;
+$height-elsewhere-label: 0.25em;
 
 // Breakpoint
 $width-scrollbar: 1.5em;

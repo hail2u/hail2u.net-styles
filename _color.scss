@@ -63,7 +63,4 @@ $color-fg-article-footer-time: $color-fg;
 // Footer
 $color-border-global-footer: mixxd($color-fg, $color-bg, 0.88);
 
-$color-border-byline: mixxd($color-fg, $color-bg, 0.84);
-
-$color-fg-elsewhere-icon: $color-bg;
-$color-bg-elsewhere-icon: $color-light;
+$color-fg-elsewhere-label: mixxd($color-fg, $color-bg, 0.92);

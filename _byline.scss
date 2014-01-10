@@ -1,18 +1,15 @@
 // Byline
 .byline {
-  margin-right: (($width-elsewhere-icon + $margin-elsewhere-icon) * 3 + 0.5em);
-  height: $height-elsewhere-icon;
-  line-height: $height-elsewhere-icon;
+  @extend %centering-block;
+
+  font-style: normal;
+
+  p {
+    margin-top: 0;
+  }
 
   mark {
     color: inherit;
     background-color: transparent;
-  }
-
-  @media (min-width: $breakpoint-full) {
-    margin-top: 0;
-    position: absolute;
-    right: $width-gap;
-    bottom: 0;
   }
 }

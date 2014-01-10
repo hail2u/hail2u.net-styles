@@ -2,44 +2,20 @@
 .footlinks {
   @extend %centering-block;
 
-  height: $height-elsewhere-icon;
-  line-height: $height-elsewhere-icon;
-
   ul {
-    margin-top: 0;
     padding-left: 0;
   }
 
   li {
-    display: inline;
+    display: table-cell;
     font-size: percentage($ratio-footlinks);
 
-    &::before {
-      content: "\2219\0020";
+    &::after {
+      content: "\0020\00a0\2219\0020\00a0"; // Bullet Operator
     }
 
-    &:first-child::before {
+    &:last-child::after {
       content: "";
-    }
-
-    &:last-child {
-      position: absolute;
-      right: ($width-gap / $ratio-footlinks);
-
-      &::before {
-        content: "\00a0\0020";
-      }
-    }
-  }
-
-  @media (min-width: $breakpoint-full) {
-    ul {
-      margin-left: (- ($width-suppli + $width-gutter));
-      line-height: remove-unit($height-elsewhere-icon);
-    }
-
-    li:last-child {
-      position: static;
     }
   }
 }
