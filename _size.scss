@@ -19,10 +19,12 @@ $width-gap: ($width-gutter / 2);
 // Main Component
 $width-content: 36em;
 $width-content-with-gap: ($width-gap + $width-content + $width-gap);
-$width-suppli: ($width-content / pow($ratio-golden, 3));
-$width-suppli-with-gap: ($width-gap + $width-suppli + $width-gap);
-$width-full: ($width-suppli + $width-gutter + $width-content);
-$width-full-with-gap: ($width-gap + $width-full + $width-gap);
+
+$width-suppli-with-gap: ($width-content-with-gap / $ratio-content * $ratio-suppli);
+$width-suppli: (- $width-gap + $width-suppli-with-gap - $width-gap);
+
+$width-full-with-gap: ($width-suppli-with-gap + $width-content-with-gap);
+$width-full: (- $width-gap + $width-full-with-gap - $width-gap);
 
 // Root
 $font-sizes-html: (18px, 21px, 24px);

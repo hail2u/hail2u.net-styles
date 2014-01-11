@@ -16,6 +16,10 @@ $ratio-beta: ($ratio-primary-text * $ratio-golden);
 $ratio-gamma: ($ratio-secondary-text / $ratio-golden);
 $ratio-delta: $ratio-primary-text;
 
+// Main Component
+$ratio-content: (1 + 1 / pow($ratio-golden, 3));
+$ratio-suppli: (1 / pow($ratio-golden, 2));
+
 // Core
 $ratio-code: $ratio-small-text;
 
