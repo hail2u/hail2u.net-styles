@@ -4,5 +4,6 @@
 
   @media (min-width: $breakpoint-full) {
     margin-left: (- ($width-suppli + $width-gutter));
+    max-width: ($width-suppli + $width-gutter + $width-content / 2);
   }
 }
