@@ -5,11 +5,23 @@
   font-style: normal;
 
   p {
+    @extend %line-label;
+
     margin-top: 0;
+
+    &::after {
+      margin-top: em($line-height-default * $ratio-elsewhere);
+    }
   }
 
   mark {
     color: inherit;
     background-color: transparent;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    p::after {
+      margin-top: 0;
+    }
   }
 }

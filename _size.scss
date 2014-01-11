@@ -43,14 +43,6 @@ $height-logo: $width-logo;
 $height-site-navigation: $height-logo;
 $width-site-navigation-gutter: 2em;
 
-// Main
-$width-section-header-label: $width-logo;
-$height-section-header-label: 0.25em;
-
-// Footer
-$width-elsewhere-label: $width-logo;
-$height-elsewhere-label: 0.25em;
-
 // Breakpoint
 $width-scrollbar: 1.5em;
 $breakpoint-content: ($width-content-with-gap + $width-scrollbar);

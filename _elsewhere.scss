@@ -5,22 +5,8 @@
   ul {
     margin-top: 0;
     padding-left: 0;
-    position: relative;
-
-    &::after {
-      @extend %hanging-block;
-
-      display: block;
-      height: em($line-height-default);
-      content: "";
-      background-image: linear-gradient(
-        $color-fg-elsewhere-label 0,
-        $color-fg-elsewhere-label 100%
-      );
-      background-position: left center;
-      background-repeat: no-repeat;
-      background-size: $width-elsewhere-label $height-elsewhere-label;
-    }
+    position: absolute;
+    top: (- (em($line-height-default) + em($line-height-default * $ratio-elsewhere)));
   }
 
   li {
@@ -37,8 +23,8 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    ul::after {
-      margin-top: (- em($line-height-default));
+    ul {
+      position: static;
     }
   }
 }

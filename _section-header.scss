@@ -3,22 +3,10 @@ main {
   > article,
   > section {
     h1 {
-      position: relative;
+      @extend %line-label;
 
       &::after {
-        @extend %hanging-block;
-
-        display: block;
-        height: em($line-height-default);
-        content: "";
-        background-image: linear-gradient(
-          $color-fg-section-header-label 0,
-          $color-fg-section-header-label 100%
-        );
-        background-position: left center;
-        background-repeat: no-repeat;
-        background-size: $width-section-header-label $height-section-header-label;
-        font-size: percentage($ratio-section-header-label);
+        font-size: percentage(1 / $ratio-section-header);
       }
 
       @media (min-width: $breakpoint-full) {

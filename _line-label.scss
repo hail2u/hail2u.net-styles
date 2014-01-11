@@ -1,0 +1,19 @@
+// Line Label
+%line-label {
+  position: relative;
+
+  &::after {
+    @extend %hanging-block;
+
+    display: block;
+    height: em($line-height-default);
+    content: "";
+    background-image: linear-gradient(
+      mixxd($color-fg, $color-bg, 0.92) 0,
+      mixxd($color-fg, $color-bg, 0.92) 100%
+    );
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: $width-logo 0.25em;
+  }
+}
