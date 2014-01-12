@@ -7,9 +7,6 @@
 
     margin-top: $margin-heading;
     padding-left: 0;
-    position: absolute;
-    top: (($height-google-cse-form - $height-paging-icon) / 2);
-    z-index: 1;
   }
 
   li {
@@ -36,6 +33,7 @@
   @media (min-width: $breakpoint-full) {
     ul {
       margin-top: $margin-primary-heading;
+      top: (($height-google-cse-form - $height-paging-icon) / 2);
     }
   }
 }
