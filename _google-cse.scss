@@ -4,8 +4,6 @@
 
 #cse-search-box {
   margin-top: $margin-default;
-  margin-right: auto;
-  margin-left: (($width-paging-icon + $margin-paging-icon) * 2);
   position: relative;
 
   body > aside & {
@@ -44,7 +42,6 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: 0;
     width: $width-google-cse-form;
 
     body > aside & {
