@@ -1,8 +1,9 @@
 // Site Navigation
 body > header nav {
   position: absolute;
-  top: (($height-logo / $ratio-golden - $height-site-navigation) / 2);
+  top: (($height-logo - $height-site-navigation-small * 4) / 2);
   right: $width-gap;
+  text-align: right;
 
   ul {
     margin-top: 0;
@@ -11,17 +12,14 @@ body > header nav {
   }
 
   li {
-    padding-left: ($width-site-navigation-gutter * 0.25 / $ratio-site-navigation);
-    display: table-cell;
-    height: ($height-site-navigation / $ratio-site-navigation);
-    line-height: remove-unit($height-site-navigation / $ratio-site-navigation);
+    display: block;
+    height: ($height-site-navigation-small / $ratio-site-navigation);
+    line-height: remove-unit($height-site-navigation-small / $ratio-site-navigation);
     font-size: percentage($ratio-site-navigation);
   }
 
   a {
-    display: block;
-    width: 100%;
-    height: 100%;
+    display: inline-block;
     color: $color-fg-site-navigation;
 
     &:hover,
@@ -39,9 +37,13 @@ body > header nav {
 
   @media (min-width: $breakpoint-content) {
     top: (($height-logo - $height-site-navigation) / 2);
+    text-align: left;
 
     li {
       padding-left: ($width-site-navigation-gutter * 0.5 / $ratio-site-navigation);
+      display: table-cell;
+      height: ($height-site-navigation / $ratio-site-navigation);
+      line-height: remove-unit($height-site-navigation / $ratio-site-navigation);
     }
   }
 
