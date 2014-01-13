@@ -10,7 +10,18 @@
     border: 0;
   }
 
+  figcaption:last-child {
+    margin-left: $width-gap;
+  }
+
   @media (min-width: $breakpoint-full) {
     margin-left: (- ($width-gap + $width-suppli + $width-gutter));
+
+    figcaption:last-child {
+      margin-top: $margin-default;
+      margin-left: 0;
+      bottom: auto;
+      left: $width-gap;
+    }
   }
 }
