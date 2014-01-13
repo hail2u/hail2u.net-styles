@@ -22,11 +22,6 @@ main {
         top: auto;
         bottom: auto;
         width: $width-suppli;
-
-        .rlb::before {
-          content: "\000a"; // Line Feed
-          white-space: pre-line;
-        }
       }
     }
   }
