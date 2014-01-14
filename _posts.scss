@@ -7,14 +7,12 @@
       color: $color-fg-posts-tag;
     }
 
-    .more {
+    > p::after {
+      margin-left: $margin-posts-more;
+      content: "More\0020\279f"; // Dashed Triangle-Headed Rightwards Arrow
       font-weight: bold;
       color: $color-fg-posts-more;
       text-transform: uppercase;
-
-      &::after {
-        content: "\0020\2192"; // Rightwards Arrow
-      }
     }
 
     &:hover,
@@ -24,7 +22,7 @@
         color: $color-fg-link;
       }
 
-      .more {
+      > p::after {
         color: $color-fg-posts-more-hover;
       }
     }
