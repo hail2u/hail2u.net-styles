@@ -13,11 +13,11 @@
     display: table-cell;
     font-size: percentage($ratio-elsewhere);
 
-    &::after {
-      content: "\0020\00a0\2215\0020\00a0"; // Division Slash
+    &::before {
+      content: "\00a0\0020\2215\0020\00a0"; // Division Slash
     }
 
-    &:last-child::after {
+    &:first-child::before {
       content: "";
     }
   }
