@@ -6,14 +6,14 @@ $ratio-yamato: 1.41421;
 
 // Text Size
 $ratio-primary-text: (16px / 16px);
-$ratio-secondary-text: (30px / 16px);
+$ratio-secondary-text: (21px / 16px);
 $ratio-small-text: (14px / 16px);
 $ratio-tiny-text: (12px / 16px);
 
 // Harmonic Ratio
-$ratio-alpha: $ratio-secondary-text;
+$ratio-alpha: ($ratio-secondary-text * $ratio-golden);
 $ratio-beta: ($ratio-primary-text * $ratio-golden);
-$ratio-gamma: ($ratio-secondary-text / $ratio-golden);
+$ratio-gamma: $ratio-secondary-text;
 $ratio-delta: $ratio-primary-text;
 
 // Main Component
