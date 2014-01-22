@@ -26,6 +26,15 @@ $color-fg-paging: $color-light;
 
 $color-fg-paging-icon: $color-fg-paging;
 
+// Searchbox
+$color-fg-searchbox-form: rgb(17, 17, 17);
+$color-bg-searchbox-form: rgb(255, 255, 255);
+$color-border-searchbox-form: mixxd($color-bg, $color-fg, 0.12);
+$color-border-searchbox-form-focus: mixxd($color-bg, $color-fg, 0.32);
+
+$color-fg-searchbox-icon: $color-light;
+$color-bg-searchbox-icon: transparent;
+
 // Share Buttons
 @import "./bower_components/hail2u-scss-partials/corporate-colors";
 
@@ -42,12 +51,3 @@ $color-fg-google-code-prettify-statement: #c30;
 $color-fg-google-code-prettify-preproc: #c33;
 $color-fg-google-code-prettify-type: #399;
 $color-fg-google-code-prettify-special: #c90;
-
-// Google Custom Search Engine
-$color-fg-google-cse-form: rgb(17, 17, 17);
-$color-bg-google-cse-form: rgb(255, 255, 255);
-$color-border-google-cse-form: mixxd($color-bg, $color-fg, 0.12);
-$color-border-google-cse-form-focus: mixxd($color-bg, $color-fg, 0.32);
-
-$color-fg-google-cse-icon: $color-light;
-$color-bg-google-cse-icon: transparent;
