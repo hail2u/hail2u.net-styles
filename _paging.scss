@@ -33,7 +33,7 @@
   @media (min-width: $breakpoint-full) {
     ul {
       margin-top: $margin-primary-heading;
-      top: (($height-searchbox-form - $height-paging-icon) / 2);
+      top: (($height-google-cse-form - $height-paging-icon) / 2);
     }
   }
 }

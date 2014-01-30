@@ -20,12 +20,12 @@ $margin-paging-icon: $width-gutter;
 $width-paging-icon: (($width-logo - $margin-paging-icon) / 2);
 $height-paging-icon: ($width-paging-icon / 256 * 384);
 
-// Google Custom Search Engine
-$margin-searchbox-form: 0.25em;
-$width-searchbox-form: 50%;
-$height-searchbox-form: 2em;
-
 // Share Buttons
 $margin-share-buttons: 1em;
 $height-share-buttons: em($line-height-default);
 $width-share-buttons-icon: 16px;
+
+// Google Custom Search Engine
+$margin-google-cse-form: 0.25em;
+$width-google-cse-form: 50%;
+$height-google-cse-form: 2em;
