@@ -50,3 +50,35 @@ $width-site-navigation-gutter: 2em;
 $width-scrollbar: 1.5em;
 $breakpoint-content: ($width-content-with-gap + $width-scrollbar);
 $breakpoint-full: (($width-full-with-gap + $width-scrollbar) * (nth($font-sizes-html, length($font-sizes-html)) / 16px));
+
+// Seealso
+$width-seealso-icon: 1em;
+
+// Sidenote
+$margin-sidenote-p: ($margin-default / $ratio-sidenote);
+
+// Posts
+$margin-posts-more: 0.25em;
+$width-posts-list-date: (5em + $width-gap);
+
+// Seemore
+$width-border-seemore: 0.125em;
+
+// Flat DL
+$margin-flat-dl-dt: ($width-gap / 2);
+$margin-flat-dl-dd: $width-gap;
+
+// Paging
+$margin-paging-icon: $width-gutter;
+$width-paging-icon: (($width-logo - $margin-paging-icon) / 2);
+$height-paging-icon: ($width-paging-icon / 256 * 384);
+
+// Share Buttons
+$margin-share-buttons: 1em;
+$height-share-buttons: em($line-height-default);
+$width-share-buttons-icon: 16px;
+
+// Google Custom Search Engine
+$margin-google-cse-form: 0.25em;
+$width-google-cse-form: 50%;
+$height-google-cse-form: 2em;
