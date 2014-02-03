@@ -34,11 +34,16 @@
     right: 0;
     width: $height-google-cse-form;
     height: $height-google-cse-form;
-    background-color: $color-bg-google-cse-icon;
+    background-color: $color-bg-google-cse-form-button;
     background-image: $image-magnifying-glass;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 75% 75%;
+    background-position: center top;
+    background-size: 100% auto;
+  }
+
+  input[type="text"]:focus + input[type="submit"],
+  input[type="submit"]:hover {
+    background-position: center bottom;
   }
 
   @media (min-width: $breakpoint-full) {
