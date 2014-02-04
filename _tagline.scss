@@ -1,0 +1,15 @@
+// Tagline
+body > header h1 {
+  margin-top: ($margin-heading / $ratio-tagline);
+  font-family: $font-stack-tagline;
+  font-weight: 200;
+  font-size: percentage($ratio-tagline);
+
+  em {
+    font-weight: 400;
+  }
+}
+
+.permalink > header h1 {
+  display: none;
+}
