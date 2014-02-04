@@ -6,7 +6,7 @@
 
   p {
     margin-top: $margin-sidenote-p;
-    font-size: percentage($ratio-sidenote);
+    font-size: em($ratio-sidenote);
 
     &:first-child {
       margin-top: ($margin-sidenote-p * $line-height-default - 1em);

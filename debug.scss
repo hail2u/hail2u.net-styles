@@ -96,7 +96,7 @@ body::after {
   content: "Small";
   color: #fff;
   background-color: #096;
-  font-size: 87.5%;
+  font-size: 0.875em;
 
   @media (min-width: $breakpoint-content) {
     content: "Medium: #{(($breakpoint-content / 1em) * 16px)}";

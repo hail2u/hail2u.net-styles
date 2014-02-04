@@ -6,7 +6,7 @@ main {
       @extend %line-label;
 
       &::after {
-        font-size: percentage(1 / $ratio-section-header);
+        font-size: em(1 / $ratio-section-header);
       }
 
       @media (min-width: $breakpoint-full) {

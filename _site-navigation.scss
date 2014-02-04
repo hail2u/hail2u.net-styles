@@ -15,7 +15,7 @@ body > header nav {
     display: block;
     height: ($height-site-navigation-small / $ratio-site-navigation);
     line-height: remove-unit($height-site-navigation-small / $ratio-site-navigation);
-    font-size: percentage($ratio-site-navigation);
+    font-size: em($ratio-site-navigation);
   }
 
   a {

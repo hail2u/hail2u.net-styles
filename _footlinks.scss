@@ -9,7 +9,7 @@
 
   li {
     display: table-cell;
-    font-size: percentage($ratio-footlinks);
+    font-size: em($ratio-footlinks);
 
     &::before {
       content: "\00a0\0020\2219\0020\00a0"; // Bullet Operator

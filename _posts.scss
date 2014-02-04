@@ -50,7 +50,7 @@
     li {
       margin-top: ($margin-mini / $ratio-posts-list-item);
       padding-right: $width-posts-list-date;
-      font-size: percentage($ratio-posts-list-item);
+      font-size: em($ratio-posts-list-item);
 
       time {
         position: absolute;

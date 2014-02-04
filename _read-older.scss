@@ -4,7 +4,7 @@
     margin-top: ($margin-heading / $ratio-read-older-title);
     overflow: hidden;
     line-height: $line-height-heading;
-    font-size: percentage($ratio-read-older-title);
+    font-size: em($ratio-read-older-title);
     white-space: nowrap;
     text-overflow: ellipsis;
 
@@ -12,7 +12,7 @@
       display: block;
       content: "Read older:";
       color: $color-fg-read-older-label;
-      font-size: percentage(1 / $ratio-read-older-title);
+      font-size: em(1 / $ratio-read-older-title);
       font-weight: bold;
       text-transform: uppercase;
     }
