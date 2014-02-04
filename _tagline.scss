@@ -8,6 +8,10 @@ body > header h1 {
   em {
     font-weight: 400;
   }
+
+  @media (min-width: $breakpoint-full) {
+    margin-left: (- ($width-suppli + $width-gutter) / $ratio-tagline);
+  }
 }
 
 .permalink > header h1 {
