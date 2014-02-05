@@ -10,7 +10,8 @@
     margin-top: $margin-heading;
   }
 
-  input[type="text"] {
+  input[type="text"],
+  input[type="search"] {
     @include box-sizing(border-box);
 
     padding: 0 ($height-google-cse-form + $margin-google-cse-form) 0 $margin-google-cse-form;
@@ -42,6 +43,7 @@
   }
 
   input[type="text"]:focus + input[type="submit"],
+  input[type="search"]:focus + input[type="submit"],
   input[type="submit"]:hover {
     background-color: $color-bg-google-cse-form-button-hover;
   }
