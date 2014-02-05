@@ -10,7 +10,7 @@
     margin-top: 0;
 
     &::after {
-      margin-top: em($line-height-default * $ratio-elsewhere);
+      margin-top: em($line-height-default * $ratio-footer-elsewhere);
     }
   }
 

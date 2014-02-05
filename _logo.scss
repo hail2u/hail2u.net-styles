@@ -2,8 +2,8 @@
 #logo {
   margin-top: $margin-default;
   display: block;
-  width: $width-logo;
-  height: $height-logo;
+  width: $width-header-logo;
+  height: $height-header-logo;
   background-color: transparent;
 
   @media (min-width: $breakpoint-content) {

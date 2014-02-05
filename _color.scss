@@ -50,16 +50,16 @@ $color-fg-td: mixxd($color-fg, $color-bg, 0.12);
 $color-bg-td: mixxd($color-fg, $color-bg, 0.98);
 
 // Header
-$color-fg-site-navigation: inherit;
-$color-fg-site-navigation-hover: $color-base;
-$color-fg-site-navigation-mark: $color-light;
+$color-fg-header-site-navigation: inherit;
+$color-fg-header-site-navigation-hover: $color-base;
+$color-fg-header-site-navigation-mark: $color-light;
 
 // Main
-$color-fg-article-footer: mixxd($color-fg, $color-bg, 0.6);
-$color-fg-article-footer-time: $color-fg;
+$color-fg-main-article-footer: mixxd($color-fg, $color-bg, 0.6);
+$color-fg-main-article-footer-time: $color-fg;
 
 // Footer
-$color-border-global-footer: mixxd($color-fg, $color-bg, 0.88);
+$color-border-footer: mixxd($color-fg, $color-bg, 0.88);
 
 // Pull Quote
 $color-fg-pull-quote: $color-fg-blockquote;

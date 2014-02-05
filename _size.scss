@@ -39,12 +39,12 @@ $width-border-blockquote: 0.25em;
 $width-border-img: 1em;
 
 // Header
-$width-logo: ($width-suppli / pow($ratio-golden, 2));
-$height-logo: $width-logo;
+$width-header-logo: ($width-suppli / pow($ratio-golden, 2));
+$height-header-logo: $width-header-logo;
 
-$height-site-navigation-small: 1.25em;
-$height-site-navigation: $height-logo;
-$width-site-navigation-gutter: 2em;
+$height-header-site-navigation-small: 1.25em;
+$height-header-site-navigation: $height-header-logo;
+$width-header-site-navigation-gutter: 2em;
 
 // Breakpoint
 $width-scrollbar: 1.5em;
@@ -70,7 +70,7 @@ $margin-flat-dl-dd: $width-gap;
 
 // Paging
 $margin-paging-icon: $width-gutter;
-$width-paging-icon: (($width-logo - $margin-paging-icon) / 2);
+$width-paging-icon: (($width-header-logo - $margin-paging-icon) / 2);
 $height-paging-icon: ($width-paging-icon / 256 * 384);
 
 // Share Buttons

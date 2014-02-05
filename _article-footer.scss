@@ -11,10 +11,10 @@ main {
       position: absolute;
       bottom: 100%;
       width: 100%;
-      color: $color-fg-article-footer;
+      color: $color-fg-main-article-footer;
 
       time {
-        color: $color-fg-article-footer-time;
+        color: $color-fg-main-article-footer-time;
       }
 
       @media (min-width: $breakpoint-full) {

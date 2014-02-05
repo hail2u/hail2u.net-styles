@@ -1,7 +1,7 @@
 // Site Navigation
 body > header nav {
   position: absolute;
-  top: (($height-logo - $height-site-navigation-small * 4) / 2);
+  top: (($height-header-logo - $height-header-site-navigation-small * 4) / 2);
   right: $width-gap;
   text-align: right;
 
@@ -13,37 +13,37 @@ body > header nav {
 
   li {
     display: block;
-    height: ($height-site-navigation-small / $ratio-site-navigation);
-    line-height: remove-unit($height-site-navigation-small / $ratio-site-navigation);
-    font-size: em($ratio-site-navigation);
+    height: ($height-header-site-navigation-small / $ratio-header-site-navigation);
+    line-height: remove-unit($height-header-site-navigation-small / $ratio-header-site-navigation);
+    font-size: em($ratio-header-site-navigation);
   }
 
   a {
     display: inline-block;
-    color: $color-fg-site-navigation;
+    color: $color-fg-header-site-navigation;
 
     &:hover,
     &:focus,
     &:active {
-      color: $color-fg-site-navigation-hover;
+      color: $color-fg-header-site-navigation-hover;
     }
   }
 
   mark {
-    color: $color-fg-site-navigation-mark;
+    color: $color-fg-header-site-navigation-mark;
     background-color: transparent;
     font-weight: bold;
   }
 
   @media (min-width: $breakpoint-content) {
-    top: (($height-logo - $height-site-navigation) / 2);
+    top: (($height-header-logo - $height-header-site-navigation) / 2);
     text-align: left;
 
     li {
-      padding-left: ($width-site-navigation-gutter * 0.5 / $ratio-site-navigation);
+      padding-left: ($width-header-site-navigation-gutter * 0.5 / $ratio-header-site-navigation);
       display: table-cell;
-      height: ($height-site-navigation / $ratio-site-navigation);
-      line-height: remove-unit($height-site-navigation / $ratio-site-navigation);
+      height: ($height-header-site-navigation / $ratio-header-site-navigation);
+      line-height: remove-unit($height-header-site-navigation / $ratio-header-site-navigation);
     }
   }
 
@@ -51,7 +51,7 @@ body > header nav {
     right: auto;
 
     li {
-      padding-right: ($width-site-navigation-gutter / $ratio-site-navigation);
+      padding-right: ($width-header-site-navigation-gutter / $ratio-header-site-navigation);
       padding-left: 0;
     }
   }

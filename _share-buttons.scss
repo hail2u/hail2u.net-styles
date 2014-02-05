@@ -24,12 +24,12 @@
 
     &[href^="https://www.facebook.com/"] {
       color: $color-fg-share-buttons-facebook;
-      background-image: $icon-facebookf;
+      background-image: $image-facebookf;
     }
 
     &[href^="https://twitter.com/"] {
       color: $color-fg-share-buttons-twitter;
-      background-image: $icon-twitterbird;
+      background-image: $image-twitterbird;
     }
   }
 

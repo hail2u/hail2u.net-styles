@@ -24,17 +24,17 @@ $ratio-suppli: (1 / pow($ratio-golden, 2));
 $ratio-code: $ratio-small-text;
 
 // Header
-$ratio-tagline: $ratio-alpha;
+$ratio-header-tagline: $ratio-alpha;
 
-$ratio-site-navigation: $ratio-small-text;
+$ratio-header-site-navigation: $ratio-small-text;
 
 // Main
-$ratio-section-header: $ratio-beta;
-$ratio-section-sub-header: $ratio-gamma;
+$ratio-main-section-header: $ratio-beta;
+$ratio-main-section-sub-header: $ratio-gamma;
 
 // Footer
-$ratio-elsewhere: $ratio-small-text;
-$ratio-footlinks: $ratio-small-text;
+$ratio-footer-elsewhere: $ratio-small-text;
+$ratio-footer-footlinks: $ratio-small-text;
 
 // Pull Quote
 $ratio-pull-quote: $ratio-beta;

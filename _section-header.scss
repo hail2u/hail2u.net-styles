@@ -6,12 +6,12 @@ main {
       @extend %line-label;
 
       &::after {
-        font-size: em(1 / $ratio-section-header);
+        font-size: em(1 / $ratio-main-section-header);
       }
 
       @media (min-width: $breakpoint-full) {
         &::after {
-          height: em($ratio-section-header * $line-height-heading);
+          height: em($ratio-main-section-header * $line-height-heading);
         }
       }
     }
