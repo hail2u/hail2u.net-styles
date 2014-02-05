@@ -2,12 +2,14 @@
 #logo {
   margin-top: $margin-default;
   display: block;
-  width: $width-header-logo;
-  height: $height-header-logo;
+  width: ($width-header-logo / 2);
+  height: ($height-header-logo / 2);
   background-color: transparent;
 
   @media (min-width: $breakpoint-content) {
     margin-top: $margin-heading;
+    width: $width-header-logo;
+    height: $height-header-logo;
   }
 
   @media (min-width: $breakpoint-full) {
