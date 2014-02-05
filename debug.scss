@@ -14,14 +14,14 @@
 @import "./bower_components/hail2u-scss-functions/number/pow";
 
 // Variables
-@import "font";
-@import "color";
-@import "image";
-@import "ratio";
-@import "size";
+@import "var/font";
+@import "var/color";
+@import "var/image";
+@import "var/ratio";
+@import "var/size";
 
 // Classes
-@import "clearfix";
+@import "class/clearfix";
 
 // Grid Overlay
 body.debug::before {

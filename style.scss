@@ -21,67 +21,67 @@ $version: "6.48.5";
 @import "./bower_components/hail2u-scss-functions/number/remove-unit";
 
 // Variable
-@import "font";
-@import "color";
-@import "image";
-@import "ratio";
-@import "size";
+@import "var/font";
+@import "var/color";
+@import "var/image";
+@import "var/ratio";
+@import "var/size";
 
 // Placeholder Class
-@import "clearfix";
-@import "image-replacement";
+@import "class/clearfix";
+@import "class/image-replacement";
 
-@import "auto-breaking";
+@import "class/auto-breaking";
 
-@import "margin";
-@import "hanging-block";
-@import "centering-block";
-@import "line-label";
+@import "class/margin";
+@import "class/hanging-block";
+@import "class/centering-block";
+@import "class/line-label";
 
 // Core
 @import "core";
 
 // Header
-@import "global-header";
-@import "logo";
-@import "tagline";
-@import "site-navigation";
+@import "header";
+@import "header/logo";
+@import "header/tagline";
+@import "header/site-navigation";
 
 // Main
-@import "global-main";
-@import "section-header";
-@import "article-footer";
+@import "main";
+@import "main/section-header";
+@import "main/article-footer";
 
 // Subcontent
-@import "global-subcontent";
+@import "subcontent";
 
 // Footer
-@import "global-footer";
-@import "byline";
-@import "elsewhere";
-@import "footlinks";
+@import "footer";
+@import "footer/byline";
+@import "footer/elsewhere";
+@import "footer/footlinks";
 
 // Widget
-@import "circular-image";
-@import "floatage";
-@import "drop";
-@import "full-width";
-@import "pull-quote";
-@import "seealso";
-@import "sidenote";
+@import "widget/circular-image";
+@import "widget/floatage";
+@import "widget/drop";
+@import "widget/full-width";
+@import "widget/pull-quote";
+@import "widget/seealso";
+@import "widget/sidenote";
 
-@import "posts";
-@import "seemore";
-@import "flat-dl";
-@import "flat-ul";
-@import "read-older";
-@import "paging";
+@import "widget/posts";
+@import "widget/seemore";
+@import "widget/flat-dl";
+@import "widget/flat-ul";
+@import "widget/read-older";
+@import "widget/paging";
 
-// 3rd-Party Widget
-@import "share-buttons";
-@import "google-adsense";
-@import "google-code-prettify";
-@import "google-cse";
+// Widget (3rd-Party)
+@import "widget/3rd-party/share-buttons";
+@import "widget/3rd-party/google-adsense";
+@import "widget/3rd-party/google-code-prettify";
+@import "widget/3rd-party/google-cse";
 
 // Shame
 @import "shame";
