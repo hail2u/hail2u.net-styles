@@ -109,8 +109,8 @@ $color-fg-google-code-prettify-special: #c90;
 // Google Custom Search Engine
 $color-fg-google-cse-form: rgb(17, 17, 17);
 $color-bg-google-cse-form: rgb(255, 255, 255);
-$color-fg-google-cse-form-button: grayscale(mixxd($color-light, white, 0.6));
-$color-fg-google-cse-form-button-hover: $color-light;
-$color-bg-google-cse-form-button: transparent;
-$color-border-google-cse-form: $color-fg-google-cse-form-button;
-$color-border-google-cse-form-focus: $color-fg-google-cse-form-button-hover;
+$color-fg-google-cse-form-button: $color-bg-google-cse-form;
+$color-bg-google-cse-form-button: grayscale(mixxd($color-light, white, 0.6));
+$color-bg-google-cse-form-button-hover: $color-light;
+$color-border-google-cse-form: $color-bg-google-cse-form-button;
+$color-border-google-cse-form-focus: $color-bg-google-cse-form-button-hover;
