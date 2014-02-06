@@ -6,11 +6,12 @@
     margin-top: 0;
     padding-left: 0;
     position: absolute;
-    top: (- (em($line-height-default) + em($line-height-default * $ratio-footer-elsewhere)));
+    top: (- em($line-height-default * 2));
   }
 
   li {
     display: table-cell;
+    line-height: ($line-height-default / $ratio-footer-elsewhere);
     font-size: em($ratio-footer-elsewhere);
 
     &::before {

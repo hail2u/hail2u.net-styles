@@ -9,6 +9,7 @@
 
   li {
     display: table-cell;
+    line-height: ($line-height-default / $ratio-footer-footlinks);
     font-size: em($ratio-footer-footlinks);
 
     &::before {
