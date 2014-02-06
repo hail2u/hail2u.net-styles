@@ -19,7 +19,7 @@
     background-color: transparent;
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint-content) {
     p::after {
       margin-top: 0;
     }

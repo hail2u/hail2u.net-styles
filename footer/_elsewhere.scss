@@ -23,9 +23,15 @@
     }
   }
 
+  @media (min-width: $breakpoint-content) {
+    ul {
+      right: $width-gap;
+    }
+  }
+
   @media (min-width: $breakpoint-full) {
     ul {
-      position: static;
+      top: (- em($line-height-default));
     }
   }
 }
