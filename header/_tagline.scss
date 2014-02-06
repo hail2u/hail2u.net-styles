@@ -6,6 +6,7 @@ body > header h1 {
   font-size: em($ratio-header-tagline);
 
   em {
+    color: $color-fg-header-tagline-em;
     font-weight: normal;
   }
 
