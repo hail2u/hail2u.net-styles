@@ -1,6 +1,6 @@
 // Basic
-$color-fg: rgb(85, 85, 85);
-$color-bg: rgb(252, 249, 240);
+$color-fg-base: rgb(85, 85, 85);
+$color-bg-base: rgb(252, 249, 240);
 
 $color-base: rgb(17, 136, 187);
 $color-darkest: rgb(6, 87, 122);
@@ -15,76 +15,76 @@ $color-complement-light: rgb(191, 127, 55);
 $color-complement-lightest: rgb(166, 89, 4);
 
 // Core
-$color-fg-body: $color-fg;
-$color-bg-body: $color-bg;
+$color-fg-body: $color-fg-base;
+$color-bg-body: $color-bg-base;
 
-$color-fg-heading: mixxd($color-fg, $color-bg, 0.12);
+$color-fg-heading: mixxd($color-fg-base, $color-bg-base, 0.12);
 
-$color-fg-hr: mixxd($color-fg, $color-bg, 0.92);
+$color-fg-hr: mixxd($color-fg-base, $color-bg-base, 0.92);
 
-$color-fg-blockquote: mixxd($color-fg, $color-bg, 0.36);
-$color-border-blockquote: mixxd($color-fg, $color-bg, 0.92);
+$color-fg-blockquote: mixxd($color-fg-base, $color-bg-base, 0.36);
+$color-border-blockquote: mixxd($color-fg-base, $color-bg-base, 0.92);
 
-$color-fg-pre: mixxd($color-fg, $color-bg, 0.16);
-$color-bg-pre: mixxd($color-fg, $color-bg, 0.98);
+$color-fg-pre: mixxd($color-fg-base, $color-bg-base, 0.16);
+$color-bg-pre: mixxd($color-fg-base, $color-bg-base, 0.98);
 
-$color-fg-dt: mixxd($color-fg, $color-bg, 0.12);
+$color-fg-dt: mixxd($color-fg-base, $color-bg-base, 0.12);
 
 $color-fg-link: $color-base;
 $color-fg-link-hover: $color-darkest;
 
-$color-fg-em: mixxd($color-fg, $color-bg, 0.12);
+$color-fg-em: mixxd($color-fg-base, $color-bg-base, 0.12);
 
-$color-fg-strong: mixxd($color-fg, $color-bg, 0.12);
+$color-fg-strong: mixxd($color-fg-base, $color-bg-base, 0.12);
 
 $color-bg-mark: rgb(255, 221, 0);
 
 $color-bg-img: white;
 
-$color-border-table: mixxd($color-fg, $color-bg, 0.8);
+$color-border-table: mixxd($color-fg-base, $color-bg-base, 0.8);
 
-$color-fg-th: mixxd($color-fg, $color-bg, 0.12);
-$color-bg-th: mixxd($color-fg, $color-bg, 0.92);
+$color-fg-th: mixxd($color-fg-base, $color-bg-base, 0.12);
+$color-bg-th: mixxd($color-fg-base, $color-bg-base, 0.92);
 
-$color-fg-td: mixxd($color-fg, $color-bg, 0.12);
-$color-bg-td: mixxd($color-fg, $color-bg, 0.98);
+$color-fg-td: mixxd($color-fg-base, $color-bg-base, 0.12);
+$color-bg-td: mixxd($color-fg-base, $color-bg-base, 0.98);
 
 // Header
-$color-fg-header-tagline-em: mixxd($color-fg, $color-bg, 0.24);
+$color-fg-header-tagline-em: mixxd($color-fg-base, $color-bg-base, 0.24);
 
 $color-fg-header-site-navigation: inherit;
 $color-fg-header-site-navigation-hover: $color-base;
 $color-fg-header-site-navigation-mark: $color-light;
 
 // Main
-$color-fg-main-article-footer: mixxd($color-fg, $color-bg, 0.6);
-$color-fg-main-article-footer-time: $color-fg;
+$color-fg-main-article-footer: mixxd($color-fg-base, $color-bg-base, 0.6);
+$color-fg-main-article-footer-time: $color-fg-base;
 
 // Footer
-$color-border-footer: mixxd($color-fg, $color-bg, 0.88);
+$color-border-footer: mixxd($color-fg-base, $color-bg-base, 0.88);
 
 // Pull Quote
 $color-fg-pull-quote: $color-fg-blockquote;
 
 // Seealso
-$color-fg-seealso: mixxd($color-fg, $color-bg, 0.12);
+$color-fg-seealso: mixxd($color-fg-base, $color-bg-base, 0.12);
 
-$color-fg-seealso-icon: mixxd($color-fg, $color-bg, 0.72);
+$color-fg-seealso-icon: mixxd($color-fg-base, $color-bg-base, 0.72);
 
 // Sidenote
-$color-fg-sidenote: mixxd($color-fg, $color-bg, 0.48);
+$color-fg-sidenote: mixxd($color-fg-base, $color-bg-base, 0.48);
 
 // Posts
-$color-fg-posts-tag: $color-fg;
+$color-fg-posts-tag: $color-fg-base;
 $color-fg-posts-more: $color-fg-link;
 $color-fg-posts-more-hover: $color-fg-link-hover;
-$color-fg-posts-list-time: mixxd($color-fg, $color-bg, 0.6);
+$color-fg-posts-list-time: mixxd($color-fg-base, $color-bg-base, 0.6);
 
 // Flat DL
-$color-fg-flat-dl: mixxd($color-fg, $color-bg, 0.8);
+$color-fg-flat-dl: mixxd($color-fg-base, $color-bg-base, 0.8);
 
 // Read Older
-$color-fg-read-older-label: mixxd($color-fg, $color-bg, 0.12);
+$color-fg-read-older-label: mixxd($color-fg-base, $color-bg-base, 0.12);
 
 // Paging
 $color-fg-paging: $color-light;
