@@ -14,6 +14,9 @@ $color-complement-dark: rgb(255, 169, 73);
 $color-complement-light: rgb(191, 127, 55);
 $color-complement-lightest: rgb(166, 89, 4);
 
+// Class
+$color-fg-line-label: mixxd($color-fg-base, $color-bg-base, 0.92);
+
 // Core
 $color-fg-body: $color-fg-base;
 $color-bg-body: $color-bg-base;

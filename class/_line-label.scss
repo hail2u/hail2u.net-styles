@@ -9,8 +9,8 @@
     height: em($line-height-default);
     content: "";
     background-image: linear-gradient(
-      mixxd($color-fg, $color-bg, 0.92) 0,
-      mixxd($color-fg, $color-bg, 0.92) 100%
+      $color-fg-line-label 0,
+      $color-fg-line-label 100%
     );
     background-position: left center;
     background-repeat: no-repeat;
