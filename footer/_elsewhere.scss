@@ -3,10 +3,10 @@
   @extend %centering-block;
 
   ul {
-    margin-top: 0;
+    margin-bottom: em($line-height-default * 2);
     padding-left: 0;
     position: absolute;
-    top: (- em($line-height-default * 2));
+    bottom: 100%;
   }
 
   li {
@@ -25,13 +25,14 @@
 
   @media (min-width: $breakpoint-content) {
     ul {
+      margin-bottom: em($line-height-default);
       right: $width-gap;
     }
   }
 
   @media (min-width: $breakpoint-full) {
     ul {
-      top: (- em($line-height-default));
+      margin-bottom: 0;
     }
   }
 }

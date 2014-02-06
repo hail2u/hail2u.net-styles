@@ -8,20 +8,10 @@
     @extend %line-label;
 
     margin-top: 0;
-
-    &::after {
-      margin-top: em($line-height-default * $ratio-footer-elsewhere);
-    }
   }
 
   mark {
     color: inherit;
     background-color: transparent;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    p::after {
-      margin-top: 0;
-    }
   }
 }
