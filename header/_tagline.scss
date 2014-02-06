@@ -6,7 +6,7 @@ body > header h1 {
   font-size: em($ratio-header-tagline);
 
   em {
-    font-weight: 400;
+    font-weight: normal;
   }
 
   @media (min-width: $breakpoint-full) {
