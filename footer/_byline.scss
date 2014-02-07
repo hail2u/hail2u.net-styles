@@ -1,17 +1,21 @@
 // Byline
 .byline {
-  @extend %centering-block;
-
   font-style: normal;
 
   p {
     @extend %line-label;
 
-    margin-top: 0;
+    margin-top: ($margin-heading + em($line-height-default) / $ratio-footer-elsewhere);
   }
 
   mark {
     color: inherit;
     background-color: transparent;
+  }
+
+  @media (min-width: $breakpoint-content) {
+    p {
+    margin-top: $margin-heading;
+    }
   }
 }

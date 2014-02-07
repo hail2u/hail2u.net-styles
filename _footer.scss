@@ -1,9 +1,6 @@
 // Global Footer
 body > footer {
-  margin-top: $margin-heading;
-  margin-bottom: $margin-heading;
-  padding-top: $margin-heading;
-  padding-bottom: $margin-heading;
-  border-top: 1px dashed $color-border-footer;
-  position: relative;
+  @extend %centering-block;
+
+  padding-bottom: $margin-primary-heading;
 }

@@ -1,9 +1,7 @@
 // Elsewhere
 .elsewhere {
-  @extend %centering-block;
-
   ul {
-    margin-bottom: em($line-height-default * 2);
+    margin-top: 0;
     padding-left: 0;
     position: absolute;
     bottom: 100%;
@@ -25,14 +23,9 @@
 
   @media (min-width: $breakpoint-content) {
     ul {
-      margin-bottom: em($line-height-default);
+      top: 0;
       right: $width-gap;
-    }
-  }
-
-  @media (min-width: $breakpoint-full) {
-    ul {
-      margin-bottom: 0;
+      bottom: auto;
     }
   }
 }
