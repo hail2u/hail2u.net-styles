@@ -1,13 +1,9 @@
 // Global Footer
 body > footer {
-  margin-top: $margin-primary-heading;
+  margin-top: $margin-heading;
   margin-bottom: $margin-heading;
-  padding-top: ($margin-heading + em($line-height-default));
+  padding-top: $margin-heading;
   padding-bottom: $margin-heading;
   border-top: 1px dashed $color-border-footer;
   position: relative;
-
-  @media (min-width: $breakpoint-content) {
-    margin-top: $margin-heading;
-  }
 }
