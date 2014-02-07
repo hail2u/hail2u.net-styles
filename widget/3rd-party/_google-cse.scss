@@ -5,6 +5,7 @@
 #cse-search-box {
   margin-top: $margin-default;
   position: relative;
+  max-width: $width-google-cse;
 
   body > aside & {
     margin-top: $margin-heading;
@@ -49,8 +50,6 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    width: $width-google-cse-form;
-
     body > aside & {
       margin-top: $margin-primary-heading;
     }
