@@ -37,7 +37,9 @@
     top: auto;
 
     ul {
-      margin-top: (- ($height-share-buttons * 2));
+      margin-top: 0;
+      position: relative;
+      top: (- ($height-share-buttons * 2));
     }
 
     li {
