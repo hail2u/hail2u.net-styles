@@ -107,20 +107,22 @@ pre {
 blockquote {
   margin: 0;
   border-left: $width-border-blockquote solid $color-border-blockquote;
-  padding-left: $indent-blockquote;
+  padding-left: $width-gap;
   color: $color-fg-blockquote;
 
   + figcaption {
-    margin-top: $margin-mini;
+    margin-top: 0;
+    border-left: $width-border-blockquote solid $color-border-blockquote;
+    padding-top: $margin-mini;
+    padding-left: $width-gap;
   }
 
-  figure > &,
-  figure > & + figcaption {
-    text-align: left;
-  }
+  @media (min-width: ($width-border-blockquote + $breakpoint-content)) {
+    margin-left: (- ($width-gap + $width-border-blockquote));
 
-  @media (min-width: $breakpoint-full) {
     + figcaption {
+      margin-left: (- ($width-gap + $width-border-blockquote));
+      margin-right: 0;
       position: static;
       width: auto;
     }
