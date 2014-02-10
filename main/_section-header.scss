@@ -1,19 +1,15 @@
 // Section Header
-main {
-  > article,
-  > section {
-    h1 {
-      @extend %line-label;
+main > article h1,
+main > section h1 {
+  @extend %line-label;
 
-      &::after {
-        font-size: em(1 / $ratio-main-section-header);
-      }
+  &::after {
+    font-size: em(1 / $ratio-main-section-header);
+  }
 
-      @media (min-width: $breakpoint-full) {
-        &::after {
-          height: em($ratio-main-section-header * $line-height-heading);
-        }
-      }
+  @media (min-width: $breakpoint-full) {
+    &::after {
+      height: em($ratio-main-section-header * $line-height-heading);
     }
   }
 }

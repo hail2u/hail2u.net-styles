@@ -4,13 +4,16 @@ main {
 
   margin-top: (- $margin-primary-heading + $margin-heading + em($line-height-default) + $margin-mini);
 
-  article,
-  section,
-  aside,
-  div[itemprop="articleBody"] {
-    > p a {
-      text-decoration: underline;
-    }
+  > article,
+  > section {
+    position: relative;
+  }
+
+  article > p a,
+  section > p a,
+  aside > p a,
+  div[itemprop="articleBody"] > p a {
+    text-decoration: underline;
   }
 
   @media (min-width: $breakpoint-full) {

@@ -1,36 +1,34 @@
 // Posts
-.posts {
-  > a {
-    color: inherit;
+.posts > a {
+  color: inherit;
 
-    .tag {
-      color: $color-fg-posts-tag;
+  .tag {
+    color: $color-fg-posts-tag;
+  }
+
+  > p::after {
+    margin-left: $margin-posts-more;
+    content: "More\0020\279f"; // Dashed Triangle-Headed Rightwards Arrow
+    font-weight: bold;
+    color: $color-fg-posts-more;
+    text-transform: uppercase;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    h1 {
+      color: $color-fg-link;
     }
 
     > p::after {
-      margin-left: $margin-posts-more;
-      content: "More\0020\279f"; // Dashed Triangle-Headed Rightwards Arrow
-      font-weight: bold;
-      color: $color-fg-posts-more;
-      text-transform: uppercase;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      h1 {
-        color: $color-fg-link;
-      }
-
-      > p::after {
-        color: $color-fg-posts-more-hover;
-      }
+      color: $color-fg-posts-more-hover;
     }
   }
+}
 
-  ol {
-    padding-left: 0;
-  }
+.posts ol {
+  padding-left: 0;
 
   li {
     margin-top: $margin-mini;
@@ -39,11 +37,11 @@
     list-style-type: none;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
 
-    time {
-      display: block;
-      color: $color-fg-posts-list-time;
-    }
+  time {
+    display: block;
+    color: $color-fg-posts-list-time;
   }
 
   @media (min-width: $breakpoint-content) {
@@ -51,12 +49,12 @@
       margin-top: ($margin-mini / $ratio-posts-list-item);
       padding-right: $width-posts-list-date;
       font-size: em($ratio-posts-list-item);
+    }
 
-      time {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
+    time {
+      position: absolute;
+      top: 0;
+      right: 0;
     }
   }
 }

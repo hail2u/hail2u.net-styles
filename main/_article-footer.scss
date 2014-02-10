@@ -1,28 +1,22 @@
 // Article Footer
-main {
-  > article,
-  > section {
-    position: relative;
+main > article h1 + footer,
+main > section h1 + footer {
+  @extend %hanging-block;
 
-    h1 + footer {
-      @extend %hanging-block;
+  margin-bottom: $margin-mini;
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  color: $color-fg-main-article-footer;
 
-      margin-bottom: $margin-mini;
-      position: absolute;
-      bottom: 100%;
-      width: 100%;
-      color: $color-fg-main-article-footer;
+  time {
+    color: $color-fg-main-article-footer-time;
+  }
 
-      time {
-        color: $color-fg-main-article-footer-time;
-      }
-
-      @media (min-width: $breakpoint-full) {
-        margin-bottom: 0;
-        top: auto;
-        bottom: auto;
-        width: $width-suppli;
-      }
-    }
+  @media (min-width: $breakpoint-full) {
+    margin-bottom: 0;
+    top: auto;
+    bottom: auto;
+    width: $width-suppli;
   }
 }
