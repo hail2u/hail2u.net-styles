@@ -69,10 +69,9 @@ $version: "6.50.0";
 @import "widget/read-older";
 @import "widget/paging";
 
-// Widget (3rd-Party)
-@import "widget/3rd-party/google-adsense";
-@import "widget/3rd-party/google-code-prettify";
-@import "widget/3rd-party/google-cse";
+@import "widget/google-adsense";
+@import "widget/google-code-prettify";
+@import "widget/google-cse";
 
 // Shame
 @import "shame";
