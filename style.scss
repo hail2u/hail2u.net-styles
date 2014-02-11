@@ -43,23 +43,15 @@ $version: "6.50.0";
 
 // Header
 @import "header";
-@import "header/logo";
-@import "header/tagline";
-@import "header/site-navigation";
 
 // Main
 @import "main";
-@import "main/section-header";
-@import "main/article-footer";
 
 // Subcontent
 @import "subcontent";
 
 // Footer
 @import "footer";
-@import "footer/byline";
-@import "footer/elsewhere";
-@import "footer/footlinks";
 
 // Widget
 @import "widget/circular-image";

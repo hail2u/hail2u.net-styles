@@ -1,4 +1,7 @@
 // Global Main
+@import "main/section-header";
+@import "main/article-footer";
+
 main {
   @extend %centering-block;
 

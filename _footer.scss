@@ -1,4 +1,8 @@
 // Global Footer
+@import "footer/byline";
+@import "footer/elsewhere";
+@import "footer/footlinks";
+
 body > footer {
   @extend %centering-block;
 

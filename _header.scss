@@ -1,4 +1,8 @@
 // Global Header
+@import "header/logo";
+@import "header/tagline";
+@import "header/site-navigation";
+
 body > header {
   @extend %centering-block;
 }

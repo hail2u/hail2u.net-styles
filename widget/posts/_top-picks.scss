@@ -1,0 +1,28 @@
+// Posts Top Picks
+.posts > a {
+  color: inherit;
+
+  .tag {
+    color: $color-fg-posts-tag;
+  }
+
+  > p::after {
+    margin-left: $margin-posts-more;
+    content: "More\0020\279f"; // Dashed Triangle-Headed Rightwards Arrow
+    font-weight: bold;
+    color: $color-fg-posts-more;
+    text-transform: uppercase;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    h1 {
+      color: $color-fg-link;
+    }
+
+    > p::after {
+      color: $color-fg-posts-more-hover;
+    }
+  }
+}
