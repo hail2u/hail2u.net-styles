@@ -143,6 +143,11 @@ ol {
   ul,
   ol {
     margin-top: 0;
+    padding-left: $indent-default;
+  }
+
+  @media (min-width: ($indent-default + $breakpoint-content)) {
+    padding-left: 0;
   }
 }
 
