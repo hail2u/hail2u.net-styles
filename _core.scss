@@ -110,7 +110,7 @@ blockquote {
   padding-left: $width-gap;
   color: $color-fg-blockquote;
 
-  + figcaption {
+  + figcaption:last-child {
     margin-top: 0;
     border-left: $width-border-blockquote solid $color-border-blockquote;
     padding-top: $margin-mini;
@@ -120,9 +120,11 @@ blockquote {
   @media (min-width: ($breakpoint-full)) {
     margin-left: (- ($width-gap + $width-border-blockquote));
 
-    + figcaption {
+    + figcaption:last-child {
       margin-left: (- ($width-gap + $width-border-blockquote));
       margin-right: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
       position: static;
       width: auto;
     }
@@ -188,9 +190,15 @@ figcaption {
   @extend %hanging-block;
 
   @media (min-width: $breakpoint-full) {
+    padding-top: ($width-border-img - $height-border-figcaption);
+    border-top: $height-border-figcaption solid $color-border-figcaption;
     top: 0;
 
     &:last-child {
+      padding-top: 0;
+      padding-bottom: ($width-border-img - $height-border-figcaption);
+      border-top: 0;
+      border-bottom: $height-border-figcaption solid $color-border-figcaption;
       top: auto;
       bottom: 0;
     }

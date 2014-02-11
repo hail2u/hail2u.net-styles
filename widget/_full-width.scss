@@ -20,8 +20,12 @@
     figcaption:last-child {
       margin-top: $margin-default;
       margin-left: 0;
+      padding-bottom: 0;
+      padding-left: ($width-gap - $height-border-figcaption);
+      border-left: $height-border-figcaption solid $color-border-figcaption;
+      border-bottom: 0;
       bottom: auto;
-      left: $width-gap;
+      left: 0;
     }
   }
 
