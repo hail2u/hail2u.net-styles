@@ -117,7 +117,7 @@ blockquote {
     padding-left: $width-gap;
   }
 
-  @media (min-width: ($width-border-blockquote + $breakpoint-content)) {
+  @media (min-width: ($breakpoint-full)) {
     margin-left: (- ($width-gap + $width-border-blockquote));
 
     + figcaption {
@@ -146,7 +146,7 @@ ol {
     padding-left: $indent-default;
   }
 
-  @media (min-width: ($indent-default + $breakpoint-content)) {
+  @media (min-width: ($breakpoint-full)) {
     padding-left: 0;
   }
 }
