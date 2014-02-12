@@ -23,6 +23,13 @@
 // Classes
 @import "class/clearfix";
 
+// Version
+@import "version";
+
+html {
+  content: "#{$version}";
+}
+
 // Grid Overlay
 body.debug::before {
   position: fixed;
