@@ -14,7 +14,6 @@ $ratio-beta: ($ratio-text-primary * $ratio-golden);
 $ratio-gamma: $ratio-text-secondary;
 $ratio-delta: $ratio-text-primary;
 $ratio-epsilon: (14px / 16px);
-$ratio-zeta: (12px / 16px);
 
 // Main Component
 $ratio-content: (1 + 1 / pow($ratio-golden, 3));
@@ -40,7 +39,7 @@ $ratio-footer-footlinks: $ratio-epsilon;
 $ratio-pull-quote: $ratio-beta;
 
 // Sidenote
-$ratio-sidenote: $ratio-zeta;
+$ratio-sidenote: $ratio-epsilon;
 
 // Posts
 $ratio-posts-list-item: $ratio-gamma;
