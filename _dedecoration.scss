@@ -20,7 +20,8 @@
   }
 
   // Font
-  body {
+  body,
+  body > header h1 {
     font-family: $font-stack-body-print;
   }
 
