@@ -1,5 +1,6 @@
 // Logo
-#logo {
+body > header > a:first-child,
+body > header > mark:first-child {
   margin-top: ($margin-heading / $ratio-golden);
   display: block;
   width: ($width-header-logo / $ratio-golden);

@@ -2,7 +2,7 @@
 @import "./bower_components/hail2u-scss-partials/image-replacement";
 @import "./bower_components/hail2u-scss-partials/vendor-extension";
 
-#cse-search-box {
+.searchbox form {
   margin-top: $margin-default;
   position: relative;
   max-width: $width-google-cse;
