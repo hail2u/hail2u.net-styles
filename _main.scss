@@ -20,6 +20,6 @@ main {
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-top: (- $margin-primary-heading + $margin-heading + (($height-header-site-navigation - 1em) / 2));
+    margin-top: (- $margin-primary-heading + $margin-heading);
   }
 }
