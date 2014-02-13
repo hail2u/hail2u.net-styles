@@ -12,7 +12,7 @@
   body > header > a:first-child,
   body > header > mark:first-child,
   body > footer::before,
-  body > footer address::before,
+  .byline::before,
   .elsewhere,
   .footlinks,
   .seealso::before {
@@ -84,7 +84,7 @@
   main article h1,
   main section h1 + footer,
   main article h1 + footer,
-  body > footer address {
+  .byline {
     text-align: left;
   }
 
@@ -103,7 +103,7 @@
 
   body > header,
   main,
-  body > footer address {
+  .byline {
     max-width: none;
   }
 
