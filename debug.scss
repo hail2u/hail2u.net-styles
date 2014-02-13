@@ -26,8 +26,9 @@
 // Version
 @import "version";
 
-html {
+html::after {
   content: "#{$version}";
+  display: none;
 }
 
 // Grid Overlay
