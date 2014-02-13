@@ -1,9 +1,9 @@
 // Logo
 #logo {
-  margin-top: $margin-default;
+  margin-top: ($margin-heading / $ratio-golden);
   display: block;
-  width: ($width-header-logo / 2);
-  height: ($height-header-logo / 2);
+  width: ($width-header-logo / $ratio-golden);
+  height: ($height-header-logo / $ratio-golden);
   background-color: transparent;
 
   @media (min-width: $breakpoint-content) {
