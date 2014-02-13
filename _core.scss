@@ -46,15 +46,15 @@ body {
 h1 {
   @include heading;
 
-  margin: ($margin-primary-heading / $ratio-main-section-header) 0 0 0;
-  font-size: em($ratio-main-section-header);
+  margin: ($margin-primary-heading / $ratio-main-section-heading) 0 0 0;
+  font-size: em($ratio-main-section-heading);
 }
 
 h2 {
   @include heading;
 
-  margin: ($margin-heading / $ratio-main-section-sub-header) 0 0 0;
-  font-size: em($ratio-main-section-sub-header);
+  margin: ($margin-heading / $ratio-main-section-sub-heading) 0 0 0;
+  font-size: em($ratio-main-section-sub-heading);
 }
 
 // Grouping Content
