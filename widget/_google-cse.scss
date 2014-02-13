@@ -7,10 +7,6 @@
   position: relative;
   max-width: $width-google-cse;
 
-  body > aside & {
-    margin-top: $margin-heading;
-  }
-
   input[type="text"],
   input[type="search"] {
     @include box-sizing(border-box);
@@ -48,9 +44,17 @@
   input[type="submit"]:hover {
     background-color: $color-bg-google-cse-form-button-hover;
   }
+}
+
+body > .searchbox {
+  @extend %centering-block;
+
+  form {
+    margin-top: $margin-heading;
+  }
 
   @media (min-width: $breakpoint-full) {
-    body > aside & {
+    form {
       margin-top: $margin-primary-heading;
     }
   }
