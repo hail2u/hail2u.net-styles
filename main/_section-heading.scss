@@ -13,3 +13,18 @@ main > section h1 {
     }
   }
 }
+
+.permalink main > article h1,
+.permalink main > section h1 {
+  margin-top: (($margin-heading + em($line-height)) / $ratio_main-section-heading--permalink);
+  margin-bottom: ($margin-heading / $ratio_main-section-heading--permalink);
+  font-size: em($ratio_main-section-heading--permalink);
+
+  &::after {
+    display: none;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    margin-left: (- ($width-suppli + $width-gutter) / $ratio_main-section-heading--permalink);
+  }
+}
