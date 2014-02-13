@@ -5,42 +5,42 @@ $ratio-bronze: 3.30378;
 $ratio-yamato: 1.41421;
 
 // Text Size
-$ratio-primary-text: (16px / 16px);
-$ratio-secondary-text: (21px / 16px);
-$ratio-small-text: (14px / 16px);
-$ratio-tiny-text: (12px / 16px);
+$ratio-text-primary: (16px / 16px);
+$ratio-text-secondary: (21px / 16px);
 
 // Harmonic Ratio
-$ratio-alpha: ($ratio-secondary-text * $ratio-golden);
-$ratio-beta: ($ratio-primary-text * $ratio-golden);
-$ratio-gamma: $ratio-secondary-text;
-$ratio-delta: $ratio-primary-text;
+$ratio-alpha: ($ratio-text-secondary * $ratio-golden);
+$ratio-beta: ($ratio-text-primary * $ratio-golden);
+$ratio-gamma: $ratio-text-secondary;
+$ratio-delta: $ratio-text-primary;
+$ratio-epsilon: (14px / 16px);
+$ratio-zeta: (12px / 16px);
 
 // Main Component
 $ratio-content: (1 + 1 / pow($ratio-golden, 3));
 $ratio-suppli: (1 / pow($ratio-golden, 2));
 
 // Core
-$ratio-code: $ratio-small-text;
+$ratio-code: $ratio-epsilon;
 
 // Header
 $ratio-header-tagline: $ratio-alpha;
 
-$ratio-header-site-navigation: $ratio-small-text;
+$ratio-header-site-navigation: $ratio-epsilon;
 
 // Main
 $ratio-main-section-header: $ratio-beta;
 $ratio-main-section-sub-header: $ratio-gamma;
 
 // Footer
-$ratio-footer-elsewhere: $ratio-small-text;
-$ratio-footer-footlinks: $ratio-small-text;
+$ratio-footer-elsewhere: $ratio-epsilon;
+$ratio-footer-footlinks: $ratio-epsilon;
 
 // Pull Quote
 $ratio-pull-quote: $ratio-beta;
 
 // Sidenote
-$ratio-sidenote: $ratio-tiny-text;
+$ratio-sidenote: $ratio-zeta;
 
 // Posts
 $ratio-posts-list-item: $ratio-gamma;
