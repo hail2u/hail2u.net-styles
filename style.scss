@@ -41,11 +41,25 @@
 // Core
 @import "core";
 
-// Structure
+// Header
 @import "header";
+@import "header/logo";
+@import "header/tagline";
+@import "header/site-navigation";
+
+// Main
 @import "main";
+@import "main/section-heading";
+@import "main/article-footer";
+
+// Subcontent
 @import "subcontent";
+
+// Footer
 @import "footer";
+@import "footer/byline";
+@import "footer/elsewhere";
+@import "footer/footlinks";
 
 // Widget
 @import "widget/circular-image";
@@ -57,6 +71,8 @@
 @import "widget/sidenote";
 
 @import "widget/posts";
+@import "widget/posts/top-picks";
+@import "widget/posts/list";
 @import "widget/seemore";
 @import "widget/flat-dl";
 @import "widget/flat-ul";
