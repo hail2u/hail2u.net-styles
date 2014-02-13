@@ -5,11 +5,6 @@ body > header h1 {
   font-weight: 200;
   font-size: em($ratio-header-tagline);
 
-  em {
-    color: $color-fg-header-tagline-em;
-    font-weight: normal;
-  }
-
   @media (min-width: $breakpoint-full) {
     margin-left: (- ($width-suppli + $width-gutter) / $ratio-header-tagline);
   }
