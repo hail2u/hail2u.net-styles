@@ -13,7 +13,7 @@ $ratio-alpha: ($ratio-text-secondary * $ratio-golden);
 $ratio-beta: ($ratio-text-primary * $ratio-golden);
 $ratio-gamma: $ratio-text-secondary;
 $ratio-delta: $ratio-text-primary;
-$ratio-epsilon: (14px / 16px);
+$ratio-epsilon: ($ratio-text-secondary / $ratio-golden);
 
 // Main Component
 $ratio-content: (1 + 1 / pow($ratio-golden, 3));
