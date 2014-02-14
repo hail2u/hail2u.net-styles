@@ -11,7 +11,7 @@
     &::before {
       display: block;
       content: "Read older:";
-      color: $color-fg-read-older-label;
+      color: $color-fg_read-older__label;
       font-size: em(1 / $ratio-read-older-title);
       font-weight: bold;
       text-transform: uppercase;

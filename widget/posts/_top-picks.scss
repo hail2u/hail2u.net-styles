@@ -3,14 +3,14 @@
   color: inherit;
 
   .tag {
-    color: $color-fg-posts-tag;
+    color: $color-fg_posts__tag;
   }
 
   > p::after {
     margin-left: $margin-posts-more;
     content: "More\0020\279f"; // Dashed Triangle-Headed Rightwards Arrow
     font-weight: bold;
-    color: $color-fg-posts-more;
+    color: $color-fg_posts__more;
     text-transform: uppercase;
   }
 
@@ -18,11 +18,11 @@
   &:focus,
   &:active {
     h1 {
-      color: $color-fg-link;
+      color: $color-fg_link;
     }
 
     > p::after {
-      color: $color-fg-posts-more-hover;
+      color: $color-fg_posts__more--hover;
     }
   }
 }

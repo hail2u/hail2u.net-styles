@@ -20,17 +20,17 @@ body > header nav {
 
   a {
     display: inline-block;
-    color: $color-fg-header-site-navigation;
+    color: $color-fg_header-site-navigation;
 
     &:hover,
     &:focus,
     &:active {
-      color: $color-fg-header-site-navigation-hover;
+      color: $color-fg_header-site-navigation--hover;
     }
   }
 
   mark {
-    color: $color-fg-header-site-navigation-mark;
+    color: $color-fg_header-site-navigation__mark;
     background-color: transparent;
     font-weight: bold;
   }

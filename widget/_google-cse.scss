@@ -12,14 +12,14 @@
     @include box-sizing(border-box);
 
     padding: 0 ($height-google-cse-form + $margin-google-cse-form) 0 $margin-google-cse-form;
-    border: 1px solid $color-border-google-cse-form;
+    border: 1px solid $color-border_google-cse;
     width: 100%;
     height: $height-google-cse-form;
-    color: $color-fg-google-cse-form;
-    background-color: $color-bg-google-cse-form;
+    color: $color-fg_google-cse;
+    background-color: $color-bg_google-cse;
 
     &:focus {
-      border-color: $color-border-google-cse-form-focus;
+      border-color: $color-border_google-cse--focus;
     }
   }
 
@@ -32,7 +32,7 @@
     right: 0;
     width: $height-google-cse-form;
     height: $height-google-cse-form;
-    background-color: $color-bg-google-cse-form-button;
+    background-color: $color-bg_google-cse__button;
     background-image: $image-magnifying-glass;
     background-repeat: no-repeat;
     background-position: center top;
@@ -42,7 +42,7 @@
   input[type="text"]:focus + input[type="submit"],
   input[type="search"]:focus + input[type="submit"],
   input[type="submit"]:hover {
-    background-color: $color-bg-google-cse-form-button-hover;
+    background-color: $color-bg_google-cse__button--hover;
   }
 }
 

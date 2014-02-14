@@ -1,114 +1,115 @@
 // Basic
-$color-fg-base: rgb(85, 85, 85);
-$color-bg-base: rgb(252, 249, 240);
+$color-fg: rgb(85, 85, 85);
+$color-bg: rgb(252, 249, 240);
 
-$color-base: rgb(17, 136, 187);
-$color-darkest: rgb(6, 87, 122);
-$color-dark: rgb(45, 111, 140);
-$color-light: rgb(70, 176, 221);
-$color-lightest: rgb(111, 188, 221);
+$color-accent: rgb(17, 136, 187);
+$color-accent--darkest: rgb(6, 87, 122);
+$color-accent--dark: rgb(45, 111, 140);
+$color-accent--light: rgb(70, 176, 221);
+$color-accent--lightest: rgb(111, 188, 221);
 
-$color-complement-base: rgb(255, 140, 12);
-$color-complement-darkest: rgb(255, 192, 121);
-$color-complement-dark: rgb(255, 169, 73);
-$color-complement-light: rgb(191, 127, 55);
-$color-complement-lightest: rgb(166, 89, 4);
+$color-accent-complement: rgb(255, 140, 12);
+$color-accent-complement--darkest: rgb(255, 192, 121);
+$color-accent-complement--dark: rgb(255, 169, 73);
+$color-accent-complement--light: rgb(191, 127, 55);
+$color-accent-complement--lightest: rgb(166, 89, 4);
 
 // Class
-$color-fg-line-label: mixxd($color-fg-base, $color-bg-base, 0.92);
+$color-fg_line-label: mixxd($color-fg, $color-bg, 0.92);
 
 // Core
-$color-fg-body: $color-fg-base;
-$color-bg-body: $color-bg-base;
+$color-fg_body: $color-fg;
+$color-bg_body: $color-bg;
 
-$color-fg-heading: mixxd($color-fg-base, $color-bg-base, 0.12);
+$color-fg_heading: mixxd($color-fg, $color-bg, 0.12);
 
-$color-fg-hr: mixxd($color-fg-base, $color-bg-base, 0.92);
+$color-fg_hr: mixxd($color-fg, $color-bg, 0.92);
 
-$color-fg-blockquote: mixxd($color-fg-base, $color-bg-base, 0.36);
-$color-border-blockquote: mixxd($color-fg-base, $color-bg-base, 0.92);
+$color-fg_blockquote: mixxd($color-fg, $color-bg, 0.36);
+$color-border_blockquote: mixxd($color-fg, $color-bg, 0.92);
 
-$color-fg-pre: mixxd($color-fg-base, $color-bg-base, 0.16);
-$color-bg-pre: mixxd($color-fg-base, $color-bg-base, 0.98);
+$color-fg_pre: mixxd($color-fg, $color-bg, 0.16);
+$color-bg_pre: mixxd($color-fg, $color-bg, 0.98);
 
-$color-fg-dt: mixxd($color-fg-base, $color-bg-base, 0.12);
+$color-fg_dt: mixxd($color-fg, $color-bg, 0.12);
 
-$color-border-figcaption: mixxd($color-fg-base, $color-bg-base, 0.92);
+$color-border_figcaption: mixxd($color-fg, $color-bg, 0.92);
 
-$color-fg-link: $color-base;
-$color-fg-link-hover: $color-darkest;
+$color-fg_link: $color-accent;
+$color-fg_link--hover: $color-accent--darkest;
 
-$color-fg-em: mixxd($color-fg-base, $color-bg-base, 0.12);
+$color-fg_em: mixxd($color-fg, $color-bg, 0.12);
 
-$color-fg-strong: mixxd($color-fg-base, $color-bg-base, 0.12);
+$color-fg_strong: mixxd($color-fg, $color-bg, 0.12);
 
-$color-bg-mark: rgb(255, 221, 0);
+$color-bg_mark: rgb(255, 221, 0);
 
-$color-bg-img: white;
+$color-bg_img: white;
 
-$color-border-table: mixxd($color-fg-base, $color-bg-base, 0.8);
+$color-border_table: mixxd($color-fg, $color-bg, 0.8);
 
-$color-fg-th: mixxd($color-fg-base, $color-bg-base, 0.12);
-$color-bg-th: mixxd($color-fg-base, $color-bg-base, 0.92);
+$color-fg_th: mixxd($color-fg, $color-bg, 0.12);
+$color-bg_th: mixxd($color-fg, $color-bg, 0.92);
 
-$color-fg-td: mixxd($color-fg-base, $color-bg-base, 0.12);
-$color-bg-td: mixxd($color-fg-base, $color-bg-base, 0.98);
+$color-fg_td: mixxd($color-fg, $color-bg, 0.12);
+$color-bg_td: mixxd($color-fg, $color-bg, 0.98);
 
 // Header
-$color-fg-header-tagline-em: mixxd($color-fg-base, $color-bg-base, 0.24);
+$color-fg_header-tagline--em: mixxd($color-fg, $color-bg, 0.24);
 
-$color-fg-header-site-navigation: inherit;
-$color-fg-header-site-navigation-hover: $color-base;
-$color-fg-header-site-navigation-mark: $color-light;
+$color-fg_header-site-navigation: inherit;
+$color-fg_header-site-navigation__mark: $color-accent--light;
+$color-fg_header-site-navigation--hover: $color-accent;
 
 // Main
-$color-fg-main-article-footer: mixxd($color-fg-base, $color-bg-base, 0.6);
-$color-fg-main-article-footer-time: $color-fg-base;
+$color-fg_main-article-footer: mixxd($color-fg, $color-bg, 0.6);
+$color-fg_main-article-footer__time: $color-fg;
 
 // Pull Quote
-$color-fg-pull-quote: $color-fg-blockquote;
+$color-fg_pull-quote: $color-fg_blockquote;
 
 // Seealso
-$color-fg-seealso: mixxd($color-fg-base, $color-bg-base, 0.12);
+$color-fg_seealso: mixxd($color-fg, $color-bg, 0.12);
 
-$color-fg-seealso-icon: mixxd($color-fg-base, $color-bg-base, 0.72);
+$color-fg_seealso__icon: mixxd($color-fg, $color-bg, 0.72);
 
 // Sidenote
-$color-fg-sidenote: mixxd($color-fg-base, $color-bg-base, 0.48);
+$color-fg_sidenote: mixxd($color-fg, $color-bg, 0.48);
 
 // Posts
-$color-fg-posts-tag: $color-fg-base;
-$color-fg-posts-more: $color-fg-link;
-$color-fg-posts-more-hover: $color-fg-link-hover;
-$color-fg-posts-list-time: mixxd($color-fg-base, $color-bg-base, 0.6);
+$color-fg_posts__tag: $color-fg;
+$color-fg_posts__more: $color-fg_link;
+$color-fg_posts__title--hover: $color-fg_link;
+$color-fg_posts__more--hover: $color-fg_link--hover;
+$color-fg_posts-list__time: mixxd($color-fg, $color-bg, 0.6);
 
 // Flat DL
-$color-fg-flat-dl: mixxd($color-fg-base, $color-bg-base, 0.8);
+$color-fg_flat-dl: mixxd($color-fg, $color-bg, 0.8);
 
 // Read Older
-$color-fg-read-older-label: mixxd($color-fg-base, $color-bg-base, 0.12);
+$color-fg_read-older__label: mixxd($color-fg, $color-bg, 0.12);
 
 // Paging
-$color-fg-paging: $color-light;
+$color-fg_paging: $color-accent--light;
 
-$color-fg-paging-icon: $color-fg-paging;
+$color-fg_paging__icon: $color-fg_paging;
 
 // Google Code Prettify
-$color-fg-google-code-prettify-default: #333;
-$color-fg-google-code-prettify-comment: #999;
-$color-fg-google-code-prettify-constant: #390;
-$color-fg-google-code-prettify-number: #939;
-$color-fg-google-code-prettify-identifier: #c39;
-$color-fg-google-code-prettify-statement: #c30;
-$color-fg-google-code-prettify-preproc: #c33;
-$color-fg-google-code-prettify-type: #399;
-$color-fg-google-code-prettify-special: #c90;
+$color-fg_google-code-prettify__default: #333;
+$color-fg_google-code-prettify__comment: #999;
+$color-fg_google-code-prettify__constant: #390;
+$color-fg_google-code-prettify__number: #939;
+$color-fg_google-code-prettify__identifier: #c39;
+$color-fg_google-code-prettify__statement: #c30;
+$color-fg_google-code-prettify__preproc: #c33;
+$color-fg_google-code-prettify__type: #399;
+$color-fg_google-code-prettify__special: #c90;
 
 // Google Custom Search Engine
-$color-fg-google-cse-form: rgb(17, 17, 17);
-$color-bg-google-cse-form: rgb(255, 255, 255);
-$color-fg-google-cse-form-button: $color-bg-google-cse-form;
-$color-bg-google-cse-form-button: grayscale(mixxd($color-light, white, 0.6));
-$color-bg-google-cse-form-button-hover: $color-light;
-$color-border-google-cse-form: $color-bg-google-cse-form-button;
-$color-border-google-cse-form-focus: $color-bg-google-cse-form-button-hover;
+$color-fg_google-cse: rgb(17, 17, 17);
+$color-bg_google-cse: rgb(255, 255, 255);
+$color-fg_google-cse__button: $color-bg_google-cse;
+$color-bg_google-cse__button: grayscale(mixxd($color-accent--light, white, 0.6));
+$color-bg_google-cse__button--hover: $color-accent--light;
+$color-border_google-cse: $color-bg_google-cse__button;
+$color-border_google-cse--focus: $color-bg_google-cse__button--hover;

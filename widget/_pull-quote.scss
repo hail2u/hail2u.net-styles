@@ -8,7 +8,7 @@
   p {
     margin-top: ($margin-default / $ratio-pull-quote);
     quotes: "\201c" "\201d"; // Left Double Quotation Mark, Double Low-9 Quotation Mark
-    color: $color-fg-pull-quote;
+    color: $color-fg_pull-quote;
     font-size: em($ratio-pull-quote);
 
     &::before {

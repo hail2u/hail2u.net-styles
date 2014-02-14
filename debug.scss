@@ -164,31 +164,31 @@ body::after {
     }
 
     &:nth-child(1)::before {
-      background-color: $color-base;
+      background-color: $color-accent;
     }
 
     &:nth-child(2)::before {
-      background-color: $color-darkest;
+      background-color: $color-accent--darkest;
     }
 
     &:nth-child(3)::before {
-      background-color: $color-dark;
+      background-color: $color-accent--dark;
     }
 
     &:nth-child(4)::before {
-      background-color: $color-light;
+      background-color: $color-accent--light;
     }
 
     &:nth-child(5)::before {
-      background-color: $color-lightest;
+      background-color: $color-accent--lightest;
     }
 
     &:nth-child(6)::before {
-      background-color: $color-fg-base;
+      background-color: $color-fg;
     }
 
     &:nth-child(7)::before {
-      background-color: $color-bg-base;
+      background-color: $color-bg;
     }
   }
 

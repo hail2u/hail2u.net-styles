@@ -33,14 +33,14 @@ html {
 // Sections
 body {
   line-height: $line-height-default;
-  color: $color-fg-body;
-  background-color: $color-bg-body;
+  color: $color-fg_body;
+  background-color: $color-bg_body;
   font-family: $font-stack_body;
 }
 
 @mixin heading {
   line-height: $line-height-heading;
-  color: $color-fg-heading;
+  color: $color-fg_heading;
 }
 
 h1 {
@@ -92,8 +92,8 @@ pre {
   padding: ($width-gap / $ratio-code);
   clear: both;
   line-height: $line-height-code;
-  color: $color-fg-pre;
-  background-color: $color-bg-pre;
+  color: $color-fg_pre;
+  background-color: $color-bg_pre;
   font-family: $font-stack_code;
   font-size: em($ratio-code);
   word-wrap: break-word;
@@ -106,13 +106,13 @@ pre {
 
 blockquote {
   margin: 0;
-  border-left: $width-border-blockquote solid $color-border-blockquote;
+  border-left: $width-border-blockquote solid $color-border_blockquote;
   padding-left: $width-gap;
-  color: $color-fg-blockquote;
+  color: $color-fg_blockquote;
 
   + figcaption:last-child {
     margin-top: 0;
-    border-left: $width-border-blockquote solid $color-border-blockquote;
+    border-left: $width-border-blockquote solid $color-border_blockquote;
     padding-top: $margin-mini;
     padding-left: $width-gap;
   }
@@ -163,7 +163,7 @@ dl {
   }
 
   dt {
-    color: $color-fg-dt;
+    color: $color-fg_dt;
     font-weight: bold;
   }
 
@@ -191,14 +191,14 @@ figcaption {
 
   @media (min-width: $breakpoint-full) {
     padding-top: ($width-border-img - $height-border-figcaption);
-    border-top: $height-border-figcaption solid $color-border-figcaption;
+    border-top: $height-border-figcaption solid $color-border_figcaption;
     top: 0;
 
     &:last-child {
       padding-top: 0;
       padding-bottom: ($width-border-img - $height-border-figcaption);
       border-top: 0;
-      border-bottom: $height-border-figcaption solid $color-border-figcaption;
+      border-bottom: $height-border-figcaption solid $color-border_figcaption;
       top: auto;
       bottom: 0;
     }
@@ -207,13 +207,13 @@ figcaption {
 
 // Text-level Semantics
 a {
-  color: $color-fg-link;
+  color: $color-fg_link;
   text-decoration: none;
 
   &:hover,
   &:focus,
   &:active {
-    color: $color-fg-link-hover;
+    color: $color-fg_link--hover;
   }
 
   h1 &,
@@ -221,7 +221,7 @@ a {
     color: inherit;
 
     &:hover {
-      color: $color-fg-link;
+      color: $color-fg_link;
     }
   }
 }
@@ -229,7 +229,7 @@ a {
 em {
   @extend %auto-breaking;
 
-  color: $color-fg-em;
+  color: $color-fg_em;
   font-style: normal;
   font-weight: bold;
 }
@@ -237,7 +237,7 @@ em {
 strong {
   @extend %auto-breaking;
 
-  color: $color-fg-strong;
+  color: $color-fg_strong;
   border-bottom: 1px dashed;
 }
 
@@ -282,7 +282,7 @@ kbd {
 mark {
   @extend %auto-breaking;
 
-  background-color: $color-bg-mark;
+  background-color: $color-bg_mark;
 }
 
 // Edits
@@ -304,9 +304,9 @@ img {
   height: auto;
 
   figure & {
-    border: $width-border-img solid $color-bg-img;
+    border: $width-border-img solid $color-bg_img;
     vertical-align: bottom;
-    background-color: $color-bg-img;
+    background-color: $color-bg_img;
   }
 }
 
@@ -327,19 +327,19 @@ table {
   th,
   td {
     padding: 0.5em;
-    border: 1px solid $color-border-table;
+    border: 1px solid $color-border_table;
     vertical-align: top;
     white-space: nowrap;
   }
 
   th {
-    color: $color-fg-th;
-    background-color: $color-bg-th;
+    color: $color-fg_th;
+    background-color: $color-bg_th;
     text-align: left;
   }
 
   td {
-    background-color: $color-bg-td;
+    background-color: $color-bg_td;
   }
 
   @media not screen {
