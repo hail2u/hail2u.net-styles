@@ -3,14 +3,14 @@
   color: inherit;
 
   .tag {
-    color: $color-fg_posts__tag;
+    color: $color-fg_posts-top-picks__tag;
   }
 
   > p::after {
-    margin-left: $margin_posts__more;
+    margin-left: $margin_posts-top-picks__more;
     content: "More\0020\279f"; // Dashed Triangle-Headed Rightwards Arrow
     font-weight: bold;
-    color: $color-fg_posts__more;
+    color: $color-fg_posts-top-picks__more;
     text-transform: uppercase;
   }
 
@@ -18,11 +18,11 @@
   &:focus,
   &:active {
     h1 {
-      color: $color-fg_link;
+      color: $color-fg_posts-top-picks__title--hover;
     }
 
     > p::after {
-      color: $color-fg_posts__more--hover;
+      color: $color-fg_posts-top-picks__more--hover;
     }
   }
 }

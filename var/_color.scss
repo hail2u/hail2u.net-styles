@@ -77,10 +77,10 @@ $color-fg_seealso__icon: mixxd($color-fg, $color-bg, 0.72);
 $color-fg_sidenote: mixxd($color-fg, $color-bg, 0.48);
 
 // Posts
-$color-fg_posts__tag: $color-fg;
-$color-fg_posts__more: $color-fg_link;
-$color-fg_posts__title--hover: $color-fg_link;
-$color-fg_posts__more--hover: $color-fg_link--hover;
+$color-fg_posts-top-picks__tag: $color-fg;
+$color-fg_posts-top-picks__more: $color-fg_link;
+$color-fg_posts-top-picks__title--hover: $color-fg_link;
+$color-fg_posts-top-picks__more--hover: $color-fg_link--hover;
 $color-fg_posts-list__time: mixxd($color-fg, $color-bg, 0.6);
 
 // Flat DL
