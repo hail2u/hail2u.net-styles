@@ -49,9 +49,6 @@ $width_scrollbar: 1.5em;
 $breakpoint-content: ($width-content--with-gap + $width_scrollbar);
 $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes_html, length($font-sizes_html)) / 16px));
 
-// Seealso
-$width_seealso__icon: 1em;
-
 // Posts
 $margin_posts-top-picks__more: 0.25em;
 $width_posts-list__date: (5em + $width-gap);
