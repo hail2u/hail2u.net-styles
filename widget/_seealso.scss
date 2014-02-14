@@ -10,8 +10,9 @@
   }
 
   &::before {
-    display: inline;
-    content: "\223d\0020"; // Reversed Tilde
-    color: $color-fg_seealso__icon;
+    margin-right: ($width_seealso__icon * 0.25);
+    display: inline-block;
+    width: $width_seealso__icon;
+    background-image: $image_chain;
   }
 }

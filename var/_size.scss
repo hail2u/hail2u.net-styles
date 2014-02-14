@@ -49,6 +49,9 @@ $width_scrollbar: 1.5em;
 $breakpoint-content: ($width-content--with-gap + $width_scrollbar);
 $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes_html, length($font-sizes_html)) / 16px));
 
+// Seealso
+$width_seealso__icon: 1em;
+
 // Topic
 $margin_topic__more: 0.25em;
 
