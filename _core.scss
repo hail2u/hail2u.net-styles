@@ -83,19 +83,21 @@ hr {
 }
 
 pre {
-  margin: ($margin / $ratio_code) (- $width-gap / $ratio_code) 0;
-  padding: ($width-gap / $ratio_code);
+  @extend %margin;
+
+  margin-right: (- $width-gap);
+  margin-left: (- $width-gap);
+  padding: $width-gap;
   clear: both;
   line-height: $line-height_code;
   color: $color-fg_pre;
   background-color: $color-bg_pre;
   font-family: $font-stack_code;
-  font-size: em($ratio_code);
   word-wrap: break-word;
   overflow-wrap: break-word;
 
   h2 + & {
-    margin-top: ($margin--mini / $ratio_code);
+    margin-top: $margin--mini;
   }
 }
 
@@ -267,11 +269,6 @@ kbd {
   @extend %auto-breaking;
 
   font-family: $font-stack_code;
-  font-size: em($ratio_code);
-
-  pre & {
-    font-size: 1em;
-  }
 }
 
 mark {
