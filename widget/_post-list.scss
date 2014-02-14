@@ -1,5 +1,5 @@
-// List
-.posts ol {
+// Post List
+.post-list ol {
   padding-left: 0;
 
   li {
@@ -13,14 +13,14 @@
 
   time {
     display: block;
-    color: $color-fg_posts-list__time;
+    color: $color-fg_post-list__time;
   }
 
   @media (min-width: $breakpoint-content) {
     li {
-      margin-top: ($margin--mini / $ratio_posts-list__item);
-      padding-right: $width_posts-list__date;
-      font-size: em($ratio_posts-list__item);
+      margin-top: ($margin--mini / $ratio_post-list__item);
+      padding-right: $width_post-list__date;
+      font-size: em($ratio_post-list__item);
     }
 
     time {

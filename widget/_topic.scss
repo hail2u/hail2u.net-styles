@@ -1,0 +1,28 @@
+// Topic
+.topic > a {
+  color: inherit;
+
+  .tag {
+    color: $color-fg_topic__tag;
+  }
+
+  > p::after {
+    margin-left: $margin_topic__more;
+    content: "More\0020\279f"; // Dashed Triangle-Headed Rightwards Arrow
+    font-weight: bold;
+    color: $color-fg_topic__more;
+    text-transform: uppercase;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    h1 {
+      color: $color-fg_topic__title--hover;
+    }
+
+    > p::after {
+      color: $color-fg_topic__more--hover;
+    }
+  }
+}
