@@ -107,24 +107,8 @@ blockquote {
   padding-left: $width-gap;
   color: $color-fg_blockquote;
 
-  + figcaption:last-child {
-    margin-top: 0;
-    border-left: $width-border_blockquote solid $color-border_blockquote;
-    padding-top: $margin--mini;
-    padding-left: $width-gap;
-  }
-
   @media (min-width: ($breakpoint-full)) {
     margin-left: (- ($width-gap + $width-border_blockquote));
-
-    + figcaption:last-child {
-      margin-left: (- ($width-gap + $width-border_blockquote));
-      margin-right: 0;
-      padding-bottom: 0;
-      border-bottom: 0;
-      position: static;
-      width: auto;
-    }
   }
 }
 
@@ -186,6 +170,13 @@ figure {
 figcaption {
   @extend %hanging-block;
 
+  blockquote + &:last-child {
+    margin-top: 0;
+    border-left: $width-border_blockquote solid $color-border_blockquote;
+    padding-top: $margin--mini;
+    padding-left: $width-gap;
+  }
+
   @media (min-width: $breakpoint-full) {
     padding-top: ($width-border_img - $height-border_figcaption);
     border-top: $height-border_figcaption solid $color-border_figcaption;
@@ -198,6 +189,15 @@ figcaption {
       border-bottom: $height-border_figcaption solid $color-border_figcaption;
       top: auto;
       bottom: 0;
+    }
+
+    blockquote + &:last-child {
+      margin-left: (- ($width-gap + $width-border_blockquote));
+      margin-right: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+      position: static;
+      width: auto;
     }
   }
 }
