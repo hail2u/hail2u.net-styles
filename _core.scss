@@ -85,10 +85,7 @@ hr {
 }
 
 pre {
-  @extend %margin;
-
-  margin-right: (- $width-gap / $ratio_code);
-  margin-left: (- $width-gap / $ratio_code);
+  margin: ($margin / $ratio_code) (- $width-gap / $ratio_code) 0;
   padding: ($width-gap / $ratio_code);
   clear: both;
   line-height: $line-height_code;
