@@ -23,7 +23,7 @@
   // Font
   body,
   body > header h1 {
-    font-family: $font-stack-body-print;
+    font-family: $font-stack_body--print;
   }
 
   pre,
@@ -31,7 +31,7 @@
   var,
   samp,
   kbd {
-    font-family: $font-stack-code-print;
+    font-family: $font-stack_code--print;
   }
 
   // Page Break
