@@ -79,9 +79,10 @@
 @import "widget/read-older";
 @import "widget/paging";
 
-@import "widget/google-adsense";
-@import "widget/google-code-prettify";
-@import "widget/google-cse";
+// Vendor
+@import "vendor/google-adsense";
+@import "vendor/google-code-prettify";
+@import "vendor/google-cse";
 
 // Shame
 @import "shame";
