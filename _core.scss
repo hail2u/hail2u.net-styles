@@ -67,20 +67,18 @@ p {
 }
 
 hr {
-  @extend %ir;
   @extend %margin;
 
-  margin-right: auto;
-  margin-left: auto;
   border: none;
   clear: both;
-  width: $width_hr;
-  height: $height_hr;
-  background-color: transparent;
+  height: auto;
+  line-height: $line-height_hr;
+  color: $color-fg_hr;
+  text-align: center;
 
   &::before {
-    background-image: $image_asterisk;
-    background-repeat: repeat-x;
+    content: "\2042\0020\00a0\0020\2042\0020\00a0\0020\2042"; // Asterism * 3
+    font-size: em($ratio_hr);
   }
 }
 

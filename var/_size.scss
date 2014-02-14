@@ -1,6 +1,7 @@
 // Line Height
 $line-height: $ratio-golden;
 $line-height_heading: 1.25;
+$line-height_hr: pow($line-height, 3);
 $line-height_code: 1.3;
 
 // Margin
@@ -30,9 +31,6 @@ $width-full: (- $width-gap + $width-full--with-gap - $width-gap);
 $font-sizes_html: (18px, 21px, 24px);
 
 // Core
-$height_hr: ($margin + em($line-height) + $margin);
-$width_hr: ($height_hr * 3);
-
 $width-border_blockquote: 0.25em;
 
 $height-border_figcaption: 0.125em;
