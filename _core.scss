@@ -91,7 +91,7 @@ pre {
   margin-left: (- $width-gap / $ratio-code);
   padding: ($width-gap / $ratio-code);
   clear: both;
-  line-height: $line-height-pre;
+  line-height: $line-height-code;
   color: $color-fg-pre;
   background-color: $color-bg-pre;
   font-family: $font-stack-code;
