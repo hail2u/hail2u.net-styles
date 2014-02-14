@@ -1,18 +1,18 @@
 // Read Older
 .read-older {
   p {
-    margin-top: ($margin-heading / $ratio-read-older-title);
+    margin-top: ($margin-heading / $ratio_read-older__title);
     overflow: hidden;
     line-height: $line-height-heading;
-    font-size: em($ratio-read-older-title);
+    font-size: em($ratio_read-older__title);
     white-space: nowrap;
     text-overflow: ellipsis;
 
     &::before {
       display: block;
       content: "Read older:";
-      color: $color-fg_read-older__label;
-      font-size: em(1 / $ratio-read-older-title);
+      color: $color-fg-read-older__label;
+      font-size: em(1 / $ratio_read-older__title);
       font-weight: bold;
       text-transform: uppercase;
     }

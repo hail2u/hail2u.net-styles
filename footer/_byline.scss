@@ -5,7 +5,7 @@
   p {
     @extend %line-label;
 
-    margin-top: ($margin-heading + em($line-height-default) / $ratio-footer-elsewhere);
+    margin-top: ($margin-heading + em($line-height-default) / $ratio_footer-elsewhere);
   }
 
   mark {

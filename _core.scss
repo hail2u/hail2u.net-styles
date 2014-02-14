@@ -46,15 +46,15 @@ body {
 h1 {
   @include heading;
 
-  margin: ($margin-primary-heading / $ratio-main-section-heading) 0 0 0;
-  font-size: em($ratio-main-section-heading);
+  margin: ($margin-primary-heading / $ratio_heading) 0 0 0;
+  font-size: em($ratio_heading);
 }
 
 h2 {
   @include heading;
 
-  margin: ($margin-heading / $ratio-main-section-sub-heading) 0 0 0;
-  font-size: em($ratio-main-section-sub-heading);
+  margin: ($margin-heading / $ratio_sub-heading) 0 0 0;
+  font-size: em($ratio_sub-heading);
 }
 
 // Grouping Content
@@ -87,20 +87,20 @@ hr {
 pre {
   @extend %margin-default;
 
-  margin-right: (- $width-gap / $ratio-code);
-  margin-left: (- $width-gap / $ratio-code);
-  padding: ($width-gap / $ratio-code);
+  margin-right: (- $width-gap / $ratio_code);
+  margin-left: (- $width-gap / $ratio_code);
+  padding: ($width-gap / $ratio_code);
   clear: both;
   line-height: $line-height-code;
   color: $color-fg_pre;
   background-color: $color-bg_pre;
   font-family: $font-stack_code;
-  font-size: em($ratio-code);
+  font-size: em($ratio_code);
   word-wrap: break-word;
   overflow-wrap: break-word;
 
   h2 + & {
-    margin-top: ($margin-mini / $ratio-code);
+    margin-top: ($margin-mini / $ratio_code);
   }
 }
 
@@ -272,7 +272,7 @@ kbd {
   @extend %auto-breaking;
 
   font-family: $font-stack_code;
-  font-size: em($ratio-code);
+  font-size: em($ratio_code);
 
   pre & {
     font-size: 1em;

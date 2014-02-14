@@ -55,7 +55,7 @@ $breakpoint-full: (($width-full-with-gap + $width-scrollbar) * (nth($font-sizes-
 $width-seealso-icon: 1em;
 
 // Sidenote
-$margin-sidenote-p: ($margin-default / $ratio-sidenote);
+$margin-sidenote-p: ($margin-default / $ratio_sidenote);
 
 // Posts
 $margin-posts-more: 0.25em;

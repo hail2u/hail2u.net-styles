@@ -4,12 +4,12 @@ main > section h1 {
   @extend %line-label;
 
   &::after {
-    font-size: em(1 / $ratio-main-section-heading);
+    font-size: em(1 / $ratio_heading);
   }
 
   @media (min-width: $breakpoint-full) {
     &::after {
-      height: em($ratio-main-section-heading * $line-height-heading);
+      height: em($ratio_heading * $line-height-heading);
     }
   }
 }
