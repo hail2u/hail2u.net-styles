@@ -22,11 +22,11 @@
     height: $height-paging-icon;
 
     &[rel="prev"]::before {
-      background-image: $image-arrow-left;
+      background-image: $image_arrow--left;
     }
 
     &[rel="next"]::before {
-      background-image: $image-arrow-right;
+      background-image: $image_arrow--right;
     }
   }
 

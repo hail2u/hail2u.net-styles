@@ -79,7 +79,7 @@ hr {
   background-color: transparent;
 
   &::before {
-    background-image: $image-asterisk;
+    background-image: $image_asterisk;
     background-repeat: repeat-x;
   }
 }
