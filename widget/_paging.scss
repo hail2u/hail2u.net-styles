@@ -5,12 +5,12 @@
   ul {
     @extend %hanging-block;
 
-    margin-top: $margin-heading;
+    margin-top: $margin_heading;
     padding-left: 0;
   }
 
   li {
-    padding-right: $margin-paging-icon;
+    padding-right: $margin_paging__icon;
     display: table-cell;
   }
 
@@ -18,8 +18,8 @@
     @extend %ir;
 
     display: block;
-    width: $width-paging-icon;
-    height: $height-paging-icon;
+    width: $width_paging__icon;
+    height: $height_paging__icon;
 
     &[rel="prev"]::before {
       background-image: $image_arrow--left;
@@ -32,8 +32,8 @@
 
   @media (min-width: $breakpoint-full) {
     ul {
-      margin-top: $margin-primary-heading;
-      top: (($height-google-cse-form - $height-paging-icon) / 2);
+      margin-top: $margin_heading--primary;
+      top: (($height_google-cse - $height_paging__icon) / 2);
     }
   }
 }

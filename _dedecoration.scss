@@ -57,8 +57,8 @@
 
   // Design Change
   hr {
-    margin-top: ($margin-default * 2);
-    margin-bottom: ($margin-default * 2);
+    margin-top: ($margin * 2);
+    margin-bottom: ($margin * 2);
     border-top: 1px dashed black;
     border-bottom: 1px dashed black;
     width: 80%;
@@ -66,19 +66,19 @@
   }
 
   pre {
-    margin: $margin-default 0 0 0;
+    margin: $margin 0 0 0;
     padding: 0;
     border: 0;
   }
 
   blockquote {
-    margin: 0 $indent-default;
+    margin: 0 $indent;
     border-left: 0;
     padding-left: 0;
 
     + figcaption:last-child {
       border-left: 0;
-      padding-left: $indent-default;
+      padding-left: $indent;
     }
   }
 
@@ -120,7 +120,7 @@
   }
 
   body > header h1 {
-    margin-top: $margin-default;
+    margin-top: $margin;
     display: block;
   }
 

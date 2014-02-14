@@ -6,7 +6,7 @@
 
   li {
     display: table-cell;
-    line-height: ($line-height-default / $ratio_footer-footlinks);
+    line-height: ($line-height / $ratio_footer-footlinks);
     font-size: em($ratio_footer-footlinks);
 
     &::before {

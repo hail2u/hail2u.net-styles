@@ -1,12 +1,12 @@
 // Pull Quote
 .pull-quote {
-  margin-right: $indent-default;
-  margin-left: $indent-default;
-  line-height: ($line-height-default * 1.5 / $ratio_pull-quote);
+  margin-right: $indent;
+  margin-left: $indent;
+  line-height: ($line-height * 1.5 / $ratio_pull-quote);
   text-align: center;
 
   p {
-    margin-top: ($margin-default / $ratio_pull-quote);
+    margin-top: ($margin / $ratio_pull-quote);
     quotes: "\201c" "\201d"; // Left Double Quotation Mark, Double Low-9 Quotation Mark
     color: $color-fg_pull-quote;
     font-size: em($ratio_pull-quote);

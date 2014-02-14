@@ -1,9 +1,9 @@
 // Read Older
 .read-older {
   p {
-    margin-top: ($margin-heading / $ratio_read-older__title);
+    margin-top: ($margin_heading / $ratio_read-older__title);
     overflow: hidden;
-    line-height: $line-height-heading;
+    line-height: $line-height_heading;
     font-size: em($ratio_read-older__title);
     white-space: nowrap;
     text-overflow: ellipsis;

@@ -5,7 +5,7 @@
   @each $size in $sizes {
     $feature-prefix: min-;
     $ratio: ($size / 16px);
-    $horizontal: ($width-content-with-gap * pow($ratio, 2));
+    $horizontal: ($width-content--with-gap * pow($ratio, 2));
     $vertical: ($horizontal / 2);
 
     @if ($ratio < 1) {
@@ -14,7 +14,7 @@
     }
 
     @if ($ratio > $threshold) {
-      $horizontal: ($width-full-with-gap * pow($ratio, 2) * $threshold);
+      $horizontal: ($width-full--with-gap * pow($ratio, 2) * $threshold);
       $vertical: ($horizontal / 2);
     }
 
@@ -27,55 +27,55 @@
 html {
   font-size: 100%;
 
-  @include adjust-font-size($font-sizes-html);
+  @include adjust-font-size($font-sizes_html);
 }
 
 // Sections
 body {
-  line-height: $line-height-default;
+  line-height: $line-height;
   color: $color-fg_body;
   background-color: $color-bg_body;
   font-family: $font-stack_body;
 }
 
 @mixin heading {
-  line-height: $line-height-heading;
+  line-height: $line-height_heading;
   color: $color-fg_heading;
 }
 
 h1 {
   @include heading;
 
-  margin: ($margin-primary-heading / $ratio_heading) 0 0 0;
+  margin: ($margin_heading--primary / $ratio_heading) 0 0 0;
   font-size: em($ratio_heading);
 }
 
 h2 {
   @include heading;
 
-  margin: ($margin-heading / $ratio_sub-heading) 0 0 0;
+  margin: ($margin_heading / $ratio_sub-heading) 0 0 0;
   font-size: em($ratio_sub-heading);
 }
 
 // Grouping Content
 p {
-  @extend %margin-default;
+  @extend %margin;
 
   h2 + & {
-    margin-top: $margin-mini;
+    margin-top: $margin--mini;
   }
 }
 
 hr {
   @extend %ir;
-  @extend %margin-default;
+  @extend %margin;
 
   margin-right: auto;
   margin-left: auto;
   border: none;
   clear: both;
-  width: $width-hr;
-  height: $height-hr;
+  width: $width_hr;
+  height: $height_hr;
   background-color: transparent;
 
   &::before {
@@ -85,13 +85,13 @@ hr {
 }
 
 pre {
-  @extend %margin-default;
+  @extend %margin;
 
   margin-right: (- $width-gap / $ratio_code);
   margin-left: (- $width-gap / $ratio_code);
   padding: ($width-gap / $ratio_code);
   clear: both;
-  line-height: $line-height-code;
+  line-height: $line-height_code;
   color: $color-fg_pre;
   background-color: $color-bg_pre;
   font-family: $font-stack_code;
@@ -100,28 +100,28 @@ pre {
   overflow-wrap: break-word;
 
   h2 + & {
-    margin-top: ($margin-mini / $ratio_code);
+    margin-top: ($margin--mini / $ratio_code);
   }
 }
 
 blockquote {
   margin: 0;
-  border-left: $width-border-blockquote solid $color-border_blockquote;
+  border-left: $width-border_blockquote solid $color-border_blockquote;
   padding-left: $width-gap;
   color: $color-fg_blockquote;
 
   + figcaption:last-child {
     margin-top: 0;
-    border-left: $width-border-blockquote solid $color-border_blockquote;
-    padding-top: $margin-mini;
+    border-left: $width-border_blockquote solid $color-border_blockquote;
+    padding-top: $margin--mini;
     padding-left: $width-gap;
   }
 
   @media (min-width: ($breakpoint-full)) {
-    margin-left: (- ($width-gap + $width-border-blockquote));
+    margin-left: (- ($width-gap + $width-border_blockquote));
 
     + figcaption:last-child {
-      margin-left: (- ($width-gap + $width-border-blockquote));
+      margin-left: (- ($width-gap + $width-border_blockquote));
       margin-right: 0;
       padding-bottom: 0;
       border-bottom: 0;
@@ -133,19 +133,19 @@ blockquote {
 
 ul,
 ol {
-  @extend %margin-default;
+  @extend %margin;
 
-  padding: 0 0 0 $indent-default;
+  padding: 0 0 0 $indent;
   clear: both;
 
   h2 + & {
-    margin-top: $margin-mini;
+    margin-top: $margin--mini;
   }
 
   ul,
   ol {
     margin-top: 0;
-    padding-left: $indent-default;
+    padding-left: $indent;
   }
 
   @media (min-width: ($breakpoint-full)) {
@@ -154,12 +154,12 @@ ol {
 }
 
 dl {
-  @extend %margin-default;
+  @extend %margin;
 
   clear: both;
 
   h2 + & {
-    margin-top: $margin-mini;
+    margin-top: $margin--mini;
   }
 
   dt {
@@ -168,7 +168,7 @@ dl {
   }
 
   dd {
-    margin-left: $indent-default;
+    margin-left: $indent;
   }
 
   dl {
@@ -177,12 +177,12 @@ dl {
 }
 
 figure {
-  @extend %margin-default;
+  @extend %margin;
 
   position: relative;
 
   h2 + & {
-    margin-top: $margin-mini;
+    margin-top: $margin--mini;
   }
 }
 
@@ -190,15 +190,15 @@ figcaption {
   @extend %hanging-block;
 
   @media (min-width: $breakpoint-full) {
-    padding-top: ($width-border-img - $height-border-figcaption);
-    border-top: $height-border-figcaption solid $color-border_figcaption;
+    padding-top: ($width-border_img - $height-border_figcaption);
+    border-top: $height-border_figcaption solid $color-border_figcaption;
     top: 0;
 
     &:last-child {
       padding-top: 0;
-      padding-bottom: ($width-border-img - $height-border-figcaption);
+      padding-bottom: ($width-border_img - $height-border_figcaption);
       border-top: 0;
-      border-bottom: $height-border-figcaption solid $color-border_figcaption;
+      border-bottom: $height-border_figcaption solid $color-border_figcaption;
       top: auto;
       bottom: 0;
     }
@@ -304,7 +304,7 @@ img {
   height: auto;
 
   figure & {
-    border: $width-border-img solid $color-bg_img;
+    border: $width-border_img solid $color-bg_img;
     vertical-align: bottom;
     background-color: $color-bg_img;
   }
@@ -312,7 +312,7 @@ img {
 
 // Tabular Data
 table {
-  @extend %margin-default;
+  @extend %margin;
 
   display: block;
   clear: both;
@@ -321,7 +321,7 @@ table {
   table-layout: fixed;
 
   h2 + & {
-    margin-top: $margin-mini;
+    margin-top: $margin--mini;
   }
 
   th,

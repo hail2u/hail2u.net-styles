@@ -2,7 +2,7 @@
 main {
   @extend %centering-block;
 
-  margin-top: (- $margin-primary-heading + $margin-heading + em($line-height-default) + $margin-mini);
+  margin-top: (- $margin_heading--primary + $margin_heading + em($line-height) + $margin--mini);
 
   > article,
   > section {
@@ -17,6 +17,6 @@ main {
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-top: (- $margin-primary-heading + $margin-heading);
+    margin-top: (- $margin_heading--primary + $margin_heading);
   }
 }

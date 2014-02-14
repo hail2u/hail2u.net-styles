@@ -11,10 +11,10 @@ body > header nav {
   }
 
   li {
-    padding-left: ($width-header-site-navigation-gutter / 4 / $ratio_header-site-navigation);
+    padding-left: ($width_header-site-navigation__gutter / 4 / $ratio_header-site-navigation);
     display: table-cell;
-    height: ($height-header-site-navigation / $ratio-golden / $ratio_header-site-navigation);
-    line-height: remove-unit($height-header-site-navigation / $ratio-golden / $ratio_header-site-navigation);
+    height: ($height_header-site-navigation / $ratio-golden / $ratio_header-site-navigation);
+    line-height: remove-unit($height_header-site-navigation / $ratio-golden / $ratio_header-site-navigation);
     font-size: em($ratio_header-site-navigation);
   }
 
@@ -37,9 +37,9 @@ body > header nav {
 
   @media (min-width: $breakpoint-content) {
     li {
-      padding-left: ($width-header-site-navigation-gutter / 2 / $ratio_header-site-navigation);
-      height: ($height-header-site-navigation / $ratio_header-site-navigation);
-      line-height: remove-unit($height-header-site-navigation / $ratio_header-site-navigation);
+      padding-left: ($width_header-site-navigation__gutter / 2 / $ratio_header-site-navigation);
+      height: ($height_header-site-navigation / $ratio_header-site-navigation);
+      line-height: remove-unit($height_header-site-navigation / $ratio_header-site-navigation);
     }
   }
 
@@ -47,7 +47,7 @@ body > header nav {
     right: auto;
 
     li {
-      padding-right: ($width-header-site-navigation-gutter / $ratio_header-site-navigation);
+      padding-right: ($width_header-site-navigation__gutter / $ratio_header-site-navigation);
       padding-left: 0;
     }
   }

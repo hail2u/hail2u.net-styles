@@ -9,7 +9,7 @@
 
   li {
     display: table-cell;
-    line-height: ($line-height-default / $ratio_footer-elsewhere);
+    line-height: ($line-height / $ratio_footer-elsewhere);
     font-size: em($ratio_footer-elsewhere);
 
     &::before {

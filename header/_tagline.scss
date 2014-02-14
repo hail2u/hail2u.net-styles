@@ -1,6 +1,6 @@
 // Tagline
 body > header h1 {
-  margin-top: ($margin-heading / $ratio_header-tagline);
+  margin-top: ($margin_heading / $ratio_header-tagline);
   font-family: $font-stack_header-tagline;
   font-weight: 200;
   font-size: em($ratio_header-tagline);

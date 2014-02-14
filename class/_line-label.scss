@@ -6,7 +6,7 @@
     @extend %hanging-block;
 
     display: block;
-    height: em($line-height-default);
+    height: em($line-height);
     content: "";
     background-image: linear-gradient(
       $color-fg_line-label 0,
@@ -14,6 +14,6 @@
     );
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: $width-header-logo 0.25em;
+    background-size: $width_header-logo 0.25em;
   }
 }

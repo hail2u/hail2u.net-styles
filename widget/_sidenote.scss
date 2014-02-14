@@ -5,11 +5,11 @@
   color: $color-fg_sidenote;
 
   p {
-    margin-top: $margin-sidenote-p;
+    margin-top: ($margin / $ratio_sidenote);
     font-size: em($ratio_sidenote);
 
     &:first-child {
-      margin-top: ($margin-sidenote-p * $line-height-default - 1em);
+      margin-top: ($margin / $ratio_sidenote * $line-height - 1em);
     }
   }
 

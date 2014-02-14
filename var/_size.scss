@@ -1,16 +1,16 @@
 // Line Height
-$line-height-default: $ratio-golden;
-$line-height-heading: 1.25;
-$line-height-code: 1.3;
+$line-height: $ratio-golden;
+$line-height_heading: 1.25;
+$line-height_code: 1.3;
 
 // Margin
-$margin-default: em($line-height-default);
-$margin-heading: ($margin-default * pow($ratio-golden, 2));
-$margin-primary-heading: ($margin-heading * $ratio-golden);
-$margin-mini: ($margin-default / pow($ratio-golden, 2));
+$margin: em($line-height);
+$margin--mini: ($margin / pow($ratio-golden, 2));
+$margin_heading: ($margin * pow($ratio-golden, 2));
+$margin_heading--primary: ($margin_heading * $ratio-golden);
 
 // Indent
-$indent-default: em(pow($ratio-golden, 2));
+$indent: em(pow($ratio-golden, 2));
 
 // Column
 $width-gutter: em($ratio-golden);
@@ -18,62 +18,59 @@ $width-gap: ($width-gutter / 2);
 
 // Main Component
 $width-content: 36em;
-$width-content-with-gap: ($width-gap + $width-content + $width-gap);
+$width-content--with-gap: ($width-gap + $width-content + $width-gap);
 
-$width-suppli-with-gap: ($width-content-with-gap / $ratio-content * $ratio-suppli);
-$width-suppli: (- $width-gap + $width-suppli-with-gap - $width-gap);
+$width-suppli--with-gap: ($width-content--with-gap / $ratio-content * $ratio-suppli);
+$width-suppli: (- $width-gap + $width-suppli--with-gap - $width-gap);
 
-$width-full-with-gap: ($width-suppli-with-gap + $width-content-with-gap);
-$width-full: (- $width-gap + $width-full-with-gap - $width-gap);
+$width-full--with-gap: ($width-suppli--with-gap + $width-content--with-gap);
+$width-full: (- $width-gap + $width-full--with-gap - $width-gap);
 
 // Root
-$font-sizes-html: (18px, 21px, 24px);
+$font-sizes_html: (18px, 21px, 24px);
 
 // Core
-$height-hr: ($margin-default + em($line-height-default) + $margin-default);
-$width-hr: ($height-hr * 3);
+$height_hr: ($margin + em($line-height) + $margin);
+$width_hr: ($height_hr * 3);
 
-$width-border-blockquote: 0.25em;
+$width-border_blockquote: 0.25em;
 
-$height-border-figcaption: 0.125em;
+$height-border_figcaption: 0.125em;
 
-$width-border-img: 1em;
+$width-border_img: 1em;
 
 // Header
-$width-header-logo: ($width-suppli / pow($ratio-golden, 2));
-$height-header-logo: $width-header-logo;
+$width_header-logo: ($width-suppli / pow($ratio-golden, 2));
+$height_header-logo: $width_header-logo;
 
-$height-header-site-navigation: $height-header-logo;
-$width-header-site-navigation-gutter: 2em;
+$height_header-site-navigation: $height_header-logo;
+$width_header-site-navigation__gutter: 2em;
 
 // Breakpoint
-$width-scrollbar: 1.5em;
-$breakpoint-content: ($width-content-with-gap + $width-scrollbar);
-$breakpoint-full: (($width-full-with-gap + $width-scrollbar) * (nth($font-sizes-html, length($font-sizes-html)) / 16px));
+$width_scrollbar: 1.5em;
+$breakpoint-content: ($width-content--with-gap + $width_scrollbar);
+$breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes_html, length($font-sizes_html)) / 16px));
 
 // Seealso
-$width-seealso-icon: 1em;
-
-// Sidenote
-$margin-sidenote-p: ($margin-default / $ratio_sidenote);
+$width_seealso__icon: 1em;
 
 // Posts
-$margin-posts-more: 0.25em;
-$width-posts-list-date: (5em + $width-gap);
+$margin_posts__more: 0.25em;
+$width_posts-list__date: (5em + $width-gap);
 
 // Seemore
-$width-border-seemore: 0.125em;
+$width-border_seemore: 0.125em;
 
 // Flat DL
-$margin-flat-dl-dt: ($width-gap / 2);
-$margin-flat-dl-dd: $width-gap;
+$margin_flat-dl__dt: ($width-gap / 2);
+$margin_flat-dl__dd: $width-gap;
 
 // Paging
-$margin-paging-icon: $width-gutter;
-$width-paging-icon: (($width-header-logo - $margin-paging-icon) / 2);
-$height-paging-icon: ($width-paging-icon / 256 * 384);
+$margin_paging__icon: $width-gutter;
+$width_paging__icon: (($width_header-logo - $margin_paging__icon) / 2);
+$height_paging__icon: ($width_paging__icon / 256 * 384);
 
 // Google Custom Search Engine
-$width-google-cse: ($width-content / 2);
-$margin-google-cse-form: 0.25em;
-$height-google-cse-form: 2em;
+$padding_google-cse: 0.25em;
+$width_google-cse: ($width-content / 2);
+$height_google-cse: 2em;

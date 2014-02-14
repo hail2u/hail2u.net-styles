@@ -9,7 +9,7 @@ main > section h1 {
 
   @media (min-width: $breakpoint-full) {
     &::after {
-      height: em($ratio_heading * $line-height-heading);
+      height: em($ratio_heading * $line-height_heading);
     }
   }
 }

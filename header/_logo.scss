@@ -1,16 +1,16 @@
 // Logo
 body > header > a:first-child,
 body > header > mark:first-child {
-  margin-top: ($margin-heading / $ratio-golden);
+  margin-top: ($margin_heading / $ratio-golden);
   display: block;
-  width: ($width-header-logo / $ratio-golden);
-  height: ($height-header-logo / $ratio-golden);
+  width: ($width_header-logo / $ratio-golden);
+  height: ($height_header-logo / $ratio-golden);
   background-color: transparent;
 
   @media (min-width: $breakpoint-content) {
-    margin-top: $margin-heading;
-    width: $width-header-logo;
-    height: $height-header-logo;
+    margin-top: $margin_heading;
+    width: $width_header-logo;
+    height: $height_header-logo;
   }
 
   @media (min-width: $breakpoint-full) {

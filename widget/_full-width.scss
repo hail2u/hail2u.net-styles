@@ -18,11 +18,11 @@
     margin-left: (- ($width-gap + $width-suppli + $width-gutter));
 
     figcaption:last-child {
-      margin-top: $margin-default;
+      margin-top: $margin;
       margin-left: 0;
       padding-bottom: 0;
-      padding-left: ($width-gap - $height-border-figcaption);
-      border-left: $height-border-figcaption solid $color-border_figcaption;
+      padding-left: ($width-gap - $height-border_figcaption);
+      border-left: $height-border_figcaption solid $color-border_figcaption;
       border-bottom: 0;
       bottom: auto;
       left: 0;

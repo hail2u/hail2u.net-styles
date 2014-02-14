@@ -7,7 +7,7 @@
   }
 
   > p::after {
-    margin-left: $margin-posts-more;
+    margin-left: $margin_posts__more;
     content: "More\0020\279f"; // Dashed Triangle-Headed Rightwards Arrow
     font-weight: bold;
     color: $color-fg_posts__more;

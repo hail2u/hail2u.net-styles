@@ -1,7 +1,7 @@
 // Flat DL
 .flat-dl {
   dd {
-    margin-right: $margin-flat-dl-dd;
+    margin-right: $margin_flat-dl__dd;
     margin-left: 0;
     display: inline;
     color: $color-fg_flat-dl;
@@ -10,7 +10,7 @@
 
   @media (min-width: $breakpoint-content) {
     dt {
-      margin-right: $margin-flat-dl-dt;
+      margin-right: $margin_flat-dl__dt;
       display: inline;
 
       &::after {

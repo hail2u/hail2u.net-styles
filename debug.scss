@@ -69,10 +69,10 @@ body.debug::before {
       #f0f $width-gap,
       #f0f ($width-gap + $width-content),
       #0f0 ($width-gap + $width-content),
-      #0f0 $width-content-with-gap
+      #0f0 $width-content--with-gap
     );
     background-position: center;
-    background-size: $width-content-with-gap 1px;
+    background-size: $width-content--with-gap 1px;
   }
 
   @media (min-width: $breakpoint-full) {
@@ -87,9 +87,9 @@ body.debug::before {
       #f0f ($width-gap + $width-suppli + $width-gutter),
       #f0f ($width-gap + $width-full),
       #0f0 ($width-gap + $width-full),
-      #0f0 $width-full-with-gap
+      #0f0 $width-full--with-gap
     );
-    background-size: $width-full-with-gap 1px;
+    background-size: $width-full--with-gap 1px;
   }
 }
 
@@ -147,7 +147,7 @@ body::after {
   li {
     @include box-sizing(border-box);
 
-    margin-top: $margin-mini;
+    margin-top: $margin--mini;
     display: block;
     width: 100%;
     height: 3em;

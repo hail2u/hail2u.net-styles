@@ -3,18 +3,18 @@
 @import "./bower_components/hail2u-scss-partials/vendor-extension";
 
 .searchbox form {
-  margin-top: $margin-default;
+  margin-top: $margin;
   position: relative;
-  max-width: $width-google-cse;
+  max-width: $width_google-cse;
 
   input[type="text"],
   input[type="search"] {
     @include box-sizing(border-box);
 
-    padding: 0 ($height-google-cse-form + $margin-google-cse-form) 0 $margin-google-cse-form;
+    padding: 0 ($height_google-cse + $padding_google-cse) 0 $padding_google-cse;
     border: 1px solid $color-border_google-cse;
     width: 100%;
-    height: $height-google-cse-form;
+    height: $height_google-cse;
     color: $color-fg_google-cse;
     background-color: $color-bg_google-cse;
 
@@ -30,8 +30,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: $height-google-cse-form;
-    height: $height-google-cse-form;
+    width: $height_google-cse;
+    height: $height_google-cse;
     background-color: $color-bg_google-cse__button;
     background-image: $image_magnifying-glass;
     background-repeat: no-repeat;
@@ -50,12 +50,12 @@ body > .searchbox {
   @extend %centering-block;
 
   form {
-    margin-top: $margin-heading;
+    margin-top: $margin_heading;
   }
 
   @media (min-width: $breakpoint-full) {
     form {
-      margin-top: $margin-primary-heading;
+      margin-top: $margin_heading--primary;
     }
   }
 }

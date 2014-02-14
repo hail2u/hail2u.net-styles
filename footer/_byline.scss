@@ -5,7 +5,7 @@
   p {
     @extend %line-label;
 
-    margin-top: ($margin-heading + em($line-height-default) / $ratio_footer-elsewhere);
+    margin-top: ($margin_heading + em($line-height) / $ratio_footer-elsewhere);
   }
 
   mark {
@@ -15,7 +15,7 @@
 
   @media (min-width: $breakpoint-content) {
     p {
-      margin-top: $margin-heading;
+      margin-top: $margin_heading;
     }
   }
 }
