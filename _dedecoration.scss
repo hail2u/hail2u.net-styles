@@ -8,14 +8,15 @@
   aside,
   nav,
   hr::before,
-  blockquote::before,
   body > header > a:first-child,
   body > header > mark:first-child,
-  body > footer::before,
-  .byline::before,
+  main > article h1::after,
+  main > section h1::after,
+  .byline p::after,
   .elsewhere,
   .footlinks,
-  .seealso::before {
+  .seealso::before,
+  .posts > a > p::after {
     display: none;
   }
 
@@ -70,6 +71,17 @@
     border: 0;
   }
 
+  blockquote {
+    margin: 0 $indent-default;
+    border-left: 0;
+    padding-left: 0;
+
+    + figcaption:last-child {
+      border-left: 0;
+      padding-left: $indent-default;
+    }
+  }
+
   a {
     color: inherit;
 
@@ -103,7 +115,7 @@
 
   body > header,
   main,
-  .byline {
+  body > footer {
     max-width: none;
   }
 
