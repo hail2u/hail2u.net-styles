@@ -184,11 +184,11 @@ body::after {
     }
 
     &:nth-child(6)::before {
-      background-color: $color-fg;
+      background-color: $color-light;
     }
 
     &:nth-child(7)::before {
-      background-color: $color-bg;
+      background-color: $color-dark;
     }
   }
 
