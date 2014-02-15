@@ -37,7 +37,13 @@ $width-border_blockquote: 0.25em;
 
 $width-border_figcaption: 0.125em;
 
+$width-border_strong: 0.063em;
+
+$letter-spacing_abbr: 0.063em;
+
 $width-border_img: 1em;
+
+$width-border_table: 1px;
 
 // Header
 $width_header-logo: ($width-suppli / pow($ratio-golden, 2));
@@ -51,8 +57,12 @@ $width_scrollbar: 1.5em;
 $breakpoint-content: ($width-content--with-gap + $width_scrollbar);
 $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes_html, length($font-sizes_html)) / 16px));
 
+// Pull Quote
+$line-height_pull-quote: ($line-height * 1.5);
+
 // Seealso
 $width_seealso__icon: 1em;
+$margin_seealso__icon: ($width_seealso__icon * 0.25);
 
 // Topic
 $margin_topic__more: 0.25em;
@@ -76,3 +86,4 @@ $height_paging__icon: ($width_paging__icon / 256 * 384);
 $padding_google-cse: 0.25em;
 $width_google-cse: ($width-content / 2);
 $height_google-cse: 2em;
+$width-border_google-cse: 1px;

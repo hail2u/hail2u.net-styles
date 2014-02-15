@@ -12,7 +12,7 @@
     @include box-sizing(border-box);
 
     padding: 0 ($height_google-cse + $padding_google-cse) 0 $padding_google-cse;
-    border: 1px solid $color-border_google-cse;
+    border: $width-border_google-cse solid $color-border_google-cse;
     width: 100%;
     height: $height_google-cse;
     color: $color-fg_google-cse;

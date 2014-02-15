@@ -2,7 +2,7 @@
 .pull-quote {
   margin-right: $indent;
   margin-left: $indent;
-  line-height: ($line-height * 1.5 / $ratio_pull-quote);
+  line-height: ($line-height_pull-quote / $ratio_pull-quote);
   text-align: center;
 
   p {

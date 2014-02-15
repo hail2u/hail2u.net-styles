@@ -238,7 +238,7 @@ strong {
   @extend %auto-breaking;
 
   color: $color-fg_strong;
-  border-bottom: 1px dashed;
+  border-bottom: $width-border_strong dashed;
 }
 
 cite {
@@ -260,8 +260,8 @@ q {
 abbr {
   @extend %auto-breaking;
 
-  font-size: 87.5%;
-  letter-spacing: 0.063em;
+  font-size: em($ratio_abbr);
+  letter-spacing: $letter-spacing_abbr;
   cursor: help;
 }
 
@@ -323,7 +323,7 @@ table {
   th,
   td {
     padding: 0.5em;
-    border: 1px solid $color-border_table;
+    border: $width-border_table solid $color-border_table;
     vertical-align: top;
     white-space: nowrap;
   }
