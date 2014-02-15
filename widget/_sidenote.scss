@@ -7,10 +7,6 @@
   p {
     margin-top: ($margin / $ratio_sidenote);
     font-size: em($ratio_sidenote);
-
-    &:first-child {
-      margin-top: ($margin / $ratio_sidenote * $line-height - 1em);
-    }
   }
 
   @media (min-width: $breakpoint-full) {
