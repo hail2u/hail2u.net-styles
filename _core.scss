@@ -277,6 +277,7 @@ kbd {
 mark {
   @extend %auto-breaking;
 
+  color: $color-fg_mark;
   background-color: $color-bg_mark;
 }
 
