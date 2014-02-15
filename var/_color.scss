@@ -83,7 +83,7 @@ $color-fg_topic__more--hover: $color-fg_link--hover;
 $color-fg_post-list__time: mixxd($color-fg, $color-bg, 0.6);
 
 // Flat DL
-$color-fg_flat-dl: mixxd($color-fg, $color-bg, 0.8);
+$color-fg_flat-dl__dd: mixxd($color-fg, $color-bg, 0.8);
 
 // Read Older
 $color-fg_read-older__label: mixxd($color-fg, $color-bg, 0.12);
