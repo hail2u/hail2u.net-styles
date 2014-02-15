@@ -55,8 +55,6 @@ $color-fg_td: mixxd($color-fg, $color-bg, 0.12);
 $color-bg_td: mixxd($color-fg, $color-bg, 0.98);
 
 // Header
-$color-fg_header-tagline--em: mixxd($color-fg, $color-bg, 0.24);
-
 $color-fg_header-site-navigation: inherit;
 $color-fg_header-site-navigation__mark: $color-accent--light;
 $color-fg_header-site-navigation--hover: $color-accent;
@@ -70,7 +68,6 @@ $color-fg_pull-quote: $color-fg_blockquote;
 
 // Seealso
 $color-fg_seealso: mixxd($color-fg, $color-bg, 0.12);
-
 $color-fg_seealso__icon: mixxd($color-fg, $color-bg, 0.72);
 
 // Sidenote
@@ -93,7 +90,6 @@ $color-fg_read-older__label: mixxd($color-fg, $color-bg, 0.12);
 
 // Paging
 $color-fg_paging: $color-accent--light;
-
 $color-fg_paging__icon: $color-fg_paging;
 
 // Google Code Prettify
