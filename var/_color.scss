@@ -107,7 +107,7 @@ $color-fg_google-code-prettify__special: #c90;
 $color-fg_google-cse: rgb(17, 17, 17);
 $color-bg_google-cse: rgb(255, 255, 255);
 $color-fg_google-cse__button: $color-bg_google-cse;
-$color-bg_google-cse__button: grayscale(mixxd($color-accent--light, white, 0.6));
+$color-bg_google-cse__button: grayscale(mixxd($color-accent--light, $color-bg_google-cse, 0.6));
 $color-bg_google-cse__button--hover: $color-accent--light;
 $color-border_google-cse: $color-bg_google-cse__button;
 $color-border_google-cse--focus: $color-bg_google-cse__button--hover;
