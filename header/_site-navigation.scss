@@ -44,11 +44,18 @@ body > header nav {
   }
 
   @media (min-width: $breakpoint-full) {
-    right: auto;
+    width: $width-content;
 
     li {
       padding-right: ($width_header-site-navigation__gutter / $ratio_header-site-navigation);
       padding-left: 0;
+
+      &:last-child {
+        padding-right: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
     }
   }
 }
