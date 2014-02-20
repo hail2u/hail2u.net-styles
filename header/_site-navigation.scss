@@ -13,8 +13,8 @@ body > header nav {
   li {
     padding-left: ($width_header-site-navigation__gutter / 4 / $ratio_header-site-navigation);
     display: table-cell;
-    height: ($height_header-site-navigation / $ratio-golden / $ratio_header-site-navigation);
-    line-height: remove-unit($height_header-site-navigation / $ratio-golden / $ratio_header-site-navigation);
+    height: ($height_header-site-navigation / $ratio_header-site-navigation);
+    line-height: remove-unit($height_header-site-navigation / $ratio_header-site-navigation);
     font-size: em($ratio_header-site-navigation);
   }
 
