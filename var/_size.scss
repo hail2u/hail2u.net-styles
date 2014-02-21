@@ -79,8 +79,8 @@ $margin_flat-dl__dd: $width-gap;
 
 // Paging
 $margin_paging__icon: $width-gutter;
-$width_paging__icon: (($width_header-logo - $margin_paging__icon) / 2);
-$height_paging__icon: ($width_paging__icon / 256 * 384);
+$height_paging__icon: $width_header-logo;
+$width_paging__icon: ($height_paging__icon / 384 * 256);
 
 // Google Custom Search Engine
 $padding_google-cse: 0.25em;
