@@ -46,15 +46,15 @@ body {
 h1 {
   @include heading;
 
-  margin: ($margin_heading--primary / $ratio_heading--primary) 0 0 0;
-  font-size: em($ratio_heading--primary);
+  margin: $margin_heading--primary 0 0 0;
+  font-size: rem($ratio_heading--primary);
 }
 
 h2 {
   @include heading;
 
-  margin: ($margin_heading / $ratio_heading) 0 0 0;
-  font-size: em($ratio_heading);
+  margin: $margin_heading 0 0 0;
+  font-size: rem($ratio_heading);
 }
 
 // Grouping Content
@@ -87,16 +87,15 @@ hr {
 pre {
   @extend %margin;
 
-  margin-top: ($margin / $ratio_code);
   clear: both;
   line-height: $line-height_code;
   font-family: $font-stack_code;
-  font-size: em($ratio_code);
+  font-size: rem($ratio_code);
   word-wrap: break-word;
   overflow-wrap: break-word;
 
   h2 + & {
-    margin-top: ($margin--mini / $ratio_code);
+    margin-top: $margin--mini;
   }
 }
 
@@ -258,7 +257,7 @@ q {
 abbr {
   @extend %auto-breaking;
 
-  font-size: em($ratio_abbr);
+  font-size: rem($ratio_abbr);
   letter-spacing: $letter-spacing_abbr;
   cursor: help;
 }
@@ -270,11 +269,7 @@ kbd {
   @extend %auto-breaking;
 
   font-family: $font-stack_code;
-  font-size: em($ratio_code);
-
-  pre & {
-    font-size: 1em;
-  }
+  font-size: rem($ratio_code);
 }
 
 mark {

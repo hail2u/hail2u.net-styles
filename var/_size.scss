@@ -4,20 +4,20 @@ $line-height_heading: 1.25;
 $line-height_code: 1.3;
 
 // Margin
-$margin: em($line-height);
+$margin: rem($line-height);
 $margin--mini: ($margin / pow($ratio-golden, 2));
 $margin_heading: ($margin * pow($ratio-golden, 2));
 $margin_heading--primary: ($margin_heading * $ratio-golden);
 
 // Indent
-$indent: em(pow($ratio-golden, 2));
+$indent: rem(pow($ratio-golden, 2));
 
 // Column
-$width-gutter: em($ratio-golden);
+$width-gutter: rem($ratio-golden);
 $width-gap: ($width-gutter / 2);
 
 // Main Component
-$width-content: 36em;
+$width-content: 36rem;
 $width-content--with-gap: ($width-gap + $width-content + $width-gap);
 
 $width-suppli--with-gap: ($width-content--with-gap / $ratio-content * $ratio-suppli);
@@ -26,28 +26,31 @@ $width-suppli: (- $width-gap + $width-suppli--with-gap - $width-gap);
 $width-full--with-gap: ($width-suppli--with-gap + $width-content--with-gap);
 $width-full: (- $width-gap + $width-full--with-gap - $width-gap);
 
+// Class
+$height_line-label: 0.25rem;
+
 // Root
 $font-sizes_html: (18px, 21px, 24px);
 
 // Breakpoint
-$width_scrollbar: 1.5em;
+$width_scrollbar: 1.5rem;
 $breakpoint-content: ($width-content--with-gap + $width_scrollbar);
 $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes_html, length($font-sizes_html)) / 16px));
 
 // Core
-$height_hr: ($margin + em($line-height) + $margin);
+$height_hr: ($margin + rem($line-height) + $margin);
 $width_hr: ($height_hr * 3);
 
-$width-border_blockquote: 0.25em;
+$width-border_blockquote: 0.25rem;
 
-$width-border_figcaption: 0.125em;
+$width-border_figcaption: 0.125rem;
 
-$width-border_strong: 0.063em;
+$width-border_strong: 0.063rem;
 
-$letter-spacing_abbr: 0.063em;
+$letter-spacing_abbr: 0.063rem;
 
 $width-border_td: 1px;
-$padding_td: 0.5em;
+$padding_td: 0.5rem;
 
 $width-border_th--of-thead: ($width-border_td * 2);
 
@@ -56,23 +59,23 @@ $width_logo: ($width-suppli / pow($ratio-golden, 3));
 $height_logo: $width_logo;
 
 $height_site-navigation: $height_logo;
-$width_site-navigation__gutter: 2em;
+$width_site-navigation__gutter: 2rem;
 
 // Pull Quote
 $line-height_pull-quote: 1.3;
 
 // Seealso
-$width_seealso__icon: 1em;
+$width_seealso__icon: 1rem;
 $margin_seealso__icon: ($width_seealso__icon * 0.25);
 
 // Topic
-$margin_topic__more: 0.25em;
+$margin_topic__more: 0.25rem;
 
 // Post List
-$width_post-list__date: (5em + $width-gap);
+$width_post-list__date: (5rem * $ratio_post-list__item + $width-gap);
 
 // Seemore
-$width-border_seemore: 0.125em;
+$width-border_seemore: 0.125rem;
 
 // Flat DL
 $margin_flat-dl__dt: ($width-gap / 2);
@@ -84,7 +87,7 @@ $height_paging__icon: $width_logo;
 $width_paging__icon: ($height_paging__icon / 384 * 256);
 
 // Google Custom Search Engine
-$padding_google-cse: 0.25em;
+$padding_google-cse: 0.25rem;
 $width_google-cse: ($width-content * 2 / 3);
-$height_google-cse: 2em;
+$height_google-cse: 2rem;
 $width-border_google-cse: 1px;

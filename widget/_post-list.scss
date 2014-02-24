@@ -18,9 +18,9 @@
 
   @media (min-width: $breakpoint-content) {
     li {
-      margin-top: ($margin--mini / $ratio_post-list__item);
+      margin-top: $margin--mini;
       padding-right: $width_post-list__date;
-      font-size: em($ratio_post-list__item);
+      font-size: rem($ratio_post-list__item);
     }
 
     time {

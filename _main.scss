@@ -2,7 +2,7 @@
 main {
   @extend %centering-block;
 
-  margin-top: (- $margin_heading--primary + $margin_heading + em($line-height) + $margin--mini);
+  margin-top: (- $margin_heading--primary + $margin_heading + rem($line-height) + $margin--mini);
 
   > article,
   > section {

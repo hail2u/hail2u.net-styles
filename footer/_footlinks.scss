@@ -9,8 +9,8 @@
 
   li {
     display: table-cell;
-    line-height: ($line-height / $ratio_footlinks);
-    font-size: em($ratio_footlinks);
+    line-height: rem($line-height);
+    font-size: rem($ratio_footlinks);
 
     &::after {
       content: "\00a0\0020\2219\0020\00a0"; // Bullet Operator

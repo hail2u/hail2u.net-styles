@@ -3,28 +3,24 @@ main > article h1,
 main > section h1 {
   @extend %line-label;
 
-  &::after {
-    font-size: em(1 / $ratio_heading--primary);
-  }
-
   @media (min-width: $breakpoint-full) {
     &::after {
-      height: em($ratio_heading--primary * $line-height_heading);
+      height: rem($ratio_heading--primary * $line-height_heading);
     }
   }
 }
 
 .permalink main > article h1 {
-  margin-top: (($margin_heading + em($line-height)) / $ratio_section-heading--permalink);
-  margin-bottom: ($margin_heading / $ratio_section-heading--permalink);
-  font-size: em($ratio_section-heading--permalink);
+  margin-top: ($margin_heading + rem($line-height));
+  margin-bottom: $margin_heading;
+  font-size: rem($ratio_section-heading--permalink);
 
   &::after {
     display: none;
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-top: ($margin_heading / $ratio_section-heading--permalink);
-    margin-left: (- ($width-suppli + $width-gutter) / $ratio_section-heading--permalink);
+    margin-top: $margin_heading;
+    margin-left: (- ($width-suppli + $width-gutter));
   }
 }

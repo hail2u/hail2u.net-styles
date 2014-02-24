@@ -11,11 +11,11 @@ body > header nav {
   }
 
   li {
-    padding-left: ($width_site-navigation__gutter / 4 / $ratio_site-navigation);
+    padding-left: ($width_site-navigation__gutter / 4);
     display: table-cell;
-    height: ($height_site-navigation / $ratio_site-navigation);
-    line-height: remove-unit($height_site-navigation / $ratio_site-navigation);
-    font-size: em($ratio_site-navigation);
+    height: $height_site-navigation;
+    line-height: $height_site-navigation;
+    font-size: rem($ratio_site-navigation);
   }
 
   a {
@@ -37,9 +37,7 @@ body > header nav {
 
   @media (min-width: $breakpoint-content) {
     li {
-      padding-left: ($width_site-navigation__gutter / 2 / $ratio_site-navigation);
-      height: ($height_site-navigation / $ratio_site-navigation);
-      line-height: remove-unit($height_site-navigation / $ratio_site-navigation);
+      padding-left: ($width_site-navigation__gutter / 2);
     }
   }
 
@@ -47,7 +45,7 @@ body > header nav {
     width: $width-content;
 
     li {
-      padding-right: ($width_site-navigation__gutter / $ratio_site-navigation);
+      padding-right: $width_site-navigation__gutter;
       padding-left: 0;
 
       &:last-child {

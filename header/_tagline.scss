@@ -1,11 +1,11 @@
 // Tagline
 body > header h1 {
-  margin-top: ($margin_heading / $ratio_tagline);
+  margin-top: $margin_heading;
   font-weight: 200;
-  font-size: em($ratio_tagline);
+  font-size: rem($ratio_tagline);
 
   @media (min-width: $breakpoint-full) {
-    margin-left: (- ($width-suppli + $width-gutter) / $ratio_tagline);
+    margin-left: (- ($width-suppli + $width-gutter));
   }
 }
 

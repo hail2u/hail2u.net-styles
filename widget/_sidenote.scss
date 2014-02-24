@@ -5,8 +5,8 @@
   color: $color-fg_sidenote;
 
   p {
-    margin-top: ($margin / $ratio_sidenote);
-    font-size: em($ratio_sidenote);
+    margin-top: $margin;
+    font-size: rem($ratio_sidenote);
   }
 
   @media (min-width: $breakpoint-full) {
