@@ -1,10 +1,10 @@
 // Google AdSense
 .adsense {
   margin-top: $margin;
-  overflow: hidden;
-  text-align: center;
   max-width: 300px;
   max-height: 250px;
+  overflow: hidden;
+  text-align: center;
 
   @media (min-width: 1680px) {
     max-width: 728px;
