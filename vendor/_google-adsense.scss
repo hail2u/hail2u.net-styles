@@ -6,11 +6,6 @@
   max-width: 300px;
   max-height: 250px;
 
-  @media (min-width: 400px) {
-    max-width: 336px;
-    max-height: 280px;
-  }
-
   @media (min-width: 1680px) {
     max-width: 728px;
     max-height: 90px;
