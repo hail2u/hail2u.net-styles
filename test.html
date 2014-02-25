@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="ja-JP" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sketch, markup, code, style, test, &amp; deploy.">
+    <meta name="viewport" content="width=device-width">
+
+    <title itemprop="name">Style Guide - About - Hail2u.net</title>
+
+    <script>
+      if (location.protocol === 'file:' && !/(\/|\\)hail2u\.net(\/|\\)/.test(location.pathname)) {
+        var base = document.createElement('base');
+        base.href = 'http://hail2u.net/about/style-guide/';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(base, s);
+      }
+    </script>
+
+    <link rel="canonical" href="http://hail2u.net/about/style-guide/">
+    <link rel="alternate" type="application/rss+xml" href="http://hail2u.net/feed">
+    <link rel="author" href="http://hail2u.net/about/">
+    <link rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" href="../../images/favicon-152.png">
+    <meta name="msapplication-TileColor" content="#46b0dd">
+    <meta name="msapplication-TileImage" content="http://hail2u.net/images/favicon-144.png">
+
+    <meta content="Sketch, markup, code, style, &amp; deploy." itemprop="description">
+    <meta content="http://hail2u.net/images/about/how-i-markup-and-style-this-website.png" itemprop="image">
+    <link href="http://hail2u.net/about/style-guide/" itemprop="url">
+
+    <meta property="og:title" content="Style Guide - About - Hail2u.net">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://hail2u.net/about/style-guide/">
+    <meta property="og:image" content="http://hail2u.net/images/about/how-i-markup-and-style-this-website.png">
+    <meta property="og:description" content="Sketch, markup, code, style, test, &amp; deploy.">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="Hail2u.net">
+    <meta prefix="fb: http://ogp.me/ns/fb#" property="fb:admins" content="100000022521341">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@hail2u_">
+
+    <link rel="stylesheet" media="only all" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700|Source+Code+Pro:400,600">
+    <link rel="stylesheet" media="only all" href="http://fonts.googleapis.com/css?family=Playfair+Display&amp;text=%26">
+    <link rel="stylesheet" media="only all" href="../../styles/style.css">
+    <link rel="stylesheet" media="only all" href="../../styles/debug.css">
+
+    <!--[if lt IE 9]><script src="../../scripts/html5shiv.min.js"></script><![endif]-->
+
+    <!-- Google AdSense -->
+    <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();if (!/^http/.test(location.protocol)) return;a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42525667-1', 'hail2u.net');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body>
+    <header role="banner">
+      <a href="http://hail2u.net/" id="logo"><img src="../../images/logo.svg" alt="Hail2u.net"></a>
+
+      <h1>Sketch, markup, code, style, test, &amp; deploy.</h1>
+
+      <nav>
+        <ul>
+          <li><a href="http://hail2u.net/blog/">Weblog</a></li>
+          <li><a href="http://hail2u.net/documents/">Documents</a></li>
+          <li><a href="http://hail2u.net/projects/">Projects</a></li>
+          <li><a href="http://hail2u.net/about/"><mark>About</mark></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="introduction">
+        <h1>Style Guide</h1>
+
+        <footer>
+          <p>Posted on <time datetime="2011-12-07T15:22+09:00" itemprop="datePublished">Dec 7, 2011</time> under <a rel="tag" href="#"><span itemprop="keywords">Guide</span></a></p>
+        </footer>
+
+        <div itemprop="articleBody">
+          <p>Hail2u.netで使われているマークアップやスタイルの解説兼プレビューのページです。マークアップはHTMLのソースを、スタイルについては<a href="https://github.com/hail2u/hail2u.net-styles">全ての変更履歴を含むGitリポジトリ</a>か<a href="../../styles/style.css">このページで参照されている非圧縮のCSSファイル</a>を参照してください。このページに限ってはマークアップにおかしいところが多々ありますが、その多くはプレビューを作る上でのやむを得ない事情によるものです。</p>
+
+          <h2>バージョニング</h2>
+
+          <p>フォーマットは<a href="http://semver.org/">Semantic Versioning</a>を使っています。ただしAPIの変更などというものはあまりないので、以下のような条件でバージョン番号の増加を行っています:</p>
+
+          <ol>
+            <li><em>メジャー・バージョン</em>は、レイアウトの大幅な置き換えやテーマカラーの変更など、一見して大きな違いを見分けられる変更を行った場合に増加されます。</li>
+            <li><em>マイナー・バージョン</em>は、新たなウィジェットの追加やフォントやカラム幅のような全体に影響を与えるものの変更など、既存の見た目を継承するもののユーザーに影響を与えるような変更を行った場合に増加されます。マークアップの変更への対応が必要だったりする場合もマイナー・バージョンが増加されます。</li>
+            <li><em>パッチ・バージョン</em>は、単なる修正や調整など、特にユーザーに影響を与えない変更に留まる場合に増加されます。スタイルの変更のためにマークアップの変更を余儀なくされる場合はパッチ・バージョンが増加されます。</li>
+          </ol>
+
+          <h2>デバッグ</h2>
+
+          <p>レイアウトの位置確認のために、空いているところをダブルクリックするとグリッドをトグルすることができます。このグリッドはCSSグラデーションを利用した簡単なものなので、描画領域の幅によっては数ピクセル程ずれることがあります。</p>
+
+          <p>また、グローバル・ヘッダーのロゴをクリックすると記事個別ページでの特別な表示の仕方に切り替わります。</p>
+
+          <h2>印刷向けスタイルシート</h2>
+
+          <p>以前は別に書いていましたが、HTTPリクエストの削減のためにインライン化しました。フォントはセリフ系を採用しています。他はなるべく白黒になるように調節しているだけです。</p>
+        </div>
+      </article>
+
+      <aside class="adsense">
+        <!-- Hail2u.net (Main) -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8712792805045949"
+             data-ad-slot="1723739447"
+             data-ad-format="rectangle, horizontal"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </aside>
+
+      <nav id="toc">
+        <h1>目次</h1>
+
+        <ol>
+          <li><a href="#introduction">このStyle Guideについて</a></li>
+          <li><a href="#coding-rules">コーディング上の決め事</a></li>
+          <li><a href="#bases">ベース</a></li>
+          <li><a href="#fonts">フォント</a></li>
+          <li><a href="#colors">カラーパレット</a></li>
+          <li><a href="#icons">アイコン</a></li>
+          <li><a href="#layouts">レイアウト</a>
+            <ol>
+              <li><a href="#characters-per-line">行あたりの文字数</a></li>
+            </ol>
+          </li>
+          <li><a href="#core">コア</a>
+            <ol>
+              <li><a href="#sections">セクション</a></li>
+              <li><a href="#grouping-content">コンテンツのグループ化</a></li>
+              <li><a href="#text-level-semantics">語・句・文単位での意味付け</a></li>
+              <li><a href="#edits">編集</a></li>
+              <li><a href="#tabular-data">表</a></li>
+            </ol>
+          </li>
+          <li><a href="#others">その他</a>
+            <ol>
+              <li><a href="#blog-article-blocks">ブログ記事</a></li>
+              <li><a href="#ads">広告</a></li>
+              <li><a href="#circular-images">丸い画像</a></li>
+              <li><a href="#floatage-images">浮かんだ画像</a></li>
+              <li><a href="#drop-images">画像の飛び出し</a></li>
+              <li><a href="#full-width-content">幅いっぱい</a></li>
+              <li><a href="#pull-quote-blocks">抜粋見出し(Pull Quote)</a></li>
+              <li><a href="#seealso-links">他を参照</a></li>
+              <li><a href="#sidenote-blocks">傍注</a></li>
+              <li><a href="#topic-blocks">話題の記事</a></li>
+              <li><a href="#post-list-blocks">記事リスト</a></li>
+              <li><a href="#seemore-links">もっと読む</a></li>
+              <li><a href="#flat-dl-blocks">フラットな関連リスト</a></li>
+              <li><a href="#flat-ul-blocks">フラットな序列なしリスト</a></li>
+              <li><a href="#read-older-links">古い記事を読む</a></li>
+              <li><a href="#paging-links">ページング</a></li>
+            </ol>
+          </li>
+        </ol>
+      </nav>
+
+      <section id="coding-rules">
+        <h1>コーディング上の決め事</h1>
+
+        <p>以下はマークアップやスタイル、スクリプトにおけるコーディング規約もどきです。</p>
+
+        <h2>マークアップ</h2>
+
+        <ul>
+          <li><a href="http://www.w3.org/TR/html5/">HTML5</a>のHTML文法を使ってUTF-8で書きます</li>
+          <li>インデントは半角空白を二文字使います</li>
+          <li>要素名や属性名は全て小文字に統一します</li>
+          <li>属性値を括るクオートは省略しません</li>
+          <li>真偽値を取る属性値はその値を省略します</li>
+          <li>クラス名やIDはハイフンつなぎで指定します</li>
+          <li>JavaScript等で動的に生成されるコードも上記決め事に従います</li>
+          <li><a href="http://validator.nu/">Validator.nu</a>でエラーが出ないようにします</li>
+        </ul>
+
+        <h2>スタイル</h2>
+
+        <ul>
+          <li><a href="http://sass-lang.com/">Sass</a>のSCSS記法を使ってUTF-8で書きます</li>
+          <li>ASCII範囲外の文字はエスケープします</li>
+          <li>インデントは半角空白を二文字使います</li>
+          <li>セレクターは一行につき一つに制限します</li>
+          <li>プロパティーも一行につき一つに制限します</li>
+          <li>省略系のプロパティーはなるべく使いません
+            <ul>
+              <li><code>margin</code>や<code>padding</code>、 <code>border</code>に限って使うことがあります</li>
+            </ul>
+          </li>
+          <li>値はなるべく一行(80文字)に収まるように書きます
+            <ul>
+              <li><code>linear-gradient()</code>等の複雑なものに限って行を分けて書くことがあります</li>
+            </ul>
+          </li>
+          <li>ベンダー拡張プリフィックス付きのプロパティーはその時点での実装を考慮して記述します</li>
+          <li><a href="http://csslint.net/">CSS Lint</a>でチェックだけします</li>
+          <li>Sass
+            <ul>
+              <li>BEMの思想を流用し、ファイルを作成してブロックを、ネストでエレメントを、<code>&amp;</code>を使ったネストでモディファイアを表現します。</li>
+              <li>変数は<code>$type_block__element--modifier</code>という規則で命名します</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>スクリプト</h2>
+
+        <ul>
+          <li>JavaScriptをUTF-8で書きます</li>
+          <li>ASCII範囲外の文字はエスケープします</li>
+          <li>インデントは半角空白を二文字使います</li>
+          <li><a href="http://www.jshint.com/">JSHint</a>でエラーが出ないようにします</li>
+        </ul>
+      </section>
+
+      <section id="bases">
+        <h1>ベース</h1>
+
+        <p>ブラウザーのデフォルト・スタイルシートの差異の吸収のために<a href="http://necolas.github.com/normalize.css/">Normalize.css</a>を利用しています。ただし必要な物だけを取り込めるようにルールセットごとに分割し<a href="https://github.com/hail2u/normalize.scss">Sassのパーシャル</a>にしたものを使っています。</p>
+      </section>
+
+      <section id="fonts">
+        <h1>フォント</h1>
+
+        <table>
+          <tr>
+            <th rowspan="3">本文</th>
+            <td class="font-stack-body"><a href="https://github.com/adobe/source-sans-pro">Source Sans Pro</a></td>
+          </tr>
+          <tr>
+            <td class="font-stack-body">The quick brown fox jumps over the lazy dog.</td>
+          </tr>
+          <tr>
+            <td class="font-stack-body bold">The quick brown fox jumps over the lazy dog.</td>
+          </tr>
+          <tr>
+            <th rowspan="3">コード</th>
+            <td class="font-stack-code"><a href="https://github.com/adobe/source-code-pro">Source Code Pro</a></td>
+          </tr>
+          <tr>
+            <td class="font-stack-code">The quick brown fox jumps over the lazy dog.</td>
+          </tr>
+          <tr>
+            <td class="font-stack-code bold">The quick brown fox jumps over the lazy dog.</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="colors">
+        <h1>カラーパレット</h1>
+
+        <ul class="colors">
+          <li>ベース</li>
+          <li>最も暗い色</li>
+          <li>暗い色</li>
+          <li>明るい色</li>
+          <li>最も明るい色</li>
+          <li>文字色</li>
+          <li>背景色</li>
+        </ul>
+
+        <p class="seealso">Download: <a href="../../styles/colorscheme.aco">Photoshop Color Swatch</a></p>
+      </section>
+
+      <section id="icons">
+        <h1>アイコン</h1>
+
+        <p>ロゴのSVG画像を元にPNGとしてエクスポートして作成しています。<code>48x48</code>以上では反転させて、背景を塗りつぶしています。</p>
+
+        <figure>
+          <img src="../../images/favicon-16.png" alt="Uppercase &quot;h&quot; gryph on blue circule in 16x16">
+        </figure>
+
+        <figure>
+          <img src="../../images/favicon-32.png" alt="Uppercase &quot;h&quot; gryph on blue circule in 32x32">
+        </figure>
+
+        <figure>
+          <img src="../../images/favicon-48.png" alt="Uppercase &quot;h&quot; gryph on blue circule in 48x48">
+        </figure>
+
+        <figure>
+          <img src="../../images/favicon-64.png" alt="Uppercase &quot;h&quot; gryph on blue circule in 64x64">
+        </figure>
+
+        <figure>
+          <img src="../../images/favicon-144.png" alt="Uppercase &quot;h&quot; gryph on blue square in 144x144">
+        </figure>
+
+        <figure>
+          <img src="../../images/favicon-152.png" alt="Uppercase &quot;h&quot; gryph on blue square in 152x152">
+        </figure>
+      </section>
+
+      <section id="layouts">
+        <h1>レイアウト</h1>
+
+        <p>コンテンツのおさまり具合によってレイアウトが切り替わります。ブラウザーの大きさを変更したりすると、その様子が確認できるでしょう。以下のスクリーンショットは切り替わるそれぞれのレイアウトを収めたものですが、実際にはフォントサイズも変化するのでもう少し複雑に変化します。</p>
+
+        <figure>
+          <figcaption>On Small Screen</figcaption>
+          <a href="../../images/about/layout-small.png"><img src="../../images/about/layout-small.png" alt="青く丸い背景の上にhと書かれたロゴとシンプルな文字列のナビゲーションが中央寄せで配置されています。それに記事が、記事の補足情報、タイトル、本文という順で左寄せで並んでいます。"></a>
+        </figure>
+
+        <figure>
+          <figcaption>On Medium Screen</figcaption>
+          <a href="../../images/about/layout-medium.png"><img src="../../images/about/layout-medium.png" alt="ロゴとナビゲーションが左右に分割されます。記事の並び方は変わっていません。"></a>
+        </figure>
+
+        <figure>
+          <figcaption>On Large Screen</figcaption>
+          <a href="../../images/about/layout-large.png"><img src="../../images/about/layout-large.png" alt="ロゴが左に飛び出し、ナビゲーションは記事に合わせて左揃えになります。記事の補足情報や図のキャプションなどはロゴと揃うように飛び出しますが、他は変わっていません。"></a>
+        </figure>
+
+        <h2 id="characters-per-line">行あたりの文字数</h2>
+
+        <p class="line-length">Lorem ipsum dolor sit amet, consectetur adip*iscing elit. Suspendisse moll*is elementum leo sed feugiat.</p>
+
+        <p>直前の段落のアスタリスクは45文字目と75文字目に打ってあります。一行の文字数は45–75文字(<code>line-height: 1.5</code>の場合)と言われているので、このアスタリスクが行をまたいでいると適切な文字数で折り返されているということになります。このウェブサイトでは行間が1.618と少し広いことと、Windowsのブラウザーで使われることが多いメイリオが幅が広いことを基準にし、広めに設定しています。</p>
+      </section>
+
+      <section id="core">
+        <h1>コア</h1>
+
+        <p>これより後のセクションではHTML仕様で定義されている要素に対する基本的なスタイルのプレビューとマークアップ例です。</p>
+      </section>
+
+      <section id="sections">
+        <h1>セクション</h1>
+
+        <p>HTML5が定義するところのセクションを構成する要素についてです。</p>
+
+        <h2>body</h2>
+
+        <p>文字はスクリーンのサイズによって<code>14–20px</code>で表示されます。行間は日本語がメインなので少し多めに<code>1.618</code>としました。</p>
+
+        <h2>セクション構成物</h2>
+
+        <p>セクションを作成する、<code>section</code>、<code>nav</code>、<code>article</code>と<code>aside</code>では、特に何もスタイルを指定していません。ただし予期せぬ回り込み等を回避するためにclearfixだけは指定することがあります。</p>
+
+        <h2>見出し</h2>
+
+        <p>コンテンツの見出しは<code>h1</code>でマークアップされます。</p>
+
+        <pre><code class="language-html">&lt;h1&gt;...&lt;/h1&gt;</code></pre>
+
+        <h2>小見出し</h2>
+
+        <p>コンテンツ内の見出しは記事見出しの<code>h1</code>に合わせてそのレベルを調節しています。</p>
+      </section>
+
+      <section id="grouping-content">
+        <h1>コンテンツのグループ化</h1>
+
+        <p>コンテンツで使われる基本的な要素についてです。</p>
+
+        <h2>段落</h2>
+
+        <p>様々な所で使用されるので、他とバッティングしないように相殺可能なマージン以外のスタイルは指定していません。</p>
+
+<pre><code class="language-html">&lt;p&gt;...&lt;/p&gt;
+</code></pre>
+
+        <h2>水平線</h2>
+
+        <p>主に暗黙のセクションの区切りが挿入される所に恣意的に使用しています。線の代わりに表示される3つのアスタリスクはSVGです。</p>
+
+        <hr>
+
+<pre><code class="language-html">&lt;hr&gt;
+</code></pre>
+
+        <h2>整形済みテキスト</h2>
+
+        <p>主にコードの表示やコマンドラインでの操作例に使用しています。主に英文になることから行間も<code>1.25</code>に落としてあります。視認性のために、背景画像の変更と対応している場合は構文強調を行っています。構文強調には<a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a>を使用しています。</p>
+
+        <pre><code class="language-javascript">/**
+ * nth element in the fibonacci series.
+ * @param n &gt;= 0
+ * @return the nth element, &gt;= 0.
+ */
+function fib (n) {
+  var a = 1,
+    b = 1;
+    tmp;
+
+  while (--n &gt;= 0) {
+    tmp = a;
+    a += b;
+    b = tmp;
+  }
+
+  return a;
+}
+
+console.log(fib(10));
+</code></pre>
+
+        <p>構文強調を行う場合は以下のように<code>code</code>要素のクラス名で構文強調を行うこととその言語を明示しています。この仕組みは、<a href="http://www.w3.org/TR/2012/WD-html5-20120329/the-code-element.html">2012-03-29のHTML5仕様の<code>code</code>の項</a>を参考にしています。</p>
+
+        <pre><code class="language-html">&lt;pre&gt;&lt;code <mark>class=&quot;language-javascript&quot;</mark>&gt;...&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+
+        <h2>引用</h2>
+
+        <p>内部で様々なスタイルが使用されるので、ブロックの左端に縦線を引く以外のスタイルは指定しません。字体に斜体を採用すべきところですが、<a href="http://en.wikipedia.org/wiki/Meiryo">メイリオ</a>が和文部分に斜体を持っていないのでそれを考慮して無指定にしています。マークアップは通常、全体を<code>figure</code>で括り、引用元の表記は<code>figcaption</code>と<code>cite</code>を組み合わせて行います。</p>
+
+        <figure>
+          <blockquote>
+            <p>The blockquote element represents a section that is quoted from another source.</p>
+
+            <p>Content inside a blockquote must be quoted from another source, whose address, if it has one, may be cited in the cite attribute.</p>
+
+            <p>If the cite attribute is present, it must be a valid URL potentially surrounded by spaces. To obtain the corresponding citation link, the value of the attribute must be resolved relative to the element. User agents should allow users to follow such citation links.</p>
+          </blockquote>
+
+          <figcaption>— <cite><a href="http://www.w3.org/TR/html5/grouping-content.html#the-blockquote-element">4.5.4 The <code>blockquote</code> element</a></cite></figcaption>
+        </figure>
+
+        <pre><code class="language-html">&lt;figure&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;figcaption&gt;— &lt;cite&gt;...&lt;/cite&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+
+        <h2>序列付きリストと序列なしリスト</h2>
+
+        <p>双方共にデフォルトとあまり違わない形になるようにスタイルは最小限にとどめています。序列付きリストではアラビア数字をそのマークに使用します。</p>
+
+        <ol>
+          <li>Suspendisse adipiscing viverra augue, nec viverra erat interdum nec.</li>
+          <li>Pellentesque in magna ac massa lobortis pretium sit amet fringilla justo.
+            <ol>
+              <li>Nulla blandit porta arcu, at sagittis leo ullamcorper vel.</li>
+              <li>Praesent non est odio, ac ultricies tortor.</li>
+            </ol>
+          </li>
+          <li>Nulla iaculis leo a nulla facilisis congue.</li>
+          <li>Vestibulum in ante et nibh porttitor pharetra.</li>
+        </ol>
+
+        <pre><code class="language-html">&lt;ol&gt;
+  &lt;li&gt;...
+    &lt;ol&gt;
+      &lt;li&gt;...&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+        <p>序列なしリストではデフォルトと同じくネストされるにつれそのマークが変化します。</p>
+
+        <ul>
+          <li>Sed id purus eu nisi blandit condimentum.</li>
+          <li>Pellentesque sit amet mi ipsum, non scelerisque odio.
+            <ul>
+              <li>Vestibulum eget nisi ut nulla ultricies mollis.</li>
+              <li>Sed vel eros a diam tincidunt sodales consectetur eu nisi.</li>
+            </ul>
+          </li>
+          <li>Etiam at lorem id sapien blandit faucibus.</li>
+          <li>Quisque et metus non dui aliquam auctor sit amet non orci.</li>
+        </ul>
+
+        <pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;...
+    &lt;ul&gt;
+      &lt;li&gt;...&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+        <h2>関連リスト</h2>
+
+        <p>内部、特に<code>dd</code>要素内で様々な要素が使われたり使われなかったりすることから、スタイルは最小限にとどめています。</p>
+
+        <dl>
+          <dt>Proin gravida sodales lectus, sed placerat urna posuere sit amet.</dt>
+
+          <dd>Nam semper blandit mi, sed pulvinar tellus posuere eu. Phasellus vitae ipsum lacus. Fusce viverra odio in augue vestibulum et fermentum nisi consectetur. Aenean a velit enim. Duis lacinia velit a arcu ornare at molestie mi iaculis.</dd>
+
+          <dt>Mauris sed urna a odio condimentum elementum.</dt>
+
+          <dd>Vivamus congue laoreet augue, quis euismod urna placerat a. Duis nulla lacus, laoreet commodo consequat vel, convallis at risus. Vestibulum porttitor, leo eu ullamcorper lacinia, felis ipsum ultrices libero, vitae pretium sem nisi in dui. Curabitur in aliquam elit. Aliquam tortor nisi, tristique id congue in, scelerisque in massa.</dd>
+
+          <dt>Quisque at sem at justo eleifend aliquet ac quis quam.</dt>
+
+          <dd>Etiam congue porta ligula, quis interdum justo tincidunt ac. Quisque ac gravida arcu. Curabitur blandit tortor quis velit porta quis euismod arcu posuere. Suspendisse potenti. Donec ac arcu vitae libero porta dictum sed in dolor.</dd>
+
+          <dt>Praesent commodo posuere nisi, ut convallis nunc vehicula at.</dt>
+
+          <dd>Praesent interdum ullamcorper volutpat. Maecenas nec lectus risus. Mauris sit amet orci metus. Duis tincidunt, tortor in laoreet rutrum, libero tellus ornare nibh, a accumsan quam massa vel lorem. Sed ultrices molestie vestibulum.</dd>
+        </dl>
+
+        <pre><code class="language-html">&lt;dl&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+
+        <h2>図</h2>
+
+        <p>通常は<code>figure</code>を使っています。既に<code>blockquote</code>要素で使われているように内容は画像とは限らないので、強いスタイルは指定していません。</p>
+
+        <figure>
+          <img src="http://placeimg.com/480/270/any">
+          <figcaption>Random Image from <a href="http://placeimg.com/">PlaceIMG</a></figcaption>
+        </figure>
+
+        <pre><code class="language-html">&lt;figure&gt;
+  &lt;img src="..." alt="..."&gt;
+  &lt;figcaption&gt;...&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+
+        <p>広い画面では<code>figcaption</code>が並ぶ図と横に並びますが、<code>figcaption</code>要素を<code>figure</code>要素の最後に置いた場合は並ぶ図と下が揃い、最初に置いた場合は上が揃います。</p>
+
+        <figure>
+          <figcaption>Random Image from <a href="http://placeimg.com/">PlaceIMG</a></figcaption>
+          <a href="#"><img src="http://placeimg.com/480/270/any"></a>
+        </figure>
+
+        <pre><code class="language-html">&lt;figure&gt;
+  &lt;figcaption&gt;...&lt;/figcaption&gt;
+  &lt;img src="..." alt="..."&gt;
+&lt;/figure&gt;
+</code></pre>
+      </section>
+
+      <section id="text-level-semantics">
+        <h1>語・句・文単位での意味付け</h1>
+
+        <p>段落内では様々な意味づけを行うマークアップを使用しています。主に使うものは<a href="#">ハイパーリンク</a>を始め、<em>強調</em>や<strong>より強い強調</strong>であったり、<cite>出典元の明示</cite>や<q>インラインでの引用</q>、<abbr title="World Wide Web">WWW</abbr>等の略語、<code>&lt;code&gt;</code>等のコード断片、<kbd>Enter</kbd>などのキー入力、<mark>単なるマーク</mark>など、あまり逸脱しない形でスタイルしています。</p>
+
+        <p>ただし、ハイパーリンクは段落内でのみ識別を容易にするため下線を表示させています。また、強調においては日本には斜体の文化は無いので太字としています。</p>
+      </section>
+
+      <section id="edits">
+        <h1>編集</h1>
+
+        <p>より良い編集履歴を残すため、インラインで追加した部分は<ins>特に何もせず</ins>、削除した部分は<del>取り消し線を加えています</del>。単なる追記等の場合はそのことを明示するだけに留め、<code>ins</code>でマークアップはしていません。</p>
+      </section>
+
+      <section id="tabular-data">
+        <h1>表</h1>
+
+        <p>図と同じように本文と明確に区別ができるように、背景を少し暗くし枠線を付けるようにしています。</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Proin</th>
+              <th>Nunc</th>
+              <th>Sed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Erat</td>
+              <td>Eget</td>
+              <td>Quis</td>
+            </tr>
+
+            <tr>
+              <td>Moi</td>
+              <td>Donec</td>
+              <td>Ante</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <pre><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;...&lt;/th&gt;
+    &lt;td&gt;...&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+        <p>横に長くはみ出す場合は、横スクロールバーが自動的に表示されます。</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit</th>
+              <th>Nulla interdum nibh a pretium gravida</th>
+              <th>Nullam id justo ultricies lectus aliquam molestie nec non turpis</th>
+              <th>Nunc adipiscing massa non urna tincidunt egestas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Donec sollicitudin purus quis vulputate euismod</td>
+              <td>Sed non ligula eu eros venenatis varius a sit amet risus</td>
+              <td>Mauris a purus varius, aliquet elit quis, blandit nisi</td>
+              <td>Fusce imperdiet justo eget dignissim sodales</td>
+            </tr>
+            <tr>
+              <td>Aliquam non enim sollicitudin, rhoncus sapien ac, luctus nisl</td>
+              <td>Fusce accumsan risus id turpis congue luctus</td>
+              <td>Quisque feugiat neque suscipit nisi dictum pretium</td>
+              <td>Donec id quam nec turpis pharetra viverra.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>特別なマークアップの必要はありません。</p>
+      </section>
+
+      <section id="others">
+        <h1>その他</h1>
+
+        <p>これより後のセクションは、様々な場所で局所的に利用されるウィジェットのスタイルのプレビューとマークアップ例になります。テキストやリンクには特に意味はありません。</p>
+      </section>
+
+      <section id="blog-article-blocks">
+        <h1>ブログ記事</h1>
+
+        <footer>
+          <p>Posted
+            <span class="rlb">on <time datetime="2013-12-08T15:22+09:00" itemprop="datePublished">Dec 8, 2013</time></span>
+            <span class="rlb">under <a rel="tag" href="#"><span itemprop="keywords">Miscellaneous</span></a></span></p>
+        </footer>
+
+        <div class="entry-content" itemprop="articleBody">
+          <p>ブログでは見出しに続けて<code>footer</code>要素が配置され、更新日時とカテゴリをそこで示します。記事を構成するそれぞれの要素には<a href="http://www.w3.org/TR/microdata/">Microdata</a>と<a href="http://microformats.org/">Microformats</a>を利用しており、容易に機械的に解釈できるようにしています。</p>
+        </div>
+
+        <pre><code class="language-html">&lt;article
+  class=&quot;hentry&quot;
+  itemprop=&quot;blogPost&quot;
+  itemscope
+  itemtype=&quot;http://schema.org/BlogPosting&quot;
+  itemref=&quot;author&quot;&gt;
+  &lt;h1
+    class=&quot;entry-title&quot;
+    itemprop=&quot;name&quot;&gt;...&lt;/h1&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;Posted
+      &lt;span class=&quot;rlb&quot;&gt;
+        on
+        &lt;time
+          datetime=&quot;...&quot;
+          class=&quot;published&quot;
+          itemprop=&quot;datePublished&quot;&gt;M d, yyyy&lt;/time&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;rlb&quot;&gt;
+        under
+        &lt;a
+          rel=&quot;tag&quot;
+          href&quot;#&quot;&gt;
+          &lt;span itemprop=&quot;keywords&quot;&gt;...&lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/p&gt;
+  &lt;/footer&gt;
+
+  &lt;div
+    class=&quot;entry-content&quot;
+    itemprop=&quot;articleBody&quot;&gt;...&lt;/div&gt;
+&lt;/article&gt;</code></pre>
+      </section>
+
+      <section id="ads">
+        <h1>広告</h1>
+
+        <p>AdSenseまたはAmazonアソシエイトによる広告は常に最初のプライマリー・セクションの直後に<code>aside</code>要素を使って挿入します。極端に長いページの場合は、コンテンツ部分の最後にも更に一つ追加することがあります。</p>
+
+        <pre><code class="language-html">&lt;aside class=&quot;adsense&quot;&gt;...&lt;/aside&gt;</code></pre>
+      </section>
+
+      <section id="circular-images">
+        <h1>丸い画像</h1>
+
+        <figure>
+          <img src="http://placeimg.com/480/270/any" alt="" class="circular">
+        </figure>
+
+        <pre><code class="language-html">&lt;figure&gt;
+  &lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;circular&quot;&gt;
+&lt;/figure&gt;</code></pre>
+      </section>
+
+      <section id="floatage-images">
+        <h1>浮かんだ画像</h1>
+
+        <figure class="floatage-left">
+          <img src="http://placeimg.com/480/270/any" alt="">
+        </figure>
+
+        <p>Nam sapien lacus, suscipit in convallis at, eleifend non orci. Fusce nunc dolor, dictum in mi ut, tempus rutrum metus. Vivamus porttitor ac diam sit amet vulputate. Vestibulum pellentesque lacus varius ligula scelerisque tincidunt. Quisque aliquam orci sed sem consectetur, eu pharetra nisl tempus. Donec in eros consequat, porta nisi vel, porta urna. Aliquam in nunc venenatis, ultricies ipsum ultricies, aliquet urna. Etiam varius odio ac quam interdum, ac pretium mauris ornare. Sed vitae ligula sed elit suscipit viverra ut vel est. Integer lobortis mi sit amet neque aliquet, eu porttitor magna semper. Nunc ac diam a dui iaculis consequat. Maecenas ac faucibus mauris. Duis eu arcu at felis vulputate lacinia vitae ac lacus. Aenean volutpat risus vitae porttitor posuere.</p>
+
+        <pre><code class="language-html">&lt;figure class=&quot;floatage-left&quot;&gt;
+  &lt;img src=&quot;...&quot; alt=&quot;&quot;&gt;
+&lt;/figure&gt;</code></pre>
+
+        <figure class="floatage-right">
+          <img src="http://placeimg.com/480/270/any" alt="">
+        </figure>
+
+        <p>Ut venenatis consectetur justo ac fringilla. Nullam non eros id turpis euismod fringilla sit amet et dui. Proin tincidunt bibendum luctus. Nulla eu faucibus elit. Cras a consectetur quam, at egestas diam. Fusce placerat iaculis risus vitae gravida. Nulla erat nunc, iaculis sed auctor vel, laoreet non massa. Maecenas nec rutrum est. Suspendisse quis accumsan augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis tempus purus. Pellentesque et turpis est. In convallis, mi quis molestie ullamcorper, est felis facilisis erat, non tincidunt magna turpis ut velit. Nam laoreet, arcu vitae gravida euismod, tellus nibh volutpat metus, nec ornare massa elit venenatis tortor. Praesent dictum dolor quam, interdum accumsan nulla dignissim ornare.</p>
+
+        <pre><code class="language-html">&lt;figure class=&quot;floatage-right&quot;&gt;
+  &lt;img src=&quot;...&quot; alt=&quot;&quot;&gt;
+&lt;/figure&gt;</code></pre>
+      </section>
+
+      <section id="drop-images">
+        <h1>画像の飛び出し</h1>
+
+        <figure class="drop">
+          <img src="http://placeimg.com/480/270/any" alt="">
+        </figure>
+
+        <p>Vestibulum ultricies urna risus. Duis vitae fringilla velit. Etiam vestibulum, tortor nec vehicula mattis, magna ligula scelerisque risus, sed viverra orci ligula nec purus. Vivamus eleifend, magna id fermentum malesuada, orci lorem tincidunt ipsum, ut elementum purus mauris at est. Duis tincidunt metus magna, quis molestie eros venenatis ac. Duis a accumsan nisl, nec egestas magna. Duis eu auctor lacus, rutrum ullamcorper mi. Cras tempor eu sem sit amet dignissim. Phasellus sed sapien nec augue molestie feugiat.</p>
+
+        <pre><code class="language-html">&lt;figure class=&quot;drop&quot;&gt;
+  &lt;img src=&quot;...&quot; alt=&quot;&quot;&gt;
+&lt;/figure&gt;</code></pre>
+      </section>
+
+      <section id="full-width-content">
+        <h1>幅いっぱい</h1>
+
+        <figure class="full-width">
+          <img src="http://placeimg.com/480/270/any" alt="">
+          <figcaption>Random Image from <a href="http://placeimg.com/">PlaceIMG</a></figcaption>
+        </figure>
+
+        <p>Ut at sapien id tortor mattis pharetra in nec felis. In dapibus gravida eleifend. Vestibulum viverra vulputate molestie. Nullam auctor hendrerit rhoncus. Nulla rutrum, arcu eget hendrerit dignissim.</p>
+
+        <pre><code class="language-html">&lt;figure class=&quot;full-width&quot;&gt;
+  &lt;img src=&quot;...&quot; alt=&quot;&quot;&gt;
+  &lt;figcaption&gt;...&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+        <p>配置の都合上、<code>figcaption</code>要素を使う場合は<code>figure</code>要素の最後に記述します。</p>
+      </section>
+
+      <section id="pull-quote-blocks">
+        <h1>抜粋見出し</h1>
+
+        <aside class="pull-quote">
+          <p>Mauris eget diam elementum, sollicitudin nisi nec, malesuada sem.</p>
+        </aside>
+
+        <p>Praesent eu arcu sit amet nisi pulvinar adipiscing. Mauris laoreet lacus ac tempor suscipit. Mauris blandit tempor lacinia. Sed laoreet nibh quis ligula volutpat, sit amet tincidunt metus blandit. Sed pulvinar facilisis mauris sit amet tincidunt. <mark>Mauris eget diam elementum, sollicitudin nisi nec, malesuada sem.</mark> Morbi eget dui gravida, commodo quam hendrerit, viverra augue.</p>
+
+        <p>Nullam non pretium orci. Quisque non enim ut magna tincidunt porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut dapibus lorem nec dolor sagittis consectetur. Morbi cursus, felis quis elementum rhoncus, dui sem mattis ante, eu pulvinar tellus turpis eu neque. Morbi euismod orci vel commodo consectetur. Cras vel molestie dolor.</p>
+
+        <pre><code class="language-html">&lt;aside class=&quot;pull-quote&quot;&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+      </section>
+
+      <section id="seealso-links">
+        <h1>他を参照</h1>
+
+        <p class="seealso">See also: <a href="#">Lorem ipsum</a></p>
+
+        <pre><code class="language-html">&lt;p class=&quot;seealso&quot;&gt;Label: &lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;&lt;/p&gt;</code></pre>
+      </section>
+
+      <section id="sidenote-blocks">
+        <h1>傍注</h1>
+
+        <aside class="sidenote">
+          <p>In vitae pretium risus. Vivamus ac ligula non ligula rhoncus sagittis. Fusce velit sem, congue in vestibulum sed, vestibulum sed nibh.</p>
+        </aside>
+
+        <p>Proin et odio eros. Vivamus gravida pulvinar aliquet. Quisque convallis sodales mauris sed bibendum. Vestibulum eros sem, pharetra eleifend blandit nec, elementum convallis neque. Aenean pulvinar aliquam augue, blandit pulvinar sapien rhoncus ac. Donec velit diam, vulputate ut elementum sit amet, interdum quis est. Vivamus sed justo mi, quis molestie nulla. In hac habitasse platea dictumst. Cras tempus tristique tellus vel imperdiet. Cras a elit eget elit tincidunt hendrerit. Suspendisse potenti. Nunc porttitor ultricies porttitor. Ut eget pharetra dolor.</p>
+
+        <pre><code class="language-html">&lt;aside class=&quot;sidenote&quot;&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+      </section>
+
+      <section class="topic" id="topic-blocks">
+        <a href="#">
+          <h1>話題の記事</h1>
+
+          <footer>
+            <p>Posted on <time datetime="2012-05-28">May 28, 2012</time> under <span class="tag">Dummy</span></p>
+          </footer>
+
+          <p>Duis arcu nulla, blandit eget posuere laoreet, laoreet et elit. Quisque ullamcorper ullamcorper dapibus. Donec interdum, enim nec euismod commodo, felis lectus rhoncus mauris, eu gravida quam arcu dictum ipsum. Cum sociis natoque penatibus et magnis amet.</p>
+        </a>
+
+        <pre><code class="language-html">&lt;section class=&quot;topic&quot;&gt;
+  &lt;a href=&quot;...&quot;&gt;
+    &lt;h1&gt;...&lt;/h1&gt;
+
+    &lt;footer&gt;
+      &lt;p&gt;
+        Posted
+        on &lt;time datetime=&quot;...&quot;&gt;M d, yyyy&lt;/time&gt;
+        under &lt;span class=&quot;tag&quot;&gt;...&lt;/span&gt;
+      &lt;/p&gt;
+    &lt;/footer&gt;
+
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/a&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+
+      <section class="post-list" id="post-list-blocks">
+        <h1>記事リスト</h1>
+
+        <ol>
+          <li><time datetime="2012-02-25">Feb 25, 2012</time>
+            <a href="#">Curabitur pellentesque dolor eu fringilla eleifend</a></li>
+          <li><time datetime="2011-09-12">Sep 12, 2011</time>
+            <a href="#">Aliquam erat volutpat. In nulla leo, porta vel ornare ac, aliquet eu neque malesuada fames ac ante</a></li>
+          <li><time datetime="2011-04-07">Apr 7, 2011</time>
+            <a href="#">Nullam in ligula luctus, blandit risus eget, mattis enim</a></li>
+          <li><time datetime="2011-11-17">Nov 17, 2010</time>
+            <a href="#">Nulla sit amet diam non leo commodo imperdiet sed id neque</a></li>
+          <li><time datetime="2011-05-27">May 27, 2011</time>
+            <a href="#">Duis tincidunt justo id fringilla commodo</a></li>
+        </ol>
+
+        <pre><code class="language-html">&lt;section class=&quot;post-list&quot;&gt;
+  &lt;ol&gt;
+    &lt;li&gt;&lt;time datetime=&quot;...&quot;&gt;M d, yyyy&lt;/time&gt;
+      &lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+
+      <section id="seemore-links">
+        <h1>もっと読む</h1>
+
+        <nav class="seemore">
+          <p><a href="#">See more</a></p>
+        </nav>
+
+        <pre><code class="language-html">&lt;nav class=&quot;seemore&quot;&gt;
+  &lt;p&gt;&lt;a href=&quot;...&quot;&gt;See more&lt;/a&gt;&lt;/p&gt;
+&lt;/nav&gt;</code></pre>
+      </section>
+
+      <section id="flat-dl-blocks">
+        <h1>フラットな関連リスト</h1>
+
+        <dl class="flat-dl">
+          <dt><time datetime="2006">2006年</time></dt>
+          <dd><time datetime="2006-01">1月</time></dd>
+          <dd><time datetime="2006-02">2月</time></dd>
+          <dd><time datetime="2006-03">3月</time></dd>
+          <dd><time datetime="2006-04">4月</time></dd>
+          <dd><time datetime="2006-05">5月</time></dd>
+          <dd><time datetime="2006-06">6月</time></dd>
+          <dd><a href="#"><time datetime="2006-07">7月</time></a></dd>
+          <dd><a href="#"><time datetime="2006-08">8月</time></a></dd>
+          <dd><a href="#"><time datetime="2006-09">9月</time></a></dd>
+          <dd><a href="#"><time datetime="2006-10">10月</time></a></dd>
+          <dd><time datetime="2006-11">11月</time></dd>
+          <dd><time datetime="2006-12">12月</time></dd>
+
+          <dt><time datetime="2005">2005年</time></dt>
+          <dd><a href="#"><time datetime="2005-01">1月</time></a></dd>
+          <dd><a href="#"><time datetime="2005-02">2月</time></a></dd>
+          <dd><a href="#"><time datetime="2005-03">3月</time></a></dd>
+          <dd><a href="#"><time datetime="2005-04">4月</time></a></dd>
+          <dd><a href="#"><time datetime="2005-05">5月</time></a></dd>
+          <dd><a href="#"><time datetime="2005-06">6月</time></a></dd>
+          <dd><a href="#"><time datetime="2005-07">7月</time></a></dd>
+          <dd><a href="#"><time datetime="2005-08">8月</time></a></dd>
+          <dd><a href="#"><time datetime="2005-09">9月</time></a></dd>
+          <dd><a href="#"><time datetime="2005-10">10月</time></a></dd>
+          <dd><time datetime="2005-11">11月</time></dd>
+          <dd><time datetime="2005-12">12月</time></dd>
+
+          <dt><time datetime="2004">2004年</time></dt>
+          <dd><a href="#"><time datetime="2004-01">1月</time></a></dd>
+          <dd><a href="#"><time datetime="2004-02">2月</time></a></dd>
+          <dd><a href="#"><time datetime="2004-03">3月</time></a></dd>
+          <dd><a href="#"><time datetime="2004-04">4月</time></a></dd>
+          <dd><a href="#"><time datetime="2004-05">5月</time></a></dd>
+          <dd><a href="#"><time datetime="2004-06">6月</time></a></dd>
+          <dd><a href="#"><time datetime="2004-07">7月</time></a></dd>
+          <dd><a href="#"><time datetime="2004-08">8月</time></a></dd>
+          <dd><a href="#"><time datetime="2004-09">9月</time></a></dd>
+          <dd><a href="#"><time datetime="2004-10">10月</time></a></dd>
+          <dd><a href="#"><time datetime="2004-11">11月</time></a></dd>
+          <dd><a href="#"><time datetime="2004-12">12月</time></a></dd>
+        </dl>
+
+        <pre><code class="language-html">&lt;dl class=&quot;flat-dl&quot;&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+      </section>
+
+      <section id="flat-ul-blocks">
+        <h1>フラットな序列なしリスト</h1>
+
+        <ul class="flat-ul">
+          <li><a href="#">Lorem</a></li>
+          <li><a href="#">Aliquam</a></li>
+          <li><a href="#">Proin</a></li>
+          <li><a href="#">Donec</a></li>
+          <li><a href="#">Fusce</a></li>
+          <li><a href="#">Phasellus</a></li>
+        </ul>
+
+        <pre><code class="language-html">&lt;ul class=&quot;flat-ul&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      </section>
+
+      <nav class="read-older" id="read-older-links">
+        <a rel="prev" href="#">
+          <p>Suspendisse commodo odio mi, at ultrices risus consectetur at, etiam at enim non magna mollis gravida at ut arcu, aenean tempus sem dolor, non consectetur nisi vehicula nec</p>
+        </a>
+      </nav>
+
+      <nav class="paging" id="paging-links">
+        <ul>
+          <li><a rel="prev" href="#">&#171; Older</a></li>
+          <li><a rel="next" href="#">Newer &#187;</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <aside class="searchbox" role="search">
+      <!-- Google Custom Search Engine -->
+      <form action="http://www.google.com/cse" id="cse-search-box">
+        <input type="hidden" name="cx" value="partner-pub-8712792805045949:3747342316">
+        <input type="hidden" name="ie" value="UTF-8">
+        <input type="search" name="q" size="32">
+        <input type="submit" name="sa" value="Search">
+      </form>
+    </aside>
+
+    <footer role="contentinfo">
+      <address class="byline">
+        <p class="vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">Made by <a rel="author" href="http://hail2u.net/about/" class="url" itemprop="url"><span class="fn" itemprop="name">Kyo Nagashima</span></a>
+          under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a>.</p>
+      </address>
+
+      <section class="elsewhere">
+        <ul>
+          <li><a href="https://twitter.com/hail2u_">Twitter</a></li>
+          <li><a href="https://github.com/hail2u">GitHub</a></li>
+          <li><a href="https://delicious.com/hail2u">Delicious</a></li>
+        </ul>
+      </section>
+
+      <section class="footlinks">
+        <ul>
+          <li><a rel="alternate" href="http://hail2u.net/feed">Home RSS</a></li>
+          <li><a href="http://hail2u.net/blog/feed">Weblog RSS</a></li>
+        </ul>
+      </section>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="../../scripts/about/style-guide.js"></script>
+  </body>
+</html>
