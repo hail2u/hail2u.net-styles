@@ -8,7 +8,7 @@ files for [hail2u.net](http://hail2u.net/).
 STYLE GUIDE
 -----------
 
-[Style Guide](http://hail2u.net/about/style-guide.html) is available in Japanese.
+[Style Guide](http://hail2u.net/about/style-guide/) is available in Japanese.
 
 
 LICENSE
