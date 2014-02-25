@@ -5,7 +5,8 @@
 .searchbox form {
   margin-top: $margin;
   position: relative;
-  max-width: $width_google-cse;
+  width: $width_google-cse;
+  max-width: 100%;
 
   input[type="text"],
   input[type="search"] {

@@ -84,6 +84,6 @@ $width_paging__icon: ($height_paging__icon / 384 * 256);
 
 // Google Custom Search Engine
 $padding_google-cse: 0.25em;
-$width_google-cse: ($width-content / 2);
+$width_google-cse: ($width-content * 2 / 3);
 $height_google-cse: 2em;
 $width-border_google-cse: 1px;
