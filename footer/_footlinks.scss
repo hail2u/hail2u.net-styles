@@ -9,12 +9,16 @@
     line-height: ($line-height / $ratio_footer-footlinks);
     font-size: em($ratio_footer-footlinks);
 
-    &::before {
+    &::after {
       content: "\00a0\0020\2219\0020\00a0"; // Bullet Operator
     }
 
-    &:first-child::before {
-      content: "Subscribe to:\0020\00a0";
+    &:first-child::after {
+      content: "\00a0\0020\2026\0020\00a0"; // Horizontal Ellipsis
+    }
+
+    &:last-child::after {
+      content: "";
     }
   }
 }
