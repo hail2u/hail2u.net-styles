@@ -58,13 +58,7 @@ $color-bg_mark: rgb(255, 221, 0);
 
 $color-bg_img: rgb(255, 255, 255);
 
-$color-border_table: $color-tint--darkest;
-
-$color-fg_th: inherit;
-$color-bg_th: $color-tint--light;
-
-$color-fg_td: inherit;
-$color-bg_td: $color-tint--lightest;
+$color-border_table: $color-tint--dark;
 
 // Header
 $color-fg_header-site-navigation: inherit;
