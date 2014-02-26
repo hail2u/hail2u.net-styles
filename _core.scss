@@ -180,14 +180,14 @@ figcaption {
   }
 
   @media (min-width: $breakpoint-full) {
-    padding-top: ($width-border_img - $width-border_figcaption);
+    padding-top: $width-border_figcaption;
     border: 0 solid $color-border_figcaption;
     border-top-width: $width-border_figcaption;
     top: 0;
 
     &:last-child {
       padding-top: 0;
-      padding-bottom: ($width-border_img - $width-border_figcaption);
+      padding-bottom: $width-border_figcaption;
       border-top-width: 0;
       border-bottom-width: $width-border_figcaption;
       top: auto;
@@ -300,7 +300,6 @@ img {
   height: auto;
 
   figure & {
-    border: $width-border_img solid $color-bg_img;
     vertical-align: bottom;
     background-color: $color-bg_img;
   }
