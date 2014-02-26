@@ -56,7 +56,7 @@ $breakpoint-content: ($width-content--with-gap + $width_scrollbar);
 $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes_html, length($font-sizes_html)) / 16px));
 
 // Pull Quote
-$line-height_pull-quote: ($line-height * 1.5);
+$line-height_pull-quote: 1.3;
 
 // Seealso
 $width_seealso__icon: 1em;
