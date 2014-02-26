@@ -5,17 +5,11 @@
   p {
     @extend %line-label;
 
-    margin-top: ($margin_heading--primary + em($line-height) / $ratio_footer-elsewhere);
+    margin-top: $margin_heading;
   }
 
   mark {
     color: inherit;
     background-color: transparent;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    p {
-      margin-top: $margin_heading--primary;
-    }
   }
 }

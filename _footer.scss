@@ -2,5 +2,6 @@
 body > footer {
   @extend %centering-block;
 
-  padding-bottom: $margin_heading--primary;
+  padding-top: ($margin_heading--primary + em($line-height));
+  padding-bottom: $margin;
 }
