@@ -324,7 +324,6 @@ table {
   }
 }
 
-th,
 td {
   padding-top: $padding_td;
   padding-right: ($padding_td * 2);
@@ -335,6 +334,10 @@ td {
 }
 
 th {
-  border-bottom-width: ($width-border_table * 2);
-  text-align: left;
+  @extend td;
+
+  thead & {
+    border-bottom-width: ($width-border_table * 2);
+    text-align: left;
+  }
 }
