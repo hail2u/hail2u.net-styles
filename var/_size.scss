@@ -41,9 +41,10 @@ $width-border_strong: 0.063em;
 
 $letter-spacing_abbr: 0.063em;
 
-$width-border_table: 1px;
-
+$width-border_td: 1px;
 $padding_td: 0.5em;
+
+$width-border_th--of-thead: ($width-border_td * 2);
 
 // Header
 $width_header-logo: ($width-suppli / pow($ratio-golden, 3));
