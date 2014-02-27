@@ -319,22 +319,22 @@ table {
     margin-top: $margin--mini;
   }
 
-  th,
-  td {
-    padding-top: $padding_td;
-    padding-right: ($padding_td * 2);
-    padding-bottom: $padding_td;
-    border-bottom: $width-border_table solid $color-border_table;
-    vertical-align: top;
-    white-space: nowrap;
-  }
-
-  th {
-    border-bottom-width: ($width-border_table * 2);
-    text-align: left;
-  }
-
   @media not screen {
     display: table;
   }
+}
+
+th,
+td {
+  padding-top: $padding_td;
+  padding-right: ($padding_td * 2);
+  padding-bottom: $padding_td;
+  border-bottom: $width-border_table solid $color-border_table;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+th {
+  border-bottom-width: ($width-border_table * 2);
+  text-align: left;
 }
