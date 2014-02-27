@@ -68,6 +68,7 @@ $color-fg_header-site-navigation--hover: $color-accent;
 // Main
 $color-fg_main-article-footer: $color-shade--lightest;
 $color-fg_main-article-footer__time: $color-dark;
+$color-fg_main-article-footer__tag: $color-dark;
 
 // Pull Quote
 $color-fg_pull-quote: $color-shade--light;
@@ -80,7 +81,6 @@ $color-fg_seealso__icon: $color-tint--darkest;
 $color-fg_sidenote: $color-shade--lightest;
 
 // Topic
-$color-fg_topic__tag: $color-dark;
 $color-fg_topic__more: $color-fg_link;
 $color-fg_topic__title--hover: $color-fg_link;
 $color-fg_topic__more--hover: $color-fg_link--hover;

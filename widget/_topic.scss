@@ -2,10 +2,6 @@
 .topic > a {
   color: inherit;
 
-  .tag {
-    color: $color-fg_topic__tag;
-  }
-
   > p::after {
     margin-left: $margin_topic__more;
     content: "More\0020\279f"; // Dashed Triangle-Headed Rightwards Arrow

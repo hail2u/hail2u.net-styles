@@ -86,7 +86,7 @@
         <h1>Style Guide</h1>
 
         <footer>
-          <p>Posted on <time datetime="2011-12-07T15:22+09:00" itemprop="datePublished">Dec 7, 2011</time> under <a rel="tag" href="#"><span itemprop="keywords">Guide</span></a></p>
+          <p>Posted on <time datetime="2011-12-07T15:22+09:00" itemprop="datePublished">Dec 7, 2011</time> under <span class="tag" itemprop="keywords">Guide</span></p>
         </footer>
 
         <div itemprop="articleBody">
@@ -637,9 +637,7 @@ console.log(fib(10));
         <h1>ブログ記事</h1>
 
         <footer>
-          <p>Posted
-            <span class="rlb">on <time datetime="2013-12-08T15:22+09:00" itemprop="datePublished">Dec 8, 2013</time></span>
-            <span class="rlb">under <a rel="tag" href="#"><span itemprop="keywords">Miscellaneous</span></a></span></p>
+          <p>Posted on <time datetime="2013-12-08T15:22+09:00" itemprop="datePublished">Dec 8, 2013</time> under <span class="tag" itemprop="keywords">Miscellaneous</span></p>
         </footer>
 
         <div class="entry-content" itemprop="articleBody">
@@ -658,21 +656,15 @@ console.log(fib(10));
 
   &lt;footer&gt;
     &lt;p&gt;Posted
-      &lt;span class=&quot;rlb&quot;&gt;
-        on
-        &lt;time
-          datetime=&quot;...&quot;
-          class=&quot;published&quot;
-          itemprop=&quot;datePublished&quot;&gt;M d, yyyy&lt;/time&gt;
-      &lt;/span&gt;
-      &lt;span class=&quot;rlb&quot;&gt;
-        under
-        &lt;a
-          rel=&quot;tag&quot;
-          href&quot;#&quot;&gt;
-          &lt;span itemprop=&quot;keywords&quot;&gt;...&lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/span&gt;
+      on
+      &lt;time
+        datetime=&quot;...&quot;
+        class=&quot;published&quot;
+        itemprop=&quot;datePublished&quot;&gt;M d, yyyy&lt;/time&gt;
+      under
+      &lt;span
+        class=&quot;tag&quot;
+        itemprop=&quot;keywords&quot;&gt;...&lt;/span&gt;
     &lt;/p&gt;
   &lt;/footer&gt;
 
