@@ -231,7 +231,7 @@ em {
 
   color: $color-fg_em;
   font-style: normal;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 strong {
@@ -239,6 +239,7 @@ strong {
 
   border-bottom: $width-border_strong dashed;
   color: $color-fg_strong;
+  font-weight: bolder;
 }
 
 cite {
