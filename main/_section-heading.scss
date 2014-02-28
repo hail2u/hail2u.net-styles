@@ -14,8 +14,7 @@ main > section h1 {
   }
 }
 
-.permalink main > article h1,
-.permalink main > section h1 {
+.permalink main > article h1 {
   margin-top: (($margin-heading + em($line-height)) / $ratio_main-section-heading--permalink);
   margin-bottom: ($margin-heading / $ratio_main-section-heading--permalink);
   font-size: em($ratio_main-section-heading--permalink);

@@ -22,8 +22,7 @@ main > section h1 + footer {
   }
 }
 
-.permalink main > article h1 + footer,
-.permalink main > section h1 + footer {
+.permalink main > article h1 + footer {
   @media (min-width: $breakpoint-full) {
     p {
       margin-top: 0;
