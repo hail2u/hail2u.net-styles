@@ -67,18 +67,17 @@
   pre {
     margin: $margin 0 0 0;
     padding: 0;
-    border: 0;
   }
 
   blockquote {
     margin: 0 $indent;
     border-left: 0;
     padding-left: 0;
+  }
 
-    + figcaption:last-child {
-      border-left: 0;
-      padding-left: $indent;
-    }
+  blockquote + figcaption:last-child {
+    border-left: 0;
+    padding-left: $indent;
   }
 
   a {
@@ -89,27 +88,13 @@
     }
   }
 
-  figure,
-  body > header,
-  main section h1,
-  main article h1,
-  main section h1 + footer,
-  main article h1 + footer,
-  .byline {
-    text-align: left;
-  }
-
-  figure img {
-    border: 0;
-  }
-
   table {
     table-layout: auto;
+  }
 
-    th,
-    td {
-      white-space: normal;
-    }
+  th,
+  td {
+    white-space: normal;
   }
 
   body > header,
