@@ -20,3 +20,11 @@ main {
     margin-top: (- $margin_heading--primary + $margin_heading);
   }
 }
+
+.permalink main {
+  margin-top: 0;
+
+  @media (min-width: $breakpoint-full) {
+    margin-top: 0;
+  }
+}

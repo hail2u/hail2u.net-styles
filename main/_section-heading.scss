@@ -25,6 +25,7 @@ main > section h1 {
   }
 
   @media (min-width: $breakpoint-full) {
+    margin-top: ($margin-heading / $ratio_main-section-heading--permalink);
     margin-left: (- ($width-suppli + $width-gutter) / $ratio_main-section-heading--permalink);
   }
 }
