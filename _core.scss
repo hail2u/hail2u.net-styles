@@ -47,14 +47,14 @@ h1 {
   @include heading;
 
   margin: ($margin_heading--primary / $ratio_heading) 0 0 0;
-  font-size: em($ratio_heading);
+  font-size: em($ratio_heading--primary);
 }
 
 h2 {
   @include heading;
 
-  margin: ($margin_heading / $ratio_sub-heading) 0 0 0;
-  font-size: em($ratio_sub-heading);
+  margin: ($margin_heading / $ratio_heading) 0 0 0;
+  font-size: em($ratio_heading);
 }
 
 // Grouping Content
