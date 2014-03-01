@@ -87,10 +87,10 @@ hr {
 pre {
   @extend %margin;
 
-  margin-top: ($margin / $ratio-code);
-  margin-right: (- $width-gap / $ratio-code);
-  margin-left: (- $width-gap / $ratio-code);
-  padding: ($width-gap / $ratio-code);
+  margin-top: ($margin / $ratio_code);
+  margin-right: (- $width-gap / $ratio_code);
+  margin-left: (- $width-gap / $ratio_code);
+  padding: ($width-gap / $ratio_code);
   clear: both;
   line-height: $line-height_code;
   color: $color-fg_pre;
@@ -101,7 +101,7 @@ pre {
   overflow-wrap: break-word;
 
   h2 + & {
-    margin-top: ($margin--mini / $ratio-code);
+    margin-top: ($margin--mini / $ratio_code);
   }
 }
 

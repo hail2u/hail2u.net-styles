@@ -15,8 +15,8 @@ main > section h1 {
 }
 
 .permalink main > article h1 {
-  margin-top: (($margin-heading + em($line-height)) / $ratio_section-heading--permalink);
-  margin-bottom: ($margin-heading / $ratio_section-heading--permalink);
+  margin-top: (($margin_heading + em($line-height)) / $ratio_section-heading--permalink);
+  margin-bottom: ($margin_heading / $ratio_section-heading--permalink);
   font-size: em($ratio_section-heading--permalink);
 
   &::after {
@@ -24,7 +24,7 @@ main > section h1 {
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-top: ($margin-heading / $ratio_section-heading--permalink);
+    margin-top: ($margin_heading / $ratio_section-heading--permalink);
     margin-left: (- ($width-suppli + $width-gutter) / $ratio_section-heading--permalink);
   }
 }
