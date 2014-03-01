@@ -61,14 +61,14 @@ $color-bg_img: rgb(255, 255, 255);
 $color-border_td: $color-tint--dark;
 
 // Header
-$color-fg_header-site-navigation: inherit;
-$color-fg_header-site-navigation__mark: $color-accent--light;
-$color-fg_header-site-navigation--hover: $color-accent;
+$color-fg_site-navigation: inherit;
+$color-fg_site-navigation__mark: $color-accent--light;
+$color-fg_site-navigation--hover: $color-accent;
 
 // Main
-$color-fg_main-article-footer: $color-shade--lightest;
-$color-fg_main-article-footer__time: $color-dark;
-$color-fg_main-article-footer__tag: $color-dark;
+$color-fg_article-footer: $color-shade--lightest;
+$color-fg_article-footer__time: $color-dark;
+$color-fg_article-footer__tag: $color-dark;
 
 // Pull Quote
 $color-fg_pull-quote: $color-shade--light;

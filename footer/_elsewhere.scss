@@ -6,8 +6,8 @@
 
   li {
     display: table-cell;
-    line-height: ($line-height / $ratio_footer-elsewhere);
-    font-size: em($ratio_footer-elsewhere);
+    line-height: ($line-height / $ratio_elsewhere);
+    font-size: em($ratio_elsewhere);
 
     &::before {
       content: "\00a0\2219\00a0"; // Bullet Operator

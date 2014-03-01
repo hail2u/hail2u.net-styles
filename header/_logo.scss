@@ -3,8 +3,8 @@ body > header > a:first-child,
 body > header > mark:first-child {
   margin-top: $margin_heading;
   display: block;
-  width: $width_header-logo;
-  height: $height_header-logo;
+  width: $width_logo;
+  height: $height_logo;
   background-color: transparent;
 
   @media (min-width: $breakpoint-full) {
