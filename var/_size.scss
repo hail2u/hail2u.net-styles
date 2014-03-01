@@ -29,6 +29,11 @@ $width-full: (- $width-gap + $width-full--with-gap - $width-gap);
 // Root
 $font-sizes_html: (18px, 21px, 24px);
 
+// Breakpoint
+$width_scrollbar: 1.5em;
+$breakpoint-content: ($width-content--with-gap + $width_scrollbar);
+$breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes_html, length($font-sizes_html)) / 16px));
+
 // Core
 $height_hr: ($margin + em($line-height) + $margin);
 $width_hr: ($height_hr * 3);
@@ -52,11 +57,6 @@ $height_logo: $width_logo;
 
 $height_site-navigation: $height_logo;
 $width_site-navigation__gutter: 2em;
-
-// Breakpoint
-$width_scrollbar: 1.5em;
-$breakpoint-content: ($width-content--with-gap + $width_scrollbar);
-$breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes_html, length($font-sizes_html)) / 16px));
 
 // Pull Quote
 $line-height_pull-quote: 1.3;
