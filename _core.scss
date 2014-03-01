@@ -87,19 +87,21 @@ hr {
 pre {
   @extend %margin;
 
-  margin-right: (- $width-gap);
-  margin-left: (- $width-gap);
-  padding: $width-gap;
+  margin-top: ($margin / $ratio-code);
+  margin-right: (- $width-gap / $ratio-code);
+  margin-left: (- $width-gap / $ratio-code);
+  padding: ($width-gap / $ratio-code);
   clear: both;
   line-height: $line-height_code;
   color: $color-fg_pre;
   background-color: $color-bg_pre;
   font-family: $font-stack_code;
+  font-size: em($ratio_code);
   word-wrap: break-word;
   overflow-wrap: break-word;
 
   h2 + & {
-    margin-top: $margin--mini;
+    margin-top: ($margin--mini / $ratio-code);
   }
 }
 
@@ -273,6 +275,11 @@ kbd {
   @extend %auto-breaking;
 
   font-family: $font-stack_code;
+  font-size: em($ratio_code);
+
+  pre & {
+    font-size: 1em;
+  }
 }
 
 mark {
