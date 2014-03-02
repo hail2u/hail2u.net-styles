@@ -387,7 +387,19 @@
 
         <h2>整形済みテキスト</h2>
 
-        <p>主にコードの表示やコマンドラインでの操作例に使用しています。主に英文になることから行間も<code>1.25</code>に落としてあります。視認性のために、背景画像の変更と対応している場合は構文強調を行っています。構文強調には<a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a>を使用しています。</p>
+        <p>主にコードの表示やコマンドラインでの操作例に使用しています。主に英文になることから行間も<code>1.25</code>に落としてあります。</p>
+
+        <pre>$ mkdir example
+$ cd example/
+$ git init
+$ touch README.md
+$ git add README.md
+$ git commit -m 'Initial commit'
+$ git remote add origin https://github.com/hail2u/example.git
+$ git push -u origin master
+</pre>
+
+        <p>視認性のために、対応している場合は構文強調を行っています。構文強調には<a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a>を使用しています。</p>
 
         <pre><code class="language-javascript">/**
  * nth element in the fibonacci series.
@@ -411,7 +423,7 @@ function fib (n) {
 console.log(fib(10));
 </code></pre>
 
-        <p>構文強調を行う場合は以下のように<code>code</code>要素のクラス名で構文強調を行うこととその言語を明示しています。この仕組みは、<a href="http://www.w3.org/TR/2012/WD-html5-20120329/the-code-element.html">2012-03-29のHTML5仕様の<code>code</code>の項</a>を参考にしています。</p>
+        <p>構文強調を行う場合は以下のように<code>code</code>要素のクラス名で構文強調を行うこととその言語を明示しています。この仕組みは、<a href="http://www.w3.org/TR/2014/CR-html5-20140204/text-level-semantics.html#the-code-element">HTML5仕様の<code>code</code>の項</a>を参考にしています。</p>
 
         <pre><code class="language-html">&lt;pre&gt;&lt;code <mark>class=&quot;language-javascript&quot;</mark>&gt;...&lt;/code&gt;&lt;/pre&gt;
 </code></pre>
