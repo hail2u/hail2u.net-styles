@@ -1,11 +1,15 @@
 // Logo
 body > header > a:first-child,
 body > header > mark:first-child {
-  margin-top: $margin_heading;
+  margin-top: $margin;
   display: block;
   width: $width_logo;
   height: $height_logo;
   background-color: transparent;
+
+  @media (min-width: $breakpoint-content) {
+    margin-top: $margin_heading;
+  }
 
   @media (min-width: $breakpoint-full) {
     margin-left: (- ($width-suppli + $width-gutter));
