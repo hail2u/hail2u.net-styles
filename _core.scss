@@ -88,13 +88,8 @@ pre {
   @extend %margin;
 
   margin-top: ($margin / $ratio_code);
-  margin-right: (- $width-gap / $ratio_code);
-  margin-left: (- $width-gap / $ratio_code);
-  padding: ($width-gap / $ratio_code);
   clear: both;
   line-height: $line-height_code;
-  color: $color-fg_pre;
-  background-color: $color-bg_pre;
   font-family: $font-stack_code;
   font-size: em($ratio_code);
   word-wrap: break-word;
