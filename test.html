@@ -85,7 +85,7 @@
         <h1>Style Guide</h1>
 
         <footer>
-          <p>Posted on <time datetime="2011-12-07T15:22+09:00" itemprop="datePublished">Dec 7, 2011</time> under <span class="tag" itemprop="keywords">Guide</span></p>
+          <p>Posted on <time datetime="2011-12-07T15:22+09:00" itemprop="datePublished">Dec 7, 2011</time> under <a href="#" class="tag"><span itemprop="keywords">Guide</span></a></p>
         </footer>
 
         <div itemprop="articleBody">
@@ -658,7 +658,7 @@ console.log(fib(10));
         <h1>ブログ記事</h1>
 
         <footer>
-          <p>Posted on <time datetime="2013-12-08T15:22+09:00" itemprop="datePublished">Dec 8, 2013</time> under <span class="tag" itemprop="keywords">Miscellaneous</span></p>
+          <p>Posted on <time datetime="2013-12-08T15:22+09:00" itemprop="datePublished">Dec 8, 2013</time> under <a href="#" class="tag"><span itemprop="keywords">Miscellaneous</span></a></p>
         </footer>
 
         <div class="entry-content" itemprop="articleBody">
@@ -683,9 +683,12 @@ console.log(fib(10));
         class=&quot;published&quot;
         itemprop=&quot;datePublished&quot;&gt;M d, yyyy&lt;/time&gt;
       under
-      &lt;span
-        class=&quot;tag&quot;
-        itemprop=&quot;keywords&quot;&gt;...&lt;/span&gt;
+      &lt;a
+        href=&quot;...&quot;
+        class=&quot;tag&quot;gt;
+        &lt;span
+          itemprop=&quot;keywords&quot;&gt;...&lt;/span&gt;
+      &lt;/a&gt;
     &lt;/p&gt;
   &lt;/footer&gt;
 
