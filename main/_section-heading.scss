@@ -12,7 +12,6 @@ main > section h1 {
 
 .permalink main > article h1 {
   margin-top: ($margin_heading + rem($line-height));
-  margin-bottom: $margin_heading;
   font-size: rem($ratio_section-heading--permalink);
 
   &::after {
@@ -21,6 +20,7 @@ main > section h1 {
 
   @media (min-width: $breakpoint-full) {
     margin-top: $margin_heading;
+    margin-bottom: $margin_heading;
     margin-left: (- ($width-suppli + $width-gutter));
   }
 }
