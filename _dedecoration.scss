@@ -55,6 +55,12 @@
   }
 
   // Design Change
+  body {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $width-content;
+  }
+
   hr {
     margin-top: ($margin * 2);
     margin-bottom: ($margin * 2);
