@@ -4,8 +4,6 @@
 
   p {
     @extend %line-label;
-
-    margin-top: ($margin + rem($line-height));
   }
 
   mark {
