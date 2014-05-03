@@ -212,6 +212,10 @@ a {
     color: $color-fg_link--hover;
   }
 
+  &:visited {
+    color: $color-fg_link--visited;
+  }
+
   h1 &,
   h2 & {
     color: inherit;

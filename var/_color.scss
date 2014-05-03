@@ -45,6 +45,7 @@ $color-border_figcaption: $color-tint--light;
 
 $color-fg_link: $color-accent;
 $color-fg_link--hover: $color-accent--darkest;
+$color-fg_link--visited: grayscale($color-fg_link);
 
 $color-fg_em: $color-shade--darkest;
 
