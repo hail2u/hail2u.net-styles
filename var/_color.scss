@@ -45,7 +45,6 @@ $color-border_figcaption: $color-tint--light;
 
 $color-fg_link: $color-accent;
 $color-fg_link--hover: $color-accent--darkest;
-$color-fg_link--visited: grayscale($color-fg_link);
 
 $color-fg_em: $color-shade--darkest;
 
@@ -64,6 +63,7 @@ $color-fg_site-navigation__mark: $color-accent--light;
 $color-fg_site-navigation--hover: $color-accent;
 
 // Main
+$color-fg_main-link--visited: grayscale($color-fg_link);
 $color-fg_article-footer: $color-shade--lightest;
 $color-fg_article-footer__time: $color-dark;
 $color-fg_article-footer__tag: $color-dark;

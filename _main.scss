@@ -16,6 +16,10 @@ main {
     text-decoration: underline;
   }
 
+  a:visited {
+    color: $color-fg_main-link--visited;
+  }
+
   @media (min-width: $breakpoint-full) {
     margin-top: (- $margin_heading--primary + $margin_heading);
   }
