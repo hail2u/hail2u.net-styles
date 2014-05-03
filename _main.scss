@@ -10,19 +10,10 @@ main {
   }
 
   article > p a,
-  article > ul a,
-  article > ol a,
   section > p a,
-  section > ul a,
-  section > ol a,
-  div[itemprop="articleBody"] > p a,
-  div[itemprop="articleBody"] > ul a,
-  div[itemprop="articleBody"] > ol a {
+  aside > p a,
+  div[itemprop="articleBody"] > p a {
     text-decoration: underline;
-
-    &:visited {
-      color: $color-fg_main-link--visited;
-    }
   }
 
   @media (min-width: $breakpoint-full) {
