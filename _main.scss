@@ -9,10 +9,7 @@ main {
     position: relative;
   }
 
-  article > p a,
-  section > p a,
-  aside > p a,
-  div[itemprop="articleBody"] > p a {
+  a {
     text-decoration: underline;
 
     &:visited {
