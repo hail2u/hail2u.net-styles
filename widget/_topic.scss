@@ -1,6 +1,7 @@
 // Topic
 .topic > a {
   color: inherit;
+  text-decoration: none;
 
   > p::after {
     margin-left: $margin_topic__more;

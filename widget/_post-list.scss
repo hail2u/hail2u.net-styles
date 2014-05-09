@@ -16,6 +16,10 @@
     color: $color-fg_post-list__time;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   @media (min-width: $breakpoint-content) {
     li {
       margin-top: $margin--mini;
