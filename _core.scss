@@ -211,15 +211,6 @@ a {
   &:active {
     color: $color-fg_link--hover;
   }
-
-  h1 &,
-  h2 & {
-    color: inherit;
-
-    &:hover {
-      color: $color-fg_link;
-    }
-  }
 }
 
 em {
