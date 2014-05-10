@@ -20,6 +20,7 @@
     display: block;
     width: $width_paging__icon;
     height: $height_paging__icon;
+    text-decoration: none;
 
     &[rel="prev"]::before {
       background-image: $image_arrow--left;
