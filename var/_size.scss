@@ -20,14 +20,17 @@ $width-gap: ($width-gutter / 2);
 $width-content: 36rem;
 $width-content--with-gap: ($width-gap + $width-content + $width-gap);
 
-$width-suppli--with-gap: ($width-content--with-gap / $ratio-content * $ratio-suppli);
-$width-suppli: (- $width-gap + $width-suppli--with-gap - $width-gap);
+$width-suplli--with-gap: ($width-content--with-gap / $ratio-content * $ratio-suppli);
+$width-suppli: (- $width-gap + $width-suplli--with-gap - $width-gap);
+$width_suppli__sub: ($width-suppli / pow($ratio-golden, 3));
 
-$width-full--with-gap: ($width-suppli--with-gap + $width-content--with-gap);
+$width-full--with-gap: ($width-suplli--with-gap + $width-content--with-gap);
 $width-full: (- $width-gap + $width-full--with-gap - $width-gap);
 
 // Class
-$height_line-label: 0.25rem;
+$width_line-label__deep: $width-suppli__sub;
+$width_line-label__pale: $width-suppli;
+$height_line-label: 1px;
 
 // Root
 $font-sizes_html: (18px, 21px, 24px);
@@ -55,7 +58,7 @@ $padding_td: 0.5rem;
 $width-border_th--of-thead: ($width-border_td * 2);
 
 // Header
-$width_logo: ($width-suppli / pow($ratio-golden, 3));
+$width_logo: $width-suppli__sub;
 $height_logo: $width_logo;
 
 $height_site-navigation: $height_logo;
@@ -83,7 +86,7 @@ $margin_flat-dl__dd: $width-gap;
 
 // Paging
 $margin_paging__icon: $width-gutter;
-$height_paging__icon: $width_logo;
+$height_paging__icon: $width-suppli__sub;
 $width_paging__icon: ($height_paging__icon / 384 * 256);
 
 // Google Custom Search Engine
