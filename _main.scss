@@ -11,10 +11,6 @@ main {
 
   a {
     text-decoration: underline;
-
-    &:visited {
-      color: $color-fg_main-link--visited;
-    }
   }
 
   @media (min-width: $breakpoint-full) {
