@@ -2,10 +2,6 @@
 .flat-ul {
   @extend %clearfix;
 
-  a {
-    text-decoration: none;
-  }
-
   @media (min-width: $breakpoint-content) {
     margin-right: (- $width-gap);
     margin-left: (- $width-gap);

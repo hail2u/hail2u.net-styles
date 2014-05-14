@@ -1,9 +1,10 @@
 // Seemore
 .seemore {
+  @extend %remove-link-underline;
+
   a {
     border-bottom: $width-border_seemore solid;
     font-weight: bold;
-    text-decoration: none;
     text-transform: uppercase;
 
     &::after {

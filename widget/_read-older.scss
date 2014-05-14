@@ -1,5 +1,7 @@
 // Read Older
 .read-older {
+  @extend %remove-link-underline;
+
   p {
     margin-top: $margin_heading;
     overflow: hidden;
@@ -16,9 +18,5 @@
       font-weight: bold;
       text-transform: uppercase;
     }
-  }
-
-  a {
-    text-decoration: none;
   }
 }

@@ -1,11 +1,11 @@
 // Section Heading
 main > article h1,
 main > section h1 {
+  @extend %remove-link-underline;
   @extend %line-label;
 
   a {
     color: inherit;
-    text-decoration: none;
 
     &:hover {
       color: $color-fg_link;

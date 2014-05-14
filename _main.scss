@@ -9,10 +9,6 @@ main {
     position: relative;
   }
 
-  a {
-    text-decoration: underline;
-  }
-
   @media (min-width: $breakpoint-full) {
     margin-top: (- $margin_heading--primary + $margin_heading);
   }

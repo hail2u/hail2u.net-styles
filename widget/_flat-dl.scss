@@ -8,10 +8,6 @@
     white-space: nowrap;
   }
 
-  a {
-    text-decoration: none;
-  }
-
   @media (min-width: $breakpoint-content) {
     dt {
       margin-right: $margin_flat-dl__dt;

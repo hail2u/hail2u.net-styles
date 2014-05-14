@@ -1,5 +1,7 @@
 // Post List
 .post-list ol {
+  @extend %remove-link-underline;
+
   padding-left: 0;
 
   li {
@@ -14,10 +16,6 @@
   time {
     display: block;
     color: $color-fg_post-list__time;
-  }
-
-  a {
-    text-decoration: none;
   }
 
   @media (min-width: $breakpoint-content) {
