@@ -2,11 +2,11 @@
 .topic {
   @extend %remove-link-underline;
 
-  a {
+  > a {
     color: inherit;
   }
 
-  a > p::after {
+  > a > p::after {
     margin-left: $margin_topic__more;
     content: "More\0020\279f"; // Dashed Triangle-Headed Rightwards Arrow
     font-weight: bold;
