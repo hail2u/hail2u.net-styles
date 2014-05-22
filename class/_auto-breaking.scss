@@ -1,9 +1,0 @@
-// Auto Breaking
-%auto-breaking {
-  &::before,
-  &::after {
-    display: inline-block;
-    content: "\0020"; // Space
-    font-size: 0;
-  }
-}

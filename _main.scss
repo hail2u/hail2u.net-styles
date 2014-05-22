@@ -9,6 +9,22 @@ main {
     position: relative;
   }
 
+  em,
+  strong,
+  abbr,
+  code,
+  var,
+  samp,
+  kbd,
+  mark {
+    &::before,
+    &::after {
+      display: inline-block;
+      content: "\0020"; // Space
+      font-size: 0;
+    }
+  }
+
   @media (min-width: $breakpoint-full) {
     margin-top: (- $margin_heading--primary + $margin_heading);
   }

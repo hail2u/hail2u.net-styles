@@ -213,16 +213,12 @@ a {
 }
 
 em {
-  @extend %auto-breaking;
-
   color: $color-fg_em;
   font-style: normal;
   font-weight: bolder;
 }
 
 strong {
-  @extend %auto-breaking;
-
   border-bottom: $width-border_strong dashed;
   color: $color-fg_strong;
   font-weight: bolder;
@@ -245,8 +241,6 @@ q {
 }
 
 abbr {
-  @extend %auto-breaking;
-
   font-size: rem($ratio_abbr);
   letter-spacing: $letter-spacing_abbr;
   cursor: help;
@@ -256,15 +250,11 @@ code,
 var,
 samp,
 kbd {
-  @extend %auto-breaking;
-
   font-family: $font-stack_code;
   font-size: rem($ratio_code);
 }
 
 mark {
-  @extend %auto-breaking;
-
   color: $color-fg_mark;
   background-color: $color-bg_mark;
 }
