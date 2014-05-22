@@ -8,7 +8,6 @@
   width: $width_google-cse;
   max-width: 100%;
 
-  input[type="text"],
   input[type="search"] {
     @include box-sizing(border-box);
 
@@ -43,7 +42,6 @@
     background-size: 100% auto;
   }
 
-  input[type="text"]:focus + input[type="submit"],
   input[type="search"]:focus + input[type="submit"],
   input[type="submit"]:hover {
     background-color: $color-bg_google-cse__button--hover;
