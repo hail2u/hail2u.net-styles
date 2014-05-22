@@ -14,10 +14,12 @@
 
     padding: 0 ($height_google-cse + $padding_google-cse) 0 $padding_google-cse;
     border: $width-border_google-cse solid $color-border_google-cse;
+    border-radius: 0;
     width: 100%;
     height: $height_google-cse;
     color: $color-fg_google-cse;
     background-color: $color-bg_google-cse;
+    -webkit-appearance: none;
 
     &:focus {
       border-color: $color-border_google-cse--focus;
@@ -28,6 +30,7 @@
     @include ir-text-indent; // ir-pseudo-element does not work on `input`
 
     border: 0;
+    border-radius: 0;
     position: absolute;
     top: 0;
     right: 0;
