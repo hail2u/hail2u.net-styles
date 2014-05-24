@@ -28,9 +28,10 @@ $width-full--with-gap: ($width-suplli--with-gap + $width-content--with-gap);
 $width-full: (- $width-gap + $width-full--with-gap - $width-gap);
 
 // Class
-$width_line-label__deep: $width-suppli__sub;
-$width_line-label__pale: $width-suppli;
-$height_line-label: 1px;
+$width_line-label: $width-suppli__sub;
+$width_line-label--hang: $width-suppli;
+$height_line-label: 0.125rem;
+$height_line-label--hang: 1px;
 
 // Root
 $font-sizes_html: (18px, 21px, 24px);

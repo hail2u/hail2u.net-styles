@@ -9,19 +9,19 @@
     height: rem($line-height);
     content: "";
     background-image: linear-gradient(
-      $color-fg_line-label__deep 0,
-      $color-fg_line-label__deep 100%
+      $color-fg_line-label__highlight 0,
+      $color-fg_line-label__highlight 100%
     ),
     linear-gradient(
-      $color-fg_line-label__pale 0,
-      $color-fg_line-label__pale 100%
+      $color-fg_line-label 0,
+      $color-fg_line-label 100%
     );
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: $width_line-label__deep $height_line-label;
+    background-size: $width_line-label $height_line-label;
 
     @media (min-width: $breakpoint-full) {
-      background-size: $width_line-label__deep $height_line-label, $width_line-label__pale $height_line-label;
+      background-size: $width_line-label $height_line-label--hang, $width_line-label--hang $height_line-label--hang;
     }
   }
 }

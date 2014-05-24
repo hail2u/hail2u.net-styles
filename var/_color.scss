@@ -26,8 +26,8 @@ $color-accent-complement--light: rgb(191, 127, 55);
 $color-accent-complement--lightest: rgb(166, 89, 4);
 
 // Class
-$color-fg_line-label__deep: $color-shade--dark;
-$color-fg_line-label__pale: $color-tint--light;
+$color-fg_line-label: $color-tint--light;
+$color-fg_line-label__highlight: $color-shade--dark;
 
 // Core
 $color-fg_body: $color-dark;
