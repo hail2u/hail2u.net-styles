@@ -18,7 +18,7 @@
     );
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: $width_line-label $height_line-label;
+    background-size: 0, $width_line-label $height_line-label;
 
     @media (min-width: $breakpoint-full) {
       background-size: $width_line-label $height_line-label--hang, $width_line-label--hang $height_line-label--hang;
