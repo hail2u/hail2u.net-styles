@@ -28,10 +28,10 @@
 
   a {
     display: inline-block;
-    width: 0.5rem;
+    width: $width_elesewhere__item__first-letter;
 
     &::first-letter {
-      margin-right: 0.5rem;
+      margin-right: $width_elesewhere__item__first-letter;
     }
   }
 
