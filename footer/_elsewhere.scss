@@ -1,14 +1,21 @@
 // Elsewhere
 .elsewhere {
+  position: relative;
+
   ul {
     margin-top: 0;
     padding-left: 0;
+    position: absolute;
+    right: 0;
+    bottom: rem($line-height);
   }
 
   li {
     display: table-cell;
     line-height: rem($line-height);
+    overflow: hidden;
     font-size: rem($ratio_elsewhere);
+    white-space: nowrap;
 
     &::before {
       content: "\00a0\2219\00a0"; // Bullet Operator
@@ -19,13 +26,24 @@
     }
   }
 
-  @media (min-width: $breakpoint-full) {
-    position: relative;
+  a {
+    display: inline-block;
+    width: 0.5rem;
 
+    &::first-letter {
+      margin-right: 0.5rem;
+    }
+  }
+
+  @media (min-width: $breakpoint_elsewhere) {
+    a {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $breakpoint-full) {
     ul {
-      position: absolute;
-      right: 0;
-      bottom: 100%;
+      bottom: 0;
     }
   }
 }
