@@ -31,7 +31,7 @@ $width-full: (- $width-gap + $width-full--with-gap - $width-gap);
 $width_line-label: $width-suppli__sub;
 $width_line-label--hang: $width-suppli;
 $height_line-label: 0.125rem;
-$height_line-label--hang: 1px;
+$height_line-label--hang: 0.063rem;
 
 // Root
 $font-sizes_html: (18px, 21px, 24px);
@@ -55,7 +55,7 @@ $letter-spacing_abbr: 0.063rem;
 
 $padding_img: 1rem;
 
-$width-border_td: 1px;
+$width-border_td: 0.063rem;
 $padding_td: 0.5rem;
 
 $width-border_th--of-thead: ($width-border_td * 2);
@@ -84,7 +84,7 @@ $margin_seealso__icon: ($width_seealso__icon * 0.25);
 
 // Footnote
 $width-border_footnote: 0.5rem;
-$height-border_footnote: 1px;
+$height-border_footnote: 0.063rem;
 
 // Topic
 $margin_topic__more: 0.25rem;
@@ -108,4 +108,4 @@ $width_paging__icon: ($height_paging__icon / 384 * 256);
 $padding_google-cse: 0.25rem;
 $width_google-cse: ($width-content * 2 / 3);
 $height_google-cse: 2rem;
-$width-border_google-cse: 1px;
+$width-border_google-cse: 0.063rem;
