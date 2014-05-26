@@ -20,7 +20,6 @@ body > header nav {
 
   a {
     display: inline-block;
-    height: 100%;
     color: $color-fg_site-navigation;
 
     &:hover,
@@ -31,10 +30,8 @@ body > header nav {
   }
 
   mark {
-    border-bottom: 0.125rem solid;
-    box-sizing: border-box;
-    display: inline-block;
-    height: $height_site-navigation__mark;
+    padding-bottom: $padding_site-navigation__mark;
+    border-bottom: $width-border_site-navigation__mark solid;
     color: $color-fg_site-navigation__mark;
     background-color: transparent;
     font-weight: bold;
