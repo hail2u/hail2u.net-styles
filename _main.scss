@@ -2,7 +2,7 @@
 main {
   @extend %centering-block;
 
-  margin-top: (- $margin_heading--primary + $margin_heading + rem($line-height) + $margin--mini);
+  margin-top: (- $margin_heading--primary + $margin_heading);
 
   > article,
   > section {
@@ -23,17 +23,5 @@ main {
       content: "\0020"; // Space
       font-size: 0;
     }
-  }
-
-  @media (min-width: $breakpoint-full) {
-    margin-top: (- $margin_heading--primary + $margin_heading);
-  }
-}
-
-.permalink main {
-  margin-top: 0;
-
-  @media (min-width: $breakpoint-full) {
-    margin-top: 0;
   }
 }
