@@ -271,13 +271,15 @@ del {
 // Embedded Content
 @import "./bower_components/hail2u-scss-partials/vendor-extension";
 
-img {
+img,
+video {
   @include box-sizing(border-box);
 
   max-width: 100%;
   height: auto;
 
   figure & {
+    padding: $padding_img;
     vertical-align: bottom;
     background-color: $color-bg_img;
   }
