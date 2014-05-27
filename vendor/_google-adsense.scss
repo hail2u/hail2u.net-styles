@@ -1,9 +1,11 @@
 // Google AdSense
 .adsense {
   margin-top: $margin;
+  padding: 10px;
   max-width: 300px;
   max-height: 250px;
   overflow: hidden;
+  background-color: $color-bg_google-adsense;
   text-align: center;
 
   @media (min-width: 1680px) {
