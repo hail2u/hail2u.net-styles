@@ -53,7 +53,7 @@ $width-border_strong: 0.063rem;
 
 $letter-spacing_abbr: 0.063rem;
 
-$padding_img: 1rem;
+$padding_img: rem($line-height / 2);
 
 $width-border_td: 0.063rem;
 $padding_td: 0.5rem;
