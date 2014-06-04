@@ -2,9 +2,9 @@
 $color-dark: rgb(60, 51, 48);
 $color-light: rgb(252, 249, 240);
 $color-accent: rgb(17, 136, 187);
-$color-accent-complement: rgb(255, 140, 12);
-$color-accent-triad-negative: rgb(255, 186, 12);
-$color-accent-triad-positive: rgb(255, 59, 12);
+$color-accent__complement: rgb(255, 140, 12);
+$color-accent__triad-negative: rgb(255, 186, 12);
+$color-accent__triad-positive: rgb(255, 59, 12);
 
 // Variation
 $color-shade--darkest: mix($color-dark, $color-light, 88%);
@@ -22,20 +22,20 @@ $color-accent--dark: rgb(5, 107, 151);
 $color-accent--light: rgb(53, 152, 195);
 $color-accent--lightest: rgb(91, 172, 208);
 
-$color-accent-complement--darkest: rgb(185, 98, 0);
-$color-accent-complement--dark: rgb(239, 126, 0);
-$color-accent-complement--light: rgb(255, 163, 60);
-$color-accent-complement--lightest: rgb(255, 184, 104);
+$color-accent__complement--darkest: rgb(185, 98, 0);
+$color-accent__complement--dark: rgb(239, 126, 0);
+$color-accent__complement--light: rgb(255, 163, 60);
+$color-accent__complement--lightest: rgb(255, 184, 104);
 
-$color-accent-triad-negative--darkest: rgb(185, 133, 0);
-$color-accent-triad-negative--dark: rgb(239, 172, 0);
-$color-accent-triad-negative--light: rgb(255, 200, 60);
-$color-accent-triad-negative--lightest: rgb(255, 212, 104);
+$color-accent__triad-negative--darkest: rgb(185, 133, 0);
+$color-accent__triad-negative--dark: rgb(239, 172, 0);
+$color-accent__triad-negative--light: rgb(255, 200, 60);
+$color-accent__triad-negative--lightest: rgb(255, 212, 104);
 
-$color-accent-triad-positive--darkest: rgb(185, 35, 0);
-$color-accent-triad-positive--dark: rgb(239, 46, 0);
-$color-accent-triad-positive--light: rgb(255, 97, 60);
-$color-accent-triad-positive--lightest: rgb(255, 133, 104);
+$color-accent__triad-positive--darkest: rgb(185, 35, 0);
+$color-accent__triad-positive--dark: rgb(239, 46, 0);
+$color-accent__triad-positive--light: rgb(255, 97, 60);
+$color-accent__triad-positive--lightest: rgb(255, 133, 104);
 
 // Class
 $color-fg_line-label: $color-tint--light;
