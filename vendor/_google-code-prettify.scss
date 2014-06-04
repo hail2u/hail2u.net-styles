@@ -2,12 +2,12 @@
 .prettyprinted {
   .str,
   .atv {
-    color: $color-fg_google-code-prettify__constant;
+    color: $color-fg_google-code-prettify__string;
   }
 
   .kwd,
   .tag {
-    color: $color-fg_google-code-prettify__statement;
+    color: $color-fg_google-code-prettify__keyword;
   }
 
   .com,
@@ -16,26 +16,30 @@
     color: $color-fg_google-code-prettify__comment;
   }
 
-  .typ {
+  .typ,
+  .atn {
     color: $color-fg_google-code-prettify__type;
   }
 
-  .lit,
-  .atn {
-    color: $color-fg_google-code-prettify__number;
+  .lit {
+    color: $color-fg_google-code-prettify__literal;
   }
 
   .pun,
   .opn,
   .clo {
-    color: $color-fg_google-code-prettify__default;
+    color: $color-fg_google-code-prettify__punctuation;
   }
 
   .pln {
-    color: $color-fg_google-code-prettify__default;
+    color: $color-fg_google-code-prettify__plain-text;
   }
 
-  .src {}
+  .src {
+    color: $color-fg_google-code-prettify__src;
+  }
 
-  .nocode {}
+  .nocode {
+    color: $color-fg_google-code-prettify__plain-text;
+  }
 }

@@ -115,15 +115,15 @@ $color-fg_paging__icon: $color-fg_paging;
 $color-bg_google-adsense: $color-tint--lightest;
 
 // Google Code Prettify
-$color-fg_google-code-prettify__default: #333;
+$color-fg_google-code-prettify__plain-text: #333;
 $color-fg_google-code-prettify__comment: #999;
-$color-fg_google-code-prettify__constant: #390;
-$color-fg_google-code-prettify__number: #939;
-$color-fg_google-code-prettify__identifier: #c39;
-$color-fg_google-code-prettify__statement: #c30;
-$color-fg_google-code-prettify__preproc: #c33;
+$color-fg_google-code-prettify__string: #390;
+$color-fg_google-code-prettify__literal: #939;
+$color-fg_google-code-prettify__punctuation: #c39;
+$color-fg_google-code-prettify__keyword: #c30;
+$color-fg_google-code-prettify__declaration: #c33;
 $color-fg_google-code-prettify__type: #399;
-$color-fg_google-code-prettify__special: #c90;
+$color-fg_google-code-prettify__src: #c90;
 
 // Google Custom Search Engine
 $color-fg_google-cse: rgb(17, 17, 17);
