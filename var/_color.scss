@@ -115,15 +115,15 @@ $color-fg_paging__icon: $color-fg_paging;
 $color-bg_google-adsense: $color-tint--lightest;
 
 // Google Code Prettify
-$color-fg_google-code-prettify__plain-text: #333;
-$color-fg_google-code-prettify__comment: #999;
-$color-fg_google-code-prettify__string: #390;
-$color-fg_google-code-prettify__literal: #939;
-$color-fg_google-code-prettify__punctuation: #c39;
-$color-fg_google-code-prettify__keyword: #c30;
-$color-fg_google-code-prettify__declaration: #c33;
-$color-fg_google-code-prettify__type: #399;
-$color-fg_google-code-prettify__src: #c90;
+$color-fg_google-code-prettify__plain-text: $color-shade--darkest;
+$color-fg_google-code-prettify__comment: $color-accent;
+$color-fg_google-code-prettify__string: $color-accent--darkest;
+$color-fg_google-code-prettify__literal: $color-accent--dark;
+$color-fg_google-code-prettify__punctuation: $color-shade--dark;
+$color-fg_google-code-prettify__keyword: $color-accent__triad-positive--darkest;
+$color-fg_google-code-prettify__declaration: $color-accent__triad-negative--dark;
+$color-fg_google-code-prettify__type: $color-accent__complement--darkest;
+$color-fg_google-code-prettify__src: $color-accent__triad-negative--darkest;
 
 // Google Custom Search Engine
 $color-fg_google-cse: rgb(17, 17, 17);
