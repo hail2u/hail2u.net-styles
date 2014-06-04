@@ -115,14 +115,14 @@ $color-fg_paging__icon: $color-fg_paging;
 $color-bg_google-adsense: $color-tint--lightest;
 
 // Google Code Prettify
-$color-fg_google-code-prettify__plain-text: $color-shade--darkest;
-$color-fg_google-code-prettify__comment: $color-accent;
 $color-fg_google-code-prettify__string: $color-accent--darkest;
+$color-fg_google-code-prettify__keyword: $color-accent__triad-positive--darkest;
+$color-fg_google-code-prettify__comment: $color-accent;
+$color-fg_google-code-prettify__type: $color-accent__complement--darkest;
 $color-fg_google-code-prettify__literal: $color-accent--dark;
 $color-fg_google-code-prettify__punctuation: $color-shade--dark;
-$color-fg_google-code-prettify__keyword: $color-accent__triad-positive--darkest;
+$color-fg_google-code-prettify__plain-text: $color-shade--darkest;
 $color-fg_google-code-prettify__declaration: $color-accent__triad-negative--dark;
-$color-fg_google-code-prettify__type: $color-accent__complement--darkest;
 $color-fg_google-code-prettify__src: $color-accent__triad-negative--darkest;
 
 // Google Custom Search Engine
