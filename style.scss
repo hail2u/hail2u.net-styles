@@ -10,6 +10,10 @@
 // Normalize.css
 @import "./bower_components/modularized-normalize-scss/normalize";
 
+// Web Font
+@import "../../fonts/source-sans-pro";
+@import "../../fonts/source-code-pro";
+
 // Function
 @import "./bower_components/hail2u-scss-functions/color/encode-color";
 @import "./bower_components/hail2u-scss-functions/number/rem";
