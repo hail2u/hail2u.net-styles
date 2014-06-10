@@ -39,7 +39,13 @@ $font-sizes_html: (18px, 21px, 24px);
 // Breakpoint
 $width_scrollbar: 1.5rem;
 $breakpoint-content: ($width-content--with-gap + $width_scrollbar);
+@media (min-width: $breakpoint-content) {
+  /*! Applied wider than #{$breakpoint-content} */
+}
 $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes_html, length($font-sizes_html)) / 16px));
+@media (min-width: $breakpoint-full) {
+  /*! Applied wider than #{$breakpoint-full} */
+}
 
 // Core
 $height_hr: ($margin + rem($line-height) + $margin);
