@@ -105,7 +105,7 @@ blockquote {
   padding-left: ($width-gutter - $width-border_blockquote);
   color: $color-fg_blockquote;
 
-  @media (min-width: ($breakpoint-full)) {
+  @media (min-width: $breakpoint-full) {
     margin-left: (- $width-gutter);
   }
 }
@@ -127,7 +127,7 @@ ol {
     padding-left: $indent;
   }
 
-  @media (min-width: ($breakpoint-full)) {
+  @media (min-width: $breakpoint-full) {
     padding-left: 0;
   }
 }
