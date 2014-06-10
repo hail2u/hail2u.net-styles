@@ -63,7 +63,7 @@
       position: absolute;
     }
 
-    input[type="search"] {
+    label + input[type="search"] {
       margin-left: $width_google-cse__label;
       width: $width_google-cse__input;
     }
