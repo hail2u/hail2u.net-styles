@@ -1,3 +1,19 @@
+/*!
+ * print.css
+ * https://github.com/hail2u/hail2u.net-styles
+ *
+ * Licensed under MIT: http://hail2u.mit-license.org/2011
+ */
+
+// Function
+@import "./bower_components/hail2u-scss-functions/number/rem";
+@import "./bower_components/hail2u-scss-functions/number/pow";
+
+// Variable
+@import "var/font";
+@import "var/ratio";
+@import "var/size";
+
 // Dedecoration
 @import "./bower_components/hail2u-scss-partials/black-prints";
 
