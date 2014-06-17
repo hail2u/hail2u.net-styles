@@ -126,10 +126,11 @@ $color-fg_google-code-prettify__declaration: $color-accent__triad-negative--dark
 $color-fg_google-code-prettify__src: $color-accent__triad-negative--darkest;
 
 // Google Custom Search Engine
-$color-fg_google-cse: rgb(17, 17, 17);
-$color-bg_google-cse: rgb(255, 255, 255);
-$color-fg_google-cse__button: $color-bg_google-cse;
-$color-bg_google-cse__button: grayscale(mix($color-accent--light, $color-bg_google-cse));
-$color-bg_google-cse__button--hover: $color-accent--light;
-$color-border_google-cse: $color-bg_google-cse__button;
-$color-border_google-cse--focus: $color-bg_google-cse__button--hover;
+$color-fg_google-cse__input: rgb(17, 17, 17);
+$color-bg_google-cse__input: rgb(255, 255, 255);
+$color-border_google-cse__input: $color-tint--dark;
+$color-border_google-cse__input--focus: $color-accent--light;
+
+$color-fg_google-cse__button: $color-bg_google-cse__input;
+$color-bg_google-cse__button: $color-border_google-cse__input;
+$color-bg_google-cse__button--hover: $color-border_google-cse__input--focus;
