@@ -1,0 +1,17 @@
+// Facebook Like
+.facebook-like {
+  position: relative;
+  overflow: hidden;
+
+  .fb-like {
+    @extend %hanging-block;
+
+    margin-top: $margin;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    .fb-like {
+      top: ((rem($line-height) - rem(20px / 16px)) / 2);
+    }
+  }
+}
