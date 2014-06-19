@@ -21,12 +21,6 @@ body > header nav {
   a {
     display: inline-block;
     color: $color-fg_site-navigation;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: $color-fg_site-navigation--hover;
-    }
   }
 
   mark {

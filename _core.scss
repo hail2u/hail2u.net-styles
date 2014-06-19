@@ -204,12 +204,6 @@ figcaption {
 // Text-level Semantics
 a {
   color: $color-fg_link;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: $color-fg_link--hover;
-  }
 }
 
 em {

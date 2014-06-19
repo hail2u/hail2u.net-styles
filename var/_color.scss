@@ -57,7 +57,6 @@ $color-fg_dt: $color-shade--darkest;
 $color-border_figcaption: $color-tint--light;
 
 $color-fg_link: $color-accent;
-$color-fg_link--hover: $color-accent--darkest;
 
 $color-fg_em: $color-shade--darkest;
 
@@ -73,7 +72,6 @@ $color-border_td: $color-tint--dark;
 // Header
 $color-fg_site-navigation: inherit;
 $color-fg_site-navigation__mark: $color-accent--light;
-$color-fg_site-navigation--hover: $color-accent;
 
 // Main
 $color-fg_article-footer: $color-shade--lightest;
@@ -95,8 +93,6 @@ $color-border_footnote: $color-tint--dark;
 
 // Topic
 $color-fg_topic__more: $color-fg_link;
-$color-fg_topic__title--hover: $color-fg_link;
-$color-fg_topic__more--hover: $color-fg_link--hover;
 
 // Post List
 $color-fg_post-list__time: $color-shade--lightest;
@@ -133,4 +129,4 @@ $color-border_google-cse__input--focus: $color-accent--light;
 
 $color-fg_google-cse__button: $color-bg_google-cse__input;
 $color-bg_google-cse__button: $color-border_google-cse__input;
-$color-bg_google-cse__button--hover: $color-border_google-cse__input--focus;
+$color-bg_google-cse__button--focus: $color-border_google-cse__input--focus;

@@ -4,14 +4,6 @@ main > section h1 {
   @extend %remove-link-underline;
   @extend %line-label;
 
-  a {
-    color: inherit;
-
-    &:hover {
-      color: $color-fg_link;
-    }
-  }
-
   @media (min-width: $breakpoint-full) {
     &::after {
       height: rem($ratio_heading--primary * $line-height_heading);

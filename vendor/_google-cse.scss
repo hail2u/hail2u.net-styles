@@ -45,9 +45,8 @@
     background-size: 100% auto;
   }
 
-  input[type="search"]:focus + input[type="submit"],
-  input[type="submit"]:hover {
-    background-color: $color-bg_google-cse__button--hover;
+  input[type="search"]:focus + input[type="submit"] {
+    background-color: $color-bg_google-cse__button--focus;
   }
 
   @media (min-width: $breakpoint-full) {
