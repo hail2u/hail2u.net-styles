@@ -1,0 +1,42 @@
+// Social Links
+@import "./bower_components/hail2u-scss-partials/corporate-colors";
+
+.social-links {
+  @extend %clearfix;
+
+  margin-right: (- $width-gap);
+  margin-left: (- $width-gap);
+  padding-left: 0;
+
+  li {
+    @include box-sizing(border-box);
+
+    padding-right: $width-gap;
+    padding-left: $width-gap;
+    display: block;
+    float: left;
+    line-height: 1;
+  }
+
+  a {
+    padding: $padding_social-links__icon;
+    display: block;
+    width: $width_social-links__icon;
+
+    &[href^="https://twitter.com/"] {
+      background-color: $cc-twitter;
+    }
+
+    &[href^="https://www.facebook.com/"] {
+      background-color: $cc-facebook;
+    }
+
+    &[href$=".tumblr.com/"] {
+      background-color: $cc-tumblr;
+    }
+  }
+
+  img {
+    vertical-align: text-bottom;
+  }
+}
