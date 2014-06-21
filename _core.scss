@@ -26,6 +26,9 @@
 
 html {
   font-size: 100%;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "dlig" 0, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "dlig" 0, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "dlig" 0, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
 
   @include adjust-font-size($font-sizes_html);
 }
@@ -41,6 +44,9 @@ body {
 @mixin heading {
   line-height: $line-height_heading;
   color: $color-fg_heading;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
 }
 
 h1 {
@@ -91,6 +97,9 @@ pre {
   line-height: $line-height_code;
   font-family: $font-stack_code;
   font-size: rem($ratio_code);
+  -webkit-font-feature-settings: "kern" 0, "liga" 0, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  -moz-font-feature-settings: "kern" 0, "liga" 0, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  font-feature-settings: "kern" 0, "liga" 0, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
   word-wrap: break-word;
   overflow-wrap: break-word;
 
@@ -288,6 +297,9 @@ table {
   max-width: 100%;
   overflow-x: auto;
   table-layout: fixed;
+  -webkit-font-feature-settings: "kern" 0, "liga" 1, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  -moz-font-feature-settings: "kern" 0, "liga" 1, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  font-feature-settings: "kern" 0, "liga" 1, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
 
   h2 + & {
     margin-top: $margin--mini;
