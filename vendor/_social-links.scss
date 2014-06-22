@@ -34,6 +34,10 @@
     &[href$=".tumblr.com/"] {
       background-color: $cc-tumblr;
     }
+
+    &[href="/feed"] {
+      background-color: $cc-feed;
+    }
   }
 
   img {
