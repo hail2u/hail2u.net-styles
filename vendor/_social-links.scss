@@ -9,8 +9,6 @@
   padding-left: 0;
 
   li {
-    @include box-sizing(border-box);
-
     padding-right: $width-gap;
     padding-left: $width-gap;
     display: block;
@@ -19,6 +17,8 @@
   }
 
   a {
+    @include box-sizing(border-box);
+
     padding: $padding_social-links__icon;
     display: block;
     width: $width_social-links__icon;
