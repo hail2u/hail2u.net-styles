@@ -149,7 +149,6 @@
           <li><a href="#others">その他</a>
             <ol>
               <li><a href="#blog-article-blocks">ブログ記事</a></li>
-              <li><a href="#ads">広告</a></li>
               <li><a href="#circular-images">丸い画像</a></li>
               <li><a href="#floatage-images">浮かんだ画像</a></li>
               <li><a href="#drop-images">画像の飛び出し</a></li>
@@ -161,11 +160,13 @@
               <li><a href="#topic-blocks">話題の記事</a></li>
               <li><a href="#post-list-blocks">記事リスト</a></li>
               <li><a href="#seemore-links">もっと読む</a></li>
-              <li><a href="#social-links">フォロー</a></li>
               <li><a href="#flat-dl-blocks">フラットな関連リスト</a></li>
               <li><a href="#flat-ul-blocks">フラットな序列なしリスト</a></li>
               <li><a href="#read-older-links">古い記事を読む</a></li>
               <li><a href="#paging-links">ページング</a></li>
+              <li><a href="#ads">広告</a></li>
+              <li><a href="#social-links">フォロー</a></li>
+              <li><a href="#searchbox-blocks">検索ボックス</a></li>
             </ol>
           </li>
         </ol>
@@ -694,27 +695,6 @@ console.log(fib(10));
 </code></pre>
       </article>
 
-      <section id="ads">
-        <h1>広告</h1>
-
-        <p>AdSenseまたはAmazonアソシエイトによる広告は常に最初のプライマリー・セクションの直後に<code>aside</code>要素を使って挿入します。極端に長いページの場合は、コンテンツ部分の最後にも更に一つ追加することがあります。</p>
-
-        <pre><code class="language-html">&lt;aside class=&quot;adsense&quot;&gt;...&lt;/aside&gt;
-</code></pre>
-      </section>
-
-      <aside class="adsense">
-        <!-- Hail2u.net (Main) -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-8712792805045949"
-             data-ad-slot="1723739447"
-             data-ad-format="rectangle, horizontal"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </aside>
-
       <section id="circular-images">
         <h1>丸い画像</h1>
 
@@ -911,17 +891,6 @@ console.log(fib(10));
 </code></pre>
       </section>
 
-      <section id="social-links">
-        <h1>フォロー</h1>
-
-        <ul class="social-links">
-          <li><a href="https://twitter.com/hail2unet"><img src="../../images/icon/twitter.svg" alt="Twitter"></a></li>
-          <li><a href="https://www.facebook.com/hail2u.net"><img src="../../images/icon/facebook.svg" alt="Facebook"></a></li>
-          <li><a href="http://u2liah.tumblr.com/"><img src="../../images/icon/tumblr.svg" alt="Tumblr"></a></li>
-          <li><a rel="alternate" type="application/rss+xml" href="https://hail2u.net/feed"><img src="../../images/icon/feed.svg" alt="Feed"></a></li>
-        </ul>
-      </section>
-
       <section id="flat-dl-blocks">
         <h1>フラットな関連リスト</h1>
 
@@ -1001,23 +970,59 @@ console.log(fib(10));
         </a>
       </nav>
 
+      <section id="ads">
+        <h1>広告</h1>
+
+        <p>AdSenseまたはAmazonアソシエイトによる広告は常に最初のプライマリー・セクションの直後に<code>aside</code>要素を使って挿入します。極端に長いページの場合は、コンテンツ部分の最後にも更に一つ追加することがあります。</p>
+
+        <pre><code class="language-html">&lt;aside class=&quot;adsense&quot;&gt;...&lt;/aside&gt;
+</code></pre>
+      </section>
+
+      <aside class="adsense">
+        <!-- Hail2u.net (Main) -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8712792805045949"
+             data-ad-slot="1723739447"
+             data-ad-format="rectangle, horizontal"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </aside>
+
       <nav id="paging-links" class="paging">
+        <h1>ページング</h1>
+
         <ul>
           <li><a rel="prev" href="#">&#171; Older</a></li>
           <li><a rel="next" href="#">Newer &#187;</a></li>
         </ul>
       </nav>
-    </main>
 
-    <aside class="searchbox" role="search">
-      <!-- Google Custom Search Engine -->
-      <form action="http://www.google.com/cse">
-        <input type="hidden" name="cx" value="partner-pub-8712792805045949:3747342316">
-        <input type="hidden" name="ie" value="UTF-8">
-        <input type="search" name="q" size="32">
-        <input type="submit" name="sa" value="Search">
-      </form>
-    </aside>
+      <section id="social-links">
+        <h1>フォロー</h1>
+
+        <ul class="social-links">
+          <li><a href="https://twitter.com/hail2unet"><img src="../../images/icon/twitter.svg" alt="Twitter"></a></li>
+          <li><a href="https://www.facebook.com/hail2u.net"><img src="../../images/icon/facebook.svg" alt="Facebook"></a></li>
+          <li><a href="http://u2liah.tumblr.com/"><img src="../../images/icon/tumblr.svg" alt="Tumblr"></a></li>
+          <li><a rel="alternate" type="application/rss+xml" href="https://hail2u.net/feed"><img src="../../images/icon/feed.svg" alt="Feed"></a></li>
+        </ul>
+      </section>
+
+      <section id="searchbox-block" class="searchbox" role="search">
+        <h1>検索フォーム</h1>
+
+        <!-- Google Custom Search Engine -->
+        <form action="http://www.google.com/cse">
+          <input type="hidden" name="cx" value="partner-pub-8712792805045949:3747342316">
+          <input type="hidden" name="ie" value="UTF-8">
+          <input type="search" name="q" size="32">
+          <input type="submit" name="sa" value="Search">
+        </form>
+      </section>
+    </main>
 
     <footer role="contentinfo">
       <section class="footlinks">
