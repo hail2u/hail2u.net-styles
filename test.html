@@ -964,7 +964,20 @@ console.log(fib(10));
 </code></pre>
       </section>
 
-      <nav id="read-older-block" class="read-older">
+      <section id="read-older-block">
+        <h1>古い記事を読む</h1>
+
+        <pre><code class="language-html">&lt;nav class=&quot;read-older&quot;&gt;
+  &lt;a
+    rel=&quot;prev&quot;
+    href=&quot;#&quot;&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/a&gt;
+&lt;/nav&gt;
+</code></pre>
+      </section>
+
+      <nav class="read-older">
         <a rel="prev" href="#">
           <p>Suspendisse commodo odio mi, at ultrices risus consectetur at, etiam at enim non magna mollis gravida at ut arcu, aenean tempus sem dolor, non consectetur nisi vehicula nec</p>
         </a>
@@ -998,6 +1011,22 @@ console.log(fib(10));
           <li><a rel="prev" href="#">&#171; Older</a></li>
           <li><a rel="next" href="#">Newer &#187;</a></li>
         </ul>
+
+        <pre><code class="language-html">&lt;nav class=&quot;paging&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;a
+        rel=&quot;prev&quot;
+        href=&quot;#&quot;&gt;&amp;#171; Older&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a
+        rel=&quot;next&quot;
+        href=&quot;#&quot;&gt;Newer &amp;#187;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
       </nav>
 
       <section id="social-links-link">
@@ -1009,6 +1038,43 @@ console.log(fib(10));
           <li><a href="http://u2liah.tumblr.com/"><img src="../../images/icon/tumblr.svg" alt="Tumblr"></a></li>
           <li><a rel="alternate" type="application/rss+xml" href="https://hail2u.net/feed"><img src="../../images/icon/feed.svg" alt="Feed"></a></li>
         </ul>
+
+        <pre><code class="language-html">&lt;ul class=&quot;social-links&quot;&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;https://twitter.com/&quot;&gt;
+      &lt;img
+        src=&quot;../../images/icon/twitter.svg&quot;
+        alt=&quot;Twitter&quot;&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;https://www.facebook.com/&quot;&gt;
+      &lt;img
+        src=&quot;../../images/icon/facebook.svg&quot;
+        alt=&quot;Facebook&quot;&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;tumblr.com/&quot;&gt;
+      &lt;img
+        src=&quot;../../images/icon/tumblr.svg&quot;
+        alt=&quot;Tumblr&quot;&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a
+      rel=&quot;alternate&quot;
+      type=&quot;application/rss+xml&quot;
+      href=&quot;feed&quot;&gt;
+      &lt;img
+        src=&quot;../../images/icon/feed.svg&quot;
+        alt=&quot;Feed&quot;&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+        <p>各ソーシャル・ネットワークのアイコンは直接参照します。色は<code>href</code>属性の値で割り当てられています。TwitterとFacebookは先頭一致、Tumblrとフィードは後方一致です。</p>
       </section>
 
       <section id="searchbox-block" role="search">
@@ -1021,6 +1087,12 @@ console.log(fib(10));
           <input type="search" name="q" size="32">
           <input type="submit" name="sa" value="Search">
         </form>
+
+        <pre><code class="language-html">&lt;form class=&quot;searchbox&quot;&gt;
+  &lt;input type=&quot;search&quot;&gt;
+  &lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
+</code></pre>
       </section>
     </main>
 
