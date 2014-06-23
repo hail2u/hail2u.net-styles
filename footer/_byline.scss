@@ -1,13 +1,28 @@
 // Byline
 .byline {
-  font-style: normal;
+  @extend %line-label;
 
-  p {
-    @extend %line-label;
+  margin-top: ($margin + rem($line-height));
+
+  &::after {
+    position: absolute;
+    top: -100%;
+    width: $width_line-label;
   }
 
   mark {
     color: inherit;
     background-color: transparent;
+  }
+
+  @media (min-width: $breakpoint-content) {
+    margin-top: $margin;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    &::after {
+      top: 0;
+      width: $width_line-label--hang;
+    }
   }
 }

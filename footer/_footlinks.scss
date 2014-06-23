@@ -21,4 +21,10 @@
       content: "";
     }
   }
+
+  @media (min-width: $breakpoint-content) {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
 }
