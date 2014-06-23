@@ -44,9 +44,6 @@ body {
 @mixin heading {
   line-height: $line-height_heading;
   color: $color-fg_heading;
-  -webkit-font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
-  -moz-font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
-  font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
 }
 
 h1 {
