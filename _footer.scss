@@ -3,6 +3,6 @@ body > footer {
   @extend %remove-link-underline;
   @extend %centering-block;
 
-  padding-top: ($margin_heading--primary + rem($line-height));
+  padding-top: ($margin_heading--primary - rem($line-height));
   padding-bottom: $margin_heading;
 }
