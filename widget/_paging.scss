@@ -5,8 +5,6 @@
   position: relative;
 
   ul {
-    @extend %hanging-block;
-
     margin-top: $margin_heading;
     padding-left: 0;
   }
@@ -29,13 +27,6 @@
 
     &[rel="next"]::before {
       background-image: $image_arrow--right;
-    }
-  }
-
-  @media (min-width: $breakpoint-full) {
-    ul {
-      margin-top: $margin_heading--primary;
-      top: (($height_google-cse - $height_paging__icon) / 2);
     }
   }
 }
