@@ -3,8 +3,6 @@
 @import "./bower_components/hail2u-scss-partials/vendor-extension";
 
 .searchbox {
-  @extend %centering-block;
-
   form {
     margin-top: $margin_heading;
     position: relative;
