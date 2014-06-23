@@ -4,7 +4,7 @@
 
 .searchbox {
   form {
-    margin-top: $margin_heading;
+    margin-top: $margin;
     position: relative;
   }
 
@@ -45,11 +45,5 @@
 
   input[type="search"]:focus + input[type="submit"] {
     background-color: $color-bg_google-cse__button--focus;
-  }
-
-  @media (min-width: $breakpoint-full) {
-    form {
-      margin-top: $margin_heading--primary;
-    }
   }
 }
