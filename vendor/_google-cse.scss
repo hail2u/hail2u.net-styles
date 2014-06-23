@@ -3,10 +3,8 @@
 @import "./bower_components/hail2u-scss-partials/vendor-extension";
 
 .searchbox {
-  form {
-    margin-top: $margin;
-    position: relative;
-  }
+  margin-top: $margin;
+  position: relative;
 
   input[type="search"] {
     @include box-sizing(border-box);
