@@ -1,13 +1,17 @@
 // Byline
 .byline {
-  @extend %line-label;
-
-  margin-top: ($margin + rem($line-height));
-
-  &::after {
-    position: absolute;
-    top: -100%;
-    width: $width_line-label;
+  &::before {
+    display: block;
+    width: $width_logo;
+    height: rem($line-height);
+    content: "";
+    background-image: linear-gradient(
+      $color-fg_byline__line 0,
+      $color-fg_byline__line 100%
+    );
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% $height_byline__line;
   }
 
   mark {
@@ -16,13 +20,10 @@
   }
 
   @media (min-width: $breakpoint-content) {
-    margin-top: $margin;
+    margin-top: 0;
   }
 
   @media (min-width: $breakpoint-full) {
-    &::after {
-      top: 0;
-      width: $width_line-label--hang;
-    }
+    margin-left: (- $width-suppli - $width-gutter);
   }
 }
