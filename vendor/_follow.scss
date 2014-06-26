@@ -1,8 +1,8 @@
-// Social Links
-@import "./bower_components/hail2u-scss-partials/vendor-extension";
+// Follow
 @import "./bower_components/hail2u-scss-partials/corporate-colors";
+@import "./bower_components/hail2u-scss-partials/vendor-extension";
 
-.social-links {
+.follow {
   @extend %clearfix;
 
   margin-right: (- $width-gap);
@@ -20,9 +20,9 @@
   a {
     @include box-sizing(border-box);
 
-    padding: $padding_social-links__icon;
+    padding: $padding_follow__icon;
     display: block;
-    width: $width_social-links__icon;
+    width: $width_follow__icon;
 
     &[href^="https://twitter.com/"] {
       background-color: $cc-twitter;
