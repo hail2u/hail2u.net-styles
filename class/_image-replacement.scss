@@ -1,5 +1,5 @@
 // Image Replacement
-@import "./bower_components/hail2u-scss-partials/image-replacement";
+@import "../bower_components/hail2u-scss-partials/image-replacement";
 
 %ir {
   @include ir-pseudo-element;

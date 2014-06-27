@@ -1,5 +1,5 @@
 // Clearfix
-@import "./bower_components/hail2u-scss-partials/clearfix";
+@import "../bower_components/hail2u-scss-partials/clearfix";
 
 %clearfix {
   @include microclearfix_block;
