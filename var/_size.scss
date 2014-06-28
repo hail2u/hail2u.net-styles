@@ -1,3 +1,6 @@
+// Font Size
+$font-sizes_html: (18px, 21px, 24px);
+
 // Line Height
 $line-height: $ratio-golden;
 $line-height_heading: 1.25;
@@ -32,9 +35,6 @@ $width_line-label: $width-suppli__sub;
 $width_line-label--hang: $width-suppli;
 $height_line-label: 0.125rem;
 $height_line-label--hang: 0.063rem;
-
-// Root
-$font-sizes_html: (18px, 21px, 24px);
 
 // Breakpoint
 $width_scrollbar: 1.5rem;
