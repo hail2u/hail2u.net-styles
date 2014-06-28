@@ -48,6 +48,9 @@ $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes
 }
 
 // Core
+$line-height_body: ($line-height * 0.9);
+$line-height_body--on-content: ($line-height * 1);
+
 $height_hr: ($margin + rem($line-height) + $margin);
 $width_hr: ($height_hr * 3);
 

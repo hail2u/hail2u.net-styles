@@ -35,10 +35,14 @@ html {
 
 // Sections
 body {
-  line-height: $line-height;
+  line-height: $line-height_body;
   color: $color-fg_body;
   background-color: $color-bg_body;
   font-family: $font-stack_body;
+
+  @media (min-width: $breakpoint-content) {
+    line-height: $line-height_body--on-content;
+  }
 }
 
 @mixin heading {
