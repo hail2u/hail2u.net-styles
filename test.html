@@ -160,13 +160,13 @@
               <li><a href="#topic-block">話題の記事</a></li>
               <li><a href="#post-list-block">記事リスト</a></li>
               <li><a href="#seemore-block">もっと読む</a></li>
+              <li><a href="#searchbox-block">検索ボックス</a></li>
               <li><a href="#flat-dl-link">フラットな関連リスト</a></li>
               <li><a href="#flat-ul-link">フラットな序列なしリスト</a></li>
               <li><a href="#read-older-block">古い記事を読む</a></li>
               <li><a href="#paging-block">ページング</a></li>
               <li><a href="#ad-block">広告</a></li>
               <li><a href="#follow-link">フォロー</a></li>
-              <li><a href="#searchbox-block">検索ボックス</a></li>
             </ol>
           </li>
         </ol>
@@ -891,6 +891,24 @@ console.log(fib(10));
 </code></pre>
       </section>
 
+      <section id="searchbox-block" role="search">
+        <h1>検索フォーム</h1>
+
+        <!-- Google Custom Search Engine -->
+        <form class="searchbox" action="http://www.google.com/cse">
+          <input type="hidden" name="cx" value="partner-pub-8712792805045949:3747342316">
+          <input type="hidden" name="ie" value="UTF-8">
+          <input type="search" name="q" size="32">
+          <input type="submit" name="sa" value="Search">
+        </form>
+
+        <pre><code class="language-html">&lt;form class=&quot;searchbox&quot;&gt;
+  &lt;input type=&quot;search&quot;&gt;
+  &lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+      </section>
+
       <section id="flat-dl-link">
         <h1>フラットな関連リスト</h1>
 
@@ -1075,24 +1093,6 @@ console.log(fib(10));
 </code></pre>
 
         <p>各ソーシャル・ネットワークのアイコンは直接参照します。色は<code>href</code>属性の値で割り当てられています。TwitterとFacebookは先頭一致、Tumblrとフィードは後方一致です。</p>
-      </section>
-
-      <section id="searchbox-block" role="search">
-        <h1>検索フォーム</h1>
-
-        <!-- Google Custom Search Engine -->
-        <form class="searchbox" action="http://www.google.com/cse">
-          <input type="hidden" name="cx" value="partner-pub-8712792805045949:3747342316">
-          <input type="hidden" name="ie" value="UTF-8">
-          <input type="search" name="q" size="32">
-          <input type="submit" name="sa" value="Search">
-        </form>
-
-        <pre><code class="language-html">&lt;form class=&quot;searchbox&quot;&gt;
-  &lt;input type=&quot;search&quot;&gt;
-  &lt;input type=&quot;submit&quot;&gt;
-&lt;/form&gt;
-</code></pre>
       </section>
     </main>
 

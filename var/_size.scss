@@ -102,6 +102,16 @@ $width_post-list__date: (6rem * $ratio_post-list__item + $width-gap);
 // Seemore
 $width-border_seemore: 0.125rem;
 
+// Searchbox
+$height_searchbox: 2rem;
+
+$padding_searchbox__input: 0.25rem;
+$width-border_searchbox__input: 0.063rem;
+$height_searchbox__input: $height_searchbox;
+
+$width_searchbox__button: $height_searchbox;
+$height_searchbox__button: $width_searchbox__button;
+
 // Flat DL
 $margin_flat-dl__dt: ($width-gap / 2);
 $margin_flat-dl__dd: $width-gap;
@@ -114,13 +124,3 @@ $height_paging__icon: $width_paging__icon;
 // Follow
 $padding_follow__icon: 20%;
 $width_follow__icon: $width_logo;
-
-// Google Custom Search Engine
-$height_google-cse: 2rem;
-
-$padding_google-cse__input: 0.25rem;
-$width-border_google-cse__input: 0.063rem;
-$height_google-cse__input: $height_google-cse;
-
-$width_google-cse__button: $height_google-cse;
-$height_google-cse__button: $width_google-cse__button;

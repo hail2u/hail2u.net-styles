@@ -102,6 +102,16 @@ $color-fg_topic__more: $color-fg_link;
 // Post List
 $color-fg_post-list__time: $color-shade--lightest;
 
+// Searchbox
+$color-fg_searchbox__input: rgb(17, 17, 17);
+$color-bg_searchbox__input: rgb(255, 255, 255);
+$color-border_searchbox__input: $color-tint--dark;
+$color-border_searchbox__input--focus: $color-accent--light;
+
+$color-fg_searchbox__button: $color-bg_searchbox__input;
+$color-bg_searchbox__button: $color-border_searchbox__input;
+$color-bg_searchbox__button--focus: $color-border_searchbox__input--focus;
+
 // Flat DL
 $color-fg_flat-dl__dd: $color-shade--lightest;
 
@@ -125,13 +135,3 @@ $color-fg_google-code-prettify__punctuation: $color-shade--dark;
 $color-fg_google-code-prettify__plain-text: $color-shade--darkest;
 $color-fg_google-code-prettify__declaration: $color-accent__triad-negative--dark;
 $color-fg_google-code-prettify__src: $color-accent__triad-positive--dark;
-
-// Google Custom Search Engine
-$color-fg_google-cse__input: rgb(17, 17, 17);
-$color-bg_google-cse__input: rgb(255, 255, 255);
-$color-border_google-cse__input: $color-tint--dark;
-$color-border_google-cse__input--focus: $color-accent--light;
-
-$color-fg_google-cse__button: $color-bg_google-cse__input;
-$color-bg_google-cse__button: $color-border_google-cse__input;
-$color-bg_google-cse__button--focus: $color-border_google-cse__input--focus;

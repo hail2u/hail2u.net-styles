@@ -1,4 +1,4 @@
-// Google Custom Search Engine
+// Searchbox
 @import "../bower_components/hail2u-scss-partials/image-replacement";
 @import "../bower_components/hail2u-scss-partials/vendor-extension";
 
@@ -9,17 +9,17 @@
   input[type="search"] {
     @include box-sizing(border-box);
 
-    padding: 0 ($width_google-cse__button + $padding_google-cse__input) 0 $padding_google-cse__input;
-    border: $width-border_google-cse__input solid $color-border_google-cse__input;
+    padding: 0 ($width_searchbox__button + $padding_searchbox__input) 0 $padding_searchbox__input;
+    border: $width-border_searchbox__input solid $color-border_searchbox__input;
     border-radius: 0;
     width: 100%;
-    height: $height_google-cse__input;
-    color: $color-fg_google-cse__input;
-    background-color: $color-bg_google-cse__input;
+    height: $height_searchbox__input;
+    color: $color-fg_searchbox__input;
+    background-color: $color-bg_searchbox__input;
     -webkit-appearance: none;
 
     &:focus {
-      border-color: $color-border_google-cse__input--focus;
+      border-color: $color-border_searchbox__input--focus;
     }
   }
 
@@ -32,16 +32,16 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: $width_google-cse__button;
-    height: $height_google-cse__button;
-    background-color: $color-bg_google-cse__button;
-    background-image: $image_google-cse__button;
+    width: $width_searchbox__button;
+    height: $height_searchbox__button;
+    background-color: $color-bg_searchbox__button;
+    background-image: $image_searchbox__button;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% auto;
   }
 
   input[type="search"]:focus + input[type="submit"] {
-    background-color: $color-bg_google-cse__button--focus;
+    background-color: $color-bg_searchbox__button--focus;
   }
 }
