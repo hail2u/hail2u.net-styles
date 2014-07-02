@@ -1,5 +1,10 @@
 // Byline
 .byline {
+  background-image: $image_watermark;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: rem($line-height);
+
   &::before {
     display: block;
     width: $width_logo;
@@ -21,6 +26,7 @@
 
   @media (min-width: $breakpoint-content) {
     margin-top: 0;
+    background-position: center bottom;
   }
 
   @media (min-width: $breakpoint-full) {
