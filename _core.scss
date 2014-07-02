@@ -86,7 +86,7 @@ hr {
   background-color: transparent;
 
   &::before {
-    background-image: $image_asterisk;
+    background-image: $image_hr;
     background-repeat: repeat-x;
   }
 }

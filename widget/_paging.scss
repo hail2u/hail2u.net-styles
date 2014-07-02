@@ -22,11 +22,11 @@
     height: $height_paging__icon;
 
     &[rel="prev"]::before {
-      background-image: $image_arrow--left;
+      background-image: $image_paging__icon--arrow-left;
     }
 
     &[rel="next"]::before {
-      background-image: $image_arrow--right;
+      background-image: $image_paging__icon--arrow-right;
     }
   }
 }
