@@ -19,6 +19,7 @@ main > article h1 {
   }
 
   .permalink & {
+    margin-bottom: $margin_heading;
     font-size: rem($ratio_section-heading--permalink);
 
     &::after {
@@ -26,7 +27,6 @@ main > article h1 {
     }
 
     @media (min-width: $breakpoint-full) {
-      margin-bottom: $margin_heading;
       margin-left: (- ($width-suppli + $width-gutter));
     }
   }
