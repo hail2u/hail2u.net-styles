@@ -126,11 +126,11 @@ $color-fg_paging__icon: $color-fg_paging;
 $color-bg_google-adsense: $color-tint--lightest;
 
 // Google Code Prettify
-$color-fg_google-code-prettify__string: mix($color-accent, $color-accent__triad-positive);
+$color-fg_google-code-prettify__string: adjust-hue($color-accent--darkest, 90deg);
 $color-fg_google-code-prettify__keyword: $color-accent__triad-positive--darkest;
-$color-fg_google-code-prettify__comment: mix($color-accent, $color-accent__triad-negative);
+$color-fg_google-code-prettify__comment: adjust-hue($color-accent--darkest, -90deg);
 $color-fg_google-code-prettify__type: $color-accent__triad-negative--darkest;
-$color-fg_google-code-prettify__literal: $color-accent__complement--darkest;
+$color-fg_google-code-prettify__literal: adjust-hue($color-accent--dark, 90deg);
 $color-fg_google-code-prettify__punctuation: $color-shade--dark;
 $color-fg_google-code-prettify__plain-text: $color-shade--darkest;
 $color-fg_google-code-prettify__declaration: $color-accent__triad-negative--dark;
