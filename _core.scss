@@ -256,6 +256,13 @@ samp,
 kbd {
   font-family: $font-stack_code;
   font-size: rem($ratio_code);
+
+  &::before,
+  &::after {
+    display: inline-block;
+    content: "\0020"; // Space
+    font-size: 0;
+  }
 }
 
 mark {
