@@ -112,11 +112,11 @@ pre {
 blockquote {
   margin: 0;
   border-left: $width-border_blockquote solid $color-border_blockquote;
-  padding-left: ($width-gutter - $width-border_blockquote);
+  padding-left: $indent_blockquote;
   color: $color-fg_blockquote;
 
   @media (min-width: $breakpoint-full) {
-    margin-left: (- $width-gutter);
+    margin-left: $indent_blockquote--minus;
   }
 }
 
@@ -182,7 +182,7 @@ figcaption {
     margin-top: 0;
     border-left: $width-border_blockquote solid $color-border_blockquote;
     padding-top: $margin--mini;
-    padding-left: ($width-gutter - $width-border_blockquote);
+    padding-left: $indent_blockquote;
   }
 
   @media (min-width: $breakpoint-full) {
@@ -201,7 +201,7 @@ figcaption {
     }
 
     blockquote + &:last-child {
-      margin-left: (- $width-gutter);
+      margin-left: $indent_blockquote--minus;
       margin-right: 0;
       padding-bottom: 0;
       border-bottom: 0;

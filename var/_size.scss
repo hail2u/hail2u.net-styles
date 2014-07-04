@@ -54,7 +54,9 @@ $line-height_body--on-content: ($line-height * 1);
 $height_hr: ($margin + rem($line-height) + $margin);
 $width_hr: ($height_hr * 3);
 
+$indent_blockquote: $width-gutter;
 $width-border_blockquote: 0.25rem;
+$indent_blockquote--minus: (- ($width-border_blockquote + $indent_blockquote));
 
 $width-border_figcaption: 0.063rem;
 
