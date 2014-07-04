@@ -260,6 +260,7 @@ kbd {
   &::before,
   &::after {
     display: inline-block;
+    width: 0;
     content: "\0020"; // Space
     font-size: 0;
   }
