@@ -1,24 +1,3 @@
-// Workarounds for Firefox's decimal handling
-// @-moz-document regexp("*") {
-//   $half-pixel: em(0.5px / 16px);
-//
-//   @media (min-width: $breakpoint-content) {
-//     #iine li {
-//       width: ($width-column-3 - $half-pixel);
-//     }
-//   }
-//
-//   @media (min-width: $breakpoint-full) {
-//     .flat-ul li {
-//       width: ($width-column-3 - $half-pixel);
-//     }
-//
-//     #iine li {
-//       width: ($width-column-4 - $half-pixel);
-//     }
-//   }
-// }
-
 // Workarounds for SVG resizing bug on IE11 and below
 img[src$=".svg"],
 img[src$=".svgz"] {
