@@ -108,5 +108,4 @@ $color-fg_google-code-prettify__type: adjust-hue($color-accent--darkest, 90deg);
 $color-fg_google-code-prettify__literal: adjust-hue($color-accent--dark, 90deg);
 $color-fg_google-code-prettify__punctuation: $color-shade--dark;
 $color-fg_google-code-prettify__plain-text: $color-shade--darkest;
-$color-fg_google-code-prettify__declaration: adjust-hue($color-accent--dark, -90deg);
-$color-fg_google-code-prettify__src: adjust-hue($color-accent--darkest, -90deg);
+$color-fg_google-code-prettify__nocode: $color-tint--darkest;
