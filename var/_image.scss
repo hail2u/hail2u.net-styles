@@ -9,7 +9,3 @@ $image_seealso__icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fw
 
 // Searchbox
 $image_searchbox__button: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22896%22%20height%3D%22896%22%20viewBox%3D%220%200%20896%20896%22%3E%3Cpath%20d%3D%22M704%20640l-160-160c20-28%2032-64%2032-96%200-96-96-192-192-192s-192%2096-192%20192%2096%20192%20192%20192c32%200%2068-12%2096-32l160%20160zm-192-256c0%2064-64%20128-128%20128s-128-64-128-128%2064-128%20128-128%20128%2064%20128%20128z%22%20fill%3D%22#{encode-color($color-fg_searchbox__button)}%22%2F%3E%3C%2Fsvg%3E");
-
-// Paging
-$image_paging__icon--arrow-left: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22256%22%20height%3D%22384%22%20viewBox%3D%220%200%20256%20384%22%3E%3Cpath%20d%3D%22M192%20384l64-64-128-128%20128-128-64-64-192%20192z%22%20fill%3D%22#{encode-color($color-fg_paging__icon)}%22%2F%3E%3C%2Fsvg%3E");
-$image_paging__icon--arrow-right: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22256%22%20height%3D%22384%22%20viewBox%3D%220%200%20256%20384%22%3E%3Cpath%20d%3D%22M64%20384l-64-64%20128-128-128-128%2064-64%20192%20192z%22%20fill%3D%22#{encode-color($color-fg_paging__icon)}%22%2F%3E%3C%2Fsvg%3E");
