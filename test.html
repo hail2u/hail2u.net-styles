@@ -165,7 +165,7 @@
               <li><a href="#flat-ul-link">フラットな序列なしリスト</a></li>
               <li><a href="#read-older-block">古い記事を読む</a></li>
               <li><a href="#paging-block">ページング</a></li>
-              <li><a href="#ad-block">広告</a></li>
+              <li><a href="#adsense-block">Google AdSense</a></li>
               <li><a href="#follow-link">フォロー</a></li>
             </ol>
           </li>
@@ -1001,27 +1001,6 @@ console.log(fib(10));
         </a>
       </nav>
 
-      <section id="ad-block">
-        <h1>広告</h1>
-
-        <p>AdSenseまたはAmazonアソシエイトによる広告は常に最初のプライマリー・セクションの直後に<code>aside</code>要素を使って挿入します。極端に長いページの場合は、コンテンツ部分の最後にも更に一つ追加することがあります。</p>
-
-        <pre><code class="language-html">&lt;aside class=&quot;adsense&quot;&gt;...&lt;/aside&gt;
-</code></pre>
-      </section>
-
-      <aside class="adsense">
-        <!-- Hail2u.net (Main) -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-8712792805045949"
-             data-ad-slot="1723739447"
-             data-ad-format="rectangle, horizontal"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </aside>
-
       <nav id="paging-block" class="paging">
         <h1>ページング</h1>
 
@@ -1046,6 +1025,27 @@ console.log(fib(10));
 &lt;/nav&gt;
 </code></pre>
       </nav>
+
+      <section id="adsense-block">
+        <h1>Google AdSense</h1>
+
+        <p>AdSenseまたはAmazonアソシエイトによる広告は常に最初のプライマリー・セクションの直後に<code>aside</code>要素を使って挿入します。極端に長いページの場合は、コンテンツ部分の最後にも更に一つ追加することがあります。</p>
+
+        <pre><code class="language-html">&lt;aside class=&quot;adsense&quot;&gt;...&lt;/aside&gt;
+</code></pre>
+      </section>
+
+      <aside class="adsense">
+        <!-- Hail2u.net (Main) -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8712792805045949"
+             data-ad-slot="1723739447"
+             data-ad-format="rectangle, horizontal"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </aside>
 
       <section id="follow-link">
         <h1>フォロー</h1>
