@@ -55,10 +55,10 @@ $height_hr: ($margin + rem($line-height) + $margin);
 $width_hr: ($height_hr * 3);
 
 $indent_blockquote: $width-gutter;
-$width-border_blockquote: 0.25rem;
+$width-border_blockquote: 0.125rem;
 $indent_blockquote--minus: (- ($width-border_blockquote + $indent_blockquote));
 
-$width-border_figcaption: 0.063rem;
+$width-border_figcaption: 0.125rem;
 
 $width-border_strong: 0.063rem;
 
@@ -93,7 +93,7 @@ $margin_seealso__icon: ($width_seealso__icon * 0.25);
 
 // Footnote
 $width-border_footnote: 0.5rem;
-$height-border_footnote: 0.063rem;
+$height-border_footnote: 0.125rem;
 
 // Topic
 $margin_topic__more: 0.25rem;
