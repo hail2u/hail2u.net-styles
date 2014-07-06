@@ -33,8 +33,8 @@ $width-full: (- $width-gap + $width-full--with-gap - $width-gap);
 // Class
 $width_line-label: $width-suppli__sub;
 $width_line-label--hang: $width-suppli;
-$height_line-label: 0.125rem;
-$height_line-label--hang: 0.063rem;
+$height_line-label: 0.25rem;
+$height_line-label--hang: 0.125rem;
 
 // Breakpoint
 $width_scrollbar: 1.5rem;
@@ -78,11 +78,11 @@ $height_logo: $width_logo;
 $height_site-navigation: $height_logo;
 $width_site-navigation__gutter: 2rem;
 $padding_site-navigation__mark: 0.25rem;
-$width-border_site-navigation__mark: 0.125rem;
+$width-border_site-navigation__mark: 0.25rem;
 
 // Footer
 $width_byline__line: $width_logo;
-$height_byline__line: 0.125rem;
+$height_byline__line: 0.25rem;
 
 // Pull Quote
 $line-height_pull-quote: 1.3;
