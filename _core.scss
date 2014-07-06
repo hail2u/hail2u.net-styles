@@ -114,6 +114,7 @@ blockquote {
   border-left: $width-border_blockquote solid $color-border_blockquote;
   padding-left: $indent_blockquote;
   color: $color-fg_blockquote;
+  font-size: rem($ratio_blockquote);
 
   @media (min-width: $breakpoint-full) {
     margin-left: $indent_blockquote--minus;
