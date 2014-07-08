@@ -4,11 +4,8 @@
 
   p {
     margin-top: $margin_heading;
-    overflow: hidden;
     line-height: $line-height_heading;
     font-size: rem($ratio_read-older__title);
-    white-space: nowrap;
-    text-overflow: ellipsis;
 
     &::before {
       display: block;
@@ -17,6 +14,14 @@
       font-size: rem(1);
       font-weight: bold;
       text-transform: uppercase;
+    }
+  }
+
+  @media (min-width: $breakpoint-content) {
+    p {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
 }
