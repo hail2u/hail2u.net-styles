@@ -36,7 +36,7 @@ main > section h1 {
 }
 
 main > article h1 {
-  margin-top: ($margin_heading--primary - $margin_heading + rem($line-height) + $margin_heading);
+  margin-top: ($margin_heading--primary + rem($line-height));
 
   @media (min-width: $breakpoint-full) {
     margin-top: $margin_heading--primary;
