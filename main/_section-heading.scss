@@ -6,18 +6,7 @@ main > section h1 {
   position: relative;
 
   &::after {
-    @extend %hanging-block;
-
-    display: block;
-    height: rem($line-height);
-    content: "";
-    background-image: linear-gradient(
-      $color-fg_section-heading__line 0,
-      $color-fg_section-heading__line 100%
-    );
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: $width_section-heading__line $height_section-heading__line;
+    @extend %line-label;
   }
 
   @media (min-width: $breakpoint-full) {

@@ -41,6 +41,11 @@ $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes
   /*! Applied wider than #{$breakpoint-full} */
 }
 
+// Main
+$height_line-label: rem($line-height);
+$width_line-label__line: $width-suppli__sub;
+$height_line-label__line: 0.25rem;
+
 // Core
 $line-height_body: ($line-height * 0.9);
 $line-height_body--on-content: ($line-height * 1);
@@ -74,17 +79,8 @@ $width_site-navigation__gutter: 2rem;
 $width-border_site-navigation__mark: 0.25rem;
 $padding_site-navigation__mark: 0.25rem;
 
-// Main
-$width_section-heading__line: $width-suppli__sub;
-$width_section-heading__line--hang: $width-suppli;
-$height_section-heading__line: 0.25rem;
-$height_section-heading__line--hang: 0.125rem;
-
 // Footer
 $height_footlinks__item: rem($line-height);
-
-$width_byline__line: $width_logo;
-$height_byline__line: 0.25rem;
 
 // Pull Quote
 $line-height_pull-quote: 1.3;

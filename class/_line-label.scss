@@ -1,0 +1,15 @@
+// Line label
+%line-label {
+  @extend %hanging-block;
+
+  display: block;
+  height: $height_line-label;
+  content: "";
+  background-image: linear-gradient(
+    $color-fg_line-label__line 0,
+    $color-fg_line-label__line 100%
+  );
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: $width_line-label__line $height_line-label__line;
+}

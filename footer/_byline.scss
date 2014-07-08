@@ -4,18 +4,7 @@
   color: $color-fg_byline;
 
   &::before {
-    @extend %hanging-block;
-
-    display: block;
-    height: rem($line-height);
-    content: "";
-    background-image: linear-gradient(
-      $color-fg_byline__line 0,
-      $color-fg_byline__line 100%
-    );
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: $width_byline__line $height_byline__line;
+    @extend %line-label;
   }
 
   mark {

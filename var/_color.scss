@@ -49,6 +49,9 @@ $color-accent--triad-negative--dark: rgb(239, 172, 0);
 $color-accent--triad-negative--light: rgb(255, 200, 60);
 $color-accent--triad-negative--lightest: rgb(255, 212, 104);
 
+// Class
+$color-fg_line-label__line: $color-shade--darkest;
+
 // Core
 $color-fg_body: $color-dark;
 $color-bg_body: $color-light;
@@ -81,15 +84,12 @@ $color-fg_site-navigation: $color-shade--light;
 $color-fg_site-navigation__mark: $color-accent--light;
 
 // Main
-$color-fg_section-heading__line: $color-shade--darkest;
-
 $color-fg_article-footer: $color-shade--lightest;
 $color-fg_article-footer__time: $color-shade--darkest;
 $color-fg_article-footer__tag: $color-shade--darkest;
 
 // Footer
 $color-fg_byline: $color-shade--darkest;
-$color-fg_byline__line: $color-fg_byline;
 
 // Pull Quote
 $color-fg_pull-quote: $color-shade--light;
