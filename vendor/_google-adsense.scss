@@ -1,15 +1,18 @@
 // Google AdSense
 .adsense {
-  margin-top: $margin;
-  padding: 10px;
-  max-width: 300px;
-  max-height: 250px;
-  overflow: hidden;
-  background-color: $color-bg_google-adsense;
-  text-align: center;
+  .adsbygoogle {
+    margin-top: $margin;
+    width: 300px;
+    height: 250px;
+  }
 
-  @media (min-width: 1680px) {
-    max-width: 728px;
-    max-height: 90px;
+  @media (min-width: $breakpoint-full) {
+    margin-left: (- ($width-suppli + $width-gutter));
+
+    .adsbygoogle {
+      margin-left: auto;
+      width: 728px;
+      height: 90px;
+    }
   }
 }
