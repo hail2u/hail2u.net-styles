@@ -12,20 +12,12 @@ main > section h1 {
     height: rem($line-height);
     content: "";
     background-image: linear-gradient(
-      $color-fg_section-heading__line__highlight 0,
-      $color-fg_section-heading__line__highlight 100%
-    ),
-    linear-gradient(
       $color-fg_section-heading__line 0,
       $color-fg_section-heading__line 100%
     );
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: $width_section-heading__line $height_section-heading__line, 0;
-
-    @media (min-width: $breakpoint-full) {
-      background-size: $width_section-heading__line $height_section-heading__line, $width_section-heading__line--hang $height_section-heading__line--hang;
-    }
+    background-size: $width_section-heading__line $height_section-heading__line;
   }
 
   @media (min-width: $breakpoint-full) {

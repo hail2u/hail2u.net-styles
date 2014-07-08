@@ -1,5 +1,7 @@
 // Byline
 .byline {
+  color: $color-fg_byline;
+
   &::before {
     display: block;
     height: rem($line-height);
