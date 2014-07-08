@@ -1,8 +1,11 @@
 // Byline
 .byline {
+  position: relative;
   color: $color-fg_byline;
 
   &::before {
+    @extend %hanging-block;
+
     display: block;
     height: rem($line-height);
     content: "";

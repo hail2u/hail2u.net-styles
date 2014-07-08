@@ -3,12 +3,13 @@
   font-size: rem($ratio_footlinks);
 
   ul {
-    margin-top: $margin_heading--primary;
     padding-left: 0;
   }
 
   li {
     display: table-cell;
+    height: $height_footlinks__item;
+    line-height: $height_footlinks__item;
 
     &::after {
       content: "\00a0\0020\2219\0020\00a0"; // Bullet Operator
@@ -21,5 +22,11 @@
     &:last-child::after {
       content: "";
     }
+  }
+
+  @media (min-width: $breakpoint-content) {
+    position: absolute;
+    right: $width-gap;
+    bottom: 0;
   }
 }
