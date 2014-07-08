@@ -39,8 +39,8 @@ $color-fg_em: $color-shade--darkest;
 
 $color-fg_strong: $color-shade--darkest;
 
-$color-fg_mark: rgb(51, 51, 51);
-$color-bg_mark: rgb(255, 221, 0);
+$color-fg_mark: grayscale($color-accent--darkest);
+$color-bg_mark: adjust-hue(saturate(lighten($color-accent, 20%), 20%), -150deg);
 
 $color-bg_img: $color-tint--lightest;
 
