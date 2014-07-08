@@ -1,15 +1,9 @@
 // Footlinks
 .footlinks {
-  padding-left: ($width_footlinks__watermark + $padding_footlinks);
-  height: $height_footlinks;
-  line-height: $height_footlinks;
-  background-image: $image_footlinks__watermark;
-  background-repeat: no-repeat;
-  background-size: $width_footlinks__watermark auto;
   font-size: rem($ratio_footlinks);
 
   ul {
-    margin-top: 0;
+    margin-top: $margin_heading--primary;
     padding-left: 0;
   }
 
@@ -27,14 +21,5 @@
     &:last-child::after {
       content: "";
     }
-  }
-
-  @media (min-width: $breakpoint-content) {
-    position: absolute;
-    z-index: 1;
-  }
-
-  @media (min-width: $breakpoint-full) {
-    margin-left: (- $width-suppli - $width-gutter);
   }
 }

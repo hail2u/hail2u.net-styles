@@ -2,7 +2,6 @@
 .byline {
   &::before {
     display: block;
-    width: $width_byline__line;
     height: rem($line-height);
     content: "";
     background-image: linear-gradient(
@@ -11,22 +10,11 @@
     );
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: 100% $height_byline__line;
+    background-size: $width_byline__line $height_byline__line;
   }
 
   mark {
     color: inherit;
     background-color: transparent;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    margin-top: 0;
-    text-align: right;
-
-    &::before {
-      margin-right: $width-gap;
-      display: inline-block;
-      vertical-align: bottom;
-    }
   }
 }
