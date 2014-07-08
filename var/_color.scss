@@ -69,8 +69,8 @@ $color-fg_em: $color-shade--darkest;
 
 $color-fg_strong: $color-shade--darkest;
 
-$color-fg_mark: grayscale($color-accent--darkest);
-$color-bg_mark: adjust-hue(saturate(lighten($color-accent, 20%), 20%), -150deg);
+$color-fg_mark: $color-shade--darkest;
+$color-bg_mark: $color-accent--triad-negative;
 
 $color-bg_img: $color-tint--lightest;
 
@@ -112,7 +112,7 @@ $color-fg_post-list__time: $color-shade--lightest;
 
 // Searchbox
 $color-fg_searchbox__input: $color-dark;
-$color-bg_searchbox__input: lighten($color-light, 2%);
+$color-bg_searchbox__input: $color-light;
 $color-border_searchbox__input: $color-tint--dark;
 $color-border_searchbox__input--focus: $color-accent--light;
 
@@ -124,11 +124,11 @@ $color-bg_searchbox__button--focus: $color-border_searchbox__input--focus;
 $color-fg_read-older__label: $color-shade--dark;
 
 // Google Code Prettify
-$color-fg_google-code-prettify__string: adjust-hue($color-accent--darkest, -30deg);
-$color-fg_google-code-prettify__keyword: adjust-hue($color-accent--lightest, 150deg);
-$color-fg_google-code-prettify__comment: adjust-hue($color-accent--lightest, 30deg);
-$color-fg_google-code-prettify__type: adjust-hue($color-accent--darkest, 90deg);
-$color-fg_google-code-prettify__literal: adjust-hue($color-accent--dark, 90deg);
+$color-fg_google-code-prettify__string: $color-accent--adjacent-negative--darkest;
+$color-fg_google-code-prettify__keyword: $color-accent--triad-positive--darkest;
+$color-fg_google-code-prettify__comment: $color-accent--adjacent-positive;
+$color-fg_google-code-prettify__type: $color-accent--triad-negative--darkest;
+$color-fg_google-code-prettify__literal: $color-accent--adjacent-negative--dark;
 $color-fg_google-code-prettify__punctuation: $color-shade--dark;
 $color-fg_google-code-prettify__plain-text: $color-shade--darkest;
-$color-fg_google-code-prettify__nocode: $color-tint--darkest;
+$color-fg_google-code-prettify__nocode: $color-shade--lightest;
