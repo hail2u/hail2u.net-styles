@@ -61,9 +61,10 @@ $color-fg_article-footer__time: $color-dark;
 $color-fg_article-footer__tag: $color-dark;
 
 // Footer
-$color-fg_byline__watermark: $color-light;
-$color-bg_byline__watermark: $color-tint--light;
 $color-fg_byline__line: $color-tint--light;
+
+$color-fg_footlinks__watermark: $color-tint--lightest;
+$color-bg_footlinks__watermark: $color-tint--light;
 
 // Pull Quote
 $color-fg_pull-quote: $color-shade--light;

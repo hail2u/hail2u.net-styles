@@ -1,13 +1,20 @@
 // Footlinks
 .footlinks {
+  padding-left: ($width_footlinks__watermark + $padding_footlinks);
+  height: $height_footlinks;
+  line-height: $height_footlinks;
+  background-image: $image_footlinks__watermark;
+  background-repeat: no-repeat;
+  background-size: $width_footlinks__watermark auto;
+  font-size: rem($ratio_footlinks);
+
   ul {
+    margin-top: 0;
     padding-left: 0;
   }
 
   li {
     display: table-cell;
-    line-height: rem($line-height);
-    font-size: rem($ratio_footlinks);
 
     &::after {
       content: "\00a0\0020\2219\0020\00a0"; // Bullet Operator
@@ -24,7 +31,10 @@
 
   @media (min-width: $breakpoint-content) {
     position: absolute;
-    right: $width-gap;
     z-index: 1;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    margin-left: (- $width-suppli - $width-gutter);
   }
 }
