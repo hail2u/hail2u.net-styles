@@ -2,7 +2,7 @@
 .byline {
   &::before {
     display: block;
-    width: $width_logo;
+    width: $width_byline__line;
     height: rem($line-height);
     content: "";
     background-image: linear-gradient(
