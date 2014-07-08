@@ -30,12 +30,6 @@ $width_suppli__sub: ($width-suppli / pow($ratio-golden, 3));
 $width-full--with-gap: ($width-suplli--with-gap + $width-content--with-gap);
 $width-full: (- $width-gap + $width-full--with-gap - $width-gap);
 
-// Class
-$width_line-label: $width-suppli__sub;
-$width_line-label--hang: $width-suppli;
-$height_line-label: 0.25rem;
-$height_line-label--hang: 0.125rem;
-
 // Breakpoint
 $width_scrollbar: 1.5rem;
 $breakpoint-content: ($width-content--with-gap + $width_scrollbar);
@@ -79,6 +73,12 @@ $height_site-navigation: $height_logo;
 $width_site-navigation__gutter: 2rem;
 $width-border_site-navigation__mark: 0.25rem;
 $padding_site-navigation__mark: 0.25rem;
+
+// Main
+$width_section-heading__line: $width-suppli__sub;
+$width_section-heading__line--hang: $width-suppli;
+$height_section-heading__line: 0.25rem;
+$height_section-heading__line--hang: 0.125rem;
 
 // Footer
 $height_footlinks: rem($line-height);

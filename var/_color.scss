@@ -19,10 +19,6 @@ $color-accent--dark: rgb(5, 107, 151);
 $color-accent--light: rgb(53, 152, 195);
 $color-accent--lightest: rgb(91, 172, 208);
 
-// Class
-$color-fg_line-label: $color-tint--light;
-$color-fg_line-label__highlight: $color-shade--dark;
-
 // Core
 $color-fg_body: $color-dark;
 $color-bg_body: $color-light;
@@ -56,6 +52,9 @@ $color-fg_site-navigation: inherit;
 $color-fg_site-navigation__mark: $color-accent--light;
 
 // Main
+$color-fg_section-heading__line: $color-tint--light;
+$color-fg_section-heading__line__highlight: $color-shade--dark;
+
 $color-fg_article-footer: $color-shade--lightest;
 $color-fg_article-footer__time: $color-dark;
 $color-fg_article-footer__tag: $color-dark;
