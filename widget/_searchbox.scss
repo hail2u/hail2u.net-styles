@@ -10,16 +10,18 @@
     @include box-sizing(border-box);
 
     padding: 0 ($width_searchbox__button + $padding_searchbox__input) 0 $padding_searchbox__input;
-    border: $width-border_searchbox__input solid $color-border_searchbox__input;
+    border: $width-border_searchbox__input solid;
     border-radius: 0;
     width: 100%;
     height: $height_searchbox__input;
     color: $color-fg_searchbox__input;
     background-color: $color-bg_searchbox__input;
+    outline: none;
     -webkit-appearance: none;
 
     &:focus {
       border-color: $color-border_searchbox__input--focus;
+      color: $color-fg_searchbox__input--focus;
     }
   }
 
@@ -39,9 +41,5 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% auto;
-  }
-
-  input[type="search"]:focus + input[type="submit"] {
-    background-color: $color-bg_searchbox__button--focus;
   }
 }
