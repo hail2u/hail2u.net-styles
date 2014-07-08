@@ -97,9 +97,6 @@ $color-bg_searchbox__button--focus: $color-border_searchbox__input--focus;
 // Read Older
 $color-fg_read-older__label: $color-shade--dark;
 
-// Google AdSense
-$color-bg_google-adsense: $color-tint--lightest;
-
 // Google Code Prettify
 $color-fg_google-code-prettify__string: adjust-hue($color-accent--darkest, -30deg);
 $color-fg_google-code-prettify__keyword: adjust-hue($color-accent--lightest, 150deg);
