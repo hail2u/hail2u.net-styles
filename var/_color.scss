@@ -81,8 +81,8 @@ $color-fg_topic__more: $color-fg_link;
 $color-fg_post-list__time: $color-shade--lightest;
 
 // Searchbox
-$color-fg_searchbox__input: rgb(17, 17, 17);
-$color-bg_searchbox__input: rgb(255, 255, 255);
+$color-fg_searchbox__input: $color-dark;
+$color-bg_searchbox__input: lighten($color-light, 2%);
 $color-border_searchbox__input: $color-tint--dark;
 $color-border_searchbox__input--focus: $color-accent--light;
 
