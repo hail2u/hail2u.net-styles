@@ -26,10 +26,10 @@ $width-content--with-gap: ($width-gap + $width-content + $width-gap);
 $width-suplli--with-gap: ($width-content--with-gap / $ratio-content * $ratio-suppli);
 $width-suppli: (- $width-gap + $width-suplli--with-gap - $width-gap);
 
-$width_suppli__sub: ($width-suppli / pow($ratio-golden, 3));
-
 $width-full--with-gap: ($width-suplli--with-gap + $width-content--with-gap);
 $width-full: (- $width-gap + $width-full--with-gap - $width-gap);
+
+$width-importance: ($width-suppli / pow($ratio-golden, 3));
 
 // Breakpoint
 $width_scrollbar: 1.5rem;
@@ -45,19 +45,19 @@ $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes
 // Main
 $height_line-label: rem($line-height);
 
-$width_line-label__line: $width-suppli__sub;
+$width_line-label__line: $width-importance;
 $height_line-label__line: 0.25rem;
 
 // Core
 $line-height_body: ($line-height * 0.9);
-$line-height_body--on-content: ($line-height * 1);
+$line-height_body--content: $line-height;
 
 $width_hr: (($margin + rem($line-height) + $margin) * 3);
 $height_hr: ($width_hr / 3);
 
 $indent_blockquote: $width-gutter;
-$indent_blockquote--minus: (- (0.25rem + $indent_blockquote));
-$width-border_blockquote: (- $indent_blockquote - $indent_blockquote--minus);
+$indent_blockquote--full: (- (0.25rem + $indent_blockquote));
+$width-border_blockquote: (- $indent_blockquote - $indent_blockquote--full);
 
 $width-border_figcaption: 0.063rem;
 
@@ -70,10 +70,10 @@ $padding_img: rem($line-height / 2);
 $width-border_td: 0.063rem;
 $padding_td: 0.5rem;
 
-$width-border_th--of-thead: ($width-border_td * 2);
+$width-border_th--thead: ($width-border_td * 2);
 
 // Header
-$width_logo: $width-suppli__sub;
+$width_logo: $width-importance;
 $height_logo: $width_logo;
 
 $height_site-navigation: $height_logo;

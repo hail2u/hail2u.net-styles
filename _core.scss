@@ -41,7 +41,7 @@ body {
   font-family: $font-stack_body;
 
   @media (min-width: $breakpoint-content) {
-    line-height: $line-height_body--on-content;
+    line-height: $line-height_body--content;
   }
 }
 
@@ -117,7 +117,7 @@ blockquote {
   font-size: rem($ratio_blockquote);
 
   @media (min-width: $breakpoint-full) {
-    margin-left: $indent_blockquote--minus;
+    margin-left: $indent_blockquote--full;
   }
 }
 
@@ -204,7 +204,7 @@ figcaption {
     }
 
     blockquote + &:last-child {
-      margin-left: $indent_blockquote--minus;
+      margin-left: $indent_blockquote--full;
       margin-right: 0;
       padding-bottom: 0;
       border-bottom: 0;
@@ -337,6 +337,6 @@ th {
   text-align: left;
 
   thead & {
-    border-bottom-width: $width-border_th--of-thead;
+    border-bottom-width: $width-border_th--thead;
   }
 }
