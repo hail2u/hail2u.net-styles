@@ -2,6 +2,10 @@
 .topic {
   @extend %remove-link-underline;
 
+  h1 {
+    @extend %pushing-heading;
+  }
+
   > a {
     color: inherit;
   }

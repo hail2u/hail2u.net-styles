@@ -17,11 +17,7 @@ main > section h1 {
 }
 
 main > article h1 {
-  margin-top: ($margin_heading--primary + rem($line-height));
-
-  @media (min-width: $breakpoint-full) {
-    margin-top: $margin_heading--primary;
-  }
+  @extend %pushing-heading;
 
   .permalink & {
     margin-bottom: $margin_heading;

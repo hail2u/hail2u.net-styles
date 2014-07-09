@@ -1,0 +1,8 @@
+// Pushing Heading
+%pushing-heading {
+  margin-top: ($margin_heading--primary + rem($line-height));
+
+  @media (min-width: $breakpoint-full) {
+    margin-top: $margin_heading--primary;
+  }
+}
