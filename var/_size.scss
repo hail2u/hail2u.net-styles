@@ -25,6 +25,7 @@ $width-content--with-gap: ($width-gap + $width-content + $width-gap);
 
 $width-suplli--with-gap: ($width-content--with-gap / $ratio-content * $ratio-suppli);
 $width-suppli: (- $width-gap + $width-suplli--with-gap - $width-gap);
+
 $width_suppli__sub: ($width-suppli / pow($ratio-golden, 3));
 
 $width-full--with-gap: ($width-suplli--with-gap + $width-content--with-gap);
@@ -43,6 +44,7 @@ $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes
 
 // Main
 $height_line-label: rem($line-height);
+
 $width_line-label__line: $width-suppli__sub;
 $height_line-label__line: 0.25rem;
 
@@ -75,7 +77,9 @@ $width_logo: $width-suppli__sub;
 $height_logo: $width_logo;
 
 $height_site-navigation: $height_logo;
+
 $width_site-navigation__gutter: 2rem;
+
 $width-border_site-navigation__mark: 0.125rem;
 $padding_site-navigation__mark: 0.125rem;
 
@@ -105,13 +109,13 @@ $width-border_seemore: 0.125rem;
 // Searchbox
 $height_searchbox: 2rem;
 
+$padding_searchbox__input: 0.25rem;
 $width-border_searchbox__input: 0.063rem;
 $height_searchbox__input: $height_searchbox;
-$padding_searchbox__input: 0.25rem;
 
 $width_searchbox__button: $height_searchbox;
 $height_searchbox__button: $width_searchbox__button;
 
 // Follow
-$width_follow__icon: $width_logo;
 $padding_follow__icon: 20%;
+$width_follow__icon: $width_logo;
