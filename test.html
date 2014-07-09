@@ -148,7 +148,6 @@
           </li>
           <li><a href="#others">その他</a>
             <ol>
-              <li><a href="#blog-article-block">ブログ記事</a></li>
               <li><a href="#circular-image">丸い画像</a></li>
               <li><a href="#floatage-image">浮かんだ画像</a></li>
               <li><a href="#drop-image">画像の飛び出し</a></li>
@@ -157,13 +156,14 @@
               <li><a href="#seealso-link">他を参照</a></li>
               <li><a href="#sidenote-block">傍注</a></li>
               <li><a href="#footnote-block">脚注</a></li>
+              <li><a href="#flat-ul-link">フラットな序列なしリスト</a></li>
               <li><a href="#topic-block">話題の記事</a></li>
               <li><a href="#post-list-block">記事リスト</a></li>
+              <li><a href="#blog-article-block">ブログ記事</a></li>
               <li><a href="#seemore-block">もっと読む</a></li>
               <li><a href="#ads-block">広告</a></li>
               <li><a href="#searchbox-block">検索ボックス</a></li>
               <li><a href="#read-older-block">古い記事を読む</a></li>
-              <li><a href="#flat-ul-link">フラットな序列なしリスト</a></li>
               <li><a href="#adsense-block">Google AdSense</a></li>
               <li><a href="#follow-link">フォロー</a></li>
               <li><a href="#google-code-prettify-block">Google Code Prettify</a></li>
@@ -626,44 +626,6 @@ $ git push -u origin master
         <p>これより後のセクションは、様々な場所で局所的に利用されるウィジェットのスタイルのプレビューとマークアップ例になります。テキストやリンクには特に意味はありません。</p>
       </section>
 
-      <article id="blog-article-block">
-        <h1>ブログ記事</h1>
-
-        <footer>
-          <p>Posted on <time datetime="2013-12-08T15:22+09:00" itemprop="datePublished">Dec 8, 2013</time> under <a class="tag" href="#"><span itemprop="keywords">Miscellaneous</span></a></p>
-        </footer>
-
-        <div class="entry-content" itemprop="articleBody">
-          <p>ブログでは見出しに続けて<code>footer</code>要素が配置され、更新日時とカテゴリをそこで示します。記事を構成するそれぞれの要素には<a href="http://www.w3.org/TR/microdata/">Microdata</a>と<a href="http://microformats.org/">Microformats</a>を利用しており、容易に機械的に解釈できるようにしています。</p>
-        </div>
-
-        <pre><code class="language-html">&lt;article
-  itemprop=&quot;blogPost&quot;
-  itemscope
-  itemtype=&quot;http://schema.org/BlogPosting&quot;
-  itemref=&quot;author&quot;&gt;
-  &lt;h1 itemprop=&quot;name&quot;&gt;...&lt;/h1&gt;
-
-  &lt;footer&gt;
-    &lt;p&gt;Posted
-      on
-      &lt;time
-        datetime=&quot;...&quot;
-        itemprop=&quot;datePublished&quot;&gt;M d, yyyy&lt;/time&gt;
-      under
-      &lt;a
-        class=&quot;tag&quot;&gt;
-        href=&quot;...&quot;
-        &lt;span itemprop=&quot;keywords&quot;&gt;...&lt;/span&gt;
-      &lt;/a&gt;
-    &lt;/p&gt;
-  &lt;/footer&gt;
-
-  &lt;div itemprop=&quot;articleBody&quot;&gt;...&lt;/div&gt;
-&lt;/article&gt;
-</code></pre>
-      </article>
-
       <section id="circular-image">
         <h1>丸い画像</h1>
 
@@ -793,6 +755,24 @@ $ git push -u origin master
 </code></pre>
       </section>
 
+      <section id="flat-ul-link">
+        <h1>フラットな序列なしリスト</h1>
+
+        <ul class="flat-ul">
+          <li><a href="#">Lorem</a></li>
+          <li><a href="#">Aliquam</a></li>
+          <li><a href="#">Proin</a></li>
+          <li><a href="#">Donec</a></li>
+          <li><a href="#">Fusce</a></li>
+          <li><a href="#">Phasellus</a></li>
+        </ul>
+
+        <pre><code class="language-html">&lt;ul class=&quot;flat-ul&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+      </section>
+
       <section id="topic-block" class="topic">
         <a href="#">
           <h1>話題の記事</h1>
@@ -846,6 +826,44 @@ $ git push -u origin master
 &lt;/section&gt;
 </code></pre>
       </section>
+
+      <article id="blog-article-block">
+        <h1>ブログ記事</h1>
+
+        <footer>
+          <p>Posted on <time datetime="2013-12-08T15:22+09:00" itemprop="datePublished">Dec 8, 2013</time> under <a class="tag" href="#"><span itemprop="keywords">Miscellaneous</span></a></p>
+        </footer>
+
+        <div class="entry-content" itemprop="articleBody">
+          <p>ブログでは見出しに続けて<code>footer</code>要素が配置され、更新日時とカテゴリをそこで示します。記事を構成するそれぞれの要素には<a href="http://www.w3.org/TR/microdata/">Microdata</a>と<a href="http://microformats.org/">Microformats</a>を利用しており、容易に機械的に解釈できるようにしています。</p>
+        </div>
+
+        <pre><code class="language-html">&lt;article
+  itemprop=&quot;blogPost&quot;
+  itemscope
+  itemtype=&quot;http://schema.org/BlogPosting&quot;
+  itemref=&quot;author&quot;&gt;
+  &lt;h1 itemprop=&quot;name&quot;&gt;...&lt;/h1&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;Posted
+      on
+      &lt;time
+        datetime=&quot;...&quot;
+        itemprop=&quot;datePublished&quot;&gt;M d, yyyy&lt;/time&gt;
+      under
+      &lt;a
+        class=&quot;tag&quot;&gt;
+        href=&quot;...&quot;
+        &lt;span itemprop=&quot;keywords&quot;&gt;...&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/footer&gt;
+
+  &lt;div itemprop=&quot;articleBody&quot;&gt;...&lt;/div&gt;
+&lt;/article&gt;
+</code></pre>
+      </article>
 
       <section id="seemore-block">
         <h1>もっと読む</h1>
@@ -909,24 +927,6 @@ $ git push -u origin master
     &lt;p&gt;...&lt;/p&gt;
   &lt;/a&gt;
 &lt;/nav&gt;
-</code></pre>
-      </section>
-
-      <section id="flat-ul-link">
-        <h1>フラットな序列なしリスト</h1>
-
-        <ul class="flat-ul">
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Aliquam</a></li>
-          <li><a href="#">Proin</a></li>
-          <li><a href="#">Donec</a></li>
-          <li><a href="#">Fusce</a></li>
-          <li><a href="#">Phasellus</a></li>
-        </ul>
-
-        <pre><code class="language-html">&lt;ul class=&quot;flat-ul&quot;&gt;
-  &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
 </code></pre>
       </section>
 
