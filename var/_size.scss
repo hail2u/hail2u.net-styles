@@ -52,12 +52,12 @@ $height_line-label__line: 0.25rem;
 $line-height_body: ($line-height * 0.9);
 $line-height_body--on-content: ($line-height * 1);
 
-$height_hr: ($margin + rem($line-height) + $margin);
-$width_hr: ($height_hr * 3);
+$width_hr: (($margin + rem($line-height) + $margin) * 3);
+$height_hr: ($width_hr / 3);
 
 $indent_blockquote: $width-gutter;
-$width-border_blockquote: 0.125rem;
-$indent_blockquote--minus: (- ($width-border_blockquote + $indent_blockquote));
+$indent_blockquote--minus: (- (0.25rem + $indent_blockquote));
+$width-border_blockquote: (- $indent_blockquote - $indent_blockquote--minus);
 
 $width-border_figcaption: 0.063rem;
 
@@ -90,8 +90,8 @@ $height_footlinks__item: rem($line-height);
 $line-height_pull-quote: 1.3;
 
 // Seealso
+$margin_seealso__icon: 0.25rem;
 $width_seealso__icon: 1rem;
-$margin_seealso__icon: ($width_seealso__icon * 0.25);
 
 // Footnote
 $width-border_footnote: 0.5rem;
@@ -109,13 +109,13 @@ $width-border_seemore: 0.125rem;
 // Searchbox
 $height_searchbox: 2rem;
 
-$padding_searchbox__input: 0.25rem;
 $width-border_searchbox__input: 0.063rem;
 $height_searchbox__input: $height_searchbox;
+$padding_searchbox__input: 0.25rem;
 
 $width_searchbox__button: $height_searchbox;
 $height_searchbox__button: $width_searchbox__button;
 
 // Follow
-$padding_follow__icon: 20%;
 $width_follow__icon: $width_logo;
+$padding_follow__icon: 20%;
