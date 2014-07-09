@@ -1,6 +1,6 @@
 // Seemore
 .seemore {
-  @extend %remove-link-underline;
+  @extend %link-underline-removal;
 
   a {
     border-bottom: $width-border_seemore solid;

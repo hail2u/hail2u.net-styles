@@ -1,6 +1,6 @@
 // Read Older
 .read-older {
-  @extend %remove-link-underline;
+  @extend %link-underline-removal;
 
   p {
     margin-top: $margin_heading;

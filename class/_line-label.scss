@@ -1,6 +1,6 @@
 // Line label
 %line-label {
-  @extend %hanging-block;
+  @extend %hang;
 
   display: block;
   height: $height_line-label;

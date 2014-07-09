@@ -1,9 +1,9 @@
 // Topic
 .topic {
-  @extend %remove-link-underline;
+  @extend %link-underline-removal;
 
   h1 {
-    @extend %pushing-heading;
+    @extend %heading-push;
   }
 
   > a {

@@ -177,7 +177,7 @@ figure {
 }
 
 figcaption {
-  @extend %hanging-block;
+  @extend %hang;
 
   color: $color-fg_figcaption;
 

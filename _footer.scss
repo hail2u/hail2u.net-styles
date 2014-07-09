@@ -1,7 +1,7 @@
 // Footer
 body > footer {
-  @extend %remove-link-underline;
-  @extend %centering-block;
+  @extend %link-underline-removal;
+  @extend %centering;
 
   margin-bottom: $margin_heading;
   font-size: rem($ratio_footer);

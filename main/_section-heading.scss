@@ -1,7 +1,7 @@
 // Section Heading
 main > article h1,
 main > section h1 {
-  @extend %remove-link-underline;
+  @extend %link-underline-removal;
 
   position: relative;
 
@@ -17,7 +17,7 @@ main > section h1 {
 }
 
 main > article h1 {
-  @extend %pushing-heading;
+  @extend %heading-push;
 
   .permalink & {
     margin-bottom: $margin_heading;

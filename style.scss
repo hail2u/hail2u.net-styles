@@ -28,16 +28,14 @@
 @import "var/size";
 
 // Placeholder Class
-@import "class/clearfix";
-@import "class/image-replacement";
-
-@import "class/remove-link-underline";
-
 @import "class/margin";
-@import "class/hanging-block";
-@import "class/centering-block";
+@import "class/image-replacement";
+@import "class/link-underline-removal";
+@import "class/hang";
+@import "class/centering";
 @import "class/line-label";
-@import "class/pushing-heading";
+@import "class/heading-push";
+@import "class/clearfix";
 
 // Core
 @import "core";

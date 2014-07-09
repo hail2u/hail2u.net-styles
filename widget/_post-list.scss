@@ -1,6 +1,6 @@
 // Post List
 .post-list ol {
-  @extend %remove-link-underline;
+  @extend %link-underline-removal;
 
   padding-left: 0;
 

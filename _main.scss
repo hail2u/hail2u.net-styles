@@ -1,6 +1,6 @@
 // Main
 main {
-  @extend %centering-block;
+  @extend %centering;
 
   margin-top: (- ($margin_heading--primary - $margin_heading));
 
