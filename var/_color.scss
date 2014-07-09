@@ -50,7 +50,8 @@ $color-accent--triad-negative--light: rgb(255, 200, 60);
 $color-accent--triad-negative--lightest: rgb(255, 212, 104);
 
 // Class
-$color-fg_line-label__line: $color-shade--darkest;
+$color-fg_line-label__line: $color-shade--lightest;
+$color-fg_line-label__line__sub: $color-tint--light;
 
 // Core
 $color-fg_body: $color-dark;
