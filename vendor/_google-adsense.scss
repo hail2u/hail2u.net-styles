@@ -1,19 +1,7 @@
 // Google AdSense
-.adsense {
-  .adsbygoogle {
-    margin-top: $margin;
-    width: 300px;
-    height: 250px;
-    overflow: hidden;
-  }
-
-  @media (min-width: $breakpoint-full) {
-    margin-left: (- ($width-suppli + $width-gutter));
-
-    .adsbygoogle {
-      margin-left: auto;
-      width: 728px;
-      height: 90px;
-    }
-  }
+.adsbygoogle {
+  margin-top: $margin;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
 }

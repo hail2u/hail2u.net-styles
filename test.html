@@ -160,6 +160,7 @@
               <li><a href="#topic-block">話題の記事</a></li>
               <li><a href="#post-list-block">記事リスト</a></li>
               <li><a href="#seemore-block">もっと読む</a></li>
+              <li><a href="#ads-block">広告</a></li>
               <li><a href="#searchbox-block">検索ボックス</a></li>
               <li><a href="#read-older-block">古い記事を読む</a></li>
               <li><a href="#adsense-block">Google AdSense</a></li>
@@ -858,6 +859,27 @@ $ git push -u origin master
 </code></pre>
       </section>
 
+      <section id="ads-block">
+        <h1>広告</h1>
+
+        <p>AdSenseまたはAmazonアソシエイトによる広告は常に最初のプライマリー・セクションの直後に<code>aside</code>要素を使って挿入します。極端に長いページの場合は、コンテンツ部分の最後にも更に一つ追加することがあります。</p>
+
+        <pre><code class="language-html">&lt;aside class=&quot;ads&quot;&gt;...&lt;/aside&gt;
+</code></pre>
+      </section>
+
+      <aside class="ads">
+        <!-- Hail2u.net (Main) -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8712792805045949"
+             data-ad-slot="1723739447"
+             data-ad-format="rectangle, horizontal"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </aside>
+
       <section id="searchbox-block" role="search">
         <h1>検索フォーム</h1>
 
@@ -898,13 +920,17 @@ $ git push -u origin master
       <section id="adsense-block">
         <h1>Google AdSense</h1>
 
-        <p>AdSenseまたはAmazonアソシエイトによる広告は常に最初のプライマリー・セクションの直後に<code>aside</code>要素を使って挿入します。極端に長いページの場合は、コンテンツ部分の最後にも更に一つ追加することがあります。</p>
+        <p>Google AdSenseの広告はレスポンシブ広告を使っています。完全には自動切り替えにはせず、特定のフォーマットが優先的に表示されるように調節しています。</p>
 
-        <pre><code class="language-html">&lt;aside class=&quot;adsense&quot;&gt;...&lt;/aside&gt;
+        <pre><code class="language-html">&lt;ins class=&quot;adsbygoogle&quot;
+  style=&quot;display:block&quot;
+  data-ad-client=&quot;...&quot;
+  data-ad-slot=&quot;...&quot;
+  data-ad-format=&quot;rectangle, horizontal&quot;&gt;&lt;/ins&gt;
 </code></pre>
       </section>
 
-      <aside class="adsense">
+      <aside class="ads">
         <!-- Hail2u.net (Main) -->
         <ins class="adsbygoogle"
              style="display:block"
