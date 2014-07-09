@@ -1,8 +1,14 @@
 // Footlinks
 .footlinks {
   font-size: rem($ratio_footlinks);
+  position: relative;
+
+  &::after {
+    @extend %line-label;
+  }
 
   ul {
+    margin-top: $margin_heading--primary;
     padding-left: 0;
   }
 
@@ -22,11 +28,5 @@
     &:last-child::after {
       content: "";
     }
-  }
-
-  @media (min-width: $breakpoint-content) {
-    position: absolute;
-    right: $width-gap;
-    bottom: 0;
   }
 }

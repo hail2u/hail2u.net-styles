@@ -1,14 +1,15 @@
 // Byline
 .byline {
-  position: relative;
   color: $color-fg_byline;
-
-  &::before {
-    @extend %line-label;
-  }
 
   mark {
     color: inherit;
     background-color: transparent;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    position: absolute;
+    bottom: 0;
+    right: $width-gap;
   }
 }

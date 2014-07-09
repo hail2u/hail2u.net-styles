@@ -4,5 +4,4 @@ body > footer {
   @extend %centering-block;
 
   margin-bottom: $margin_heading;
-  padding-top: ($margin_heading--primary - $margin);
 }
