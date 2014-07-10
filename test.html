@@ -722,10 +722,44 @@ $ git push -u origin master
 </code></pre>
       </section>
 
-      <section id="follow-link">
-        <h1>フォロー</h1>
+      <section id="footnote-block">
+        <h1>脚注</h1>
 
-        <ul class="follow">
+        <p>Proin et odio eros. Vivamus gravida pulvinar aliquet. Quisque convallis sodales mauris sed bibendum. Vestibulum eros sem, pharetra eleifend blandit nec, elementum convallis neque. Aenean pulvinar aliquam augue, blandit pulvinar sapien rhoncus ac. Donec velit diam, vulputate ut elementum sit amet, interdum quis est. Vivamus sed justo mi, quis molestie nulla. In hac habitasse platea dictumst. Cras tempus tristique tellus vel imperdiet. Cras a elit eget elit tincidunt hendrerit. Suspendisse potenti. Nunc porttitor ultricies porttitor. Ut eget pharetra dolor.</p>
+
+        <aside class="footnote">
+          <p>In vitae pretium risus. Vivamus ac ligula non ligula rhoncus sagittis. Fusce velit sem, congue in vestibulum sed, vestibulum sed nibh.</p>
+        </aside>
+
+        <pre><code class="language-html">&lt;aside class=&quot;footnote&quot;&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/aside&gt;
+</code></pre>
+      </section>
+
+      <section id="full-width-block">
+        <h1>幅いっぱい</h1>
+
+        <figure class="full-width">
+          <img src="http://placeimg.com/480/270/any" alt="">
+          <figcaption>Random Image from <a href="http://placeimg.com/">PlaceIMG</a></figcaption>
+        </figure>
+
+        <p>Ut at sapien id tortor mattis pharetra in nec felis. In dapibus gravida eleifend. Vestibulum viverra vulputate molestie. Nullam auctor hendrerit rhoncus. Nulla rutrum, arcu eget hendrerit dignissim.</p>
+
+        <pre><code class="language-html">&lt;figure class=&quot;full-width&quot;&gt;
+  &lt;img src=&quot;...&quot; alt=&quot;&quot;&gt;
+  &lt;figcaption&gt;...&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+
+        <p>配置の都合上、<code>figcaption</code>要素を使う場合は<code>figure</code>要素の最後に記述します。</p>
+      </section>
+
+      <section id="icon-list-link">
+        <h1>アイコン・リスト</h1>
+
+        <ul class="icon-list">
           <li><a href="https://twitter.com/hail2unet"><img src="../../images/icon/twitter.svg" alt="Twitter"></a></li>
           <li><a href="https://www.facebook.com/hail2u.net"><img src="../../images/icon/facebook.svg" alt="Facebook"></a></li>
           <li><a href="http://u2liah.tumblr.com/"><img src="../../images/icon/tumblr.svg" alt="Tumblr"></a></li>
@@ -768,40 +802,6 @@ $ git push -u origin master
 </code></pre>
 
         <p>各ソーシャル・ネットワークのアイコンは直接参照します。色は<code>href</code>属性の値で割り当てられています。TwitterとFacebookは先頭一致、Tumblrとフィードは後方一致です。</p>
-      </section>
-
-      <section id="footnote-block">
-        <h1>脚注</h1>
-
-        <p>Proin et odio eros. Vivamus gravida pulvinar aliquet. Quisque convallis sodales mauris sed bibendum. Vestibulum eros sem, pharetra eleifend blandit nec, elementum convallis neque. Aenean pulvinar aliquam augue, blandit pulvinar sapien rhoncus ac. Donec velit diam, vulputate ut elementum sit amet, interdum quis est. Vivamus sed justo mi, quis molestie nulla. In hac habitasse platea dictumst. Cras tempus tristique tellus vel imperdiet. Cras a elit eget elit tincidunt hendrerit. Suspendisse potenti. Nunc porttitor ultricies porttitor. Ut eget pharetra dolor.</p>
-
-        <aside class="footnote">
-          <p>In vitae pretium risus. Vivamus ac ligula non ligula rhoncus sagittis. Fusce velit sem, congue in vestibulum sed, vestibulum sed nibh.</p>
-        </aside>
-
-        <pre><code class="language-html">&lt;aside class=&quot;footnote&quot;&gt;
-  &lt;p&gt;...&lt;/p&gt;
-&lt;/aside&gt;
-</code></pre>
-      </section>
-
-      <section id="full-width-block">
-        <h1>幅いっぱい</h1>
-
-        <figure class="full-width">
-          <img src="http://placeimg.com/480/270/any" alt="">
-          <figcaption>Random Image from <a href="http://placeimg.com/">PlaceIMG</a></figcaption>
-        </figure>
-
-        <p>Ut at sapien id tortor mattis pharetra in nec felis. In dapibus gravida eleifend. Vestibulum viverra vulputate molestie. Nullam auctor hendrerit rhoncus. Nulla rutrum, arcu eget hendrerit dignissim.</p>
-
-        <pre><code class="language-html">&lt;figure class=&quot;full-width&quot;&gt;
-  &lt;img src=&quot;...&quot; alt=&quot;&quot;&gt;
-  &lt;figcaption&gt;...&lt;/figcaption&gt;
-&lt;/figure&gt;
-</code></pre>
-
-        <p>配置の都合上、<code>figcaption</code>要素を使う場合は<code>figure</code>要素の最後に記述します。</p>
       </section>
 
       <section id="post-list-block" class="post-list">
