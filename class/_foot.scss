@@ -1,0 +1,26 @@
+// Foot
+%foot {
+  @extend %hang;
+
+  position: absolute;
+  bottom: 100%;
+  color: $color-fg_foot;
+
+  time {
+    color: $color-fg_foot__time;
+  }
+
+  .tag {
+    color: $color-fg_foot__tag;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    top: auto;
+    bottom: auto;
+    width: $width-suppli;
+
+    .permalink & p {
+      margin-top: 0;
+    }
+  }
+}

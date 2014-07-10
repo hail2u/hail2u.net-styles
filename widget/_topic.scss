@@ -17,4 +17,8 @@
   h1 {
     @extend %heading-push;
   }
+
+  h1 + footer {
+    @extend %foot;
+  }
 }

@@ -1,0 +1,4 @@
+// Article Footer
+main > article h1 + footer {
+  @extend %foot;
+}

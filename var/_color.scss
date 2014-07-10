@@ -53,6 +53,12 @@ $color-accent--triad-negative--lightest: rgb(255, 212, 104);
 $color-fg_line-label__line: $color-shade--darkest;
 $color-fg_line-label__shadow: $color-tint--light;
 
+$color-fg_foot: $color-shade--lightest;
+
+$color-fg_foot__time: $color-dark;
+
+$color-fg_foot__tag: $color-dark;
+
 // Core
 $color-fg_body: $color-dark;
 $color-bg_body: $color-light;
@@ -85,13 +91,6 @@ $color-border_td: $color-tint--light;
 $color-fg_site-navigation: $color-shade--light;
 
 $color-fg_site-navigation__mark: $color-accent--light;
-
-// Main
-$color-fg_article-footer: $color-shade--lightest;
-
-$color-fg_article-footer__time: $color-dark;
-
-$color-fg_article-footer__tag: $color-dark;
 
 // Footer
 $color-fg_byline: $color-shade--darkest;

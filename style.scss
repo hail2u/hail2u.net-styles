@@ -36,6 +36,7 @@
 @import "class/centering";
 @import "class/line-label";
 @import "class/heading-push";
+@import "class/foot";
 @import "class/clearfix";
 
 // Core
@@ -51,7 +52,7 @@
 @import "main";
 @import "main/section-heading";
 @import "main/article-heading";
-@import "main/section-footer";
+@import "main/article-footer";
 
 // Subcontent
 @import "subcontent";
