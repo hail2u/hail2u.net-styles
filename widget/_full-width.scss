@@ -28,8 +28,4 @@
       left: 0;
     }
   }
-
-  @media (min-width: ($breakpoint-full + $width-gutter + $width-suppli)) {
-    margin-right: (- ($width-gutter + $width-suppli));
-  }
 }
