@@ -60,26 +60,25 @@
 @import "footer/byline";
 
 // Widget
-@import "widget/circular-image";
-@import "widget/floatage";
-@import "widget/drop";
-@import "widget/full-width";
-@import "widget/pull-quote";
-@import "widget/seealso";
-@import "widget/sidenote";
-@import "widget/footnote";
-@import "widget/flat-ul";
-
-@import "widget/topic";
-@import "widget/post-list";
-@import "widget/seemore";
 @import "widget/ads";
-@import "widget/searchbox";
+@import "widget/circular-image";
+@import "widget/drop";
+@import "widget/flat-ul";
+@import "widget/floatage";
+@import "widget/follow";
+@import "widget/footnote";
+@import "widget/full-width";
+@import "widget/post-list";
+@import "widget/pull-quote";
 @import "widget/read-older";
+@import "widget/searchbox";
+@import "widget/seealso";
+@import "widget/seemore";
+@import "widget/sidenote";
+@import "widget/topic";
 
 // Vendor
 @import "vendor/google-adsense";
-@import "vendor/follow";
 @import "vendor/google-code-prettify";
 
 // Shame
