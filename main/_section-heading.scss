@@ -1,28 +1,4 @@
 // Section Heading
-main > article h1,
 main > section h1 {
-  @extend %link-underline-removal;
-
-  position: relative;
-
-  &::after {
-    @extend %line-label;
-  }
-}
-
-main > article h1 {
-  @extend %heading-push;
-
-  .permalink & {
-    margin-bottom: $margin_heading;
-    font-size: rem($ratio_section-heading--permalink);
-
-    &::after {
-      display: none;
-    }
-
-    @media (min-width: $breakpoint-full) {
-      margin-left: (- ($width-suppli + $width-gutter));
-    }
-  }
+  @extend %heading--primary;
 }

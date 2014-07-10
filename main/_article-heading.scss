@@ -1,0 +1,18 @@
+// Article Heading
+main > article h1 {
+  @extend %heading-push;
+  @extend %heading--primary;
+
+  .permalink & {
+    margin-bottom: $margin_heading;
+    font-size: rem($ratio_article-heading--permalink);
+
+    &::after {
+      display: none;
+    }
+
+    @media (min-width: $breakpoint-full) {
+      margin-left: (- ($width-suppli + $width-gutter));
+    }
+  }
+}

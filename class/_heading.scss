@@ -3,3 +3,13 @@
   line-height: $line-height_heading;
   color: $color-fg_heading;
 }
+
+%heading--primary {
+  @extend %link-underline-removal;
+
+  position: relative;
+
+  &::after {
+    @extend %line-label;
+  }
+}
