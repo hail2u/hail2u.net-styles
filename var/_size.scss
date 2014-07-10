@@ -23,10 +23,10 @@ $width-gap: ($width-gutter / 2);
 $width-content: 36rem;
 $width-content--with-gap: ($width-gap + $width-content + $width-gap);
 
-$width-suplli--with-gap: ($width-content--with-gap / $ratio-content * $ratio-suppli);
-$width-suppli: (- $width-gap + $width-suplli--with-gap - $width-gap);
+$width-suppli--with-gap: ($width-content--with-gap / $ratio-content * $ratio-suppli);
+$width-suppli: (- $width-gap + $width-suppli--with-gap - $width-gap);
 
-$width-full--with-gap: ($width-suplli--with-gap + $width-content--with-gap);
+$width-full--with-gap: ($width-suppli--with-gap + $width-content--with-gap);
 $width-full: (- $width-gap + $width-full--with-gap - $width-gap);
 
 $width-importance--with-gap: ($width-content--with-gap / $ratio-content * $ratio-importance);
