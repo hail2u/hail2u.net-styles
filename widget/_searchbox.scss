@@ -10,7 +10,7 @@
     @include box-sizing(border-box);
 
     padding: 0 ($width_searchbox__button + $padding_searchbox__input) 0 $padding_searchbox__input;
-    border: $width-border_searchbox__input solid;
+    border: $width-border_searchbox__input solid $color-border_searchbox__input;
     border-radius: 0;
     width: 100%;
     height: $height_searchbox__input;
