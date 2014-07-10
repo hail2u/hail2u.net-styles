@@ -26,9 +26,9 @@
 
 html {
   font-size: 100%;
-  -webkit-font-feature-settings: "kern" 1, "liga" 1, "dlig" 0, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
-  -moz-font-feature-settings: "kern" 1, "liga" 1, "dlig" 0, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
-  font-feature-settings: "kern" 1, "liga" 1, "dlig" 0, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "lnum" 1, "pnum" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "lnum" 1, "pnum" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "lnum" 1, "pnum" 1;
 
   @include adjust-font-size($font-sizes_html);
 }
@@ -309,9 +309,9 @@ table {
   max-width: 100%;
   overflow-x: auto;
   table-layout: fixed;
-  -webkit-font-feature-settings: "kern" 0 "pnum" 0, "tnum" 1, "zero" 1;
-  -moz-font-feature-settings: "kern" 0 "pnum" 0, "tnum" 1, "zero" 1;
-  font-feature-settings: "kern" 0 "pnum" 0, "tnum" 1, "zero" 1;
+  -webkit-font-feature-settings: "pnum" 0, "tnum" 1, "zero" 1;
+  -moz-font-feature-settings: "pnum" 0, "tnum" 1, "zero" 1;
+  font-feature-settings: "pnum" 0, "tnum" 1, "zero" 1;
 
   h2 + & {
     margin-top: $margin--mini;
