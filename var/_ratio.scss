@@ -14,6 +14,7 @@ $ratio-beta: ($ratio-text--primary * $ratio-golden);
 $ratio-gamma: $ratio-text--secondary;
 $ratio-delta: $ratio-text--primary;
 $ratio-epsilon: ($ratio-text--secondary / $ratio-golden);
+$ratio-zeta: ($ratio-text--primary / $ratio-golden);
 
 // Main Component
 $ratio-content: (1 + 1 / pow($ratio-golden, 3));
@@ -39,7 +40,7 @@ $ratio_site-navigation: $ratio-epsilon;
 $ratio_article-heading--permalink: $ratio-alpha;
 
 // Footer
-$ratio_footer: $ratio-epsilon;
+$ratio_footer: $ratio-zeta;
 
 // Post List
 $ratio_post-list__item: $ratio-gamma;
