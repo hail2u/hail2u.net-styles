@@ -18,6 +18,7 @@ $ratio-epsilon: ($ratio-text--secondary / $ratio-golden);
 // Main Component
 $ratio-content: (1 + 1 / pow($ratio-golden, 3));
 $ratio-suppli: (1 / pow($ratio-golden, 2));
+$ratio-importance: (1 / pow($ratio-golden, 4));
 
 // Core
 $ratio_heading: $ratio-gamma;

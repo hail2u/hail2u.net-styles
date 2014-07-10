@@ -29,7 +29,8 @@ $width-suppli: (- $width-gap + $width-suplli--with-gap - $width-gap);
 $width-full--with-gap: ($width-suplli--with-gap + $width-content--with-gap);
 $width-full: (- $width-gap + $width-full--with-gap - $width-gap);
 
-$width-importance: ($width-suppli / pow($ratio-golden, 3));
+$width-importance--with-gap: ($width-content--with-gap / $ratio-content * $ratio-importance);
+$width-importance: (- $width-gap + $width-importance--with-gap - $width-gap);
 
 // Breakpoint
 $width_scrollbar: 1.5rem;
