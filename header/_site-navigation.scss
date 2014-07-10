@@ -3,11 +3,12 @@ body > header nav {
   position: absolute;
   top: 0;
   right: $width-gap;
+  font-size: rem($ratio_site-navigation);
+  text-transform: uppercase;
 
   ul {
     margin-top: 0;
     padding-left: 0;
-    text-transform: uppercase;
   }
 
   li {
@@ -15,7 +16,6 @@ body > header nav {
     display: table-cell;
     height: $height_site-navigation;
     line-height: $height_site-navigation;
-    font-size: rem($ratio_site-navigation);
   }
 
   a {
