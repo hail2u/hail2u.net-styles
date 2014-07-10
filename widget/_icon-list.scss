@@ -20,9 +20,9 @@
   a {
     @include box-sizing(border-box);
 
-    padding: $padding_follow__icon;
+    padding: $padding_icon-list__icon;
     display: block;
-    width: $width_follow__icon;
+    width: $width_icon-list__icon;
 
     &[href^="https://twitter.com/"] {
       background-color: $cc-twitter;
