@@ -1,5 +1,5 @@
 // Tagline
-body > header h1 {
+.tagline {
   @extend %heading;
 
   margin-top: $margin_heading;
@@ -9,8 +9,8 @@ body > header h1 {
   @media (min-width: $breakpoint-full) {
     margin-left: (- ($width-suppli + $width-gutter));
   }
-}
 
-.permalink > header h1 {
-  display: none;
+  .permalink & {
+    display: none;
+  }
 }
