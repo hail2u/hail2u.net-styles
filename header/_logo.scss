@@ -5,6 +5,10 @@ body > header h1 {
   width: $width_logo;
   height: $height_logo;
 
+  img {
+    vertical-align: bottom;
+  }
+
   @media (min-width: $breakpoint-content) {
     margin-top: $margin_heading;
   }
