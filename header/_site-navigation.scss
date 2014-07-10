@@ -37,7 +37,7 @@ body > header nav {
   }
 
   @media (min-width: $breakpoint-full) {
-    width: $width-content;
+    width: $width-full;
 
     li {
       padding-right: $width_site-navigation__gutter;
