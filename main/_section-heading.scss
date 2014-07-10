@@ -8,12 +8,6 @@ main > section h1 {
   &::after {
     @extend %line-label;
   }
-
-  @media (min-width: $breakpoint-full) {
-    &::after {
-      height: rem($ratio_heading--primary * $line-height_heading);
-    }
-  }
 }
 
 main > article h1 {
