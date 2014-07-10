@@ -1,5 +1,7 @@
 // Tagline
 body > header h1 {
+  @extend %heading;
+
   margin-top: $margin_heading;
   font-weight: 300;
   font-size: rem($ratio_tagline);

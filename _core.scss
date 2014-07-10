@@ -45,20 +45,15 @@ body {
   }
 }
 
-@mixin heading {
-  line-height: $line-height_heading;
-  color: $color-fg_heading;
-}
-
 h1 {
-  @include heading;
+  @extend %heading;
 
   margin: $margin_heading--primary 0 0 0;
   font-size: rem($ratio_heading--primary);
 }
 
 h2 {
-  @include heading;
+  @extend %heading;
 
   margin: $margin_heading 0 0 0;
   font-size: rem($ratio_heading);
