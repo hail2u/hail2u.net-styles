@@ -2,10 +2,6 @@
 .topic {
   @extend %link-underline-removal;
 
-  h1 {
-    @extend %heading-push;
-  }
-
   > a {
     color: inherit;
   }
@@ -16,5 +12,9 @@
     font-weight: bold;
     color: $color-fg_topic__more;
     text-transform: uppercase;
+  }
+
+  h1 {
+    @extend %heading-push;
   }
 }
