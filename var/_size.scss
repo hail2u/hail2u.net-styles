@@ -86,25 +86,19 @@ $padding_site-navigation__mark: 0.125rem;
 // Footer
 $height_footlinks__item: rem($line-height);
 
-// Pull Quote
-$line-height_pull-quote: 1.3;
-
-// Seealso
-$margin_seealso__icon: 0.25rem;
-$width_seealso__icon: 1rem;
-
 // Footnote
 $width-border_footnote: 0.5rem;
 $height-border_footnote: 0.063rem;
 
-// Topic
-$margin_topic__more: 0.25rem;
+// Icon List
+$width_icon-list__icon: $width_logo;
+$padding_icon-list__icon: 20%;
 
 // Post List
 $width_post-list__date: (6rem * $ratio_post-list__item + $width-gap);
 
-// Seemore
-$width-border_seemore: 0.125rem;
+// Pull Quote
+$line-height_pull-quote: 1.3;
 
 // Searchbox
 $height_searchbox: 2rem;
@@ -116,6 +110,12 @@ $padding_searchbox__input: 0.25rem;
 $width_searchbox__button: $height_searchbox;
 $height_searchbox__button: $width_searchbox__button;
 
-// Icon List
-$width_icon-list__icon: $width_logo;
-$padding_icon-list__icon: 20%;
+// Seealso
+$margin_seealso__icon: 0.25rem;
+$width_seealso__icon: 1rem;
+
+// Seemore
+$width-border_seemore: 0.125rem;
+
+// Topic
+$margin_topic__more: 0.25rem;

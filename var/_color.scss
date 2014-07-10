@@ -95,25 +95,17 @@ $color-fg_article-footer__tag: $color-shade--darkest;
 // Footer
 $color-fg_byline: $color-shade--darkest;
 
-// Pull Quote
-$color-fg_pull-quote: $color-shade--light;
-
-// Seealso
-$color-fg_seealso: $color-shade--darkest;
-
-$color-fg_seealso__icon: $color-shade--lightest;
-
-// Sidenote
-$color-fg_sidenote: $color-shade--lightest;
-
 // Footnote
 $color-border_footnote: $color-shade--lightest;
 
-// Topic
-$color-fg_topic__more: $color-fg_link;
-
 // Post List
 $color-fg_post-list__time: $color-shade--lightest;
+
+// Pull Quote
+$color-fg_pull-quote: $color-shade--light;
+
+// Read Older
+$color-fg_read-older__label: $color-shade--dark;
 
 // Searchbox
 $color-fg_searchbox__input: $color-tint--dark;
@@ -124,8 +116,16 @@ $color-border_searchbox__input--focus: $color-accent--light;
 $color-fg_searchbox__button: $color-bg_searchbox__input;
 $color-bg_searchbox__button: $color-border_searchbox__input--focus;
 
-// Read Older
-$color-fg_read-older__label: $color-shade--dark;
+// Seealso
+$color-fg_seealso: $color-shade--dark;
+
+$color-fg_seealso__icon: $color-shade--lightest;
+
+// Sidenote
+$color-fg_sidenote: $color-shade--lightest;
+
+// Topic
+$color-fg_topic__more: $color-fg_link;
 
 // Google Code Prettify
 $color-fg_google-code-prettify__string: $color-accent--adjacent-negative--darkest;
