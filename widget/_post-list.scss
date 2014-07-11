@@ -5,12 +5,11 @@
   padding-left: 0;
 
   li {
+    @extend %overflow-ellipsis;
+
     margin-top: $margin--mini;
     position: relative;
-    overflow: hidden;
     list-style-type: none;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   time {

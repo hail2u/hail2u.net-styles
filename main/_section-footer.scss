@@ -3,10 +3,9 @@ main > section h1 + footer {
   @extend %foot;
 
   p {
+    @extend %overflow-ellipsis;
+
     margin-top: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 
   @media (min-width: $breakpoint-full) {

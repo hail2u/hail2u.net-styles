@@ -3,9 +3,12 @@
   @extend %link-underline-removal;
 
   p {
+    @extend %overflow-ellipsis;
+
     margin-top: $margin_heading;
     line-height: $line-height_heading;
     font-size: rem($ratio_read-older__title);
+    white-space: normal;
 
     &::before {
       display: block;
@@ -19,9 +22,7 @@
 
   @media (min-width: $breakpoint-content) {
     p {
-      overflow: hidden;
       white-space: nowrap;
-      text-overflow: ellipsis;
     }
   }
 
