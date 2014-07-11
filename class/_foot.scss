@@ -5,6 +5,7 @@
   position: absolute;
   bottom: 100%;
   color: $color-fg_foot;
+  font-size: rem($ratio-foot);
 
   time {
     color: $color-fg_foot__time;
@@ -15,12 +16,19 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    top: auto;
-    bottom: auto;
     width: $width-suppli;
 
-    .permalink & p {
-      margin-top: 0;
+    p {
+      margin-top: rem(($ratio_heading--primary * $line-height_heading - $ratio-foot * $line-height) / 2);
+    }
+
+    .permalink & {
+      top: auto;
+      bottom: auto;
+
+      p {
+	margin-top: rem(($line-height - $ratio-foot * $line-height) / 2);
+      }
     }
   }
 }
