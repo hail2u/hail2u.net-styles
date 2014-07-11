@@ -15,15 +15,19 @@
     display: table-cell;
 
     &::after {
-      content: "\00a0\0020\2219\0020\00a0"; // Bullet Operator
+      content: "\00a0\00b7\00a0"; // Middle Dot
     }
 
     &:first-child::after {
-      content: "\00a0\0020\2026\0020\00a0"; // Horizontal Ellipsis
+      content: "\002c\00a0"; // Comma
     }
 
     &:last-child::after {
       content: "";
     }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    margin-left: (- ($width-suppli + $width-gutter));
   }
 }
