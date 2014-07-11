@@ -7,6 +7,6 @@
   max-width: $width-content;
 
   @media (min-width: $breakpoint-full) {
-    padding-left: ($width-gap + $width-suppli + $width-gutter);
+    padding-left: ($width-gap + $width-supplement + $width-gutter);
   }
 }

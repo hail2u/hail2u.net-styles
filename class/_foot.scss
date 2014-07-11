@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    width: $width-suppli;
+    width: $width-supplement;
 
     p {
       margin-top: rem(($ratio_heading--primary * $line-height_heading - $ratio-foot * $line-height) / 2);

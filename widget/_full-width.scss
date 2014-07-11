@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: (- ($width-gap + $width-suppli + $width-gutter));
+    margin-left: (- ($width-gap + $width-supplement + $width-gutter));
 
     figcaption:last-child {
       margin-top: $margin;

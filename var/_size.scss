@@ -23,10 +23,10 @@ $width-gap: ($width-gutter / 2);
 $width-content: 36rem;
 $width-content--with-gap: ($width-gap + $width-content + $width-gap);
 
-$width-suppli--with-gap: ($width-content--with-gap / $ratio-content * $ratio-suppli);
-$width-suppli: (- $width-gap + $width-suppli--with-gap - $width-gap);
+$width-supplement--with-gap: ($width-content--with-gap / $ratio-content * $ratio-supplement);
+$width-supplement: (- $width-gap + $width-supplement--with-gap - $width-gap);
 
-$width-full--with-gap: ($width-suppli--with-gap + $width-content--with-gap);
+$width-full--with-gap: ($width-supplement--with-gap + $width-content--with-gap);
 $width-full: (- $width-gap + $width-full--with-gap - $width-gap);
 
 // Breakpoint
@@ -65,7 +65,7 @@ $padding_td: 0.5rem;
 $width-border_th--thead: ($width-border_td * 2);
 
 // Header
-$width_logo: (- $width-gap + $width-suppli--with-gap / pow($ratio-golden, 3) - $width-gap);
+$width_logo: (- $width-gap + $width-supplement--with-gap / pow($ratio-golden, 3) - $width-gap);
 $height_logo: $width_logo;
 
 $height_site-navigation: $height_logo;

@@ -26,6 +26,6 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: (- ($width-suppli + $width-gutter));
+    margin-left: (- ($width-supplement + $width-gutter));
   }
 }

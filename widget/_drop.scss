@@ -1,9 +1,9 @@
 // Drop
 .drop {
   @media (min-width: $breakpoint-full) {
-    margin-left: (- ($width-suppli + $width-gutter));
+    margin-left: (- ($width-supplement + $width-gutter));
     margin-right: $width-gap;
     float: left;
-    max-width: ($width-suppli + $width-gutter + $width-content / 2);
+    max-width: ($width-supplement + $width-gutter + $width-content / 2);
   }
 }
