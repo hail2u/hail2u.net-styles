@@ -1,15 +1,9 @@
 // Logo
 body > header h1 {
   margin-top: $margin;
+  width: $width_logo;
   height: $height_logo;
-
-  a,
-  mark {
-    display: block;
-    position: fixed;
-    z-index: 1;
-    width: $width_logo;
-  }
+  line-height: 1;
 
   img {
     vertical-align: bottom;
