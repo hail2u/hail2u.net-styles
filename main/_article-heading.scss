@@ -6,12 +6,10 @@ main > article h1 {
   .permalink & {
     margin-bottom: $margin_heading;
     font-size: rem($ratio_article-heading--permalink);
+  }
 
-    &::after {
-      display: none;
-    }
-
-    @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint-full) {
+    .permalink & {
       margin-bottom: $margin_heading--primary;
       margin-left: (- ($width-supplement + $width-gutter));
     }
