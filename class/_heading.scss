@@ -8,8 +8,4 @@
   @extend %link-underline-removal;
 
   position: relative;
-
-  &::after {
-    @extend %line-label;
-  }
 }
