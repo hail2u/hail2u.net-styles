@@ -9,11 +9,11 @@ body > header h1 {
     vertical-align: bottom;
   }
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint-full) {
     margin-top: $margin_heading;
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: (- ($width_logo + $width-gutter + $width-suppli + $width-gutter));
+    margin-left: (- ($width-suppli + $width-gutter));
   }
 }

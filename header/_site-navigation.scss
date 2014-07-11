@@ -37,18 +37,8 @@ body > header nav {
   }
 
   @media (min-width: $breakpoint-full) {
-    width: $width-full;
-
     li {
-      padding-right: $width_site-navigation__gutter;
-      padding-left: 0;
-
-      &:last-child {
-        padding-right: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
+      padding-left: $width_site-navigation__gutter;
     }
   }
 }
