@@ -4,22 +4,9 @@
 
   position: absolute;
   bottom: 100%;
-  color: $color-fg_foot;
-  font-size: rem($ratio-foot);
-
-  time {
-    color: $color-fg_foot__time;
-  }
-
-  .tag {
-    color: $color-fg_foot__tag;
-  }
+  font-size: rem($ratio_foot);
 
   @media (min-width: $breakpoint-full) {
     width: $width-supplement;
-
-    p {
-      margin-top: rem(($ratio_heading--primary * $line-height_heading - $ratio-foot * $line-height) / 2);
-    }
   }
 }

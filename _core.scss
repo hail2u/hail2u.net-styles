@@ -49,6 +49,7 @@ h1 {
   @extend %heading;
 
   margin: $margin_heading--primary 0 0 0;
+  color: $color-fg_heading--primary;
   font-size: rem($ratio_heading--primary);
 }
 
@@ -56,6 +57,7 @@ h2 {
   @extend %heading;
 
   margin: $margin_heading 0 0 0;
+  color: $color-fg_heading;
   font-size: rem($ratio_heading);
 }
 
