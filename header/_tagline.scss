@@ -3,7 +3,7 @@
   @extend %heading;
 
   margin-top: $margin_heading;
-  font-weight: 300;
+  font-weight: 200;
   font-size: rem($ratio_tagline);
 
   @media (min-width: $breakpoint-full) {
