@@ -21,14 +21,5 @@
     p {
       margin-top: rem(($ratio_heading--primary * $line-height_heading - $ratio-foot * $line-height) / 2);
     }
-
-    .permalink & {
-      top: auto;
-      bottom: auto;
-
-      p {
-	margin-top: rem(($line-height - $ratio-foot * $line-height) / 2);
-      }
-    }
   }
 }

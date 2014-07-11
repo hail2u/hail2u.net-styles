@@ -1,4 +1,15 @@
 // Article Footer
 main > article h1 + footer {
   @extend %foot;
+
+  @media (min-width: $breakpoint-full) {
+    .permalink & {
+      top: auto;
+      bottom: auto;
+
+      p {
+	margin-top: rem(($line-height - $ratio-foot * $line-height) / 2);
+      }
+    }
+  }
 }
