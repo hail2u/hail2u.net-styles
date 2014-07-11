@@ -12,6 +12,7 @@ main > article h1 {
     }
 
     @media (min-width: $breakpoint-full) {
+      margin-bottom: $margin_heading--primary;
       margin-left: (- ($width-supplement + $width-gutter));
     }
   }

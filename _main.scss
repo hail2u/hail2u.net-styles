@@ -8,4 +8,8 @@ main {
   > section {
     position: relative;
   }
+
+  @media (min-width: $breakpoint-full) {
+    margin-top: 0;
+  }
 }
