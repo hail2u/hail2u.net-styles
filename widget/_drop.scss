@@ -1,5 +1,9 @@
 // Drop
 .drop {
+  img {
+    min-width: $width-supplement;
+  }
+
   @media (min-width: $breakpoint-full) {
     margin-left: (- ($width-supplement + $width-gutter));
     margin-right: $width-gap;
