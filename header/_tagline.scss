@@ -3,11 +3,14 @@
   @extend %heading;
 
   margin-top: $margin_heading;
-  padding-right: 10%;
-  padding-left: 10%;
   font-weight: 200;
   font-size: rem($ratio_tagline);
-  text-align: center;
+
+  @media (min-width: $breakpoint-content) {
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+  }
 
   @media (min-width: $breakpoint-full) {
     margin-top: $margin_heading--primary;
