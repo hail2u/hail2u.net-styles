@@ -749,13 +749,13 @@ $ git push -u origin master
 
         <p>Ut at sapien id tortor mattis pharetra in nec felis. In dapibus gravida eleifend. Vestibulum viverra vulputate molestie. Nullam auctor hendrerit rhoncus. Nulla rutrum, arcu eget hendrerit dignissim.</p>
 
+        <p>配置の都合上、<code>figcaption</code>要素を使う場合は<code>figure</code>要素の最後に記述します。</p>
+
         <pre><code class="language-html">&lt;figure class=&quot;full-width&quot;&gt;
   &lt;img src=&quot;...&quot; alt=&quot;&quot;&gt;
   &lt;figcaption&gt;...&lt;/figcaption&gt;
 &lt;/figure&gt;
 </code></pre>
-
-        <p>配置の都合上、<code>figcaption</code>要素を使う場合は<code>figure</code>要素の最後に記述します。</p>
       </section>
 
       <section id="icon-list-link">
@@ -767,6 +767,8 @@ $ git push -u origin master
           <li><a href="http://u2liah.tumblr.com/"><img src="../../images/icon/tumblr.svg" alt="Tumblr"></a></li>
           <li><a rel="alternate" type="application/rss+xml" href="https://hail2u.net/feed"><img src="../../images/icon/feed.svg" alt="Feed"></a></li>
         </ul>
+
+        <p>各ソーシャル・ネットワークのアイコンは<code>img</code>要素を使って直接参照します。色は<code>href</code>属性の値で割り当てられています。TwitterとFacebookは先頭一致、Tumblrとフィードは後方一致です。</p>
 
         <pre><code class="language-html">&lt;ul class=&quot;follow&quot;&gt;
   &lt;li&gt;
@@ -802,8 +804,6 @@ $ git push -u origin master
   &lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-
-        <p>各ソーシャル・ネットワークのアイコンは直接参照します。色は<code>href</code>属性の値で割り当てられています。TwitterとFacebookは先頭一致、Tumblrとフィードは後方一致です。</p>
       </section>
 
       <section id="post-list-block" class="post-list">
