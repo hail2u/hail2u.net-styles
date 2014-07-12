@@ -2,10 +2,6 @@
 .footlinks {
   position: relative;
 
-  &::after {
-    height: rem($line-height * $ratio_footer);
-  }
-
   ul {
     margin-top: $margin_heading--primary;
     padding-top: ($height_footer__watermark + $margin--mini);
