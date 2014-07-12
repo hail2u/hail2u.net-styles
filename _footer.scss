@@ -4,5 +4,9 @@ body > footer {
   @extend %centering;
 
   margin-bottom: $margin_heading;
+  background-image: $image_fooer__watermark;
+  background-repeat: no-repeat;
+  background-position: $width-gap top;
+  background-size: $width_footer__watermark $height_footer__watermark;
   font-size: rem($ratio_footer);
 }

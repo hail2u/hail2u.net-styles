@@ -8,6 +8,7 @@
 
   ul {
     margin-top: $margin_heading--primary;
+    padding-top: ($height_footer__watermark + $margin--mini);
     padding-left: 0;
   }
 
@@ -27,7 +28,16 @@
     }
   }
 
+  @media (min-width: $breakpoint-content) {
+    ul {
+      padding-top: 0;
+      padding-left: ($width_footer__watermark + 0.25rem);
+    }
+  }
+
   @media (min-width: $breakpoint-full) {
-    margin-left: (- ($width-supplement + $width-gutter));
+    ul {
+      padding-left: 0;
+    }
   }
 }
