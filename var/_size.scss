@@ -73,7 +73,7 @@ $height_site-navigation: $height_logo;
 $width_site-navigation__gutter: 2rem;
 
 $width-border_site-navigation__mark: 0.125rem;
-$padding_site-navigation__mark: 0.125rem;
+$padding_site-navigation__mark: ($width-border_site-navigation__mark / 2);
 
 // Footer
 $width_footer__watermark: rem($ratio-footer * $line-height);
