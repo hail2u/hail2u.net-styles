@@ -4,6 +4,7 @@
 
   position: absolute;
   bottom: 100%;
+  width: 100%;
   font-size: rem($ratio_foot);
 
   @media (min-width: $breakpoint-full) {
