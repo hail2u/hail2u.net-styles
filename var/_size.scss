@@ -49,7 +49,7 @@ $width_hr: ($height_hr * 3);
 
 $indent_blockquote: $width-gutter;
 $width-border_blockquote: 0.25rem;
-$indent_blockquote--full: ($width-border_blockquote + $indent_blockquote);
+$indent_blockquote--full: (- ($width-border_blockquote + $indent_blockquote));
 
 $width-border_figcaption: 0.063rem;
 
