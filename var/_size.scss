@@ -44,12 +44,12 @@ $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes
 $line-height_body: ($line-height * 0.9);
 $line-height_body--content: $line-height;
 
-$width_hr: (($margin + rem($line-height) + $margin) * 3);
-$height_hr: ($width_hr / 3);
+$height_hr: ($margin + rem($line-height) + $margin);
+$width_hr: ($height_hr * 3);
 
 $indent_blockquote: $width-gutter;
-$indent_blockquote--full: (- (0.25rem + $indent_blockquote));
-$width-border_blockquote: (- $indent_blockquote - $indent_blockquote--full);
+$width-border_blockquote: 0.25rem;
+$indent_blockquote--full: ($width-border_blockquote + $indent_blockquote);
 
 $width-border_figcaption: 0.063rem;
 
