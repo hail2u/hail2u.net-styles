@@ -8,7 +8,6 @@
     margin-top: $margin_heading;
     line-height: $line-height_heading;
     font-size: rem($ratio_read-older__title);
-    white-space: normal;
 
     &::before {
       display: block;
@@ -18,15 +17,5 @@
       font-weight: bold;
       text-transform: uppercase;
     }
-  }
-
-  @media (min-width: $breakpoint-content) {
-    p {
-      white-space: nowrap;
-    }
-  }
-
-  @media (min-width: $breakpoint-full) {
-    margin-left: (- ($width-supplement + $width-gutter));
   }
 }
