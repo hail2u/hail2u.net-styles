@@ -9,6 +9,10 @@ body > header h1 {
     height: $height_logo;
   }
 
+  mark {
+    background-color: transparent;
+  }
+
   @media (min-width: $breakpoint-full) {
     margin-top: $margin_heading;
   }
