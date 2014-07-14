@@ -24,13 +24,10 @@
   aside,
   nav,
   hr::before,
-  body > header > a:first-child,
-  body > header > mark:first-child,
-  main > article h1::after,
-  main > section h1::after,
-  .byline p::after,
-  .elsewhere,
+  body > header h1,
+  .tagline,
   .footlinks,
+  .icon-list,
   .seealso::before,
   .topic > a > p::after {
     display: none;
