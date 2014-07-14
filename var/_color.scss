@@ -113,8 +113,8 @@ $color-fg_read-older__label: $color-shade--darkest;
 
 // Searchbox
 $color-fg_searchbox__input: $color-shade--light;
-$color-fg_searchbox__input--focus: $color-dark;
-$color-bg_searchbox__input: lighten($color-light, 2%);
+$color-fg_searchbox__input--focus: $color-dark--dark;
+$color-bg_searchbox__input: $color-light--light;
 $color-border_searchbox__input: $color-tint--light;
 $color-border_searchbox__input--focus: $color-accent--light;
 
