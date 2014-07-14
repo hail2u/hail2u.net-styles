@@ -3,6 +3,7 @@
   @extend %heading;
 
   margin-top: $margin_heading;
+  font-family: $font-stack_tagline;
   font-weight: 200;
   font-size: rem($ratio_tagline);
 
