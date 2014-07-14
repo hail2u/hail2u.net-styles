@@ -5,6 +5,8 @@ main > article h1 {
 
   .permalink & {
     margin-bottom: $margin_heading;
+    color: $color-fg_article-heading--permalink;
+    font-weight: 400;
     font-size: rem($ratio_article-heading--permalink);
   }
 
