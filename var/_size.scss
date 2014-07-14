@@ -106,8 +106,9 @@ $width_searchbox__button: $height_searchbox;
 $height_searchbox__button: $width_searchbox__button;
 
 // Seealso
-$margin_seealso__icon: 0.25rem;
-$width_seealso__icon: 1rem;
+$height_seealso__icon: rem($ratio_seealso);
+$margin_seealso__icon: ((rem($ratio_seealso * $line-height) - $height_seealso__icon) / 2);
+$width_seealso__icon: ($height_seealso__icon + $margin_seealso__icon);
 
 // Seemore
 $width-border_seemore: 0.125rem;
