@@ -12,6 +12,9 @@ $color-tint--dark: mix($color-dark, $color-light, 26%);
 $color-tint--light: mix($color-dark, $color-light, 14%);
 $color-tint--lightest: mix($color-dark, $color-light, 2%);
 
+$color-dark--dark: mix($color-dark, black);
+$color-light--light: mix($color-light, white);
+
 // Accent
 $color-accent: rgb(17, 136, 187);
 $color-accent--darkest: rgb(4, 83, 117);
