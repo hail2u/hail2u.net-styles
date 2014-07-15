@@ -9,4 +9,9 @@ body > footer {
   background-position: $width-gap top;
   background-size: $width_footer__watermark $height_footer__watermark;
   font-size: rem($ratio_footer);
+
+  @media (min-width: $breakpoint-content) {
+    height: $height_footer__watermark;
+    line-height: $height_footer__watermark;
+  }
 }

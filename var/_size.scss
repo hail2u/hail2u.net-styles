@@ -79,6 +79,8 @@ $padding_site-navigation__mark: ($width-border_site-navigation__mark / 2);
 $width_footer__watermark: rem($ratio-footer * $line-height);
 $height_footer__watermark: $width_footer__watermark;
 
+$padding_footlinks--content: ($width_footer__watermark * 1.25);
+
 $height_footlinks__item: rem($line-height);
 
 // Footnote

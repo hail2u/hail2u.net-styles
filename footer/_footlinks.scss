@@ -27,7 +27,12 @@
   @media (min-width: $breakpoint-content) {
     ul {
       padding-top: 0;
-      padding-left: ($width_footer__watermark + 0.25rem);
+      padding-left: $padding_footlinks--content;
+    }
+
+    li {
+      height: $height_footer__watermark;
+      line-height: $height_footer__watermark;
     }
   }
 
