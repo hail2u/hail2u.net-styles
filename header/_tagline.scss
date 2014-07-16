@@ -7,6 +7,10 @@
   font-weight: 200;
   font-size: rem($ratio_tagline);
 
+  .permalink & {
+    display: none;
+  }
+
   @media (min-width: $breakpoint-content) {
     padding-right: 10%;
     padding-left: 10%;
@@ -16,9 +20,5 @@
   @media (min-width: $breakpoint-full) {
     margin-top: $margin_heading--primary;
     margin-left: (- ($width-supplement + $width-gutter));
-  }
-
-  .permalink & {
-    display: none;
   }
 }
