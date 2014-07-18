@@ -257,8 +257,8 @@ kbd {
   font-family: $font-stack_code;
   font-size: rem($ratio_code);
 
-  &::before,
-  &::after {
+  p &::before,
+  p &::after {
     display: inline-block;
     width: 0;
     content: "\0020"; // Space
