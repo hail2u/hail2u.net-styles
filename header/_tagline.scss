@@ -7,6 +7,11 @@
   font-weight: 200;
   font-size: rem($ratio_tagline);
 
+  em {
+    font-weight: inherit;
+    font-style: italic;
+  }
+
   .permalink & {
     display: none;
   }
