@@ -40,6 +40,11 @@ $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes
   /*! Applied wider than #{$breakpoint-full} */
 }
 
+// Border
+$width-border: 0.125rem;
+$width-border--thin: ($width-border / 2);
+$width-border--bold: ($width-border * 2);
+
 // Core
 $line-height_body: ($line-height * 0.9);
 $line-height_body--content: $line-height;
@@ -48,21 +53,21 @@ $height_hr: ($margin + rem($line-height) + $margin);
 $width_hr: ($height_hr * 3);
 
 $indent_blockquote: $width-gutter;
-$width-border_blockquote: 0.25rem;
+$width-border_blockquote: $width-border--bold;
 $indent_blockquote--full: (- ($width-border_blockquote + $indent_blockquote));
 
-$width-border_figcaption: 0.063rem;
+$width-border_figcaption: $width-border--thin;
 
-$width-border_strong: 0.063rem;
+$width-border_strong: $width-border--thin;
 
-$letter-spacing_abbr: 0.063rem;
+$letter-spacing_abbr: $width-border--thin;
 
 $width-border_img: rem($line-height / 2);
 
-$width-border_td: 0.063rem;
+$width-border_td: $width-border--thin;
 $padding_td: 0.5rem;
 
-$width-border_th--thead: ($width-border_td * 2);
+$width-border_th--thead: $width-border;
 
 // Header
 $margin_logo: $margin;
@@ -79,7 +84,7 @@ $height_site-navigation: $height_logo;
 
 $width_site-navigation__gutter: 2rem;
 
-$width-border_site-navigation__mark: 0.125rem;
+$width-border_site-navigation__mark: $width-border;
 $padding_site-navigation__mark: ($width-border_site-navigation__mark / 2);
 
 // Footer
@@ -92,7 +97,7 @@ $height_footlinks__item: rem($line-height);
 
 // Footnote
 $width-border_footnote: 0.5rem;
-$height-border_footnote: 0.063rem;
+$height-border_footnote: $width-border--thin;
 
 // Icon List
 $width_icon-list__icon: $width_logo;
@@ -107,7 +112,7 @@ $line-height_pull-quote: 1.3;
 // Searchbox
 $height_searchbox: 2rem;
 
-$width-border_searchbox__input: 0.063rem;
+$width-border_searchbox__input: $width-border--thin;
 $height_searchbox__input: $height_searchbox;
 $padding_searchbox__input: 0.25rem;
 
@@ -120,7 +125,7 @@ $margin_seealso__icon: ((rem($ratio_seealso * $line-height) - $height_seealso__i
 $width_seealso__icon: ($height_seealso__icon + $margin_seealso__icon);
 
 // Seemore
-$width-border_seemore: 0.125rem;
+$width-border_seemore: $width-border;
 
 // Topic
 $margin_topic__more: 0.25rem;
