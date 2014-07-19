@@ -86,7 +86,7 @@ $margin_tagline--full: ($margin_tagline--content * $ratio-golden);
 
 $height_site-navigation: $height_logo;
 
-$width_site-navigation__gutter: 2rem;
+$width_site-navigation__gutter: $width-gutter;
 
 $width-border_site-navigation__mark: $width-border;
 $padding_site-navigation__mark: $padding--mini;
@@ -132,4 +132,4 @@ $width_seealso__icon: ($height_seealso__icon + $margin_seealso__icon);
 $width-border_seemore: $width-border;
 
 // Topic
-$margin_topic__more: 0.25rem;
+$margin_topic__more: $margin--mini;
