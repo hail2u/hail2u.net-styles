@@ -3,17 +3,22 @@ $font-sizes_html: (18px, 21px, 24px);
 
 // Line Height
 $line-height: $ratio-golden;
-$line-height_heading: 1.25;
-$line-height_code: 1.3;
 
 // Margin
 $margin: rem($line-height);
 $margin--mini: ($margin / pow($ratio-golden, 2));
-$margin_heading: ($margin * pow($ratio-golden, 2));
-$margin_heading--primary: ($margin_heading * $ratio-golden);
 
 // Indent
 $indent: rem(pow($ratio-golden, 2));
+
+// Border
+$width-border: 0.125rem;
+$width-border--thin: ($width-border / 2);
+$width-border--bold: ($width-border * 2);
+
+// Padding
+$padding: 0.25rem;
+$padding--mini: ($padding / 2);
 
 // Column
 $width-gutter: rem($ratio-golden);
@@ -40,25 +45,26 @@ $breakpoint-full: (($width-full--with-gap + $width_scrollbar) * (nth($font-sizes
   /*! Applied wider than #{$breakpoint-full} */
 }
 
-// Border
-$width-border: 0.125rem;
-$width-border--thin: ($width-border / 2);
-$width-border--bold: ($width-border * 2);
-
-// Padding
-$padding: 0.25rem;
-$padding--mini: ($padding / 2);
-
 // Core
 $line-height_body: ($line-height * 0.9);
 $line-height_body--content: $line-height;
 
+$margin_heading: ($margin * pow($ratio-golden, 2));
+$margin_heading--primary: ($margin_heading * $ratio-golden);
+$line-height_heading: 1.25;
+
 $height_hr: ($margin + rem($line-height) + $margin);
 $width_hr: ($height_hr * 3);
 
-$indent_blockquote: $width-gutter;
+$line-height_pre: 1.3;
+
 $width-border_blockquote: $width-border--bold;
-$indent_blockquote--full: (- ($width-border_blockquote + $indent_blockquote));
+$padding_blockquote: $width-gutter;
+$margin_blockquote--full: (- ($width-border_blockquote + $padding_blockquote));
+
+$padding_list: ($indent * $ratio_zeta);
+$padding_list--content: $indent;
+$padding_list--full: $padding_list--content;
 
 $width-border_figcaption: $width-border--thin;
 $padding_figcaption--full: ($width-border_figcaption + $margin--mini);
@@ -89,10 +95,22 @@ $margin_tagline--full: ($margin_tagline--content * $ratio-golden);
 
 $height_site-navigation: $height_logo;
 
-$width_site-navigation__gutter: $width-gutter;
+$width_site-navigation__gutter: ($width-gutter / 4);
+$width_site-navigation__gutter--content: ($width_site-navigation__gutter * 2);
+$width_site-navigation__gutter--full: ($width_site-navigation__gutter * 4);
 
 $width-border_site-navigation__mark: $width-border;
 $padding_site-navigation__mark: $padding--mini;
+
+// Main
+$margin_main: (- ($margin_heading--primary - $margin_tagline));
+$margin_main--content: (- ($margin_heading--primary - $margin_tagline--content));
+$margin_main--full: (- ($margin_heading--primary - $margin_tagline--full));
+
+$line-height_section-footer: rem($ratio_heading--primary * $line-height_heading);
+
+$margin_article-footer--full: rem(($ratio_heading--primary * $line-height_heading - $ratio_article-footer * $line-height) / 2);
+$margin_article-footer--full--permalink: rem(($line-height - $ratio_article-footer * $line-height) / 2);
 
 // Footer
 $width_footer__watermark: rem($ratio-footer * $line-height);
@@ -103,10 +121,19 @@ $padding_footlinks--content: ($width_footer__watermark + $padding);
 
 $height_footlinks__item: rem($line-height);
 
+// Drop
+$width_drop--max: ($width-supplement + $width-gutter + $width-content / 2);
+
+// Flat UL
+$width_flat-ul__item: (100% / 3);
+
 // Footnote
 $margin_footnote: $margin--mini;
 $height-border_footnote: $width-border--thin;
 $width-border_footnote: ($height-border_footnote * 8);
+
+// Full Width
+$padding_full-width__caption--full: ($width-gap - $width-border_figcaption);
 
 // Icon List
 $width_icon-list__icon: $width_logo;
@@ -119,6 +146,9 @@ $width_post-list__date: (6rem * $ratio_post-list__item + $width-gap);
 
 // Pull Quote
 $line-height_pull-quote: 1.3;
+$margin_pull-quote: $width-gutter;
+$margin_pull-quote--content: $indent;
+$width_pull-quote--full: ($width-supplement + $width-gutter + $width-supplement);
 
 // Searchbox
 $height_searchbox: 2rem;

@@ -12,7 +12,7 @@ body > header nav {
   }
 
   li {
-    padding-left: ($width_site-navigation__gutter / 4);
+    padding-left: $width_site-navigation__gutter;
     display: table-cell;
     height: $height_site-navigation;
     line-height: $height_site-navigation;
@@ -32,13 +32,13 @@ body > header nav {
 
   @media (min-width: $breakpoint-content) {
     li {
-      padding-left: ($width_site-navigation__gutter / 2);
+      padding-left: $width_site-navigation__gutter--content;
     }
   }
 
   @media (min-width: $breakpoint-full) {
     li {
-      padding-left: $width_site-navigation__gutter;
+      padding-left: $width_site-navigation__gutter--full;
     }
   }
 }

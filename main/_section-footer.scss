@@ -10,7 +10,7 @@ main > section h1 + footer {
 
   @media (min-width: $breakpoint-full) {
     p {
-      line-height: rem($ratio_heading--primary * $line-height_heading);
+      line-height: $line-height_section-footer;
     }
   }
 }

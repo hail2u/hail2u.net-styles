@@ -8,6 +8,6 @@
     margin-left: (- ($width-supplement + $width-gutter));
     margin-right: $width-gap;
     float: left;
-    max-width: ($width-supplement + $width-gutter + $width-content / 2);
+    max-width: $width_drop--max;
   }
 }

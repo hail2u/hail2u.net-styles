@@ -1,7 +1,7 @@
 // Pull Quote
 .pull-quote {
-  margin-right: $indent;
-  margin-left: $indent;
+  margin-right: $margin_pull-quote;
+  margin-left: $margin_pull-quote;
   line-height: $line-height_pull-quote;
   text-align: center;
 
@@ -22,10 +22,15 @@
     }
   }
 
+  @media (min-width: $breakpoint-content) {
+    margin-right: $margin_pull-quote--content;
+    margin-left: $margin_pull-quote--content;
+  }
+
   @media (min-width: $breakpoint-full) {
     margin-right: $width-gutter;
     margin-left: (- ($width-supplement + $width-gutter));
     float: left;
-    width: ($width-supplement + $width-gutter + $width-supplement);
+    width: $width_pull-quote--full;
   }
 }

@@ -1,11 +1,13 @@
-// Body
+// Core
 $font-stack_body: "Source Sans Pro", sans-serif;
 $font-stack_body--print: serif;
 
-// Code
-$font-stack_code: "Source Code Pro", monospace;
-$font-stack_code--print: monospace;
+$font-stack_pre: "Source Code Pro", monospace;
+$font-stack_pre--print: monospace;
 
-// Tagline
+$font-stack_code: $font-stack_pre;
+$font-stack_code--print: $font-stack_pre--print;
+
+// Header
 $font-stack_tagline: "Megrim", $font-stack_body;
-$font-stack_tagline--print: serif;
+$font-stack_tagline--print: $font-stack_body--print;

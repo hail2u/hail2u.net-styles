@@ -23,7 +23,7 @@ main > article h1 + footer {
 
   @media (min-width: $breakpoint-full) {
     p {
-      margin-top: rem(($ratio_heading--primary * $line-height_heading - $ratio_article-footer * $line-height) / 2);
+      margin-top: $margin_article-footer--full;
     }
 
     .permalink & {
@@ -32,7 +32,7 @@ main > article h1 + footer {
       text-align: left;
 
       p {
-	margin-top: rem(($line-height - $ratio_article-footer * $line-height) / 2);
+	margin-top: $margin_article-footer--full--permalink;
       }
     }
   }
