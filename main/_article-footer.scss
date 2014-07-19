@@ -1,5 +1,6 @@
 // Article Footer
 main > article h1 + footer {
+  @extend %link-underline-removal;
   @extend %foot;
 
   p {
