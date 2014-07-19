@@ -2,14 +2,18 @@
 main {
   @extend %centering;
 
-  margin-top: (- ($margin_heading--primary - $margin_heading));
+  margin-top: (- ($margin_heading--primary - $margin_tagline));
 
   > article,
   > section {
     position: relative;
   }
 
+  @media (min-width: $breakpoint-content) {
+    margin-top: (- ($margin_heading--primary - $margin_tagline--content));
+  }
+
   @media (min-width: $breakpoint-full) {
-    margin-top: 0;
+    margin-top: (- ($margin_heading--primary - $margin_tagline--full));
   }
 }

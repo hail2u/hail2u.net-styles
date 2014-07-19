@@ -2,7 +2,7 @@
 .tagline {
   @extend %heading;
 
-  margin-top: $margin_heading;
+  margin-top: $margin_tagline;
   font-family: $font-stack_tagline;
   font-weight: 200;
   font-size: rem($ratio_tagline);
@@ -17,13 +17,14 @@
   }
 
   @media (min-width: $breakpoint-content) {
+    margin-top: $margin_tagline--content;
     padding-right: 10%;
     padding-left: 10%;
     text-align: center;
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-top: $margin_heading--primary;
+    margin-top: $margin_tagline--full;
     margin-left: (- ($width-supplement + $width-gutter));
   }
 }

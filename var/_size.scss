@@ -65,8 +65,15 @@ $padding_td: 0.5rem;
 $width-border_th--thead: ($width-border_td * 2);
 
 // Header
+$margin_logo: $margin;
+$margin_logo--content: ($margin_logo * $ratio-golden);
+$margin_logo--full: ($margin_logo--content * $ratio-golden);
 $width_logo: (- $width-gap + $width-supplement--with-gap / pow($ratio-golden, 3) - $width-gap);
 $height_logo: $width_logo;
+
+$margin_tagline: ($margin_logo * $ratio-golden);
+$margin_tagline--content: ($margin_tagline * $ratio-golden);
+$margin_tagline--full: ($margin_tagline--content * $ratio-golden);
 
 $height_site-navigation: $height_logo;
 

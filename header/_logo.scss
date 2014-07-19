@@ -1,6 +1,6 @@
 // Logo
 body > header h1 {
-  margin-top: $margin;
+  margin-top: $margin_logo;
 
   a,
   mark {
@@ -13,11 +13,12 @@ body > header h1 {
     background-color: transparent;
   }
 
-  @media (min-width: $breakpoint-full) {
-    margin-top: $margin_heading;
+  @media (min-width: $breakpoint-content) {
+    margin-top: $margin_logo--content;
   }
 
   @media (min-width: $breakpoint-full) {
+    margin-top: $margin_logo--full;
     margin-left: (- ($width-supplement + $width-gutter));
   }
 }
