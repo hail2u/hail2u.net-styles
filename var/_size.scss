@@ -45,6 +45,10 @@ $width-border: 0.125rem;
 $width-border--thin: ($width-border / 2);
 $width-border--bold: ($width-border * 2);
 
+// Padding
+$padding: 0.25rem;
+$padding--mini: ($padding / 2);
+
 // Core
 $line-height_body: ($line-height * 0.9);
 $line-height_body--content: $line-height;
@@ -85,13 +89,13 @@ $height_site-navigation: $height_logo;
 $width_site-navigation__gutter: 2rem;
 
 $width-border_site-navigation__mark: $width-border;
-$padding_site-navigation__mark: ($width-border_site-navigation__mark / 2);
+$padding_site-navigation__mark: $padding--mini;
 
 // Footer
 $width_footer__watermark: rem($ratio-footer * $line-height);
 $height_footer__watermark: $width_footer__watermark;
 
-$padding_footlinks--content: ($width_footer__watermark * 1.25);
+$padding_footlinks--content: ($width_footer__watermark + $padding);
 
 $height_footlinks__item: rem($line-height);
 
@@ -114,7 +118,7 @@ $height_searchbox: 2rem;
 
 $width-border_searchbox__input: $width-border--thin;
 $height_searchbox__input: $height_searchbox;
-$padding_searchbox__input: 0.25rem;
+$padding_searchbox__input: $padding;
 
 $width_searchbox__button: $height_searchbox;
 $height_searchbox__button: $width_searchbox__button;
