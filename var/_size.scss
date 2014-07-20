@@ -100,8 +100,8 @@ $padding_footlinks--content: ($width_footer__watermark + $padding);
 $height_footlinks__item: rem($line-height);
 
 // Footnote
-$width-border_footnote: 0.5rem;
 $height-border_footnote: $width-border--thin;
+$width-border_footnote: ($height-border_footnote * 8);
 
 // Icon List
 $width_icon-list__icon: $width_logo;
