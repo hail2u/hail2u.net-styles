@@ -183,20 +183,20 @@ figcaption {
 
   blockquote + &:last-child {
     margin-top: 0;
-    padding-top: $margin--mini;
+    padding-top: $padding_figcaption--blockquote;
     padding-left: $indent_blockquote;
     border-left: $width-border_blockquote solid $color-border_blockquote;
     color: $color-fg_blockquote;
   }
 
   @media (min-width: $breakpoint-full) {
-    padding-top: ($width-border_figcaption + $margin--mini);
+    padding-top: $padding_figcaption--full;
     border-top: $width-border_figcaption solid $color-border_figcaption;
     top: 0;
 
     &:last-child {
       padding-top: 0;
-      padding-bottom: ($margin--mini + $width-border_figcaption);
+      padding-bottom: $padding_figcaption--full;
       border-top-width: 0;
       border-bottom: $width-border_figcaption solid $color-border_figcaption;
       top: auto;

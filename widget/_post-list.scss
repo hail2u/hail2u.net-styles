@@ -7,7 +7,7 @@
   li {
     @extend %overflow-ellipsis;
 
-    margin-top: $margin--mini;
+    margin-top: $margin_post-list__item;
     position: relative;
     list-style-type: none;
   }
@@ -19,7 +19,6 @@
 
   @media (min-width: $breakpoint-content) {
     li {
-      margin-top: $margin--mini;
       padding-right: $width_post-list__date;
       font-size: rem($ratio_post-list__item);
     }
