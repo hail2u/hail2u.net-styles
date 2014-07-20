@@ -131,11 +131,15 @@ ol {
   ul,
   ol {
     margin-top: 0;
-    padding-left: $indent;
   }
 
   @media (min-width: $breakpoint-full) {
     padding-left: 0;
+
+    ul,
+    ol {
+      padding-left: $indent;
+    }
   }
 }
 
