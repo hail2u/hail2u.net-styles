@@ -66,7 +66,7 @@ p {
   @extend %margin;
 
   h2 + & {
-    margin-top: $margin--mini;
+    @extend %margin_after-heading;
   }
 }
 
@@ -102,7 +102,7 @@ pre {
   overflow-wrap: break-word;
 
   h2 + & {
-    margin-top: $margin--mini;
+    @extend %margin_after-heading;
   }
 }
 
@@ -124,13 +124,13 @@ ol {
   padding: 0 0 0 $indent;
   clear: both;
 
-  h2 + & {
-    margin-top: $margin--mini;
-  }
-
   ul,
   ol {
     margin-top: 0;
+  }
+
+  h2 + & {
+    @extend %margin_after-heading;
   }
 
   @media (min-width: $breakpoint-full) {
@@ -148,10 +148,6 @@ dl {
 
   clear: both;
 
-  h2 + & {
-    margin-top: $margin--mini;
-  }
-
   dt {
     color: $color-fg_dt;
     font-weight: bold;
@@ -164,6 +160,10 @@ dl {
   dl {
     margin-top: 0;
   }
+
+  h2 + & {
+    @extend %margin_after-heading;
+  }
 }
 
 figure {
@@ -172,7 +172,7 @@ figure {
   position: relative;
 
   h2 + & {
-    margin-top: $margin--mini;
+    @extend %margin_after-heading;
   }
 }
 
@@ -312,7 +312,7 @@ table {
   font-feature-settings: "pnum" 0, "tnum" 1, "zero" 1;
 
   h2 + & {
-    margin-top: $margin--mini;
+    @extend %margin_after-heading;
   }
 
   @media not screen {
