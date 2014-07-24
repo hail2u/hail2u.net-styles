@@ -1,7 +1,9 @@
 // Basic
 $color-dark: rgb(60, 51, 48);
 $color-light: rgb(252, 249, 240);
+$color-accent: rgb(17, 136, 187);
 
+// Variation
 $color-shade--darkest: mix($color-dark, $color-light, 88%);
 $color-shade--dark: mix($color-dark, $color-light, 76%);
 $color-shade--light: mix($color-dark, $color-light, 64%);
@@ -15,8 +17,6 @@ $color-tint--lightest: mix($color-dark, $color-light, 2%);
 $color-dark--dark: mix($color-dark, black);
 $color-light--light: mix($color-light, white);
 
-// Accent
-$color-accent: rgb(17, 136, 187);
 $color-accent--darkest: rgb(4, 83, 117);
 $color-accent--dark: rgb(5, 107, 151);
 $color-accent--light: rgb(53, 152, 195);
