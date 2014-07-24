@@ -4,14 +4,14 @@ body > footer {
   @extend %centering;
 
   margin-bottom: $margin_heading;
-  background-image: $image_footer__watermark;
+  background-image: $image_global-footer__watermark;
   background-repeat: no-repeat;
   background-position: $width-gap top;
-  background-size: $width_footer__watermark $height_footer__watermark;
-  font-size: rem($ratio_footer);
+  background-size: $width_global-footer__watermark $height_global-footer__watermark;
+  font-size: rem($ratio_global-footer);
 
   @media (min-width: $breakpoint-content) {
-    height: $height_footer__watermark;
-    line-height: $height_footer__watermark;
+    height: $height_global-footer__watermark;
+    line-height: $height_global-footer__watermark;
   }
 }

@@ -113,11 +113,11 @@ $margin_article-footer--full: rem(($ratio_heading--primary * $line-height_headin
 $margin_article-footer--full--permalink: rem(($line-height - $ratio_article-footer * $line-height) / 2);
 
 // Global Footer
-$width_footer__watermark: rem($ratio-footer * $line-height);
-$height_footer__watermark: $width_footer__watermark;
+$width_global-footer__watermark: rem($ratio-global-footer * $line-height);
+$height_global-footer__watermark: $width_global-footer__watermark;
 
-$padding_footlinks: ($height_footer__watermark + $margin--mini);
-$padding_footlinks--content: ($width_footer__watermark + $padding);
+$padding_footlinks: ($height_global-footer__watermark + $margin--mini);
+$padding_footlinks--content: ($width_global-footer__watermark + $padding);
 
 $height_footlinks__item: rem($line-height);
 
