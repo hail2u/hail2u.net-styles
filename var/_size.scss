@@ -113,7 +113,7 @@ $margin_article-footer--full: rem(($ratio_heading--primary * $line-height_headin
 $margin_article-footer--full--permalink: rem(($line-height - $ratio_article-footer * $line-height) / 2);
 
 // Global Footer
-$width_global-footer__watermark: rem($ratio-global-footer * $line-height);
+$width_global-footer__watermark: rem($ratio_global-footer * $line-height);
 $height_global-footer__watermark: $width_global-footer__watermark;
 
 $height_global-footer--content: $height_global-footer__watermark;
