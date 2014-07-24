@@ -43,11 +43,11 @@
 // Core
 @import "core";
 
-// Header
-@import "header";
-@import "header/logo";
-@import "header/tagline";
-@import "header/site-navigation";
+// Global Header
+@import "global-header";
+@import "global-header/logo";
+@import "global-header/tagline";
+@import "global-header/site-navigation";
 
 // Main
 @import "main";
@@ -59,10 +59,10 @@
 // Subcontent
 @import "subcontent";
 
-// Footer
-@import "footer";
-@import "footer/footlinks";
-@import "footer/byline";
+// Global Footer
+@import "global-footer";
+@import "global-footer/footlinks";
+@import "global-footer/byline";
 
 // Widget
 @import "widget/ads";
