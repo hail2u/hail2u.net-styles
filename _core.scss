@@ -70,9 +70,12 @@ p {
   }
 }
 
+@import "./bower_components/hail2u-scss-partials/vendor-extension";
+
 hr {
   @extend %ir;
   @extend %margin;
+  @include box-sizing(content-box);
 
   margin-right: auto;
   margin-left: auto;

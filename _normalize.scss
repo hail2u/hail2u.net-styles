@@ -16,16 +16,16 @@
 /* Links
    ========================================================================== */
 
-// @import "./bower_components/modularized-normalize-scss/links/fix-background";
+@import "./bower_components/modularized-normalize-scss/links/fix-background";
 // @import "./bower_components/modularized-normalize-scss/links/fix-outline";
 
 
 /* Text-level semantics
    ========================================================================== */
 
-// @import "./bower_components/modularized-normalize-scss/text-level/abbr";
+@import "./bower_components/modularized-normalize-scss/text-level/abbr";
 // @import "./bower_components/modularized-normalize-scss/text-level/fix-bolder";
-// @import "./bower_components/modularized-normalize-scss/text-level/dfn";
+@import "./bower_components/modularized-normalize-scss/text-level/dfn";
 // @import "./bower_components/modularized-normalize-scss/text-level/headings";
 // @import "./bower_components/modularized-normalize-scss/text-level/mark";
 @import "./bower_components/modularized-normalize-scss/text-level/small";
@@ -43,7 +43,7 @@
    ========================================================================== */
 
 // @import "./bower_components/modularized-normalize-scss/grouping/figure";
-@import "./bower_components/modularized-normalize-scss/grouping/hr";
+// @import "./bower_components/modularized-normalize-scss/grouping/hr";
 // @import "./bower_components/modularized-normalize-scss/grouping/pre";
 // @import "./bower_components/modularized-normalize-scss/grouping/fix-monospace";
 
