@@ -82,12 +82,13 @@ $color-border_img: $color-bg_img;
 
 $color-border_td: $color-tint--light;
 
-// Global Header
+// Site Navigation
 $color-fg_site-navigation__mark: $color-accent--light;
 
-// Main
+// Article Heading
 $color-fg_article-heading--permalink: $color-dark;
 
+// Article Footer
 $color-fg_article-footer: $color-shade--lightest;
 
 $color-fg_article-footer__time: $color-dark;
@@ -97,6 +98,7 @@ $color-fg_article-footer__tag: $color-dark;
 // Global Footer
 $color-fg_global-footer__watermark: $color-tint--light;
 
+// Byline
 $color-fg_byline: $color-shade--darkest;
 
 // Footnote

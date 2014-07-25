@@ -82,17 +82,19 @@ $padding_td: 0.5rem;
 
 $width-border_th--thead: $width-border;
 
-// Global Header
+// Logo
 $margin_logo: $margin;
 $margin_logo--content: ($margin_logo * $ratio-golden);
 $margin_logo--full: ($margin_logo--content * $ratio-golden);
 $width_logo: (- $width-gap + $width-supplement--with-gap / pow($ratio-golden, 3) - $width-gap);
 $height_logo: $width_logo;
 
+// Tagline
 $margin_tagline: ($margin_logo * $ratio-golden);
 $margin_tagline--content: ($margin_tagline * $ratio-golden);
 $margin_tagline--full: ($margin_tagline--content * $ratio-golden);
 
+// Site Navigation
 $height_site-navigation: $height_logo;
 
 $width_site-navigation__gutter: ($width-gutter / 4);
@@ -107,8 +109,10 @@ $margin_main: (- ($margin_heading--primary - $margin_tagline));
 $margin_main--content: (- ($margin_heading--primary - $margin_tagline--content));
 $margin_main--full: (- ($margin_heading--primary - $margin_tagline--full));
 
+// Section Footer
 $line-height_section-footer: rem($ratio_heading--primary * $line-height_heading);
 
+// Article Footer
 $margin_article-footer--full: rem(($ratio_heading--primary * $line-height_heading - $ratio_article-footer * $line-height) / 2);
 $margin_article-footer--full--permalink: rem(($line-height - $ratio_article-footer * $line-height) / 2);
 
@@ -118,12 +122,14 @@ $height_global-footer__watermark: $width_global-footer__watermark;
 
 $height_global-footer--content: $height_global-footer__watermark;
 
+// Footlinks
 $padding_footlinks: ($height_global-footer__watermark + $margin--mini);
 $padding_footlinks--content: ($width_global-footer__watermark + $padding);
 
 $height_footlinks__item: rem($line-height);
 $height_footlinks__item--content: $height_global-footer__watermark;
 
+// Byline
 $height_byline--content: $height_global-footer__watermark;
 
 // Drop
