@@ -3,3 +3,8 @@ img[src$=".svg"],
 img[src$=".svgz"] {
   width: 100%;
 }
+
+// Enable overlay scrollbar in IE10+
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
