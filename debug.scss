@@ -125,6 +125,11 @@ body::after {
   font-family: $font-stack_code;
 }
 
+.font-stack-tagline {
+  font-family: $font-stack_tagline;
+  font-weight: 200;
+}
+
 .italic {
   font-style: italic;
 }
