@@ -260,7 +260,6 @@ abbr {
 }
 
 code,
-var,
 samp,
 kbd {
   font-family: $font-stack_code;
@@ -272,6 +271,12 @@ kbd {
     content: "\0020"; // Space
     font-size: 0;
   }
+}
+
+var {
+  @extend code;
+
+  font-style: normal;
 }
 
 mark {
