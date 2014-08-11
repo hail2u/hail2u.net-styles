@@ -8,7 +8,7 @@ main > section h1 + footer {
     margin-top: 0;
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint--full) {
     p {
       line-height: $line-height_section-footer;
     }

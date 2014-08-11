@@ -7,7 +7,7 @@
     background-color: transparent;
   }
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint--content) {
     position: absolute;
     bottom: 0;
     right: $width-gap;

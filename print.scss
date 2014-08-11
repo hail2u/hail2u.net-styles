@@ -35,7 +35,7 @@
 
   // Font
   body {
-    font-family: $font-stack_body--print;
+    font-family: $font-family_body--print;
   }
 
   pre,
@@ -43,7 +43,7 @@
   var,
   samp,
   kbd {
-    font-family: $font-stack_code--print;
+    font-family: $font-family_code--print;
   }
 
   // Page Break

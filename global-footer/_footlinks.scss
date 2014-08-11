@@ -24,7 +24,7 @@
     }
   }
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint--content) {
     ul {
       padding-top: 0;
       padding-left: $padding_footlinks--content;
@@ -36,7 +36,7 @@
     }
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint--full) {
     ul {
       padding-left: 0;
     }

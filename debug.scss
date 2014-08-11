@@ -58,7 +58,7 @@ body.debug::before {
   opacity: 0.05;
   pointer-events: none;
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint--content) {
     background-image: linear-gradient(
       to right,
       #0f0 0,
@@ -66,13 +66,13 @@ body.debug::before {
       #f0f $width-gap,
       #f0f ($width-gap + $width-content),
       #0f0 ($width-gap + $width-content),
-      #0f0 $width-content--with-gap
+      #0f0 $width-content--outer
     );
     background-position: center;
-    background-size: $width-content--with-gap 1px;
+    background-size: $width-content--outer 1px;
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint--full) {
     background-image: linear-gradient(
       to right,
       #0f0 0,
@@ -84,9 +84,9 @@ body.debug::before {
       #f0f ($width-gap + $width-supplement + $width-gutter),
       #f0f ($width-gap + $width-full),
       #0f0 ($width-gap + $width-full),
-      #0f0 $width-full--with-gap
+      #0f0 $width-full--outer
     );
-    background-size: $width-full--with-gap 1px;
+    background-size: $width-full--outer 1px;
   }
 }
 
@@ -103,12 +103,12 @@ body::after {
   background-color: #096;
   font-size: 0.875rem;
 
-  @media (min-width: $breakpoint-content) {
-    content: "Medium: #{(($breakpoint-content / 1rem) * 16px)}";
+  @media (min-width: $breakpoint--content) {
+    content: "Medium: #{(($breakpoint--content / 1rem) * 16px)}";
   }
 
-  @media (min-width: $breakpoint-full) {
-    content: "Large: #{(($breakpoint-full / 1rem) * 16px)}";
+  @media (min-width: $breakpoint--full) {
+    content: "Large: #{(($breakpoint--full / 1rem) * 16px)}";
   }
 
   @media print {
@@ -117,16 +117,16 @@ body::after {
 }
 
 // Fonts
-.font-stack-body {
-  font-family: $font-stack_body;
+.font-family-body {
+  font-family: $font-family_body;
 }
 
-.font-stack-code {
-  font-family: $font-stack_code;
+.font-family-code {
+  font-family: $font-family_code;
 }
 
-.font-stack-tagline {
-  font-family: $font-stack_tagline;
+.font-family-tagline {
+  font-family: $font-family_tagline;
   font-weight: 200;
 }
 
@@ -194,7 +194,7 @@ body::after {
     }
   }
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint--content) {
     margin-right: (- $width-gap);
     margin-left: (- $width-gap);
 

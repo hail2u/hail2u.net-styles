@@ -17,9 +17,9 @@
     color: $color-fg_post-list__time;
   }
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint--content) {
     li {
-      padding-right: $width_post-list__date;
+      padding-right: $padding_post-list__item;
     }
 
     time {

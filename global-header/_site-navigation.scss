@@ -30,13 +30,13 @@ body > header nav {
     background-color: transparent;
   }
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint--content) {
     li {
       padding-left: $width_site-navigation__gutter--content;
     }
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint--full) {
     li {
       padding-left: $width_site-navigation__gutter--full;
     }

@@ -9,7 +9,7 @@
     font-size: rem($ratio_sidenote);
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint--full) {
     top: auto;
   }
 }

@@ -5,7 +5,7 @@
   @each $size in $sizes {
     $feature-prefix: min-;
     $ratio: ($size / 16px);
-    $horizontal: ($width-content--with-gap * pow($ratio, 2));
+    $horizontal: ($width-content--outer * pow($ratio, 2));
     $vertical: ($horizontal / 2);
 
     @if ($ratio < 1) {
@@ -14,7 +14,7 @@
     }
 
     @if ($ratio > $threshold) {
-      $horizontal: ($width-full--with-gap * pow($ratio, 2) * $threshold);
+      $horizontal: ($width-full--outer * pow($ratio, 2) * $threshold);
       $vertical: ($horizontal / 2);
     }
 
@@ -38,9 +38,9 @@ body {
   line-height: $line-height_body;
   color: $color-fg_body;
   background-color: $color-bg_body;
-  font-family: $font-stack_body;
+  font-family: $font-family_body;
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint--content) {
     line-height: $line-height_body--content;
   }
 }
@@ -96,7 +96,7 @@ pre {
 
   clear: both;
   line-height: $line-height_pre;
-  font-family: $font-stack_pre;
+  font-family: $font-family_pre;
   -webkit-font-feature-settings: "kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1;
   -moz-font-feature-settings: "kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1;
   font-feature-settings: "kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1;
@@ -115,7 +115,7 @@ blockquote {
   border-left: $width-border_blockquote solid $color-border_blockquote;
   color: $color-fg_blockquote;
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint--full) {
     margin-left: $margin_blockquote--full;
   }
 }
@@ -136,11 +136,11 @@ ol {
     @extend %margin_after-heading;
   }
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint--content) {
     padding-left: $padding_list--content;
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint--full) {
     padding-left: 0;
 
     ul,
@@ -196,7 +196,7 @@ figcaption {
     color: $color-fg_blockquote;
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint--full) {
     padding-top: $padding_figcaption--full;
     border-top: $width-border_figcaption solid $color-border_figcaption;
     top: 0;
@@ -262,7 +262,7 @@ abbr {
 code,
 samp,
 kbd {
-  font-family: $font-stack_code;
+  font-family: $font-family_code;
 
   p &::before,
   p &::after {

@@ -4,7 +4,7 @@
     min-width: $width-supplement;
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint--full) {
     margin-left: (- ($width-supplement + $width-gutter));
     margin-right: $width-gap;
     float: left;

@@ -10,7 +10,7 @@ main > article h1 {
     font-size: rem($ratio_article-heading--permalink);
   }
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint--content) {
     .permalink & {
       padding-right: 10%;
       padding-left: 10%;
@@ -18,7 +18,7 @@ main > article h1 {
     }
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint--full) {
     .permalink & {
       margin-bottom: $margin_heading--primary;
       margin-left: (- ($width-supplement + $width-gutter));

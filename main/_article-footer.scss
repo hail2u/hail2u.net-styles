@@ -15,13 +15,13 @@ main > article h1 + footer {
     color: $color-fg_article-footer__tag;
   }
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint--content) {
     .permalink & {
       text-align: center;
     }
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint--full) {
     p {
       margin-top: $margin_article-footer--full;
     }

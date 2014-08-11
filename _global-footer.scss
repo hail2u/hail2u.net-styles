@@ -10,7 +10,7 @@ body > footer {
   background-size: $width_global-footer__watermark $height_global-footer__watermark;
   font-size: rem($ratio_global-footer);
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint--content) {
     height: $height_global-footer--content;
     line-height: $height_global-footer--content;
   }

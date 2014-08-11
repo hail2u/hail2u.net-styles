@@ -9,11 +9,11 @@ main {
     position: relative;
   }
 
-  @media (min-width: $breakpoint-content) {
+  @media (min-width: $breakpoint--content) {
     margin-top: $margin_main--content;
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint--full) {
     margin-top: $margin_main--full;
   }
 }

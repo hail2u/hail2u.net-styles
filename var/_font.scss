@@ -1,13 +1,13 @@
 // Core
-$font-stack_body: "Source Sans Pro", sans-serif;
-$font-stack_body--print: serif;
+$font-family_body: "Source Sans Pro", sans-serif;
+$font-family_body--print: serif;
 
-$font-stack_pre: "Source Code Pro", monospace;
-$font-stack_pre--print: monospace;
+$font-family_pre: "Source Code Pro", monospace;
+$font-family_pre--print: monospace;
 
-$font-stack_code: $font-stack_pre;
-$font-stack_code--print: $font-stack_pre--print;
+$font-family_code: $font-family_pre;
+$font-family_code--print: $font-family_pre--print;
 
 // Tagline
-$font-stack_tagline: "Megrim", $font-stack_body;
-$font-stack_tagline--print: $font-stack_body--print;
+$font-family_tagline: "Megrim", $font-family_body;
+$font-family_tagline--print: $font-family_body--print;
