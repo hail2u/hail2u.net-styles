@@ -20,7 +20,6 @@
   @media (min-width: $breakpoint-content) {
     li {
       padding-right: $width_post-list__date;
-      font-size: rem($ratio_post-list__item);
     }
 
     time {
