@@ -5,21 +5,28 @@
   padding-left: 0;
 
   li {
+    @extend %overflow-ellipsis;
+
     margin-top: $margin_post-list__item;
     position: relative;
     list-style-type: none;
   }
 
   time {
-    @extend %hang;
-
     display: block;
     color: $color-fg_post-list__time;
   }
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: $breakpoint-content) {
+    li {
+      padding-right: $width_post-list__date;
+      font-size: rem($ratio_post-list__item);
+    }
+
     time {
-      text-align: right;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
   }
 }
