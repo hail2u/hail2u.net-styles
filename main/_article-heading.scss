@@ -4,7 +4,7 @@ main > article h1 {
   @extend %heading--primary;
 
   .permalink & {
-    margin-bottom: $margin_heading;
+    margin-bottom: $margin_article-heading--permalink;
     color: $color-fg_article-heading--permalink;
     font-weight: 400;
     font-size: rem($ratio_article-heading--permalink);
@@ -20,8 +20,12 @@ main > article h1 {
 
   @media (min-width: $breakpoint--full) {
     .permalink & {
-      margin-bottom: $margin_heading--primary;
+      margin-bottom: $margin_article-heading--full--permalink;
       margin-left: (- ($width-supplement + $width-gutter));
+    }
+
+    .permalink.has-image & {
+      margin-bottom: $margin_article-heading--full--permalink--has-image;
     }
   }
 }
