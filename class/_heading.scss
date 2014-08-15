@@ -2,9 +2,3 @@
 %heading {
   line-height: $line-height_heading;
 }
-
-%heading--primary {
-  @extend %link-underline-removal;
-
-  position: relative;
-}
