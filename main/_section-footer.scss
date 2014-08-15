@@ -1,9 +1,9 @@
 // Section Footer
 main > section h1 + footer {
-  @extend %foot;
+  @extend %pin;
 
   p {
-    @extend %overflow-ellipsis;
+    @extend %ellipsing;
 
     margin-top: 0;
   }

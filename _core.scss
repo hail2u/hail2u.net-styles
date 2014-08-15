@@ -184,7 +184,7 @@ figure {
 }
 
 figcaption {
-  @extend %hang;
+  @extend %float;
 
   color: $color-fg_figcaption;
 

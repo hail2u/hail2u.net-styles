@@ -1,11 +1,11 @@
-// Foot
-%foot {
-  @extend %hang;
+// Pin
+%pin {
+  @extend %float;
 
   position: absolute;
   bottom: 100%;
   width: 100%;
-  font-size: rem($ratio_foot);
+  font-size: rem($ratio_pin);
 
   @media (min-width: $breakpoint--full) {
     width: $width-supplement;

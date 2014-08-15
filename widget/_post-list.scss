@@ -5,7 +5,7 @@
   padding-left: 0;
 
   li {
-    @extend %overflow-ellipsis;
+    @extend %ellipsing;
 
     margin-top: $margin_post-list__item;
     position: relative;

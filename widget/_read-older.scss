@@ -3,7 +3,7 @@
   @extend %link-underline-removal;
 
   p {
-    @extend %overflow-ellipsis;
+    @extend %ellipsing;
 
     margin-top: $margin_heading;
     line-height: $line-height_heading;

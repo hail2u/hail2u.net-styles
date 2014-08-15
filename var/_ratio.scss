@@ -21,7 +21,7 @@ $ratio-content: 1;
 $ratio-supplement: (1 / pow($ratio-golden, 2));
 
 // Class
-$ratio_foot: $ratio-epsilon;
+$ratio_pin: $ratio-epsilon;
 
 // Core
 $ratio_heading: $ratio-gamma;
@@ -40,7 +40,7 @@ $ratio_site-navigation: $ratio-epsilon;
 $ratio_article-heading--permalink: $ratio-alpha;
 
 // Article Footer
-$ratio_article-footer: $ratio_foot;
+$ratio_article-footer: $ratio_pin;
 
 // Global Footer
 $ratio_global-footer: $ratio-epsilon;
