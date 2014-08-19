@@ -223,7 +223,17 @@ figcaption {
 
 // Text-level Semantics
 a {
-  color: $color-fg_link;
+  color: inherit;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 50%,
+    $color-fg_link__underline 50%
+  );
+  background-position: 0 1.1em;
+  background-repeat: repeat-x;
+  background-size: $width_link__underline $height_link__underline;
+  text-decoration: none;
 }
 
 em {
