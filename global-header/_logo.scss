@@ -15,6 +15,7 @@ body > header h1 {
 
   mark {
     background-color: transparent;
+    cursor: pointer;
   }
 
   @media (min-width: $breakpoint--content) {
