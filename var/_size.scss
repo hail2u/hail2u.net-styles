@@ -130,7 +130,7 @@ $height_global-footer--content: $height_global-footer__watermark;
 
 // Footlinks
 $padding_footlinks: ($height_global-footer__watermark + $margin--mini);
-$padding_footlinks--content: ($width_global-footer__watermark + $padding);
+$padding_footlinks--content: ($width_global-footer__watermark * 1.25);
 
 $height_footlinks__item: rem($line-height);
 $height_footlinks__item--content: $height_global-footer__watermark;
