@@ -6,8 +6,8 @@
     font-weight: bold;
     text-transform: uppercase;
 
-    &::after {
-      content: "\0020\2794"; // Heavy Wide-Headed Rightwards Arrow
+    &::before {
+      content: "\2794\0020"; // Heavy Wide-Headed Rightwards Arrow
     }
   }
 }
