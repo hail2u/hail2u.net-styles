@@ -87,7 +87,7 @@ $width-border_th--thead: $width-border;
 $margin_logo: $margin;
 $margin_logo--content: ($margin_logo * $ratio-golden);
 $margin_logo--full: ($margin_logo--content * $ratio-golden);
-$width_logo: (- $width-gap + $width-supplement--outer / pow($ratio-golden, 3) - $width-gap);
+$width_logo: ($width-supplement / pow($ratio-golden, 4));
 $height_logo: $width_logo;
 
 // Tagline
