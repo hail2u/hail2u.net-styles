@@ -153,8 +153,9 @@ $width-border_footnote: ($height-border_footnote * 8);
 $padding_full-width__caption--full: ($width-gap - $width-border_figcaption);
 
 // Icon List
-$width_icon-list__icon: $width_logo;
-$padding_icon-list__icon: 20%;
+$width_icon-list__icon: ($width-content / pow($ratio-golden, 5));
+$height_icon-list__icon: $width_icon-list__icon;
+$padding_icon-list__icon: 25%;
 
 // Post List
 $margin_post-list__item: $margin--mini;

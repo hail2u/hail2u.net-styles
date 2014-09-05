@@ -24,6 +24,7 @@
     padding: $padding_icon-list__icon;
     display: block;
     width: $width_icon-list__icon;
+    height: $height_icon-list__icon;
 
     &[href^="https://twitter.com/"] {
       background-color: $cc-twitter;
