@@ -19,13 +19,13 @@
 
   @media (min-width: $breakpoint--content) {
     li {
-      padding-right: $padding_post-list__item;
+      padding-left: $padding_post-list__item;
     }
 
     time {
       position: absolute;
       top: 0;
-      right: 0;
+      left: 0;
     }
   }
 }
