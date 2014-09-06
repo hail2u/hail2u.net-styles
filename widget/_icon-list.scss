@@ -22,6 +22,7 @@
     @include box-sizing(border-box);
 
     padding: $padding_icon-list__icon;
+    border-radius: $border-radius_icon-list__icon;
     display: block;
     width: $width_icon-list__icon;
     height: $height_icon-list__icon;

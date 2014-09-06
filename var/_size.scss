@@ -155,6 +155,7 @@ $padding_full-width__caption--full: ($width-gap - $width-border_figcaption);
 // Icon List
 $width_icon-list__icon: ($width-content / pow($ratio-golden, 5));
 $height_icon-list__icon: $width_icon-list__icon;
+$border-radius_icon-list__icon: ($width-border * 1.5);
 $padding_icon-list__icon: 25%;
 
 // Post List
