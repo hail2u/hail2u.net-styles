@@ -19,12 +19,6 @@ body > header h1 {
 
   .to-top {
     cursor: pointer;
-
-    img {
-      margin: 14%;
-      width: 72%;
-      height: 72%;
-    }
   }
 
   @media (min-width: $breakpoint--content) {
