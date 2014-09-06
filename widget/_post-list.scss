@@ -1,12 +1,8 @@
 // Post List
 .post-list ol {
-  @extend %link-underline-removal;
-
   padding-left: 0;
 
   li {
-    @extend %ellipsing;
-
     margin-top: $margin_post-list__item;
     position: relative;
     list-style-type: none;
