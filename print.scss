@@ -8,6 +8,7 @@
 // Function
 @import "./bower_components/hail2u-scss-functions/number/rem";
 @import "./bower_components/hail2u-scss-functions/number/pow";
+@import "./bower_components/hail2u-scss-functions/number/remove-unit";
 
 // Variable
 @import "var/font";
@@ -77,8 +78,8 @@
   hr {
     margin-top: ($margin * 2);
     margin-bottom: ($margin * 2);
-    border-top: 1px dashed black;
-    border-bottom: 1px dashed black;
+    border-top: 1px dashed #000;
+    border-bottom: 1px dashed #000;
     width: 80%;
     height: 0;
   }
