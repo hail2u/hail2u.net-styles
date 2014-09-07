@@ -92,10 +92,8 @@ hr {
 }
 
 pre {
-  @extend %margin;
-
-  padding: $padding_pre;
-  border: $width-border_pre solid $color-border_pre;
+  margin: $margin (- $width-gap) 0;
+  padding: $width-gap;
   clear: both;
   line-height: $line-height_pre;
   background-color: $color-bg_pre;

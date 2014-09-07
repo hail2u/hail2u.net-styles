@@ -3,6 +3,7 @@ $font-sizes_html: (18px, 21px, 24px);
 
 // Line Height
 $line-height: $ratio-golden;
+$line-height--mini: ($line-height * 0.8);
 
 // Margin
 $margin: rem($line-height);
@@ -56,9 +57,7 @@ $line-height_heading: 1.25;
 $height_hr: rem($line-height * $ratio-golden);
 $width_hr: ($height_hr * 3);
 
-$width-border_pre: $width-border--thin;
-$line-height_pre: remove-unit($indent / 2);
-$padding_pre: rem($line-height_pre);
+$line-height_pre: $line-height--mini;
 
 $width-border_blockquote: $width-border--bold;
 $padding_blockquote: $width-gutter;
