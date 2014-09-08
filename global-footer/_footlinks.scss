@@ -11,16 +11,8 @@
   li {
     display: table-cell;
 
-    &::after {
-      content: "\00a0\00b7\00a0"; // Middle Dot
-    }
-
     &:first-child::after {
-      content: "\002c\00a0"; // Comma
-    }
-
-    &:last-child::after {
-      content: "";
+      content: "\00a0\00b7\00a0"; // Middle Dot
     }
   }
 
