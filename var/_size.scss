@@ -72,8 +72,8 @@ $padding_figcaption--full: ($width-border_figcaption + $margin--mini);
 
 $padding_figcaption--blockquote: $margin--mini;
 
-$width_link__underline: 2px;
-$height_link__underline: 2px;
+$width_link__underline: $width-border--thin;
+$height_link__underline: $width_link__underline;
 
 $width-border_strong: $width-border--thin;
 
