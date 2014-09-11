@@ -185,6 +185,7 @@ figure {
 figcaption {
   @extend %float;
 
+  margin-top: $margin_figcaption;
   color: $color-fg_figcaption;
 
   blockquote + &:last-child {
@@ -196,6 +197,7 @@ figcaption {
   }
 
   @media (min-width: $breakpoint--full) {
+    margin-top: 0;
     padding-top: $padding_figcaption--full;
     border-top: $width-border_figcaption solid $color-border_figcaption;
     top: 0;
