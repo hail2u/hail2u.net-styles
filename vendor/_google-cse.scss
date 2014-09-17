@@ -1,0 +1,8 @@
+// Google Custom Search Engine
+.searchboxbygoogle {
+  margin-top: $margin-searchboxbygoogle;
+
+  @media (min-width: $breakpoint--full) {
+    margin-left: (- ($width-supplement + $width-gutter));
+  }
+}
