@@ -42,4 +42,9 @@
     background-position: center top;
     background-size: 100% auto;
   }
+
+  input[type="search"]:focus + input[type="submit"],
+  input[type="submit"]:focus {
+    background-color: $color-bg_searchbox__button--focus;
+  }
 }

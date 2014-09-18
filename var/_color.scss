@@ -124,7 +124,8 @@ $color-border_searchbox__input: $color-tint--light;
 $color-border_searchbox__input--focus: $color-accent--light;
 
 $color-fg_searchbox__button: $color-bg_searchbox__input;
-$color-bg_searchbox__button: $color-border_searchbox__input--focus;
+$color-bg_searchbox__button: $color-border_searchbox__input;
+$color-bg_searchbox__button--focus: $color-border_searchbox__input--focus;
 
 // Seealso
 $color-fg_seealso: $color-shade--dark;
