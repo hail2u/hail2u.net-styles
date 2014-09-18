@@ -5,6 +5,7 @@
 .searchbox {
   margin-top: $margin;
   position: relative;
+  max-width: $width_searchbox;
 
   input[type="search"] {
     @include box-sizing(border-box);
