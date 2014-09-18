@@ -7,17 +7,17 @@
   height: 250px;
   overflow: hidden;
 
-  @media (min-width: $breakpoint_adsense--small) {
+  @media (min-width: $breakpoint_adsbygoogle--small) {
     margin-right: $width-gap;
     margin-left: $width-gap;
   }
 
-  @media (min-width: $breakpoint_adsense--medium) {
+  @media (min-width: $breakpoint_adsbygoogle--medium) {
     width: 336px;
     height: 280px;
   }
 
-  @media (min-width: $breakpoint_adsense--large) {
+  @media (min-width: $breakpoint_adsbygoogle--large) {
     width: 728px;
     height: 90px;
   }
