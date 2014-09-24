@@ -124,6 +124,9 @@ $margin_article-heading--full--permalink--has-image: ($margin_article-heading--f
 $margin_article-footer--full: rem(($ratio_heading--primary * $line-height_heading - $ratio_article-footer * $line-height) / 2);
 $margin_article-footer--full--permalink: rem(($line-height - $ratio_article-footer * $line-height) / 2);
 
+// Footlinks
+$margin_footlinks: $margin_heading--primary;
+
 // Drop
 $width_drop--max: ($width-supplement + $width-gutter + $width-content / 2);
 
