@@ -124,22 +124,6 @@ $margin_article-heading--full--permalink--has-image: ($margin_article-heading--f
 $margin_article-footer--full: rem(($ratio_heading--primary * $line-height_heading - $ratio_article-footer * $line-height) / 2);
 $margin_article-footer--full--permalink: rem(($line-height - $ratio_article-footer * $line-height) / 2);
 
-// Global Footer
-$width_global-footer__watermark: rem($ratio_global-footer * $line-height);
-$height_global-footer__watermark: $width_global-footer__watermark;
-
-$height_global-footer--content: $height_global-footer__watermark;
-
-// Footlinks
-$padding_footlinks: ($height_global-footer__watermark + $margin--mini);
-$padding_footlinks--content: ($width_global-footer__watermark * 1.25);
-
-$height_footlinks__item: rem($line-height);
-$height_footlinks__item--content: $height_global-footer__watermark;
-
-// Byline
-$height_byline--content: $height_global-footer__watermark;
-
 // Drop
 $width_drop--max: ($width-supplement + $width-gutter + $width-content / 2);
 
