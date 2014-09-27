@@ -327,10 +327,10 @@ table {
   clear: both;
   max-width: 100%;
   overflow-x: auto;
-  table-layout: fixed;
   -webkit-font-feature-settings: "pnum" 0, "tnum" 1, "zero" 1;
   -moz-font-feature-settings: "pnum" 0, "tnum" 1, "zero" 1;
   font-feature-settings: "pnum" 0, "tnum" 1, "zero" 1;
+  table-layout: fixed;
 
   h2 + & {
     @extend %margin_after-heading;
