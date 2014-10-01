@@ -97,6 +97,7 @@ pre {
   line-height: $line-height_pre;
   overflow-x: auto;
   font-family: $font-family_pre;
+  font-size: rem($ratio_pre);
   -webkit-font-feature-settings: "kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1;
   -moz-font-feature-settings: "kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1;
   font-feature-settings: "kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1;
@@ -271,6 +272,7 @@ code,
 samp,
 kbd {
   font-family: $font-family_code;
+  font-size: rem($ratio_code);
 
   p &::before,
   p &::after {
