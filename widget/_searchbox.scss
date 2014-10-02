@@ -30,6 +30,7 @@
     // ir-pseudo-element does not work on `input`
     @include ir-text-indent;
 
+    padding: 0;
     border: 0;
     border-radius: 0;
     position: absolute;
