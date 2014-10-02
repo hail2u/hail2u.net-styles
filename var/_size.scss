@@ -115,6 +115,11 @@ $margin_main--full: (- ($margin_heading--primary - $margin_tagline--full));
 // Section Footer
 $line-height_section-footer: rem($ratio_heading--primary * $line-height_heading);
 
+// Byline
+$margin_byline__border: $margin--mini;
+$width_byline__border: $width_logo;
+$width-border_byline__border: $width-border;
+
 // Article Heading
 $margin_article-heading--permalink: $margin_heading;
 $margin_article-heading--full--permalink: $margin_heading--primary;
