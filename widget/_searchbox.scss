@@ -34,7 +34,7 @@
     border-radius: 0;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: (- $width-border_searchbox__input);
     width: $width_searchbox__button;
     height: $height_searchbox__button;
     background-color: $color-bg_searchbox__button;
