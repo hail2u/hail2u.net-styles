@@ -3,7 +3,7 @@
   margin-top: 0;
   top: ($margin_footlinks - $margin);
 
-  @media (min-width: $breakpoint--full) {
+  @media (min-width: $breakpoint--content) {
     position: absolute;
     top: $margin_searchboxbygoogle--full;
     right: $width-gap;
