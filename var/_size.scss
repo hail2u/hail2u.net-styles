@@ -164,11 +164,11 @@ $width_pull-quote--full: ($width-supplement + $width-gutter + $width-supplement)
 
 // Searchbox
 $width_searchbox: 24rem;
-$height_searchbox: 2rem;
+$height_searchbox: rem($line-height);
 
 $width-border_searchbox__input: $width-border--thin;
 $height_searchbox__input: $height_searchbox;
-$padding_searchbox__input: $padding;
+$padding_searchbox__input: $padding--mini;
 
 $width_searchbox__button: $height_searchbox;
 $height_searchbox__button: $width_searchbox__button;
