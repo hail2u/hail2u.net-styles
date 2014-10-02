@@ -156,34 +156,6 @@ body::after {
       height: 100%;
       content: "";
     }
-
-    &:nth-child(1)::before {
-      background-color: $color-accent;
-    }
-
-    &:nth-child(2)::before {
-      background-color: $color-accent--darkest;
-    }
-
-    &:nth-child(3)::before {
-      background-color: $color-accent--dark;
-    }
-
-    &:nth-child(4)::before {
-      background-color: $color-accent--light;
-    }
-
-    &:nth-child(5)::before {
-      background-color: $color-accent--lightest;
-    }
-
-    &:nth-child(6)::before {
-      background-color: $color-light;
-    }
-
-    &:nth-child(7)::before {
-      background-color: $color-dark;
-    }
   }
 
   @media (min-width: $breakpoint--content) {
@@ -197,6 +169,182 @@ body::after {
       float: left;
       width: (100% / 7);
     }
+  }
+}
+
+.colors__variation-shade li {
+  &:nth-child(1)::before {
+    background-color: $color-dark;
+  }
+
+  &:nth-child(2)::before {
+    background-color: $color-shade--darkest;
+  }
+
+  &:nth-child(3)::before {
+    background-color: $color-shade--dark;
+  }
+
+  &:nth-child(4)::before {
+    background-color: $color-shade--light;
+  }
+
+  &:nth-child(5)::before {
+    background-color: $color-shade--lightest;
+  }
+}
+
+.colors__variation-tint li {
+  &:nth-child(1)::before {
+    background-color: $color-light;
+  }
+
+  &:nth-child(2)::before {
+    background-color: $color-tint--darkest;
+  }
+
+  &:nth-child(3)::before {
+    background-color: $color-tint--dark;
+  }
+
+  &:nth-child(4)::before {
+    background-color: $color-tint--light;
+  }
+
+  &:nth-child(5)::before {
+    background-color: $color-tint--lightest;
+  }
+}
+
+.colors__variation-accent li {
+  &:nth-child(1)::before {
+    background-color: $color-accent;
+  }
+
+  &:nth-child(2)::before {
+    background-color: $color-accent--darkest;
+  }
+
+  &:nth-child(3)::before {
+    background-color: $color-accent--dark;
+  }
+
+  &:nth-child(4)::before {
+    background-color: $color-accent--light;
+  }
+
+  &:nth-child(5)::before {
+    background-color: $color-accent--lightest;
+  }
+}
+
+.colors__variation-accent__complement li {
+  &:nth-child(1)::before {
+    background-color: $color-accent__complement;
+  }
+
+  &:nth-child(2)::before {
+    background-color: $color-accent__complement--darkest;
+  }
+
+  &:nth-child(3)::before {
+    background-color: $color-accent__complement--dark;
+  }
+
+  &:nth-child(4)::before {
+    background-color: $color-accent__complement--light;
+  }
+
+  &:nth-child(5)::before {
+    background-color: $color-accent__complement--lightest;
+  }
+}
+
+.colors__variation-accent__adjacent-negative li {
+  &:nth-child(1)::before {
+    background-color: $color-accent__adjacent-negative;
+  }
+
+  &:nth-child(2)::before {
+    background-color: $color-accent__adjacent-negative--darkest;
+  }
+
+  &:nth-child(3)::before {
+    background-color: $color-accent__adjacent-negative--dark;
+  }
+
+  &:nth-child(4)::before {
+    background-color: $color-accent__adjacent-negative--light;
+  }
+
+  &:nth-child(5)::before {
+    background-color: $color-accent__adjacent-negative--lightest;
+  }
+}
+
+.colors__variation-accent__adjacent-positive li {
+  &:nth-child(1)::before {
+    background-color: $color-accent__adjacent-positive;
+  }
+
+  &:nth-child(2)::before {
+    background-color: $color-accent__adjacent-positive--darkest;
+  }
+
+  &:nth-child(3)::before {
+    background-color: $color-accent__adjacent-positive--dark;
+  }
+
+  &:nth-child(4)::before {
+    background-color: $color-accent__adjacent-positive--light;
+  }
+
+  &:nth-child(5)::before {
+    background-color: $color-accent__adjacent-positive--lightest;
+  }
+}
+
+.colors__variation-accent__triad-negative li {
+  &:nth-child(1)::before {
+    background-color: $color-accent__triad-negative;
+  }
+
+  &:nth-child(2)::before {
+    background-color: $color-accent__triad-negative--darkest;
+  }
+
+  &:nth-child(3)::before {
+    background-color: $color-accent__triad-negative--dark;
+  }
+
+  &:nth-child(4)::before {
+    background-color: $color-accent__triad-negative--light;
+  }
+
+  &:nth-child(5)::before {
+    background-color: $color-accent__triad-negative--lightest;
+  }
+}
+
+.colors__variation-accent__triad-positive li {
+  &:nth-child(1)::before {
+    background-color: $color-accent__triad-positive;
+  }
+
+  &:nth-child(2)::before {
+    background-color: $color-accent__triad-positive--darkest;
+  }
+
+  &:nth-child(3)::before {
+    background-color: $color-accent__triad-positive--dark;
+  }
+
+  &:nth-child(4)::before {
+    background-color: $color-accent__triad-positive--light;
+  }
+
+  &:nth-child(5)::before {
+    background-color: $color-accent__triad-positive--lightest;
   }
 }
 
