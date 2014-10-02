@@ -7,14 +7,9 @@
     background-color: transparent;
   }
 
-  @media (min-width: $breakpoint--content) {
-    position: absolute;
-    right: $width-gap;
-    bottom: 0;
-  }
-
   @media (min-width: $breakpoint--full) {
-    right: auto;
+    position: absolute;
+    bottom: 0;
     left: $width-gap;
   }
 }
