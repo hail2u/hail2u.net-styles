@@ -123,7 +123,6 @@ $width-border_byline__border: $width-border;
 // Article Heading
 $margin_article-heading--permalink: $margin_heading;
 $margin_article-heading--full--permalink: $margin_heading--primary;
-$margin_article-heading--full--permalink--has-image: ($margin_article-heading--full--permalink - rem($line-height * $ratio_article-footer));
 
 // Article Footer
 $margin_article-footer--full: rem(($ratio_heading--primary * $line-height_heading - $ratio_article-footer * $line-height) / 2);

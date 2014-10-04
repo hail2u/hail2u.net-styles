@@ -23,9 +23,5 @@ main > article h1 {
       margin-bottom: $margin_article-heading--full--permalink;
       margin-left: (- ($width-supplement + $width-gutter));
     }
-
-    .permalink.has-image & {
-      margin-bottom: $margin_article-heading--full--permalink--has-image;
-    }
   }
 }

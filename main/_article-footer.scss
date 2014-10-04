@@ -35,13 +35,5 @@ main > article h1 + footer {
         margin-top: $margin_article-footer--full--permalink;
       }
     }
-
-    .permalink.has-image & {
-      margin-left: (- ($width-supplement + $width-gutter));
-      right: auto;
-      bottom: 100%;
-      width: $width-full;
-      text-align: center;
-    }
   }
 }
