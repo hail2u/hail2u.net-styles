@@ -101,6 +101,9 @@ pre {
   -webkit-font-feature-settings: "kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1;
   -moz-font-feature-settings: "kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1;
   font-feature-settings: "kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 
   h2 + & {
     @extend %margin_after-heading;
