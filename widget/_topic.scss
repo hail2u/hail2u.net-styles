@@ -13,6 +13,7 @@
     font-size: rem($ratio_topic__more);
     color: $color-fg_topic__more;
     text-transform: uppercase;
+    white-space: nowrap;
   }
 
   h1 {
