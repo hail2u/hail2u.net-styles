@@ -1,0 +1,23 @@
+%font-family_body {
+  font-family: $font-family_body;
+
+  @media print {
+    font-family: $font-family_body--print;
+  }
+}
+
+%font-family_code {
+  font-family: $font-family_code;
+
+  @media print {
+    font-family: $font-family_code--print;
+  }
+}
+
+%font-family_tagline {
+  font-family: $font-family_tagline;
+
+  @media print {
+    font-family: $font-family_tagline--print;
+  }
+}

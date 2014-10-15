@@ -1,9 +1,9 @@
 // Tagline
 .tagline {
+  @extend %font-family_tagline;
   @extend %heading;
 
   margin-top: $margin_tagline;
-  font-family: $font-family_tagline;
   font-weight: 200;
   font-size: rem($ratio-text_tagline);
 

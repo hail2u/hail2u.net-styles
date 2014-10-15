@@ -35,10 +35,11 @@ html {
 
 // Sections
 body {
+  @extend %font-family_body;
+
   line-height: $line-height_body;
   color: $color-fg_body;
   background-color: $color-bg_body;
-  font-family: $font-family_body;
 
   @media (min-width: $breakpoint--content) {
     line-height: $line-height_body--content;
@@ -92,11 +93,12 @@ hr {
 }
 
 pre {
+  @extend %font-family_code;
   @extend %margin;
+
   clear: both;
   line-height: $line-height_pre;
   overflow-x: auto;
-  font-family: $font-family_pre;
   font-size: rem($ratio-text_pre);
   -webkit-font-feature-settings: "kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1;
   -moz-font-feature-settings: "kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1;
@@ -278,7 +280,8 @@ abbr {
 code,
 samp,
 kbd {
-  font-family: $font-family_code;
+  @extend %font-family_code;
+
   font-size: rem($ratio-text_code);
 
   p &::before,

@@ -2,11 +2,8 @@
 $font-family_body: "Source Sans Pro", "Segoe UI Emoji", sans-serif;
 $font-family_body--print: serif;
 
-$font-family_pre: "Source Code Pro", monospace;
-$font-family_pre--print: monospace;
-
-$font-family_code: $font-family_pre;
-$font-family_code--print: $font-family_pre--print;
+$font-family_code: "Source Code Pro", monospace;
+$font-family_code--print: monospace;
 
 // Tagline
 $font-family_tagline: "Megrim", $font-family_body;
