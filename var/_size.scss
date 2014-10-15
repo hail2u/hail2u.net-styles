@@ -63,7 +63,7 @@ $width-border_blockquote: $width-border--bold;
 $padding_blockquote: $width-gutter;
 $margin_blockquote--full: (- ($width-border_blockquote + $padding_blockquote));
 
-$padding_list: ($indent * $ratio_zeta);
+$padding_list: ($indent * $ratio-text--zeta);
 $padding_list--content: $indent;
 $padding_list--full: $padding_list--content;
 
@@ -113,7 +113,7 @@ $margin_main--content: (- ($margin_heading--primary - $margin_tagline--content))
 $margin_main--full: (- ($margin_heading--primary - $margin_tagline--full));
 
 // Section Footer
-$line-height_section-footer: rem($ratio_heading--primary * $line-height_heading);
+$line-height_section-footer: rem($ratio-text_heading--primary * $line-height_heading);
 
 // Byline
 $margin_byline__border: $margin--mini;
@@ -125,8 +125,8 @@ $margin_article-heading--permalink: $margin_heading;
 $margin_article-heading--full--permalink: $margin_heading--primary;
 
 // Article Footer
-$margin_article-footer--full: rem(($ratio_heading--primary * $line-height_heading - $ratio_article-footer * $line-height) / 2);
-$margin_article-footer--full--permalink: rem(($line-height - $ratio_article-footer * $line-height) / 2);
+$margin_article-footer--full: rem(($ratio-text_heading--primary * $line-height_heading - $ratio-text_article-footer * $line-height) / 2);
+$margin_article-footer--full--permalink: rem(($line-height - $ratio-text_article-footer * $line-height) / 2);
 
 // Footlinks
 $margin_footlinks: $margin_heading--primary;
@@ -173,7 +173,7 @@ $width_searchbox__button: $height_searchbox;
 $height_searchbox__button: $width_searchbox__button;
 
 // Seealso
-$width_seealso__icon: rem($ratio_seealso);
+$width_seealso__icon: rem($ratio-text_seealso);
 $margin_seealso__icon: ($width_seealso__icon / 4);
 
 // Seemore
@@ -188,4 +188,4 @@ $breakpoint_adsbygoogle--medium: (16px + 336px + 16px + 17px);
 $breakpoint_adsbygoogle--large: (1700px + 17px);
 
 // Google Custom Search Engine
-$margin_searchboxbygoogle--full: ($margin_footlinks - (($height_searchbox - rem($line-height * $ratio_global-footer)) / 2));
+$margin_searchboxbygoogle--full: ($margin_footlinks - (($height_searchbox - rem($line-height * $ratio-text_global-footer)) / 2));

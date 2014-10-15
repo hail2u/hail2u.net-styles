@@ -7,7 +7,7 @@
 
     margin-top: $margin_heading;
     line-height: $line-height_heading;
-    font-size: rem($ratio_read-older__title);
+    font-size: rem($ratio-text_read-older__title);
 
     &::before {
       display: block;

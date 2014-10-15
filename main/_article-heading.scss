@@ -7,7 +7,7 @@ main > article h1 {
     margin-bottom: $margin_article-heading--permalink;
     color: $color-fg_article-heading--permalink;
     font-weight: 400;
-    font-size: rem($ratio_article-heading--permalink);
+    font-size: rem($ratio-text_article-heading--permalink);
   }
 
   @media (min-width: $breakpoint--content) {

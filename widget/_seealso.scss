@@ -4,7 +4,7 @@
   @extend %link-underline-removal;
 
   color: $color-fg_seealso;
-  font-size: rem($ratio_seealso);
+  font-size: rem($ratio-text_seealso);
 
   a {
     color: $color-fg_seealso__link;

@@ -11,7 +11,7 @@
   background-repeat: repeat-x;
   background-position: left $margin;
   background-size: $width-border_footnote $height-border_footnote;
-  font-size: rem($ratio_footnote);
+  font-size: rem($ratio-text_footnote);
 
   *:first-child {
     margin-top: $margin_footnote;

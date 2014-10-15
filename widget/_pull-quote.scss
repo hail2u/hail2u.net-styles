@@ -9,7 +9,7 @@
     margin-top: $margin;
     quotes: "\201c" "\201d"; // Left Double Quotation Mark, Double Low-9 Quotation Mark
     color: $color-fg_pull-quote;
-    font-size: rem($ratio_pull-quote);
+    font-size: rem($ratio-text_pull-quote);
 
     &::before {
       content: open-quote;

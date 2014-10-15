@@ -5,7 +5,7 @@
   margin-top: $margin_tagline;
   font-family: $font-family_tagline;
   font-weight: 200;
-  font-size: rem($ratio_tagline);
+  font-size: rem($ratio-text_tagline);
 
   em {
     font-weight: inherit;
@@ -20,7 +20,7 @@
     margin-top: $margin_tagline--content;
     padding-right: 10%;
     padding-left: 10%;
-    font-size: rem($ratio_tagline--content);
+    font-size: rem($ratio-text_tagline--content);
     text-align: center;
   }
 

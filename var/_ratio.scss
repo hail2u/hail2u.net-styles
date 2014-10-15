@@ -9,60 +9,60 @@ $ratio-text--primary: (16px / 16px);
 $ratio-text--secondary: (21px / 16px);
 
 // Harmonic Ratio
-$ratio-alpha: ($ratio-text--secondary * $ratio-golden);
-$ratio-beta: ($ratio-text--primary * $ratio-golden);
-$ratio-gamma: $ratio-text--secondary;
-$ratio-delta: $ratio-text--primary;
-$ratio-epsilon: ($ratio-text--secondary / $ratio-golden);
-$ratio-zeta: ($ratio-text--primary / $ratio-golden);
+$ratio-text--alpha: ($ratio-text--secondary * $ratio-golden);
+$ratio-text--beta: ($ratio-text--primary * $ratio-golden);
+$ratio-text--gamma: $ratio-text--secondary;
+$ratio-text--delta: $ratio-text--primary;
+$ratio-text--epsilon: ($ratio-text--secondary / $ratio-golden);
+$ratio-text--zeta: ($ratio-text--primary / $ratio-golden);
 
 // Main Component
 $ratio-content: 1;
 $ratio-supplement: (1 / pow($ratio-golden, 2));
 
 // Class
-$ratio_pin: $ratio-epsilon;
+$ratio-text_pin: $ratio-text--epsilon;
 
 // Core
-$ratio_heading: $ratio-gamma;
-$ratio_heading--primary: $ratio-beta;
+$ratio-text_heading: $ratio-text--gamma;
+$ratio-text_heading--primary: $ratio-text--beta;
 
-$ratio_pre: $ratio-epsilon;
+$ratio-text_pre: $ratio-text--epsilon;
 
-$ratio_abbr: $ratio-epsilon;
+$ratio-text_abbr: $ratio-text--epsilon;
 
-$ratio_code: $ratio_pre;
+$ratio-text_code: $ratio-text_pre;
 
 // Tagline
-$ratio_tagline: $ratio-beta;
-$ratio_tagline--content: $ratio-alpha;
+$ratio-text_tagline: $ratio-text--beta;
+$ratio-text_tagline--content: $ratio-text--alpha;
 
 // Site Navigation
-$ratio_site-navigation: $ratio-epsilon;
+$ratio-text_site-navigation: $ratio-text--epsilon;
 
 // Article Heading
-$ratio_article-heading--permalink: $ratio-alpha;
+$ratio-text_article-heading--permalink: $ratio-text--alpha;
 
 // Article Footer
-$ratio_article-footer: $ratio_pin;
+$ratio-text_article-footer: $ratio-text_pin;
 
 // Global Footer
-$ratio_global-footer: $ratio-epsilon;
+$ratio-text_global-footer: $ratio-text--epsilon;
 
 // Footnote
-$ratio_footnote: $ratio-epsilon;
+$ratio-text_footnote: $ratio-text--epsilon;
 
 // Pull Quote
-$ratio_pull-quote: $ratio-beta;
+$ratio-text_pull-quote: $ratio-text--beta;
 
 // Read Older
-$ratio_read-older__title: $ratio-beta;
+$ratio-text_read-older__title: $ratio-text--beta;
 
 // Seealso
-$ratio_seealso: $ratio-gamma;
+$ratio-text_seealso: $ratio-text--gamma;
 
 // Sidenote
-$ratio_sidenote: $ratio-epsilon;
+$ratio-text_sidenote: $ratio-text--epsilon;
 
 // Topic
-$ratio_topic__more: $ratio-epsilon;
+$ratio-text_topic__more: $ratio-text--epsilon;

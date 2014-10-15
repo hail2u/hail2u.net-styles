@@ -4,5 +4,5 @@ body > footer {
   @extend %centering;
 
   margin-bottom: $margin_heading;
-  font-size: rem($ratio_global-footer);
+  font-size: rem($ratio-text_global-footer);
 }

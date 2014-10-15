@@ -6,7 +6,7 @@
 
   p {
     margin-top: $margin;
-    font-size: rem($ratio_sidenote);
+    font-size: rem($ratio-text_sidenote);
   }
 
   @media (min-width: $breakpoint--full) {

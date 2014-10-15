@@ -3,7 +3,7 @@ body > header nav {
   position: absolute;
   top: 0;
   right: $width-gap;
-  font-size: rem($ratio_site-navigation);
+  font-size: rem($ratio-text_site-navigation);
   text-transform: uppercase;
 
   ul {
