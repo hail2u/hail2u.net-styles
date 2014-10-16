@@ -1,24 +1,17 @@
 // Logo
 body > header h1 {
   margin-top: $margin_logo;
-  position: relative;
   height: $height_logo;
 
   a,
   mark {
     display: block;
-    position: fixed;
-    z-index: 1;
     width: $width_logo;
     height: $height_logo;
   }
 
   mark {
     background-color: transparent;
-  }
-
-  .to-top {
-    cursor: pointer;
   }
 
   @media (min-width: $breakpoint--content) {
