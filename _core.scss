@@ -1,8 +1,12 @@
 // Root
-@mixin adjust-font-size($sizes) {
-  $threshold: 1.2;
+html {
+  font-size: 100%;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "lnum" 1, "pnum" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "lnum" 1, "pnum" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "lnum" 1, "pnum" 1;
 
-  @each $size in $sizes {
+  @each $size in $font-sizes_html {
+    $threshold: 1.2;
     $feature-prefix: min-;
     $ratio: ($size / 16px);
     $horizontal: ($width-content--outer * pow($ratio, 2));
@@ -22,15 +26,6 @@
       font-size: percentage($ratio);
     }
   }
-}
-
-html {
-  font-size: 100%;
-  -webkit-font-feature-settings: "kern" 1, "liga" 1, "lnum" 1, "pnum" 1;
-  -moz-font-feature-settings: "kern" 1, "liga" 1, "lnum" 1, "pnum" 1;
-  font-feature-settings: "kern" 1, "liga" 1, "lnum" 1, "pnum" 1;
-
-  @include adjust-font-size($font-sizes_html);
 }
 
 // Sections
