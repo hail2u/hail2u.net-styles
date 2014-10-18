@@ -6,79 +6,79 @@
  */
 
 // Normalize.css
-@import "normalize";
+@import 'normalize';
 
 // Function
-@import "./bower_components/hail2u-scss-functions/color/encode-color";
-@import "./bower_components/hail2u-scss-functions/number/rem";
-@import "./bower_components/hail2u-scss-functions/number/pow";
-@import "./bower_components/hail2u-scss-functions/number/remove-unit";
+@import './bower_components/hail2u-scss-functions/color/encode-color';
+@import './bower_components/hail2u-scss-functions/number/rem';
+@import './bower_components/hail2u-scss-functions/number/pow';
+@import './bower_components/hail2u-scss-functions/number/remove-unit';
 
 // Variable
-@import "var/font";
-@import "var/color";
-@import "var/image";
-@import "var/ratio";
-@import "var/size";
+@import 'var/font';
+@import 'var/color';
+@import 'var/image';
+@import 'var/ratio';
+@import 'var/size';
 
 // Placeholder Class
-@import "class/font-family";
-@import "class/heading";
-@import "class/margin";
-@import "class/image-replacement";
-@import "class/link-underline-removal";
-@import "class/float";
-@import "class/centering";
-@import "class/heading-push";
-@import "class/pin";
-@import "class/ellipsing";
-@import "class/clearfix";
+@import 'class/font-family';
+@import 'class/heading';
+@import 'class/margin';
+@import 'class/image-replacement';
+@import 'class/link-underline-removal';
+@import 'class/float';
+@import 'class/centering';
+@import 'class/heading-push';
+@import 'class/pin';
+@import 'class/ellipsing';
+@import 'class/clearfix';
 
 // Core
-@import "core";
+@import 'core';
 
 // Global Header
-@import "global-header";
-@import "global-header/logo";
-@import "global-header/tagline";
-@import "global-header/site-navigation";
+@import 'global-header';
+@import 'global-header/logo';
+@import 'global-header/tagline';
+@import 'global-header/site-navigation';
 
 // Main
-@import "main";
-@import "main/section-heading";
-@import "main/section-footer";
-@import "main/article-heading";
-@import "main/article-footer";
+@import 'main';
+@import 'main/section-heading';
+@import 'main/section-footer';
+@import 'main/article-heading';
+@import 'main/article-footer';
 
 // Subcontent
-@import "subcontent";
+@import 'subcontent';
 
 // Global Footer
-@import "global-footer";
-@import "global-footer/footlinks";
-@import "global-footer/byline";
+@import 'global-footer';
+@import 'global-footer/footlinks';
+@import 'global-footer/byline';
 
 // Widget
-@import "widget/ads";
-@import "widget/circular";
-@import "widget/drop";
-@import "widget/flat-ul";
-@import "widget/floatage";
-@import "widget/footnote";
-@import "widget/full-width";
-@import "widget/icon-list";
-@import "widget/post-list";
-@import "widget/pull-quote";
-@import "widget/read-older";
-@import "widget/searchbox";
-@import "widget/seealso";
-@import "widget/seemore";
-@import "widget/sidenote";
-@import "widget/topic";
+@import 'widget/ads';
+@import 'widget/circular';
+@import 'widget/drop';
+@import 'widget/flat-ul';
+@import 'widget/floatage';
+@import 'widget/footnote';
+@import 'widget/full-width';
+@import 'widget/icon-list';
+@import 'widget/post-list';
+@import 'widget/pull-quote';
+@import 'widget/read-older';
+@import 'widget/searchbox';
+@import 'widget/seealso';
+@import 'widget/seemore';
+@import 'widget/sidenote';
+@import 'widget/topic';
 
 // Vendor
-@import "vendor/google-adsense";
-@import "vendor/google-cse";
+@import 'vendor/google-adsense';
+@import 'vendor/google-cse';
 
 // Shame
-@import "shame";
+@import 'shame';

@@ -3,14 +3,14 @@
   padding-left: 0;
 
   li {
+    list-style-type: none;
     margin-top: $margin_post-list__item;
     position: relative;
-    list-style-type: none;
   }
 
   time {
-    display: block;
     color: $color-fg_post-list__time;
+    display: block;
   }
 
   @media (min-width: $breakpoint--content) {
@@ -19,9 +19,9 @@
     }
 
     time {
+      left: 0;
       position: absolute;
       top: 0;
-      left: 0;
     }
   }
 }

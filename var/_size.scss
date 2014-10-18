@@ -3,7 +3,7 @@ $font-sizes_html: (18px, 21px, 24px);
 
 // Line Height
 $line-height: $ratio-golden;
-$line-height--mini: ($line-height * 0.8);
+$line-height--mini: ($line-height * .8);
 
 // Margin
 $margin: rem($line-height);
@@ -13,12 +13,12 @@ $margin--mini: ($margin / pow($ratio-golden, 2));
 $indent: rem(pow($ratio-golden, 2));
 
 // Border
-$width-border: 0.125rem;
+$width-border: .125rem;
 $width-border--thin: ($width-border / 2);
 $width-border--bold: ($width-border * 2);
 
 // Padding
-$padding: 0.25rem;
+$padding: .25rem;
 $padding--mini: ($padding / 2);
 
 // Column
@@ -47,7 +47,7 @@ $breakpoint--full: (($width-full--outer + $width_scrollbar) * (nth($font-sizes_h
 }
 
 // Core
-$line-height_body: ($line-height * 0.9);
+$line-height_body: ($line-height * .9);
 $line-height_body--content: $line-height;
 
 $margin_heading: ($margin * pow($ratio-golden, 2));
@@ -81,7 +81,7 @@ $width-border_strong: $width-border--thin;
 $letter-spacing_abbr: $width-border--thin;
 
 $width-border_td: $width-border--thin;
-$padding_td: 0.5rem;
+$padding_td: .5rem;
 
 $width-border_th--thead: $width-border;
 
@@ -180,7 +180,7 @@ $margin_seealso__icon: ($width_seealso__icon / 4);
 $width-border_seemore: $width-border;
 
 // Topic
-$margin_topic__more: 0.33333rem;
+$margin_topic__more: .33333rem;
 
 // Google AdSense
 $breakpoint_adsbygoogle--small: (16px + 300px + 16px + 17px);

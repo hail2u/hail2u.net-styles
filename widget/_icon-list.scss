@@ -1,45 +1,45 @@
 // Icon List
-@import "../bower_components/hail2u-scss-partials/corporate-colors";
-@import "../bower_components/hail2u-scss-partials/vendor-extension";
+@import '../bower_components/hail2u-scss-partials/corporate-colors';
+@import '../bower_components/hail2u-scss-partials/vendor-extension';
 
 .icon-list {
   @extend %link-underline-removal;
   @extend %clearfix;
 
-  margin-right: (- $width-gap);
   margin-left: (- $width-gap);
+  margin-right: (- $width-gap);
   padding-left: 0;
 
   li {
-    padding-right: $width-gap;
-    padding-left: $width-gap;
     display: block;
     float: left;
     line-height: 1;
+    padding-left: $width-gap;
+    padding-right: $width-gap;
   }
 
   a {
     @include box-sizing(border-box);
 
-    padding: $padding_icon-list__icon;
     border-radius: $border-radius_icon-list__icon;
     display: block;
-    width: $width_icon-list__icon;
     height: $height_icon-list__icon;
+    padding: $padding_icon-list__icon;
+    width: $width_icon-list__icon;
 
-    &[href^="https://twitter.com/"] {
+    &[href^='https://twitter.com/'] {
       background-color: $cc-twitter;
     }
 
-    &[href^="https://www.facebook.com/"] {
+    &[href^='https://www.facebook.com/'] {
       background-color: $cc-facebook;
     }
 
-    &[href$=".tumblr.com/"] {
+    &[href$='.tumblr.com/'] {
       background-color: $cc-tumblr;
     }
 
-    &[href$="/feed"] {
+    &[href$='/feed'] {
       background-color: $cc-feed;
     }
   }

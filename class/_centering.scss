@@ -1,10 +1,10 @@
 %centering {
-  margin-right: auto;
   margin-left: auto;
-  padding-right: $width-gap;
-  padding-left: $width-gap;
-  position: relative;
+  margin-right: auto;
   max-width: $width-content;
+  padding-left: $width-gap;
+  padding-right: $width-gap;
+  position: relative;
 
   @media (min-width: $breakpoint--full) {
     padding-left: ($width-gap + $width-supplement + $width-gutter);

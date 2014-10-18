@@ -1,7 +1,7 @@
 // Full Width
 .full-width {
-  margin-right: (- $width-gap);
   margin-left: (- $width-gap);
+  margin-right: (- $width-gap);
 
   img,
   video,
@@ -18,14 +18,14 @@
     margin-left: (- ($width-gap + $width-supplement + $width-gutter));
 
     figcaption:last-child {
-      margin-top: $margin;
-      margin-left: 0;
-      padding-bottom: 0;
-      padding-left: $padding_full-width__caption--full;
-      border-left: $width-border_figcaption solid $color-border_figcaption;
       border-bottom: 0;
+      border-left: $width-border_figcaption solid $color-border_figcaption;
       bottom: auto;
       left: 0;
+      margin-left: 0;
+      margin-top: $margin;
+      padding-bottom: 0;
+      padding-left: $padding_full-width__caption--full;
     }
   }
 }

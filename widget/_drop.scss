@@ -5,9 +5,9 @@
   }
 
   @media (min-width: $breakpoint--full) {
+    float: left;
     margin-left: (- ($width-supplement + $width-gutter));
     margin-right: $width-gap;
-    float: left;
     max-width: $width_drop--max;
   }
 }

@@ -3,13 +3,13 @@
   @extend %font-family_tagline;
   @extend %heading;
 
-  margin-top: $margin_tagline;
-  font-weight: 200;
   font-size: rem($ratio-text_tagline);
+  font-weight: 200;
+  margin-top: $margin_tagline;
 
   em {
-    font-weight: inherit;
     font-style: italic;
+    font-weight: inherit;
   }
 
   .permalink & {
@@ -17,15 +17,15 @@
   }
 
   @media (min-width: $breakpoint--content) {
-    margin-top: $margin_tagline--content;
-    padding-right: 10%;
-    padding-left: 10%;
     font-size: rem($ratio-text_tagline--content);
+    margin-top: $margin_tagline--content;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: center;
   }
 
   @media (min-width: $breakpoint--full) {
-    margin-top: $margin_tagline--full;
     margin-left: (- ($width-supplement + $width-gutter));
+    margin-top: $margin_tagline--full;
   }
 }

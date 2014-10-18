@@ -3,22 +3,22 @@
   color: $color-fg_byline;
 
   &::before {
-    margin-bottom: $margin_byline__border;
     border-top: $width-border_byline__border solid $color-border_byline__border;
+    content: '';
     display: block;
-    width: $width_byline__border;
     height: 0;
-    content: "";
+    margin-bottom: $margin_byline__border;
+    width: $width_byline__border;
   }
 
   mark {
-    color: inherit;
     background-color: transparent;
+    color: inherit;
   }
 
   @media (min-width: $breakpoint--full) {
-    position: absolute;
     bottom: 0;
     left: $width-gap;
+    position: absolute;
   }
 }

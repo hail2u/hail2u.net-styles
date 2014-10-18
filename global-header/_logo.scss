@@ -1,13 +1,13 @@
 // Logo
 body > header h1 {
-  margin-top: $margin_logo;
   height: $height_logo;
+  margin-top: $margin_logo;
 
   a,
   mark {
     display: block;
-    width: $width_logo;
     height: $height_logo;
+    width: $width_logo;
   }
 
   mark {
@@ -19,7 +19,7 @@ body > header h1 {
   }
 
   @media (min-width: $breakpoint--full) {
-    margin-top: $margin_logo--full;
     margin-left: (- ($width-supplement + $width-gutter));
+    margin-top: $margin_logo--full;
   }
 }

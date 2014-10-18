@@ -27,9 +27,9 @@ main > article h1 + footer {
     }
 
     .permalink & {
-      top: auto;
       bottom: auto;
       text-align: left;
+      top: auto;
 
       p {
         margin-top: $margin_article-footer--full--permalink;

@@ -6,29 +6,22 @@
  */
 
 // Functions
-@import "./bower_components/hail2u-scss-functions/number/rem";
-@import "./bower_components/hail2u-scss-functions/number/pow";
-@import "./bower_components/hail2u-scss-functions/number/remove-unit";
+@import './bower_components/hail2u-scss-functions/number/rem';
+@import './bower_components/hail2u-scss-functions/number/pow';
+@import './bower_components/hail2u-scss-functions/number/remove-unit';
 
 // Variables
-@import "var/font";
-@import "var/color";
-@import "var/image";
-@import "var/ratio";
-@import "var/size";
+@import 'var/font';
+@import 'var/color';
+@import 'var/image';
+@import 'var/ratio';
+@import 'var/size';
 
 // Classes
-@import "class/clearfix";
+@import 'class/clearfix';
 
 // Grid Overlay
 body.debug::before {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  content: "";
   background-image: linear-gradient(
     to right,
     #0f0 0,
@@ -47,8 +40,15 @@ body.debug::before {
   background-position: left center, right center, center;
   background-repeat: repeat-y;
   background-size: $width-gap, $width-gap, 100%;
-  opacity: 0.05;
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: .05;
   pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
 
   @media (min-width: $breakpoint--content) {
     background-image: linear-gradient(
@@ -84,23 +84,23 @@ body.debug::before {
 
 // Breakpoints
 body::after {
-  padding: 0.25rem;
-  display: block;
-  position: fixed;
-  top: 0.5rem;
-  right: 0.5rem;
-  line-height: 1;
-  content: "Small";
-  color: #fff;
   background-color: #096;
-  font-size: 0.875rem;
+  color: #fff;
+  content: 'Small';
+  display: block;
+  font-size: .875rem;
+  line-height: 1;
+  padding: .25rem;
+  position: fixed;
+  right: .5rem;
+  top: .5rem;
 
   @media (min-width: $breakpoint--content) {
-    content: "Medium: #{(($breakpoint--content / 1rem) * 16px)}";
+    content: 'Medium: #{(($breakpoint--content / 1rem) * 16px)}';
   }
 
   @media (min-width: $breakpoint--full) {
-    content: "Large: #{(($breakpoint--full / 1rem) * 16px)}";
+    content: 'Large: #{(($breakpoint--full / 1rem) * 16px)}';
   }
 
   @media print {
@@ -131,7 +131,7 @@ body::after {
 }
 
 // Colors
-@import "./bower_components/hail2u-scss-partials/vendor-extension";
+@import './bower_components/hail2u-scss-partials/vendor-extension';
 
 .colors {
   @extend %clearfix;
@@ -141,32 +141,32 @@ body::after {
   li {
     @include box-sizing(border-box);
 
-    margin-top: ($width-gap + $width-gap);
     display: block;
-    width: 100%;
     height: 3rem;
+    margin-top: ($width-gap + $width-gap);
     overflow: hidden;
+    width: 100%;
 
     &::before {
       @include box-sizing(border-box);
 
       border: 1px solid #000;
+      content: '';
       display: block;
-      width: 100%;
       height: 100%;
-      content: "";
+      width: 100%;
     }
   }
 
   @media (min-width: $breakpoint--content) {
-    margin-right: (- $width-gap);
     margin-left: (- $width-gap);
+    margin-right: (- $width-gap);
 
     li {
-      margin-top: 0;
-      padding-right: $width-gap;
-      padding-left: $width-gap;
       float: left;
+      margin-top: 0;
+      padding-left: $width-gap;
+      padding-right: $width-gap;
       width: (100% / 5);
     }
   }
@@ -350,6 +350,6 @@ body::after {
 
 // Line Length
 .line-length {
-  font-family: "Verdana", sans-serif;
+  font-family: 'Verdana', sans-serif;
   word-break: break-all;
 }

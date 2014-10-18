@@ -4,16 +4,16 @@ main > article h1 {
   @extend %heading-push;
 
   .permalink & {
-    margin-bottom: $margin_article-heading--permalink;
     color: $color-fg_article-heading--permalink;
-    font-weight: 400;
     font-size: rem($ratio-text_article-heading--permalink);
+    font-weight: 400;
+    margin-bottom: $margin_article-heading--permalink;
   }
 
   @media (min-width: $breakpoint--content) {
     .permalink & {
-      padding-right: 10%;
       padding-left: 10%;
+      padding-right: 10%;
       text-align: center;
     }
   }

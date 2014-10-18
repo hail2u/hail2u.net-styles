@@ -1,24 +1,24 @@
 // Google AdSense
 .adsbygoogle {
-  margin-top: $margin;
-  margin-right: auto;
-  margin-left: auto;
-  width: 300px;
   height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $margin;
   overflow: hidden;
+  width: 300px;
 
   @media (min-width: $breakpoint_adsbygoogle--small) {
-    margin-right: $width-gap;
     margin-left: $width-gap;
+    margin-right: $width-gap;
   }
 
   @media (min-width: $breakpoint_adsbygoogle--medium) {
-    width: 336px;
     height: 280px;
+    width: 336px;
   }
 
   @media (min-width: $breakpoint_adsbygoogle--large) {
-    width: 728px;
     height: 90px;
+    width: 728px;
   }
 }

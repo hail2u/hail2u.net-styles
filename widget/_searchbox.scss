@@ -1,24 +1,24 @@
 // Searchbox
-@import "../bower_components/hail2u-scss-partials/image-replacement";
-@import "../bower_components/hail2u-scss-partials/vendor-extension";
+@import '../bower_components/hail2u-scss-partials/image-replacement';
+@import '../bower_components/hail2u-scss-partials/vendor-extension';
 
 .searchbox {
   margin-top: $margin;
-  position: relative;
   max-width: $width_searchbox;
+  position: relative;
 
-  input[type="search"] {
+  input[type='search'] {
     @include box-sizing(border-box);
 
-    padding: 0 ($width_searchbox__button + $padding_searchbox__input) 0 $padding_searchbox__input;
+    -webkit-appearance: none;
+    background-color: $color-bg_searchbox__input;
     border: $width-border_searchbox__input solid $color-border_searchbox__input;
     border-radius: 0;
-    width: 100%;
-    height: $height_searchbox__input;
     color: $color-fg_searchbox__input;
-    background-color: $color-bg_searchbox__input;
+    height: $height_searchbox__input;
     outline: none;
-    -webkit-appearance: none;
+    padding: 0 ($width_searchbox__button + $padding_searchbox__input) 0 $padding_searchbox__input;
+    width: 100%;
 
     &:focus {
       border-color: $color-border_searchbox__input--focus;
@@ -26,27 +26,27 @@
     }
   }
 
-  input[type="submit"] {
+  input[type='submit'] {
     // ir-pseudo-element does not work on `input`
     @include ir-text-indent;
 
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: $width_searchbox__button;
-    height: $height_searchbox__button;
     background-color: $color-bg_searchbox__button;
     background-image: $image_searchbox__button;
-    background-repeat: no-repeat;
     background-position: center top;
+    background-repeat: no-repeat;
     background-size: 100% auto;
+    border: 0;
+    border-radius: 0;
+    height: $height_searchbox__button;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: $width_searchbox__button;
   }
 
-  input[type="search"]:focus + input[type="submit"],
-  input[type="submit"]:focus {
+  input[type='search']:focus + input[type='submit'],
+  input[type='submit']:focus {
     background-color: $color-bg_searchbox__button--focus;
   }
 }

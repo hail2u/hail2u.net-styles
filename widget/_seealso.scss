@@ -11,10 +11,10 @@
   }
 
   &::before {
-    margin-right: $margin_seealso__icon;
-    display: inline-block;
-    width: $width_seealso__icon;
     background-image: $image_seealso__icon;
     background-position: left center;
+    display: inline-block;
+    margin-right: $margin_seealso__icon;
+    width: $width_seealso__icon;
   }
 }

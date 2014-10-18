@@ -3,17 +3,17 @@
   @extend %clearfix;
 
   @media (min-width: $breakpoint--content) {
-    margin-right: (- $width-gap);
     margin-left: (- $width-gap);
+    margin-right: (- $width-gap);
     padding-left: 0;
 
     li {
       @include box-sizing(border-box);
 
-      padding-right: $width-gap;
-      padding-left: $width-gap;
       display: block;
       float: left;
+      padding-left: $width-gap;
+      padding-right: $width-gap;
       width: $width_flat-ul__item;
     }
   }

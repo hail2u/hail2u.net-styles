@@ -1,6 +1,6 @@
 // Workarounds for SVG resizing bug on IE11 and below
-img[src$=".svg"],
-img[src$=".svgz"] {
+img[src$='.svg'],
+img[src$='.svgz'] {
   width: 100%;
 }
 

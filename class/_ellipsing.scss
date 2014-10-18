@@ -1,9 +1,9 @@
 // Ellipsing
 %ellipsing {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -webkit-font-feature-settings: normal;
   -moz-font-feature-settings: normal;
+  -webkit-font-feature-settings: normal;
   font-feature-settings: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

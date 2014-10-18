@@ -2,10 +2,10 @@
 %pin {
   @extend %float;
 
-  position: absolute;
   bottom: 100%;
-  width: 100%;
   font-size: rem($ratio-text_pin);
+  position: absolute;
+  width: 100%;
 
   @media (min-width: $breakpoint--full) {
     width: $width-supplement;

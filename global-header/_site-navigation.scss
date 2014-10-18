@@ -1,10 +1,10 @@
 // Site Navigation
 body > header nav {
-  position: absolute;
-  top: 0;
-  right: $width-gap;
   font-size: rem($ratio-text_site-navigation);
+  position: absolute;
+  right: $width-gap;
   text-transform: uppercase;
+  top: 0;
 
   ul {
     margin-top: 0;
@@ -12,22 +12,22 @@ body > header nav {
   }
 
   li {
-    padding-left: $width_site-navigation__gutter;
     display: table-cell;
     height: $height_site-navigation;
     line-height: $height_site-navigation;
+    padding-left: $width_site-navigation__gutter;
   }
 
   a {
-    display: inline-block;
     color: inherit;
+    display: inline-block;
   }
 
   mark {
-    padding-bottom: $padding_site-navigation__mark;
+    background-color: transparent;
     border-bottom: $width-border_site-navigation__mark solid;
     color: $color-fg_site-navigation__mark;
-    background-color: transparent;
+    padding-bottom: $padding_site-navigation__mark;
   }
 
   @media (min-width: $breakpoint--content) {

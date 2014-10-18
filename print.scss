@@ -6,17 +6,17 @@
  */
 
 // Function
-@import "./bower_components/hail2u-scss-functions/number/rem";
-@import "./bower_components/hail2u-scss-functions/number/pow";
-@import "./bower_components/hail2u-scss-functions/number/remove-unit";
+@import './bower_components/hail2u-scss-functions/number/rem';
+@import './bower_components/hail2u-scss-functions/number/pow';
+@import './bower_components/hail2u-scss-functions/number/remove-unit';
 
 // Variable
-@import "var/font";
-@import "var/ratio";
-@import "var/size";
+@import 'var/font';
+@import 'var/ratio';
+@import 'var/size';
 
 // Dedecoration
-@import "./bower_components/hail2u-scss-partials/black-prints";
+@import './bower_components/hail2u-scss-partials/black-prints';
 
 @media print {
   @include black-prints;
@@ -70,28 +70,28 @@
 
   // Design Change
   body {
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
     max-width: $width-content;
   }
 
   hr {
-    margin-top: ($margin * 2);
-    margin-bottom: ($margin * 2);
-    border-top: 1px dashed #000;
     border-bottom: 1px dashed #000;
-    width: 80%;
+    border-top: 1px dashed #000;
     height: 0;
+    margin-bottom: ($margin * 2);
+    margin-top: ($margin * 2);
+    width: 80%;
   }
 
   pre {
-    margin: $margin 0 0 0;
+    margin: $margin 0 0;
     padding: 0;
   }
 
   blockquote {
-    margin: 0 $indent;
     border-left: 0;
+    margin: 0 $indent;
     padding-left: 0;
   }
 
@@ -104,7 +104,7 @@
     color: inherit;
 
     &[href]::after {
-      content: " (" attr(href) ")";
+      content: ' (' attr(href) ')';
     }
   }
 
@@ -124,8 +124,8 @@
   }
 
   body > header h1 {
-    margin-top: $margin;
     display: block;
+    margin-top: $margin;
   }
 
   main {
