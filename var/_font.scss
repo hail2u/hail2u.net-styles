@@ -1,10 +1,10 @@
 // Core
-$font-family_body: 'Source Sans Pro', 'Segoe UI Emoji', sans-serif;
-$font-family_body--print: serif;
+$font-family__body: 'Source Sans Pro', 'Segoe UI Emoji', sans-serif;
+$font-family__body--print: serif;
 
-$font-family_code: 'Source Code Pro', 'Segoe UI Emoji', monospace;
-$font-family_code--print: monospace;
+$font-family__code: 'Source Code Pro', 'Segoe UI Emoji', monospace;
+$font-family__code--print: monospace;
 
 // Tagline
-$font-family_tagline: 'Megrim', $font-family_body;
-$font-family_tagline--print: $font-family_body--print;
+$font-family__tagline: 'Megrim', $font-family__body;
+$font-family__tagline--print: $font-family__body--print;

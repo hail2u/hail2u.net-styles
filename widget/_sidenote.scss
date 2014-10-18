@@ -2,10 +2,10 @@
 .sidenote {
   @extend %float;
 
-  color: $color-fg_sidenote;
+  color: $color-fg__sidenote;
 
   p {
-    font-size: rem($ratio-text_sidenote);
+    font-size: rem($ratio-text__sidenote);
     margin-top: $margin;
   }
 

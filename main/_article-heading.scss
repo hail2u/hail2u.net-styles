@@ -4,10 +4,10 @@ main > article h1 {
   @extend %heading-push;
 
   .permalink & {
-    color: $color-fg_article-heading--permalink;
-    font-size: rem($ratio-text_article-heading--permalink);
+    color: $color-fg__article-heading--permalink;
+    font-size: rem($ratio-text__article-heading--permalink);
     font-weight: 400;
-    margin-bottom: $margin_article-heading--permalink;
+    margin-bottom: $margin__article-heading--permalink;
   }
 
   @media (min-width: $breakpoint--content) {
@@ -20,7 +20,7 @@ main > article h1 {
 
   @media (min-width: $breakpoint--full) {
     .permalink & {
-      margin-bottom: $margin_article-heading--full--permalink;
+      margin-bottom: $margin__article-heading--full--permalink;
       margin-left: (- ($width-supplement + $width-gutter));
     }
   }

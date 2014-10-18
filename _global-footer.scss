@@ -3,6 +3,6 @@ body > footer {
   @extend %link-underline-removal;
   @extend %centering;
 
-  margin-bottom: $margin_heading;
-  font-size: rem($ratio-text_global-footer);
+  font-size: rem($ratio-text__global-footer);
+  margin-bottom: $margin__heading;
 }

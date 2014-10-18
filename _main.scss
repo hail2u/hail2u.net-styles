@@ -2,7 +2,7 @@
 main {
   @extend %centering;
 
-  margin-top: $margin_main;
+  margin-top: $margin__main;
 
   > article,
   > section {
@@ -10,10 +10,10 @@ main {
   }
 
   @media (min-width: $breakpoint--content) {
-    margin-top: $margin_main--content;
+    margin-top: $margin__main--content;
   }
 
   @media (min-width: $breakpoint--full) {
-    margin-top: $margin_main--full;
+    margin-top: $margin__main--full;
   }
 }

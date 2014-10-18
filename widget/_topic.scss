@@ -6,11 +6,11 @@
     color: inherit;
 
     > p::after {
-      color: $color-fg_topic__more;
+      color: $color-fg__topic__more;
       content: 'More\0020\279f'; // Dashed Triangle-Headed Rightwards Arrow
-      font-size: rem($ratio-text_topic__more);
+      font-size: rem($ratio-text__topic__more);
       font-weight: bold;
-      margin-left: $margin_topic__more;
+      margin-left: $margin__topic__more;
       text-transform: uppercase;
       white-space: nowrap;
     }

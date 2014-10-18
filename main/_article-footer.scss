@@ -4,15 +4,15 @@ main > article h1 + footer {
   @extend %pin;
 
   p {
-    color: $color-fg_article-footer;
+    color: $color-fg__article-footer;
   }
 
   time {
-    color: $color-fg_article-footer__time;
+    color: $color-fg__article-footer__time;
   }
 
   .tag {
-    color: $color-fg_article-footer__tag;
+    color: $color-fg__article-footer__tag;
   }
 
   @media (min-width: $breakpoint--content) {
@@ -23,7 +23,7 @@ main > article h1 + footer {
 
   @media (min-width: $breakpoint--full) {
     p {
-      margin-top: $margin_article-footer--full;
+      margin-top: $margin__article-footer--full;
     }
 
     .permalink & {
@@ -32,7 +32,7 @@ main > article h1 + footer {
       top: auto;
 
       p {
-        margin-top: $margin_article-footer--full--permalink;
+        margin-top: $margin__article-footer--full--permalink;
       }
     }
   }

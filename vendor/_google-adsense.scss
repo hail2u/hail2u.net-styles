@@ -7,17 +7,17 @@
   overflow: hidden;
   width: 300px;
 
-  @media (min-width: $breakpoint_adsbygoogle--small) {
+  @media (min-width: $breakpoint__adsbygoogle--small) {
     margin-left: $width-gap;
     margin-right: $width-gap;
   }
 
-  @media (min-width: $breakpoint_adsbygoogle--medium) {
+  @media (min-width: $breakpoint__adsbygoogle--medium) {
     height: 280px;
     width: 336px;
   }
 
-  @media (min-width: $breakpoint_adsbygoogle--large) {
+  @media (min-width: $breakpoint__adsbygoogle--large) {
     height: 90px;
     width: 728px;
   }

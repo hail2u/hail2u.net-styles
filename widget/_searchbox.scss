@@ -4,25 +4,25 @@
 
 .searchbox {
   margin-top: $margin;
-  max-width: $width_searchbox;
+  max-width: $width__searchbox;
   position: relative;
 
   input[type='search'] {
     @include box-sizing(border-box);
 
     -webkit-appearance: none;
-    background-color: $color-bg_searchbox__input;
-    border: $width-border_searchbox__input solid $color-border_searchbox__input;
+    background-color: $color-bg__searchbox__input;
+    border: $width-border__searchbox__input solid $color-border__searchbox__input;
     border-radius: 0;
-    color: $color-fg_searchbox__input;
-    height: $height_searchbox__input;
+    color: $color-fg__searchbox__input;
+    height: $height__searchbox__input;
     outline: none;
-    padding: 0 ($width_searchbox__button + $padding_searchbox__input) 0 $padding_searchbox__input;
+    padding: 0 ($width__searchbox__button + $padding__searchbox__input) 0 $padding__searchbox__input;
     width: 100%;
 
     &:focus {
-      border-color: $color-border_searchbox__input--focus;
-      color: $color-fg_searchbox__input--focus;
+      border-color: $color-border__searchbox__input--focus;
+      color: $color-fg__searchbox__input--focus;
     }
   }
 
@@ -30,23 +30,23 @@
     // ir-pseudo-element does not work on `input`
     @include ir-text-indent;
 
-    background-color: $color-bg_searchbox__button;
-    background-image: $image_searchbox__button;
+    background-color: $color-bg__searchbox__button;
+    background-image: $image__searchbox__button;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100% auto;
     border: 0;
     border-radius: 0;
-    height: $height_searchbox__button;
+    height: $height__searchbox__button;
     padding: 0;
     position: absolute;
     right: 0;
     top: 0;
-    width: $width_searchbox__button;
+    width: $width__searchbox__button;
   }
 
   input[type='search']:focus + input[type='submit'],
   input[type='submit']:focus {
-    background-color: $color-bg_searchbox__button--focus;
+    background-color: $color-bg__searchbox__button--focus;
   }
 }

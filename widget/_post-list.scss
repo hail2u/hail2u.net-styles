@@ -4,18 +4,18 @@
 
   li {
     list-style-type: none;
-    margin-top: $margin_post-list__item;
+    margin-top: $margin__post-list__item;
     position: relative;
   }
 
   time {
-    color: $color-fg_post-list__time;
+    color: $color-fg__post-list__time;
     display: block;
   }
 
   @media (min-width: $breakpoint--content) {
     li {
-      padding-left: $padding_post-list__item;
+      padding-left: $padding__post-list__item;
     }
 
     time {

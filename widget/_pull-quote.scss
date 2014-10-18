@@ -1,13 +1,13 @@
 // Pull Quote
 .pull-quote {
-  line-height: $line-height_pull-quote;
-  margin-left: $margin_pull-quote;
-  margin-right: $margin_pull-quote;
+  line-height: $line-height__pull-quote;
+  margin-left: $margin__pull-quote;
+  margin-right: $margin__pull-quote;
   text-align: center;
 
   p {
-    color: $color-fg_pull-quote;
-    font-size: rem($ratio-text_pull-quote);
+    color: $color-fg__pull-quote;
+    font-size: rem($ratio-text__pull-quote);
     margin-top: $margin;
     quotes: '\201c' '\201d'; // Left Double Quotation Mark, Double Low-9 Quotation Mark
 
@@ -23,14 +23,14 @@
   }
 
   @media (min-width: $breakpoint--content) {
-    margin-left: $margin_pull-quote--content;
-    margin-right: $margin_pull-quote--content;
+    margin-left: $margin__pull-quote--content;
+    margin-right: $margin__pull-quote--content;
   }
 
   @media (min-width: $breakpoint--full) {
     float: left;
     margin-left: (- ($width-supplement + $width-gutter));
     margin-right: $width-gutter;
-    width: $width_pull-quote--full;
+    width: $width__pull-quote--full;
   }
 }

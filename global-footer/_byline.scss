@@ -1,14 +1,14 @@
 // Byline
 .byline {
-  color: $color-fg_byline;
+  color: $color-fg__byline;
 
   &::before {
-    border-top: $width-border_byline__border solid $color-border_byline__border;
+    border-top: $width-border__byline__border solid $color-border__byline__border;
     content: '';
     display: block;
     height: 0;
-    margin-bottom: $margin_byline__border;
-    width: $width_byline__border;
+    margin-bottom: $margin__byline__border;
+    width: $width__byline__border;
   }
 
   mark {

@@ -1,11 +1,11 @@
 // Tagline
 .tagline {
-  @extend %font-family_tagline;
+  @extend %font-family__tagline;
   @extend %heading;
 
-  font-size: rem($ratio-text_tagline);
+  font-size: rem($ratio-text__tagline);
   font-weight: 200;
-  margin-top: $margin_tagline;
+  margin-top: $margin__tagline;
 
   em {
     font-style: italic;
@@ -17,8 +17,8 @@
   }
 
   @media (min-width: $breakpoint--content) {
-    font-size: rem($ratio-text_tagline--content);
-    margin-top: $margin_tagline--content;
+    font-size: rem($ratio-text__tagline--content);
+    margin-top: $margin__tagline--content;
     padding-left: 10%;
     padding-right: 10%;
     text-align: center;
@@ -26,6 +26,6 @@
 
   @media (min-width: $breakpoint--full) {
     margin-left: (- ($width-supplement + $width-gutter));
-    margin-top: $margin_tagline--full;
+    margin-top: $margin__tagline--full;
   }
 }

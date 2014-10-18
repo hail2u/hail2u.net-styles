@@ -19,13 +19,13 @@
 
     figcaption:last-child {
       border-bottom: 0;
-      border-left: $width-border_figcaption solid $color-border_figcaption;
+      border-left: $width-border__figcaption solid $color-border__figcaption;
       bottom: auto;
       left: 0;
       margin-left: 0;
       margin-top: $margin;
       padding-bottom: 0;
-      padding-left: $padding_full-width__caption--full;
+      padding-left: $padding__full-width__caption--full;
     }
   }
 }

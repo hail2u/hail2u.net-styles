@@ -1,6 +1,6 @@
 // Site Navigation
 body > header nav {
-  font-size: rem($ratio-text_site-navigation);
+  font-size: rem($ratio-text__site-navigation);
   position: absolute;
   right: $width-gap;
   text-transform: uppercase;
@@ -13,9 +13,9 @@ body > header nav {
 
   li {
     display: table-cell;
-    height: $height_site-navigation;
-    line-height: $height_site-navigation;
-    padding-left: $width_site-navigation__gutter;
+    height: $height__site-navigation;
+    line-height: $height__site-navigation;
+    padding-left: $width__site-navigation__gutter;
   }
 
   a {
@@ -25,20 +25,20 @@ body > header nav {
 
   mark {
     background-color: transparent;
-    border-bottom: $width-border_site-navigation__mark solid;
-    color: $color-fg_site-navigation__mark;
-    padding-bottom: $padding_site-navigation__mark;
+    border-bottom: $width-border__site-navigation__mark solid;
+    color: $color-fg__site-navigation__mark;
+    padding-bottom: $padding__site-navigation__mark;
   }
 
   @media (min-width: $breakpoint--content) {
     li {
-      padding-left: $width_site-navigation__gutter--content;
+      padding-left: $width__site-navigation__gutter--content;
     }
   }
 
   @media (min-width: $breakpoint--full) {
     li {
-      padding-left: $width_site-navigation__gutter--full;
+      padding-left: $width__site-navigation__gutter--full;
     }
   }
 }

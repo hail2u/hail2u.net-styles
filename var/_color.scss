@@ -53,85 +53,85 @@ $color-accent__triad-negative--light: rgb(255, 200, 60);
 $color-accent__triad-negative--lightest: rgb(255, 212, 104);
 
 // Core
-$color-fg_body: $color-dark;
-$color-bg_body: $color-light;
+$color-fg__body: $color-dark;
+$color-bg__body: $color-light;
 
-$color-fg_heading: $color-shade--darkest;
-$color-fg_heading--primary: $color-fg_heading;
+$color-fg__heading: $color-shade--darkest;
+$color-fg__heading--primary: $color-fg__heading;
 
-$color-fg_hr: $color-tint--light;
+$color-fg__hr: $color-tint--light;
 
-$color-fg_blockquote: $color-shade--dark;
-$color-border_blockquote: $color-tint--light;
+$color-fg__blockquote: $color-shade--dark;
+$color-border__blockquote: $color-tint--light;
 
-$color-fg_dt: $color-shade--darkest;
+$color-fg__dt: $color-shade--darkest;
 
-$color-fg_figcaption: $color-shade--dark;
-$color-border_figcaption: $color-tint--light;
+$color-fg__figcaption: $color-shade--dark;
+$color-border__figcaption: $color-tint--light;
 
-$color-fg_link: $color-accent;
-$color-fg_link__underline: $color-accent--lightest;
+$color-fg__link: $color-accent;
+$color-fg__link__underline: $color-accent--lightest;
 
-$color-fg_em: $color-shade--darkest;
+$color-fg__em: $color-shade--darkest;
 
-$color-fg_strong: $color-accent__triad-positive;
+$color-fg__strong: $color-accent__triad-positive;
 
-$color-bg_mark: $color-accent__triad-negative;
+$color-bg__mark: $color-accent__triad-negative;
 
-$color-bg_img: $color-tint--lightest;
-$color-border_img: $color-bg_img;
+$color-bg__img: $color-tint--lightest;
+$color-border__img: $color-bg__img;
 
-$color-border_td: $color-tint--light;
+$color-border__td: $color-tint--light;
 
 // Site Navigation
-$color-fg_site-navigation__mark: $color-accent--light;
+$color-fg__site-navigation__mark: $color-accent--light;
 
 // Article Heading
-$color-fg_article-heading--permalink: $color-dark;
+$color-fg__article-heading--permalink: $color-dark;
 
 // Article Footer
-$color-fg_article-footer: $color-shade--lightest;
+$color-fg__article-footer: $color-shade--lightest;
 
-$color-fg_article-footer__time: $color-dark;
+$color-fg__article-footer__time: $color-dark;
 
-$color-fg_article-footer__tag: $color-dark;
+$color-fg__article-footer__tag: $color-dark;
 
 // Byline
-$color-fg_byline: $color-shade--darkest;
-$color-border_byline__border: $color-shade--light;
+$color-fg__byline: $color-shade--darkest;
+$color-border__byline__border: $color-shade--light;
 
 // Footnote
-$color-border_footnote: $color-tint--dark;
+$color-border__footnote: $color-tint--dark;
 
 // Post List
-$color-fg_post-list__time: $color-shade--lightest;
+$color-fg__post-list__time: $color-shade--lightest;
 
 // Pull Quote
-$color-fg_pull-quote: $color-shade--dark;
+$color-fg__pull-quote: $color-shade--dark;
 
 // Read Older
-$color-fg_read-older__label: $color-shade--darkest;
+$color-fg__read-older__label: $color-shade--darkest;
 
 // Searchbox
-$color-fg_searchbox__input: $color-shade--light;
-$color-fg_searchbox__input--focus: $color-dark--dark;
-$color-bg_searchbox__input: $color-light--light;
-$color-border_searchbox__input: $color-tint--light;
-$color-border_searchbox__input--focus: $color-accent--light;
+$color-fg__searchbox__input: $color-shade--light;
+$color-fg__searchbox__input--focus: $color-dark--dark;
+$color-bg__searchbox__input: $color-light--light;
+$color-border__searchbox__input: $color-tint--light;
+$color-border__searchbox__input--focus: $color-accent--light;
 
-$color-fg_searchbox__button: $color-bg_searchbox__input;
-$color-bg_searchbox__button: $color-border_searchbox__input;
-$color-bg_searchbox__button--focus: $color-border_searchbox__input--focus;
+$color-fg__searchbox__button: $color-bg__searchbox__input;
+$color-bg__searchbox__button: $color-border__searchbox__input;
+$color-bg__searchbox__button--focus: $color-border__searchbox__input--focus;
 
 // Seealso
-$color-fg_seealso: $color-shade--dark;
+$color-fg__seealso: $color-shade--dark;
 
-$color-fg_seealso__link: $color-fg_link;
+$color-fg__seealso__link: $color-fg__link;
 
-$color-fg_seealso__icon: $color-shade--darkest;
+$color-fg__seealso__icon: $color-shade--darkest;
 
 // Sidenote
-$color-fg_sidenote: $color-shade--lightest;
+$color-fg__sidenote: $color-shade--lightest;
 
 // Topic
-$color-fg_topic__more: $color-fg_link;
+$color-fg__topic__more: $color-fg__link;

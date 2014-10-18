@@ -1,5 +1,5 @@
 // Font Size
-$font-sizes_html: (18px, 21px, 24px);
+$font-sizes__html: (18px, 21px, 24px);
 
 // Line Height
 $line-height: $ratio-golden;
@@ -36,156 +36,156 @@ $width-full--outer: ($width-supplement--outer + $width-content--outer);
 $width-full: (- $width-gap + $width-full--outer - $width-gap);
 
 // Breakpoint
-$width_scrollbar: 1.5rem;
-$breakpoint--content: ($width-content--outer + $width_scrollbar);
+$width__scrollbar: 1.5rem;
+$breakpoint--content: ($width-content--outer + $width__scrollbar);
 @media (min-width: $breakpoint--content) {
   /*! Applied wider than #{$breakpoint--content} */
 }
-$breakpoint--full: (($width-full--outer + $width_scrollbar) * (nth($font-sizes_html, length($font-sizes_html)) / 16px));
+$breakpoint--full: (($width-full--outer + $width__scrollbar) * (nth($font-sizes__html, length($font-sizes__html)) / 16px));
 @media (min-width: $breakpoint--full) {
   /*! Applied wider than #{$breakpoint--full} */
 }
 
 // Core
-$line-height_body: ($line-height * .9);
-$line-height_body--content: $line-height;
+$line-height__body: ($line-height * .9);
+$line-height__body--content: $line-height;
 
-$margin_heading: ($margin * pow($ratio-golden, 2));
-$margin_heading--primary: ($margin_heading * $ratio-golden);
-$line-height_heading: 1.25;
+$margin__heading: ($margin * pow($ratio-golden, 2));
+$margin__heading--primary: ($margin__heading * $ratio-golden);
+$line-height__heading: 1.25;
 
-$height_hr: rem($line-height * $ratio-golden);
-$width_hr: ($height_hr * 3);
+$height__hr: rem($line-height * $ratio-golden);
+$width__hr: ($height__hr * 3);
 
-$line-height_pre: $line-height--mini;
+$line-height__pre: $line-height--mini;
 
-$width-border_blockquote: $width-border--bold;
-$padding_blockquote: $width-gutter;
-$margin_blockquote--full: (- ($width-border_blockquote + $padding_blockquote));
+$width-border__blockquote: $width-border--bold;
+$padding__blockquote: $width-gutter;
+$margin__blockquote--full: (- ($width-border__blockquote + $padding__blockquote));
 
-$padding_list: ($indent * $ratio-text--zeta);
-$padding_list--content: $indent;
-$padding_list--full: $padding_list--content;
+$padding__list: ($indent * $ratio-text--zeta);
+$padding__list--content: $indent;
+$padding__list--full: $padding__list--content;
 
-$width-border_figcaption: $width-border--thin;
-$padding_figcaption--full: ($width-border_figcaption + $margin--mini);
+$width-border__figcaption: $width-border--thin;
+$padding__figcaption--full: ($width-border__figcaption + $margin--mini);
 
-$margin_figcaption: $margin--mini;
-$padding_figcaption--blockquote: $margin--mini;
+$margin__figcaption: $margin--mini;
+$padding__figcaption--blockquote: $margin--mini;
 
-$width_link__underline: $width-border--thin;
-$height_link__underline: $width_link__underline;
+$width__link__underline: $width-border--thin;
+$height__link__underline: $width__link__underline;
 
-$width-border_strong: $width-border--thin;
+$width-border__strong: $width-border--thin;
 
-$letter-spacing_abbr: $width-border--thin;
+$letter-spacing__abbr: $width-border--thin;
 
-$width-border_td: $width-border--thin;
-$padding_td: .5rem;
+$width-border__td: $width-border--thin;
+$padding__td: .5rem;
 
-$width-border_th--thead: $width-border;
+$width-border__th--thead: $width-border;
 
 // Logo
-$margin_logo: $margin;
-$margin_logo--content: ($margin_logo * $ratio-golden);
-$margin_logo--full: ($margin_logo--content * $ratio-golden);
-$width_logo: ($width-supplement / pow($ratio-golden, 4));
-$height_logo: $width_logo;
+$margin__logo: $margin;
+$margin__logo--content: ($margin__logo * $ratio-golden);
+$margin__logo--full: ($margin__logo--content * $ratio-golden);
+$width__logo: ($width-supplement / pow($ratio-golden, 4));
+$height__logo: $width__logo;
 
 // Tagline
-$margin_tagline: ($margin_logo * $ratio-golden);
-$margin_tagline--content: ($margin_tagline * $ratio-golden);
-$margin_tagline--full: ($margin_tagline--content * $ratio-golden);
+$margin__tagline: ($margin__logo * $ratio-golden);
+$margin__tagline--content: ($margin__tagline * $ratio-golden);
+$margin__tagline--full: ($margin__tagline--content * $ratio-golden);
 
 // Site Navigation
-$height_site-navigation: $height_logo;
+$height__site-navigation: $height__logo;
 
-$width_site-navigation__gutter: ($width-gutter / 4);
-$width_site-navigation__gutter--content: ($width_site-navigation__gutter * 2);
-$width_site-navigation__gutter--full: ($width_site-navigation__gutter * 4);
+$width__site-navigation__gutter: ($width-gutter / 4);
+$width__site-navigation__gutter--content: ($width__site-navigation__gutter * 2);
+$width__site-navigation__gutter--full: ($width__site-navigation__gutter * 4);
 
-$width-border_site-navigation__mark: $width-border;
-$padding_site-navigation__mark: $padding--mini;
+$width-border__site-navigation__mark: $width-border;
+$padding__site-navigation__mark: $padding--mini;
 
 // Main
-$margin_main: (- ($margin_heading--primary - $margin_tagline));
-$margin_main--content: (- ($margin_heading--primary - $margin_tagline--content));
-$margin_main--full: (- ($margin_heading--primary - $margin_tagline--full));
+$margin__main: (- ($margin__heading--primary - $margin__tagline));
+$margin__main--content: (- ($margin__heading--primary - $margin__tagline--content));
+$margin__main--full: (- ($margin__heading--primary - $margin__tagline--full));
 
 // Section Footer
-$line-height_section-footer: rem($ratio-text_heading--primary * $line-height_heading);
+$line-height__section-footer: rem($ratio-text__heading--primary * $line-height__heading);
 
 // Byline
-$margin_byline__border: $margin--mini;
-$width_byline__border: $width_logo;
-$width-border_byline__border: $width-border;
+$margin__byline__border: $margin--mini;
+$width__byline__border: $width__logo;
+$width-border__byline__border: $width-border;
 
 // Article Heading
-$margin_article-heading--permalink: $margin_heading;
-$margin_article-heading--full--permalink: $margin_heading--primary;
+$margin__article-heading--permalink: $margin__heading;
+$margin__article-heading--full--permalink: $margin__heading--primary;
 
 // Article Footer
-$margin_article-footer--full: rem(($ratio-text_heading--primary * $line-height_heading - $ratio-text_article-footer * $line-height) / 2);
-$margin_article-footer--full--permalink: rem(($line-height - $ratio-text_article-footer * $line-height) / 2);
+$margin__article-footer--full: rem(($ratio-text__heading--primary * $line-height__heading - $ratio-text__article-footer * $line-height) / 2);
+$margin__article-footer--full--permalink: rem(($line-height - $ratio-text__article-footer * $line-height) / 2);
 
 // Footlinks
-$margin_footlinks: $margin_heading--primary;
+$margin__footlinks: $margin__heading--primary;
 
 // Drop
-$width_drop--max: ($width-supplement + $width-gutter + $width-content / 2);
+$width__drop--max: ($width-supplement + $width-gutter + $width-content / 2);
 
 // Flat UL
-$width_flat-ul__item: (100% / 3);
+$width__flat-ul__item: (100% / 3);
 
 // Footnote
-$margin_footnote: $margin--mini;
-$height-border_footnote: $width-border--thin;
-$width-border_footnote: ($height-border_footnote * 8);
+$margin__footnote: $margin--mini;
+$height-border__footnote: $width-border--thin;
+$width-border__footnote: ($height-border__footnote * 8);
 
 // Full Width
-$padding_full-width__caption--full: ($width-gap - $width-border_figcaption);
+$padding__full-width__caption--full: ($width-gap - $width-border__figcaption);
 
 // Icon List
-$width_icon-list__icon: ($width-content / pow($ratio-golden, 5));
-$height_icon-list__icon: $width_icon-list__icon;
-$border-radius_icon-list__icon: ($width-border * 1.5);
-$padding_icon-list__icon: 25%;
+$width__icon-list__icon: ($width-content / pow($ratio-golden, 5));
+$height__icon-list__icon: $width__icon-list__icon;
+$border-radius__icon-list__icon: ($width-border * 1.5);
+$padding__icon-list__icon: 25%;
 
 // Post List
-$margin_post-list__item: $margin--mini;
-$padding_post-list__item: (6rem + $width-gap);
+$margin__post-list__item: $margin--mini;
+$padding__post-list__item: (6rem + $width-gap);
 
 // Pull Quote
-$line-height_pull-quote: 1.3;
-$margin_pull-quote: $width-gutter;
-$margin_pull-quote--content: $indent;
-$width_pull-quote--full: ($width-supplement + $width-gutter + $width-supplement);
+$line-height__pull-quote: 1.3;
+$margin__pull-quote: $width-gutter;
+$margin__pull-quote--content: $indent;
+$width__pull-quote--full: ($width-supplement + $width-gutter + $width-supplement);
 
 // Searchbox
-$width_searchbox: 24rem;
-$height_searchbox: rem($line-height);
+$width__searchbox: 24rem;
+$height__searchbox: rem($line-height);
 
-$width-border_searchbox__input: $width-border--thin;
-$height_searchbox__input: $height_searchbox;
-$padding_searchbox__input: $padding--mini;
+$width-border__searchbox__input: $width-border--thin;
+$height__searchbox__input: $height__searchbox;
+$padding__searchbox__input: $padding--mini;
 
-$width_searchbox__button: $height_searchbox;
-$height_searchbox__button: $width_searchbox__button;
+$width__searchbox__button: $height__searchbox;
+$height__searchbox__button: $width__searchbox__button;
 
 // Seealso
-$width_seealso__icon: rem($ratio-text_seealso);
-$margin_seealso__icon: ($width_seealso__icon / 4);
+$width__seealso__icon: rem($ratio-text__seealso);
+$margin__seealso__icon: ($width__seealso__icon / 4);
 
 // Seemore
-$width-border_seemore: $width-border;
+$width-border__seemore: $width-border;
 
 // Topic
-$margin_topic__more: .33333rem;
+$margin__topic__more: .33333rem;
 
 // Google AdSense
-$breakpoint_adsbygoogle--small: (16px + 300px + 16px + 17px);
-$breakpoint_adsbygoogle--medium: (16px + 336px + 16px + 17px);
-$breakpoint_adsbygoogle--large: (1700px + 17px);
+$breakpoint__adsbygoogle--small: (16px + 300px + 16px + 17px);
+$breakpoint__adsbygoogle--medium: (16px + 336px + 16px + 17px);
+$breakpoint__adsbygoogle--large: (1700px + 17px);
 
 // Google Custom Search Engine
-$margin_searchboxbygoogle--full: ($margin_footlinks - (($height_searchbox - rem($line-height * $ratio-text_global-footer)) / 2));
+$margin__searchboxbygoogle--full: ($margin__footlinks - (($height__searchbox - rem($line-height * $ratio-text__global-footer)) / 2));

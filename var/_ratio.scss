@@ -21,48 +21,48 @@ $ratio-content: 1;
 $ratio-supplement: (1 / pow($ratio-golden, 2));
 
 // Class
-$ratio-text_pin: $ratio-text--epsilon;
+$ratio-text__pin: $ratio-text--epsilon;
 
 // Core
-$ratio-text_heading: $ratio-text--gamma;
-$ratio-text_heading--primary: $ratio-text--beta;
+$ratio-text__heading: $ratio-text--gamma;
+$ratio-text__heading--primary: $ratio-text--beta;
 
-$ratio-text_pre: $ratio-text--epsilon;
+$ratio-text__pre: $ratio-text--epsilon;
 
-$ratio-text_abbr: $ratio-text--epsilon;
+$ratio-text__abbr: $ratio-text--epsilon;
 
-$ratio-text_code: $ratio-text_pre;
+$ratio-text__code: $ratio-text__pre;
 
 // Tagline
-$ratio-text_tagline: $ratio-text--beta;
-$ratio-text_tagline--content: $ratio-text--alpha;
+$ratio-text__tagline: $ratio-text--beta;
+$ratio-text__tagline--content: $ratio-text--alpha;
 
 // Site Navigation
-$ratio-text_site-navigation: $ratio-text--epsilon;
+$ratio-text__site-navigation: $ratio-text--epsilon;
 
 // Article Heading
-$ratio-text_article-heading--permalink: $ratio-text--alpha;
+$ratio-text__article-heading--permalink: $ratio-text--alpha;
 
 // Article Footer
-$ratio-text_article-footer: $ratio-text_pin;
+$ratio-text__article-footer: $ratio-text__pin;
 
 // Global Footer
-$ratio-text_global-footer: $ratio-text--epsilon;
+$ratio-text__global-footer: $ratio-text--epsilon;
 
 // Footnote
-$ratio-text_footnote: $ratio-text--epsilon;
+$ratio-text__footnote: $ratio-text--epsilon;
 
 // Pull Quote
-$ratio-text_pull-quote: $ratio-text--beta;
+$ratio-text__pull-quote: $ratio-text--beta;
 
 // Read Older
-$ratio-text_read-older__title: $ratio-text--beta;
+$ratio-text__read-older__title: $ratio-text--beta;
 
 // Seealso
-$ratio-text_seealso: $ratio-text--gamma;
+$ratio-text__seealso: $ratio-text--gamma;
 
 // Sidenote
-$ratio-text_sidenote: $ratio-text--epsilon;
+$ratio-text__sidenote: $ratio-text--epsilon;
 
 // Topic
-$ratio-text_topic__more: $ratio-text--epsilon;
+$ratio-text__topic__more: $ratio-text--epsilon;
