@@ -39,7 +39,7 @@
       background-color: $cc-tumblr;
     }
 
-    &[href$='/feed'] {
+    &[type='application/rss+xml'] {
       background-color: $cc-feed;
     }
   }

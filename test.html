@@ -831,7 +831,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
           <li><a rel="alternate" type="application/rss+xml" href="https://hail2u.net/feed"><img src="../../build/images/icon/feed.svg" alt="Feed"></a></li>
         </ul>
 
-        <p>各ソーシャル・ネットワークのアイコンは<code>img</code>要素を使って直接参照します。色は<code>href</code>属性の値で割り当てられています。TwitterとFacebookは先頭一致、Tumblrとフィードは後方一致です。</p>
+        <p>各ソーシャル・ネットワークのアイコンは<code>img</code>要素を使って直接参照します。色は属性の値を参照して割り当てられています。TwitterとFacebook、Tumblrは<code>href</code>属性を、フィードは<code>type</code>属性を参照しています。</p>
 
         <pre><code class="language-html">&lt;ul class=&quot;follow&quot;&gt;
   &lt;li&gt;
