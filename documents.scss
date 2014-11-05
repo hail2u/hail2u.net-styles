@@ -1,0 +1,191 @@
+/*!
+ * document.css
+ *
+ * LICENSE: http://hail2u.mit-license.org/2011
+ */
+
+// Web Fonts
+@import 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Source+Code+Pro:400,700';
+
+
+// Variables
+$dark: #333;
+$light: #fcfcfc;
+$link: #01e;
+$stress: #c33;
+$font-size: 1em;
+$sans-serif: 'Source Sans Pro', 'Helvetica Neue', 'Calibri', sans-serif;
+$monospace: 'Source Code Pro', 'Menlo', 'Consolas', monospace;
+$width: 45em;
+
+
+// Imports
+@import './bower_components/hail2u-scss-partials/clearfix';
+@import './bower_components/hail2u-scss-partials/natural';
+
+
+// Styles
+body {
+  -moz-font-feature-settings: 'kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1;
+  -webkit-font-feature-settings: 'kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1;
+  max-width: $width;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &:target {
+    padding-top: 1em;
+  }
+
+  + p {
+    margin-top: 0;
+  }
+}
+
+pre {
+  -moz-font-feature-settings: 'kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1;
+  -webkit-font-feature-settings: 'kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1;
+  font-feature-settings: 'kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+table {
+  display: block;
+  -moz-font-feature-settings: 'pnum' 0, 'tnum' 1, 'zero' 1;
+  -webkit-font-feature-settings: 'pnum' 0, 'tnum' 1, 'zero' 1;
+  font-feature-settings: 'pnum' 0, 'tnum' 1, 'zero' 1;
+  max-width: 100%;
+  overflow-x: auto;
+  table-layout: fixed;
+}
+
+td,
+th {
+  white-space: nowrap;
+}
+
+.note {
+  border-left: 3px double #f00;
+  padding-left: $font-size;
+}
+
+.image {
+  @include clearfix;
+
+  line-height: 1;
+  margin: ($font-size * 2) 0 0;
+  max-width: 100%;
+}
+
+.seealso {
+  font-size: 1.17em;
+  font-weight: 700;
+
+  &::before {
+    content: '\2192\0020';
+  }
+
+  a {
+    font-weight: 400;
+  }
+}
+
+
+// Media Queries
+$breakpoint: ($font-size * 3 + $width / 2 + $font-size * 3);
+
+@media (min-width: 28em) {
+  body {
+    margin: 2em;
+  }
+}
+
+$breakpoint: ($font-size * 3 + $width + $font-size * 3);
+
+@media (min-width: 52em) {
+  body {
+    margin-top: 4em;
+  }
+}
+
+$breakpoint: ($font-size * 3 + $width + $font-size * 3 + 10em + $font-size * 3);
+
+@media (min-width: $breakpoint) {
+  .adsense {
+    position: absolute;
+    right: ($font-size * 2);
+    top: ($font-size * 2);
+  }
+}
+
+$breakpoint: (10em + $breakpoint);
+
+@media (min-width: $breakpoint) {
+  body {
+    padding-left: 10em;
+  }
+
+  .banner {
+    margin-left: -12em;
+    margin-right: -2em;
+    max-width: none;
+  }
+}
+
+
+// Print
+@media print {
+  * {
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    background-color: inherit;
+    font-family: Georgia, serif;
+  }
+
+  p a[href]::after {
+    content: ' (' attr(href) ')';
+  }
+
+  .note,
+  hr,
+  ins,
+  strong {
+    border-color: #000;
+  }
+
+  pre,
+  code,
+  kbd,
+  samp,
+  var {
+    font-family: 'Courier New', monospace;
+  }
+
+  pre {
+    border: 0;
+    padding: 0;
+  }
+
+  blockquote {
+    font-style: italic;
+  }
+
+  mark {
+    background: 0 0;
+  }
+
+  .adsense {
+    display: none;
+  }
+}
