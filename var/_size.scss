@@ -121,12 +121,12 @@ $width__byline__border: $width__logo;
 $width-border__byline__border: $width-border;
 
 // Article Heading
-$margin__article-heading--permalink: $margin__heading;
-$margin__article-heading--full--permalink: $margin__heading--primary;
+$padding__article-heading--permalink: ($margin__heading - $margin);
+$padding__article-heading--full--permalink: ($margin__heading--primary - $margin);
 
 // Article Footer
 $margin__article-footer--full: rem(($ratio-text__heading--primary * $line-height__heading - $ratio-text__article-footer * $line-height) / 2);
-$margin__article-footer--full--permalink: rem(($line-height - $ratio-text__article-footer * $line-height) / 2);
+$margin__article-footer--full--permalink: ($margin + rem(($line-height - $ratio-text__article-footer * $line-height) / 2));
 
 // Footlinks
 $margin__footlinks: $margin__heading--primary;

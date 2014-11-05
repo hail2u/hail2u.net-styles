@@ -7,7 +7,7 @@ main > article h1 {
     color: $color-fg__article-heading--permalink;
     font-size: rem($ratio-text__article-heading--permalink);
     font-weight: 400;
-    margin-bottom: $margin__article-heading--permalink;
+    padding-bottom: $padding__article-heading--permalink;
   }
 
   @media (min-width: $breakpoint--content) {
@@ -20,7 +20,7 @@ main > article h1 {
 
   @media (min-width: $breakpoint--full) {
     .permalink & {
-      margin-bottom: $margin__article-heading--full--permalink;
+      padding-bottom: $padding__article-heading--full--permalink;
       margin-left: (- ($width-supplement + $width-gutter));
     }
   }
