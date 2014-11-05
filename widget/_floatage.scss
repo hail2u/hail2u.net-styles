@@ -4,11 +4,19 @@
     float: left;
     margin-right: $width-gap;
     max-width: 50%;
+
+    .permalink footer + & {
+      margin-top: 0;
+    }
   }
 
   .floatage-right {
     float: right;
     margin-left: $width-gap;
     max-width: 50%;
+
+    .permalink footer + & {
+      margin-top: 0;
+    }
   }
 }
