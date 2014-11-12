@@ -98,19 +98,21 @@ th {
 
 
 // Media Queries
+$margin-body: ($font-size * 2);
 $breakpoint: ($font-size * 3 + $width / 2 + $font-size * 3);
 
 @media (min-width: $breakpoint) {
   body {
-    margin: 2em;
+    margin: $margin-body;
   }
 }
 
+$margin-body-top: ($margin-body * 2);
 $breakpoint: ($font-size * 3 + $width + $font-size * 3);
 
 @media (min-width: $breakpoint) {
   body {
-    margin-top: 4em;
+    margin-top: $margin-body-top;
   }
 }
 
