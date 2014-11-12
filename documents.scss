@@ -100,7 +100,7 @@ th {
 // Media Queries
 $breakpoint: ($font-size * 3 + $width / 2 + $font-size * 3);
 
-@media (min-width: 28em) {
+@media (min-width: $breakpoint) {
   body {
     margin: 2em;
   }
@@ -108,13 +108,14 @@ $breakpoint: ($font-size * 3 + $width / 2 + $font-size * 3);
 
 $breakpoint: ($font-size * 3 + $width + $font-size * 3);
 
-@media (min-width: 52em) {
+@media (min-width: $breakpoint) {
   body {
     margin-top: 4em;
   }
 }
 
-$breakpoint: ($font-size * 3 + $width + $font-size * 3 + 10em + $font-size * 3);
+$width-ad: 10em;
+$breakpoint: ($breakpoint + $width-ad + $font-size * 3);
 
 @media (min-width: $breakpoint) {
   .adsense {
@@ -124,16 +125,17 @@ $breakpoint: ($font-size * 3 + $width + $font-size * 3 + 10em + $font-size * 3);
   }
 }
 
-$breakpoint: (10em + $breakpoint);
+$indent: 10em;
+$breakpoint: ($indent + $breakpoint);
 
 @media (min-width: $breakpoint) {
   body {
-    padding-left: 10em;
+    padding-left: $indent;
   }
 
   .banner {
-    margin-left: -12em;
-    margin-right: -2em;
+    margin-left: (- ($indent + $font-size * 2));
+    margin-right: (- $font-size * 2);
     max-width: none;
   }
 }
