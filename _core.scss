@@ -3,28 +3,10 @@ html {
   -moz-font-feature-settings: 'kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1;
   -webkit-font-feature-settings: 'kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1;
   font-feature-settings: 'kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1;
-  font-size: 100%;
+  font-size: ($ratio-text__base * 100%);
 
-  @each $size in $font-sizes__html {
-    $threshold: 1.2;
-    $feature-prefix: min-;
-    $ratio: ($size / 16px);
-    $horizontal: ($width-content--outer * pow($ratio, 2));
-    $vertical: ($horizontal / 2);
-
-    @if ($ratio < 1) {
-      $feature-prefix: max-;
-      $vertical: ($horizontal * (3 / 2));
-    }
-
-    @if ($ratio > $threshold) {
-      $horizontal: ($width-full--outer * pow($ratio, 2) * $threshold);
-      $vertical: ($horizontal / 2);
-    }
-
-    @media (#{$feature-prefix}width: $horizontal) and (#{$feature-prefix}height: $vertical) {
-      font-size: percentage($ratio);
-    }
+  @media (min-width: $breakpoint--full) {
+    font-size: ($ratio-text__base--full * 100%);
   }
 }
 

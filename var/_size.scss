@@ -1,6 +1,3 @@
-// Font Size
-$font-sizes__html: (18px, 21px, 24px);
-
 // Line Height
 $line-height: $ratio-golden;
 $line-height--mini: ($line-height * .8);
@@ -41,7 +38,7 @@ $breakpoint--content: ($width-content--outer + $width__scrollbar);
 @media (min-width: $breakpoint--content) {
   /*! Applied wider than #{$breakpoint--content} */
 }
-$breakpoint--full: (($width-full--outer + $width__scrollbar) * (nth($font-sizes__html, length($font-sizes__html)) / 16px));
+$breakpoint--full: (($width-full--outer + $width__scrollbar) * $ratio-text__base--full);
 @media (min-width: $breakpoint--full) {
   /*! Applied wider than #{$breakpoint--full} */
 }
