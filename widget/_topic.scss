@@ -18,9 +18,5 @@
 
   h1 {
     @extend %heading-push;
-
-    + footer {
-      @extend %pin;
-    }
   }
 }
