@@ -1,5 +1,5 @@
 // Section Footer
-main > section h1 + footer {
+.section-footer {
   @extend %pin;
 
   p {

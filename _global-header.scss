@@ -1,5 +1,5 @@
 // Global Header
-body > header {
+.global-header {
   @extend %link-underline-removal;
   @extend %centering;
 }

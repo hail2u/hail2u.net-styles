@@ -55,12 +55,12 @@
   </head>
 
   <body>
-    <header role="banner">
-      <h1><a id="logo" href="http://hail2u.net/"><img src="../../build/images/logo.svg" alt="Hail2u.net"></a></h1>
+    <header class="global-header" role="banner">
+      <h1><a id="logo" class="logo" href="http://hail2u.net/"><img src="../../build/images/logo.svg" alt="Hail2u.net"></a></h1>
 
       <p class="tagline">Sketch, markup, code, style, <em>test</em> &amp; then deploy.</p>
 
-      <nav>
+      <nav class="site-navigation">
         <ul>
           <li><a href="http://hail2u.net/blog/">Weblog</a></li>
           <li><a href="http://hail2u.net/documents/">Documents</a></li>
@@ -70,11 +70,11 @@
       </nav>
     </header>
 
-    <main role="main">
+    <main class="main" role="main">
       <article id="introduction">
-        <h1>Style Guide v6.59.13</h1>
+        <h1 class="article-heading">Style Guide v6.59.13</h1>
 
-        <footer>
+        <footer class="article-footer">
           <p>on <time datetime="2011-12-07T15:22+09:00" itemprop="datePublished">Dec 7, 2011</time> under <span class="tag" itemprop="keywords"><a href="#">Guide</a></span></p>
         </footer>
 
@@ -164,7 +164,7 @@
       <section id="coding-rules">
         <h1>コーディング上の決め事</h1>
 
-        <footer>
+        <footer class="section-footer">
           <p>It's just a rule. Nothing can stop me now, 'cause I don't care.</p>
         </footer>
 
@@ -990,7 +990,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
         <a href="#">
           <h1>話題の記事</h1>
 
-          <footer>
+          <footer class="section-footer">
             <p>on <time datetime="2012-05-28">May 28, 2012</time> under <span class="tag">Dummy</span></p>
           </footer>
 
@@ -1001,7 +1001,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
   &lt;a href=&quot;...&quot;&gt;
     &lt;h1&gt;...&lt;/h1&gt;
 
-    &lt;footer&gt;
+    &lt;footer class=&quot;section-footer&quot;&gt;
       &lt;p&gt;
         on &lt;time datetime=&quot;...&quot;&gt;M d, yyyy&lt;/time&gt;
         under &lt;span class=&quot;tag&quot;&gt;...&lt;/span&gt;
@@ -1046,7 +1046,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
       </aside>
     </main>
 
-    <aside role="search">
+    <aside class="subcontent" role="search">
       <!-- Google Custom Search Engine -->
       <form class="searchbox searchboxbygoogle" action="https://www.google.com/cse" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
         <meta content="https://www.google.com/cse?cx=partner-pub-8712792805045949:3747342316&amp;ie=UTF-8&amp;q={q}&amp;sa=Search" itemprop="target">
@@ -1057,7 +1057,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
       </form>
     </aside>
 
-    <footer role="contentinfo">
+    <footer class="global-footer" role="contentinfo">
       <section class="footlinks">
         <ul>
           <li><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a></li>

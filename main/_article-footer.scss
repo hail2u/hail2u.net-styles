@@ -1,5 +1,5 @@
 // Article Footer
-main > article h1 + footer {
+.article-footer {
   @extend %link-underline-removal;
   @extend %pin;
 
