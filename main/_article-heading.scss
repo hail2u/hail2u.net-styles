@@ -20,8 +20,8 @@
 
   @media (min-width: $breakpoint--full) {
     .permalink & {
-      padding-bottom: $padding__article-heading--full--permalink;
       margin-left: (- ($width-supplement + $width-gutter));
+      padding-bottom: $padding__article-heading--full--permalink;
     }
   }
 }

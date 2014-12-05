@@ -20,8 +20,8 @@
 // Classes
 @import 'class/clearfix';
 
-// Grid Overlay
-body.debug::before {
+// Show Column
+.show-column::before {
   background-image: linear-gradient(
     to right,
     #0f0 0,
