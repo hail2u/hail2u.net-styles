@@ -100,9 +100,9 @@ $width-border__site-navigation__mark: $width-border;
 $padding__site-navigation__mark: $padding--mini;
 
 // Main
-$margin__main: (- $margin__heading--primary);
-$margin__main--content: (- $margin__heading--primary);
-$margin__main--full: (- $margin__heading--primary);
+$margin__main: (- ($margin__heading--primary - ($margin__logo * $ratio-golden)));
+$margin__main--content: (- ($margin__heading--primary - ($margin__logo--content * $ratio-golden)));
+$margin__main--full: (- ($margin__heading--primary - ($margin__logo--full * $ratio-golden)));
 
 // Section Footer
 $line-height__section-footer: rem($ratio-text__heading--primary * $line-height__heading);
