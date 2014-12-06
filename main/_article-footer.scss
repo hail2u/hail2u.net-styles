@@ -15,25 +15,9 @@
     color: $color-fg__article-footer__tag;
   }
 
-  @media (min-width: $breakpoint--content) {
-    .permalink & {
-      text-align: center;
-    }
-  }
-
   @media (min-width: $breakpoint--full) {
     p {
       margin-top: $margin__article-footer--full;
-    }
-
-    .permalink & {
-      bottom: auto;
-      text-align: left;
-      top: auto;
-
-      p {
-        margin-top: $margin__article-footer--full--permalink;
-      }
     }
   }
 }

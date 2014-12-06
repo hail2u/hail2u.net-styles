@@ -2,26 +2,4 @@
 .article-heading {
   @extend %link-underline-removal;
   @extend %heading-push;
-
-  .permalink & {
-    color: $color-fg__article-heading--permalink;
-    font-size: rem($ratio-text__article-heading--permalink);
-    font-weight: 400;
-    padding-bottom: $padding__article-heading--permalink;
-  }
-
-  @media (min-width: $breakpoint--content) {
-    .permalink & {
-      padding-left: 10%;
-      padding-right: 10%;
-      text-align: center;
-    }
-  }
-
-  @media (min-width: $breakpoint--full) {
-    .permalink & {
-      margin-left: (- ($width-supplement + $width-gutter));
-      padding-bottom: $padding__article-heading--full--permalink;
-    }
-  }
 }
