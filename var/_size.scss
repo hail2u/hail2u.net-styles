@@ -89,11 +89,6 @@ $margin__logo--full: ($margin__logo--content * $ratio-golden);
 $width__logo: ($width-supplement / pow($ratio-golden, 4));
 $height__logo: $width__logo;
 
-// Tagline
-$margin__tagline: ($margin__logo * $ratio-golden);
-$margin__tagline--content: ($margin__tagline * $ratio-golden);
-$margin__tagline--full: ($margin__tagline--content * $ratio-golden);
-
 // Site Navigation
 $height__site-navigation: $height__logo;
 
@@ -105,9 +100,9 @@ $width-border__site-navigation__mark: $width-border;
 $padding__site-navigation__mark: $padding--mini;
 
 // Main
-$margin__main: (- ($margin__heading--primary - $margin__tagline));
-$margin__main--content: (- ($margin__heading--primary - $margin__tagline--content));
-$margin__main--full: (- ($margin__heading--primary - $margin__tagline--full));
+$margin__main: (- $margin__heading--primary);
+$margin__main--content: (- $margin__heading--primary);
+$margin__main--full: (- $margin__heading--primary);
 
 // Section Footer
 $line-height__section-footer: rem($ratio-text__heading--primary * $line-height__heading);
@@ -117,13 +112,8 @@ $margin__byline__border: $margin--mini;
 $width__byline__border: $width__logo;
 $width-border__byline__border: $width-border;
 
-// Article Heading
-$padding__article-heading--permalink: ($margin__heading - $margin);
-$padding__article-heading--full--permalink: ($margin__heading--primary - $margin);
-
 // Article Footer
 $margin__article-footer--full: rem(($ratio-text__heading--primary * $line-height__heading - $ratio-text__article-footer * $line-height) / 2);
-$margin__article-footer--full--permalink: ($margin + rem(($line-height - $ratio-text__article-footer * $line-height) / 2));
 
 // Footlinks
 $margin__footlinks: $margin__heading--primary;
