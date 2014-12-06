@@ -12,10 +12,9 @@ html {
 
 // Sections
 body {
-  @extend %font-family__body;
-
   background-color: $color-bg__body;
   color: $color-fg__body;
+  font-family: $font-family__body;
   line-height: $line-height__body;
 
   @media (min-width: $breakpoint--content) {
@@ -70,10 +69,10 @@ hr {
 }
 
 pre {
-  @extend %font-family__code;
   @extend %margin;
 
   clear: both;
+  font-family: $font-family__code;
   -moz-font-feature-settings: 'kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1;
   -webkit-font-feature-settings: 'kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1;
   font-feature-settings: 'kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1;
@@ -256,7 +255,7 @@ abbr {
 code,
 samp,
 kbd {
-  @extend %font-family__code;
+  font-family: $font-family__code;
 
   p &::before,
   p &::after {
