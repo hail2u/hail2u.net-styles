@@ -172,6 +172,17 @@
           <li>要素名や属性名は全て小文字に統一します</li>
           <li>属性値を括るクオートは省略しません</li>
           <li>真偽値を取る属性値はその値を省略します</li>
+          <li>属性の記述順
+            <ol>
+              <li><code>id</code>属性</li>
+              <li><code>class</code>属性</li>
+              <li><code>style</code>属性</li>
+              <li>その他属性</li>
+              <li>WAI-ARIA (<code>role</code>属性と<code>aria-*</code>属性)</li>
+              <li>カスタムデータ属性(<code>data-*</code>属性)</li>
+              <li>Microdata (<code>item*</code>属性)</li>
+            </ol>
+          </li>
           <li>クラス名やIDはハイフンつなぎで指定します</li>
           <li>JavaScript等で動的に生成されるコードも上記決め事に従います</li>
           <li><a href="http://validator.nu/">Validator.nu</a>でエラーが出ないようにします</li>
