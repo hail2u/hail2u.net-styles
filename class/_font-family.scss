@@ -13,11 +13,3 @@
     font-family: $font-family__code--print;
   }
 }
-
-%font-family__tagline {
-  font-family: $font-family__tagline;
-
-  @media print {
-    font-family: $font-family__tagline--print;
-  }
-}
