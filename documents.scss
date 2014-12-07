@@ -158,8 +158,10 @@ $breakpoint: ($indent + $breakpoint);
     font-family: Georgia, serif;
   }
 
-  p a[href]::after {
-    content: ' (' attr(href) ')';
+  p {
+    &[href]::after {
+      content: ' (' attr(href) ')';
+    }
   }
 
   .note,

@@ -1,7 +1,9 @@
 // Workarounds for SVG resizing bug on IE11 and below
-img[src$='.svg'],
-img[src$='.svgz'] {
-  width: 100%;
+img {
+  &[src$='.svg'],
+  &[src$='.svgz'] {
+    width: 100%;
+  }
 }
 
 // Enable overlay scrollbar in IE10+
