@@ -7,7 +7,7 @@
   max-width: $width__searchbox;
   position: relative;
 
-  input[type='search'] {
+  .query {
     @include box-sizing(border-box);
 
     -webkit-appearance: none;
@@ -26,7 +26,7 @@
     }
   }
 
-  input[type='submit'] {
+  .button {
     // ir-pseudo-element does not work on `input`
     @include ir-text-indent;
 
@@ -45,8 +45,8 @@
     width: $width__searchbox__button;
   }
 
-  input[type='search']:focus + input[type='submit'],
-  input[type='submit']:focus {
+  .query:focus + .button,
+  .button:focus {
     background-color: $color-bg__searchbox__button--focus;
   }
 }
