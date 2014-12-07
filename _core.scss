@@ -43,7 +43,7 @@ p {
   @extend %margin;
 
   h2 + & {
-    @extend %margin__after-heading;
+    @extend %margin-after-heading;
   }
 }
 
@@ -80,7 +80,7 @@ pre {
   overflow-x: auto;
 
   h2 + & {
-    @extend %margin__after-heading;
+    @extend %margin-after-heading;
   }
 
   @media (min-width: $breakpoint--content) {
@@ -115,7 +115,7 @@ ol {
   }
 
   h2 + & {
-    @extend %margin__after-heading;
+    @extend %margin-after-heading;
   }
 
   @media (min-width: $breakpoint--content) {
@@ -151,7 +151,7 @@ dl {
   }
 
   h2 + & {
-    @extend %margin__after-heading;
+    @extend %margin-after-heading;
   }
 }
 
@@ -161,7 +161,7 @@ figure {
   position: relative;
 
   h2 + & {
-    @extend %margin__after-heading;
+    @extend %margin-after-heading;
   }
 }
 
@@ -316,7 +316,7 @@ table {
   table-layout: fixed;
 
   h2 + & {
-    @extend %margin__after-heading;
+    @extend %margin-after-heading;
   }
 
   @media not screen {
