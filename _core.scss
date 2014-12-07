@@ -1,8 +1,9 @@
 // Root
+@import './bower_components/hail2u-scss-partials/vendor-extension';
+
 html {
-  -moz-font-feature-settings: 'kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1;
-  -webkit-font-feature-settings: 'kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1;
-  font-feature-settings: 'kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1;
+  @include font-feature-settings('kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1);
+
   font-size: ($ratio-text__base * 100%);
 
   @media (min-width: $breakpoint--full) {
@@ -68,14 +69,14 @@ hr {
   }
 }
 
+@import './bower_components/hail2u-scss-partials/vendor-extension';
+
 pre {
   @extend %margin;
+  @include font-feature-settings('kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1);
 
   clear: both;
   font-family: $font-family__code;
-  -moz-font-feature-settings: 'kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1;
-  -webkit-font-feature-settings: 'kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1;
-  font-feature-settings: 'kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1;
   line-height: $line-height__pre;
   overflow-x: auto;
 
@@ -303,14 +304,14 @@ video {
 }
 
 // Tabular Data
+@import './bower_components/hail2u-scss-partials/vendor-extension';
+
 table {
   @extend %margin;
+  @include font-feature-settings('pnum' 0, 'tnum' 1, 'zero' 1);
 
   clear: both;
   display: block;
-  -moz-font-feature-settings: 'pnum' 0, 'tnum' 1, 'zero' 1;
-  -webkit-font-feature-settings: 'pnum' 0, 'tnum' 1, 'zero' 1;
-  font-feature-settings: 'pnum' 0, 'tnum' 1, 'zero' 1;
   max-width: 100%;
   overflow-x: auto;
   table-layout: fixed;

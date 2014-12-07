@@ -1,8 +1,9 @@
 // Ellipsing
+@import '../bower_components/hail2u-scss-partials/vendor-extension';
+
 %ellipsing {
-  -moz-font-feature-settings: normal;
-  -webkit-font-feature-settings: normal;
-  font-feature-settings: normal;
+  @include font-feature-settings(normal);
+
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
