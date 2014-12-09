@@ -9,6 +9,16 @@
 
   p {
     @extend %ellipsing;
+
+    color: $color-fg__pin;
+  }
+
+  time {
+    color: $color-fg__pin__time;
+  }
+
+  .tag {
+    color: $color-fg__pin__tag;
   }
 
   @media (min-width: $breakpoint--full) {

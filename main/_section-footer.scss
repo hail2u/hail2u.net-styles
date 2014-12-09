@@ -1,4 +1,5 @@
 // Section Footer
 .section-footer {
+  @extend %link-underline-removal;
   @extend %pin;
 }
