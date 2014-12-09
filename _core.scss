@@ -252,8 +252,8 @@ abbr {
   letter-spacing: $letter-spacing__abbr;
 }
 
-%code,
 code,
+var,
 samp,
 kbd {
   font-family: $font-family__code;
@@ -265,12 +265,6 @@ kbd {
     font-size: 0;
     width: 0;
   }
-}
-
-var {
-  @extend %code;
-
-  font-style: normal;
 }
 
 mark {
