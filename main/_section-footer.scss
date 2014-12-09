@@ -1,16 +1,4 @@
 // Section Footer
 .section-footer {
   @extend %pin;
-
-  p {
-    @extend %ellipsing;
-
-    margin-top: 0;
-  }
-
-  @media (min-width: $breakpoint--full) {
-    p {
-      line-height: $line-height__section-footer;
-    }
-  }
 }

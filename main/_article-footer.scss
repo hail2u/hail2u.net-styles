@@ -14,10 +14,4 @@
   .tag {
     color: $color-fg__article-footer__tag;
   }
-
-  @media (min-width: $breakpoint--full) {
-    p {
-      margin-top: $margin__article-footer--full;
-    }
-  }
 }

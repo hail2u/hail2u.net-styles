@@ -7,7 +7,15 @@
   position: absolute;
   width: 100%;
 
+  p {
+    @extend %ellipsing;
+  }
+
   @media (min-width: $breakpoint--full) {
     width: $width-supplement;
+
+    p {
+      margin-top: $margin__pin--full;
+    }
   }
 }

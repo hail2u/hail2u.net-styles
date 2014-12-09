@@ -1,6 +1,6 @@
 // Heading Push
 %heading-push {
-  margin-top: ($margin__heading--primary + rem($line-height) * $ratio-text__article-footer);
+  margin-top: ($margin__heading--primary + rem($line-height) * $ratio-text__pin);
 
   @media (min-width: $breakpoint--full) {
     margin-top: $margin__heading--primary;

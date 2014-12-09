@@ -82,6 +82,9 @@ $padding__td: .5rem;
 
 $width-border__th--thead: $width-border;
 
+// Placeholder Class
+$margin__pin--full: rem(($ratio-text__heading--primary * $line-height__heading - $ratio-text__pin * $line-height) / 2);
+
 // Logo
 $margin__logo: $margin;
 $margin__logo--content: ($margin__logo * $ratio-golden);
@@ -104,16 +107,10 @@ $margin__main: (- ($margin__heading--primary - ($margin__logo * $ratio-golden)))
 $margin__main--content: (- ($margin__heading--primary - ($margin__logo--content * $ratio-golden)));
 $margin__main--full: (- ($margin__heading--primary - ($margin__logo--full * $ratio-golden)));
 
-// Section Footer
-$line-height__section-footer: rem($ratio-text__heading--primary * $line-height__heading);
-
 // Byline
 $margin__byline__border: $margin--mini;
 $width__byline__border: $width__logo;
 $width-border__byline__border: $width-border;
-
-// Article Footer
-$margin__article-footer--full: rem(($ratio-text__heading--primary * $line-height__heading - $ratio-text__article-footer * $line-height) / 2);
 
 // Footlinks
 $margin__footlinks: $margin__heading--primary;
