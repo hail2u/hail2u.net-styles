@@ -49,7 +49,7 @@ $line-height__body--content: $line-height;
 
 $margin__heading: ($margin * pow($ratio-golden, 2));
 $margin__heading--primary: ($margin__heading * $ratio-golden);
-$line-height__heading: 1.25;
+$line-height__heading: $line-height--mini;
 
 $height__hr: rem($line-height * $ratio-golden);
 $width__hr: ($height__hr * 3);
