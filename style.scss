@@ -21,6 +21,9 @@
 @import 'var/ratio';
 @import 'var/size';
 
+// Core
+@import 'core';
+
 // Placeholder Class
 @import 'class/heading';
 @import 'class/margin';
@@ -32,9 +35,6 @@
 @import 'class/pin';
 @import 'class/ellipsing';
 @import 'class/clearfix';
-
-// Core
-@import 'core';
 
 // Global Header
 @import 'global-header';
