@@ -20,6 +20,9 @@ $ratio-text--zeta: ($ratio-text--primary / $ratio-golden);
 $ratio-content: 1;
 $ratio-supplement: (1 / pow($ratio-golden, 2));
 
+// Placeholder Class
+$ratio-text__pin: $ratio-text--epsilon;
+
 // Core
 $ratio-text__base: $ratio-text--delta;
 $ratio-text__base--full: (($ratio-text--delta + $ratio-text--gamma) / 2);
@@ -28,9 +31,6 @@ $ratio-text__heading: $ratio-text--gamma;
 $ratio-text__heading--primary: $ratio-text--beta;
 
 $ratio-text__abbr: $ratio-text--epsilon;
-
-// Placeholder Class
-$ratio-text__pin: $ratio-text--epsilon;
 
 // Site Navigation
 $ratio-text__site-navigation: $ratio-text--epsilon;

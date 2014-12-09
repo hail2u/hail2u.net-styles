@@ -43,6 +43,9 @@ $breakpoint--full: (($width-full--outer + $width__scrollbar) * $ratio-text__base
   /*! Applied wider than #{$breakpoint--full} */
 }
 
+// Placeholder Class
+$margin__pin--full: rem(($ratio-text__heading--primary * $line-height--mini - $ratio-text__pin * $line-height) / 2);
+
 // Core
 $line-height__body: ($line-height * .9);
 $line-height__body--content: $line-height;
@@ -81,9 +84,6 @@ $width-border__td: $width-border--thin;
 $padding__td: .5rem;
 
 $width-border__th--thead: $width-border;
-
-// Placeholder Class
-$margin__pin--full: rem(($ratio-text__heading--primary * $line-height__heading - $ratio-text__pin * $line-height) / 2);
 
 // Logo
 $margin__logo: $margin;

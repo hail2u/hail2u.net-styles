@@ -52,6 +52,13 @@ $color-accent__triad-negative--dark: rgb(239, 172, 0);
 $color-accent__triad-negative--light: rgb(255, 200, 60);
 $color-accent__triad-negative--lightest: rgb(255, 212, 104);
 
+// Placeholder Class
+$color-fg__pin: $color-shade--lightest;
+
+$color-fg__pin__time: $color-dark;
+
+$color-fg__pin__tag: $color-dark;
+
 // Core
 $color-fg__body: $color-dark;
 $color-bg__body: $color-light;
@@ -82,13 +89,6 @@ $color-bg__img: $color-tint--lightest;
 $color-border__img: $color-bg__img;
 
 $color-border__td: $color-tint--light;
-
-// Placeholder Class
-$color-fg__pin: $color-shade--lightest;
-
-$color-fg__pin__time: $color-dark;
-
-$color-fg__pin__tag: $color-dark;
 
 // Site Navigation
 $color-fg__site-navigation__mark: $color-accent--light;
