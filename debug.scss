@@ -108,6 +108,14 @@ body::after {
   }
 }
 
+// Version
+.version {
+  color: $color-accent__triad-positive;
+  font-size: rem($ratio-text--delta);
+  font-weight: normal;
+  vertical-align: super;
+}
+
 // Fonts
 .font-family-body {
   font-family: $font-family__body;
