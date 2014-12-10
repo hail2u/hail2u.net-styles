@@ -64,7 +64,7 @@ $color-fg-body: $color-dark;
 $color-bg-body: $color-light;
 
 $color-fg-heading: $color-shade-darkest;
-$color-fg-heading-primary: $color-fg-heading;
+$color-fg-heading-primary: $color-shade-darkest;
 
 $color-fg-hr: $color-tint-light;
 
@@ -86,7 +86,7 @@ $color-fg-strong: $color-accent-triad-positive;
 $color-bg-mark: $color-accent-triad-negative;
 
 $color-bg-img: $color-tint-lightest;
-$color-border-img: $color-bg-img;
+$color-border-img: $color-tint-lightest;
 
 $color-border-td: $color-tint-light;
 
@@ -116,14 +116,14 @@ $color-bg-searchbox-input: $color-light-light;
 $color-border-searchbox-input: $color-tint-light;
 $color-border-searchbox-input-focus: $color-accent-light;
 
-$color-fg-searchbox-button: $color-bg-searchbox-input;
-$color-bg-searchbox-button: $color-border-searchbox-input;
-$color-bg-searchbox-button-focus: $color-border-searchbox-input-focus;
+$color-fg-searchbox-button: $color-light-light;
+$color-bg-searchbox-button: $color-tint-light;
+$color-bg-searchbox-button-focus: $color-accent-light;
 
 // Seealso
 $color-fg-seealso: $color-shade-dark;
 
-$color-fg-seealso-link: $color-fg-link;
+$color-fg-seealso-link: $color-accent;
 
 $color-fg-seealso-icon: $color-shade-darkest;
 
