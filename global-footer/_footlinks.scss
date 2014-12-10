@@ -14,4 +14,10 @@
       content: '\00a0\00b7\00a0'; // Middle Dot
     }
   }
+
+  @media (min-width: $breakpoint-full) {
+    ul {
+      margin-top: $margin-footlinks-full;
+    }
+  }
 }

@@ -3,9 +3,12 @@
 @import '../bower_components/hail2u-scss-partials/vendor-extension';
 
 .searchbox {
-  margin-top: $margin;
   max-width: $width-searchbox;
-  position: relative;
+
+  .main & {
+    margin-top: $margin;
+    position: relative;
+  }
 
   .query {
     @include box-sizing(border-box);

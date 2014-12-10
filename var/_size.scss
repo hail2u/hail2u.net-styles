@@ -113,7 +113,8 @@ $width-byline-border: $width-logo;
 $width-border-byline-border: $width-border;
 
 // Footlinks
-$margin-footlinks: $margin-heading-primary;
+$margin-footlinks: ($margin + $margin-heading-primary);
+$margin-footlinks-full: $margin-heading-primary;
 
 // Drop
 $width-drop-max: ($width-supplement + $width-gutter + $width-content / 2);
