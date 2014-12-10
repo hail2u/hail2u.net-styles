@@ -1,14 +1,14 @@
 // Byline
 .byline {
-  color: $color-fg__byline;
+  color: $color-fg-byline;
 
   &::before {
-    border-top: $width-border__byline__border solid $color-border__byline__border;
+    border-top: $width-border-byline-border solid $color-border-byline-border;
     content: '';
     display: block;
     height: 0;
-    margin-bottom: $margin__byline__border;
-    width: $width__byline__border;
+    margin-bottom: $margin-byline-border;
+    width: $width-byline-border;
   }
 
   mark {
@@ -16,7 +16,7 @@
     color: inherit;
   }
 
-  @media (min-width: $breakpoint--full) {
+  @media (min-width: $breakpoint-full) {
     bottom: 0;
     left: $width-gap;
     position: absolute;

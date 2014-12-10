@@ -2,18 +2,18 @@
 .footnote {
   background-image: linear-gradient(
     to right,
-    $color-border__footnote 0,
-    $color-border__footnote 50%,
+    $color-border-footnote 0,
+    $color-border-footnote 50%,
     transparent 50%,
     transparent 100%
   );
   background-position: left $margin;
   background-repeat: repeat-x;
-  background-size: $width-border__footnote $height-border__footnote;
-  font-size: rem($ratio-text__footnote);
+  background-size: $width-border-footnote $height-border-footnote;
+  font-size: rem($ratio-text-footnote);
   padding-top: $margin;
 
   *:first-child {
-    margin-top: $margin__footnote;
+    margin-top: $margin-footnote;
   }
 }

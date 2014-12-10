@@ -1,6 +1,6 @@
 // Site Navigation
 .site-navigation {
-  font-size: rem($ratio-text__site-navigation);
+  font-size: rem($ratio-text-site-navigation);
   position: absolute;
   right: $width-gap;
   text-transform: uppercase;
@@ -13,9 +13,9 @@
 
   li {
     display: table-cell;
-    height: $height__site-navigation;
-    line-height: $height__site-navigation;
-    padding-left: $width__site-navigation__gutter;
+    height: $height-site-navigation;
+    line-height: $height-site-navigation;
+    padding-left: $width-site-navigation-gutter;
   }
 
   a {
@@ -25,20 +25,20 @@
 
   mark {
     background-color: transparent;
-    border-bottom: $width-border__site-navigation__mark solid;
-    color: $color-fg__site-navigation__mark;
-    padding-bottom: $padding__site-navigation__mark;
+    border-bottom: $width-border-site-navigation-mark solid;
+    color: $color-fg-site-navigation-mark;
+    padding-bottom: $padding-site-navigation-mark;
   }
 
-  @media (min-width: $breakpoint--content) {
+  @media (min-width: $breakpoint-content) {
     li {
-      padding-left: $width__site-navigation__gutter--content;
+      padding-left: $width-site-navigation-gutter-content;
     }
   }
 
-  @media (min-width: $breakpoint--full) {
+  @media (min-width: $breakpoint-full) {
     li {
-      padding-left: $width__site-navigation__gutter--full;
+      padding-left: $width-site-navigation-gutter-full;
     }
   }
 }

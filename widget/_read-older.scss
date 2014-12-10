@@ -5,12 +5,12 @@
   p {
     @extend %ellipsing;
 
-    font-size: rem($ratio-text__read-older__title);
-    line-height: $line-height__heading;
-    margin-top: $margin__heading;
+    font-size: rem($ratio-text-read-older-title);
+    line-height: $line-height-heading;
+    margin-top: $margin-heading;
 
     &::before {
-      color: $color-fg__read-older__label;
+      color: $color-fg-read-older-label;
       content: 'Read older:';
       display: block;
       font-size: rem(1);

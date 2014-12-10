@@ -3,18 +3,18 @@
   @extend %ir;
   @extend %link-underline-removal;
 
-  color: $color-fg__seealso;
-  font-size: rem($ratio-text__seealso);
+  color: $color-fg-seealso;
+  font-size: rem($ratio-text-seealso);
 
   a {
-    color: $color-fg__seealso__link;
+    color: $color-fg-seealso-link;
   }
 
   &::before {
-    background-image: $image__seealso__icon;
+    background-image: $image-seealso-icon;
     background-position: left center;
     display: inline-block;
-    margin-right: $margin__seealso__icon;
-    width: $width__seealso__icon;
+    margin-right: $margin-seealso-icon;
+    width: $width-seealso-icon;
   }
 }

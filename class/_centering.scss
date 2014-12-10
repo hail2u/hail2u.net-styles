@@ -6,7 +6,7 @@
   padding-right: $width-gap;
   position: relative;
 
-  @media (min-width: $breakpoint--full) {
+  @media (min-width: $breakpoint-full) {
     padding-left: ($width-gap + $width-supplement + $width-gutter);
   }
 }

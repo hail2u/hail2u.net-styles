@@ -1,12 +1,12 @@
 // Google Custom Search Engine
 .searchboxbygoogle {
   margin-top: 0;
-  top: ($margin__footlinks - $margin);
+  top: ($margin-footlinks - $margin);
 
-  @media (min-width: $breakpoint--content) {
+  @media (min-width: $breakpoint-content) {
     position: absolute;
     right: $width-gap;
-    top: $margin__searchboxbygoogle--full;
+    top: $margin-searchboxbygoogle-full;
     z-index: 1;
   }
 }

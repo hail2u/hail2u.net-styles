@@ -50,7 +50,7 @@
   top: 0;
   z-index: 1;
 
-  @media (min-width: $breakpoint--content) {
+  @media (min-width: $breakpoint-content) {
     background-image: linear-gradient(
       to right,
       #0f0 0,
@@ -58,13 +58,13 @@
       #f0f $width-gap,
       #f0f ($width-gap + $width-content),
       #0f0 ($width-gap + $width-content),
-      #0f0 $width-content--outer
+      #0f0 $width-content-outer
     );
     background-position: center;
-    background-size: $width-content--outer 1px;
+    background-size: $width-content-outer 1px;
   }
 
-  @media (min-width: $breakpoint--full) {
+  @media (min-width: $breakpoint-full) {
     background-image: linear-gradient(
       to right,
       #0f0 0,
@@ -76,9 +76,9 @@
       #f0f ($width-gap + $width-supplement + $width-gutter),
       #f0f ($width-gap + $width-full),
       #0f0 ($width-gap + $width-full),
-      #0f0 $width-full--outer
+      #0f0 $width-full-outer
     );
-    background-size: $width-full--outer 1px;
+    background-size: $width-full-outer 1px;
   }
 }
 
@@ -95,12 +95,12 @@ body::after {
   right: .5rem;
   top: .5rem;
 
-  @media (min-width: $breakpoint--content) {
-    content: 'Medium: #{(($breakpoint--content / 1rem) * 16px)}';
+  @media (min-width: $breakpoint-content) {
+    content: 'Medium: #{(($breakpoint-content / 1rem) * 16px)}';
   }
 
-  @media (min-width: $breakpoint--full) {
-    content: 'Large: #{(($breakpoint--full / 1rem) * 16px)}';
+  @media (min-width: $breakpoint-full) {
+    content: 'Large: #{(($breakpoint-full / 1rem) * 16px)}';
   }
 
   @media print {
@@ -110,19 +110,19 @@ body::after {
 
 // Version
 .version {
-  color: $color-accent__triad-positive;
-  font-size: rem($ratio-text--delta);
+  color: $color-accent-triad-positive;
+  font-size: rem($ratio-text-delta);
   font-weight: normal;
   vertical-align: super;
 }
 
 // Fonts
 .font-family-body {
-  font-family: $font-family__body;
+  font-family: $font-family-body;
 }
 
 .font-family-code {
-  font-family: $font-family__code;
+  font-family: $font-family-code;
 }
 
 .italic {
@@ -161,7 +161,7 @@ body::after {
     }
   }
 
-  @media (min-width: $breakpoint--content) {
+  @media (min-width: $breakpoint-content) {
     margin-left: (- $width-gap);
     margin-right: (- $width-gap);
 
@@ -180,19 +180,19 @@ body::after {
     }
 
     &:nth-child(2)::before {
-      background-color: $color-shade--darkest;
+      background-color: $color-shade-darkest;
     }
 
     &:nth-child(3)::before {
-      background-color: $color-shade--dark;
+      background-color: $color-shade-dark;
     }
 
     &:nth-child(4)::before {
-      background-color: $color-shade--light;
+      background-color: $color-shade-light;
     }
 
     &:nth-child(5)::before {
-      background-color: $color-shade--lightest;
+      background-color: $color-shade-lightest;
     }
   }
 
@@ -202,19 +202,19 @@ body::after {
     }
 
     &:nth-child(2)::before {
-      background-color: $color-tint--darkest;
+      background-color: $color-tint-darkest;
     }
 
     &:nth-child(3)::before {
-      background-color: $color-tint--dark;
+      background-color: $color-tint-dark;
     }
 
     &:nth-child(4)::before {
-      background-color: $color-tint--light;
+      background-color: $color-tint-light;
     }
 
     &:nth-child(5)::before {
-      background-color: $color-tint--lightest;
+      background-color: $color-tint-lightest;
     }
   }
 
@@ -224,129 +224,129 @@ body::after {
     }
 
     &:nth-child(2)::before {
-      background-color: $color-accent--darkest;
+      background-color: $color-accent-darkest;
     }
 
     &:nth-child(3)::before {
-      background-color: $color-accent--dark;
+      background-color: $color-accent-dark;
     }
 
     &:nth-child(4)::before {
-      background-color: $color-accent--light;
+      background-color: $color-accent-light;
     }
 
     &:nth-child(5)::before {
-      background-color: $color-accent--lightest;
+      background-color: $color-accent-lightest;
     }
   }
 
   &.variation-accent.complement li {
     &:nth-child(1)::before {
-      background-color: $color-accent__complement;
+      background-color: $color-accent-complement;
     }
 
     &:nth-child(2)::before {
-      background-color: $color-accent__complement--darkest;
+      background-color: $color-accent-complement-darkest;
     }
 
     &:nth-child(3)::before {
-      background-color: $color-accent__complement--dark;
+      background-color: $color-accent-complement-dark;
     }
 
     &:nth-child(4)::before {
-      background-color: $color-accent__complement--light;
+      background-color: $color-accent-complement-light;
     }
 
     &:nth-child(5)::before {
-      background-color: $color-accent__complement--lightest;
+      background-color: $color-accent-complement-lightest;
     }
   }
 
   &.variation-accent.adjacent-negative li {
     &:nth-child(1)::before {
-      background-color: $color-accent__adjacent-negative;
+      background-color: $color-accent-adjacent-negative;
     }
 
     &:nth-child(2)::before {
-      background-color: $color-accent__adjacent-negative--darkest;
+      background-color: $color-accent-adjacent-negative-darkest;
     }
 
     &:nth-child(3)::before {
-      background-color: $color-accent__adjacent-negative--dark;
+      background-color: $color-accent-adjacent-negative-dark;
     }
 
     &:nth-child(4)::before {
-      background-color: $color-accent__adjacent-negative--light;
+      background-color: $color-accent-adjacent-negative-light;
     }
 
     &:nth-child(5)::before {
-      background-color: $color-accent__adjacent-negative--lightest;
+      background-color: $color-accent-adjacent-negative-lightest;
     }
   }
 
   &.variation-accent.adjacent-positive li {
     &:nth-child(1)::before {
-      background-color: $color-accent__adjacent-positive;
+      background-color: $color-accent-adjacent-positive;
     }
 
     &:nth-child(2)::before {
-      background-color: $color-accent__adjacent-positive--darkest;
+      background-color: $color-accent-adjacent-positive-darkest;
     }
 
     &:nth-child(3)::before {
-      background-color: $color-accent__adjacent-positive--dark;
+      background-color: $color-accent-adjacent-positive-dark;
     }
 
     &:nth-child(4)::before {
-      background-color: $color-accent__adjacent-positive--light;
+      background-color: $color-accent-adjacent-positive-light;
     }
 
     &:nth-child(5)::before {
-      background-color: $color-accent__adjacent-positive--lightest;
+      background-color: $color-accent-adjacent-positive-lightest;
     }
   }
 
   &.variation-accent.triad-negative li {
     &:nth-child(1)::before {
-      background-color: $color-accent__triad-negative;
+      background-color: $color-accent-triad-negative;
     }
 
     &:nth-child(2)::before {
-      background-color: $color-accent__triad-negative--darkest;
+      background-color: $color-accent-triad-negative-darkest;
     }
 
     &:nth-child(3)::before {
-      background-color: $color-accent__triad-negative--dark;
+      background-color: $color-accent-triad-negative-dark;
     }
 
     &:nth-child(4)::before {
-      background-color: $color-accent__triad-negative--light;
+      background-color: $color-accent-triad-negative-light;
     }
 
     &:nth-child(5)::before {
-      background-color: $color-accent__triad-negative--lightest;
+      background-color: $color-accent-triad-negative-lightest;
     }
   }
 
   &.variation-accent.triad-positive li {
     &:nth-child(1)::before {
-      background-color: $color-accent__triad-positive;
+      background-color: $color-accent-triad-positive;
     }
 
     &:nth-child(2)::before {
-      background-color: $color-accent__triad-positive--darkest;
+      background-color: $color-accent-triad-positive-darkest;
     }
 
     &:nth-child(3)::before {
-      background-color: $color-accent__triad-positive--dark;
+      background-color: $color-accent-triad-positive-dark;
     }
 
     &:nth-child(4)::before {
-      background-color: $color-accent__triad-positive--light;
+      background-color: $color-accent-triad-positive-light;
     }
 
     &:nth-child(5)::before {
-      background-color: $color-accent__triad-positive--lightest;
+      background-color: $color-accent-triad-positive-lightest;
     }
   }
 }

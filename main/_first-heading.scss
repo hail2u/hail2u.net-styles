@@ -1,8 +1,8 @@
 // First Heading
 .first-heading {
-  margin-top: ($margin__heading--primary + rem($line-height) * $ratio-text__pin);
+  margin-top: ($margin-heading-primary + rem($line-height) * $ratio-text-pin);
 
-  @media (min-width: $breakpoint--full) {
-    margin-top: $margin__heading--primary;
+  @media (min-width: $breakpoint-full) {
+    margin-top: $margin-heading-primary;
   }
 }

@@ -3,29 +3,29 @@
   @extend %float;
 
   bottom: 100%;
-  font-size: rem($ratio-text__pin);
+  font-size: rem($ratio-text-pin);
   position: absolute;
   width: 100%;
 
   p {
     @extend %ellipsing;
 
-    color: $color-fg__pin;
+    color: $color-fg-pin;
   }
 
   time {
-    color: $color-fg__pin__time;
+    color: $color-fg-pin-time;
   }
 
   .tag {
-    color: $color-fg__pin__tag;
+    color: $color-fg-pin-tag;
   }
 
-  @media (min-width: $breakpoint--full) {
+  @media (min-width: $breakpoint-full) {
     width: $width-supplement;
 
     p {
-      margin-top: $margin__pin--full;
+      margin-top: $margin-pin-full;
     }
   }
 }

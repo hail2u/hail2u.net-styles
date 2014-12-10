@@ -21,11 +21,11 @@
   a {
     @include box-sizing(border-box);
 
-    border-radius: $border-radius__icon-list__icon;
+    border-radius: $border-radius-icon-list-icon;
     display: block;
-    height: $height__icon-list__icon;
-    padding: $padding__icon-list__icon;
-    width: $width__icon-list__icon;
+    height: $height-icon-list-icon;
+    padding: $padding-icon-list-icon;
+    width: $width-icon-list-icon;
 
     &[href^='https://twitter.com/'] {
       background-color: $cc-twitter;

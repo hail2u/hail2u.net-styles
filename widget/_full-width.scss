@@ -14,18 +14,18 @@
     margin-left: $width-gap;
   }
 
-  @media (min-width: $breakpoint--full) {
+  @media (min-width: $breakpoint-full) {
     margin-left: (- ($width-gap + $width-supplement + $width-gutter));
 
     figcaption:last-child {
       border-bottom: 0;
-      border-left: $width-border__figcaption solid $color-border__figcaption;
+      border-left: $width-border-figcaption solid $color-border-figcaption;
       bottom: auto;
       left: 0;
       margin-left: 0;
       margin-top: $margin;
       padding-bottom: 0;
-      padding-left: $padding__full-width__caption--full;
+      padding-left: $padding-full-width-caption-full;
     }
   }
 }

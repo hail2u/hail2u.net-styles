@@ -2,18 +2,18 @@
 .main {
   @extend %centering;
 
-  margin-top: $margin__main;
+  margin-top: $margin-main;
 
   > article,
   > section {
     position: relative;
   }
 
-  @media (min-width: $breakpoint--content) {
-    margin-top: $margin__main--content;
+  @media (min-width: $breakpoint-content) {
+    margin-top: $margin-main-content;
   }
 
-  @media (min-width: $breakpoint--full) {
-    margin-top: $margin__main--full;
+  @media (min-width: $breakpoint-full) {
+    margin-top: $margin-main-full;
   }
 }

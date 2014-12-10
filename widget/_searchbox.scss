@@ -4,25 +4,25 @@
 
 .searchbox {
   margin-top: $margin;
-  max-width: $width__searchbox;
+  max-width: $width-searchbox;
   position: relative;
 
   .query {
     @include box-sizing(border-box);
 
     -webkit-appearance: none;
-    background-color: $color-bg__searchbox__input;
-    border: $width-border__searchbox__input solid $color-border__searchbox__input;
+    background-color: $color-bg-searchbox-input;
+    border: $width-border-searchbox-input solid $color-border-searchbox-input;
     border-radius: 0;
-    color: $color-fg__searchbox__input;
-    height: $height__searchbox__input;
+    color: $color-fg-searchbox-input;
+    height: $height-searchbox-input;
     outline: none;
-    padding: 0 ($width__searchbox__button + $padding__searchbox__input) 0 $padding__searchbox__input;
+    padding: 0 ($width-searchbox-button + $padding-searchbox-input) 0 $padding-searchbox-input;
     width: 100%;
 
     &:focus {
-      border-color: $color-border__searchbox__input--focus;
-      color: $color-fg__searchbox__input--focus;
+      border-color: $color-border-searchbox-input-focus;
+      color: $color-fg-searchbox-input-focus;
     }
   }
 
@@ -30,23 +30,23 @@
     // ir-pseudo-element does not work on `input`
     @include ir-text-indent;
 
-    background-color: $color-bg__searchbox__button;
-    background-image: $image__searchbox__button;
+    background-color: $color-bg-searchbox-button;
+    background-image: $image-searchbox-button;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100% auto;
     border: 0;
     border-radius: 0;
-    height: $height__searchbox__button;
+    height: $height-searchbox-button;
     padding: 0;
     position: absolute;
     right: 0;
     top: 0;
-    width: $width__searchbox__button;
+    width: $width-searchbox-button;
   }
 
   .query:focus + .button,
   .button:focus {
-    background-color: $color-bg__searchbox__button--focus;
+    background-color: $color-bg-searchbox-button-focus;
   }
 }
