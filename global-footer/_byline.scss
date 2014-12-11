@@ -18,7 +18,7 @@
 
   @media (min-width: $breakpoint-full) {
     bottom: 0;
-    left: $width-gap;
+    left: $width-gap-half;
     position: absolute;
   }
 }

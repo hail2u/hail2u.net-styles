@@ -2,13 +2,13 @@
 @media (min-width: $breakpoint-content) {
   .floatage-left {
     float: left;
-    margin-right: $width-gap;
+    margin-right: $width-gap-half;
     max-width: 50%;
   }
 
   .floatage-right {
     float: right;
-    margin-left: $width-gap;
+    margin-left: $width-gap-half;
     max-width: 50%;
   }
 }

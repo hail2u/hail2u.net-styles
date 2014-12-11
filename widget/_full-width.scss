@@ -1,7 +1,7 @@
 // Full Width
 .full-width {
-  margin-left: (- $width-gap);
-  margin-right: (- $width-gap);
+  margin-left: (- $width-gap-half);
+  margin-right: (- $width-gap-half);
 
   img,
   video,
@@ -11,7 +11,7 @@
   }
 
   figcaption:last-child {
-    margin-left: $width-gap;
+    margin-left: $width-gap-half;
   }
 
   @media (min-width: $breakpoint-full) {

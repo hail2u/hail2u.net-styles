@@ -3,8 +3,8 @@
   @extend %clearfix;
 
   @media (min-width: $breakpoint-content) {
-    margin-left: (- $width-gap);
-    margin-right: (- $width-gap);
+    margin-left: (- $width-gap-half);
+    margin-right: (- $width-gap-half);
     padding-left: 0;
 
     li {
@@ -12,8 +12,8 @@
 
       display: block;
       float: left;
-      padding-left: $width-gap;
-      padding-right: $width-gap;
+      padding-left: $width-gap-half;
+      padding-right: $width-gap-half;
       width: $width-flat-ul-item;
     }
   }

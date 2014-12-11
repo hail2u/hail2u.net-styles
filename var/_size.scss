@@ -24,16 +24,16 @@ $column-gap: rem($ratio-golden);
 
 // Main Component
 $width-gutter: $column-gap;
-$width-gap: ($column-gap / 2);
+$width-gap-half: ($column-gap / 2);
 
 $width-content: $column;
-$width-content-outer: ($width-gap + $width-content + $width-gap);
+$width-content-outer: ($width-gap-half + $width-content + $width-gap-half);
 
 $width-supplement-outer: ($width-content-outer / $ratio-content * $ratio-supplement);
-$width-supplement: (- $width-gap + $width-supplement-outer - $width-gap);
+$width-supplement: (- $width-gap-half + $width-supplement-outer - $width-gap-half);
 
 $width-full-outer: ($width-supplement-outer + $width-content-outer);
-$width-full: (- $width-gap + $width-full-outer - $width-gap);
+$width-full: (- $width-gap-half + $width-full-outer - $width-gap-half);
 
 // Breakpoint
 $width-scrollbar: 1.5rem;
@@ -49,7 +49,7 @@ $breakpoint-full: (($width-full-outer + $width-scrollbar) * $ratio-text-base-ful
 // Placeholder Class
 $margin-after-heading: $margin-mini;
 
-$indent-centering: ($width-gap + $width-supplement + $width-gutter);
+$indent-centering: ($width-gap-half + $width-supplement + $width-gutter);
 
 $margin-pin-full: rem(($ratio-text-heading-primary * $line-height-mini - $ratio-text-pin * $line-height) / 2);
 
@@ -150,9 +150,9 @@ $height-border-footnote: $width-border-thin;
 $padding-footnote: $margin;
 
 // Full Width
-$indent-full-width-full: (- ($width-gap + $width-supplement + $width-gutter));
+$indent-full-width-full: (- ($width-gap-half + $width-supplement + $width-gutter));
 $margin-full-width-caption-full: $margin;
-$padding-full-width-caption-full: ($width-gap - $width-border-thin);
+$padding-full-width-caption-full: ($width-gap-half - $width-border-thin);
 
 // Icon List
 $width-icon-list-icon: ($width-content / pow($ratio-golden, 5));
@@ -162,7 +162,7 @@ $padding-icon-list-icon: 25%;
 
 // Post List
 $margin-post-list-item: $margin-mini;
-$padding-post-list-item: (rem(6) + $width-gap);
+$padding-post-list-item: (rem(6) + $width-gap-half);
 
 // Pull Quote
 $margin-pull-quote: $margin;

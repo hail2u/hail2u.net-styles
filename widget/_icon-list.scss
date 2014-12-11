@@ -6,16 +6,16 @@
   @extend %link-underline-removal;
   @extend %clearfix;
 
-  margin-left: (- $width-gap);
-  margin-right: (- $width-gap);
+  margin-left: (- $width-gap-half);
+  margin-right: (- $width-gap-half);
   padding-left: 0;
 
   li {
     display: block;
     float: left;
     line-height: 1;
-    padding-left: $width-gap;
-    padding-right: $width-gap;
+    padding-left: $width-gap-half;
+    padding-right: $width-gap-half;
   }
 
   a {

@@ -5,7 +5,7 @@
 
   @media (min-width: $breakpoint-content) {
     position: absolute;
-    right: $width-gap;
+    right: $width-gap-half;
     top: $margin-site-search-full;
     z-index: 1;
   }

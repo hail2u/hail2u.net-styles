@@ -8,7 +8,7 @@
   width: 300px;
 
   @media (min-width: $breakpoint-adsbygoogle-small) {
-    margin-left: $width-gap;
+    margin-left: $width-gap-half;
   }
 
   @media (min-width: $breakpoint-adsbygoogle-medium) {

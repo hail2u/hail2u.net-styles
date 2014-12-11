@@ -39,7 +39,7 @@
   );
   background-position: left center, right center, center;
   background-repeat: repeat-y;
-  background-size: $width-gap, $width-gap, 100%;
+  background-size: $width-gap-half, $width-gap, 100%;
   bottom: 0;
   content: '';
   left: 0;
@@ -54,10 +54,10 @@
     background-image: linear-gradient(
       to right,
       #0f0 0,
-      #0f0 $width-gap,
-      #f0f $width-gap,
-      #f0f ($width-gap + $width-content),
-      #0f0 ($width-gap + $width-content),
+      #0f0 $width-gap-half,
+      #f0f $width-gap-half,
+      #f0f ($width-gap-half + $width-content),
+      #0f0 ($width-gap-half + $width-content),
       #0f0 $width-content-outer
     );
     background-position: center;
@@ -68,14 +68,14 @@
     background-image: linear-gradient(
       to right,
       #0f0 0,
-      #0f0 $width-gap,
-      #f0f $width-gap,
-      #f0f ($width-gap + $width-supplement),
-      #0f0 ($width-gap + $width-supplement),
-      #0f0 ($width-gap + $width-supplement + $width-gutter),
-      #f0f ($width-gap + $width-supplement + $width-gutter),
-      #f0f ($width-gap + $width-full),
-      #0f0 ($width-gap + $width-full),
+      #0f0 $width-gap-half,
+      #f0f $width-gap-half,
+      #f0f ($width-gap-half + $width-supplement),
+      #0f0 ($width-gap-half + $width-supplement),
+      #0f0 ($width-gap-half + $width-supplement + $width-gutter),
+      #f0f ($width-gap-half + $width-supplement + $width-gutter),
+      #f0f ($width-gap-half + $width-full),
+      #0f0 ($width-gap-half + $width-full),
       #0f0 $width-full-outer
     );
     background-size: $width-full-outer 1px;
@@ -146,7 +146,7 @@ body::after {
 
     display: block;
     height: 3rem;
-    margin-top: ($width-gap + $width-gap);
+    margin-top: ($width-gap-half + $width-gap);
     overflow: hidden;
     width: 100%;
 
@@ -162,14 +162,14 @@ body::after {
   }
 
   @media (min-width: $breakpoint-content) {
-    margin-left: (- $width-gap);
-    margin-right: (- $width-gap);
+    margin-left: (- $width-gap-half);
+    margin-right: (- $width-gap-half);
 
     li {
       float: left;
       margin-top: 0;
-      padding-left: $width-gap;
-      padding-right: $width-gap;
+      padding-left: $width-gap-half;
+      padding-right: $width-gap-half;
       width: (100% / 5);
     }
   }

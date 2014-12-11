@@ -7,7 +7,7 @@
   @media (min-width: $breakpoint-full) {
     float: left;
     margin-left: $indent-drop;
-    margin-right: $width-gap;
+    margin-right: $width-gap-half;
     max-width: $width-drop-max;
   }
 }
