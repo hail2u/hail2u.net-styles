@@ -39,7 +39,7 @@
   );
   background-position: left center, right center, center;
   background-repeat: repeat-y;
-  background-size: $width-gap-half, $width-gap, 100%;
+  background-size: $width-gap-half, $width-gap-half, 100%;
   bottom: 0;
   content: '';
   left: 0;
@@ -72,8 +72,8 @@
       #f0f $width-gap-half,
       #f0f ($width-gap-half + $width-supplement),
       #0f0 ($width-gap-half + $width-supplement),
-      #0f0 ($width-gap-half + $width-supplement + $width-gutter),
-      #f0f ($width-gap-half + $width-supplement + $width-gutter),
+      #0f0 ($width-gap-half + $width-supplement + $width-gap),
+      #f0f ($width-gap-half + $width-supplement + $width-gap),
       #f0f ($width-gap-half + $width-full),
       #0f0 ($width-gap-half + $width-full),
       #0f0 $width-full-outer

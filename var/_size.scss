@@ -23,7 +23,7 @@ $column: 36rem;
 $column-gap: rem($ratio-golden);
 
 // Main Component
-$width-gutter: $column-gap;
+$width-gap: $column-gap;
 $width-gap-half: ($column-gap / 2);
 
 $width-content: $column;
@@ -49,7 +49,7 @@ $breakpoint-full: (($width-full-outer + $width-scrollbar) * $ratio-text-base-ful
 // Placeholder Class
 $margin-after-heading: $margin-mini;
 
-$indent-centering: ($width-gap-half + $width-supplement + $width-gutter);
+$indent-centering: ($width-gap-half + $width-supplement + $width-gap);
 
 $margin-pin-full: rem(($ratio-text-heading-primary * $line-height-mini - $ratio-text-pin * $line-height) / 2);
 
@@ -67,8 +67,8 @@ $width-hr: rem($line-height * pow($ratio-golden, 3));
 $line-height-pre: $line-height-mini;
 
 $width-border-blockquote: $width-border-bold;
-$indent-blockquote: $width-gutter;
-$margin-blockquote-full: (- ($width-border-bold + $width-gutter));
+$indent-blockquote: $width-gap;
+$margin-blockquote-full: (- ($width-border-bold + $width-gap));
 
 $indent-list: ($indent * $ratio-text-zeta);
 $indent-list-content: $indent;
@@ -96,7 +96,7 @@ $width-border-th-thead: $width-border;
 $margin-logo: $margin;
 $margin-logo-content: ($margin * $ratio-golden);
 $margin-logo-full: ($margin * pow($ratio-golden, 2));
-$indent-logo-full: (- ($width-supplement + $width-gutter));
+$indent-logo-full: (- ($width-supplement + $width-gap));
 $width-logo: ($width-supplement / pow($ratio-golden, 4));
 $height-logo: ($width-supplement / pow($ratio-golden, 4));
 
@@ -104,9 +104,9 @@ $height-logo: ($width-supplement / pow($ratio-golden, 4));
 $width-site-navigation--full: $width-content;
 $height-site-navigation: ($width-supplement / pow($ratio-golden, 4));
 
-$width-site-navigation-gutter: ($width-gutter / 4);
-$width-site-navigation-gutter-content: ($width-gutter / 2);
-$width-site-navigation-gutter-full: $width-gutter;
+$width-site-navigation-gutter: ($width-gap / 4);
+$width-site-navigation-gutter-content: ($width-gap / 2);
+$width-site-navigation-gutter-full: $width-gap;
 
 $width-border-site-navigation-mark: $width-border;
 $padding-site-navigation-mark: $padding-mini;
@@ -137,8 +137,8 @@ $margin-footlinks: ($margin + $margin-heading-primary);
 $margin-footlinks-full: $margin-heading-primary;
 
 // Drop
-$indent-drop: (- ($width-supplement + $width-gutter));
-$width-drop-max: ($width-supplement + $width-gutter + $width-content / 2);
+$indent-drop: (- ($width-supplement + $width-gap));
+$width-drop-max: ($width-supplement + $width-gap + $width-content / 2);
 
 // Flat UL
 $width-flat-ul-item: (100% / 3);
@@ -150,7 +150,7 @@ $height-border-footnote: $width-border-thin;
 $padding-footnote: $margin;
 
 // Full Width
-$indent-full-width-full: (- ($width-gap-half + $width-supplement + $width-gutter));
+$indent-full-width-full: (- ($width-gap-half + $width-supplement + $width-gap));
 $margin-full-width-caption-full: $margin;
 $padding-full-width-caption-full: ($width-gap-half - $width-border-thin);
 
@@ -167,10 +167,10 @@ $padding-post-list-item: (rem(6) + $width-gap-half);
 // Pull Quote
 $margin-pull-quote: $margin;
 $line-height-pull-quote: $line-height-mini;
-$indent-pull-quote: $width-gutter;
+$indent-pull-quote: $width-gap;
 $indent-pull-quote-content: $indent;
-$indent-pull-quote-full: (- ($width-supplement + $width-gutter));
-$width-pull-quote-full: ($width-supplement + $width-gutter + $width-supplement);
+$indent-pull-quote-full: (- ($width-supplement + $width-gap));
+$width-pull-quote-full: ($width-supplement + $width-gap + $width-supplement);
 
 // Read Older
 $margin-read-older: $margin-heading;
