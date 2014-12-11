@@ -6,7 +6,7 @@
   max-width: $width-searchbox;
 
   .main & {
-    margin-top: $margin;
+    margin-top: $margin-searchbox;
     position: relative;
   }
 
@@ -20,7 +20,7 @@
     color: $color-fg-searchbox-input;
     height: $height-searchbox-input;
     outline: none;
-    padding: 0 ($width-searchbox-button + $padding-searchbox-input) 0 $padding-searchbox-input;
+    padding: 0 $padding-searchbox-input-right 0 $padding-searchbox-input;
     width: 100%;
 
     &:focus {

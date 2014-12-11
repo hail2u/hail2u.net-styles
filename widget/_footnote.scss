@@ -7,11 +7,11 @@
     transparent 50%,
     transparent 100%
   );
-  background-position: left $margin;
+  background-position: left $padding-footnote;
   background-repeat: repeat-x;
   background-size: $width-border-footnote $height-border-footnote;
   font-size: rem($ratio-text-footnote);
-  padding-top: $margin;
+  padding-top: $padding-footnote;
 
   *:first-child {
     margin-top: $margin-footnote;

@@ -3,13 +3,12 @@
   height: 250px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: $margin;
+  margin-top: $margin-adsbygoogle;
   overflow: hidden;
   width: 300px;
 
   @media (min-width: $breakpoint-adsbygoogle-small) {
     margin-left: $width-gap;
-    margin-right: $width-gap;
   }
 
   @media (min-width: $breakpoint-adsbygoogle-medium) {

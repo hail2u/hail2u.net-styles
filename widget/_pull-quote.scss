@@ -1,14 +1,14 @@
 // Pull Quote
 .pull-quote {
   line-height: $line-height-pull-quote;
-  margin-left: $margin-pull-quote;
-  margin-right: $margin-pull-quote;
+  margin-left: $indent-pull-quote;
+  margin-right: $indent-pull-quote;
   text-align: center;
 
   p {
     color: $color-fg-pull-quote;
     font-size: rem($ratio-text-pull-quote);
-    margin-top: $margin;
+    margin-top: $margin-pull-quote;
     quotes: '\201c' '\201d'; // Left Double Quotation Mark, Double Low-9 Quotation Mark
 
     &::before {
@@ -23,14 +23,13 @@
   }
 
   @media (min-width: $breakpoint-content) {
-    margin-left: $margin-pull-quote-content;
-    margin-right: $margin-pull-quote-content;
+    margin-left: $indent-pull-quote-content;
+    margin-right: $indent-pull-quote-content;
   }
 
   @media (min-width: $breakpoint-full) {
     float: left;
-    margin-left: (- ($width-supplement + $width-gutter));
-    margin-right: $width-gutter;
+    margin-left: $indent-pull-quote-full;
     width: $width-pull-quote-full;
   }
 }

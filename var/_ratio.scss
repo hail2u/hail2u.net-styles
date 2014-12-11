@@ -16,7 +16,7 @@ $ratio-text-delta: $ratio-text-primary;
 $ratio-text-epsilon: ($ratio-text-secondary / $ratio-golden);
 $ratio-text-zeta: ($ratio-text-primary / $ratio-golden);
 
-// Main Component
+// Column
 $ratio-content: 1;
 $ratio-supplement: (1 / pow($ratio-golden, 2));
 

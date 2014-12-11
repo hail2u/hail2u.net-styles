@@ -19,11 +19,14 @@ $padding: .25rem;
 $padding-mini: ($padding / 2);
 
 // Column
-$width-gutter: rem($ratio-golden);
-$width-gap: ($width-gutter / 2);
+$column: 36rem;
+$column-gap: rem($ratio-golden);
 
 // Main Component
-$width-content: 36rem;
+$width-gutter: $column-gap;
+$width-gap: ($column-gap / 2);
+
+$width-content: $column;
 $width-content-outer: ($width-gap + $width-content + $width-gap);
 
 $width-supplement-outer: ($width-content-outer / $ratio-content * $ratio-supplement);
@@ -44,6 +47,10 @@ $breakpoint-full: (($width-full-outer + $width-scrollbar) * $ratio-text-base-ful
 }
 
 // Placeholder Class
+$margin-after-heading: $margin-mini;
+
+$indent-centering: ($width-gap + $width-supplement + $width-gutter);
+
 $margin-pin-full: rem(($ratio-text-heading-primary * $line-height-mini - $ratio-text-pin * $line-height) / 2);
 
 // Core
@@ -60,12 +67,12 @@ $width-hr: rem($line-height * pow($ratio-golden, 3));
 $line-height-pre: $line-height-mini;
 
 $width-border-blockquote: $width-border-bold;
-$padding-blockquote: $width-gutter;
+$indent-blockquote: $width-gutter;
 $margin-blockquote-full: (- ($width-border-bold + $width-gutter));
 
-$padding-list: ($indent * $ratio-text-zeta);
-$padding-list-content: $indent;
-$padding-list-full: $indent;
+$indent-list: ($indent * $ratio-text-zeta);
+$indent-list-content: $indent;
+$indent-list-full: $indent;
 
 $width-border-figcaption: $width-border-thin;
 $padding-figcaption-full: ($width-border-thin + $margin-mini);
@@ -89,6 +96,7 @@ $width-border-th-thead: $width-border;
 $margin-logo: $margin;
 $margin-logo-content: ($margin * $ratio-golden);
 $margin-logo-full: ($margin * pow($ratio-golden, 2));
+$indent-logo-full: (- ($width-supplement + $width-gutter));
 $width-logo: ($width-supplement / pow($ratio-golden, 4));
 $height-logo: ($width-supplement / pow($ratio-golden, 4));
 
@@ -108,8 +116,16 @@ $margin-main: (- ($margin-heading-primary - ($margin * $ratio-golden)));
 $margin-main-content: (- ($margin-heading-primary - ($margin * pow($ratio-golden, 2))));
 $margin-main-full: (- ($margin-heading-primary - ($margin * pow($ratio-golden, 3))));
 
+// First Heading
+$margin-first-heading: ($margin-heading-primary + rem($line-height) * $ratio-text-pin);
+$margin-first-heading-full: $margin-heading-primary;
+
 // Site Search
+$margin-site-search: $margin-heading-primary;
 $margin-site-search-full: ($margin-heading-primary - rem((1 - $ratio-text-global-footer) * $line-height / 2));
+
+// Global Footer
+$margin-global-footer: $margin-heading;
 
 // Byline
 $margin-byline-border: $margin-mini;
@@ -121,6 +137,7 @@ $margin-footlinks: ($margin + $margin-heading-primary);
 $margin-footlinks-full: $margin-heading-primary;
 
 // Drop
+$indent-drop: (- ($width-supplement + $width-gutter));
 $width-drop-max: ($width-supplement + $width-gutter + $width-content / 2);
 
 // Flat UL
@@ -130,8 +147,11 @@ $width-flat-ul-item: (100% / 3);
 $margin-footnote: $margin-mini;
 $width-border-footnote: ($width-border-thin * 8);
 $height-border-footnote: $width-border-thin;
+$padding-footnote: $margin;
 
 // Full Width
+$indent-full-width-full: (- ($width-gap + $width-supplement + $width-gutter));
+$margin-full-width-caption-full: $margin;
 $padding-full-width-caption-full: ($width-gap - $width-border-thin);
 
 // Icon List
@@ -145,18 +165,26 @@ $margin-post-list-item: $margin-mini;
 $padding-post-list-item: (rem(6) + $width-gap);
 
 // Pull Quote
+$margin-pull-quote: $margin;
 $line-height-pull-quote: $line-height-mini;
-$margin-pull-quote: $width-gutter;
-$margin-pull-quote-content: $indent;
+$indent-pull-quote: $width-gutter;
+$indent-pull-quote-content: $indent;
+$indent-pull-quote-full: (- ($width-supplement + $width-gutter));
 $width-pull-quote-full: ($width-supplement + $width-gutter + $width-supplement);
 
+// Read Older
+$margin-read-older: $margin-heading;
+$line-height-read-older: $line-height-heading;
+
 // Searchbox
+$margin-searchbox: $margin;
 $width-searchbox: rem(24);
 $height-searchbox: rem($line-height);
 
 $width-border-searchbox-input: $width-border-thin;
 $height-searchbox-input: rem($line-height);
 $padding-searchbox-input: $padding-mini;
+$padding-searchbox-input-right: (rem($line-height) + $padding-mini);
 
 $width-searchbox-button: rem($line-height);
 $height-searchbox-button: rem($line-height);
@@ -172,6 +200,7 @@ $width-border-seemore: $width-border;
 $margin-topic-more: rem(1 / 3);
 
 // Google AdSense
+$margin-adsbygoogle: $margin;
 $breakpoint-adsbygoogle-small: (16px + 300px + 16px + 17px);
 $breakpoint-adsbygoogle-medium: (16px + 336px + 16px + 17px);
 $breakpoint-adsbygoogle-large: (1700px + 17px);

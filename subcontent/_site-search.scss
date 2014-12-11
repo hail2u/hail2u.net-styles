@@ -1,7 +1,7 @@
 // Site Search
 .site-search {
   position: relative;
-  top: ($margin-footlinks - $margin);
+  top: $margin-site-search;
 
   @media (min-width: $breakpoint-content) {
     position: absolute;

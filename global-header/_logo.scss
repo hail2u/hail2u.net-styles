@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: (- ($width-supplement + $width-gutter));
+    margin-left: $indent-logo-full;
     margin-top: $margin-logo-full;
   }
 }

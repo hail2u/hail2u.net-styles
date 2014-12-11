@@ -6,8 +6,8 @@
     @extend %ellipsing;
 
     font-size: rem($ratio-text-read-older-title);
-    line-height: $line-height-heading;
-    margin-top: $margin-heading;
+    line-height: $line-height-read-older;
+    margin-top: $margin-read-older;
 
     &::before {
       color: $color-fg-read-older-label;

@@ -7,6 +7,6 @@
   position: relative;
 
   @media (min-width: $breakpoint-full) {
-    padding-left: ($width-gap + $width-supplement + $width-gutter);
+    padding-left: $indent-centering;
   }
 }

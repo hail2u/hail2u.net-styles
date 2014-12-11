@@ -97,7 +97,7 @@ blockquote {
   border-left: $width-border-blockquote solid $color-border-blockquote;
   color: $color-fg-blockquote;
   margin: 0;
-  padding-left: $padding-blockquote;
+  padding-left: $indent-blockquote;
 
   @media (min-width: $breakpoint-full) {
     margin-left: $margin-blockquote-full;
@@ -109,7 +109,7 @@ ol {
   @extend %margin;
 
   clear: both;
-  padding: 0 0 0 $padding-list;
+  padding: 0 0 0 $indent-list;
 
   ul,
   ol {
@@ -121,7 +121,7 @@ ol {
   }
 
   @media (min-width: $breakpoint-content) {
-    padding-left: $padding-list-content;
+    padding-left: $indent-list-content;
   }
 
   @media (min-width: $breakpoint-full) {
@@ -129,7 +129,7 @@ ol {
 
     ul,
     ol {
-      padding-left: $padding-list-full;
+      padding-left: $indent-list-full;
     }
   }
 }
@@ -145,7 +145,7 @@ dl {
   }
 
   dd {
-    margin-left: $indent;
+    padding-left: $indent-list;
   }
 
   dl {
@@ -177,7 +177,7 @@ figcaption {
     border-left: $width-border-blockquote solid $color-border-blockquote;
     color: $color-fg-blockquote;
     margin-top: 0;
-    padding-left: $padding-blockquote;
+    padding-left: $indent-blockquote;
     padding-top: $padding-figcaption-blockquote;
   }
 
