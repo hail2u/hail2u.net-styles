@@ -630,16 +630,16 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
       <pre><code class="language-html">&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Proin&lt;/th&gt;
-      &lt;th&gt;Nunc&lt;/th&gt;
-      &lt;th&gt;Sed&lt;/th&gt;
+      &lt;th&gt;...&lt;/th&gt;
+      &lt;th&gt;...&lt;/th&gt;
+      &lt;th&gt;...&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;Erat&lt;/td&gt;
-      &lt;td&gt;Eget&lt;/td&gt;
-      &lt;td&gt;Quis&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -686,19 +686,19 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 
         <p>AdSenseまたはAmazonアソシエイトによる広告は常に最初のプライマリー・セクションの直後に<code>aside</code>要素を使って挿入します。極端に長いページの場合は、コンテンツ部分の最後にも更に一つ追加することがあります。</p>
 
-        <pre><code class="language-html">&lt;aside class=&quot;ads&quot;&gt;...&lt;/aside&gt;
+        <pre><code class="language-html">&lt;aside <mark>class=&quot;ads&quot;</mark>&gt;...&lt;/aside&gt;
 </code></pre>
       </section>
 
       <aside class="ads">
         <!-- Hail2u.net (Main) -->
         <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-8712792805045949"
-             data-ad-slot="1723739447"
-             data-ad-format="rectangle, horizontal"></ins>
+          style="display:block"
+          data-ad-client="ca-pub-8712792805045949"
+          data-ad-format="rectangle, horizontal"
+          data-ad-slot="1723739447"></ins>
         <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
+          (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
       </aside>
 
@@ -710,7 +710,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
         </figure>
 
         <pre><code class="language-html">&lt;figure&gt;
-  &lt;img class=&quot;circular&quot; alt=&quot;...&quot; src=&quot;...&quot;&gt;
+  &lt;img <mark>class=&quot;circular&quot;</mark> alt=&quot;...&quot; src=&quot;...&quot;&gt;
 &lt;/figure&gt;
 </code></pre>
       </section>
@@ -726,7 +726,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 
         <p>Duis tincidunt metus magna, quis molestie eros venenatis ac. Duis a accumsan nisl, nec egestas magna. Duis eu auctor lacus, rutrum ullamcorper mi. Cras tempor eu sem sit amet dignissim. Phasellus sed sapien nec augue molestie feugiat.</p>
 
-        <pre><code class="language-html">&lt;figure class=&quot;drop&quot;&gt;
+        <pre><code class="language-html">&lt;figure <mark>class=&quot;drop&quot;</mark>&gt;
   &lt;img alt=&quot;&quot; src=&quot;...&quot;&gt;
 &lt;/figure&gt;
 </code></pre>
@@ -752,7 +752,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
           <li><a href="#">Phasellus</a></li>
         </ul>
 
-        <pre><code class="language-html">&lt;ul class=&quot;flat-ul&quot;&gt;
+        <pre><code class="language-html">&lt;ul <mark>class=&quot;flat-ul&quot;</mark>&gt;
   &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
@@ -767,7 +767,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 
         <p>Nam sapien lacus, suscipit in convallis at, eleifend non orci. Fusce nunc dolor, dictum in mi ut, tempus rutrum metus. Vivamus porttitor ac diam sit amet vulputate. Vestibulum pellentesque lacus varius ligula scelerisque tincidunt. Quisque aliquam orci sed sem consectetur, eu pharetra nisl tempus. Donec in eros consequat, porta nisi vel, porta urna. Aliquam in nunc venenatis, ultricies ipsum ultricies, aliquet urna. Etiam varius odio ac quam interdum, ac pretium mauris ornare. Sed vitae ligula sed elit suscipit viverra ut vel est. Integer lobortis mi sit amet neque aliquet, eu porttitor magna semper. Nunc ac diam a dui iaculis consequat. Maecenas ac faucibus mauris. Duis eu arcu at felis vulputate lacinia vitae ac lacus. Aenean volutpat risus vitae porttitor posuere.</p>
 
-        <pre><code class="language-html">&lt;figure class=&quot;floatage-left&quot;&gt;
+        <pre><code class="language-html">&lt;figure <mark>class=&quot;floatage-left&quot;</mark>&gt;
   &lt;img alt=&quot;&quot; src=&quot;...&quot;&gt;
 &lt;/figure&gt;
 </code></pre>
@@ -778,7 +778,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 
         <p>Ut venenatis consectetur justo ac fringilla. Nullam non eros id turpis euismod fringilla sit amet et dui. Proin tincidunt bibendum luctus. Nulla eu faucibus elit. Cras a consectetur quam, at egestas diam. Fusce placerat iaculis risus vitae gravida. Nulla erat nunc, iaculis sed auctor vel, laoreet non massa. Maecenas nec rutrum est. Suspendisse quis accumsan augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis tempus purus. Pellentesque et turpis est. In convallis, mi quis molestie ullamcorper, est felis facilisis erat, non tincidunt magna turpis ut velit. Nam laoreet, arcu vitae gravida euismod, tellus nibh volutpat metus, nec ornare massa elit venenatis tortor. Praesent dictum dolor quam, interdum accumsan nulla dignissim ornare.</p>
 
-        <pre><code class="language-html">&lt;figure class=&quot;floatage-right&quot;&gt;
+        <pre><code class="language-html">&lt;figure <mark>class=&quot;floatage-right&quot;</mark>&gt;
   &lt;img alt=&quot;&quot; src=&quot;...&quot;&gt;
 &lt;/figure&gt;
 </code></pre>
@@ -793,7 +793,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
           <p>In vitae pretium risus. Vivamus ac ligula non ligula rhoncus sagittis. Fusce velit sem, congue in vestibulum sed, vestibulum sed nibh.</p>
         </aside>
 
-        <pre><code class="language-html">&lt;aside class=&quot;footnote&quot;&gt;
+        <pre><code class="language-html">&lt;aside <mark>class=&quot;footnote&quot;</mark>&gt;
   &lt;p&gt;...&lt;/p&gt;
 &lt;/aside&gt;
 </code></pre>
@@ -811,7 +811,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 
         <p>配置の都合上、<code>figcaption</code>要素を使う場合は<code>figure</code>要素の最後に記述します。</p>
 
-        <pre><code class="language-html">&lt;figure class=&quot;full-width&quot;&gt;
+        <pre><code class="language-html">&lt;figure <mark>class=&quot;full-width&quot;</mark>&gt;
   &lt;img alt=&quot;&quot; src=&quot;...&quot;&gt;
   &lt;figcaption&gt;...&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -830,7 +830,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 
         <p>各ソーシャル・ネットワークのアイコンは<code>img</code>要素を使って直接参照します。色は属性の値を参照して割り当てられています。TwitterとFacebook、Tumblrは<code>href</code>属性を、フィードは<code>type</code>属性を参照しています。</p>
 
-        <pre><code class="language-html">&lt;ul class=&quot;follow&quot;&gt;
+        <pre><code class="language-html">&lt;ul <mark>class=&quot;icon-list&quot;</mark>&gt;
   &lt;li&gt;
     &lt;a href=&quot;https://twitter.com/&quot;&gt;
       &lt;img
@@ -882,9 +882,9 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
             <a href="#">Duis tincidunt justo id fringilla commodo</a></li>
         </ol>
 
-        <pre><code class="language-html">&lt;section class=&quot;post-list&quot;&gt;
+        <pre><code class="language-html">&lt;section <mark>class=&quot;post-list&quot;</mark>&gt;
   &lt;ol&gt;
-    &lt;li&gt;&lt;time datetime=&quot;...&quot;&gt;M d, yyyy&lt;/time&gt;
+    &lt;li&gt;&lt;time datetime=&quot;...&quot;&gt;...&lt;/time&gt;
       &lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/section&gt;
@@ -902,7 +902,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 
         <p>Nullam non pretium orci. Quisque non enim ut magna tincidunt porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut dapibus lorem nec dolor sagittis consectetur. Morbi cursus, felis quis elementum rhoncus, dui sem mattis ante, eu pulvinar tellus turpis eu neque. Morbi euismod orci vel commodo consectetur. Cras vel molestie dolor.</p>
 
-        <pre><code class="language-html">&lt;aside class=&quot;pull-quote&quot;&gt;
+        <pre><code class="language-html">&lt;aside <mark>class=&quot;pull-quote&quot;</mark>&gt;
   &lt;p&gt;...&lt;/p&gt;
 &lt;/aside&gt;
 </code></pre>
@@ -911,7 +911,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
       <section id="read-older-block">
         <h1>古い記事を読む</h1>
 
-        <pre><code class="language-html">&lt;nav class=&quot;read-older&quot;&gt;
+        <pre><code class="language-html">&lt;nav <mark>class=&quot;read-older&quot;</mark>&gt;
   &lt;a
     rel=&quot;prev&quot;
     href=&quot;#&quot;&gt;
@@ -938,9 +938,9 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
           <input class="button" name="sa" type="submit" value="Search">
         </form>
 
-        <pre><code class="language-html">&lt;form class=&quot;searchbox&quot;&gt;
-  &lt;input class="query" type=&quot;search&quot;&gt;
-  &lt;input class="button" type=&quot;submit&quot;&gt;
+        <pre><code class="language-html">&lt;form <mark>class=&quot;searchbox&quot;</mark>&gt;
+  &lt;input <mark>class="query"</mark> type=&quot;search&quot;&gt;
+  &lt;input <mark>class="button"</mark> type=&quot;submit&quot;&gt;
 &lt;/form&gt;
 </code></pre>
       </section>
@@ -950,7 +950,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 
         <p class="seealso">See also: <a href="#">Lorem ipsum</a></p>
 
-        <pre><code class="language-html">&lt;p class=&quot;seealso&quot;&gt;Label: &lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;&lt;/p&gt;
+        <pre><code class="language-html">&lt;p <mark>class=&quot;seealso&quot;</mark>&gt;Label: &lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;&lt;/p&gt;
 </code></pre>
       </section>
 
@@ -961,7 +961,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
           <p><a href="#">See more</a></p>
         </nav>
 
-        <pre><code class="language-html">&lt;nav class=&quot;seemore&quot;&gt;
+        <pre><code class="language-html">&lt;nav <mark>class=&quot;seemore&quot;</mark>&gt;
   &lt;p&gt;&lt;a href=&quot;...&quot;&gt;See more&lt;/a&gt;&lt;/p&gt;
 &lt;/nav&gt;
 </code></pre>
@@ -976,7 +976,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 
         <p>Proin et odio eros. Vivamus gravida pulvinar aliquet. Quisque convallis sodales mauris sed bibendum. Vestibulum eros sem, pharetra eleifend blandit nec, elementum convallis neque. Aenean pulvinar aliquam augue, blandit pulvinar sapien rhoncus ac. Donec velit diam, vulputate ut elementum sit amet, interdum quis est. Vivamus sed justo mi, quis molestie nulla. In hac habitasse platea dictumst. Cras tempus tristique tellus vel imperdiet. Cras a elit eget elit tincidunt hendrerit. Suspendisse potenti. Nunc porttitor ultricies porttitor. Ut eget pharetra dolor.</p>
 
-        <pre><code class="language-html">&lt;aside class=&quot;sidenote&quot;&gt;
+        <pre><code class="language-html">&lt;aside <mark>class=&quot;sidenote&quot;</mark>&gt;
   &lt;p&gt;...&lt;/p&gt;
 &lt;/aside&gt;
 </code></pre>
@@ -993,14 +993,14 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
           <p>Duis arcu nulla, blandit eget posuere laoreet, laoreet et elit. Quisque ullamcorper ullamcorper dapibus. Donec interdum, enim nec euismod commodo, felis lectus rhoncus mauris, eu gravida quam arcu dictum ipsum. Cum sociis natoque penatibus et magnis amet.</p>
         </a>
 
-        <pre><code class="language-html">&lt;section class=&quot;topic&quot;&gt;
+        <pre><code class="language-html">&lt;section <mark>class=&quot;topic&quot;</mark>&gt;
   &lt;a href=&quot;...&quot;&gt;
     &lt;h1&gt;...&lt;/h1&gt;
 
-    &lt;footer class=&quot;section-footer&quot;&gt;
+    &lt;footer <mark>class=&quot;section-footer&quot;</mark>&gt;
       &lt;p&gt;
-        on &lt;time datetime=&quot;...&quot;&gt;M d, yyyy&lt;/time&gt;
-        under &lt;span class=&quot;tag&quot;&gt;...&lt;/span&gt;
+        on &lt;time datetime=&quot;...&quot;&gt;...&lt;/time&gt;
+        under &lt;span <mark>class=&quot;tag&quot;</mark>&gt;...&lt;/span&gt;
       &lt;/p&gt;
     &lt;/footer&gt;
 
@@ -1021,7 +1021,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 
         <p>Google AdSenseの広告はレスポンシブ広告を使っています。完全には自動切り替えにはせず、特定のフォーマットが優先的に表示されるように調節しています。</p>
 
-        <pre><code class="language-html">&lt;ins class=&quot;adsbygoogle&quot;
+        <pre><code class="language-html">&lt;ins <mark>class=&quot;adsbygoogle&quot;</mark>
   style=&quot;display:block&quot;
   data-ad-client=&quot;...&quot;
   data-ad-format=&quot;rectangle, horizontal&quot;
