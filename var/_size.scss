@@ -93,6 +93,7 @@ $width-logo: ($width-supplement / pow($ratio-golden, 4));
 $height-logo: ($width-supplement / pow($ratio-golden, 4));
 
 // Site Navigation
+$width-site-navigation--full: $width-content;
 $height-site-navigation: ($width-supplement / pow($ratio-golden, 4));
 
 $width-site-navigation-gutter: ($width-gutter / 4);

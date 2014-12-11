@@ -37,8 +37,19 @@
   }
 
   @media (min-width: $breakpoint-full) {
+    right: auto;
+    width: $width-site-navigation--full;
+
     li {
-      padding-left: $width-site-navigation-gutter-full;
+      padding-left: 0;
+      padding-right: $width-site-navigation-gutter-full;
+
+      &:last-child {
+        padding-right: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
     }
   }
 }
