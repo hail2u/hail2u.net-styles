@@ -4,10 +4,10 @@
 html {
   @include font-feature-settings('kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1);
 
-  font-size: ($ratio-text-base * 100%);
+  font-size: percentage($ratio-text-base);
 
   @media (min-width: $breakpoint-full) {
-    font-size: ($ratio-text-base-full * 100%);
+    font-size: percentage($ratio-text-base-full);
   }
 }
 
