@@ -54,7 +54,6 @@ p {
 hr {
   @extend %margin;
   @extend %ir;
-  @include box-sizing(content-box);
 
   background-color: transparent;
   border: 0;
@@ -79,7 +78,6 @@ pre {
   clear: both;
   font-family: $font-family-code;
   line-height: $line-height-pre;
-  overflow-x: auto;
 
   h2 + & {
     @extend %margin-after-heading;

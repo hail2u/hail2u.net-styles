@@ -3,7 +3,6 @@
   "devDependencies": {
     "hail2u-scss-functions": "^1.1.0",
     "hail2u-scss-partials": "^1.2.1",
-    "modularized-normalize-scss": "^3.0.0",
     "scss-column-equation": "^1.0.0"
   },
   "private": true
