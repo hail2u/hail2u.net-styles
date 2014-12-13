@@ -9,19 +9,32 @@
   }
 
   time {
+    @extend %float;
+
     color: $color-fg-post-list-time;
     display: block;
   }
 
   @media (min-width: $breakpoint-content) {
     li {
-      padding-left: $padding-post-list-item;
+      padding-right: $padding-post-list-item-content;
     }
 
     time {
-      left: 0;
       position: absolute;
+      right: 0;
       top: 0;
+    }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    li {
+      padding-right: 0;
+    }
+
+    time {
+      right: 100%;
+      text-align: right;
     }
   }
 }
