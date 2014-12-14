@@ -6,7 +6,11 @@
   @media (min-width: $breakpoint-content) {
     position: absolute;
     right: $width-gap-half;
-    top: $margin-site-search-full;
+    top: $margin-site-search-content;
     z-index: 1;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    top: $margin-site-search-full;
   }
 }

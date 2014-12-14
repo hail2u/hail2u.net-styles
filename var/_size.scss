@@ -122,7 +122,8 @@ $margin-first-heading-full: $margin-heading-primary;
 
 // Site Search
 $margin-site-search: $margin-heading-primary;
-$margin-site-search-full: ($margin-heading-primary - rem((1 - $ratio-text-global-footer) * $line-height / 2));
+$margin-site-search-content: ($margin-heading-primary + rem(1 + $ratio-text-global-footer) * $line-height / 2);
+$margin-site-search-full: ($margin-heading-primary - rem(1 - $ratio-text-global-footer) * $line-height / 2);
 
 // Global Footer
 $margin-global-footer: $margin-heading;
