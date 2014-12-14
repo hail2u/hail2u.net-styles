@@ -211,7 +211,7 @@ a {
     transparent 50%,
     $color-fg-link-underline 50%
   );
-  background-position: 0 1.1em;
+  background-position: 0 $margin-link-underline;
   background-repeat: repeat-x;
   background-size: $width-link-underline $height-link-underline;
   color: inherit;
