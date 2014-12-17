@@ -146,10 +146,10 @@ $width-drop-max: ($width-supplement + $width-gap + $width-content / 2);
 $width-flat-ul-item: (100% / 3);
 
 // Footnote
-$margin-footnote: $margin-mini;
+$margin-footnote: $margin;
 $width-border-footnote: ($width-border-thin * 8);
 $height-border-footnote: $width-border-thin;
-$padding-footnote: $margin;
+$padding-footnote: $margin-mini;
 
 // Full Width
 $indent-full-width-full: (- ($width-gap-half + $width-supplement + $width-gap));

@@ -7,13 +7,9 @@
     transparent 50%,
     transparent 100%
   );
-  background-position: left $padding-footnote;
+  background-position: left $margin-footnote;
   background-repeat: repeat-x;
   background-size: $width-border-footnote $height-border-footnote;
   font-size: rem($ratio-text-footnote);
   padding-top: $padding-footnote;
-
-  *:first-child {
-    margin-top: $margin-footnote;
-  }
 }
