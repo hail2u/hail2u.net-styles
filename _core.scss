@@ -209,11 +209,11 @@ figcaption {
 a {
   background-image: linear-gradient(
     transparent 50%,
-    $color-fg-link-underline 50%
+    $color-fg-a-underline 50%
   );
-  background-position: 0 $margin-link-underline;
+  background-position: 0 $margin-a-underline;
   background-repeat: repeat-x;
-  background-size: $width-link-underline $height-link-underline;
+  background-size: $width-a-underline $height-a-underline;
   color: inherit;
   text-decoration: none;
 }

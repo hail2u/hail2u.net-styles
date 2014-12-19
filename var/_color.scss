@@ -53,6 +53,8 @@ $color-accent-triad-negative-light: rgb(255, 200, 60);
 $color-accent-triad-negative-lightest: rgb(255, 212, 104);
 
 // Placeholder Class
+$color-fg-link-underline-removal: $color-accent;
+
 $color-fg-pin: $color-shade-lightest;
 
 $color-fg-pin-time: $color-dark;
@@ -76,8 +78,7 @@ $color-fg-dt: $color-shade-darkest;
 $color-fg-figcaption: $color-shade-dark;
 $color-border-figcaption: $color-tint-light;
 
-$color-fg-link: $color-accent;
-$color-fg-link-underline: $color-accent-lightest;
+$color-fg-a-underline: $color-accent-lightest;
 
 $color-fg-em: $color-shade-darkest;
 

@@ -80,9 +80,9 @@ $padding-figcaption-full: ($width-border-thin + $margin-mini);
 $margin-figcaption: $margin-mini;
 $padding-figcaption-blockquote: $margin-mini;
 
-$margin-link-underline: em(1 + remove-unit($width-border-thin));
-$width-link-underline: ($width-border-thin * 2);
-$height-link-underline: ($width-border-thin * 2);
+$margin-a-underline: em(1 + remove-unit($width-border-thin));
+$width-a-underline: ($width-border-thin * 2);
+$height-a-underline: ($width-border-thin * 2);
 
 $width-border-strong: $width-border-thin;
 
