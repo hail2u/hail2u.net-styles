@@ -6,6 +6,9 @@
 (function () {
   var csses = [
     {
+      href: '/fonts/megrim.min.css'
+    },
+    {
       href: '/fonts/source-code-pro.min.css'
     },
     {
@@ -15,7 +18,7 @@
   var links = document.createDocumentFragment();
   csses.forEach(function (css) {
     if (!/^https?:/.test(css.href) && location.protocol === 'file:') {
-      css.href = '../../build' + css.href;
+      css.href = './assets' + css.href;
     }
 
     var link = document.createElement('link');
