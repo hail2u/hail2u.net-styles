@@ -4,6 +4,7 @@
 
   font-size: rem($ratio-text-tagline);
   font-weight: 200;
+  line-height: $line-height-tagline;
   margin-top: $margin-tagline;
 
   @media (min-width: $breakpoint-content) {
