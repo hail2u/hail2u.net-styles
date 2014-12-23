@@ -57,9 +57,9 @@ $margin-pin-full: rem(($ratio-text-heading-primary * $line-height-mini - $ratio-
 $line-height-body: ($line-height * .9);
 $line-height-body-content: $line-height;
 
+$line-height-heading: $line-height-mini;
 $margin-heading: ($margin * pow($ratio-golden, 2));
 $margin-heading-primary: ($margin * pow($ratio-golden, 3));
-$line-height-heading: $line-height-mini;
 
 $height-hr: rem($line-height * $ratio-golden);
 $width-hr: rem($line-height * pow($ratio-golden, 3));
@@ -174,16 +174,16 @@ $margin-post-list-item: $margin-mini;
 $padding-post-list-item-content: (rem(5) + $width-gap-half);
 
 // Pull Quote
-$margin-pull-quote: $margin;
 $line-height-pull-quote: $line-height-mini;
+$margin-pull-quote: $margin;
 $indent-pull-quote: $width-gap;
 $indent-pull-quote-content: $indent;
 $indent-pull-quote-full: (- ($width-supplement + $width-gap));
 $width-pull-quote-full: ($width-supplement + $width-gap + $width-supplement);
 
 // Read Older
-$margin-read-older: $margin-heading;
 $line-height-read-older: $line-height-heading;
+$margin-read-older: $margin-heading;
 
 // Searchbox
 $margin-searchbox: $margin;
