@@ -1,0 +1,19 @@
+// Tagline
+.tagline {
+  @extend %link-underline-removal;
+
+  font-size: rem($ratio-text-tagline);
+  font-weight: 200;
+  margin-top: $margin-tagline;
+
+  @media (min-width: $breakpoint-content) {
+    font-size: rem($ratio-text-tagline-content);
+    margin-top: $margin-tagline-content;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    font-size: rem($ratio-text-tagline-full);
+    margin-left: $indent-tagline-full;
+    margin-top: $margin-tagline-full;
+  }
+}

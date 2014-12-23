@@ -101,6 +101,12 @@ $indent-logo-full: (- ($width-supplement + $width-gap));
 $width-logo: ($width-supplement / pow($ratio-golden, 4));
 $height-logo: ($width-supplement / pow($ratio-golden, 4));
 
+// Tagline
+$margin-tagline: ($margin * $ratio-golden);
+$margin-tagline-content: ($margin * pow($ratio-golden, 2));
+$margin-tagline-full: ($margin * pow($ratio-golden, 3));
+$indent-tagline-full: (- ($width-supplement + $width-gap));
+
 // Site Navigation
 $width-site-navigation--full: $width-content;
 $height-site-navigation: ($width-supplement / pow($ratio-golden, 4));
