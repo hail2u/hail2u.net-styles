@@ -39,10 +39,10 @@
 @import 'global-header/tagline';
 @import 'global-header/site-navigation';
 
-// Main
-@import 'main';
-@import 'main/section-footer';
-@import 'main/first-heading';
+// Content
+@import 'content';
+@import 'content/section-footer';
+@import 'content/first-heading';
 
 // Subcontent
 @import 'subcontent';

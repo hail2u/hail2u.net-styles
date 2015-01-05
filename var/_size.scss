@@ -119,10 +119,10 @@ $width-site-navigation-gutter-full: $width-gap;
 $width-border-site-navigation-mark: $width-border;
 $padding-site-navigation-mark: $padding-mini;
 
-// Main
-$margin-main: (- ($margin-heading-primary - ($margin * $ratio-golden)));
-$margin-main-content: (- ($margin-heading-primary - ($margin * pow($ratio-golden, 2))));
-$margin-main-full: (- ($margin-heading-primary - ($margin * pow($ratio-golden, 3))));
+// Content
+$margin-content: (- ($margin-heading-primary - ($margin * $ratio-golden)));
+$margin-content-content: (- ($margin-heading-primary - ($margin * pow($ratio-golden, 2))));
+$margin-content-full: (- ($margin-heading-primary - ($margin * pow($ratio-golden, 3))));
 
 // First Heading
 $margin-first-heading: ($margin-heading-primary + rem($line-height) * $ratio-text-pin);
