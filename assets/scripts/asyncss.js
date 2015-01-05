@@ -1,10 +1,10 @@
 /**
- * @preserve async-csses.js
+ * @preserve asyncss.js
  *
  * LICENSE: http://hail2u.mit-license.org/2014
  */
 (function () {
-  var csses = [
+  var files = [
     {
       href: '/fonts/megrim.min.css'
     },
@@ -16,17 +16,17 @@
     }
   ];
   var links = document.createDocumentFragment();
-  csses.forEach(function (css) {
-    if (!/^https?:/.test(css.href) && location.protocol === 'file:') {
-      css.href = './assets' + css.href;
+  files.forEach(function (file) {
+    if (!/^https?:/.test(file.href) && location.protocol === 'file:') {
+      file.href = './assets' + file.href;
     }
 
     var link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = css.href;
+    link.href = file.href;
 
-    if (css.media) {
-      link.media = css.media;
+    if (file.media) {
+      link.media = file.media;
     }
 
     links.appendChild(link);
