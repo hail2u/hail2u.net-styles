@@ -11,11 +11,11 @@
     display: table-cell;
 
     &::after {
-      content: '\00a0'; // Non-Break Space
+      content: '\a0';
     }
 
     &:first-child::after {
-      content: '\00a0\00b7\00a0'; // Middle Dot
+      content: ' ·\a0';
     }
   }
 

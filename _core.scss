@@ -247,7 +247,7 @@ kbd {
 
   p &::before,
   p &::after {
-    content: '\0020'; // Space
+    content: ' ';
     display: inline-block;
     font-size: 0;
     width: 0;
