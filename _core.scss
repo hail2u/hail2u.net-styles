@@ -233,18 +233,6 @@ cite {
   font-style: normal;
 }
 
-q {
-  quotes: none;
-
-  &::before {
-    content: '\300c'; // Left Corner Bracket
-  }
-
-  &::after {
-    content: '\300d'; // Right Corner Bracket
-  }
-}
-
 abbr {
   cursor: help;
   font-size: rem($ratio-text-abbr);
