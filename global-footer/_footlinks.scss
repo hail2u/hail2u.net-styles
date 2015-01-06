@@ -1,6 +1,6 @@
 // Footlinks
 .footlinks {
-  position: relative;
+  @extend %positioning-root;
 
   ul {
     margin-top: $margin-footlinks;

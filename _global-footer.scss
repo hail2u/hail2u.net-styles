@@ -1,6 +1,7 @@
 // Global Footer
 .global-footer {
   @extend %link-underline-removal;
+  @extend %positioning-root;
   @extend %centering;
 
   font-size: rem($ratio-text-global-footer);

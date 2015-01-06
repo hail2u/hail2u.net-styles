@@ -1,12 +1,13 @@
 // Content
 .content {
+  @extend %positioning-root;
   @extend %centering;
 
   margin-top: $margin-content;
 
   > article,
   > section {
-    position: relative;
+    @extend %positioning-root;
   }
 
   @media (min-width: $breakpoint-content) {

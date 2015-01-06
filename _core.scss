@@ -158,8 +158,7 @@ dl {
 
 figure {
   @extend %margin;
-
-  position: relative;
+  @extend %positioning-root;
 
   h2 + & {
     @extend %margin-after-heading;

@@ -6,8 +6,9 @@
   max-width: $width-searchbox;
 
   .main & {
+    @extend %positioning-root;
+
     margin-top: $margin-searchbox;
-    position: relative;
   }
 
   .query {

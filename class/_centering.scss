@@ -4,7 +4,6 @@
   max-width: $width-content;
   padding-left: $width-gap-half;
   padding-right: $width-gap-half;
-  position: relative;
 
   @media (min-width: $breakpoint-full) {
     padding-left: $indent-centering;

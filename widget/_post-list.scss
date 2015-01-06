@@ -3,9 +3,10 @@
   padding-left: 0;
 
   li {
+    @extend %positioning-root;
+
     list-style-type: none;
     margin-top: $margin-post-list-item;
-    position: relative;
   }
 
   time {

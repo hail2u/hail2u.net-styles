@@ -1,6 +1,7 @@
 // Site Search
 .site-search {
-  position: relative;
+  @extend %positioning-root;
+
   top: $margin-site-search;
 
   @media (min-width: $breakpoint-content) {
