@@ -1,7 +1,7 @@
 // Content
 .content {
-  @extend %positioning-root;
   @extend %centering;
+  @extend %positioning-root;
 
   margin-top: $margin-content;
 

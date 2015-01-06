@@ -3,8 +3,8 @@
 @import '../bower_components/hail2u-scss-partials/vendor-extension';
 
 .icon-list {
-  @extend %link-underline-removal;
   @extend %clearfix;
+  @extend %link-underline-removal;
 
   margin-left: (- $width-gap-half);
   margin-right: (- $width-gap-half);

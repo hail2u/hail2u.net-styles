@@ -1,5 +1,5 @@
 // Subcontent
 .subcontent {
-  @extend %positioning-root;
   @extend %centering;
+  @extend %positioning-root;
 }

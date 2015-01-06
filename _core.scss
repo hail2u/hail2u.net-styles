@@ -52,8 +52,8 @@ p {
 @import './bower_components/hail2u-scss-partials/vendor-extension';
 
 hr {
-  @extend %margin;
   @extend %ir;
+  @extend %margin;
 
   background-color: transparent;
   border: 0;

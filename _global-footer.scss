@@ -1,8 +1,8 @@
 // Global Footer
 .global-footer {
+  @extend %centering;
   @extend %link-underline-removal;
   @extend %positioning-root;
-  @extend %centering;
 
   font-size: rem($ratio-text-global-footer);
   margin-bottom: $margin-global-footer;
