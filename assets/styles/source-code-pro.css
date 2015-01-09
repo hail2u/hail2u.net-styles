@@ -1,0 +1,57 @@
+/*!
+ * Source Code Pro
+ *
+ * Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with
+ * Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of
+ * Adobe Systems Incorporated in the United States and/or other countries.
+ *
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1.
+ */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Source Code Pro ExtraLight'), url('../fonts/source-code-pro/xl.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Code Pro Light'), url('../fonts/source-code-pro/l.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), url('../fonts/source-code-pro/r.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Source Code Pro Medium'), url('../fonts/source-code-pro/m.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Code Pro SemiBold'), url('../fonts/source-code-pro/sb.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Code Pro Bold'), url('../fonts/source-code-pro/b.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Code Pro Black'), url('../fonts/source-code-pro/bk.woff') format('woff');
+}

@@ -1,0 +1,13 @@
+/*!
+ * Megrim
+ *
+ * Copyright 2011 Daniel Johnson (http://danieljohnson.name/)
+ *
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1.
+ */
+@font-face {
+  font-family: 'Megrim';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/megrim/r-26.woff') format('woff');
+}
