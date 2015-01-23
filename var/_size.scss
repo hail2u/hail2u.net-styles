@@ -94,7 +94,6 @@ $padding-td: ($padding * 2);
 $width-border-th-thead: $width-border;
 
 // Logo
-$line-height-tagline: $line-height-mini;
 $margin-logo: $margin;
 $margin-logo-content: ($margin * $ratio-golden);
 $margin-logo-full: ($margin * pow($ratio-golden, 2));
@@ -103,6 +102,7 @@ $width-logo: ($width-supplement / pow($ratio-golden, 4));
 $height-logo: ($width-supplement / pow($ratio-golden, 4));
 
 // Tagline
+$line-height-tagline: $line-height-mini;
 $margin-tagline: ($margin * $ratio-golden);
 $margin-tagline-content: ($margin * pow($ratio-golden, 2));
 $margin-tagline-full: ($margin * pow($ratio-golden, 3));
