@@ -93,7 +93,7 @@ body::after {
   padding: .25rem;
   position: fixed;
   right: .5rem;
-  top: .5rem;
+  bottom: .5rem;
 
   @media (min-width: $breakpoint-content) {
     content: 'Medium: #{(($breakpoint-content / 1rem) * 16px)}';
