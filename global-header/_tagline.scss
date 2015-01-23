@@ -1,7 +1,5 @@
 // Tagline
 .tagline {
-  @extend %link-underline-removal;
-
   font-family: $font-family-tagline;
   font-size: rem($ratio-text-tagline);
   font-weight: 200;
