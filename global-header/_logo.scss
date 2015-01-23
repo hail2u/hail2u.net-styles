@@ -1,6 +1,7 @@
 // Logo
 .logo {
   height: $height-logo;
+  margin-left: $indent-logo;
   margin-top: $margin-logo;
 
   a,
@@ -12,14 +13,5 @@
 
   mark {
     background-color: transparent;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    margin-top: $margin-logo-content;
-  }
-
-  @media (min-width: $breakpoint-full) {
-    margin-left: $indent-logo-full;
-    margin-top: $margin-logo-full;
   }
 }

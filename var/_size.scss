@@ -94,10 +94,8 @@ $padding-td: ($padding * 2);
 $width-border-th-thead: $width-border;
 
 // Logo
-$margin-logo: $margin;
-$margin-logo-content: ($margin * $ratio-golden);
-$margin-logo-full: ($margin * pow($ratio-golden, 2));
-$indent-logo-full: (- ($width-supplement + $width-gap));
+$margin-logo: $width-gap-half;
+$indent-logo: $width-gap-half;
 $width-logo: ($width-supplement / pow($ratio-golden, 4));
 $height-logo: ($width-supplement / pow($ratio-golden, 4));
 
@@ -106,15 +104,12 @@ $line-height-tagline: $line-height-mini;
 $margin-tagline: ($margin * $ratio-golden);
 $margin-tagline-content: ($margin * pow($ratio-golden, 2));
 $margin-tagline-full: ($margin * pow($ratio-golden, 3));
-$indent-tagline-full: (- ($width-supplement + $width-gap));
+$width-tagline-full: $width-full;
 
 // Site Navigation
-$width-site-navigation--full: $width-content;
 $height-site-navigation: ($width-supplement / pow($ratio-golden, 4));
 
-$width-site-navigation-gutter: ($width-gap / 4);
-$width-site-navigation-gutter-content: ($width-gap / 2);
-$width-site-navigation-gutter-full: $width-gap;
+$width-site-navigation-gutter: $width-gap-half;
 
 $width-border-site-navigation-mark: $width-border;
 $padding-site-navigation-mark: $padding-mini;

@@ -1,5 +1,7 @@
 // Tagline
 .tagline {
+  @extend %centering;
+
   font-family: $font-family-tagline;
   font-size: rem($ratio-text-tagline);
   font-weight: 200;
@@ -13,7 +15,8 @@
 
   @media (min-width: $breakpoint-full) {
     font-size: rem($ratio-text-tagline-full);
-    margin-left: $indent-tagline-full;
     margin-top: $margin-tagline-full;
+    padding-left: 0;
+    max-width: $width-tagline-full;
   }
 }

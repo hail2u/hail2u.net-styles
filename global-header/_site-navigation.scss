@@ -2,7 +2,7 @@
 .site-navigation {
   font-size: rem($ratio-text-site-navigation);
   position: absolute;
-  right: $width-gap-half;
+  right: 0;
   text-transform: uppercase;
   top: 0;
 
@@ -15,7 +15,7 @@
     display: table-cell;
     height: $height-site-navigation;
     line-height: $height-site-navigation;
-    padding-left: $width-site-navigation-gutter;
+    padding-right: $width-site-navigation-gutter;
   }
 
   a {
@@ -28,28 +28,5 @@
     border-bottom: $width-border-site-navigation-mark solid;
     color: $color-fg-site-navigation-mark;
     padding-bottom: $padding-site-navigation-mark;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    li {
-      padding-left: $width-site-navigation-gutter-content;
-    }
-  }
-
-  @media (min-width: $breakpoint-full) {
-    right: auto;
-    width: $width-site-navigation--full;
-
-    li {
-      padding-left: 0;
-      padding-right: $width-site-navigation-gutter-full;
-
-      &:last-child {
-        padding-right: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-    }
   }
 }
