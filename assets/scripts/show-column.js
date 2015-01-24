@@ -1,20 +1,14 @@
 (function () {
-  var c = 'show-column';
-
-  if (!('classList' in document.createElement('_'))) {
-    var re = new RegExp(' \\b' + c + '\\b');
+  var t = function () {
+    var c = 'show-column';
     document.body.addEventListener('dblclick', function () {
-      if (re.test(this.className)) {
-        this.className = this.className.replace(re, '');
-      } else {
-        this.className += ' ' + c;
-      }
+      this.classList.toggle(c);
     }, false);
+  };
 
-    return;
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', t, false);
+  } else {
+    t();
   }
-
-  document.body.addEventListener('dblclick', function () {
-    this.classList.toggle(c);
-  }, false);
 })();
