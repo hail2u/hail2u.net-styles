@@ -1,0 +1,8 @@
+{
+  "name": "hail2u.net-styles",
+  "devDependencies": {
+    "hail2u-scss-functions": "^1.2.1",
+    "hail2u-scss-partials": "^1.2.6"
+  },
+  "private": true
+}

@@ -1,5 +1,5 @@
 // Ellipsing
-@import '../bower_components/hail2u-scss-partials/vendor-extension';
+@import '../node_modules/hail2u-scss-partials/vendor-extension';
 
 %ellipsing {
   @include font-feature-settings(normal);

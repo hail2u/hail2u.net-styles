@@ -1,6 +1,6 @@
 // Icon List
-@import '../bower_components/hail2u-scss-partials/corporate-colors';
-@import '../bower_components/hail2u-scss-partials/vendor-extension';
+@import '../node_modules/hail2u-scss-partials/corporate-colors';
+@import '../node_modules/hail2u-scss-partials/vendor-extension';
 
 .icon-list {
   @extend %clearfix;
