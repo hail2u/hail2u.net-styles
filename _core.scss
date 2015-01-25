@@ -1,5 +1,5 @@
 // Root
-@import './node_modules/hail2u-scss-partials/vendor-extension';
+@import 'node_modules/hail2u-scss-partials/vendor-extension';
 
 html {
   @include font-feature-settings('kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1);
@@ -49,7 +49,7 @@ p {
   }
 }
 
-@import './node_modules/hail2u-scss-partials/vendor-extension';
+@import 'node_modules/hail2u-scss-partials/vendor-extension';
 
 hr {
   @extend %ir;
@@ -69,7 +69,7 @@ hr {
   }
 }
 
-@import './node_modules/hail2u-scss-partials/vendor-extension';
+@import 'node_modules/hail2u-scss-partials/vendor-extension';
 
 pre {
   @extend %margin;
@@ -269,7 +269,7 @@ del {
 }
 
 // Embedded Content
-@import './node_modules/hail2u-scss-partials/vendor-extension';
+@import 'node_modules/hail2u-scss-partials/vendor-extension';
 
 img,
 video {
@@ -285,7 +285,7 @@ video {
 }
 
 // Tabular Data
-@import './node_modules/hail2u-scss-partials/vendor-extension';
+@import 'node_modules/hail2u-scss-partials/vendor-extension';
 
 table {
   @extend %margin;
