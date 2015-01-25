@@ -85,6 +85,7 @@
 // Breakpoints
 body::after {
   background-color: #096;
+  bottom: .5rem;
   color: #fff;
   content: 'Small';
   display: block;
@@ -93,7 +94,6 @@ body::after {
   padding: .25rem;
   position: fixed;
   right: .5rem;
-  bottom: .5rem;
 
   @media (min-width: $breakpoint-content) {
     content: 'Medium: #{(($breakpoint-content / 1rem) * 16px)}';
