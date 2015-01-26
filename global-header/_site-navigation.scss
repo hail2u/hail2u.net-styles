@@ -29,4 +29,10 @@
     color: $color-fg-site-navigation-mark;
     padding-bottom: $padding-bottom-site-navigation-mark;
   }
+
+  @media (min-width: $breakpoint-content) {
+    li {
+      padding-left: $padding-left-site-navigation-item-content;
+    }
+  }
 }
