@@ -138,15 +138,6 @@ dl {
 
   clear: both;
 
-  dt {
-    color: $color-fg-dt;
-    font-weight: bold;
-  }
-
-  dd {
-    padding-left: $padding-left-dd;
-  }
-
   dl {
     margin-top: 0;
   }
@@ -154,6 +145,15 @@ dl {
   h2 + & {
     @extend %margin-after-heading;
   }
+}
+
+dt {
+  color: $color-fg-dt;
+  font-weight: bold;
+}
+
+dd {
+  padding-left: $padding-left-dd;
 }
 
 figure {
