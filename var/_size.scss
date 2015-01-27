@@ -219,7 +219,7 @@ $margin-top-read-older-title: $margin-top-heading;
 
 // Searchbox
 $margin-top-searchbox: $margin;
-$width-max-searchbox: rem(24);
+$width-max-searchbox: ($width-content / pow($ratio-golden, 2));
 $height-searchbox: rem($line-height);
 
 $padding-right-searchbox-input: (rem($line-height) + $padding-mini);
