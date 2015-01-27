@@ -3,12 +3,12 @@
 @import '../node_modules/hail2u-scss-partials/vendor-extension';
 
 .searchbox {
-  max-width: $width-searchbox;
+  max-width: $width-max-searchbox;
 
   .main & {
     @extend %positioning-root;
 
-    margin-top: $margin-searchbox;
+    margin-top: $margin-top-searchbox;
   }
 
   .query {
@@ -21,7 +21,7 @@
     color: $color-fg-searchbox-input;
     height: $height-searchbox-input;
     outline: none;
-    padding: 0 $padding-searchbox-input-right 0 $padding-searchbox-input;
+    padding: 0 $padding-right-searchbox-input 0 $padding-left-searchbox-input;
     width: 100%;
 
     &:focus {

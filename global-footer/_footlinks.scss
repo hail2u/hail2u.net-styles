@@ -3,7 +3,7 @@
   @extend %positioning-root;
 
   ul {
-    margin-top: $margin-footlinks;
+    margin-top: $margin-top-footlinks;
     padding-left: 0;
   }
 
@@ -21,7 +21,7 @@
 
   @media (min-width: $breakpoint-full) {
     ul {
-      margin-top: $margin-footlinks-full;
+      margin-top: $margin-top-footlinks-full;
     }
   }
 }

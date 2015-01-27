@@ -1,13 +1,13 @@
 // Drop
 .drop {
   img {
-    min-width: $width-supplement;
+    min-width: $width-min-drop-img;
   }
 
   @media (min-width: $breakpoint-full) {
     float: left;
-    margin-left: $indent-drop;
-    margin-right: $width-gap-half;
-    max-width: $width-drop-max;
+    margin-left: $margin-left-drop-full;
+    margin-right: $margin-right-drop-full;
+    max-width: $width-max-drop-full;
   }
 }

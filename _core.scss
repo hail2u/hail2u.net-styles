@@ -4,10 +4,10 @@
 html {
   @include font-feature-settings('kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1);
 
-  font-size: percentage($ratio-text-base);
+  font-size: percentage($ratio-text-html);
 
   @media (min-width: $breakpoint-full) {
-    font-size: percentage($ratio-text-base-full);
+    font-size: percentage($ratio-text-html-full);
   }
 }
 
@@ -29,7 +29,7 @@ h1 {
 
   color: $color-fg-heading-primary;
   font-size: rem($ratio-text-heading-primary);
-  margin: $margin-heading-primary 0 0;
+  margin: $margin-top-heading-primary 0 0;
 }
 
 h2 {
@@ -37,7 +37,7 @@ h2 {
 
   color: $color-fg-heading;
   font-size: rem($ratio-text-heading);
-  margin: $margin-heading 0 0;
+  margin: $margin-top-heading 0 0;
 }
 
 // Grouping Content
@@ -96,10 +96,10 @@ blockquote {
   border-left: $width-border-blockquote solid $color-border-blockquote;
   color: $color-fg-blockquote;
   margin: 0;
-  padding-left: $indent-blockquote;
+  padding-left: $padding-left-blockquote;
 
   @media (min-width: $breakpoint-full) {
-    margin-left: $margin-blockquote-full;
+    margin-left: $margin-left-blockquote-full;
   }
 }
 
@@ -108,7 +108,7 @@ ol {
   @extend %margin;
 
   clear: both;
-  padding: 0 0 0 $indent-list;
+  padding: 0 0 0 $padding-left-list;
 
   ul,
   ol {
@@ -120,7 +120,7 @@ ol {
   }
 
   @media (min-width: $breakpoint-content) {
-    padding-left: $indent-list-content;
+    padding-left: $padding-left-list-content;
   }
 
   @media (min-width: $breakpoint-full) {
@@ -128,7 +128,7 @@ ol {
 
     ul,
     ol {
-      padding-left: $indent-list-full;
+      padding-left: $padding-left-list-full;
     }
   }
 }
@@ -144,7 +144,7 @@ dl {
   }
 
   dd {
-    padding-left: $indent-list;
+    padding-left: $padding-left-dd;
   }
 
   dl {
@@ -169,14 +169,14 @@ figcaption {
   @extend %float;
 
   color: $color-fg-figcaption;
-  margin-top: $margin-figcaption;
+  margin-top: $margin-top-figcaption;
 
   blockquote + &:last-child {
     border-left: $width-border-blockquote solid $color-border-blockquote;
     color: $color-fg-blockquote;
     margin-top: 0;
-    padding-left: $indent-blockquote;
-    padding-top: $padding-figcaption-blockquote;
+    padding-left: $padding-left-blockquote;
+    padding-top: $padding-top-figcaption-blockquote;
   }
 
   @media (min-width: $breakpoint-full) {
@@ -196,7 +196,7 @@ figcaption {
 
     blockquote + &:last-child {
       border-bottom: 0;
-      margin-left: $margin-blockquote-full;
+      margin-left: $margin-left-blockquote-full;
       margin-right: 0;
       padding-bottom: 0;
       position: static;
@@ -309,9 +309,9 @@ table {
 %table-cell,
 td {
   border-bottom: $width-border-td solid $color-border-td;
-  padding-bottom: $padding-td;
-  padding-right: ($padding-td * 2);
-  padding-top: $padding-td;
+  padding-bottom: $padding-vert-td;
+  padding-right: $padding-right-td;
+  padding-top: $padding-vert-td;
   vertical-align: top;
   white-space: nowrap;
 }

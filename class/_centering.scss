@@ -1,11 +1,11 @@
 %centering {
   margin-left: auto;
   margin-right: auto;
-  max-width: $width-content;
-  padding-left: $width-gap-half;
-  padding-right: $width-gap-half;
+  max-width: $width-max-centering;
+  padding-left: $padding-side-centering;
+  padding-right: $padding-side-centering;
 
   @media (min-width: $breakpoint-full) {
-    padding-left: $indent-centering;
+    padding-left: $padding-left-centering-full;
   }
 }

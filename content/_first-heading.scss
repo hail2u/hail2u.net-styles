@@ -1,8 +1,8 @@
 // First Heading
 .first-heading {
-  margin-top: $margin-first-heading;
+  margin-top: $margin-top-first-heading;
 
   @media (min-width: $breakpoint-full) {
-    margin-top: $margin-first-heading-full;
+    margin-top: $margin-top-first-heading-full;
   }
 }

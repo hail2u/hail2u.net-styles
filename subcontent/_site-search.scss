@@ -2,16 +2,16 @@
 .site-search {
   @extend %positioning-root;
 
-  top: $margin-site-search;
+  top: $top-site-search;
 
   @media (min-width: $breakpoint-content) {
     position: absolute;
-    right: $width-gap-half;
-    top: $margin-site-search-content;
+    right: $right-site-search-content;
+    top: $top-site-search-content;
     z-index: 1;
   }
 
   @media (min-width: $breakpoint-full) {
-    top: $margin-site-search-full;
+    top: $top-site-search-full;
   }
 }

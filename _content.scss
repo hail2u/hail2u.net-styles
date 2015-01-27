@@ -3,7 +3,7 @@
   @extend %centering;
   @extend %positioning-root;
 
-  margin-top: $margin-content;
+  margin-top: $margin-top-content;
 
   > article,
   > section {
@@ -11,10 +11,10 @@
   }
 
   @media (min-width: $breakpoint-content) {
-    margin-top: $margin-content-content;
+    margin-top: $margin-top-content-content;
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-top: $margin-content-full;
+    margin-top: $margin-top-content-full;
   }
 }

@@ -1,11 +1,11 @@
 // Float
 %float {
   @media (min-width: $breakpoint-full) {
-    margin-right: $width-gap;
+    margin-right: $margin-right-float-full;
     position: absolute;
     right: 100%;
     top: 0;
-    width: $width-supplement;
+    width: $width-float-full;
     z-index: 1;
   }
 }

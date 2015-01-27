@@ -6,7 +6,7 @@
     @extend %positioning-root;
 
     list-style-type: none;
-    margin-top: $margin-post-list-item;
+    margin-top: $margin-top-post-list-item;
   }
 
   time {
@@ -18,7 +18,7 @@
 
   @media (min-width: $breakpoint-content) {
     li {
-      padding-right: $padding-post-list-item-content;
+      padding-right: $padding-right-post-list-item-content;
     }
 
     time {

@@ -3,10 +3,7 @@
   @extend %float;
 
   color: $color-fg-sidenote;
-
-  p {
-    font-size: rem($ratio-text-sidenote);
-  }
+  font-size: rem($ratio-text-sidenote);
 
   @media (min-width: $breakpoint-full) {
     top: auto;

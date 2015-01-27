@@ -6,17 +6,17 @@
   font-size: rem($ratio-text-tagline);
   font-weight: 200;
   line-height: $line-height-tagline;
-  margin-top: $margin-tagline;
+  margin-top: $margin-top-tagline;
 
   @media (min-width: $breakpoint-content) {
     font-size: rem($ratio-text-tagline-content);
-    margin-top: $margin-tagline-content;
+    margin-top: $margin-top-tagline-content;
   }
 
   @media (min-width: $breakpoint-full) {
     font-size: rem($ratio-text-tagline-full);
-    margin-top: $margin-tagline-full;
+    margin-top: $margin-top-tagline-full;
     padding-left: 0;
-    max-width: $width-tagline-full;
+    max-width: $width-max-tagline-full;
   }
 }

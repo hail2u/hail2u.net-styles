@@ -1,7 +1,7 @@
 // Full Width
 .full-width {
-  margin-left: (- $width-gap-half);
-  margin-right: (- $width-gap-half);
+  margin-left: $margin-side-full-width;
+  margin-right: $margin-side-full-width;
 
   img,
   video,
@@ -11,11 +11,11 @@
   }
 
   figcaption:last-child {
-    margin-left: $width-gap-half;
+    margin-left: $margin-left-full-width-caption;
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: $indent-full-width-full;
+    margin-left: $margin-left-full-width-full;
 
     figcaption:last-child {
       border-bottom: 0;
@@ -23,9 +23,9 @@
       bottom: auto;
       left: 0;
       margin-left: 0;
-      margin-top: $margin-full-width-caption-full;
+      margin-top: $margin-top-full-width-caption-full;
       padding-bottom: 0;
-      padding-left: $padding-full-width-caption-full;
+      padding-left: $padding-left-full-width-caption-full;
     }
   }
 }

@@ -7,7 +7,7 @@
     content: '';
     display: block;
     height: 0;
-    margin-bottom: $margin-byline-border;
+    margin-bottom: $margin-bottom-byline-border;
     width: $width-byline-border;
   }
 
@@ -18,7 +18,7 @@
 
   @media (min-width: $breakpoint-full) {
     bottom: 0;
-    left: $width-gap-half;
+    left: $left-byline-full;
     position: absolute;
   }
 }
