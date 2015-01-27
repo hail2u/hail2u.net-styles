@@ -9,7 +9,7 @@
     display: table-cell;
 
     &::after {
-      content: '\a0';
+      content: '\a0\a0';
     }
 
     &:first-child::after {
