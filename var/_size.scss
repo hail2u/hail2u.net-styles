@@ -141,8 +141,8 @@ $margin-top-first-heading-full: ($margin * pow($ratio-golden, 3));
 // Site Search
 $right-site-search-content: $width-gap-half;
 $top-site-search: $margin-top-heading-primary;
-$top-site-search-content: ($margin-top-heading-primary + rem(1 + $ratio-text-global-footer) * $line-height / 2);
-$top-site-search-full: ($margin-top-heading-primary - rem(1 - $ratio-text-global-footer) * $line-height / 2);
+$top-site-search-content: ($margin + $margin-top-heading-primary - ((((rem($line-height) + $padding-mini * 2)) - rem($ratio-text-global-footer * $line-height)) / 2));
+$top-site-search-full: ($margin-top-heading-primary - ((((rem($line-height) + $padding-mini * 2)) - rem($ratio-text-global-footer * $line-height)) / 2));
 
 // Global Footer
 $margin-bottom-global-footer: $margin-top-heading;
@@ -219,16 +219,16 @@ $margin-top-read-older-title: $margin-top-heading;
 
 // Searchbox
 $margin-top-searchbox: $margin;
-$width-max-searchbox: ($width-content / pow($ratio-golden, 2));
-$height-searchbox: rem($line-height);
+$width-max-searchbox: ($width-content / $ratio-golden);
 
-$padding-right-searchbox-input: (rem($line-height) + $padding-mini);
-$padding-left-searchbox-input: $padding-mini;
+$padding-right-searchbox-input: rem($line-height);
+$padding-left-searchbox-input: $padding;
 $width-border-searchbox-input: $width-border-thin;
-$height-searchbox-input: rem($line-height);
+$height-searchbox-input: (rem($line-height) + $padding-mini * 2);
 
 $width-searchbox-button: rem($line-height);
 $height-searchbox-button: rem($line-height);
+$top-searchbox-button: $padding-mini;
 
 // Seealso
 $width-seealso-icon: rem($ratio-text-seealso);
