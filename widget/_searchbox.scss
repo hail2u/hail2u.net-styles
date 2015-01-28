@@ -5,7 +5,7 @@
 .searchbox {
   max-width: $width-max-searchbox;
 
-  .main & {
+  .content & {
     @extend %positioning-root;
 
     margin-top: $margin-top-searchbox;
