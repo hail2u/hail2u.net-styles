@@ -20,14 +20,8 @@
     border-radius: 0;
     color: $color-fg-searchbox-input;
     height: $height-searchbox-input;
-    outline: none;
     padding: 0 $padding-right-searchbox-input 0 $padding-left-searchbox-input;
     width: 100%;
-
-    &:focus {
-      border-color: $color-border-searchbox-input-focus;
-      color: $color-fg-searchbox-input-focus;
-    }
   }
 
   .button {
@@ -47,10 +41,5 @@
     right: 0;
     top: 0;
     width: $width-searchbox-button;
-  }
-
-  .query:focus + .button,
-  .button:focus {
-    background-color: $color-bg-searchbox-button-focus;
   }
 }

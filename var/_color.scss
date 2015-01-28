@@ -111,15 +111,12 @@ $color-fg-pull-quote: $color-shade-dark;
 $color-fg-read-older-label: $color-shade-darkest;
 
 // Searchbox
-$color-fg-searchbox-input: $color-shade-light;
-$color-fg-searchbox-input-focus: $color-dark-dark;
+$color-fg-searchbox-input: $color-dark;
 $color-bg-searchbox-input: $color-light-light;
 $color-border-searchbox-input: $color-tint-light;
-$color-border-searchbox-input-focus: $color-accent-light;
 
-$color-fg-searchbox-button: $color-light-light;
-$color-bg-searchbox-button: $color-tint-light;
-$color-bg-searchbox-button-focus: $color-accent-light;
+$color-fg-searchbox-button: $color-shade-light;
+$color-bg-searchbox-button: transparent;
 
 // Seealso
 $color-fg-seealso: $color-shade-dark;
