@@ -15,7 +15,20 @@
       display: block;
       font-size: rem(1);
       font-weight: bold;
+      margin-right: $margin-right-read-older-label;
       text-transform: uppercase;
+      width: $width-read-older-label;
+    }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    p {
+      margin-left: $margin-left-read-older-title;
+
+      &::before {
+        display: inline-block;
+        font-size: inherit;
+      }
     }
   }
 }

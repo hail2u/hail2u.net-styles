@@ -215,7 +215,11 @@ $margin-top-pull-quote-body: $margin;
 
 // Read Older
 $line-height-read-older-title: $line-height-heading;
+$margin-left-read-older-title: (- ($width-supplement + $width-gap));
 $margin-top-read-older-title: $margin-top-heading;
+
+$margin-right-read-older-label: $width-gap;
+$width-read-older-label: $width-supplement;
 
 // Searchbox
 $margin-top-searchbox: $margin;
