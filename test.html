@@ -92,6 +92,8 @@
 
           <p>レイアウトの位置確認のために、空いているところをダブルクリックするとグリッドをトグルすることができます。このグリッドはCSSグラデーションを利用した簡単なものなので、描画領域の幅によっては数ピクセル程ずれることがあります。</p>
 
+          <p>また、ロゴをクリックすることでタグラインの切り替えを行うことができます。</p>
+
           <h2>印刷向けスタイルシート</h2>
 
           <p>ページの読み込みが完了した後、非同期に読み込まれます。フォントはセリフ系を採用しています。他はなるべく白黒になるように調節しているだけです。</p>
@@ -120,45 +122,30 @@
           <li><a href="#fonts">フォント</a></li>
           <li><a href="#colors">カラーパレット</a></li>
           <li><a href="#icons">アイコン</a></li>
-          <li><a href="#layouts">レイアウト</a>
-            <ol>
-              <li><a href="#characters-per-line">行あたりの文字数</a></li>
-            </ol>
-          </li>
-          <li><a href="#core">コア</a>
-            <ol>
-              <li><a href="#sections">セクション</a></li>
-              <li><a href="#grouping-content">コンテンツのグループ化</a></li>
-              <li><a href="#text-level-semantics">語・句・文単位での意味付け</a></li>
-              <li><a href="#edits">編集</a></li>
-              <li><a href="#tabular-data">表</a></li>
-            </ol>
-          </li>
-          <li><a href="#widget">ウィジェット</a>
-            <ol>
-              <li><a href="#ads-block">広告</a></li>
-              <li><a href="#circular-image">丸い画像</a></li>
-              <li><a href="#drop-image">画像の飛び出し</a></li>
-              <li><a href="#flat-ul-link">フラットな序列なしリスト</a></li>
-              <li><a href="#floatage-image">浮かんだ画像</a></li>
-              <li><a href="#follow-link">フォロー</a></li>
-              <li><a href="#footnote-block">脚注</a></li>
-              <li><a href="#full-width-block">幅いっぱい</a></li>
-              <li><a href="#post-list-block">記事リスト</a></li>
-              <li><a href="#pull-quote-block">抜粋見出し(Pull Quote)</a></li>
-              <li><a href="#read-older-block">古い記事を読む</a></li>
-              <li><a href="#searchbox-block">検索ボックス</a></li>
-              <li><a href="#seealso-link">他を参照</a></li>
-              <li><a href="#seemore-block">もっと読む</a></li>
-              <li><a href="#sidenote-block">傍注</a></li>
-              <li><a href="#topic-block">話題の記事</a></li>
-            </ol>
-          </li>
-          <li><a href="#vendor">ベンダー依存</a>
-            <ol>
-              <li><a href="#google-adsense-block">Google AdSense</a></li>
-            </ol>
-          </li>
+          <li><a href="#layouts">レイアウト</a></li>
+          <li><a href="#characters-per-line">行あたりの文字数</a></li>
+          <li><a href="#sections">セクション</a></li>
+          <li><a href="#grouping-content">コンテンツのグループ化</a></li>
+          <li><a href="#text-level-semantics">語・句・文単位での意味付け</a></li>
+          <li><a href="#edits">編集</a></li>
+          <li><a href="#tabular-data">表</a></li>
+          <li><a href="#ads-block">広告</a></li>
+          <li><a href="#circular-image">丸い画像</a></li>
+          <li><a href="#drop-image">画像の飛び出し</a></li>
+          <li><a href="#flat-ul-link">フラットな序列なしリスト</a></li>
+          <li><a href="#floatage-image">浮かんだ画像</a></li>
+          <li><a href="#follow-link">フォロー</a></li>
+          <li><a href="#footnote-block">脚注</a></li>
+          <li><a href="#full-width-block">幅いっぱい</a></li>
+          <li><a href="#post-list-block">記事リスト</a></li>
+          <li><a href="#pull-quote-block">抜粋見出し(Pull Quote)</a></li>
+          <li><a href="#read-older-block">古い記事を読む</a></li>
+          <li><a href="#searchbox-block">検索ボックス</a></li>
+          <li><a href="#seealso-link">他を参照</a></li>
+          <li><a href="#seemore-block">もっと読む</a></li>
+          <li><a href="#sidenote-block">傍注</a></li>
+          <li><a href="#topic-block">話題の記事</a></li>
+          <li><a href="#google-adsense-block">Google AdSense</a></li>
         </ol>
       </nav>
 
@@ -235,7 +222,7 @@
       <section id="bases">
         <h1>ベース</h1>
 
-        <p>ブラウザーのデフォルト・スタイルシートの差異の吸収のために<a href="http://necolas.github.com/normalize.css/">Normalize.css</a>を利用しています。ただし必要な物だけを取り込めるようにルールセットごとに分割し<a href="https://github.com/hail2u/normalize.scss">Sassのパーシャル</a>にしたものを使っています。</p>
+        <p>ブラウザーのデフォルト・スタイルシートの差異の吸収のために<a href="http://necolas.github.com/normalize.css/">Normalize.css</a>を利用しています。</p>
       </section>
 
       <section id="fonts">
@@ -263,8 +250,6 @@
             <td class="font-family-code bold">The quick brown fox jumps over the lazy dog.</td>
           </tr>
         </table>
-
-        <p>これらはウェブ・フォントとして非同期に読み込まれます。</p>
       </section>
 
       <section id="colors">
@@ -378,18 +363,14 @@
           <figcaption>On Large Screen</figcaption>
           <a href="assets/images/about/layout-large.png"><img alt="ロゴが左に飛び出し、ナビゲーションは記事に合わせて左揃えになり、最後の項目のみ右に寄せられます。記事の補足情報や図のキャプションなどはロゴと揃うように飛び出します。" src="assets/images/about/layout-large.png"></a>
         </figure>
+      </section>
 
-        <h2 id="characters-per-line">行あたりの文字数</h2>
+      <section id="characters-per-line">
+        <h1>行あたりの文字数</h1>
 
         <p class="line-length">Lorem ipsum dolor sit amet, consectetur adip*iscing elit. Suspendisse moll*is elementum leo sed feugiat.</p>
 
         <p>直前の段落のアスタリスクは45文字目と75文字目に打ってあります。一行の文字数は45–75文字(<code>line-height: 1.5</code>の場合)と言われているので、このアスタリスクが行をまたいでいると適切な文字数で折り返されているということになります。このウェブサイトでは行間が1.618と少し広いことと、Windowsのブラウザーで使われることが多いメイリオが幅が広いことを基準にし、広めに設定しています。</p>
-      </section>
-
-      <section id="core">
-        <h1>コア</h1>
-
-        <p>これより後のセクションではHTML仕様で定義されている要素に対する基本的なスタイルのプレビューとマークアップ例です。</p>
       </section>
 
       <section id="sections">
@@ -681,12 +662,6 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
         </table>
 
         <p>特別なマークアップの必要はありません。</p>
-      </section>
-
-      <section id="widget">
-        <h1>ウィジェット</h1>
-
-        <p>これより後のセクションは、コンテンツ内で繰り返し利用されるウィジェットのスタイルのプレビューとマークアップ例になります。テキストやリンクには特に意味はありません。</p>
       </section>
 
       <section id="ads-block">
@@ -1016,12 +991,6 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
   &lt;/a&gt;
 &lt;/section&gt;
 </code></pre>
-      </section>
-
-      <section id="vendor">
-        <h1>ベンダー依存</h1>
-
-        <p>これより後のセクションは、第三者が提供するコンポーネントのためのスタイルのプレビューとマークアップ例になります。提供されるコードに手を加えることが難しいため、マークアップやCSSが不適切である可能性があります。</p>
       </section>
 
       <section id="google-adsense-block">
