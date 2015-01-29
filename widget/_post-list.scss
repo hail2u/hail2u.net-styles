@@ -11,17 +11,17 @@
     margin-top: $margin-top-post-list-item;
   }
 
-  time {
+  .date {
     @extend %float;
 
-    color: $color-fg-post-list-time;
+    color: $color-fg-post-list-date;
     display: block;
-    font-size: rem($ratio-text-post-list-time);
+    font-size: rem($ratio-text-post-list-date);
   }
 
   @media (min-width: $breakpoint-full) {
-    time {
-      line-height: $line-height-post-list-time;
+    .date {
+      line-height: $line-height-post-list-date;
     }
   }
 }
