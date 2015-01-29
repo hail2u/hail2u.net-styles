@@ -12,14 +12,6 @@
     color: $color-fg-pin;
   }
 
-  time {
-    color: $color-fg-pin-time;
-  }
-
-  .tag {
-    color: $color-fg-pin-tag;
-  }
-
   @media (min-width: $breakpoint-full) {
     p {
       margin-top: $margin-top-pin-full;

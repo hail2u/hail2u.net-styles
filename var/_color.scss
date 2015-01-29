@@ -57,10 +57,6 @@ $color-fg-link-underline-removal: $color-accent;
 
 $color-fg-pin: $color-shade-lightest;
 
-$color-fg-pin-time: $color-shade-dark;
-
-$color-fg-pin-tag: $color-shade-dark;
-
 // Core
 $color-fg-body: $color-dark;
 $color-bg-body: $color-light;
@@ -93,6 +89,11 @@ $color-border-td: $color-tint-light;
 
 // Site Navigation
 $color-fg-site-navigation-mark: $color-accent-light;
+
+// Section Footer
+$color-fg-section-footer-date: $color-shade-dark;
+
+$color-fg-section-footer-tag: $color-shade-dark;
 
 // Byline
 $color-fg-byline: $color-shade-darkest;
