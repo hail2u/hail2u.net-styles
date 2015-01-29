@@ -1,6 +1,8 @@
 // Post List
-.post-list ol {
-  padding-left: 0;
+.post-list {
+  ol {
+    padding-left: 0;
+  }
 
   li {
     @extend %positioning-root;
@@ -14,27 +16,12 @@
 
     color: $color-fg-post-list-time;
     display: block;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    li {
-      padding-right: $padding-right-post-list-item-content;
-    }
-
-    time {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
+    font-size: rem($ratio-text-post-list-time);
   }
 
   @media (min-width: $breakpoint-full) {
-    li {
-      padding-right: 0;
-    }
-
     time {
-      right: 100%;
+      line-height: $line-height-post-list-time;
     }
   }
 }

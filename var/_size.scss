@@ -202,7 +202,8 @@ $height-icon-list-icon: ($width-content / pow($ratio-golden, 5));
 
 // Post List
 $margin-top-post-list-item: $margin-mini;
-$padding-right-post-list-item-content: (rem(5) + $width-gap-half);
+
+$line-height-post-list-time: ($line-height / $ratio-text-epsilon);
 
 // Pull Quote
 $line-height-pull-quote: $line-height-mini;
