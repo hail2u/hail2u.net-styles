@@ -20,10 +20,6 @@
     line-height: 1;
   }
 
-  time {
-    color: $color-fg-post-list-time;
-  }
-
   @media (min-width: $breakpoint-content) {
     .date {
       float: right;
