@@ -1,17 +1,9 @@
 // Logo
 .logo {
+  background-color: transparent;
+  display: block;
   height: $height-logo;
   margin-left: $margin-left-logo;
   margin-top: $margin-top-logo;
-
-  a,
-  mark {
-    display: block;
-    height: $height-logo;
-    width: $width-logo;
-  }
-
-  mark {
-    background-color: transparent;
-  }
+  width: $width-logo;
 }
