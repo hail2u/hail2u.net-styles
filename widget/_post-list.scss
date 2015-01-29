@@ -23,9 +23,16 @@
     color: $color-fg-post-list-time;
   }
 
+  @media (min-width: $breakpoint-content) {
+    .date {
+      float: right;
+      line-height: $line-height-post-list-date;
+    }
+  }
+
   @media (min-width: $breakpoint-full) {
     .date {
-      line-height: $line-height-post-list-date;
+      float: none;
     }
   }
 }
