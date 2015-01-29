@@ -19,6 +19,10 @@
     font-size: rem($ratio-text-post-list-date);
   }
 
+  time {
+    color: $color-fg-post-list-time;
+  }
+
   @media (min-width: $breakpoint-full) {
     .date {
       line-height: $line-height-post-list-date;
