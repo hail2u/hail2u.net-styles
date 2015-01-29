@@ -205,6 +205,10 @@ $margin-top-post-list-item: $margin-mini;
 
 $line-height-post-list-date: ($line-height / $ratio-text-epsilon);
 
+$margin-left-post-list-date-sep: $width-gap;
+$height-post-list-date-sep:  (rem($ratio-text-epsilon / 2) - $width-border-thin * 3);
+$width-border-post-list-date-sep: $width-border-thin;
+
 // Pull Quote
 $line-height-pull-quote: $line-height-mini;
 $margin-side-pull-quote: $width-gap;

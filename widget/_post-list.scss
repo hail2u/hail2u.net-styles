@@ -30,6 +30,17 @@
   @media (min-width: $breakpoint-full) {
     .date {
       float: none;
+      overflow-x: hidden;
+      white-space: nowrap;
+
+      &::after {
+        border-top: $width-border-post-list-date-sep dotted $color-border-post-list-date-sep;
+        content: '';
+        display: inline-block;
+        height: $height-post-list-date-sep;
+        margin-left: $margin-left-post-list-date-sep;
+        width: 100%;
+      }
     }
   }
 }
