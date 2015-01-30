@@ -5,6 +5,24 @@
  * Licensed under MIT: http://hail2u.mit-license.org/2011
  */
 
+// Normalization
+@import 'node_modules/modularized-normalize-scss/base/body';
+
+@import 'node_modules/modularized-normalize-scss/html5/blocks';
+@import 'node_modules/modularized-normalize-scss/html5/inline-blocks';
+@import 'node_modules/modularized-normalize-scss/html5/audio';
+@import 'node_modules/modularized-normalize-scss/html5/hidden';
+
+@import 'node_modules/modularized-normalize-scss/embed/img';
+@import 'node_modules/modularized-normalize-scss/embed/svg';
+
+@import 'node_modules/modularized-normalize-scss/grouping/hr';
+@import 'node_modules/modularized-normalize-scss/grouping/pre';
+
+@import 'node_modules/modularized-normalize-scss/forms/fix-font';
+
+@import 'node_modules/modularized-normalize-scss/tables/fix-cell-spacing';
+
 // Function
 @import 'node_modules/hail2u-scss-functions/color/encode-color';
 @import 'node_modules/hail2u-scss-functions/number/em';
