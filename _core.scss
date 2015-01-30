@@ -49,8 +49,6 @@ p {
   }
 }
 
-@import 'node_modules/hail2u-scss-partials/vendor-extension';
-
 hr {
   @extend %ir;
   @extend %margin;
