@@ -233,8 +233,8 @@ $line-height-read-older-title: $line-height-heading;
 $margin-top-searchbox: $margin;
 $width-max-searchbox: ($width-content / $ratio-golden);
 
-$padding-right-searchbox-input: rem($line-height);
-$padding-left-searchbox-input: $padding;
+$padding-right-searchbox-input: $padding;
+$padding-left-searchbox-input: rem($line-height);
 $width-border-searchbox-input: $width-border-thin;
 $height-searchbox-input: (rem($line-height) + $padding-mini * 2);
 
