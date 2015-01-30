@@ -116,6 +116,7 @@ $line-height-tagline: $line-height-mini;
 $margin-top-tagline: ($margin * $ratio-golden);
 $margin-top-tagline-content: ($margin * pow($ratio-golden, 2));
 $margin-top-tagline-full: ($margin * pow($ratio-golden, 3));
+$padding-left-tagline-full: $width-gap-half;
 $width-max-tagline-full: $width-full;
 
 // Site Navigation
