@@ -2,33 +2,32 @@
 .read-older {
   @extend %link-underline-removal;
 
+  margin-top: $margin-top-read-older;
+
+  a::before {
+    color: $color-fg-read-older-label;
+    content: 'Read older:';
+    display: block;
+    font-weight: bold;
+    margin-right: $margin-right-read-older-label;
+    text-transform: uppercase;
+    width: $width-read-older-label;
+  }
+
   p {
     @extend %ellipsing;
 
     font-size: rem($ratio-text-read-older-title);
     line-height: $line-height-read-older-title;
-    margin-top: $margin-top-read-older-title;
-
-    &::before {
-      color: $color-fg-read-older-label;
-      content: 'Read older:';
-      display: block;
-      font-size: rem(1);
-      font-weight: bold;
-      margin-right: $margin-right-read-older-label;
-      text-transform: uppercase;
-      width: $width-read-older-label;
-    }
+    margin-top: 0;
   }
 
   @media (min-width: $breakpoint-full) {
-    p {
-      margin-left: $margin-left-read-older-title;
+    margin-left: $margin-left-read-older-full;
 
-      &::before {
-        display: inline-block;
-        font-size: inherit;
-      }
+    a::before {
+      float: left;
+      line-height: $line-height-read-older-label-full;
     }
   }
 }
