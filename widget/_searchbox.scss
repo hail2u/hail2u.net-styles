@@ -3,12 +3,11 @@
 @import '../node_modules/hail2u-scss-partials/vendor-extension';
 
 .searchbox {
-  max-width: $width-max-searchbox;
-
   .content & {
     @extend %positioning-root;
 
     margin-top: $margin-top-searchbox;
+    max-width: $width-max-searchbox;
   }
 
   .query {

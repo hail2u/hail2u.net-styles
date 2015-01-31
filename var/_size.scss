@@ -147,6 +147,9 @@ $top-site-search: $margin-huge;
 $top-site-search-content: ($margin + $margin-huge - ((((rem($line-height) + $padding-mini * 2)) - rem($ratio-text-epsilon * $line-height)) / 2));
 $top-site-search-full: ($margin-huge - ((((rem($line-height) + $padding-mini * 2)) - rem($ratio-text-epsilon * $line-height)) / 2));
 
+$width-max-site-search: ($width-content / $ratio-golden);
+$width-max-site-search-content: ($width-content / pow($ratio-golden, 2));
+
 // Global Footer
 $margin-bottom-global-footer: $margin-large;
 
