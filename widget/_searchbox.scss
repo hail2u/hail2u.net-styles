@@ -15,12 +15,12 @@
     @include box-sizing(border-box);
 
     -webkit-appearance: none;
-    background-color: $color-bg-searchbox-input;
-    border: $width-border-searchbox-input solid $color-border-searchbox-input;
+    background-color: $color-bg-searchbox-query;
+    border: $width-border-searchbox-query solid $color-border-searchbox-query;
     border-radius: 0;
-    color: $color-fg-searchbox-input;
-    height: $height-searchbox-input;
-    padding: 0 $padding-right-searchbox-input 0 $padding-left-searchbox-input;
+    color: $color-fg-searchbox-query;
+    height: $height-searchbox-query;
+    padding: 0 $padding-right-searchbox-query 0 $padding-left-searchbox-query;
     width: 100%;
   }
 

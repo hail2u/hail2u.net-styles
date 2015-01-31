@@ -230,10 +230,10 @@ $line-height-read-older-title: $line-height-mini;
 $margin-top-searchbox: $margin;
 $width-max-searchbox: ($width-content / $ratio-golden);
 
-$padding-right-searchbox-input: $padding;
-$padding-left-searchbox-input: rem($line-height);
-$width-border-searchbox-input: $width-border-thin;
-$height-searchbox-input: (rem($line-height) + $padding-mini * 2);
+$padding-right-searchbox-query: $padding;
+$padding-left-searchbox-query: rem($line-height);
+$width-border-searchbox-query: $width-border-thin;
+$height-searchbox-query: (rem($line-height) + $padding-mini * 2);
 
 $width-searchbox-button: rem($line-height);
 $height-searchbox-button: rem($line-height);
