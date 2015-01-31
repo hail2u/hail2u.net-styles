@@ -1,4 +1,6 @@
 // Footlinks
+@import '../node_modules/hail2u-scss-partials/corporate-colors';
+
 .footlinks {
   ul {
     margin-top: $margin-top-footlinks;
@@ -14,6 +16,24 @@
 
     &:first-child::after {
       content: ' ·\a0';
+    }
+  }
+
+  a {
+    &[href^='https://twitter.com/'] {
+      color: $cc-twitter;
+    }
+
+    &[href^='https://www.facebook.com/'] {
+      color: $cc-facebook;
+    }
+
+    &[href$='.tumblr.com/'] {
+      color: $cc-tumblr;
+    }
+
+    &[type='application/rss+xml'] {
+      color: $cc-feed;
     }
   }
 
