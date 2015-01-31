@@ -1,0 +1,42 @@
+// Share Buttons
+@import '../node_modules/hail2u-scss-partials/corporate-colors';
+
+.share-buttons {
+  @extend %link-underline-removal;
+
+  ul {
+    @extend %float;
+
+    padding-left: 0;
+  }
+
+  li {
+    display: table-cell;
+    padding-right: $padding-right-share-buttons-item;
+  }
+
+  a {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto $height-bg-share-buttons-link;
+    display: inline-block;
+    padding-left: $padding-left-share-buttons-link;
+  }
+
+  .twitter-tweet a {
+    background-image: $image-share-buttons-twitter;
+    color: $cc-twitter;
+  }
+
+  .facebook-share a {
+    background-image: $image-share-buttons-facebook;
+    color: $cc-facebook;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    ul {
+      bottom: 0;
+      top: auto;
+    }
+  }
+}
