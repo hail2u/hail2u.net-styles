@@ -220,9 +220,7 @@ $width-pull-quote-full: ($width-supplement + $width-gap + $width-supplement);
 $margin-top-pull-quote-body: $margin;
 
 // Read Older
-$margin-top-read-older: $margin-top-heading;
-
-$line-height-read-older-label-full: ($ratio-text-read-older-title * $line-height-heading);
+$margin-top-read-older-label: $margin-top-heading;
 
 $line-height-read-older-title: $line-height-heading;
 
