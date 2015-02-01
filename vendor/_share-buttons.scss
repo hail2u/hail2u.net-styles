@@ -7,11 +7,13 @@
   ul {
     @extend %float;
 
+    font-size: rem($ratio-text-share-buttons);
     padding-left: 0;
   }
 
   li {
     display: table-cell;
+    line-height: $line-height-share-buttons-item;
     padding-right: $padding-right-share-buttons-item;
   }
 
@@ -31,6 +33,11 @@
   .facebook-share a {
     background-image: $image-share-buttons-facebook;
     color: $cc-facebook;
+  }
+
+  .hatena-bookmark a {
+    background-image: $image-share-buttons-hatena;
+    color: $color-share-buttons-hatena;
   }
 
   @media (min-width: $breakpoint-full) {

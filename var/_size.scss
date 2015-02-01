@@ -253,10 +253,11 @@ $width-border-seemore: $width-border;
 $margin-left-topic-more: rem(1 / 3);
 
 // Share Buttons
+$line-height-share-buttons-item: rem($line-height);
 $padding-right-share-buttons-item: $width-gap-half;
 
-$padding-left-share-buttons-link: (rem($line-height) * .8 + $padding-mini);
-$height-bg-share-buttons-link: percentage(.8);
+$padding-left-share-buttons-link: ((rem($line-height) * .8 + $padding-mini) * $ratio-text-epsilon);
+$height-bg-share-buttons-link: (percentage(.8) * $ratio-text-epsilon);
 
 // Google AdSense
 $margin-top-adsbygoogle: $margin;
