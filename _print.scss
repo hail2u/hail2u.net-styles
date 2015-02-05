@@ -6,13 +6,14 @@
 
   // Hiding
   aside,
-  nav,
   hr::before,
-  body > header h1,
+  .site-navigation,
   .footlinks,
+  .byline::before,
   .icon-list,
+  .searchbox,
   .seealso::before,
-  .topic > a > p::after {
+  .topic .section-footer + p::after {
     display: none;
   }
 
@@ -103,18 +104,21 @@
     white-space: normal;
   }
 
-  body > header,
-  main,
-  body > footer {
+  .global-header,
+  .content,
+  .global-footer {
     max-width: none;
   }
 
-  body > header h1 {
-    display: block;
+  .logo {
     margin-top: $margin;
   }
 
-  main {
+  .content {
     margin-top: 0;
+  }
+
+  .byline {
+    margin-top: $margin-huge;
   }
 }
