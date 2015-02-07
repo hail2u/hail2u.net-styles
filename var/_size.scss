@@ -113,7 +113,6 @@ $width-logo: ($width-supplement / pow($ratio-golden, 4));
 $height-logo: ($width-supplement / pow($ratio-golden, 4));
 
 // Tagline
-$line-height-tagline: $line-height-mini;
 $margin-top-tagline: ($margin * $ratio-golden);
 $margin-top-tagline-content: ($margin * pow($ratio-golden, 2));
 $margin-top-tagline-full: ($margin * pow($ratio-golden, 3));
