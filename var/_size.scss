@@ -51,7 +51,7 @@ $breakpoint-full: (($width-full-outer + $width-scrollbar) * $ratio-text-html-ful
 // Placeholder Class
 $width-max-centering: $width-content;
 $padding-side-centering: $width-gap-half;
-$padding-left-centering-full: ($width-gap-half + $width-supplement + $width-gap);
+$padding-left-centering-full: ($width-supplement-outer + $width-gap-half);
 
 $margin-right-float-full: $width-gap;
 $width-float-full: $width-supplement;
@@ -62,7 +62,7 @@ $margin-top-margin: $margin;
 
 $margin-top-margin-after-heading: $margin-mini;
 
-$margin-top-pin-full: rem(($ratio-text-beta * $line-height-mini - $ratio-text-epsilon * $line-height) / 2);
+$margin-top-pin-full: rem(($ratio-text-heading-primary * $line-height-heading - $ratio-text-pin * $line-height) / 2);
 
 // Core
 $line-height-body: ($line-height * .9);
@@ -79,22 +79,22 @@ $line-height-pre: $line-height-mini;
 
 $width-border-blockquote: $width-border-bold;
 $padding-left-blockquote: $width-gap;
-$margin-left-blockquote-full: (- ($width-border-bold + $width-gap));
+$margin-left-blockquote-full: (- ($width-border-blockquote + $padding-left-blockquote));
 
 $padding-left-list: $indent;
 $padding-left-list-nested-full: $padding-left-list;
 
-$padding-left-dd: ($indent * $ratio-text-zeta);
+$padding-left-dd: $indent;
 
 $margin-top-figcaption: $margin-mini;
-$padding-figcaption-full: ($width-border-thin + $margin-mini);
 $width-border-figcaption: $width-border-thin;
+$padding-figcaption-full: ($width-border-figcaption + $margin-top-figcaption);
 
 $padding-top-figcaption-blockquote: $margin-mini;
 
 $margin-a-underline: em(1 + remove-unit($width-border-thin));
 $width-a-underline: ($width-border-thin * 2);
-$height-a-underline: ($width-border-thin * 2);
+$height-a-underline: $width-a-underline;
 
 $width-border-strong: $width-border-thin;
 
@@ -108,21 +108,21 @@ $width-border-th-thead: $width-border;
 
 // Logo
 $margin-left-logo: $width-gap-half;
-$margin-top-logo: $width-gap-half;
+$margin-top-logo: $margin-left-logo;
 $width-logo: ($width-supplement / pow($ratio-golden, 4));
-$height-logo: ($width-supplement / pow($ratio-golden, 4));
+$height-logo: $width-logo;
 
 // Tagline
 $margin-top-tagline: ($margin * $ratio-golden);
-$margin-top-tagline-content: ($margin * pow($ratio-golden, 2));
-$margin-top-tagline-full: ($margin * pow($ratio-golden, 3));
+$margin-top-tagline-content: $margin-large;
+$margin-top-tagline-full: $margin-huge;
 $padding-left-tagline-full: $width-gap-half;
 $width-max-tagline-full: $width-full;
 
 // Site Navigation
 $right-site-navigation: $width-gap-half;
 
-$line-height-site-navigation-item: ($width-supplement / pow($ratio-golden, 4));
+$line-height-site-navigation-item: $height-logo;
 $padding-left-site-navigation-item: $width-gap-half;
 $padding-left-site-navigation-item-content: $width-gap;
 
@@ -130,22 +130,13 @@ $width-border-site-navigation-mark: $width-border;
 $padding-bottom-site-navigation-mark: $padding-mini;
 
 // Content
-$margin-top-content: (- ($margin-huge - ($margin * $ratio-golden)));
-$margin-top-content-content: (- ($margin-huge - ($margin * pow($ratio-golden, 2))));
-$margin-top-content-full: (- ($margin-huge - ($margin * pow($ratio-golden, 3))));
+$margin-top-content: (- ($margin-top-heading-primary - $margin-top-tagline));
+$margin-top-content-content: (- ($margin-top-heading-primary - $margin-top-tagline-content));
+$margin-top-content-full: (- ($margin-top-heading-primary - $margin-top-tagline-full));
 
 // First Heading
-$margin-top-first-heading: ($margin-huge + rem($line-height) * $ratio-text-epsilon);
-$margin-top-first-heading-full: ($margin * pow($ratio-golden, 3));
-
-// Site Search
-$right-site-search-content: $width-gap-half;
-$top-site-search: $margin-huge;
-$top-site-search-content: ($margin + $margin-huge - ((((rem($line-height) + $padding-mini * 2)) - rem($ratio-text-epsilon * $line-height)) / 2));
-$top-site-search-full: ($margin-huge - ((((rem($line-height) + $padding-mini * 2)) - rem($ratio-text-epsilon * $line-height)) / 2));
-
-$width-max-site-search: ($width-content / $ratio-golden);
-$width-max-site-search-content: ($width-content / pow($ratio-golden, 2));
+$margin-top-first-heading: ($margin-top-heading-primary + rem($line-height) * $ratio-text-pin);
+$margin-top-first-heading-full: $margin-top-heading-primary;
 
 // Global Footer
 $margin-bottom-global-footer: $margin-large;
@@ -158,7 +149,7 @@ $margin-top-footlinks-full: $margin-huge;
 $left-byline-full: $width-gap-half;
 
 $margin-bottom-byline-border: $margin-mini;
-$width-byline-border: ($width-supplement / pow($ratio-golden, 4));
+$width-byline-border: $width-logo;
 $width-border-byline-border: $width-border;
 
 // Ads
@@ -191,7 +182,7 @@ $margin-left-full-width-full: (- ($width-gap-half + $width-supplement + $width-g
 
 $margin-left-full-width-caption: $width-gap-half;
 $margin-top-full-width-caption-full: $margin;
-$padding-left-full-width-caption-full: ($width-gap-half - $width-border-thin);
+$padding-left-full-width-caption-full: ($margin-left-full-width-caption - $width-border-thin);
 
 // Icon List
 $margin-side-icon-list: (- $width-gap-half);
@@ -206,11 +197,11 @@ $height-icon-list-icon: ($width-content / pow($ratio-golden, 5));
 // Post List
 $margin-top-post-list-item: $margin-mini;
 
-$line-height-post-list-date: ($line-height / $ratio-text-epsilon);
+$line-height-post-list-date: ($line-height / $ratio-text-post-list-date);
 
 $margin-left-post-list-date-sep: $width-gap;
-$height-post-list-date-sep:  (rem($ratio-text-epsilon / 2) - $width-border-thin * 3);
 $width-border-post-list-date-sep: $width-border-thin;
+$height-post-list-date-sep:  (rem($ratio-text-post-list-date / 2) - $width-border-post-list-date-sep * 3);
 
 // Pull Quote
 $line-height-pull-quote: $line-height-mini;
@@ -228,18 +219,27 @@ $line-height-read-older-title: $line-height-mini;
 $margin-top-searchbox: $margin;
 $width-max-searchbox: ($width-content / $ratio-golden);
 
-$padding-right-searchbox-query: $padding;
-$padding-left-searchbox-query: rem($line-height);
-$width-border-searchbox-query: $width-border-thin;
-$height-searchbox-query: (rem($line-height) + $padding-mini * 2);
-
 $width-searchbox-button: rem($line-height);
-$height-searchbox-button: rem($line-height);
+$height-searchbox-button: $width-searchbox-button;
 $top-searchbox-button: $padding-mini;
 
+$padding-right-searchbox-query: $padding;
+$padding-left-searchbox-query: $width-searchbox-button;
+$width-border-searchbox-query: $width-border-thin;
+$height-searchbox-query: ($height-searchbox-button + $padding-mini * 2);
+
+// Site Search
+$right-site-search-content: $width-gap-half;
+$top-site-search: $margin-huge;
+$top-site-search-content: ($margin-top-footlinks - (($height-searchbox-query - rem($ratio-text-global-footer * $line-height)) / 2));
+$top-site-search-full: ($margin-top-footlinks-full - (($height-searchbox-query - rem($ratio-text-global-footer * $line-height)) / 2));
+
+$width-max-site-search: ($width-content / $ratio-golden);
+$width-max-site-search-content: ($width-content / pow($ratio-golden, 2));
+
 // Seealso
-$width-seealso-icon: rem($ratio-text-gamma);
-$margin-right-seealso-icon: rem($ratio-text-gamma / 4);
+$width-seealso-icon: rem($ratio-text-seealso);
+$margin-right-seealso-icon: rem($ratio-text-seealso / 4);
 
 // Seemore
 $width-border-seemore: $width-border;
@@ -251,8 +251,8 @@ $margin-left-topic-more: rem(1 / 3);
 $line-height-share-buttons-item: rem($line-height);
 $padding-right-share-buttons-item: $width-gap-half;
 
-$padding-left-share-buttons-link: ((rem($line-height) * .8 + $padding-mini) * $ratio-text-epsilon);
-$height-bg-share-buttons-link: (percentage(.8) * $ratio-text-epsilon);
+$padding-left-share-buttons-link: (($line-height-share-buttons-item * .8 + $padding-mini) * $ratio-text-pin);
+$height-bg-share-buttons-link: (percentage(.8) * $ratio-text-pin);
 
 // Google AdSense
 $margin-top-adsbygoogle: $margin;

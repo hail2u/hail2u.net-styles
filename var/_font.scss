@@ -12,5 +12,5 @@ $font-family-code: 'Source Code Pro', 'Emoji', monospace;
 $font-family-code-print: monospace;
 
 // Tagline
-$font-family-tagline: 'Megrim', 'Source Sans Pro', 'Emoji', sans-serif;
-$font-family-tagline-print: serif;
+$font-family-tagline: 'Megrim', $font-family-body;
+$font-family-tagline-print: $font-family-body-print;
