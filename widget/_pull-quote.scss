@@ -8,7 +8,6 @@
   text-align: center;
 
   p {
-    margin-top: $margin-top-pull-quote-body;
     quotes: '\201c' '\201d'; // Left Double Quotation Mark, Double Low-9 Quotation Mark
 
     &::before {
