@@ -117,16 +117,12 @@ ol {
     @extend %margin-after-heading;
   }
 
-  @media (min-width: $breakpoint-content) {
-    padding-left: $padding-left-list-content;
-  }
-
   @media (min-width: $breakpoint-full) {
     padding-left: 0;
 
     ul,
     ol {
-      padding-left: $padding-left-list-full;
+      padding-left: $padding-left-list-nested-full;
     }
   }
 }

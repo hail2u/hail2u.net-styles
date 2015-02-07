@@ -81,9 +81,8 @@ $width-border-blockquote: $width-border-bold;
 $padding-left-blockquote: $width-gap;
 $margin-left-blockquote-full: (- ($width-border-bold + $width-gap));
 
-$padding-left-list: ($indent * $ratio-text-zeta);
-$padding-left-list-content: $indent;
-$padding-left-list-full: $indent;
+$padding-left-list: $indent;
+$padding-left-list-nested-full: $padding-left-list;
 
 $padding-left-dd: ($indent * $ratio-text-zeta);
 
