@@ -27,7 +27,7 @@
     // ir-pseudo-element does not work on `input`
     @include ir-text-indent;
 
-    background-color: $color-bg-searchbox-button;
+    background-color: transparent;
     background-image: $image-searchbox-button;
     background-position: center;
     background-repeat: no-repeat;
