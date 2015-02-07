@@ -1,3 +1,5 @@
+exclude: 'node_modules/**'
+
 linters:
   Comment:
     enabled: false
