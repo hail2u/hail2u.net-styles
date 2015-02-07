@@ -88,7 +88,8 @@ $padding-left-dd: $indent;
 
 $margin-top-figcaption: $margin-mini;
 $width-border-figcaption: $width-border-thin;
-$padding-figcaption-full: ($width-border-figcaption + $margin-top-figcaption);
+$padding-top-figcaption-full: ($width-border-figcaption + $margin-top-figcaption);
+$padding-bottom-figcaption-at-last-full: $padding-top-figcaption-full;
 
 $padding-top-figcaption-blockquote: $margin-mini;
 
