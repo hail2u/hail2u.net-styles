@@ -1,6 +1,6 @@
 // Site Search
 .site-search {
-  @extend %positioning-root;
+  @extend %search-form;
 
   max-width: $width-max-site-search;
   top: $top-site-search;

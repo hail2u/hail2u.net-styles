@@ -1,0 +1,38 @@
+// Search Form
+@import '../node_modules/hail2u-scss-partials/image-replacement';
+@import '../node_modules/hail2u-scss-partials/vendor-extension';
+
+%search-form {
+  @extend %positioning-root;
+
+  .query {
+    @include box-sizing(border-box);
+
+    -webkit-appearance: none;
+    background-color: $color-bg-search-form-query;
+    border: $width-border-search-form-query solid $color-border-search-form-query;
+    border-radius: 0;
+    color: $color-fg-search-form-query;
+    height: $height-search-form-query;
+    padding: 0 $padding-right-search-form-query 0 $padding-left-search-form-query;
+    width: 100%;
+  }
+
+  .button {
+    // ir-pseudo-element does not work on `input`
+    @include ir-text-indent;
+
+    background-color: transparent;
+    background-image: $image-search-form-button;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border: 0;
+    height: $height-search-form-button;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    top: $top-search-form-button;
+    width: $width-search-form-button;
+  }
+}

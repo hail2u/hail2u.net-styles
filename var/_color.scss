@@ -57,6 +57,12 @@ $color-fg-link-underline-removal: $color-accent;
 
 $color-fg-pin: $color-shade-lightest;
 
+$color-fg-search-form-query: $color-dark;
+$color-bg-search-form-query: $color-light-light;
+$color-border-search-form-query: $color-tint-light;
+
+$color-fg-search-form-button: $color-shade-light;
+
 // Core
 $color-fg-body: $color-dark;
 $color-bg-body: $color-light;
@@ -112,13 +118,6 @@ $color-fg-pull-quote: $color-shade-dark;
 
 // Read Older
 $color-fg-read-older-label: $color-shade-darkest;
-
-// Searchbox
-$color-fg-searchbox-query: $color-dark;
-$color-bg-searchbox-query: $color-light-light;
-$color-border-searchbox-query: $color-tint-light;
-
-$color-fg-searchbox-button: $color-shade-light;
 
 // Seealso
 $color-fg-seealso: $color-shade-dark;

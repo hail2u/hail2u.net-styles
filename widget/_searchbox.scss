@@ -1,43 +1,6 @@
 // Searchbox
-@import '../node_modules/hail2u-scss-partials/image-replacement';
-@import '../node_modules/hail2u-scss-partials/vendor-extension';
-
 .searchbox {
-  .content & {
-    @extend %positioning-root;
+  @extend %search-form;
 
-    margin-top: $margin-top-searchbox;
-    max-width: $width-max-searchbox;
-  }
-
-  .query {
-    @include box-sizing(border-box);
-
-    -webkit-appearance: none;
-    background-color: $color-bg-searchbox-query;
-    border: $width-border-searchbox-query solid $color-border-searchbox-query;
-    border-radius: 0;
-    color: $color-fg-searchbox-query;
-    height: $height-searchbox-query;
-    padding: 0 $padding-right-searchbox-query 0 $padding-left-searchbox-query;
-    width: 100%;
-  }
-
-  .button {
-    // ir-pseudo-element does not work on `input`
-    @include ir-text-indent;
-
-    background-color: transparent;
-    background-image: $image-searchbox-button;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    border: 0;
-    height: $height-searchbox-button;
-    left: 0;
-    padding: 0;
-    position: absolute;
-    top: $top-searchbox-button;
-    width: $width-searchbox-button;
-  }
+  max-width: $width-max-searchbox;
 }

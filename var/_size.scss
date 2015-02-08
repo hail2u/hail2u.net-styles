@@ -65,6 +65,17 @@ $margin-top-margin-after-heading: $margin-mini;
 $margin-top-pin-full: rem(($ratio-text-heading-primary * $line-height-heading - $ratio-text-pin * $line-height) / 2);
 $width-pin-full: $width-float-full;
 
+$margin-top-search-form: $margin;
+
+$width-search-form-button: rem($line-height);
+$height-search-form-button: $width-search-form-button;
+$top-search-form-button: $padding-mini;
+
+$padding-right-search-form-query: $padding;
+$padding-left-search-form-query: $width-search-form-button;
+$width-border-search-form-query: $width-border-thin;
+$height-search-form-query: ($height-search-form-button + $padding-mini * 2);
+
 // Core
 $line-height-body: ($line-height * .9);
 $line-height-body-content: $line-height;
@@ -147,6 +158,15 @@ $margin-bottom-global-footer: $margin-large;
 $margin-top-footlinks: ($margin + $margin-huge);
 $margin-top-footlinks-full: $margin-huge;
 
+// Site Search
+$right-site-search-content: $width-gap-half;
+$top-site-search: $margin-huge;
+$top-site-search-content: ($margin-top-footlinks - (($height-search-form-query - rem($ratio-text-global-footer * $line-height)) / 2));
+$top-site-search-full: ($margin-top-footlinks-full - (($height-search-form-query - rem($ratio-text-global-footer * $line-height)) / 2));
+
+$width-max-site-search: ($width-content / $ratio-golden);
+$width-max-site-search-content: ($width-content / pow($ratio-golden, 2));
+
 // Byline
 $left-byline-full: $width-gap-half;
 
@@ -218,26 +238,7 @@ $margin-top-read-older-label: $margin-large;
 $line-height-read-older-title: $line-height-mini;
 
 // Searchbox
-$margin-top-searchbox: $margin;
 $width-max-searchbox: ($width-content / $ratio-golden);
-
-$width-searchbox-button: rem($line-height);
-$height-searchbox-button: $width-searchbox-button;
-$top-searchbox-button: $padding-mini;
-
-$padding-right-searchbox-query: $padding;
-$padding-left-searchbox-query: $width-searchbox-button;
-$width-border-searchbox-query: $width-border-thin;
-$height-searchbox-query: ($height-searchbox-button + $padding-mini * 2);
-
-// Site Search
-$right-site-search-content: $width-gap-half;
-$top-site-search: $margin-huge;
-$top-site-search-content: ($margin-top-footlinks - (($height-searchbox-query - rem($ratio-text-global-footer * $line-height)) / 2));
-$top-site-search-full: ($margin-top-footlinks-full - (($height-searchbox-query - rem($ratio-text-global-footer * $line-height)) / 2));
-
-$width-max-site-search: ($width-content / $ratio-golden);
-$width-max-site-search-content: ($width-content / pow($ratio-golden, 2));
 
 // Seealso
 $width-seealso-icon: rem($ratio-text-seealso);
