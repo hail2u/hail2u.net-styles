@@ -113,13 +113,6 @@ $margin-top-logo: $margin-left-logo;
 $width-logo: ($width-supplement / pow($ratio-golden, 4));
 $height-logo: $width-logo;
 
-// Tagline
-$margin-top-tagline: ($margin * $ratio-golden);
-$margin-top-tagline-content: $margin-large;
-$margin-top-tagline-full: $margin-huge;
-$padding-left-tagline-full: $width-gap-half;
-$width-max-tagline-full: $width-full;
-
 // Site Navigation
 $right-site-navigation: $width-gap-half;
 
@@ -129,6 +122,13 @@ $padding-left-site-navigation-item-content: $width-gap;
 
 $width-border-site-navigation-mark: $width-border;
 $padding-bottom-site-navigation-mark: $padding-mini;
+
+// Tagline
+$margin-top-tagline: ($margin * $ratio-golden);
+$margin-top-tagline-content: $margin-large;
+$margin-top-tagline-full: $margin-huge;
+$padding-left-tagline-full: $width-gap-half;
+$width-max-tagline-full: $width-full;
 
 // Content
 $margin-top-content: (- ($margin-top-heading-primary - $margin-top-tagline));
