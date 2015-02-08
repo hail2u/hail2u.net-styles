@@ -63,6 +63,7 @@ $margin-top-margin: $margin;
 $margin-top-margin-after-heading: $margin-mini;
 
 $margin-top-pin-full: rem(($ratio-text-heading-primary * $line-height-heading - $ratio-text-pin * $line-height) / 2);
+$width-pin-full: $width-float-full;
 
 // Core
 $line-height-body: ($line-height * .9);
