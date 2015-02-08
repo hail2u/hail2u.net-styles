@@ -1,7 +1,7 @@
 {
   "name": "hail2u.net-styles",
   "description": "Repository for tracking (or stalking) changes on CSS or Sassy CSS (SCSS) files for Hail2u.net.",
-  "version": "6.63.14",
+  "version": "6.63.15",
   "author": "Kyo Nagashima <hail2u@gmail.com> (https://kyonagashima.com/)",
   "bugs": {
     "url": "https://github.com/hail2u/hail2u.net-styles/issues"
