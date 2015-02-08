@@ -5,6 +5,7 @@
   bottom: 100%;
   font-size: rem($ratio-text-pin);
   position: absolute;
+  width: 100%;
 
   p {
     @extend %ellipsing;
