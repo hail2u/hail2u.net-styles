@@ -174,7 +174,6 @@ figcaption {
   @media (min-width: $breakpoint-full) {
     border-top: $width-border-figcaption solid $color-border-figcaption;
     padding-top: $padding-top-figcaption-full;
-    top: 0;
 
     &:last-child {
       border-bottom: $width-border-figcaption solid $color-border-figcaption;
