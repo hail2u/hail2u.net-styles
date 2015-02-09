@@ -163,19 +163,16 @@ figcaption {
   @extend %float;
 
   color: $color-fg-figcaption;
-  margin-top: $margin-top-figcaption;
 
   blockquote + &:last-child {
     border-left: $width-border-blockquote solid $color-border-blockquote;
     color: $color-fg-blockquote;
-    margin-top: 0;
     padding-left: $padding-left-blockquote;
     padding-top: $padding-top-figcaption-blockquote;
   }
 
   @media (min-width: $breakpoint-full) {
     border-top: $width-border-figcaption solid $color-border-figcaption;
-    margin-top: 0;
     padding-top: $padding-top-figcaption-full;
     top: 0;
 
