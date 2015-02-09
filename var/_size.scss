@@ -39,7 +39,7 @@ $width-full: (- $width-gap-half + $width-full-outer - $width-gap-half);
 
 // Breakpoint
 $width-scrollbar: 1.5rem;
-$breakpoint-content: ($width-content-outer + $width-scrollbar);
+$breakpoint-content: (($width-content-outer + $width-scrollbar) * $ratio-text-html-content);
 @media (min-width: $breakpoint-content) {
   /*! Applied wider than #{$breakpoint-content} */
 }

@@ -6,7 +6,11 @@ html {
 
   font-size: percentage($ratio-text-html);
 
-  @media (min-width: $breakpoint-full) {
+  @media (min-width: ($breakpoint-content * $ratio-mod-html)) {
+    font-size: percentage($ratio-text-html-content);
+  }
+
+  @media (min-width: ($breakpoint-full * $ratio-mod-html)) {
     font-size: percentage($ratio-text-html-full);
   }
 }
