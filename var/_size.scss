@@ -19,6 +19,7 @@ $width-border-bold: ($width-border * 2);
 // Padding
 $padding: .25rem;
 $padding-mini: ($padding / 2);
+$padding-large: ($padding * 2);
 
 // Column
 $column: 36rem;
@@ -118,7 +119,7 @@ $width-border-strong: $width-border-thin;
 $letter-spacing-abbr: $width-border-thin;
 
 $width-border-td: $width-border-thin;
-$padding-td: ($padding * 2);
+$padding-td: $padding-large;
 
 $width-border-th-thead: $width-border;
 
@@ -255,7 +256,7 @@ $margin-left-topic-more: rem(1 / 3);
 
 // Share Buttons
 $line-height-share-buttons-item: rem($line-height);
-$padding-right-share-buttons-item: ($padding * 2);
+$padding-right-share-buttons-item: $padding-large;
 
 $padding-left-share-buttons-link: (($line-height-share-buttons-item * .8 + $padding-mini) * $ratio-text-pin);
 $height-bg-share-buttons-link: (percentage(.8) * $ratio-text-pin);
