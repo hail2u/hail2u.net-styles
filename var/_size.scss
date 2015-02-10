@@ -78,7 +78,9 @@ $height-search-form-query: ($height-search-form-button + $padding-mini * 2);
 
 // Core
 $breakpoint-width-html-content: ($breakpoint-content * $ratio-mod-html-content);
+$breakpoint-height-html-content: ($breakpoint-width-html-content / 2);
 $breakpoint-width-html-full: ($breakpoint-full * $ratio-mod-html-full);
+$breakpoint-height-html-full: ($breakpoint-width-html-full / 2);
 
 $line-height-body: ($line-height * .9);
 $line-height-body-content: $line-height;
