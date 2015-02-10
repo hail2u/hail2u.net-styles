@@ -27,7 +27,8 @@ $ratio-text-pin: $ratio-text-epsilon;
 $ratio-text-html: $ratio-text-delta;
 $ratio-text-html-full: $ratio-text-gamma;
 $ratio-text-html-content: (($ratio-text-html + $ratio-text-html-full) / 2);
-$ratio-mod-html: $ratio-golden;
+$ratio-mod-html-full: $ratio-golden;
+$ratio-mod-html-content: ((1 + $ratio-text-html-full) / 2);
 
 $ratio-text-heading-primary: $ratio-text-beta;
 
