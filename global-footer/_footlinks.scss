@@ -19,24 +19,6 @@
     }
   }
 
-  a {
-    &[href^='https://twitter.com/'] {
-      color: $cc-twitter;
-    }
-
-    &[href^='https://www.facebook.com/'] {
-      color: $cc-facebook;
-    }
-
-    &[href$='.tumblr.com/'] {
-      color: $cc-tumblr;
-    }
-
-    &[type='application/rss+xml'] {
-      color: $cc-feed;
-    }
-  }
-
   @media (min-width: $breakpoint-full) {
     ul {
       margin-top: $margin-top-footlinks-full;
