@@ -303,9 +303,7 @@ table {
 %table-cell,
 td {
   border-bottom: $width-border-td solid $color-border-td;
-  padding-bottom: $padding-vert-td;
-  padding-right: $padding-right-td;
-  padding-top: $padding-vert-td;
+  padding: $padding-td;
   vertical-align: top;
   white-space: nowrap;
 }
