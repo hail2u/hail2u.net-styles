@@ -1,0 +1,9 @@
+// rem() - Convert unitless number to an rem.
+//
+// @param {number} $number Unitless number
+// @return {number}
+@function rem($number) {
+  $number: ($number * 1rem);
+
+  @return $number;
+}

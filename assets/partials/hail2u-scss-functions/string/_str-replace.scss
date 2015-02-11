@@ -1,0 +1,35 @@
+// str-replace() - Replace in a string
+//
+// @param {string}  $string    String that you want to replace
+// @param {string}  $substr    String that is to be replaced by `$newsubstr`
+// @param {string}  $newsubstr String that replaces `$substr`
+// @param {number*} $all       Flag for replaceing all (1+) or not (0)
+// @return {string}
+@function str-replace($string, $substr, $newsubstr, $all: 0) {
+  $position-found: str-index($string, $substr);
+  $processed: ();
+
+  @while ($position-found and $position-found > 0) {
+    $length-substr: str-length($substr);
+    @if (1 != $position-found) {
+      $processed: append($processed, str-slice($string, 0, $position-found - 1));
+    }
+    $processed: append($processed, $newsubstr);
+    $string: str-slice($string, $position-found + $length-substr);
+
+    $position-found: 0;
+
+    @if ($all > 0) {
+      $position-found: str-index($string, $substr);
+    }
+  }
+
+  $processed: append($processed, $string);
+  $string: "";
+
+  @each $s in $processed {
+    $string: #{$string}#{$s};
+  }
+
+  @return $string;
+}

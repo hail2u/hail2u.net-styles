@@ -1,0 +1,7 @@
+@import '../../list/cycle';
+
+.cycle {
+  $stack: Helvetica, Arial, sans-serif;
+
+  font-family: cycle($stack, 'comma');
+}

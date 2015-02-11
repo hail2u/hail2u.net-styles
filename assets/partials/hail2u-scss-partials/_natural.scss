@@ -1,0 +1,175 @@
+@import "normalize";
+
+// Default variables
+$dark:       black !default;
+$light:      white !default;
+$link:       blue !default;
+$stress:     red !default;
+$font-size:  16px !default;
+$sans-serif: "Helvetica", "Arial", sans-serif !default;
+$monospace:  "Menlo", "Andale Mono", monospace !default;
+
+
+// Sections
+body {
+  margin: ($font-size * 2) $font-size;
+  color: $dark;
+  background-color: $light;
+  font: #{$font-size}/1.75 $sans-serif;
+
+  @media (min-width: ($font-size * 28)) {
+    margin: ($font-size * 2);
+  }
+
+  @media (min-width: ($font-size * 52)) {
+    margin-top: ($font-size * 4);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: ($font-size * 2) 0 0 0;
+}
+
+
+// Grouping content
+p {
+  margin: ($font-size * 2) 0 0 0;
+}
+
+hr {
+  margin: ($font-size * 2) auto 0 auto;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px double darken($light, 30%);
+  border-left: none;
+  width: 50%;
+  height: 0;
+}
+
+pre {
+  margin: ($font-size * 2) 0 0 0;
+  padding: $font-size;
+  background-color: darken($light, 3%);
+  font: #{($font-size * 0.875)}/1.25 $monospace;
+}
+
+blockquote {
+  margin: ($font-size * 2) 0 0 ($font-size * 2.5);
+}
+
+ol,
+ul {
+  margin: ($font-size * 2) 0 0 0;
+  padding-left: ($font-size * 2.5);
+
+  ol,
+  ul {
+    margin-top: 0;
+  }
+}
+
+dl {
+  margin: ($font-size * 2) 0 0 0;
+
+  dd {
+    margin-left: ($font-size * 2.5);
+  }
+
+  dl {
+    margin: 0;
+  }
+}
+
+
+// Text-level semantics
+a {
+  color: $link;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+strong {
+  color: $stress;
+  font-weight: bold;
+}
+
+q:before {
+  content: "\201C\0020";
+}
+
+q:after {
+  content: "\0020\201D";
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted $dark;
+  cursor: help;
+}
+
+code,
+var,
+samp {
+  font-family: $monospace;
+}
+
+
+// Edits
+ins {
+  border-bottom: 3px double lighten($dark, 15%);
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+
+// Embedded content
+img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+// Tabular data
+table {
+  margin: ($font-size * 2) 0 0 0;
+
+  th {
+    padding: ($font-size / 2);
+    border: 1px solid darken($light, 45%);
+    color: $dark;
+    background-color: darken($light, 15%);
+    font-weight: bold;
+    text-align: left;
+  }
+
+  td {
+    padding: ($font-size / 2);
+    border: 1px solid darken($light, 45%);
+    color: $dark;
+    background-color: darken($light, 3%);
+  }
+}
+
+
+// For printing
+@media print {
+  * {
+    box-shadow: none !important;
+    color: black !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    text-shadow: none !important;
+  }
+}

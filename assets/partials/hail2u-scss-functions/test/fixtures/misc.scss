@@ -1,0 +1,10 @@
+@import '../../misc/fit-icon';
+
+.fit-icon {
+  $ratio-margin: 0.25;
+  $width: fit-icon(100em, 5, $ratio-margin);
+  $margin: $width * $ratio-margin;
+
+  margin-right: $margin;
+  width: $width;
+}

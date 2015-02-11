@@ -1,0 +1,16 @@
+// cycle() - Shift first item and append this
+//
+// @param {list}    $list      List that you want to process
+// @param {string=} $separator List separator string: 'space' (default) or 'comma'
+// @return {list}
+@function cycle($list, $separater: 'space') {
+  $cycled: ();
+
+  @for $i from 2 through length($list) {
+    $cycled: append($cycled, nth($list, $i), $separater);
+  }
+
+  $cycled: append($cycled, nth($list, 1), $separater);
+
+  @return $cycled;
+}

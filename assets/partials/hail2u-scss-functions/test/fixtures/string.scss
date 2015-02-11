@@ -1,0 +1,13 @@
+@import '../../string/str-replace';
+
+.str-replace-all {
+  content: "#{str-replace('lorem ipsum dolor sit amet', 'o', 'p', 1)}";
+}
+
+.str-replace-once {
+  content: "#{str-replace('lorem ipsum dolor sit amet', 'o', 'p', 0)}";
+}
+
+.str-replace-once-at-start {
+  content: "#{str-replace('lorem ipsum dolor sit amet', 'l', 'L')}";
+}

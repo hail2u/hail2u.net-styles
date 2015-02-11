@@ -1,0 +1,18 @@
+// tint() - Mix white to a color.
+//
+// @param {color}  $color  Base color
+// @param {number} $percentage Percentage between 0% and 100%
+// @return {color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+
+// shade() - Mix black to a color.
+//
+// @param {color}  $color  Base color
+// @param {number} $percentage Percentage between 0% and 100%
+// @return {color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}

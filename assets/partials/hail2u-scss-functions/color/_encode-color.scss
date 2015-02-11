@@ -1,0 +1,21 @@
+// encode-color() - Encode color by percent encoding
+//
+// @param {color} $color Color that you want to encode
+// @return {string}
+//
+// TODO: return color instead of string.
+@function encode-color($color) {
+  $str_color: "" + $color;
+
+  // if $color is #ffffff
+  @if (str-index($str_color, "#") == 1) {
+    $str_color: "%23" + str-slice($str_color, 2);
+  }
+
+  // if $color is rgba(255, 255, 255, 1)
+  @if (str-index($str_color, "rgba") == 1) {
+    $str_color: "rgba(" + red($color) + "%2C" + green($color) + "%2C" + blue($color) + "%2C" + alpha($color) + ")";
+  }
+
+  @return $str_color;
+}

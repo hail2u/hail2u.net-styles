@@ -1,0 +1,29 @@
+@import '../../number/em';
+
+.em {
+  width: em(2.4);
+}
+
+@import '../../number/pow';
+
+.pow {
+  line-height: pow(1.2, 4);
+}
+
+@import '../../number/remove-unit';
+
+.remove-unit {
+  line-height: remove-unit(1.5em);
+}
+
+@import '../../number/fibonacci';
+
+.fibonacci {
+  line-height: fibonacci(8);
+}
+
+@import '../../number/rem';
+
+.rem {
+  width: rem(1.6);
+}

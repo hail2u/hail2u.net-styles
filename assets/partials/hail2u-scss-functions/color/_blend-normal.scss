@@ -1,0 +1,15 @@
+// blend-color() - Blend two colors
+//
+// @param {color} $color-1 Color 1
+// @param {color} $color-2 Color 2
+// @return {color}
+@function blend-normal($color-1, $color-2) {
+  $opacity-1: opacity($color-1);
+  $opacity-2: opacity($color-2);
+
+  $r: red($color-1)   * $opacity-1 + red($color-2)   * $opacity-2 * (1 - $opacity-1);
+  $g: green($color-1) * $opacity-1 + green($color-2) * $opacity-2 * (1 - $opacity-1);
+  $b: blue($color-1)  * $opacity-1 + blue($color-2)  * $opacity-2 * (1 - $opacity-1);
+
+  @return rgb($r, $g, $b);
+}

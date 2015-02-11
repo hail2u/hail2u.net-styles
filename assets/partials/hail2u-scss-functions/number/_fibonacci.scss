@@ -1,0 +1,17 @@
+// fibonacci() - Calculate fibonacci number with given index.
+//
+// @param {number} $length fibonacci number index
+// @return {number}
+@function fibonacci($index) {
+  $tmp: 0;
+  $old: 0;
+  $new: 1;
+
+  @for $i from 1 through $index {
+    $tmp: $old;
+    $old: $old + $new;
+    $new: $tmp;
+  }
+
+  @return $old;
+}

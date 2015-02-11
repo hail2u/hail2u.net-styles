@@ -1,0 +1,11 @@
+// mixxd() - Mix colors by decimal.
+//
+// @param {color}   $color-1 Base color
+// @param {color}   $color-2 Mix color
+// @param {number=} $weight  Mix weight between 0 and 1
+// @return {color}
+@function mixxd($color-1, $color-2, $weight: 0.5) {
+  $percentage: percentage(1 - $weight);
+
+  @return mix($color-1, $color-2, $percentage);
+}

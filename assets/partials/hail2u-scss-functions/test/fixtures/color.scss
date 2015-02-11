@@ -1,0 +1,37 @@
+@import '../../color/adjust-rgb';
+
+.adjust-rgb {
+  color: adjust-rgb(#000, 51);
+}
+
+@import '../../color/blend-normal';
+
+.blend-normal {
+  color: blend-normal(rgba(0, 0, 0, 0.2), #fff);
+}
+
+@import '../../color/encode-color';
+
+.encode-color-hex {
+  content: "#{encode-color(#fc0)}";
+}
+
+.encode-color-func {
+  content: "#{encode-color(rgba(255, 255, 255, 0.5))}";
+}
+
+@import '../../color/mixxd';
+
+.mixxd {
+  color: mixxd(#fff, #bbb, 0.75);
+}
+
+@import '../../color/tint-and-shade';
+
+.tint {
+  color: tint(#000, 20%);
+}
+
+.shade {
+  color: shade(#fff, 20%);
+}

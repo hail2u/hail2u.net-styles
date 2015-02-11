@@ -1,0 +1,9 @@
+// em() - Convert unitless number to an em.
+//
+// @param {number} $number Unitless number
+// @return {number}
+@function em($number) {
+  $number: ($number * 1em);
+
+  @return $number;
+}

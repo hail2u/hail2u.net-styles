@@ -1,0 +1,53 @@
+@mixin clearfix {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020";
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin miniclearfix {
+  zoom: 1;
+
+  &:after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+@mixin microclearfix {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin microclearfix_block {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    display: block;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
+}

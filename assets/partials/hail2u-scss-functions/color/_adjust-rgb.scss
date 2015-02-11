@@ -1,0 +1,8 @@
+// adjust-rgb() - Adjust RGB properties at once with fixed amount.
+//
+// @param {color}  $color  Base color
+// @param {number} $amount Adjust amount for every `rgb()` component between 0 and 255
+// @return {color}
+@function adjust-rgb($color, $amount) {
+  @return adjust-color($color, $red: $amount, $blue: $amount, $green: $amount);
+}

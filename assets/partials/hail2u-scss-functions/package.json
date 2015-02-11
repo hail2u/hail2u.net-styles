@@ -1,0 +1,54 @@
+{
+  "name": "hail2u-scss-functions",
+  "description": "Drop-in Sassy CSS functions.",
+  "version": "1.2.2",
+  "author": {
+    "name": "Kyo Nagashima",
+    "email": "hail2u@gmail.com",
+    "url": "https://kyonagashima.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/hail2u/scss-functions/issues"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-sass": "^0.8.1"
+  },
+  "files": [
+    "Gruntfile.js",
+    "README.md",
+    "color",
+    "list",
+    "misc",
+    "number",
+    "package.json",
+    "string",
+    "test"
+  ],
+  "homepage": "https://github.com/hail2u/scss-functions",
+  "keywords": [
+    "sass",
+    "scss",
+    "partial",
+    "css",
+    "function"
+  ],
+  "license": {
+    "type": "Unlicense",
+    "url": "http://unlicense.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hail2u/scss-functions.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "readme": "SCSS Functions\n==============\n\nDrop-in [Sass](http://sass-lang.com/)y CSS functions.\n\n\nTEST\n----\n\nInstall development dependencies with [npm][5]:\n\n    $ npm install\n\nThen, test with [Grunt][6]:\n\n    $ grunt test\n\n\nLICENSE\n-------\n\nPublic Domain.\n",
+  "readmeFilename": "README.md",
+  "gitHead": "e9164d6f7bf668cf625c32feee6538dad46ac7de",
+  "_id": "hail2u-scss-functions@1.2.2",
+  "_shasum": "d0a731301c68b2754afa4ba36bde3a7b85cc7ab2",
+  "_from": "hail2u-scss-functions@>=1.2.1 <2.0.0"
+}
