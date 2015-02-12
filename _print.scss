@@ -6,8 +6,9 @@
 
   // Hiding
   aside,
+  nav,
   hr::before,
-  .site-navigation,
+  .global-header,
   .footlinks,
   .byline::before,
   .icon-list,
@@ -28,10 +29,6 @@
   samp,
   kbd {
     font-family: $font-family-code-print;
-  }
-
-  .tagline {
-    font-family: $font-family-tagline;
   }
 
   // Page Break
@@ -104,14 +101,9 @@
     white-space: normal;
   }
 
-  .global-header,
   .content,
   .global-footer {
     max-width: none;
-  }
-
-  .logo {
-    margin-top: $margin;
   }
 
   .content {
