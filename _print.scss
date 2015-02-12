@@ -61,11 +61,10 @@
 
   hr {
     border-bottom: 1px dashed #000;
-    border-top: 1px dashed #000;
     height: 0;
-    margin-bottom: ($margin * 2);
-    margin-top: ($margin * 2);
-    width: 80%;
+    margin-bottom: $margin-large;
+    margin-top: $margin-large;
+    width: percentage(1 / $ratio-golden);
   }
 
   pre {
