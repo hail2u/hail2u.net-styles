@@ -1,9 +1,23 @@
 // Logo
 .logo {
-  background-color: transparent;
+  @extend %positioning-root;
+
+  background-color: $color-bg-logo;
   display: block;
   height: $height-logo;
   margin-left: $margin-left-logo;
-  margin-top: $margin-top-logo;
+  padding-top: $padding-top-logo;
   width: $width-logo;
+
+  &::after {
+    border-right: $width-border-right-logo-bottom solid transparent;
+    border-top: $width-border-top-logo-bottom solid $color-border-top-logo-bottom;
+    content: '';
+    display: block;
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 0;
+  }
 }

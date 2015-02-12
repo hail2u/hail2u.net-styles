@@ -6,7 +6,7 @@
   position: absolute;
   right: $right-site-navigation;
   text-transform: uppercase;
-  top: 0;
+  top: $top-site-navigation;
 
   li {
     display: table-cell;
