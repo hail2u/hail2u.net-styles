@@ -125,18 +125,14 @@ $width-border-th-thead: $width-border;
 
 // Logo
 $margin-left-logo: $width-gap-half;
-$width-logo: ($width-supplement / pow($ratio-golden, 4));
-$height-logo: $width-logo;
-$padding-top-logo: (($width-logo * $ratio-golden - $height-logo) / 2);
-
-$width-border-top-logo-bottom: $padding-top-logo;
-$width-border-right-logo-bottom: $width-logo;
+$height-logo: ($width-supplement / pow($ratio-golden, 3));
+$width-logo: ($height-logo / $ratio-golden);
 
 // Site Navigation
 $right-site-navigation: $width-gap-half;
-$top-site-navigation: $padding-top-logo;
+$top-site-navigation: (($height-logo - $width-logo) / 2);
 
-$line-height-site-navigation-item: $height-logo;
+$line-height-site-navigation-item: $width-logo;
 $padding-left-site-navigation-item: $width-gap-half;
 $padding-left-site-navigation-item-content: $width-gap;
 
