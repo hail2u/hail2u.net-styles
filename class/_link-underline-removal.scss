@@ -2,5 +2,12 @@
 %link-underline-removal {
   a {
     text-decoration: none;
+
+    @supports (-moz-text-decoration-color: red) or
+      (-webkit-text-decoration-color: red) or
+      (text-decoration-color: red) {
+      color: $color-fg-link-underline-removal;
+      text-underline-color: initial;
+    }
   }
 }
