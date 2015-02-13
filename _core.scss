@@ -200,6 +200,8 @@ figcaption {
 }
 
 // Text-level Semantics
+@import 'assets/partials/hail2u-scss-partials/vendor-extension';
+
 a {
   color: $color-fg-a;
   text-decoration: underline;
@@ -207,10 +209,9 @@ a {
   @supports (-moz-text-decoration-color: red) or
     (-webkit-text-decoration-color: red) or
     (text-decoration-color: red) {
+    @include text-decoration-color($color-fg-a-underline);
+
     color: inherit;
-    -moz-text-decoration-color: $color-fg-a-underline;
-    -webkit-text-decoration-color: $color-fg-a-underline;
-    text-decoration-color: $color-fg-a-underline;
   }
 }
 
