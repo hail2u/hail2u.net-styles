@@ -1,7 +1,6 @@
 // Seealso
 .seealso {
   @extend %ir;
-  @extend %link-underline-removal;
 
   color: $color-fg-seealso;
   font-size: rem($ratio-text-seealso);
