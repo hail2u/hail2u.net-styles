@@ -201,15 +201,17 @@ figcaption {
 
 // Text-level Semantics
 a {
-  background-image: linear-gradient(
-    transparent 50%,
-    $color-fg-a-underline 50%
-  );
-  background-position: 0 $margin-a-underline;
-  background-repeat: repeat-x;
-  background-size: $width-a-underline $height-a-underline;
-  color: inherit;
-  text-decoration: none;
+  color: $color-fg-a;
+  text-decoration: underline;
+
+  @supports (-moz-text-decoration-color: red) or
+    (-webkit-text-decoration-color: red) or
+    (text-decoration-color: red) {
+    color: inherit;
+    -moz-text-decoration-color: $color-fg-a-underline;
+    -webkit-text-decoration-color: $color-fg-a-underline;
+    text-decoration-color: $color-fg-a-underline;
+  }
 }
 
 em {

@@ -1,7 +1,6 @@
 // Link Underline Removal
 %link-underline-removal {
   a {
-    background-image: none;
-    color: $color-fg-link-underline-removal;
+    text-decoration: none;
   }
 }
