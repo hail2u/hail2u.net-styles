@@ -95,6 +95,10 @@
     margin-top: 0;
   }
 
+  .first-heading {
+    margin-top: ($margin + rem($line-height));
+  }
+
   .byline {
     margin-top: $margin-huge;
   }
