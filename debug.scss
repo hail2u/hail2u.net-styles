@@ -82,6 +82,11 @@
   }
 }
 
+// Show Outline
+.show-outline * {
+  outline: 1px solid #f0f;
+}
+
 // Breakpoints
 body::after {
   background-color: #096;
