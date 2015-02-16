@@ -2,12 +2,7 @@
 .seealso {
   @extend %ir;
 
-  color: $color-fg-seealso;
   font-size: rem($ratio-text-seealso);
-
-  a {
-    color: $color-fg-seealso-link;
-  }
 
   &::before {
     background-image: $image-seealso-icon;
