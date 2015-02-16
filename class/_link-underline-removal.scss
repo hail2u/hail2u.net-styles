@@ -11,6 +11,10 @@
       @include text-decoration-color(initial);
 
       color: $color-fg-link-underline-removal;
+
+      &:visited {
+        color: $color-fg-link-underline-removal-visited;
+      }
     }
   }
 }
