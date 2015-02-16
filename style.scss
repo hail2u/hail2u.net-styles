@@ -64,14 +64,14 @@
 @import 'content/section-footer';
 @import 'content/first-heading';
 
-// Subcontent
-@import 'subcontent';
-@import 'subcontent/site-search';
-
 // Global Footer
 @import 'global-footer';
 @import 'global-footer/footlinks';
 @import 'global-footer/byline';
+
+// Subcontent
+@import 'subcontent';
+@import 'subcontent/site-search';
 
 // Widget
 @import 'widget/ads';

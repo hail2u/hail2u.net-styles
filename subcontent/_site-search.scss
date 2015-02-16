@@ -2,18 +2,21 @@
 .site-search {
   @extend %search-form;
 
+  margin-bottom: $margin-bottom-site-search;
+  margin-top: $margin-top-site-search;
   max-width: $width-max-site-search;
-  top: $top-site-search;
 
   @media (min-width: $breakpoint-content) {
+    bottom: $bottom-site-search-content;
+    margin-bottom: 0;
+    margin-top: 0;
     max-width: $width-max-site-search-content;
     position: absolute;
     right: $right-site-search-content;
-    top: $top-site-search-content;
     z-index: 1;
   }
 
   @media (min-width: $breakpoint-full) {
-    top: $top-site-search-full;
+    bottom: $bottom-site-search-full;
   }
 }

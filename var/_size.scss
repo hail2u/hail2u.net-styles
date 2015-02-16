@@ -155,17 +155,8 @@ $margin-top-first-heading-full: $margin-top-heading-primary;
 $margin-bottom-global-footer: $margin-large;
 
 // Footlinks
-$margin-top-footlinks: ($margin + $margin-huge);
+$margin-top-footlinks: $margin-huge;
 $margin-top-footlinks-full: $margin-huge;
-
-// Site Search
-$right-site-search-content: $width-gap-half;
-$top-site-search: $margin-huge;
-$top-site-search-content: ($margin-top-footlinks - (($height-search-form-query - rem($ratio-text-global-footer * $line-height)) / 2));
-$top-site-search-full: ($margin-top-footlinks-full - (($height-search-form-query - rem($ratio-text-global-footer * $line-height)) / 2));
-
-$width-max-site-search: ($width-content / $ratio-golden);
-$width-max-site-search-content: ($width-content / pow($ratio-golden, 2));
 
 // Byline
 $left-byline-full: $width-gap-half;
@@ -173,6 +164,16 @@ $left-byline-full: $width-gap-half;
 $margin-bottom-byline-border: $margin-mini;
 $width-byline-border: $width-logo;
 $width-border-byline-border: $width-border;
+
+// Site Search
+$margin-bottom-site-search: ($margin-bottom-global-footer);
+$margin-top-site-search: (- $margin-bottom-global-footer + $margin);
+$right-site-search-content: $width-gap-half;
+$bottom-site-search-content: ($margin-bottom-global-footer + rem($line-height * $ratio-text-global-footer) + $margin-mini + $width-border-byline-border + $margin + (rem($line-height * $ratio-text-global-footer) - $height-search-form-query) / 2);
+$bottom-site-search-full: ($margin-bottom-global-footer + (rem($line-height * $ratio-text-global-footer) - $height-search-form-query) / 2);
+
+$width-max-site-search: ($width-content / $ratio-golden);
+$width-max-site-search-content: ($width-content / pow($ratio-golden, 2));
 
 // Ads
 $margin-side-ads: (- $width-gap-half);
