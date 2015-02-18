@@ -120,7 +120,7 @@ $padding-td: $padding-large;
 $width-border-th-thead: $width-border;
 
 // Logo
-$margin-left-logo: $width-gap-half;
+$margin-left-logo-full: (- ($width-supplement + $width-gap));
 $height-logo: ($width-supplement / pow($ratio-golden, 3));
 $width-logo: ($height-logo / $ratio-golden);
 
@@ -136,10 +136,10 @@ $width-border-site-navigation-mark: $width-border;
 $padding-bottom-site-navigation-mark: $padding-mini;
 
 // Tagline
+$margin-left-tagline-full: (- ($width-supplement + $width-gap));
 $margin-top-tagline: ($margin * $ratio-golden);
 $margin-top-tagline-content: $margin-large;
 $margin-top-tagline-full: $margin-huge;
-$padding-left-tagline-full: $width-gap-half;
 $width-max-tagline-full: $width-full;
 
 // Content
