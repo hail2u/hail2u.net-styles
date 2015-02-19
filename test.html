@@ -138,6 +138,7 @@
           <li><a href="#grouping-content">コンテンツのグループ化</a></li>
           <li><a href="#text-level-semantics">語・句・文単位での意味付け</a></li>
           <li><a href="#edits">編集</a></li>
+          <li><a href="#embedded-content">埋め込みコンテンツ</a></li>
           <li><a href="#tabular-data">表</a></li>
           <li><a href="#ads-block">広告</a></li>
           <li><a href="#circular-image">丸い画像</a></li>
@@ -580,6 +581,18 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
         <h1>編集</h1>
 
         <p>より良い編集履歴を残すため、インラインで追加した部分は<ins>特に何もせず</ins>、削除した部分は<del>取り消し線を加えています</del>。単なる追記等の場合はそのことを明示するだけに留め、<code>ins</code>でマークアップはしていません。</p>
+      </section>
+
+      <section id="embedded-content">
+        <h1>埋め込みコンテンツ</h1>
+
+        <p>画像や動画は<code>figure</code>要素を使って参照します。</p>
+
+        <figure>
+          <a href="assets/images/about/how-i-markup-and-style-this-website.png"><img alt="How I Markup and Style This Website" height="627" src="assets/images/about/how-i-markup-and-style-this-website.png" width="1200"></a>
+        </figure>
+
+        <p>画像に画像へのリンクが張られ、かつ参照先がローカルの画像だった場合、リンク先へナビゲートする代わりにオーバーレイでズームして表示されます。</p>
       </section>
 
       <section id="tabular-data">
