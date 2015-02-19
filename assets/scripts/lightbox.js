@@ -1,4 +1,6 @@
 (function () {
+  'use strict';
+
   if (
     !('querySelectorAll' in document) ||
     !('bind' in Function)
@@ -14,9 +16,9 @@
     evt.preventDefault();
 
     if (this.style.cssText && image.style.cssText) {
-      if (image._src) {
-        image.src = image._src;
-        delete image._src;
+      if (image.originalsrc) {
+        image.src = image.originalsrc;
+        delete image.originalsrc;
       }
 
       this.style.cssText = '';
@@ -26,7 +28,7 @@
     }
 
     if (this.href !== image.src) {
-      image._src = image.src;
+      image.originalsrc = image.src;
       image.src = this.href;
     }
 
@@ -51,7 +53,10 @@
   };
 
   var lightbox = function () {
-    var images = document.querySelectorAll('main img[src^="assets/images/"], main img[src^="/images/"]');
+    var images = document.querySelectorAll([
+      'main img[src^="assets/images/"]',
+      'main img[src^="/images/"]'
+    ].join(','));
     var image;
     var parent;
 
