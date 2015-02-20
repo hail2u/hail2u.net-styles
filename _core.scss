@@ -206,20 +206,12 @@ a {
   color: $color-fg-a;
   text-decoration: underline;
 
-  &:visited {
-    color: $color-fg-a-visited;
-  }
-
   @supports (-moz-text-decoration-color: red) or
     (-webkit-text-decoration-color: red) or
     (text-decoration-color: red) {
     @include text-decoration-color($color-fg-a-underline);
 
     color: inherit;
-
-    &:visited {
-      @include text-decoration-color($color-fg-a-visited-underline);
-    }
   }
 }
 
