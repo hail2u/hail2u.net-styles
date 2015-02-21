@@ -1,3 +1,8 @@
+/**
+ * @preserve lightbox.js
+ *
+ * LICENSE: http://hail2u.mit-license.org/2015
+ */
 (function () {
   'use strict';
 
