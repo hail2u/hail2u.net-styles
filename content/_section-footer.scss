@@ -1,7 +1,18 @@
 // Section Footer
 .section-footer {
   @extend %link-underline-removal;
-  @extend %pin;
+  @extend %float;
+
+  bottom: 100%;
+  font-size: rem($ratio-text-section-footer);
+  position: absolute;
+  width: 100%;
+
+  p {
+    @extend %ellipsing;
+
+    color: $color-fg-section-footer;
+  }
 
   .date {
     color: $color-fg-section-footer-date;
@@ -12,6 +23,12 @@
   }
 
   @media (min-width: $breakpoint-full) {
+    width: $width-section-footer-full;
+
+    p {
+      margin-top: $margin-top-section-footer-full;
+    }
+
     [role="main"] > & {
       bottom: auto;
       top: $top-section-footer-permalink-full;

@@ -53,8 +53,6 @@ $color-accent-triad-negative-light: rgb(255, 200, 60);
 $color-accent-triad-negative-lightest: rgb(255, 212, 104);
 
 // Placeholder Class
-$color-fg-pin: $color-shade-lightest;
-
 $color-fg-search-form-query: $color-dark;
 $color-bg-search-form-query: $color-light-light;
 $color-border-search-form-query: $color-tint-light;
@@ -104,6 +102,8 @@ $color-fg-first-heading-permalink: $color-shade-dark;
 $color-fg-site-navigation-mark: $color-accent-light;
 
 // Section Footer
+$color-fg-section-footer: $color-shade-lightest;
+
 $color-fg-section-footer-date: $color-shade-dark;
 
 $color-fg-section-footer-tag: $color-shade-dark;

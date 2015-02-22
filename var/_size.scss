@@ -63,9 +63,6 @@ $margin-top-margin: $margin;
 
 $margin-top-margin-after-heading: $margin-mini;
 
-$margin-top-pin-full: rem(($ratio-text-heading-primary * $line-height-heading - $ratio-text-pin * $line-height) / 2);
-$width-pin-full: $width-float-full;
-
 $margin-top-search-form: $margin;
 
 $width-search-form-button: rem($line-height);
@@ -147,7 +144,7 @@ $margin-top-content-content: (- ($margin-top-heading-primary - $margin-top-tagli
 $margin-top-content-full: (- ($margin-top-heading-primary - $margin-top-tagline-full));
 
 // First Heading
-$margin-top-first-heading: ($margin-top-heading-primary + rem($line-height) * $ratio-text-pin);
+$margin-top-first-heading: ($margin-top-heading-primary + rem($line-height) * $ratio-text-section-footer);
 $margin-top-first-heading-full: $margin-top-heading-primary;
 
 $margin-left-first-heading-permalink-full: (- ($width-supplement + $width-gap));
@@ -156,6 +153,9 @@ $padding-bottom-first-heading-permalink-content: ($margin-top-tagline-content - 
 $padding-bottom-first-heading-permalink-full: ($margin-top-tagline-full - $margin);
 
 // Section Footer
+$margin-top-section-footer-full: rem(($ratio-text-heading-primary * $line-height-heading - $ratio-text-section-footer * $line-height) / 2);
+$width-section-footer-full: $width-float-full;
+
 $top-section-footer-permalink-full: (rem($ratio-text-first-heading-permalink-full * $line-height-heading) + $margin-top-tagline-full);
 
 // Global Footer
@@ -262,8 +262,8 @@ $margin-left-topic-more: rem(1 / 3);
 $line-height-share-buttons-item: rem($line-height);
 $padding-right-share-buttons-item: $padding-large;
 
-$padding-left-share-buttons-link: (($line-height-share-buttons-item * .8 + $padding-mini) * $ratio-text-pin);
-$height-bg-share-buttons-link: (percentage(.8) * $ratio-text-pin);
+$padding-left-share-buttons-link: (($line-height-share-buttons-item * .8 + $padding-mini) * $ratio-text-section-footer);
+$height-bg-share-buttons-link: (percentage(.8) * $ratio-text-section-footer);
 
 // Google AdSense
 $margin-top-adsbygoogle: $margin;
