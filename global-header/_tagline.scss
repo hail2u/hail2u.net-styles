@@ -1,6 +1,8 @@
 // Tagline
 .tagline {
+  color: $color-fg-tagline;
   font-size: rem($ratio-text-tagline);
+  font-weight: normal;
   margin-top: $margin-top-tagline;
 
   @media (min-width: $breakpoint-content) {
