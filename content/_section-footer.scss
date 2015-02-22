@@ -10,4 +10,15 @@
   .tag {
     color: $color-fg-section-footer-tag;
   }
+
+  @media (min-width: $breakpoint-full) {
+    [role="main"] > & {
+      bottom: auto;
+      top: $top-section-footer-permalink-full;
+
+      p {
+        margin-top: 0;
+      }
+    }
+  }
 }

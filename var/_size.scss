@@ -150,6 +150,14 @@ $margin-top-content-full: (- ($margin-top-heading-primary - $margin-top-tagline-
 $margin-top-first-heading: ($margin-top-heading-primary + rem($line-height) * $ratio-text-pin);
 $margin-top-first-heading-full: $margin-top-heading-primary;
 
+$margin-left-first-heading-permalink-full: (- ($width-supplement + $width-gap));
+$padding-bottom-first-heading-permalink: ($margin-top-tagline - $margin);
+$padding-bottom-first-heading-permalink-content: ($margin-top-tagline-content - $margin);
+$padding-bottom-first-heading-permalink-full: ($margin-top-tagline-full - $margin);
+
+// Section Footer
+$top-section-footer-permalink-full: (rem($ratio-text-first-heading-permalink-full * $line-height-heading) + $margin-top-tagline-full);
+
 // Global Footer
 $margin-bottom-global-footer: $margin-large;
 
