@@ -270,6 +270,4 @@ $height-bg-share-buttons-link: (percentage(.8) * $ratio-text-section-footer);
 // Google AdSense
 $margin-top-adsbygoogle: $margin;
 $margin-side-adsbygoogle-small: $width-gap-half;
-$breakpoint-adsbygoogle-small: (16px + 300px + 16px + 17px);
-$breakpoint-adsbygoogle-medium: (16px + 336px + 16px + 17px);
-$breakpoint-adsbygoogle-large: (1700px + 17px);
+$breakpoint-adsbygoogle-small: (16px + 300px + 16px + 20px);

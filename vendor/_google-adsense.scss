@@ -10,14 +10,4 @@
   @media (min-width: $breakpoint-adsbygoogle-small) {
     margin-left: $margin-side-adsbygoogle-small;
   }
-
-  @media (min-width: $breakpoint-adsbygoogle-medium) {
-    height: 280px;
-    width: 336px;
-  }
-
-  @media (min-width: $breakpoint-adsbygoogle-large) {
-    height: 90px;
-    width: 728px;
-  }
 }
