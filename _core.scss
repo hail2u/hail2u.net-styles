@@ -66,8 +66,6 @@ pre {
   @include font-feature-settings('kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1);
 
   clear: both;
-  font-family: $font-family-pre;
-  font-size: rem($ratio-text-pre);
   line-height: $line-height-pre;
 
   h2 + & {
@@ -228,9 +226,6 @@ code,
 var,
 samp,
 kbd {
-  font-family: $font-family-code;
-  font-size: rem($ratio-text-code);
-
   p &::before,
   p &::after {
     content: ' ';
