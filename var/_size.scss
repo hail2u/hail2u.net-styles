@@ -112,7 +112,7 @@ $width-border-th-thead: $width-border;
 
 // Logo
 $margin-left-logo-full: (- ($width-supplement + $width-gap));
-$height-logo: ($width-supplement / pow($ratio-golden, 3));
+$height-logo: ($width-supplement / pow($ratio-golden, 2));
 $width-logo: ($height-logo / $ratio-golden);
 
 // Site Navigation
