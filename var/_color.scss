@@ -93,10 +93,13 @@ $color-bg-img: $color-tint-lightest;
 $color-border-td: $color-tint-light;
 
 // Tagline
-$color-fg-tagline: $color-fg-heading-primary;
+$color-fg-tagline: $color-shade-dark;
 
 // Site Navigation
 $color-fg-site-navigation-mark: $color-accent-light;
+
+// First Heading
+$color-fg-first-heading-permalink: $color-fg-tagline;
 
 // Section Footer
 $color-fg-section-footer: $color-shade-lightest;
