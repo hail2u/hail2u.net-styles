@@ -1,43 +1,46 @@
 // Share Buttons
-@import '../assets/partials/hail2u-scss-partials/corporate-colors';
-
 .share-buttons {
   @extend %link-underline-removal;
 
   ul {
     @extend %float;
 
-    font-size: rem($ratio-text-share-buttons);
     padding-left: 0;
+
+    &::before {
+      color: $color-fg-share-buttons-label;
+      content: 'Share:';
+    }
   }
 
+  ul::before,
   li {
     display: table-cell;
-    line-height: $line-height-share-buttons-item;
     padding-right: $padding-right-share-buttons-item;
   }
 
   a {
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: auto $height-bg-share-buttons-link;
-    display: inline-block;
-    padding-left: $padding-left-share-buttons-link;
+    @extend %ir;
+
+    display: block;
+    height: $height-share-buttons-icon;
+    width: $width-share-buttons-icon;
+
+    &::before {
+      background-size: auto percentage($ratio-share-buttons-icon);
+    }
   }
 
-  .twitter-tweet a {
+  .twitter-tweet a::before {
     background-image: $image-share-buttons-twitter;
-    color: $cc-twitter;
   }
 
-  .facebook-share a {
+  .facebook-share a::before {
     background-image: $image-share-buttons-facebook;
-    color: $cc-facebook;
   }
 
-  .hatena-bookmark a {
+  .hatena-bookmark a::before {
     background-image: $image-share-buttons-hatena;
-    color: $color-share-buttons-hatena;
   }
 
   @media (min-width: $breakpoint-full) {
