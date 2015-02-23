@@ -40,11 +40,11 @@ $width-full: (- $width-gap-half + $width-full-outer - $width-gap-half);
 
 // Breakpoint
 $width-scrollbar: 1.5rem;
-$breakpoint-content: (($width-content-outer + $width-scrollbar) * $ratio-text-html-content);
+$breakpoint-content: ($width-content-outer + $width-scrollbar);
 @media (min-width: $breakpoint-content) {
   /*! Applied wider than #{$breakpoint-content} */
 }
-$breakpoint-full: (($width-full-outer + $width-scrollbar) * $ratio-text-html-full);
+$breakpoint-full: ($width-full-outer + $width-scrollbar);
 @media (min-width: $breakpoint-full) {
   /*! Applied wider than #{$breakpoint-full} */
 }
@@ -75,13 +75,7 @@ $width-border-search-form-query: $width-border-thin;
 $height-search-form-query: ($height-search-form-button + $padding-mini * 2);
 
 // Core
-$breakpoint-width-html-content: ($breakpoint-content * $ratio-mod-html-content);
-$breakpoint-height-html-content: ($breakpoint-width-html-content / 2);
-$breakpoint-width-html-full: ($breakpoint-full * $ratio-mod-html-full);
-$breakpoint-height-html-full: ($breakpoint-width-html-full / 2);
-
-$line-height-body: ($line-height * .9);
-$line-height-body-content: $line-height;
+$line-height-body: $line-height;
 
 $margin-top-heading-primary: $margin-huge;
 
@@ -158,7 +152,7 @@ $width-section-footer-full: $width-float-full;
 
 $margin-top-section-footer-p-full: rem(($ratio-text-heading-primary * $line-height-heading - $ratio-text-section-footer * $line-height) / 2);
 
-$margin-top-section-footer-p-permalink-full: rem(($ratio-text-first-heading-permalink-full * $line-height-heading - $ratio-text-section-footer * $line-height) / 2);
+$margin-top-section-footer-p-permalink-full: rem(($ratio-text-first-heading-permalink * $line-height-heading - $ratio-text-section-footer * $line-height) / 2);
 
 // Global Footer
 $margin-bottom-global-footer: $margin-large;

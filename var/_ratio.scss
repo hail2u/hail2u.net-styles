@@ -22,10 +22,6 @@ $ratio-supplement: (1 / pow($ratio-golden, 2));
 
 // Core
 $ratio-text-html: $ratio-text-delta;
-$ratio-text-html-full: $ratio-text-gamma;
-$ratio-text-html-content: (($ratio-text-html + $ratio-text-html-full) / 2);
-$ratio-mod-html-full: $ratio-golden;
-$ratio-mod-html-content: ((1 + $ratio-text-html-full) / 2);
 
 $ratio-text-heading-primary: $ratio-text-beta;
 
@@ -41,14 +37,10 @@ $ratio-text-abbr: $ratio-text-epsilon;
 $ratio-text-site-navigation: $ratio-text-epsilon;
 
 // Tagline
-$ratio-text-tagline: $ratio-text-gamma;
-$ratio-text-tagline-content: $ratio-text-beta;
-$ratio-text-tagline-full: $ratio-text-alpha;
+$ratio-text-tagline: $ratio-text-alpha;
 
 // First Heading
 $ratio-text-first-heading-permalink: $ratio-text-tagline;
-$ratio-text-first-heading-permalink-content: $ratio-text-beta;
-$ratio-text-first-heading-permalink-full: $ratio-text-alpha;
 
 // Section Footer
 $ratio-text-section-footer: $ratio-text-epsilon;
