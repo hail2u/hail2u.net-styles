@@ -147,7 +147,7 @@ $margin-top-content-full: (- ($margin-top-heading-primary - $margin-top-tagline-
 $margin-top-first-heading: ($margin-top-heading-primary + rem($line-height) * $ratio-text-section-footer);
 $margin-top-first-heading-full: $margin-top-heading-primary;
 
-$margin-left-first-heading-permalink-full: (- ($width-supplement + $width-gap));
+$margin-left-first-heading-permalink-full: $margin-left-tagline-full;
 $margin-right-first-heading-permalink-full: $width-float-full;
 $padding-bottom-first-heading-permalink: ($margin-top-tagline - $margin);
 $padding-bottom-first-heading-permalink-content: ($margin-top-tagline-content - $margin);
