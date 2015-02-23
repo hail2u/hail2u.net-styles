@@ -87,8 +87,8 @@ pre {
   }
 
   @media (min-width: $breakpoint-content) {
+    overflow: visible;
     overflow-wrap: break-word;
-    overflow-x: visible;
     white-space: pre-wrap;
     word-wrap: break-word;
   }
