@@ -3,7 +3,7 @@
   @extend %link-underline-removal;
 
   a {
-    font-weight: bold;
+    font-weight: bolder;
     text-transform: uppercase;
 
     &::before {
