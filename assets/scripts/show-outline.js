@@ -1,4 +1,6 @@
 (function () {
+  'use strict';
+
   var t = function () {
     var c = 'show-outline';
     document.body.addEventListener('dblclick', function () {

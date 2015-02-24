@@ -1,4 +1,6 @@
 (function () {
+  'use strict';
+
   var t = function () {
     var c = 'show-column';
     document.body.addEventListener('dblclick', function () {
