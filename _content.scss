@@ -6,7 +6,8 @@
   margin-top: $margin-top-content;
 
   > article,
-  > section {
+  > section,
+  > [role="main"] {
     @extend %positioning-root;
   }
 
