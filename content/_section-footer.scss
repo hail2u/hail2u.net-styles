@@ -30,13 +30,15 @@
     }
 
     [role="main"] > & {
-      margin-right: 0;
-      right: 0;
-      text-align: right;
+      top: auto;
 
       p {
         margin-top: $margin-top-section-footer-p-permalink-full;
       }
+    }
+
+    .has-image[role="main"] > & {
+      bottom: auto;
     }
   }
 }
