@@ -3,15 +3,8 @@
  *
  * LICENSE: http://hail2u.mit-license.org/2015
  */
-(function () {
+(function (d) {
   'use strict';
-
-  if (
-    !('querySelectorAll' in document) ||
-    !('bind' in Function)
-  ) {
-    return;
-  }
 
   var toggle = function (image, evt) {
     if (evt.which !== 1) {
@@ -57,27 +50,36 @@
     image.style.width = 'auto';
   };
 
-  var lightbox = function () {
-    var images = document.querySelectorAll([
+  var init = function () {
+    var i;
+    var image;
+    var images = d.querySelectorAll([
       'main img[src^="assets/images/"]',
       'main img[src^="/images/"]'
     ].join(','));
-    var image;
+    var l;
     var parent;
 
-    for (var i = 0, l = images.length; i < l; i++) {
+    for (i = 0, l = images.length; i < l; i++) {
       image = images[i];
       parent = image.parentNode;
 
-      if (parent.tagName === 'A' && /^(assets)?\/images\//.test(parent.getAttribute('href'))) {
+      if (
+        parent.tagName === 'A' &&
+        /^(assets)?\/images\//.test(parent.getAttribute('href'))
+      ) {
         parent.addEventListener('click', toggle.bind(parent, image), false);
       }
     }
   };
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', lightbox, false);
-  } else {
-    lightbox();
+  if (!('querySelectorAll' in d) || !('bind' in Function)) {
+    return;
   }
-})();
+
+  if (d.readyState === 'loading') {
+    d.addEventListener('DOMContentLoaded', init, false);
+  } else {
+    init();
+  }
+})(document);

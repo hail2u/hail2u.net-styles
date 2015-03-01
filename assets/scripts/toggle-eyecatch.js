@@ -1,24 +1,31 @@
-(function () {
+(function (d) {
   'use strict';
 
-  var t = function () {
-    var sectionFooter = document.querySelector('.section-footer');
-    var eyecatch = document.querySelector('.full-width');
-    sectionFooter.addEventListener('click', function (evt) {
-      if (eyecatch.hidden) {
-        eyecatch.hidden = false;
-      } else {
-        eyecatch.hidden = true;
-      }
+  var toggle = function (eyecatch, article, evt) {
+    if (eyecatch.hidden) {
+      eyecatch.hidden = false;
+    } else {
+      eyecatch.hidden = true;
+    }
 
-      evt.preventDefault();
-      evt.stopPropagation();
-    }, false);
+    article.classList.toggle('has-image');
+    evt.preventDefault();
+    evt.stopPropagation();
   };
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', t, false);
+  var init = function () {
+    var article = d.getElementById('introduction');
+    var eyecatch = d.querySelector('.full-width');
+    d.querySelector('.section-footer').addEventListener(
+      'click',
+      toggle.bind(null, eyecatch, article),
+      false
+    );
+  };
+
+  if (d.readyState === 'loading') {
+    d.addEventListener('DOMContentLoaded', init, false);
   } else {
-    t();
+    init();
   }
-})();
+})(document);
