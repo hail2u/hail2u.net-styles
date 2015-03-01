@@ -39,6 +39,10 @@
     background-image: $image-share-buttons-facebook;
   }
 
+  .googleplus-share a::before {
+    background-image: $image-share-buttons-googleplus;
+  }
+
   .hatena-bookmark a::before {
     background-image: $image-share-buttons-hatena;
   }
