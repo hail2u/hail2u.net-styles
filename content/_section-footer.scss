@@ -30,6 +30,7 @@
     }
 
     [role="main"] > & {
+      bottom: auto;
       top: auto;
 
       p {
@@ -38,7 +39,7 @@
     }
 
     .has-image[role="main"] > & {
-      bottom: auto;
+      bottom: 100%;
     }
   }
 }
