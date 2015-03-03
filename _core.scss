@@ -43,19 +43,18 @@ p {
 
 hr {
   @extend %ir;
-  @extend %margin;
 
   background-color: transparent;
   border: 0;
   clear: both;
   height: $height-hr;
-  margin-left: auto;
-  margin-right: auto;
+  margin: $margin-vert-hr auto;
   width: $width-hr;
 
   &::before {
     background-image: $image-hr;
     background-repeat: repeat-x;
+    background-size: $width-hr-bg 100%;
   }
 }
 
