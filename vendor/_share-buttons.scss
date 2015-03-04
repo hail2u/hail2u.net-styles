@@ -10,13 +10,13 @@
     &::before {
       color: $color-fg-share-buttons-label;
       content: 'Share:';
+      display: table-cell;
     }
   }
 
-  ul::before,
   li {
     display: table-cell;
-    padding-right: $padding-right-share-buttons-item;
+    padding-left: $padding-left-share-buttons-item;
   }
 
   a {
