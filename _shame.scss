@@ -10,3 +10,8 @@ img {
 html {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
+
+// Hide unwanted scrollbar on Chrome 41
+pre {
+  padding-bottom: 1px;
+}
