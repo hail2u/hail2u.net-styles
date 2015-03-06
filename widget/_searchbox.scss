@@ -1,5 +1,6 @@
 // Searchbox
 .searchbox {
+  @extend %margin;
   @extend %search-form;
 
   max-width: $width-max-searchbox;
