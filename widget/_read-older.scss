@@ -16,8 +16,6 @@
   }
 
   p {
-    @extend %ellipsing;
-
     font-size: rem($ratio-text-read-older-title);
     line-height: $line-height-read-older-title;
     margin-top: 0;
