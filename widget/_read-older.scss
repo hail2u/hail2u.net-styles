@@ -1,8 +1,11 @@
 // Read Older
 .read-older {
+  @extend %positioning-root;
   @extend %link-underline-removal;
 
   a::before {
+    @extend %float;
+
     color: $color-fg-read-older-label;
     content: 'Read older:';
     display: block;
@@ -18,5 +21,16 @@
     font-size: rem($ratio-text-read-older-title);
     line-height: $line-height-read-older-title;
     margin-top: 0;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    a::before {
+      line-height: $line-height-read-older-label-full;
+      margin-top: 0;
+    }
+
+    p {
+      margin-top: $margin-top-read-older-title-full;
+    }
   }
 }

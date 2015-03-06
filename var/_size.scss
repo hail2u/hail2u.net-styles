@@ -239,6 +239,9 @@ $width-pull-quote-full: ($width-supplement + $width-gap + $width-supplement);
 $margin-top-read-older-label: $margin-large;
 
 $line-height-read-older-title: $line-height-mini;
+$margin-top-read-older-title-full: $margin-top-read-older-label;
+
+$line-height-read-older-label-full: ($ratio-text-read-older-title * $line-height-read-older-title);
 
 // Searchbox
 $width-max-searchbox: ($width-content / $ratio-golden);
