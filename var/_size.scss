@@ -41,13 +41,7 @@ $width-full: (- $width-gap-half + $width-full-outer - $width-gap-half);
 // Breakpoint
 $width-scrollbar: 1.5rem;
 $breakpoint-content: ($width-content-outer + $width-scrollbar);
-@media (min-width: $breakpoint-content) {
-  /*! Applied wider than #{$breakpoint-content} */
-}
 $breakpoint-full: ($width-full-outer + $width-scrollbar);
-@media (min-width: $breakpoint-full) {
-  /*! Applied wider than #{$breakpoint-full} */
-}
 
 // Placeholder Class
 $width-max-centering: $width-content;
