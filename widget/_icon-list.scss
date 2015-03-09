@@ -1,5 +1,4 @@
 // Icon List
-@import '../assets/partials/hail2u-scss-partials/corporate-colors';
 @import '../assets/partials/hail2u-scss-partials/vendor-extension';
 
 .icon-list {
@@ -21,27 +20,12 @@
   a {
     @include box-sizing(border-box);
 
+    background-color: $color-bg-icon-list-icon;
     border-radius: $border-radius-icon-list-icon;
     display: block;
     height: $height-icon-list-icon;
     padding: $padding-icon-list-icon;
     width: $width-icon-list-icon;
-
-    &[href^='https://twitter.com/'] {
-      background-color: $cc-twitter;
-    }
-
-    &[href^='https://www.facebook.com/'] {
-      background-color: $cc-facebook;
-    }
-
-    &[href$='.tumblr.com/'] {
-      background-color: $cc-tumblr;
-    }
-
-    &[type='application/rss+xml'] {
-      background-color: $cc-feed;
-    }
   }
 
   img {
