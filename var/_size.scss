@@ -251,7 +251,7 @@ $width-border-seemore: $width-border;
 $margin-left-topic-more: rem(1 / 3);
 
 // Share Buttons
-$padding-left-share-buttons-item: $padding-large;
+$padding-right-share-buttons-item: $width-gap-half;
 
 $height-share-buttons-icon: rem($line-height);
 $width-share-buttons-icon: $height-share-buttons-icon;

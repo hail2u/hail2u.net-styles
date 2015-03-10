@@ -6,17 +6,11 @@
     @extend %float;
 
     padding-left: 0;
-
-    &::before {
-      color: $color-fg-share-buttons-label;
-      content: 'Share:';
-      display: table-cell;
-    }
   }
 
   li {
     display: table-cell;
-    padding-left: $padding-left-share-buttons-item;
+    padding-right: $padding-right-share-buttons-item;
   }
 
   a {
