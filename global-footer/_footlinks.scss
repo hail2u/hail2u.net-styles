@@ -9,13 +9,15 @@
 
   li {
     display: table-cell;
+    padding-right: $padding-right-footlinks-item;
 
     &::after {
-      content: '\a0\a0';
+      content: '';
     }
 
     &:first-child::after {
-      content: ' ·\a0';
+      content: '·';
+      margin-left: $margin-left-footlinks-separator;
     }
   }
 
