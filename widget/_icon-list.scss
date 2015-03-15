@@ -20,8 +20,8 @@
   a {
     @include box-sizing(border-box);
 
-    background-color: $color-bg-icon-list-icon;
-    border-radius: $border-radius-icon-list-icon;
+    border: $width-border-icon-list-icon solid;
+    border-radius: 51%;
     display: block;
     height: $height-icon-list-icon;
     padding: $padding-icon-list-icon;
