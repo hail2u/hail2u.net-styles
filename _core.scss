@@ -248,12 +248,9 @@ del {
 }
 
 // Embedded Content
-@import 'assets/partials/hail2u-scss-partials/vendor-extension';
-
 img,
 video {
-  @include box-sizing(border-box);
-
+  box-sizing: border-box;
   height: auto;
   max-width: 100%;
 

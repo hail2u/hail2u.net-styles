@@ -135,16 +135,13 @@ body::after {
 }
 
 // Colors
-@import 'assets/partials/hail2u-scss-partials/vendor-extension';
-
 .colors {
   @extend %clearfix;
 
   padding-left: 0;
 
   li {
-    @include box-sizing(border-box);
-
+    box-sizing: border-box;
     display: block;
     height: 3rem;
     margin-top: ($width-gap-half + $width-gap);
@@ -152,9 +149,8 @@ body::after {
     width: 100%;
 
     &::before {
-      @include box-sizing(border-box);
-
       border: 1px solid #000;
+      box-sizing: border-box;
       content: '';
       display: block;
       height: 100%;

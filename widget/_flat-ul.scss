@@ -8,8 +8,7 @@
     padding-left: 0;
 
     li {
-      @include box-sizing(border-box);
-
+      box-sizing: border-box;
       display: block;
       float: left;
       padding-left: $padding-side-flat-ul-item-full;

@@ -1,17 +1,15 @@
 // Search Form
 @import '../assets/partials/hail2u-scss-partials/image-replacement';
-@import '../assets/partials/hail2u-scss-partials/vendor-extension';
 
 %search-form {
   @extend %positioning-root;
 
   .query {
-    @include box-sizing(border-box);
-
     -webkit-appearance: none;
     background-color: $color-bg-search-form-query;
     border: $width-border-search-form-query solid $color-border-search-form-query;
     border-radius: 0;
+    box-sizing: border-box;
     color: $color-fg-search-form-query;
     height: $height-search-form-query;
     padding: 0 $padding-right-search-form-query 0 $padding-left-search-form-query;
