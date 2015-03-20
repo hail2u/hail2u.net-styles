@@ -54,8 +54,8 @@
     var i;
     var image;
     var images = d.querySelectorAll([
-      'main img[src^="assets/images/"]',
-      'main img[src^="/images/"]'
+      '.content img[src^="assets/images/"]',
+      '.content img[src^="/images/"]'
     ].join(','));
     var l;
     var parent;
