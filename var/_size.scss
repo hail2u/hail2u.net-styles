@@ -255,8 +255,11 @@ $margin-left-topic-more: rem(1 / 3);
 // Share Buttons
 $padding-right-share-buttons-item: $width-gap-half;
 
-$height-share-buttons-icon: rem($line-height);
+$border-radius-share-buttons-icon: $width-border-bold;
+$height-share-buttons-icon: rem($ratio-share-buttons-icon);
 $width-share-buttons-icon: $height-share-buttons-icon;
+
+$height-bg-share-buttons-icon: percentage(1 / $ratio-golden);
 
 // Google AdSense
 $margin-top-adsbygoogle: $margin;

@@ -16,12 +16,14 @@
   a {
     @extend %ir;
 
+    background-color: $color-bg-share-buttons-icon;
+    border-radius: $border-radius-share-buttons-icon;
     display: block;
     height: $height-share-buttons-icon;
     width: $width-share-buttons-icon;
 
     &::before {
-      background-size: auto percentage($ratio-share-buttons-icon);
+      background-size: auto $height-bg-share-buttons-icon;
     }
   }
 
