@@ -18,6 +18,8 @@
   }
 
   a {
+    background-color: $color-bg-icon-list-icon;
+    border-radius: $border-radius-icon-list-icon;
     box-sizing: border-box;
     display: block;
     height: $height-icon-list-icon;
