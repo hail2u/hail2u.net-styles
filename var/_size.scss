@@ -194,6 +194,7 @@ $width-flat-ul-item-full: (100% / 3);
 
 // Floatage
 $margin-side-floatage-content: $width-gap-half;
+$width-max-floatage-content: percentage(1 / pow($ratio-golden, 2));
 
 // Footnote
 $margin-top-footnote: $margin;

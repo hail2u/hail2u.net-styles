@@ -3,12 +3,12 @@
   .floatage-left {
     float: left;
     margin-right: $margin-side-floatage-content;
-    max-width: 50%;
+    max-width: $width-max-floatage-content;
   }
 
   .floatage-right {
     float: right;
     margin-left: $margin-side-floatage-content;
-    max-width: 50%;
+    max-width: $width-max-floatage-content;
   }
 }
