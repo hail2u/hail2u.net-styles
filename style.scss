@@ -6,23 +6,7 @@
  */
 
 // Normalization
-@import 'assets/partials/modularized-normalize-scss/base/body';
-
-@import 'assets/partials/modularized-normalize-scss/html5/blocks';
-@import 'assets/partials/modularized-normalize-scss/html5/inline-blocks';
-@import 'assets/partials/modularized-normalize-scss/html5/audio';
-@import 'assets/partials/modularized-normalize-scss/html5/hidden';
-
-@import 'assets/partials/modularized-normalize-scss/embed/img';
-@import 'assets/partials/modularized-normalize-scss/embed/svg';
-
-@import 'assets/partials/modularized-normalize-scss/grouping/hr';
-@import 'assets/partials/modularized-normalize-scss/grouping/pre';
-@import 'assets/partials/modularized-normalize-scss/grouping/fix-monospace';
-
-@import 'assets/partials/modularized-normalize-scss/forms/fix-font';
-
-@import 'assets/partials/modularized-normalize-scss/tables/fix-cell-spacing';
+@import 'normalization';
 
 // Function
 @import 'assets/partials/hail2u-scss-functions/color/encode-color';
