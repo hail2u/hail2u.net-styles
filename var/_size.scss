@@ -177,9 +177,6 @@ $bottom-site-search-full: ($margin-bottom-global-footer + (rem($line-height * $r
 $width-max-site-search: ($width-content / $ratio-golden);
 $width-max-site-search-content: ($width-content / pow($ratio-golden, 2));
 
-// Ads
-$margin-side-ads: (- $width-gap-half);
-
 // Drop
 $margin-left-drop-full: (- ($width-supplement + $width-gap));
 $margin-right-drop-full: $width-gap-half;
@@ -265,5 +262,3 @@ $height-bg-share-buttons-icon: percentage(1 / $ratio-golden);
 
 // Google AdSense
 $margin-top-adsbygoogle: $margin;
-$margin-side-adsbygoogle-small: $width-gap-half;
-$breakpoint-adsbygoogle-small: (16px + 300px + 16px + 20px);
