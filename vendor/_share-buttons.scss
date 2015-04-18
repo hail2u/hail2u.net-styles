@@ -5,12 +5,20 @@
   ul {
     @extend %float;
 
+    line-height: $line-height-share-buttons;
     padding-left: 0;
+
+    &::before {
+      content: "Share:";
+      display: table-cell;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
   }
 
   li {
     display: table-cell;
-    padding-right: $padding-right-share-buttons-item;
+    padding-left: $padding-left-share-buttons-item;
   }
 
   a {
@@ -47,6 +55,15 @@
     ul {
       bottom: 0;
       top: auto;
+
+      &::before {
+        display: block;
+      }
+    }
+
+    li {
+      padding-left: 0;
+      padding-right: $padding-right-share-buttons-item-full;
     }
   }
 }
