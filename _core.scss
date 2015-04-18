@@ -288,6 +288,14 @@ td {
   padding: $padding-td;
   vertical-align: top;
   white-space: nowrap;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
 th {
