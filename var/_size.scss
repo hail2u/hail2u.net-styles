@@ -261,7 +261,7 @@ $border-radius-share-buttons-icon: $width-border-bold;
 $height-share-buttons-icon: rem($ratio-share-buttons-icon);
 $width-share-buttons-icon: $height-share-buttons-icon;
 
-$height-bg-share-buttons-icon: percentage(1 / $ratio-golden);
+$height-bg-share-buttons-icon-image: percentage(1 / $ratio-golden);
 
 // Google AdSense
 $margin-top-adsbygoogle: $margin;
