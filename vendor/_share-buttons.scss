@@ -10,6 +10,7 @@
 
     &::before {
       content: "Share:";
+      color: $color-fg-share-buttons-label;
       display: table-cell;
       font-weight: bold;
       text-transform: uppercase;
