@@ -64,7 +64,7 @@ th {
 }
 
 .note {
-  border-left: 3px double #f00;
+  border-left: 3px double $stress;
   padding-left: $font-size;
 }
 
@@ -137,14 +137,10 @@ $breakpoint: ($indent + $breakpoint);
 
 
 // Print
+@import 'assets/partials/hail2u-scss-partials/black-prints';
+
 @media print {
-  * {
-    background-color: transparent !important;
-    background-image: none !important;
-    box-shadow: none !important;
-    color: #000 !important;
-    text-shadow: none !important;
-  }
+  @include black-prints;
 
   body {
     background-color: inherit;
@@ -161,7 +157,7 @@ $breakpoint: ($indent + $breakpoint);
   hr,
   ins,
   strong {
-    border-color: #000;
+    border-color: currentColor;
   }
 
   pre,

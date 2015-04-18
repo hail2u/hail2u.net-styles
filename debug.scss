@@ -17,6 +17,16 @@
 @import 'var/ratio';
 @import 'var/size';
 
+$color-bg-column: #f0f;
+$color-bg-gutter: #0f0;
+
+$color-outline-outline: #f0f;
+
+$color-bg-breakpoints: #096;
+$color-fg-breakpoints: #fff;
+
+$color-border-colors: #000;
+
 // Classes
 @import 'class/clearfix';
 
@@ -24,18 +34,18 @@
 .show-column::before {
   background-image: linear-gradient(
     to right,
-    #0f0 0,
-    #0f0 100%
+    $color-bg-gutter 0,
+    $color-bg-gutter 100%
   ),
   linear-gradient(
     to right,
-    #0f0 0,
-    #0f0 100%
+    $color-bg-gutter 0,
+    $color-bg-gutter 100%
   ),
   linear-gradient(
     to right,
-    #f0f 0,
-    #f0f 100%
+    $color-bg-column 0,
+    $color-bg-column 100%
   );
   background-position: left center, right center, center;
   background-repeat: repeat-y;
@@ -53,12 +63,12 @@
   @media (min-width: $breakpoint-content) {
     background-image: linear-gradient(
       to right,
-      #0f0 0,
-      #0f0 $width-gap-half,
-      #f0f $width-gap-half,
-      #f0f ($width-gap-half + $width-content),
-      #0f0 ($width-gap-half + $width-content),
-      #0f0 $width-content-outer
+      $color-bg-gutter 0,
+      $color-bg-gutter $width-gap-half,
+      $color-bg-column $width-gap-half,
+      $color-bg-column ($width-gap-half + $width-content),
+      $color-bg-gutter ($width-gap-half + $width-content),
+      $color-bg-gutter $width-content-outer
     );
     background-position: center;
     background-size: $width-content-outer 1px;
@@ -67,16 +77,16 @@
   @media (min-width: $breakpoint-full) {
     background-image: linear-gradient(
       to right,
-      #0f0 0,
-      #0f0 $width-gap-half,
-      #f0f $width-gap-half,
-      #f0f ($width-gap-half + $width-supplement),
-      #0f0 ($width-gap-half + $width-supplement),
-      #0f0 ($width-gap-half + $width-supplement + $width-gap),
-      #f0f ($width-gap-half + $width-supplement + $width-gap),
-      #f0f ($width-gap-half + $width-full),
-      #0f0 ($width-gap-half + $width-full),
-      #0f0 $width-full-outer
+      $color-bg-gutter 0,
+      $color-bg-gutter $width-gap-half,
+      $color-bg-column $width-gap-half,
+      $color-bg-column ($width-gap-half + $width-supplement),
+      $color-bg-gutter ($width-gap-half + $width-supplement),
+      $color-bg-gutter ($width-gap-half + $width-supplement + $width-gap),
+      $color-bg-column ($width-gap-half + $width-supplement + $width-gap),
+      $color-bg-column ($width-gap-half + $width-full),
+      $color-bg-gutter ($width-gap-half + $width-full),
+      $color-bg-gutter $width-full-outer
     );
     background-size: $width-full-outer 1px;
   }
@@ -84,14 +94,14 @@
 
 // Show Outline
 .show-outline * {
-  outline: 1px solid #f0f;
+  outline: 1px solid $color-outline-outline;
 }
 
 // Breakpoints
 body::after {
-  background-color: #096;
+  background-color: $color-bg-breakpoints;
   bottom: .5rem;
-  color: #fff;
+  color: $color-fg-breakpoints;
   content: 'Small';
   display: block;
   font-size: .875rem;
@@ -149,7 +159,7 @@ body::after {
     width: 100%;
 
     &::before {
-      border: 1px solid #000;
+      border: 1px solid $color-border-colors;
       box-sizing: border-box;
       content: '';
       display: block;
