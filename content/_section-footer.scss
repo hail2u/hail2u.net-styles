@@ -4,14 +4,14 @@
   @extend %float;
 
   bottom: 100%;
+  color: $color-fg-section-footer;
   font-size: rem($ratio-text-section-footer);
+  line-height: $line-height-section-footer;
   position: absolute;
   width: 100%;
 
   p {
     @extend %ellipsing;
-
-    color: $color-fg-section-footer;
   }
 
   .date {

@@ -135,7 +135,7 @@ $margin-top-content-content: (- ($margin-top-heading-primary - $margin-top-tagli
 $margin-top-content-full: (- ($margin-top-heading-primary - $margin-top-tagline-full));
 
 // First Heading
-$margin-top-first-heading: ($margin-top-heading-primary + rem($line-height) * $ratio-text-section-footer);
+$margin-top-first-heading: ($margin-top-heading-primary + rem($line-height));
 $margin-top-first-heading-full: $margin-top-heading-primary;
 
 $margin-left-first-heading-permalink-full: $margin-left-tagline-full;
@@ -144,9 +144,10 @@ $padding-bottom-first-heading-permalink-content: ($margin-top-tagline-content - 
 $padding-bottom-first-heading-permalink-full: ($margin-top-tagline-full - $margin);
 
 // Section Footer
+$line-height-section-footer: ($line-height / $ratio-text-section-footer);
 $width-section-footer-full: $width-float-full;
 
-$margin-top-section-footer-p-full: rem(($ratio-text-heading-primary * $line-height-heading - $ratio-text-section-footer * $line-height) / 2);
+$margin-top-section-footer-p-full: rem(($ratio-text-heading-primary * $line-height-heading - $ratio-text-section-footer * $line-height-section-footer) / 2);
 
 $margin-top-section-footer-p-permalink-full: $margin;
 
