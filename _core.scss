@@ -65,6 +65,7 @@ pre {
   @include font-feature-settings('kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1);
 
   clear: both;
+  font-family: $font-family-code;
   line-height: $line-height-pre;
 
   h2 + & {
@@ -224,6 +225,8 @@ code,
 var,
 samp,
 kbd {
+  font-family: $font-family-code;
+
   p &::before,
   p &::after {
     content: ' ';

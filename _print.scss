@@ -23,6 +23,14 @@
     font-family: $font-family-body-print;
   }
 
+  pre,
+  code,
+  samp,
+  var,
+  kbd {
+    font-family: $font-family-code-print;
+  }
+
   // Page Break
   h1,
   h2,
