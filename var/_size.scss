@@ -196,9 +196,9 @@ $width-max-floatage-content: percentage(1 / pow($ratio-golden, 2));
 
 // Footnote
 $margin-top-footnote: $margin;
-$width-border-footnote: ($width-border-thin * 8);
-$height-border-footnote: $width-border-thin;
 $padding-top-footnote: $margin-mini;
+$width-bg-footnote: ($width-border-thin * 8);
+$height-bg-footnote: $width-border-thin;
 
 // Full Width
 $margin-side-full-width: (- $width-gap-half);
