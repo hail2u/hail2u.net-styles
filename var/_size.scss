@@ -69,7 +69,8 @@ $width-border-search-form-query: $width-border-thin;
 $height-search-form-query: ($height-search-form-button + $padding-mini * 2);
 
 // Core
-$line-height-body: $line-height;
+$line-height-body: (($line-height + $line-height-mini) / 2);
+$line-height-body-content: $line-height;
 
 $margin-top-heading-primary: $margin-huge;
 

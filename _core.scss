@@ -13,6 +13,10 @@ body {
   color: $color-fg-body;
   font-family: $font-family-body;
   line-height: $line-height-body;
+
+  @media (min-width: $breakpoint-content) {
+    line-height: $line-height-body-content;
+  }
 }
 
 h1 {
