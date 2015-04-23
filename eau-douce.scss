@@ -6,6 +6,15 @@
 @font-face {
   font-family: 'Eau Douce';
   font-style: normal;
+  font-weight: 100;
+  src: local('Eau Douce'),
+    url('assets/fonts/eau-douce/xl.woff2') format('woff2'),
+    url('assets/fonts/eau-douce/xl.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Eau Douce';
+  font-style: normal;
   font-weight: 400;
   src: local('Eau Douce'),
     url('assets/fonts/eau-douce/r.woff2') format('woff2'),
