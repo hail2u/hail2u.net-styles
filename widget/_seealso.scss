@@ -2,6 +2,7 @@
 .seealso {
   @extend %ir;
 
+  color: $color-fg-seealso;
   font-size: rem($ratio-text-seealso);
 
   &::before {
