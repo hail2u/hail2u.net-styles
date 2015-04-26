@@ -214,7 +214,7 @@ $margin-side-icon-list: (- $width-gap-half);
 
 $padding-side-icon-list-item: $width-gap-half;
 
-$border-radius-icon-list-icon: $width-border-bold;
+$border-radius-icon-list-icon: 51%;
 $padding-icon-list-icon: ((100% - percentage(1 / $ratio-golden)) / 2);
 $width-icon-list-icon: ($width-content / pow($ratio-golden, 5));
 $height-icon-list-icon: ($width-content / pow($ratio-golden, 5));
@@ -259,7 +259,7 @@ $line-height-share-buttons: $ratio-share-buttons-icon;
 $padding-left-share-buttons-item: $width-gap-half;
 $padding-right-share-buttons-item-full: $width-gap-half;
 
-$border-radius-share-buttons-icon: $width-border-bold;
+$border-radius-share-buttons-icon: 51%;
 $height-share-buttons-icon: rem($ratio-share-buttons-icon);
 $width-share-buttons-icon: $height-share-buttons-icon;
 
