@@ -1,15 +1,9 @@
 // Seealso
 .seealso {
-  @extend %ir;
-
   color: $color-fg-seealso;
   font-size: rem($ratio-text-seealso);
 
   &::before {
-    background-image: $image-seealso-icon;
-    background-position: left center;
-    display: inline-block;
-    margin-right: $margin-right-seealso-icon;
-    width: $width-seealso-icon;
+    content: '📍 ';
   }
 }
