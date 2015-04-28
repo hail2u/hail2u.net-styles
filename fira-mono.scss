@@ -1,0 +1,35 @@
+/*!
+ * Fira Mono
+ *
+ * Copyright (c) 2014, Mozilla Foundation https://mozilla.org/ with Reserved Font Name Fira Mono.
+ * Copyright (c) 2014, Telefonica S.A.
+ *
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1.
+ * This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+ */
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Mono'),
+    url('assets/fonts/fira-mono/r.woff2') format('woff2'),
+    url('assets/fonts/fira-mono/r.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Fira Mono Medium'),
+    url('assets/fonts/fira-mono/m.woff2') format('woff2'),
+    url('assets/fonts/fira-mono/m.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Fira Mono Bold'),
+    url('assets/fonts/fira-mono/b.woff2') format('woff2'),
+    url('assets/fonts/fira-mono/b.woff') format('woff');
+}
