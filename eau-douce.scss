@@ -6,24 +6,6 @@
 @font-face {
   font-family: 'Eau Douce';
   font-style: normal;
-  font-weight: 100;
-  src: local('Eau Douce Thin'),
-    url('assets/fonts/eau-douce/t.woff2') format('woff2'),
-    url('assets/fonts/eau-douce/t.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Eau Douce';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Eau Douce Light'),
-    url('assets/fonts/eau-douce/l.woff2') format('woff2'),
-    url('assets/fonts/eau-douce/l.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Eau Douce';
-  font-style: normal;
   font-weight: 400;
   src: local('Eau Douce'),
     url('assets/fonts/eau-douce/r.woff2') format('woff2'),
@@ -33,26 +15,8 @@
 @font-face {
   font-family: 'Eau Douce';
   font-style: normal;
-  font-weight: 500;
-  src: local('Eau Douce Medium'),
-    url('assets/fonts/eau-douce/m.woff2') format('woff2'),
-    url('assets/fonts/eau-douce/m.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Eau Douce';
-  font-style: normal;
   font-weight: 700;
   src: local('Eau Douce Bold'),
     url('assets/fonts/eau-douce/b.woff2') format('woff2'),
     url('assets/fonts/eau-douce/b.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Eau Douce';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Eau Douce Heavy'),
-    url('assets/fonts/eau-douce/bk.woff2') format('woff2'),
-    url('assets/fonts/eau-douce/bk.woff') format('woff');
 }

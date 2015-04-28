@@ -19,15 +19,6 @@
 @font-face {
   font-family: 'Fira Mono';
   font-style: normal;
-  font-weight: 500;
-  src: local('Fira Mono Medium'),
-    url('assets/fonts/fira-mono/m.woff2') format('woff2'),
-    url('assets/fonts/fira-mono/m.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
   font-weight: 700;
   src: local('Fira Mono Bold'),
     url('assets/fonts/fira-mono/b.woff2') format('woff2'),
