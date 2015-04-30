@@ -1,0 +1,36 @@
+/*!
+ * Noto Sans CJK JP
+ *
+ * Copyright 2014 Google Internationalization Team, with Reserved Font Name
+ * 'Noto'. All Rights Reserved.
+ *
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1.
+ * This license is copied below, and is also available with a FAQ at:
+ * http://scripts.sil.org/OFL
+ */
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans CJK JP Thin'),
+    url('assets/fonts/noto-sans-cjk-jp/t.woff2') format('woff2'),
+    url('assets/fonts/noto-sans-cjk-jp/t.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans CJK JP'),
+    url('assets/fonts/noto-sans-cjk-jp/r.woff2') format('woff2'),
+    url('assets/fonts/noto-sans-cjk-jp/r.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans CJK JP Bold'),
+    url('assets/fonts/noto-sans-cjk-jp/b.woff2') format('woff2'),
+    url('assets/fonts/noto-sans-cjk-jp/b.woff') format('woff');
+}
