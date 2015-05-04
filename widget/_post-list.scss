@@ -11,25 +11,32 @@
     margin-top: $margin-top-post-list-item;
   }
 
-  .date {
+  .info {
     @extend %float;
 
+    color: $color-fg-post-list-info;
+    font-size: rem($ratio-text-post-list-info);
+    line-height: $line-height-post-list-info;
+  }
+
+  .date {
     color: $color-fg-post-list-date;
-    display: block;
-    font-size: rem($ratio-text-post-list-date);
-    line-height: $line-height-post-list-date;
+  }
+
+  .tag {
+    color: $color-fg-post-list-tag;
   }
 
   @media (min-width: $breakpoint-content) {
-    .date {
+    .info {
       float: right;
       font-size: rem(1);
-      line-height: $line-height-post-list-date-content;
+      line-height: $line-height-post-list-info-content;
     }
   }
 
   @media (min-width: $breakpoint-full) {
-    .date {
+    .info {
       float: none;
     }
   }
