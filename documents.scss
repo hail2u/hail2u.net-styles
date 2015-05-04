@@ -81,7 +81,7 @@ th {
   font-weight: 700;
 
   &::before {
-    content: '🔗\FE0E ';
+    content: '🔗\FE0E\0020';
   }
 
   a {

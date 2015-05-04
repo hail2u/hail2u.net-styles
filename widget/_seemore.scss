@@ -7,7 +7,7 @@
     text-transform: uppercase;
 
     &::before {
-      content: '➔ \FE0E';
+      content: '➔\FE0E\0020';
     }
   }
 }
