@@ -77,7 +77,7 @@ $margin-top-heading-primary: $margin-huge;
 $margin-top-heading: $margin-large;
 
 $margin-vert-hr: ($margin * $ratio-golden);
-$height-hr: rem($line-height);
+$height-hr: rem($line-height * $ratio-golden);
 $width-hr: ($height-hr * pow($ratio-golden, 3));
 
 $width-hr-bg: ($height-hr * $ratio-golden);
