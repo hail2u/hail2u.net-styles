@@ -9,59 +9,59 @@ $ratio-text-primary: (16px / 16px);
 $ratio-text-secondary: (21px / 16px);
 
 // Harmonic Ratio
-$ratio-text-alpha: ($ratio-text-secondary * $ratio-golden);
-$ratio-text-beta: ($ratio-text-primary * $ratio-golden);
-$ratio-text-gamma: $ratio-text-secondary;
-$ratio-text-delta: $ratio-text-primary;
-$ratio-text-epsilon: ($ratio-text-secondary / $ratio-golden);
-$ratio-text-zeta: ($ratio-text-primary / $ratio-golden);
+$ratio-text: $ratio-text-primary;
+$ratio-text-tiny: ($ratio-text-primary / $ratio-golden);
+$ratio-text-small: ($ratio-text-secondary / $ratio-golden);
+$ratio-text-large: $ratio-text-secondary;
+$ratio-text-huge: ($ratio-text-primary * $ratio-golden);
+$ratio-text-gargantuan: ($ratio-text-secondary * $ratio-golden);
 
 // Column
 $ratio-content: 1;
 $ratio-supplement: (1 / pow($ratio-golden, 2));
 
 // Core
-$ratio-text-html: $ratio-text-delta;
+$ratio-text-html: $ratio-text;
 
-$ratio-text-heading-primary: $ratio-text-beta;
+$ratio-text-heading-primary: $ratio-text-huge;
 
-$ratio-text-heading: $ratio-text-gamma;
+$ratio-text-heading: $ratio-text-large;
 
 // Site Navigation
-$ratio-text-site-navigation: $ratio-text-epsilon;
+$ratio-text-site-navigation: $ratio-text-small;
 
 // Tagline
-$ratio-text-tagline: $ratio-text-alpha;
+$ratio-text-tagline: $ratio-text-gargantuan;
 
 // First Heading
 $ratio-text-first-heading-permalink: $ratio-text-tagline;
 
 // Section Footer
-$ratio-text-section-footer: $ratio-text-epsilon;
+$ratio-text-section-footer: $ratio-text-small;
 
 // Global Footer
-$ratio-text-global-footer: $ratio-text-epsilon;
+$ratio-text-global-footer: $ratio-text-small;
 
 // Footnote
-$ratio-text-footnote: $ratio-text-epsilon;
+$ratio-text-footnote: $ratio-text-small;
 
 // Post List
-$ratio-text-post-list-info: $ratio-text-epsilon;
+$ratio-text-post-list-info: $ratio-text-small;
 
 // Pull Quote
-$ratio-text-pull-quote: $ratio-text-beta;
+$ratio-text-pull-quote: $ratio-text-huge;
 
 // Read Older
-$ratio-text-read-older-title: $ratio-text-beta;
+$ratio-text-read-older-title: $ratio-text-huge;
 
 // Seealso
-$ratio-text-seealso: $ratio-text-gamma;
+$ratio-text-seealso: $ratio-text-large;
 
 // Sidenote
-$ratio-text-sidenote: $ratio-text-epsilon;
+$ratio-text-sidenote: $ratio-text-small;
 
 // Topic
-$ratio-text-topic-more: $ratio-text-epsilon;
+$ratio-text-topic-more: $ratio-text-small;
 
 // Share Buttons
-$ratio-share-buttons-icon: $ratio-text-alpha;
+$ratio-share-buttons-icon: $ratio-text-gargantuan;
