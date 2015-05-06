@@ -1,8 +1,6 @@
 // Post List
 .post-list {
-  ol {
-    padding-left: 0;
-  }
+  padding-left: 0;
 
   li {
     @extend %positioning-root;
