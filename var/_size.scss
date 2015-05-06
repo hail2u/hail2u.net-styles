@@ -77,7 +77,7 @@ $height-search-form-query: ($height-search-form-button + $padding-small * 2);
 $line-height-body: ($line-height * .9);
 $line-height-body-content: $line-height;
 
-$margin-top-heading-primary: $margin-gargantuan;
+$margin-top-heading-primary: $margin-enormous;
 
 $margin-top-heading: $margin-huge;
 
@@ -130,9 +130,9 @@ $width-border-site-navigation-mark: $width-border;
 
 // Tagline
 $margin-left-tagline-full: (- ($width-supplement + $width-gap));
-$margin-top-tagline: $margin-large;
-$margin-top-tagline-content: $margin-huge;
-$margin-top-tagline-full: $margin-gargantuan;
+$margin-top-tagline: $margin-huge;
+$margin-top-tagline-content: $margin-gargantuan;
+$margin-top-tagline-full: $margin-enormous;
 $width-max-tagline-full: $width-full;
 
 // Content
@@ -161,8 +161,8 @@ $margin-top-section-footer-p-permalink-full: $margin;
 $margin-bottom-global-footer: $margin-huge;
 
 // Footlinks
-$margin-top-footlinks: $margin-huge;
-$margin-top-footlinks-full: $margin-gargantuan;
+$margin-top-footlinks: $margin-gargantuan;
+$margin-top-footlinks-full: $margin-enormous;
 
 $padding-right-footlinks-item: $width-gap-half;
 $margin-left-footlinks-separator: $padding-right-footlinks-item;
