@@ -1,12 +1,17 @@
 // Line Height
 $line-height: $ratio-golden;
-$line-height-mini: ($line-height * .8);
+$line-height-small: ($line-height * .8);
 
 // Margin
 $margin: rem($ratio-golden);
-$margin-mini: ($margin / pow($ratio-golden, 2));
-$margin-large: ($margin * pow($ratio-golden, 2));
-$margin-huge: ($margin * pow($ratio-golden, 3));
+$margin-tinymal: ($margin / pow($ratio-golden, 3));
+$margin-tiny: ($margin / pow($ratio-golden, 2));
+$margin-small: ($margin / $ratio-golden);
+$margin-large: ($margin * $ratio-golden);
+$margin-huge: ($margin * pow($ratio-golden, 2));
+$margin-gargantuan: ($margin * pow($ratio-golden, 3));
+$margin-enormous: ($margin * pow($ratio-golden, 4));
+$margin-maximal: ($margin * pow($ratio-golden, 5));
 
 // Indent
 $indent: rem(pow($ratio-golden, 2));
@@ -18,7 +23,7 @@ $width-border-bold: ($width-border * 2);
 
 // Padding
 $padding: .25rem;
-$padding-mini: ($padding / 2);
+$padding-small: ($padding / 2);
 $padding-large: ($padding * 2);
 
 // Column
@@ -51,38 +56,38 @@ $padding-left-centering-full: ($width-supplement-outer + $width-gap-half);
 $margin-right-float-full: $width-gap;
 $width-float-full: $width-supplement;
 
-$line-height-heading: $line-height-mini;
+$line-height-heading: $line-height-small;
 
 $margin-top-margin: $margin;
 
-$margin-top-margin-after-heading: $margin-mini;
+$margin-top-margin-after-heading: $margin-tiny;
 
 $margin-top-search-form: $margin;
 
 $width-search-form-button: rem($line-height);
 $height-search-form-button: $width-search-form-button;
-$top-search-form-button: $padding-mini;
+$top-search-form-button: $padding-small;
 
 $padding-right-search-form-query: $padding;
 $padding-left-search-form-query: $width-search-form-button;
 $width-border-search-form-query: $width-border-thin;
-$height-search-form-query: ($height-search-form-button + $padding-mini * 2);
+$height-search-form-query: ($height-search-form-button + $padding-small * 2);
 
 // Core
 $line-height-body: ($line-height * .9);
 $line-height-body-content: $line-height;
 
-$margin-top-heading-primary: $margin-huge;
+$margin-top-heading-primary: $margin-gargantuan;
 
-$margin-top-heading: $margin-large;
+$margin-top-heading: $margin-huge;
 
-$margin-vert-hr: ($margin * $ratio-golden);
+$margin-vert-hr: $margin-large;
 $height-hr: rem($line-height * $ratio-golden);
 $width-hr: ($height-hr * pow($ratio-golden, 3));
 
 $width-hr-bg: ($height-hr * $ratio-golden);
 
-$line-height-pre: $line-height-mini;
+$line-height-pre: $line-height-small;
 
 $width-border-blockquote: $width-border-bold;
 $padding-left-blockquote: $width-gap;
@@ -94,10 +99,10 @@ $padding-left-list-nested-full: $padding-left-list;
 $padding-left-dd: $indent;
 
 $width-border-figcaption: $width-border-thin;
-$padding-top-figcaption-full: ($width-border-figcaption + $margin-mini);
+$padding-top-figcaption-full: ($width-border-figcaption + $margin-tiny);
 $padding-bottom-figcaption-at-last-full: $padding-top-figcaption-full;
 
-$padding-top-figcaption-blockquote: $margin-mini;
+$padding-top-figcaption-blockquote: $margin-tiny;
 
 $width-border-strong: $width-border-thin;
 
@@ -125,9 +130,9 @@ $width-border-site-navigation-mark: $width-border;
 
 // Tagline
 $margin-left-tagline-full: (- ($width-supplement + $width-gap));
-$margin-top-tagline: ($margin * $ratio-golden);
-$margin-top-tagline-content: $margin-large;
-$margin-top-tagline-full: $margin-huge;
+$margin-top-tagline: $margin-large;
+$margin-top-tagline-content: $margin-huge;
+$margin-top-tagline-full: $margin-gargantuan;
 $width-max-tagline-full: $width-full;
 
 // Content
@@ -153,11 +158,11 @@ $margin-top-section-footer-p-full: rem(($ratio-text-heading-primary * $line-heig
 $margin-top-section-footer-p-permalink-full: $margin;
 
 // Global Footer
-$margin-bottom-global-footer: $margin-large;
+$margin-bottom-global-footer: $margin-huge;
 
 // Footlinks
 $margin-top-footlinks: $margin-huge;
-$margin-top-footlinks-full: $margin-huge;
+$margin-top-footlinks-full: $margin-gargantuan;
 
 $padding-right-footlinks-item: $width-gap-half;
 $margin-left-footlinks-separator: $padding-right-footlinks-item;
@@ -165,7 +170,7 @@ $margin-left-footlinks-separator: $padding-right-footlinks-item;
 // Byline
 $left-byline-full: $width-gap-half;
 
-$margin-bottom-byline-border: $margin-mini;
+$margin-bottom-byline-border: $margin-tiny;
 $width-byline-border: $width-logo;
 $width-border-byline-border: $width-border;
 
@@ -173,7 +178,7 @@ $width-border-byline-border: $width-border;
 $margin-bottom-site-search: ($margin-bottom-global-footer);
 $margin-top-site-search: (- $margin-bottom-global-footer + $margin);
 $right-site-search-content: $width-gap-half;
-$bottom-site-search-content: ($margin-bottom-global-footer + rem($line-height * $ratio-text-global-footer) + $margin-mini + $width-border-byline-border + $margin + (rem($line-height * $ratio-text-global-footer) - $height-search-form-query) / 2);
+$bottom-site-search-content: ($margin-bottom-global-footer + rem($line-height * $ratio-text-global-footer) + $margin-tiny + $width-border-byline-border + $margin + (rem($line-height * $ratio-text-global-footer) - $height-search-form-query) / 2);
 $bottom-site-search-full: ($margin-bottom-global-footer + (rem($line-height * $ratio-text-global-footer) - $height-search-form-query) / 2);
 
 $width-max-site-search: ($width-content / $ratio-golden);
@@ -197,7 +202,7 @@ $width-max-floatage-content: percentage(1 / pow($ratio-golden, 2));
 
 // Footnote
 $margin-top-footnote: $margin;
-$padding-top-footnote: $margin-mini;
+$padding-top-footnote: $margin-tiny;
 $width-bg-footnote: ($width-border-thin * 8);
 $height-bg-footnote: $width-border-thin;
 
@@ -220,22 +225,22 @@ $width-icon-list-icon: ($width-content / pow($ratio-golden, 5));
 $height-icon-list-icon: ($width-content / pow($ratio-golden, 5));
 
 // Post List
-$margin-top-post-list-item: $margin-mini;
+$margin-top-post-list-item: $margin-tiny;
 
-$line-height-post-list-info: $line-height-mini;
+$line-height-post-list-info: $line-height-small;
 $line-height-post-list-info-content: $line-height;
 
 // Pull Quote
-$line-height-pull-quote: $line-height-mini;
+$line-height-pull-quote: $line-height-small;
 $margin-side-pull-quote: $width-gap;
 $margin-side-pull-quote-content: $indent;
 $margin-left-pull-quote-full: (- ($width-supplement + $width-gap));
 $width-pull-quote-full: ($width-supplement + $width-gap + $width-supplement);
 
 // Read Older
-$margin-top-read-older-label: $margin-large;
+$margin-top-read-older-label: $margin-huge;
 
-$line-height-read-older-title: $line-height-mini;
+$line-height-read-older-title: $line-height-small;
 $margin-top-read-older-title-full: $margin-top-read-older-label;
 
 $line-height-read-older-label-full: ($ratio-text-read-older-title * $line-height-read-older-title);
