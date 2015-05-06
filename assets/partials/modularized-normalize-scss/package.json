@@ -1,7 +1,7 @@
 {
   "name": "modularized-normalize-scss",
   "description": "Modularized and Sassy Normalize.css.",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "author": {
     "name": "Kyo Nagashima",
     "email": "hail2u@gmail.com",
@@ -10,6 +10,20 @@
   "bugs": {
     "url": "https://github.com/hail2u/normalize.scss/issues"
   },
+  "files": [
+    "Gruntfile.js",
+    "README.md",
+    "_normalize.scss",
+    "base/",
+    "embed/",
+    "forms/",
+    "grouping/",
+    "html5/",
+    "links/",
+    "package.json",
+    "tables/",
+    "text-level/"
+  ],
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
@@ -33,15 +47,15 @@
   "main": "_normalize.scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hail2u/normalize.scss.git"
+    "url": "git+https://github.com/hail2u/normalize.scss.git"
   },
   "scripts": {
     "test": "grunt test"
   },
   "readme": "normalize.scss\n==============\n\nModularized and [Sass][1]y [Normalize.css][2].\n\n\nINSTALLATION\n------------\n\nThree options are available:\n\n  1. [Download package][3]\n  2. Clone with Git: `$ git clone https://github.com/hail2u/normalize-scss.git`\n  3. Install with [Bower][4]: `$ bower install modularized-normalize-scss --save-dev`\n\n\nTEST\n----\n\nInstall development dependencies with [npm][5]:\n\n    $ npm install\n\nThen, test with [Grunt][6]:\n\n    $ grunt test\n\n\nLICENSE\n-------\n\nMIT (same as Normalize.css): http://hail2u.mit-license.org/2013\n\n\n[1]: http://sass-lang.com/\n[2]: http://necolas.github.io/normalize.css/\n[3]: https://github.com/hail2u/normalize.scss/archive/master.zip\n[4]: http://bower.io/\n[5]: http://npmjs.org/\n[6]: http://gruntjs.com/\n",
   "readmeFilename": "README.md",
-  "gitHead": "90db7730891314b66be58c6e0000a2c3f3e61a62",
-  "_id": "modularized-normalize-scss@3.0.2",
-  "_shasum": "d6df940c57d4f080cfb543b4322cc2c48db159a9",
-  "_from": "modularized-normalize-scss@>=3.0.2 <4.0.0"
+  "gitHead": "fb7c5c4cb83cba9b56bccb9632ce506e9b53c7f4",
+  "_id": "modularized-normalize-scss@3.0.3",
+  "_shasum": "6ecab11791372dd82d0b139d78287ef209d90912",
+  "_from": "modularized-normalize-scss@3.0.3"
 }
