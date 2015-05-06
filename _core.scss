@@ -23,7 +23,6 @@ h1 {
   @extend %heading;
   @extend %link-underline-removal;
 
-  color: $color-fg-heading-primary;
   font-size: rem($ratio-text-heading-primary);
   margin: $margin-top-heading-primary 0 0;
 }
@@ -31,7 +30,6 @@ h1 {
 h2 {
   @extend %heading;
 
-  color: $color-fg-heading;
   font-size: rem($ratio-text-heading);
   margin: $margin-top-heading 0 0;
 }
