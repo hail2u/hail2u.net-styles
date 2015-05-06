@@ -15,6 +15,7 @@ $ratio-text-small: ($ratio-text-secondary / $ratio-golden);
 $ratio-text-large: $ratio-text-secondary;
 $ratio-text-huge: ($ratio-text-primary * $ratio-golden);
 $ratio-text-gargantuan: ($ratio-text-secondary * $ratio-golden);
+$ratio-text-enormous: ($ratio-text-primary * pow($ratio-golden, 2));
 
 // Column
 $ratio-content: 1;
