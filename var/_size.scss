@@ -4,7 +4,7 @@ $line-height-small: ($line-height * .8);
 
 // Margin
 $margin: rem($ratio-golden);
-$margin-tinymal: ($margin / pow($ratio-golden, 3));
+$margin-minimal: ($margin / pow($ratio-golden, 3));
 $margin-tiny: ($margin / pow($ratio-golden, 2));
 $margin-small: ($margin / $ratio-golden);
 $margin-large: ($margin * $ratio-golden);
@@ -18,8 +18,8 @@ $indent: rem(pow($ratio-golden, 2));
 
 // Border
 $width-border: .125rem;
-$width-border-thin: ($width-border / 2);
-$width-border-bold: ($width-border * 2);
+$width-border-small: ($width-border / 2);
+$width-border-large: ($width-border * 2);
 
 // Padding
 $padding: .25rem;
@@ -70,7 +70,7 @@ $top-search-form-button: $padding-small;
 
 $padding-right-search-form-query: $padding;
 $padding-left-search-form-query: $width-search-form-button;
-$width-border-search-form-query: $width-border-thin;
+$width-border-search-form-query: $width-border-small;
 $height-search-form-query: ($height-search-form-button + $padding-small * 2);
 
 // Core
@@ -89,7 +89,7 @@ $width-hr-bg: ($height-hr * $ratio-golden);
 
 $line-height-pre: $line-height-small;
 
-$width-border-blockquote: $width-border-bold;
+$width-border-blockquote: $width-border-large;
 $padding-left-blockquote: $width-gap;
 $margin-left-blockquote-full: (- ($width-border-blockquote + $padding-left-blockquote));
 
@@ -98,17 +98,17 @@ $padding-left-list-nested-full: $padding-left-list;
 
 $padding-left-dd: $indent;
 
-$width-border-figcaption: $width-border-thin;
+$width-border-figcaption: $width-border-small;
 $padding-top-figcaption-full: ($width-border-figcaption + $margin-tiny);
 $padding-bottom-figcaption-at-last-full: $padding-top-figcaption-full;
 
 $padding-top-figcaption-blockquote: $margin-tiny;
 
-$width-border-strong: $width-border-thin;
+$width-border-strong: $width-border-small;
 
-$letter-spacing-abbr: $width-border-thin;
+$letter-spacing-abbr: $width-border-small;
 
-$width-border-td: $width-border-thin;
+$width-border-td: $width-border-small;
 $padding-td: $padding-large;
 
 $width-border-th-thead: $width-border;
@@ -203,8 +203,8 @@ $width-max-floatage-content: percentage(1 / pow($ratio-golden, 2));
 // Footnote
 $margin-top-footnote: $margin;
 $padding-top-footnote: $margin-tiny;
-$width-bg-footnote: ($width-border-thin * 8);
-$height-bg-footnote: $width-border-thin;
+$width-bg-footnote: ($width-border-small * 8);
+$height-bg-footnote: $width-border-small;
 
 // Full Width
 $margin-side-full-width: (- $width-gap-half);
@@ -212,7 +212,7 @@ $margin-left-full-width-full: (- ($width-gap-half + $width-supplement + $width-g
 
 $margin-left-full-width-caption: $width-gap-half;
 $margin-top-full-width-caption-full: $margin;
-$padding-left-full-width-caption-full: ($margin-left-full-width-caption - $width-border-thin);
+$padding-left-full-width-caption-full: ($margin-left-full-width-caption - $width-border-small);
 
 // Icon List
 $margin-side-icon-list: (- $width-gap-half);

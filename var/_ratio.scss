@@ -10,14 +10,14 @@ $ratio-text-secondary: (21px / 16px);
 
 // Harmonic Ratio
 $ratio-text: $ratio-text-primary;
-// $ratio-text-minimal: ($ratio-text-seconday / pow($ratio-golden, 2));
+$ratio-text-minimal: ($ratio-text-secondary / pow($ratio-golden, 2));
 $ratio-text-tiny: ($ratio-text-primary / $ratio-golden);
 $ratio-text-small: ($ratio-text-secondary / $ratio-golden);
 $ratio-text-large: $ratio-text-secondary;
 $ratio-text-huge: ($ratio-text-primary * $ratio-golden);
 $ratio-text-gargantuan: ($ratio-text-secondary * $ratio-golden);
 $ratio-text-enormous: ($ratio-text-primary * pow($ratio-golden, 2));
-// $ratio-text-maximal: ($ratio-text-secondary * pow($ratio-golden, 2));
+$ratio-text-maximal: ($ratio-text-secondary * pow($ratio-golden, 2));
 
 // Column
 $ratio-content: 1;
