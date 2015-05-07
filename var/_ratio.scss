@@ -34,10 +34,14 @@ $ratio-text-heading: $ratio-text-huge;
 $ratio-text-site-navigation: $ratio-text-small;
 
 // Tagline
-$ratio-text-tagline: $ratio-text-enormous;
+$ratio-text-tagline: $ratio-text-large;
+$ratio-text-tagline-content: $ratio-text-gargantuan;
+$ratio-text-tagline-full: $ratio-text-enormous;
 
 // First Heading
 $ratio-text-first-heading-permalink: $ratio-text-tagline;
+$ratio-text-first-heading-permalink-content: $ratio-text-tagline-content;
+$ratio-text-first-heading-permalink-full: $ratio-text-tagline-full;
 
 // Section Footer
 $ratio-text-section-footer: $ratio-text-small;
