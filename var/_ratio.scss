@@ -26,7 +26,8 @@ $ratio-supplement: (1 / pow($ratio-golden, 2));
 // Core
 $ratio-text-html: $ratio-text;
 
-$ratio-text-heading-primary: $ratio-text-gargantuan;
+$ratio-text-heading-primary: $ratio-text-huge;
+$ratio-text-heading-primary-content: $ratio-text-gargantuan;
 
 $ratio-text-heading: $ratio-text-huge;
 

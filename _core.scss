@@ -25,6 +25,10 @@ h1 {
 
   font-size: rem($ratio-text-heading-primary);
   margin: $margin-top-heading-primary 0 0;
+
+  @media (min-width: $breakpoint-content) {
+    font-size: rem($ratio-text-heading-primary-content);
+  }
 }
 
 h2 {
