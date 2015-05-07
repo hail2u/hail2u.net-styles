@@ -262,7 +262,9 @@ $padding-right-share-buttons-item-full: $width-gap-half;
 
 $border-radius-share-buttons-icon: 51%;
 $height-share-buttons-icon: rem($ratio-share-buttons-icon);
+$height-share-buttons-icon-full: rem($ratio-share-buttons-icon-full);
 $width-share-buttons-icon: $height-share-buttons-icon;
+$width-share-buttons-icon-full: $height-share-buttons-icon-full;
 
 $height-bg-share-buttons-icon-image: percentage(1 / $ratio-golden);
 

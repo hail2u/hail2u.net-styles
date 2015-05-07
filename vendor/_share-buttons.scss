@@ -34,6 +34,11 @@
     &::before {
       background-size: auto $height-bg-share-buttons-icon-image;
     }
+
+    @media (min-width: $breakpoint-full) {
+      height: $height-share-buttons-icon-full;
+      width: $width-share-buttons-icon-full;
+    }
   }
 
   .twitter-tweet a::before {
