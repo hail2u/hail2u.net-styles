@@ -173,7 +173,7 @@ $margin-left-footlinks-separator: $padding-right-footlinks-item;
 $left-byline-full: $width-gap-half;
 
 $margin-bottom-byline-border: $margin-tiny;
-$width-byline-border: $width-logo;
+$width-byline-border: ($width-supplement / pow($ratio-golden, 3));
 $width-border-byline-border: $width-border;
 
 // Site Search
