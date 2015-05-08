@@ -6,7 +6,7 @@
   position: absolute;
   right: $right-site-navigation;
   text-transform: uppercase;
-  top: $top-site-navigation;
+  top: 0;
 
   li {
     display: table-cell;
@@ -26,6 +26,7 @@
 
   @media (min-width: $breakpoint-content) {
     li {
+      line-height: $line-height-site-navigation-item-content;
       padding-left: $padding-left-site-navigation-item-content;
     }
   }
