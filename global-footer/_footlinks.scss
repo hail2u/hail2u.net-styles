@@ -15,11 +15,6 @@
       content: '·';
       margin-left: $margin-left-footlinks-separator;
     }
-
-    &:last-child::after {
-      content: '';
-      margin-left: 0;
-    }
   }
 
   @media (min-width: $breakpoint-full) {
