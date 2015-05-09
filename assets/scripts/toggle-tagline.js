@@ -11,13 +11,12 @@
     }
 
     evt.preventDefault();
-    evt.stopPropagation();
   };
 
   var init = function () {
     var article = d.getElementById("introduction");
     var tagline = d.querySelector(".tagline");
-    d.querySelector(".logo").addEventListener(
+    d.querySelector(".first-heading").addEventListener(
       "click",
       toggle.bind(null, tagline, article),
       false
