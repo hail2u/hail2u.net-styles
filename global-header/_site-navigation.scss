@@ -1,12 +1,11 @@
 // Site Navigation
 .site-navigation {
+  display: table;
   font-size: rem($ratio-text-site-navigation);
+  margin-left: auto;
   margin-top: 0;
   padding-left: 0;
-  position: absolute;
-  right: $right-site-navigation;
   text-transform: uppercase;
-  top: 0;
 
   li {
     display: table-cell;
