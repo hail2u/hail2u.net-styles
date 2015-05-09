@@ -1,0 +1,14 @@
+// Footing
+%footing {
+  color: $color-fg-footing;
+  font-size: rem($ratio-text-footing);
+  line-height: $line-height-footing;
+
+  .date {
+    color: $color-fg-footing-date;
+  }
+
+  .tag {
+    color: $color-fg-footing-tag;
+  }
+}

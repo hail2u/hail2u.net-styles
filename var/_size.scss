@@ -56,6 +56,8 @@ $padding-left-centering-full: ($width-supplement-outer + $width-gap-half);
 $margin-right-float-full: $width-gap;
 $width-float-full: $width-supplement;
 
+$line-height-footing: ($line-height-small / $ratio-text-footing);
+
 $line-height-heading: $line-height-small;
 
 $margin-top-margin: $margin;
@@ -150,10 +152,9 @@ $padding-bottom-first-heading-permalink-content: ($margin-top-tagline-content - 
 $padding-bottom-first-heading-permalink-full: ($margin-top-tagline-full - $margin);
 
 // Section Footer
-$line-height-section-footer: ($line-height / $ratio-text-section-footer);
 $width-section-footer-full: $width-float-full;
 
-$margin-top-section-footer-p-full: rem(($ratio-text-heading-primary * $line-height-heading - $ratio-text-section-footer * $line-height-section-footer) / 2);
+$margin-top-section-footer-p-full: rem(($ratio-text-heading-primary-content * $line-height-heading - $ratio-text-footing * $line-height-footing) / 2);
 
 $margin-top-section-footer-p-permalink-full: $margin;
 
@@ -226,7 +227,6 @@ $height-icon-list-icon: ($width-content / pow($ratio-golden, 5));
 // Post List
 $margin-top-post-list-item: $margin-tiny;
 
-$line-height-post-list-info: $line-height-small;
 $line-height-post-list-info-content: $line-height;
 
 // Pull Quote

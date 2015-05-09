@@ -23,6 +23,9 @@ $ratio-text-maximal: ($ratio-text-secondary * pow($ratio-golden, 2));
 $ratio-content: 1;
 $ratio-supplement: (1 / pow($ratio-golden, 2));
 
+// Placeholder class
+$ratio-text-footing: $ratio-text-small;
+
 // Core
 $ratio-text-html: $ratio-text;
 
@@ -45,17 +48,11 @@ $ratio-text-first-heading-permalink: $ratio-text-tagline;
 $ratio-text-first-heading-permalink-content: $ratio-text-tagline-content;
 $ratio-text-first-heading-permalink-full: $ratio-text-tagline-full;
 
-// Section Footer
-$ratio-text-section-footer: $ratio-text-small;
-
 // Global Footer
 $ratio-text-global-footer: $ratio-text-small;
 
 // Footnote
 $ratio-text-footnote: $ratio-text-small;
-
-// Post List
-$ratio-text-post-list-info: $ratio-text-small;
 
 // Pull Quote
 $ratio-text-pull-quote: $ratio-text-huge;

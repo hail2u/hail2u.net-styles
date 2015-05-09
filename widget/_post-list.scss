@@ -11,18 +11,7 @@
 
   .info {
     @extend %float;
-
-    color: $color-fg-post-list-info;
-    font-size: rem($ratio-text-post-list-info);
-    line-height: $line-height-post-list-info;
-  }
-
-  .date {
-    color: $color-fg-post-list-date;
-  }
-
-  .tag {
-    color: $color-fg-post-list-tag;
+    @extend %footing;
   }
 
   @media (min-width: $breakpoint-content) {

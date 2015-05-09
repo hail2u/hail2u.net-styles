@@ -2,24 +2,14 @@
 .section-footer {
   @extend %link-underline-removal;
   @extend %float;
+  @extend %footing;
 
   bottom: 100%;
-  color: $color-fg-section-footer;
-  font-size: rem($ratio-text-section-footer);
-  line-height: $line-height-section-footer;
   position: absolute;
   width: 100%;
 
   p {
     @extend %ellipsing;
-  }
-
-  .date {
-    color: $color-fg-section-footer-date;
-  }
-
-  .tag {
-    color: $color-fg-section-footer-tag;
   }
 
   @media (min-width: $breakpoint-full) {

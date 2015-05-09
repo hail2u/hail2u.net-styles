@@ -55,6 +55,12 @@ $color-accent-triad-negative-light: rgb(255, 200, 60);
 $color-accent-triad-negative-lightest: rgb(255, 212, 104);
 
 // Placeholder Class
+$color-fg-footing: $color-shade-lightest;
+
+$color-fg-footing-date: $color-shade-dark;
+
+$color-fg-footing-tag: $color-shade-dark;
+
 $color-fg-search-form-query: $color-dark;
 $color-bg-search-form-query: $color-light-light;
 $color-border-search-form-query: $color-tint-dark;
@@ -99,13 +105,6 @@ $color-border-site-navigation-mark: $color-accent;
 // First Heading
 $color-fg-first-heading-permalink: $color-fg-tagline;
 
-// Section Footer
-$color-fg-section-footer: $color-shade-lightest;
-
-$color-fg-section-footer-date: $color-shade-dark;
-
-$color-fg-section-footer-tag: $color-shade-dark;
-
 // Byline
 $color-fg-byline: $color-shade-dark;
 $color-border-byline-border: $color-tint-dark;
@@ -115,13 +114,6 @@ $color-border-footnote: $color-tint-dark;
 
 // Icon List
 $color-bg-icon-list-icon: $color-accent-lightest;
-
-// Post List
-$color-fg-post-list-info: $color-shade-lightest;
-
-$color-fg-post-list-date: $color-shade-dark;
-
-$color-fg-post-list-tag: $color-shade-dark;
 
 // Pull Quote
 $color-fg-pull-quote: $color-shade-dark;
