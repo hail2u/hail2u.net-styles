@@ -60,11 +60,11 @@
   @media (min-width: $breakpoint-full) {
     ul {
       bottom: 0;
-      line-height: $line-height-share-buttons-full;
       top: auto;
 
       &::before {
         display: block;
+        margin-bottom: $margin-bottom-share-buttons-label-full;
       }
     }
 
