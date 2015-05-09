@@ -10,6 +10,7 @@
     position: absolute;
     right: 0;
     top: $top-site-search-content;
+    z-index: 1;
   }
 
   @media (min-width: $breakpoint-full) {
