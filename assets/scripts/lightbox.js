@@ -37,7 +37,7 @@
     this.style.position = "fixed";
     this.style.top = "0";
     this.style.width = "100vw";
-    this.style.zIndex = "2";
+    this.style.zIndex = "100";
     image.style.bottom = "0";
     image.style.height = "auto";
     image.style.left = "0";
