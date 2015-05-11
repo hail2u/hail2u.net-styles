@@ -1,0 +1,29 @@
+/*!
+ * M+ 1m
+ *
+ * Copyright 2002-2014 M+ FONTS PROJECT
+ *
+ * These fonts are free software.
+ * Unlimited permission is granted to use, copy, and distribute them, with or
+ * without modification, either commercially or noncommercially. THESE FONTS ARE
+ * PROVIDED "AS IS" WITHOUT WARRANTY.
+ */
+@font-face {
+  font-family: 'M+ 1m Latin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('M+ 1m'),
+    local('M+ 1m regular'),
+    url('assets/fonts/mplus-1m-latin/r.woff2') format('woff2'),
+    url('assets/fonts/mplus-1m-latin/r.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'M+ 1m Latin';
+  font-style: normal;
+  font-weight: 700;
+  src: local('M+ 1m Bold'),
+    local('M+ 1m bold'),
+    url('assets/fonts/mplus-1m-latin/b.woff2') format('woff2'),
+    url('assets/fonts/mplus-1m-latin/b.woff') format('woff');
+}
