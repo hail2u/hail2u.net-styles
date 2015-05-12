@@ -77,9 +77,9 @@ $height-search-form-query: ($height-search-form-button + $padding-small * 2);
 $line-height-body: ($line-height * .9);
 $line-height-body-content: $line-height;
 
-$margin-top-heading-primary: $margin-enormous;
+$margin-top-heading: $margin-enormous;
 
-$margin-top-heading: $margin-huge;
+$margin-top-subheading: $margin-huge;
 
 $margin-vert-hr: $margin-large;
 $height-hr: rem($line-height * $ratio-golden);
@@ -136,13 +136,13 @@ $margin-top-tagline-full: $margin-enormous;
 $width-max-tagline-full: $width-full;
 
 // Content
-$margin-top-content: (- ($margin-top-heading-primary - $margin-top-tagline));
-$margin-top-content-content: (- ($margin-top-heading-primary - $margin-top-tagline-content));
-$margin-top-content-full: (- ($margin-top-heading-primary - $margin-top-tagline-full));
+$margin-top-content: (- ($margin-top-heading - $margin-top-tagline));
+$margin-top-content-content: (- ($margin-top-heading - $margin-top-tagline-content));
+$margin-top-content-full: (- ($margin-top-heading - $margin-top-tagline-full));
 
 // First Heading
-$margin-top-first-heading: ($margin-top-heading-primary + rem($line-height));
-$margin-top-first-heading-full: $margin-top-heading-primary;
+$margin-top-first-heading: ($margin-top-heading + rem($line-height));
+$margin-top-first-heading-full: $margin-top-heading;
 
 $margin-left-first-heading-permalink-full: $margin-left-tagline-full;
 $padding-bottom-first-heading-permalink: ($margin-top-tagline - $margin);
@@ -152,7 +152,7 @@ $padding-bottom-first-heading-permalink-full: ($margin-top-tagline-full - $margi
 // Section Footer
 $width-section-footer-full: $width-float-full;
 
-$margin-top-section-footer-p-full: rem(($ratio-text-heading-primary-content * $line-height-heading - $ratio-text-footing * $line-height-footing) / 2);
+$margin-top-section-footer-p-full: rem(($ratio-text-heading-content * $line-height-heading - $ratio-text-footing * $line-height-footing) / 2);
 
 $margin-top-section-footer-p-permalink-full: $margin;
 

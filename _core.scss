@@ -23,22 +23,22 @@ h1 {
   @extend %heading;
   @extend %link-underline-removal;
 
-  font-size: rem($ratio-text-heading-primary);
-  margin: $margin-top-heading-primary 0 0;
+  font-size: rem($ratio-text-heading);
+  margin: $margin-top-heading 0 0;
 
   @media (min-width: $breakpoint-content) {
-    font-size: rem($ratio-text-heading-primary-content);
+    font-size: rem($ratio-text-heading-content);
   }
 }
 
 h2 {
   @extend %heading;
 
-  font-size: rem($ratio-text-heading);
-  margin: $margin-top-heading 0 0;
+  font-size: rem($ratio-text-subheading);
+  margin: $margin-top-subheading 0 0;
 
   @media (min-width: $breakpoint-content) {
-    font-size: rem($ratio-text-heading-content);
+    font-size: rem($ratio-text-subheading-content);
   }
 }
 
