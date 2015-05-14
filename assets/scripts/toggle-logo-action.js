@@ -6,23 +6,6 @@
 (function (w, d) {
   "use strict";
 
-  // Polyfill for String#endsWith()
-  if (!String.prototype.endsWith) {
-    String.prototype.endsWith = function (search, position) {
-      var index = 0;
-      var subject = this.toString();
-
-      if (position === undefined || position > subject.length) {
-        position = subject.length;
-      }
-
-      position -= search.length;
-      index = subject.lastIndexOf(search, position);
-
-      return index !== -1 && index === position;
-    };
-  }
-
   var debounce = function (fn, delay) {
     var timeout = null;
 
@@ -43,48 +26,49 @@
   };
 
   var scrollToTop = function (evt) {
-    var offset = (w.pageYOffset - 1) + "px";
-    var styleBody = d.body.style;
-    var styleLogo = evt.srcElement.parentNode.style;
-    styleBody.transition = styleLogo.transition = "initial";
-    styleBody.marginTop = "-" + offset;
-    styleLogo.marginTop = offset;
-    w.scrollTo(0, 0);
-    styleBody.transition = styleLogo.transition = "margin-top .5s ease-in-out";
-    styleBody.marginTop = styleLogo.marginTop = "0";
+    var root = d.documentElement;
+    var styleRoot = root.style;
+    var doScroll = function () {
+      styleRoot.transition = styleRoot.transform = "initial";
+      w.scrollTo(0, 0);
+      root.removeEventListener("transitionend", doScroll, false);
+    };
+    var scrollDistance = w.pageYOffset;
+    root.addEventListener("transitionend", doScroll, false);
+    styleRoot.transition = "transform 1s ease-in-out";
+    styleRoot.transform = "translate3d(0, " + scrollDistance + "px, 0)";
     evt.preventDefault();
   };
 
   var init = function () {
-    var classToTop = " to-top";
     var logo = d.querySelector(".logo");
-    var heightLogo = logo.scrollHeight;
-    var hrefToTop = "#top";
+    var classToTop = " to-top";
+    var reClassToTop = new RegExp(classToTop);
+    var hrefLogo = logo.href;
+    var fragToTop = "#top";
     var toggleLogoAction = debounce(function () {
-      if (w.pageYOffset > heightLogo) {
-        if (logo.href && logo.href.endsWith(hrefToTop)) {
-          return;
-        }
+      if (w.pageYOffset < logo.scrollHeight) {
+        logo.removeEventListener("click", scrollToTop, false);
+        logo.className = logo.className.replace(reClassToTop, "");
 
-        logo.addEventListener("click", scrollToTop, false);
-        logo.className += classToTop;
-
-        if (logo.href) {
-          logo.href = hrefToTop;
+        if (hrefLogo) {
+          hrefLogo = "/";
         }
 
         return;
       }
 
-      logo.removeEventListener("click", scrollToTop, false);
-      logo.className = logo.className.replace(new RegExp(classToTop), "");
+      if (hrefLogo && hrefLogo.endsWith(fragToTop)) {
+        return;
+      }
 
-      if (logo.href) {
-        logo.href = "/";
+      logo.addEventListener("click", scrollToTop, false);
+      logo.className += classToTop;
+
+      if (hrefLogo) {
+        hrefLogo = fragToTop;
       }
     }, 500);
-
-    toggleLogoAction();
     w.addEventListener("scroll", toggleLogoAction, false);
   };
 
