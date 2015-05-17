@@ -6,38 +6,41 @@
 (function (d) {
   "use strict";
 
-  var toggle = function (image, evt) {
+  var toggle = function (evt) {
+    var image = evt.srcElement;
+    var parent = image.parentNode;
+
     if (evt.which !== 1) {
       return;
     }
 
     evt.preventDefault();
 
-    if (this.style.cssText && image.style.cssText) {
+    if (parent.style.cssText && image.style.cssText) {
       if (image.originalsrc) {
         image.src = image.originalsrc;
         delete image.originalsrc;
       }
 
-      this.style.cssText = "";
+      parent.style.cssText = "";
       image.style.cssText = "";
 
       return;
     }
 
-    if (this.href !== image.src) {
+    if (parent.href !== image.src) {
       image.originalsrc = image.src;
-      image.src = this.href;
+      image.src = parent.href;
     }
 
-    this.style.backgroundColor = "#fff";
-    this.style.cursor = "zoom-out";
-    this.style.height = "100vh";
-    this.style.left = "0";
-    this.style.position = "fixed";
-    this.style.top = "0";
-    this.style.width = "100vw";
-    this.style.zIndex = "100";
+    parent.style.backgroundColor = "#fff";
+    parent.style.cursor = "zoom-out";
+    parent.style.height = "100vh";
+    parent.style.left = "0";
+    parent.style.position = "fixed";
+    parent.style.top = "0";
+    parent.style.width = "100vw";
+    parent.style.zIndex = "100";
     image.style.bottom = "0";
     image.style.height = "auto";
     image.style.left = "0";
@@ -52,23 +55,21 @@
 
   var init = function () {
     var i;
-    var image;
     var images = d.querySelectorAll([
       ".content img[src^=\"assets/images/\"]",
       ".content img[src^=\"/images/\"]"
     ].join(","));
-    var l;
+    var l = images.length;
     var parent;
 
-    for (i = 0, l = images.length; i < l; i++) {
-      image = images[i];
-      parent = image.parentNode;
+    for (i = 0; i < l; i++) {
+      parent = images[i].parentNode;
 
       if (
         parent.tagName === "A" &&
         /^(assets)?\/images\//.test(parent.getAttribute("href"))
       ) {
-        parent.addEventListener("click", toggle.bind(parent, image), false);
+        parent.addEventListener("click", toggle, false);
       }
     }
   };
