@@ -182,6 +182,15 @@ $margin-bottom-byline-border: $margin-tiny;
 $width-byline-border: ($width-supplement / pow($ratio-golden, 3));
 $width-border-byline-border: $width-border;
 
+// Contact Form
+$padding-contact-form-label: $padding-large;
+
+$margin-top-contact-form-button: $margin-small;
+$padding-left-contact-form-button: $padding-small;
+$width-contact-form-button: 6em;
+$border-radius-contact-form-button: $width-border;
+$letter-spacing-contact-form-button: $padding-left-contact-form-button;
+
 // Drop
 $margin-left-drop-full: (- ($width-supplement + $width-gap));
 $margin-right-drop-full: $width-gap-half;

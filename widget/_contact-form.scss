@@ -1,0 +1,65 @@
+// Contact Form
+.contact-form {
+  @extend %margin;
+
+  .spamfree {
+    display: none;
+  }
+
+  .cell {
+    background-color: $color-bg-contact-form-label;
+    border: 1px solid $color-border-contact-form-label;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    box-sizing: border-box;
+    color: $color-fg-contact-form-label;
+    display: block;
+    font-size: rem($ratio-text-contact-form-label);
+    padding: $padding-contact-form-label;
+  }
+
+  .half {
+    float: left;
+    width: 50%;
+  }
+
+  .full {
+    clear: both;
+    width: 100%;
+  }
+
+  .for-email {
+    border-right-width: 1px;
+  }
+
+  .for-message {
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+  }
+
+  .text-field {
+    background-color: transparent;
+    border: 0;
+    color: $color-fg-contact-form-text-field;
+    display: block;
+    font-size: rem($ratio-text-contact-form-text-field);
+    padding: 0;
+    width: 100%;
+  }
+
+  .button {
+    background-color: $color-bg-contact-form-button;
+    border: 0;
+    border-radius: $border-radius-contact-form-button;
+    color: $color-fg-contact-form-button;
+    cursor: pointer;
+    display: block;
+    font-size: rem($ratio-text-contact-form-button);
+    font-weight: bolder;
+    letter-spacing: $letter-spacing-contact-form-button;
+    margin-top: $margin-top-contact-form-button;
+    padding-left: $padding-left-contact-form-button;
+    text-transform: uppercase;
+    width: $width-contact-form-button;
+  }
+}
