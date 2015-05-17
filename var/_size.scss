@@ -81,11 +81,9 @@ $margin-top-heading: $margin-enormous;
 
 $margin-top-subheading: $margin-huge;
 
-$margin-vert-hr: $margin-large;
-$height-hr: rem($line-height * $ratio-golden);
-$width-hr: ($height-hr * pow($ratio-golden, 3));
-
-$width-hr-bg: ($height-hr * $ratio-golden);
+$margin-top-hr: $margin;
+$height-hr: rem($line-height * pow($ratio-golden, 3));
+$width-hr: ($height-hr * 1.5);
 
 $line-height-pre: $line-height-small;
 

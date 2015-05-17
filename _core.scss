@@ -58,13 +58,13 @@ hr {
   border: 0;
   clear: both;
   height: $height-hr;
-  margin: $margin-vert-hr auto;
+  margin: $margin-top-hr auto 0;
   width: $width-hr;
 
   &::before {
     background-image: $image-hr;
     background-repeat: repeat-x;
-    background-size: $width-hr-bg 100%;
+    background-size: auto 100%;
   }
 }
 
