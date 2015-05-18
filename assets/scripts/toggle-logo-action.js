@@ -29,14 +29,17 @@
     var root = d.documentElement;
     var styleRoot = root.style;
     var doScroll = function () {
-      styleRoot.transition = styleRoot.transform = "initial";
+      styleRoot.transition = styleRoot.webkitTransform = "all 0s ease 0s";
+      styleRoot.transform = styleRoot.webkitTransform = "none";
       w.scrollTo(0, 0);
       root.removeEventListener("transitionend", doScroll, false);
     };
     var scrollDistance = w.pageYOffset;
     root.addEventListener("transitionend", doScroll, false);
     styleRoot.transition = "transform 1s ease-in-out";
-    styleRoot.transform = "translate3d(0, " + scrollDistance + "px, 0)";
+    styleRoot.webkitTransition = "-webkit-transform 1s ease-in-out";
+    styleRoot.transform = styleRoot.webkitTransform = "translate3d(0, " +
+      scrollDistance + "px, 0)";
     evt.preventDefault();
   };
 
