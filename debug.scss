@@ -6,16 +6,16 @@
  */
 
 // Functions
-@import 'assets/partials/hail2u-scss-functions/number/rem';
-@import 'assets/partials/hail2u-scss-functions/number/pow';
-@import 'assets/partials/hail2u-scss-functions/number/remove-unit';
+@import "assets/partials/hail2u-scss-functions/number/rem";
+@import "assets/partials/hail2u-scss-functions/number/pow";
+@import "assets/partials/hail2u-scss-functions/number/remove-unit";
 
 // Variables
-@import 'var/font';
-@import 'var/color';
-@import 'var/image';
-@import 'var/ratio';
-@import 'var/size';
+@import "var/font";
+@import "var/color";
+@import "var/image";
+@import "var/ratio";
+@import "var/size";
 
 $color-bg-column: #f0f;
 $color-bg-gutter: #0f0;
@@ -28,7 +28,7 @@ $color-fg-breakpoints: #fff;
 $color-border-colors: #000;
 
 // Classes
-@import 'class/clearfix';
+@import "class/clearfix";
 
 // Show Column
 .show-column::before {
@@ -51,7 +51,7 @@ $color-border-colors: #000;
   background-repeat: repeat-y;
   background-size: $width-gap-half, $width-gap-half, 100%;
   bottom: 0;
-  content: '';
+  content: "";
   left: 0;
   opacity: .05;
   pointer-events: none;
@@ -102,7 +102,7 @@ body::after {
   background-color: $color-bg-breakpoints;
   bottom: .5rem;
   color: $color-fg-breakpoints;
-  content: 'Small';
+  content: "Small";
   display: block;
   font-size: .875rem;
   line-height: 1;
@@ -111,11 +111,11 @@ body::after {
   right: .5rem;
 
   @media (min-width: $breakpoint-content) {
-    content: 'Medium: #{(($breakpoint-content / 1rem) * 16px)}';
+    content: "Medium: #{(($breakpoint-content / 1rem) * 16px)}";
   }
 
   @media (min-width: $breakpoint-full) {
-    content: 'Large: #{(($breakpoint-full / 1rem) * 16px)}';
+    content: "Large: #{(($breakpoint-full / 1rem) * 16px)}";
   }
 
   @media print {
@@ -165,7 +165,7 @@ body::after {
     &::before {
       border: 1px solid $color-border-colors;
       box-sizing: border-box;
-      content: '';
+      content: "";
       display: block;
       height: 100%;
       width: 100%;
@@ -364,6 +364,6 @@ body::after {
 
 // Line Length
 .line-length {
-  font-family: 'Verdana', sans-serif;
+  font-family: "Verdana", sans-serif;
   word-break: break-all;
 }

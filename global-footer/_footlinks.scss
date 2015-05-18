@@ -1,5 +1,5 @@
 // Footlinks
-@import '../assets/partials/hail2u-scss-partials/corporate-colors';
+@import "../assets/partials/hail2u-scss-partials/corporate-colors";
 
 .footlinks {
   ul {
@@ -12,7 +12,7 @@
     padding-right: $padding-right-footlinks-item;
 
     &:first-child::after {
-      content: '·';
+      content: "·";
       margin-left: $margin-left-footlinks-separator;
     }
   }

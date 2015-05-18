@@ -1,8 +1,8 @@
 // Root
-@import 'assets/partials/hail2u-scss-partials/vendor-extension';
+@import "assets/partials/hail2u-scss-partials/vendor-extension";
 
 html {
-  @include font-feature-settings('kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1);
+  @include font-feature-settings("kern" 1, "liga" 1, "lnum" 1, "pnum" 1);
 
   font-size: percentage($ratio-text-html);
 }
@@ -68,11 +68,11 @@ hr {
   }
 }
 
-@import 'assets/partials/hail2u-scss-partials/vendor-extension';
+@import "assets/partials/hail2u-scss-partials/vendor-extension";
 
 pre {
   @extend %margin;
-  @include font-feature-settings('kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1);
+  @include font-feature-settings("kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1);
 
   clear: both;
   font-family: $font-family-code;
@@ -196,7 +196,7 @@ figcaption {
 }
 
 // Text-level Semantics
-@import 'assets/partials/hail2u-scss-partials/vendor-extension';
+@import "assets/partials/hail2u-scss-partials/vendor-extension";
 
 a {
   color: $color-fg-a;
@@ -239,7 +239,7 @@ kbd {
 
   p &::before,
   p &::after {
-    content: ' ';
+    content: " ";
     display: inline-block;
     font-size: 0;
     width: 0;
@@ -275,11 +275,11 @@ video {
 }
 
 // Tabular Data
-@import 'assets/partials/hail2u-scss-partials/vendor-extension';
+@import "assets/partials/hail2u-scss-partials/vendor-extension";
 
 table {
   @extend %margin;
-  @include font-feature-settings('pnum' 0, 'tnum' 1, 'zero' 1);
+  @include font-feature-settings("pnum" 0, "tnum" 1, "zero" 1);
 
   clear: both;
   display: block;

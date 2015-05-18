@@ -10,20 +10,20 @@ $light: #fcfcfc;
 $link: #01e;
 $stress: #c33;
 $font-size: 1em;
-$sans-serif: 'Helvetica Neue', 'Calibri', sans-serif;
-$monospace: 'Menlo', 'Consolas', monospace;
+$sans-serif: "Helvetica Neue", "Calibri", sans-serif;
+$monospace: "Menlo", "Consolas", monospace;
 $width: 45em;
 
 
 // Imports
-@import 'assets/partials/hail2u-scss-partials/clearfix';
-@import 'assets/partials/hail2u-scss-partials/natural';
-@import 'assets/partials/hail2u-scss-partials/vendor-extension';
+@import "assets/partials/hail2u-scss-partials/clearfix";
+@import "assets/partials/hail2u-scss-partials/natural";
+@import "assets/partials/hail2u-scss-partials/vendor-extension";
 
 
 // Styles
 body {
-  @include font-feature-settings('kern' 1, 'liga' 1, 'lnum' 1, 'pnum' 1);
+  @include font-feature-settings("kern" 1, "liga" 1, "lnum" 1, "pnum" 1);
 
   max-width: $width;
 }
@@ -43,14 +43,14 @@ h6 {
 }
 
 pre {
-  @include font-feature-settings('kern' 0, 'liga' 0, 'pnum' 0, 'tnum' 1, 'zero' 1);
+  @include font-feature-settings("kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1);
 
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
 
 table {
-  @include font-feature-settings('pnum' 0, 'tnum' 1, 'zero' 1);
+  @include font-feature-settings("pnum" 0, "tnum" 1, "zero" 1);
 
   display: block;
   max-width: 100%;
@@ -81,7 +81,7 @@ th {
   font-weight: 700;
 
   &::before {
-    content: '🔗\FE0E\0020';
+    content: "🔗\FE0E\0020";
   }
 
   a {
@@ -137,7 +137,7 @@ $breakpoint: ($indent + $breakpoint);
 
 
 // Print
-@import 'assets/partials/hail2u-scss-partials/black-prints';
+@import "assets/partials/hail2u-scss-partials/black-prints";
 
 @media print {
   @include black-prints;
@@ -149,7 +149,7 @@ $breakpoint: ($indent + $breakpoint);
 
   p {
     &[href]::after {
-      content: ' (' attr(href) ')';
+      content: " (" attr(href) ")";
     }
   }
 
@@ -165,7 +165,7 @@ $breakpoint: ($indent + $breakpoint);
   kbd,
   samp,
   var {
-    font-family: 'Courier New', monospace;
+    font-family: "Courier New", monospace;
   }
 
   pre {

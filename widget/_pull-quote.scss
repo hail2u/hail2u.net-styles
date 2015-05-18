@@ -8,7 +8,7 @@
   text-align: center;
 
   p {
-    quotes: '\201c' '\201d'; // Left Double Quotation Mark, Double Low-9 Quotation Mark
+    quotes: "\201c" "\201d"; // Left Double Quotation Mark, Double Low-9 Quotation Mark
 
     &::before {
       content: open-quote;

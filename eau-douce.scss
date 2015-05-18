@@ -4,19 +4,19 @@
  * Copyright 2008-2011 Yamaoka Yasuhiro (http://www.yoworks.com/). All Rights Reserved.
  */
 @font-face {
-  font-family: 'Eau Douce';
+  font-family: "Eau Douce";
   font-style: normal;
   font-weight: 400;
-  src: local('Eau Douce'),
-    url('assets/fonts/eau-douce/r.woff2') format('woff2'),
-    url('assets/fonts/eau-douce/r.woff') format('woff');
+  src: local("Eau Douce"),
+    url("assets/fonts/eau-douce/r.woff2") format("woff2"),
+    url("assets/fonts/eau-douce/r.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Eau Douce';
+  font-family: "Eau Douce";
   font-style: normal;
   font-weight: 700;
-  src: local('Eau Douce Bold'),
-    url('assets/fonts/eau-douce/b.woff2') format('woff2'),
-    url('assets/fonts/eau-douce/b.woff') format('woff');
+  src: local("Eau Douce Bold"),
+    url("assets/fonts/eau-douce/b.woff2") format("woff2"),
+    url("assets/fonts/eau-douce/b.woff") format("woff");
 }
