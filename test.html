@@ -95,15 +95,19 @@
 
           <p>Hail2u.netで使われているマークアップやスタイルの解説兼プレビューのページです。マークアップはHTMLのソースを、スタイルについては<a href="https://github.com/hail2u/hail2u.net-styles">全ての変更履歴を含むGitリポジトリ</a>か<a href="style.css">このページで参照されている非圧縮のCSSファイル</a>を参照してください。このページに限ってはマークアップにおかしいところが多々ありますが、その多くはプレビューを作る上でのやむを得ない事情によるものです。</p>
 
-          <h2>デバッグ</h2>
+          <section>
+            <h2>デバッグ</h2>
 
-          <p>レイアウトの位置確認のために、空いているところをダブルクリックするとグリッドと要素のアウトラインをトグルすることができます。グリッドはCSSグラデーションを利用した簡単なもののため、描画領域の幅によっては数ピクセル程ずれることがあります。</p>
+            <p>レイアウトの位置確認のために、空いているところをダブルクリックするとグリッドと要素のアウトラインをトグルすることができます。グリッドはCSSグラデーションを利用した簡単なもののため、描画領域の幅によっては数ピクセル程ずれることがあります。</p>
 
-          <p>また、このセクションの大見出しをクリックすることでタグラインの切り替えを、日付をクリックすることでアイキャッチ画像の切り替えを、それぞれ行うことができます。</p>
+            <p>また、このセクションの大見出しをクリックすることでタグラインの切り替えを、日付をクリックすることでアイキャッチ画像の切り替えを、それぞれ行うことができます。</p>
+          </section>
 
-          <h2>印刷向けスタイルシート</h2>
+          <section>
+            <h2>印刷向けスタイルシート</h2>
 
-          <p>フォントはセリフ系を採用しています。他はなるべく白黒になるように調節しているだけです。</p>
+            <p>フォントはセリフ系を採用しています。他はなるべく白黒になるように調節しているだけです。</p>
+          </section>
         </main>
 
         <aside class="share-buttons">
@@ -189,64 +193,70 @@
 
         <p>以下はマークアップやスタイル、スクリプトにおけるコーディング規約もどきです。</p>
 
-        <h2>マークアップ</h2>
+        <section>
+          <h2>マークアップ</h2>
 
-        <ul>
-          <li><a href="https://html.spec.whatwg.org/multipage/">HTML5</a>のHTML文法を使ってUTF-8で書きます</li>
-          <li>インデントは半角空白を二文字使います</li>
-          <li>要素名や属性名は全て小文字に統一します</li>
-          <li>属性値を括るクオートは省略しません</li>
-          <li>真偽値を取る属性値はその値を省略します</li>
-          <li>属性の記述順
-            <ol>
-              <li><code>id</code>属性</li>
-              <li><code>class</code>属性</li>
-              <li><code>style</code>属性</li>
-              <li>その他属性</li>
-              <li>WAI-ARIA (<code>role</code>属性と<code>aria-*</code>属性)</li>
-              <li>カスタムデータ属性(<code>data-*</code>属性)</li>
-              <li>Microdata (<code>item*</code>属性)</li>
-            </ol>
-          </li>
-          <li>クラス名やIDはハイフンつなぎで指定します</li>
-          <li>JavaScript等で動的に生成されるコードも上記決め事に従います</li>
-          <li><a href="https://validator.nu/">Validator.nu</a>でエラーが出ないようにします</li>
-        </ul>
+          <ul>
+            <li><a href="https://html.spec.whatwg.org/multipage/">HTML5</a>のHTML文法を使ってUTF-8で書きます</li>
+            <li>インデントは半角空白を二文字使います</li>
+            <li>要素名や属性名は全て小文字に統一します</li>
+            <li>属性値を括るクオートは省略しません</li>
+            <li>真偽値を取る属性値はその値を省略します</li>
+            <li>属性の記述順
+              <ol>
+                <li><code>id</code>属性</li>
+                <li><code>class</code>属性</li>
+                <li><code>style</code>属性</li>
+                <li>その他属性</li>
+                <li>WAI-ARIA (<code>role</code>属性と<code>aria-*</code>属性)</li>
+                <li>カスタムデータ属性(<code>data-*</code>属性)</li>
+                <li>Microdata (<code>item*</code>属性)</li>
+              </ol>
+            </li>
+            <li>クラス名やIDはハイフンつなぎで指定します</li>
+            <li>JavaScript等で動的に生成されるコードも上記決め事に従います</li>
+            <li><a href="https://validator.nu/">Validator.nu</a>でエラーが出ないようにします</li>
+          </ul>
+        </section>
 
-        <h2>スタイル</h2>
+        <section>
+          <h2>スタイル</h2>
 
-        <ul>
-          <li><a href="https://sass-lang.com/">Sass</a>のSCSS記法を使ってUTF-8で書きます</li>
-          <li>インデントは半角空白を二文字使います</li>
-          <li>セレクターは一行につき一つに制限します</li>
-          <li>定義は一行につき一つに制限します</li>
-          <li>プロパティーのアルファベット順に定義を記述します</li>
-          <li>省略系のプロパティーはなるべく使いません
-            <ul>
-              <li><code>margin</code>や<code>padding</code>、 <code>border</code>に限って使うことがあります</li>
-            </ul>
-          </li>
-          <li>値はなるべく一行(80文字)に収まるように書きます
-            <ul>
-              <li><code>linear-gradient()</code>等の複雑なものに限って行を分けて書くことがあります</li>
-            </ul>
-          </li>
-          <li>ベンダー拡張プリフィックス付きのプロパティーはその時点での実装を考慮して記述します</li>
-          <li>Sass
-            <ul>
-              <li>BEMの思想を流用し、ファイルを作成してブロックを、ネストでエレメントを、<code>&amp;</code>を使ったネストでモディファイアーを表現します</li>
-            </ul>
-          </li>
-          <li><a href="https://github.com/causes/scss-lint">SCSS-Lint</a>でエラーが出ないようにします</li>
-        </ul>
+          <ul>
+            <li><a href="https://sass-lang.com/">Sass</a>のSCSS記法を使ってUTF-8で書きます</li>
+            <li>インデントは半角空白を二文字使います</li>
+            <li>セレクターは一行につき一つに制限します</li>
+            <li>定義は一行につき一つに制限します</li>
+            <li>プロパティーのアルファベット順に定義を記述します</li>
+            <li>省略系のプロパティーはなるべく使いません
+              <ul>
+                <li><code>margin</code>や<code>padding</code>、 <code>border</code>に限って使うことがあります</li>
+              </ul>
+            </li>
+            <li>値はなるべく一行(80文字)に収まるように書きます
+              <ul>
+                <li><code>linear-gradient()</code>等の複雑なものに限って行を分けて書くことがあります</li>
+              </ul>
+            </li>
+            <li>ベンダー拡張プリフィックス付きのプロパティーはその時点での実装を考慮して記述します</li>
+            <li>Sass
+              <ul>
+                <li>BEMの思想を流用し、ファイルを作成してブロックを、ネストでエレメントを、<code>&amp;</code>を使ったネストでモディファイアーを表現します</li>
+              </ul>
+            </li>
+            <li><a href="https://github.com/causes/scss-lint">SCSS-Lint</a>でエラーが出ないようにします</li>
+          </ul>
+        </section>
 
-        <h2>スクリプト</h2>
+        <section>
+          <h2>スクリプト</h2>
 
-        <ul>
-          <li>JavaScriptをUTF-8で書きます</li>
-          <li>インデントは半角空白を二文字使います</li>
-          <li><a href="https://eslint.org/">ESLint</a>でエラーが出ないようにします</li>
-        </ul>
+          <ul>
+            <li>JavaScriptをUTF-8で書きます</li>
+            <li>インデントは半角空白を二文字使います</li>
+            <li><a href="https://eslint.org/">ESLint</a>でエラーが出ないようにします</li>
+          </ul>
+        </section>
       </section>
 
       <section id="bases">
@@ -381,27 +391,35 @@
 
         <p>HTML5が定義するところのセクションを構成する要素についてです。</p>
 
-        <h2>body</h2>
+        <section>
+          <h2>body</h2>
 
-        <p>文字はスクリーンのサイズによって<code>16px</code>または<code>18px</code>で表示されます。行間はx-heightという概念のない日本語がメインなので少し多めに<code>1.618</code>としています。狭い画面でコンテンツに適切な幅が確保できない場合は<code>1.456</code>へ落とし、おさまり具合を調節しています。</p>
+          <p>文字はスクリーンのサイズによって<code>16px</code>または<code>18px</code>で表示されます。行間はx-heightという概念のない日本語がメインなので少し多めに<code>1.618</code>としています。狭い画面でコンテンツに適切な幅が確保できない場合は<code>1.456</code>へ落とし、おさまり具合を調節しています。</p>
+        </section>
 
-        <h2>セクション構成物</h2>
+        <section>
+          <h2>セクション構成物</h2>
 
-        <p>セクションを作成する、<code>section</code>、<code>nav</code>、<code>article</code>と<code>aside</code>では、特に何もスタイルを指定していません。ただし予期せぬ回り込み等を回避するためにclearfixだけは指定することがあります。</p>
+          <p>セクションを作成する、<code>section</code>、<code>nav</code>、<code>article</code>と<code>aside</code>では、特に何もスタイルを指定していません。ただし予期せぬ回り込み等を回避するためにclearfixだけは指定することがあります。</p>
+        </section>
 
-        <h2>見出し</h2>
+        <section>
+          <h2>見出し</h2>
 
-        <p>セクションの見出しは<code>h1</code>でマークアップされます。</p>
+          <p>セクションの見出しは<code>h1</code>でマークアップされます。</p>
 
-        <pre><code class="language-html">&lt;h1&gt;...&lt;/h1&gt;
+          <pre><code class="language-html">&lt;h1&gt;...&lt;/h1&gt;
 </code></pre>
+        </section>
 
-        <h2>小見出し</h2>
+        <section>
+          <h2>小見出し</h2>
 
-        <p>セクション内の小見出しはセクションの見出しである<code>h1</code>に合わせてそのレベルを調節しています。多くの場合は<code>h2</code>のみが使われることでしょう。</p>
+          <p>セクション内の小見出しはセクションの見出しである<code>h1</code>に合わせてそのレベルを調節しています。多くの場合は<code>h2</code>のみが使われることでしょう。</p>
 
-        <pre><code class="language-html">&lt;h2&gt;...&lt;/h2&gt;
+          <pre><code class="language-html">&lt;h2&gt;...&lt;/h2&gt;
 </code></pre>
+        </section>
       </section>
 
       <section id="grouping-content">
@@ -409,27 +427,32 @@
 
         <p>コンテンツで使われる基本的な要素についてです。</p>
 
-        <h2>段落</h2>
+        <section>
+          <h2>段落</h2>
 
-        <p>様々な所で使用されるので、他とバッティングしないように相殺可能なマージン以外のスタイルは指定していません。</p>
+          <p>様々な所で使用されるので、他とバッティングしないように相殺可能なマージン以外のスタイルは指定していません。</p>
 
-        <pre><code class="language-html">&lt;p&gt;...&lt;/p&gt;
+          <pre><code class="language-html">&lt;p&gt;...&lt;/p&gt;
 </code></pre>
+        </section>
 
-        <h2>水平線</h2>
+        <section>
+          <h2>水平線</h2>
 
-        <p>主に暗黙のセクションの区切りが挿入される所に恣意的に使用しています。線の代わりに表示される3つのアスタリスクはSVGです。</p>
+          <p>主に暗黙のセクションの区切りが挿入される所に恣意的に使用しています。線の代わりに表示される3つのアスタリスクはSVGです。</p>
 
-        <hr>
+          <hr>
 
-        <pre><code class="language-html">&lt;hr&gt;
+          <pre><code class="language-html">&lt;hr&gt;
 </code></pre>
+        </section>
 
-        <h2>整形済みテキスト</h2>
+        <section>
+          <h2>整形済みテキスト</h2>
 
-        <p>主にコードの表示やコマンドラインでの操作例に使用しています。主に英文になることから、フォントサイズを1段階、行間も<code>1.3</code>前後に落としてあります。</p>
+          <p>主にコードの表示やコマンドラインでの操作例に使用しています。主に英文になることから、フォントサイズを1段階、行間も<code>1.3</code>前後に落としてあります。</p>
 
-        <pre><samp>$ <kbd>mkdir example</kbd>
+          <pre><samp>$ <kbd>mkdir example</kbd>
 $ <kbd>cd example/</kbd>
 $ <kbd>git init</kbd>
 $ <kbd>touch README.md</kbd>
@@ -439,7 +462,7 @@ $ <kbd>git remote add origin https://github.com/hail2u/example.git</kbd>
 $ <kbd>git push -u origin master</kbd>
 </samp></pre>
 
-        <pre><code class="language-html">&lt;pre&gt;&lt;samp&gt;$ &lt;kbd&gt;mkdir example&lt;/kbd&gt;
+          <pre><code class="language-html">&lt;pre&gt;&lt;samp&gt;$ &lt;kbd&gt;mkdir example&lt;/kbd&gt;
 $ &lt;kbd&gt;cd example/&lt;/kbd&gt;
 $ &lt;kbd&gt;git init&lt;/kbd&gt;
 $ &lt;kbd&gt;touch README.md&lt;/kbd&gt;
@@ -449,24 +472,26 @@ $ &lt;kbd&gt;git remote add origin https://github.com/hail2u/example.git&lt;/kbd
 $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 &lt;/samp&gt;&lt;/pre&gt;
 </code></pre>
+        </section>
 
-        <h2>引用</h2>
+        <section>
+          <h2>引用</h2>
 
-        <p>内部で様々なスタイルが使用されるので、ブロックの左端に縦線を引く以外のスタイルは指定しません。字体に斜体を採用すべきところですが、<a href="https://en.wikipedia.org/wiki/Meiryo">メイリオ</a>が和文部分に斜体を持っていないのでそれを考慮して無指定にしています。マークアップは通常、全体を<code>figure</code>で括り、引用元の表記は<code>figcaption</code>と<code>cite</code>を組み合わせて行います。</p>
+          <p>内部で様々なスタイルが使用されるので、ブロックの左端に縦線を引く以外のスタイルは指定しません。字体に斜体を採用すべきところですが、<a href="https://en.wikipedia.org/wiki/Meiryo">メイリオ</a>が和文部分に斜体を持っていないのでそれを考慮して無指定にしています。マークアップは通常、全体を<code>figure</code>で括り、引用元の表記は<code>figcaption</code>と<code>cite</code>を組み合わせて行います。</p>
 
-        <figure>
-          <blockquote>
-            <p>The blockquote element represents a section that is quoted from another source.</p>
+          <figure>
+            <blockquote>
+              <p>The blockquote element represents a section that is quoted from another source.</p>
 
-            <p>Content inside a blockquote must be quoted from another source, whose address, if it has one, may be cited in the cite attribute.</p>
+              <p>Content inside a blockquote must be quoted from another source, whose address, if it has one, may be cited in the cite attribute.</p>
 
-            <p>If the cite attribute is present, it must be a valid URL potentially surrounded by spaces. To obtain the corresponding citation link, the value of the attribute must be resolved relative to the element. User agents may allow users to follow such citation links, but they are primarily intended for private use (e.g. by server-side scripts collecting statistics about a site's use of quotations), not for readers.</p>
-          </blockquote>
+              <p>If the cite attribute is present, it must be a valid URL potentially surrounded by spaces. To obtain the corresponding citation link, the value of the attribute must be resolved relative to the element. User agents may allow users to follow such citation links, but they are primarily intended for private use (e.g. by server-side scripts collecting statistics about a site's use of quotations), not for readers.</p>
+            </blockquote>
 
-          <figcaption>— <cite><a href="https://html.spec.whatwg.org/multipage/semantics.html#the-blockquote-element">4.5.4 The <code>blockquote</code> element</a></cite></figcaption>
-        </figure>
+            <figcaption>— <cite><a href="https://html.spec.whatwg.org/multipage/semantics.html#the-blockquote-element">4.5.4 The <code>blockquote</code> element</a></cite></figcaption>
+          </figure>
 
-        <pre><code class="language-html">&lt;figure&gt;
+          <pre><code class="language-html">&lt;figure&gt;
   &lt;blockquote&gt;
     &lt;p&gt;...&lt;/p&gt;
   &lt;/blockquote&gt;
@@ -474,24 +499,26 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
   &lt;figcaption&gt;— &lt;cite&gt;...&lt;/cite&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 </code></pre>
+        </section>
 
-        <h2>序列付きリストと序列なしリスト</h2>
+        <section>
+          <h2>序列付きリストと序列なしリスト</h2>
 
-        <p>双方共にデフォルトとあまり違わない形になるようにスタイルは最小限にとどめています。序列付きリストではアラビア数字をそのマークに使用します。</p>
+          <p>双方共にデフォルトとあまり違わない形になるようにスタイルは最小限にとどめています。序列付きリストではアラビア数字をそのマークに使用します。</p>
 
-        <ol>
-          <li>Suspendisse adipiscing viverra augue, nec viverra erat interdum nec.</li>
-          <li>Pellentesque in magna ac massa lobortis pretium sit amet fringilla justo.
-            <ol>
-              <li>Nulla blandit porta arcu, at sagittis leo ullamcorper vel.</li>
-              <li>Praesent non est odio, ac ultricies tortor.</li>
-            </ol>
-          </li>
-          <li>Nulla iaculis leo a nulla facilisis congue.</li>
-          <li>Vestibulum in ante et nibh porttitor pharetra.</li>
-        </ol>
+          <ol>
+            <li>Suspendisse adipiscing viverra augue, nec viverra erat interdum nec.</li>
+            <li>Pellentesque in magna ac massa lobortis pretium sit amet fringilla justo.
+              <ol>
+                <li>Nulla blandit porta arcu, at sagittis leo ullamcorper vel.</li>
+                <li>Praesent non est odio, ac ultricies tortor.</li>
+              </ol>
+            </li>
+            <li>Nulla iaculis leo a nulla facilisis congue.</li>
+            <li>Vestibulum in ante et nibh porttitor pharetra.</li>
+          </ol>
 
-        <pre><code class="language-html">&lt;ol&gt;
+          <pre><code class="language-html">&lt;ol&gt;
   &lt;li&gt;...
     &lt;ol&gt;
       &lt;li&gt;...&lt;/li&gt;
@@ -500,21 +527,21 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 &lt;/ol&gt;
 </code></pre>
 
-        <p>序列なしリストではデフォルトと同じくネストされるにつれそのマークが変化します。</p>
+          <p>序列なしリストではデフォルトと同じくネストされるにつれそのマークが変化します。</p>
 
-        <ul>
-          <li>Sed id purus eu nisi blandit condimentum.</li>
-          <li>Pellentesque sit amet mi ipsum, non scelerisque odio.
-            <ul>
-              <li>Vestibulum eget nisi ut nulla ultricies mollis.</li>
-              <li>Sed vel eros a diam tincidunt sodales consectetur eu nisi.</li>
-            </ul>
-          </li>
-          <li>Etiam at lorem id sapien blandit faucibus.</li>
-          <li>Quisque et metus non dui aliquam auctor sit amet non orci.</li>
-        </ul>
+          <ul>
+            <li>Sed id purus eu nisi blandit condimentum.</li>
+            <li>Pellentesque sit amet mi ipsum, non scelerisque odio.
+              <ul>
+                <li>Vestibulum eget nisi ut nulla ultricies mollis.</li>
+                <li>Sed vel eros a diam tincidunt sodales consectetur eu nisi.</li>
+              </ul>
+            </li>
+            <li>Etiam at lorem id sapien blandit faucibus.</li>
+            <li>Quisque et metus non dui aliquam auctor sit amet non orci.</li>
+          </ul>
 
-        <pre><code class="language-html">&lt;ul&gt;
+          <pre><code class="language-html">&lt;ul&gt;
   &lt;li&gt;...
     &lt;ul&gt;
       &lt;li&gt;...&lt;/li&gt;
@@ -522,62 +549,67 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
+        </section>
 
-        <h2>関連リスト</h2>
+        <section>
+          <h2>関連リスト</h2>
 
-        <p>内部、特に<code>dd</code>要素内で様々な要素が使われたり使われなかったりすることから、スタイルは最小限にとどめています。</p>
+          <p>内部、特に<code>dd</code>要素内で様々な要素が使われたり使われなかったりすることから、スタイルは最小限にとどめています。</p>
 
-        <dl>
-          <dt>Proin gravida sodales lectus, sed placerat urna posuere sit amet.</dt>
+          <dl>
+            <dt>Proin gravida sodales lectus, sed placerat urna posuere sit amet.</dt>
 
-          <dd>Nam semper blandit mi, sed pulvinar tellus posuere eu. Phasellus vitae ipsum lacus. Fusce viverra odio in augue vestibulum et fermentum nisi consectetur. Aenean a velit enim. Duis lacinia velit a arcu ornare at molestie mi iaculis.</dd>
+            <dd>Nam semper blandit mi, sed pulvinar tellus posuere eu. Phasellus vitae ipsum lacus. Fusce viverra odio in augue vestibulum et fermentum nisi consectetur. Aenean a velit enim. Duis lacinia velit a arcu ornare at molestie mi iaculis.</dd>
 
-          <dt>Mauris sed urna a odio condimentum elementum.</dt>
+            <dt>Mauris sed urna a odio condimentum elementum.</dt>
 
-          <dd>Vivamus congue laoreet augue, quis euismod urna placerat a. Duis nulla lacus, laoreet commodo consequat vel, convallis at risus. Vestibulum porttitor, leo eu ullamcorper lacinia, felis ipsum ultrices libero, vitae pretium sem nisi in dui. Curabitur in aliquam elit. Aliquam tortor nisi, tristique id congue in, scelerisque in massa.</dd>
+            <dd>Vivamus congue laoreet augue, quis euismod urna placerat a. Duis nulla lacus, laoreet commodo consequat vel, convallis at risus. Vestibulum porttitor, leo eu ullamcorper lacinia, felis ipsum ultrices libero, vitae pretium sem nisi in dui. Curabitur in aliquam elit. Aliquam tortor nisi, tristique id congue in, scelerisque in massa.</dd>
 
-          <dt>Quisque at sem at justo eleifend aliquet ac quis quam.</dt>
+            <dt>Quisque at sem at justo eleifend aliquet ac quis quam.</dt>
 
-          <dd>Etiam congue porta ligula, quis interdum justo tincidunt ac. Quisque ac gravida arcu. Curabitur blandit tortor quis velit porta quis euismod arcu posuere. Suspendisse potenti. Donec ac arcu vitae libero porta dictum sed in dolor.</dd>
+            <dd>Etiam congue porta ligula, quis interdum justo tincidunt ac. Quisque ac gravida arcu. Curabitur blandit tortor quis velit porta quis euismod arcu posuere. Suspendisse potenti. Donec ac arcu vitae libero porta dictum sed in dolor.</dd>
 
-          <dt>Praesent commodo posuere nisi, ut convallis nunc vehicula at.</dt>
+            <dt>Praesent commodo posuere nisi, ut convallis nunc vehicula at.</dt>
 
-          <dd>Praesent interdum ullamcorper volutpat. Maecenas nec lectus risus. Mauris sit amet orci metus. Duis tincidunt, tortor in laoreet rutrum, libero tellus ornare nibh, a accumsan quam massa vel lorem. Sed ultrices molestie vestibulum.</dd>
-        </dl>
+            <dd>Praesent interdum ullamcorper volutpat. Maecenas nec lectus risus. Mauris sit amet orci metus. Duis tincidunt, tortor in laoreet rutrum, libero tellus ornare nibh, a accumsan quam massa vel lorem. Sed ultrices molestie vestibulum.</dd>
+          </dl>
 
-        <pre><code class="language-html">&lt;dl&gt;
+          <pre><code class="language-html">&lt;dl&gt;
   &lt;dt&gt;...&lt;/dt&gt;
   &lt;dd&gt;...&lt;/dd&gt;
 &lt;/dl&gt;
 </code></pre>
+        </section>
 
-        <h2>図</h2>
+        <section>
+          <h2>図</h2>
 
-        <p>通常は<code>figure</code>を使っています。既に<code>blockquote</code>要素で使われているように内容は画像とは限らないので、強いスタイルは指定していません。</p>
+          <p>通常は<code>figure</code>を使っています。既に<code>blockquote</code>要素で使われているように内容は画像とは限らないので、強いスタイルは指定していません。</p>
 
-        <figure>
-          <img src="https://placeimg.com/480/270/any">
-          <figcaption>Random Image from <a href="https://placeimg.com/">PlaceIMG</a></figcaption>
-        </figure>
+          <figure>
+            <img src="https://placeimg.com/480/270/any">
+            <figcaption>Random Image from <a href="https://placeimg.com/">PlaceIMG</a></figcaption>
+          </figure>
 
-        <pre><code class="language-html">&lt;figure&gt;
+          <pre><code class="language-html">&lt;figure&gt;
   &lt;img alt="..." src="..."&gt;
   &lt;figcaption&gt;...&lt;/figcaption&gt;
 &lt;/figure&gt;
 </code></pre>
 
-        <p>広い画面では<code>figcaption</code>が並ぶ図と横に並びますが、<code>figcaption</code>要素を<code>figure</code>要素の最後に置いた場合は並ぶ図と下が揃い、最初に置いた場合は上が揃います。</p>
+          <p>広い画面では<code>figcaption</code>が並ぶ図と横に並びますが、<code>figcaption</code>要素を<code>figure</code>要素の最後に置いた場合は並ぶ図と下が揃い、最初に置いた場合は上が揃います。</p>
 
-        <figure>
-          <figcaption>Random Image from <a href="https://placeimg.com/">PlaceIMG</a></figcaption>
-          <a href="#"><img src="https://placeimg.com/480/270/any"></a>
-        </figure>
+          <figure>
+            <figcaption>Random Image from <a href="https://placeimg.com/">PlaceIMG</a></figcaption>
+            <a href="#"><img src="https://placeimg.com/480/270/any"></a>
+          </figure>
 
-        <pre><code class="language-html">&lt;figure&gt;
+          <pre><code class="language-html">&lt;figure&gt;
   &lt;figcaption&gt;...&lt;/figcaption&gt;
   &lt;img alt="..." src="..."&gt;
 &lt;/figure&gt;
 </code></pre>
+        </section>
       </section>
 
       <section id="text-level-semantics">
