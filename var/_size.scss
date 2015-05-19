@@ -230,9 +230,18 @@ $width-icon-list-icon: ($width-content / pow($ratio-golden, 5));
 $height-icon-list-icon: ($width-content / pow($ratio-golden, 5));
 
 // Post List
-$margin-top-post-list-item: $margin-tiny;
+$margin-top-post-list: $margin-small;
 
-$line-height-post-list-info-content: $line-height;
+$line-height-post-list-item: $line-height-small;
+$margin-left-post-list-item-full: (- ($width-supplement + $width-gap));
+$padding-vert-post-list-item: $padding-large;
+$padding-left-post-list-item-full: (- $margin-left-post-list-item-full);
+$width-border-post-list-item: $width-border-small;
+$width-border-post-list-item-full: $width-border-small;
+
+$line-height-post-list-info-content: ($line-height-post-list-item * $ratio-text-post-list-item / $ratio-text-footing);
+$margin-left-post-list-info-content: $width-gap-half;
+$padding-top-post-list-info-full: $padding-vert-post-list-item;
 
 // Pull Quote
 $line-height-pull-quote: $line-height-small;

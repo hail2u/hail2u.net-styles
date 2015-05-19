@@ -1,12 +1,23 @@
 // Post List
 .post-list {
+  @extend %link-underline-removal;
+
+  margin-top: $margin-top-post-list;
   padding-left: 0;
 
   li {
     @extend %positioning-root;
 
+    border-top: $width-border-post-list-item solid $color-border-post-list-item;
+    font-size: rem($ratio-text-post-list-item);
+    line-height: $line-height-post-list-item;
     list-style-type: none;
-    margin-top: $margin-top-post-list-item;
+    padding-bottom: $padding-vert-post-list-item;
+    padding-top: $padding-vert-post-list-item;
+
+    &:first-child {
+      border-top-width: 0;
+    }
   }
 
   .info {
@@ -17,14 +28,28 @@
   @media (min-width: $breakpoint-content) {
     .info {
       float: right;
-      font-size: rem(1);
       line-height: $line-height-post-list-info-content;
+      margin-left: $margin-left-post-list-info-content;
     }
   }
 
   @media (min-width: $breakpoint-full) {
+    li {
+      margin-left: $margin-left-post-list-item-full;
+      padding-left: $padding-left-post-list-item-full;
+
+      @media (min-width: $breakpoint-full) {
+        &:first-child {
+          border-top-width: $width-border-post-list-item-full;
+        }
+      }
+    }
+
     .info {
       float: none;
+      left: 0;
+      margin-left: 0;
+      padding-top: $padding-top-post-list-info-full;
     }
   }
 }
