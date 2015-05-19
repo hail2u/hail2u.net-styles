@@ -4,5 +4,7 @@
 }
 
 %margin-after-heading {
-  margin-top: $margin-top-margin-after-heading;
+  h2 + & {
+    margin-top: $margin-top-margin-after-heading;
+  }
 }

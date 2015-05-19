@@ -45,10 +45,7 @@ h2 {
 // Grouping Content
 p {
   @extend %margin;
-
-  h2 + & {
-    @extend %margin-after-heading;
-  }
+  @extend %margin-after-heading;
 }
 
 hr {
@@ -72,15 +69,12 @@ hr {
 
 pre {
   @extend %margin;
+  @extend %margin-after-heading;
   @include font-feature-settings("kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1);
 
   clear: both;
   font-family: $font-family-code;
   line-height: $line-height-pre;
-
-  h2 + & {
-    @extend %margin-after-heading;
-  }
 
   @media (min-width: $breakpoint-content) {
     overflow: visible;
@@ -104,6 +98,7 @@ blockquote {
 ul,
 ol {
   @extend %margin;
+  @extend %margin-after-heading;
 
   clear: both;
   padding: 0 0 0 $padding-left-list;
@@ -111,10 +106,6 @@ ol {
   ul,
   ol {
     margin-top: 0;
-  }
-
-  h2 + & {
-    @extend %margin-after-heading;
   }
 
   @media (min-width: $breakpoint-full) {
@@ -129,15 +120,12 @@ ol {
 
 dl {
   @extend %margin;
+  @extend %margin-after-heading;
 
   clear: both;
 
   dl {
     margin-top: 0;
-  }
-
-  h2 + & {
-    @extend %margin-after-heading;
   }
 }
 
@@ -152,11 +140,8 @@ dd {
 
 figure {
   @extend %margin;
+  @extend %margin-after-heading;
   @extend %positioning-root;
-
-  h2 + & {
-    @extend %margin-after-heading;
-  }
 }
 
 figcaption {
@@ -279,6 +264,7 @@ video {
 
 table {
   @extend %margin;
+  @extend %margin-after-heading;
   @include font-feature-settings("pnum" 0, "tnum" 1, "zero" 1);
 
   clear: both;
@@ -286,10 +272,6 @@ table {
   max-width: 100%;
   overflow-x: auto;
   table-layout: fixed;
-
-  h2 + & {
-    @extend %margin-after-heading;
-  }
 
   @media not screen {
     display: table;
