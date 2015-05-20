@@ -1,6 +1,4 @@
 // Link Underline Removal
-@import "../assets/partials/hail2u-scss-partials/vendor-extension";
-
 %link-underline-removal {
   a {
     text-decoration: none;
@@ -8,9 +6,17 @@
     @supports (-moz-text-decoration-color: red) or
       (-webkit-text-decoration-color: red) or
       (text-decoration-color: red) {
-      @include text-decoration-color(initial);
-
       color: $color-fg-link-underline-removal;
+    }
+
+    &:visited {
+      color: $color-fg-link-underline-removal-visited;
+
+      @supports (-moz-text-decoration-color: red) or
+        (-webkit-text-decoration-color: red) or
+        (text-decoration-color: red) {
+        color: $color-fg-link-underline-removal-visited;
+      }
     }
   }
 }

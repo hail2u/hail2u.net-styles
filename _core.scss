@@ -190,9 +190,19 @@ a {
   @supports (-moz-text-decoration-color: red) or
     (-webkit-text-decoration-color: red) or
     (text-decoration-color: red) {
-    @include text-decoration-color($color-fg-a-underline);
+    @include text-decoration-color($color-underline-a);
 
     color: inherit;
+  }
+
+  &:visited {
+    color: inherit;
+
+    @supports (-moz-text-decoration-color: red) or
+      (-webkit-text-decoration-color: red) or
+      (text-decoration-color: red) {
+      @include text-decoration-color(inherit);
+    }
   }
 }
 

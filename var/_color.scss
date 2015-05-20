@@ -82,9 +82,10 @@ $color-fg-figcaption: $color-shade-dark;
 $color-border-figcaption: $color-tint-dark;
 
 $color-fg-a: $color-accent;
-$color-fg-a-underline: $color-accent-lightest;
+$color-underline-a: $color-accent-lightest;
 
 $color-fg-link-underline-removal: $color-fg-a;
+$color-fg-link-underline-removal-visited: $color-accent-dark;
 
 $color-fg-em: $color-shade-darkest;
 
