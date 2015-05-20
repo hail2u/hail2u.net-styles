@@ -37,12 +37,6 @@
     li {
       margin-left: $margin-left-post-list-item-full;
       padding-left: $padding-left-post-list-item-full;
-
-      @media (min-width: $breakpoint-full) {
-        &:first-child {
-          border-top-width: $width-border-post-list-item-full;
-        }
-      }
     }
 
     .info {
