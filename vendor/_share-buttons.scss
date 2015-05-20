@@ -57,6 +57,10 @@
     background-image: $image-share-buttons-hatena;
   }
 
+  .instapaper-save a::before {
+    background-image: $image-share-buttons-instapaper;
+  }
+
   @media (min-width: $breakpoint-full) {
     ul {
       bottom: 0;

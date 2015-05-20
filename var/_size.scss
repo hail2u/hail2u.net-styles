@@ -273,11 +273,11 @@ $line-height-share-buttons: $ratio-share-buttons-icon;
 $margin-bottom-share-buttons-label-full: $margin-tiny;
 
 $padding-left-share-buttons-item: $width-gap-half;
-$padding-right-share-buttons-item-full: $width-gap;
+$padding-right-share-buttons-item-full: $padding-left-share-buttons-item;
 
 $border-radius-share-buttons-icon: 51%;
 $height-share-buttons-icon: rem($ratio-share-buttons-icon);
-$height-share-buttons-icon-full: (($width-supplement + $padding-right-share-buttons-item-full) / 4 - $padding-right-share-buttons-item-full);
+$height-share-buttons-icon-full: (($width-supplement + $padding-right-share-buttons-item-full) / 5 - $padding-right-share-buttons-item-full);
 $width-share-buttons-icon: $height-share-buttons-icon;
 $width-share-buttons-icon-full: $height-share-buttons-icon-full;
 
