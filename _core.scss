@@ -290,10 +290,15 @@ table {
 
 %table-cell,
 td {
-  border-bottom: $width-border-td solid $color-border-td;
+  border-top: $width-border-td solid $color-border-td;
   padding: $padding-td;
   vertical-align: top;
   white-space: nowrap;
+
+  table > :first-child > &,
+  table > :first-child > :first-child > & {
+    border-top-width: 0;
+  }
 }
 
 th {
@@ -302,6 +307,6 @@ th {
   text-align: left;
 
   thead & {
-    border-bottom-width: $width-border-th-thead;
+    border-bottom: $width-border-th-thead solid $color-border-th-thead;
   }
 }
