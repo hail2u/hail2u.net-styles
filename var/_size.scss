@@ -25,6 +25,8 @@ $width-border-large: ($width-border * 2);
 $padding: .25rem;
 $padding-small: ($padding / 2);
 $padding-large: ($padding * 2);
+$padding-huge: ($padding * 3);
+$padding-gargantuan: ($padding * 4);
 
 // Column
 $column: 36rem;
@@ -234,7 +236,7 @@ $margin-top-post-list: $margin-small;
 
 $line-height-post-list-item: $line-height-small;
 $margin-left-post-list-item-full: (- ($width-supplement + $width-gap));
-$padding-vert-post-list-item: $padding-large;
+$padding-vert-post-list-item: $padding-gargantuan;
 $padding-left-post-list-item-full: (- $margin-left-post-list-item-full);
 $width-border-post-list-item: $width-border-small;
 $width-border-post-list-item-full: $width-border-small;
