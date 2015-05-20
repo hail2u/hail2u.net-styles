@@ -186,10 +186,9 @@ $width-border-byline-border: $width-border;
 $padding-contact-form-label: $padding-large;
 
 $margin-top-contact-form-button: $margin-small;
-$padding-left-contact-form-button: $padding-small;
-$width-contact-form-button: 6em;
+$letter-spacing-contact-form-button: $padding-large;
+$padding-left-contact-form-button: $letter-spacing-contact-form-button;
 $border-radius-contact-form-button: $width-border;
-$letter-spacing-contact-form-button: $padding-left-contact-form-button;
 
 // Drop
 $margin-left-drop-full: (- ($width-supplement + $width-gap));
