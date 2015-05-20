@@ -96,7 +96,7 @@ $margin-left-blockquote-full: (- ($width-border-blockquote + $padding-left-block
 $padding-left-list: $indent;
 $padding-left-list-nested-full: $padding-left-list;
 
-$padding-left-dd: $indent;
+$margin-left-dd: $indent;
 
 $width-border-figcaption: $width-border-small;
 $padding-top-figcaption-full: ($width-border-figcaption + $margin-tiny);
