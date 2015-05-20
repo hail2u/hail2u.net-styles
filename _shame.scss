@@ -7,3 +7,10 @@ html {
 pre {
   padding-bottom: 1px;
 }
+
+// Ditch `-webkit-appearance` on Safari 8
+.contact-form {
+  .button {
+    -webkit-appearance: none;
+  }
+}
