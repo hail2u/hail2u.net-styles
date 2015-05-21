@@ -2,8 +2,4 @@
 .seealso {
   color: $color-fg-seealso;
   font-size: rem($ratio-text-seealso);
-
-  &::before {
-    content: "🔗\FE0E\0020";
-  }
 }

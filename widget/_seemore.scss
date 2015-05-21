@@ -6,8 +6,8 @@
     font-weight: bolder;
     text-transform: uppercase;
 
-    &::before {
-      content: "➔\FE0E\0020";
+    &::after {
+      content: " →";
     }
   }
 }
