@@ -5,14 +5,4 @@
   > a {
     color: inherit;
   }
-
-  .section-footer + p::after {
-    color: $color-fg-topic-more;
-    content: "More →";
-    font-size: rem($ratio-text-topic-more);
-    font-weight: bolder;
-    margin-left: $margin-left-topic-more;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
 }
