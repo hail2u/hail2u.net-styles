@@ -63,4 +63,23 @@
     text-transform: uppercase;
     width: 100%;
   }
+
+  *::-moz-placeholder {
+    color: inherit;
+    opacity: $opacity-contact-form-placeholder;
+  }
+
+  *::-ms-input-placeholder {
+    color: inherit;
+    opacity: $opacity-contact-form-placeholder;
+  }
+
+  *::-webkit-input-placeholder {
+    color: inherit;
+    opacity: $opacity-contact-form-placeholder;
+  }
+
+  *::placeholder-shown {
+    opacity: $opacity-contact-form-placeholder;
+  }
 }
