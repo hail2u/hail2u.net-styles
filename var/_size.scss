@@ -220,16 +220,6 @@ $margin-left-full-width-caption: $width-gap-half;
 $margin-top-full-width-caption-full: $margin;
 $padding-left-full-width-caption-full: ($margin-left-full-width-caption - $width-border-small);
 
-// Icon List
-$margin-side-icon-list: (- $width-gap-half);
-
-$padding-side-icon-list-item: $width-gap-half;
-
-$border-radius-icon-list-icon: 51%;
-$padding-icon-list-icon: ((100% - percentage(1 / $ratio-golden)) / 2);
-$width-icon-list-icon: ($width-content / pow($ratio-golden, 5));
-$height-icon-list-icon: ($width-content / pow($ratio-golden, 5));
-
 // Post List
 $margin-top-post-list: $margin-small;
 
