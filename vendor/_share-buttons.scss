@@ -5,14 +5,13 @@
   ul {
     @extend %float;
 
-    line-height: $line-height-share-buttons;
     padding-left: 0;
 
     &::before {
       color: $color-fg-share-buttons-label;
       content: "Share:";
       display: table-cell;
-      font-weight: bold;
+      font-weight: bolder;
       text-transform: uppercase;
     }
   }
@@ -22,45 +21,6 @@
     padding-left: $padding-left-share-buttons-item;
   }
 
-  a {
-    @extend %ir;
-
-    background-color: $color-bg-share-buttons-icon;
-    border-radius: $border-radius-share-buttons-icon;
-    display: block;
-    height: $height-share-buttons-icon;
-    width: $width-share-buttons-icon;
-
-    &::before {
-      background-size: auto $height-bg-share-buttons-icon-image;
-    }
-
-    @media (min-width: $breakpoint-full) {
-      height: $height-share-buttons-icon-full;
-      width: $width-share-buttons-icon-full;
-    }
-  }
-
-  .twitter-tweet a::before {
-    background-image: $image-share-buttons-twitter;
-  }
-
-  .facebook-share a::before {
-    background-image: $image-share-buttons-facebook;
-  }
-
-  .googleplus-share a::before {
-    background-image: $image-share-buttons-googleplus;
-  }
-
-  .hatena-bookmark a::before {
-    background-image: $image-share-buttons-hatena;
-  }
-
-  .instapaper-save a::before {
-    background-image: $image-share-buttons-instapaper;
-  }
-
   @media (min-width: $breakpoint-full) {
     ul {
       bottom: 0;
@@ -68,13 +28,12 @@
 
       &::before {
         display: block;
-        margin-bottom: $margin-bottom-share-buttons-label-full;
       }
     }
 
     li {
+      display: block;
       padding-left: 0;
-      padding-right: $padding-right-share-buttons-item-full;
     }
   }
 }

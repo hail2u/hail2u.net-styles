@@ -262,20 +262,7 @@ $line-height-read-older-label-full: ($ratio-text-read-older-title * $line-height
 $width-max-searchbox: ($width-content / $ratio-golden);
 
 // Share Buttons
-$line-height-share-buttons: $ratio-share-buttons-icon;
-
-$margin-bottom-share-buttons-label-full: $margin-tiny;
-
 $padding-left-share-buttons-item: $width-gap-half;
-$padding-right-share-buttons-item-full: $padding-left-share-buttons-item;
-
-$border-radius-share-buttons-icon: 51%;
-$height-share-buttons-icon: rem($ratio-share-buttons-icon);
-$height-share-buttons-icon-full: (($width-supplement + $padding-right-share-buttons-item-full) / 5 - $padding-right-share-buttons-item-full);
-$width-share-buttons-icon: $height-share-buttons-icon;
-$width-share-buttons-icon-full: $height-share-buttons-icon-full;
-
-$height-bg-share-buttons-icon-image: percentage(1 / $ratio-golden);
 
 // Google AdSense
 $margin-top-adsbygoogle: $margin-large;
