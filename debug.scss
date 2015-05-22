@@ -125,7 +125,7 @@ body::after {
 
 // Version
 .version {
-  color: $color-accent-triad-positive;
+  color: $color-accent-complement;
   font-size: rem($ratio-text);
   font-weight: normal;
   vertical-align: super;
@@ -270,94 +270,6 @@ body::after {
 
     &:nth-child(5)::before {
       background-color: $color-accent-complement-lightest;
-    }
-  }
-
-  &.variation-accent.adjacent-negative li {
-    &:nth-child(1)::before {
-      background-color: $color-accent-adjacent-negative;
-    }
-
-    &:nth-child(2)::before {
-      background-color: $color-accent-adjacent-negative-darkest;
-    }
-
-    &:nth-child(3)::before {
-      background-color: $color-accent-adjacent-negative-dark;
-    }
-
-    &:nth-child(4)::before {
-      background-color: $color-accent-adjacent-negative-light;
-    }
-
-    &:nth-child(5)::before {
-      background-color: $color-accent-adjacent-negative-lightest;
-    }
-  }
-
-  &.variation-accent.adjacent-positive li {
-    &:nth-child(1)::before {
-      background-color: $color-accent-adjacent-positive;
-    }
-
-    &:nth-child(2)::before {
-      background-color: $color-accent-adjacent-positive-darkest;
-    }
-
-    &:nth-child(3)::before {
-      background-color: $color-accent-adjacent-positive-dark;
-    }
-
-    &:nth-child(4)::before {
-      background-color: $color-accent-adjacent-positive-light;
-    }
-
-    &:nth-child(5)::before {
-      background-color: $color-accent-adjacent-positive-lightest;
-    }
-  }
-
-  &.variation-accent.triad-negative li {
-    &:nth-child(1)::before {
-      background-color: $color-accent-triad-negative;
-    }
-
-    &:nth-child(2)::before {
-      background-color: $color-accent-triad-negative-darkest;
-    }
-
-    &:nth-child(3)::before {
-      background-color: $color-accent-triad-negative-dark;
-    }
-
-    &:nth-child(4)::before {
-      background-color: $color-accent-triad-negative-light;
-    }
-
-    &:nth-child(5)::before {
-      background-color: $color-accent-triad-negative-lightest;
-    }
-  }
-
-  &.variation-accent.triad-positive li {
-    &:nth-child(1)::before {
-      background-color: $color-accent-triad-positive;
-    }
-
-    &:nth-child(2)::before {
-      background-color: $color-accent-triad-positive-darkest;
-    }
-
-    &:nth-child(3)::before {
-      background-color: $color-accent-triad-positive-dark;
-    }
-
-    &:nth-child(4)::before {
-      background-color: $color-accent-triad-positive-light;
-    }
-
-    &:nth-child(5)::before {
-      background-color: $color-accent-triad-positive-lightest;
     }
   }
 }

@@ -2,16 +2,11 @@
 $color-dark: rgb(60, 51, 48);
 $color-light: rgb(252, 249, 240);
 $color-accent: rgb(17, 136, 187);
+$color-accent-complement: rgb(255, 140, 12);
 
 // Combination
 $color-dark-dark: mix($color-dark, rgb(0, 0, 0));
 $color-light-light: mix($color-light, rgb(255, 255, 255));
-
-$color-accent-complement: rgb(255, 140, 12);
-$color-accent-adjacent-positive: rgb(34, 56, 197);
-$color-accent-adjacent-negative: rgb(10, 203, 88);
-$color-accent-triad-positive: rgb(255, 59, 12);
-$color-accent-triad-negative: rgb(255, 186, 12);
 
 // Variation
 $color-shade-darkest: mix($color-dark, $color-light, 88%);
@@ -29,30 +24,11 @@ $color-accent-dark: rgb(5, 107, 151);
 $color-accent-light: rgb(53, 152, 195);
 $color-accent-lightest: rgb(91, 172, 208);
 
-$color-accent-complement-darkest: rgb(185, 98, 0);
-$color-accent-complement-dark: rgb(239, 126, 0);
-$color-accent-complement-light: rgb(255, 163, 60);
-$color-accent-complement-lightest: rgb(255, 184, 104);
+$color-accent-complement-darkest: rgb(185, 79, 0);
+$color-accent-complement-dark: rgb(207, 105, 0);
+$color-accent-complement-light: rgb(255, 172, 14);
+$color-accent-complement-lightest: rgb(255, 217, 19);
 
-$color-accent-adjacent-positive-darkest: rgb(12, 28, 127);
-$color-accent-adjacent-positive-dark: rgb(16, 36, 164);
-$color-accent-adjacent-positive-light: rgb(68, 87, 204);
-$color-accent-adjacent-positive-lightest: rgb(104, 120, 215);
-
-$color-accent-adjacent-negative-darkest: rgb(0, 133, 54);
-$color-accent-adjacent-negative-dark: rgb(0, 172, 70);
-$color-accent-adjacent-negative-light: rgb(49, 209, 114);
-$color-accent-adjacent-negative-lightest: rgb(90, 219, 142);
-
-$color-accent-triad-positive-darkest: rgb(185, 35, 0);
-$color-accent-triad-positive-dark: rgb(239, 46, 0);
-$color-accent-triad-positive-light: rgb(255, 97, 60);
-$color-accent-triad-positive-lightest: rgb(255, 133, 104);
-
-$color-accent-triad-negative-darkest: rgb(185, 133, 0);
-$color-accent-triad-negative-dark: rgb(239, 172, 0);
-$color-accent-triad-negative-light: rgb(255, 200, 60);
-$color-accent-triad-negative-lightest: rgb(255, 212, 104);
 
 // Placeholder Class
 $color-fg-footing: $color-shade-lightest;
@@ -88,9 +64,9 @@ $color-fg-link-underline-removal: $color-fg-a;
 
 $color-fg-em: $color-shade-darkest;
 
-$color-fg-strong: $color-accent-triad-positive-dark;
+$color-fg-strong: $color-accent-complement;
 
-$color-bg-mark: $color-accent-triad-negative;
+$color-bg-mark: $color-accent-complement-lightest;
 
 $color-bg-img: $color-tint-lightest;
 
