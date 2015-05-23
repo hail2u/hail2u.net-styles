@@ -156,15 +156,6 @@ $margin-top-section-footer-p-full: rem(($ratio-text-heading-content * $line-heig
 
 $margin-top-section-footer-p-permalink-full: $margin;
 
-// Site Search
-$top-site-search-modifier: ((rem($line-height * $ratio-text-global-footer) - $height-search-form-query) / 2);
-
-$top-site-search: $margin-huge;
-$top-site-search-content: ($margin-gargantuan + $top-site-search-modifier);
-$top-site-search-full: ($margin-enormous + $top-site-search-modifier);
-$width-max-site-search: ($width-content / $ratio-golden);
-$width-max-site-search-content: ($width-content / pow($ratio-golden, 2));
-
 // Global Footer
 $margin-bottom-global-footer: $margin;
 
@@ -174,6 +165,15 @@ $margin-top-footlinks-full: $margin-enormous;
 
 $padding-right-footlinks-item: $width-gap-half;
 $margin-left-footlinks-separator: $padding-right-footlinks-item;
+
+// Site Search
+$top-site-search-modifier: ((rem($line-height * $ratio-text-global-footer) - $height-search-form-query) / 2);
+
+$top-site-search: $margin-huge;
+$top-site-search-content: ($margin-top-footlinks + $top-site-search-modifier);
+$top-site-search-full: ($margin-top-footlinks-full + $top-site-search-modifier);
+$width-max-site-search: ($width-content / $ratio-golden);
+$width-max-site-search-content: ($width-content / pow($ratio-golden, 2));
 
 // Byline
 $left-byline-full: $width-gap-half;
