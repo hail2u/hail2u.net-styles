@@ -8,7 +8,7 @@
   @media (min-width: $breakpoint-content) {
     max-width: $width-max-site-search-content;
     position: absolute;
-    right: 0;
+    right: $right-site-search-content;
     top: $top-site-search-content;
     z-index: 1;
   }
