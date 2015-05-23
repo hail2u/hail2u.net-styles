@@ -166,6 +166,13 @@ $margin-top-footlinks-full: $margin-enormous;
 $padding-right-footlinks-item: $width-gap-half;
 $margin-left-footlinks-separator: $padding-right-footlinks-item;
 
+// Byline
+$left-byline-full: $width-gap-half;
+
+$margin-bottom-byline-border: $margin-tiny;
+$width-byline-border: ($width-supplement / pow($ratio-golden, 3));
+$width-border-byline-border: $width-border;
+
 // Site Search
 $top-site-search-modifier: ((rem($line-height * $ratio-text-global-footer) - $height-search-form-query) / 2);
 
@@ -175,13 +182,6 @@ $top-site-search-content: ($margin-top-footlinks + $top-site-search-modifier);
 $top-site-search-full: ($margin-top-footlinks-full + $top-site-search-modifier);
 $width-max-site-search: ($width-content / $ratio-golden);
 $width-max-site-search-content: ($width-content / pow($ratio-golden, 2));
-
-// Byline
-$left-byline-full: $width-gap-half;
-
-$margin-bottom-byline-border: $margin-tiny;
-$width-byline-border: ($width-supplement / pow($ratio-golden, 3));
-$width-border-byline-border: $width-border;
 
 // Contact Form
 $padding-contact-form-label: $padding-large;
