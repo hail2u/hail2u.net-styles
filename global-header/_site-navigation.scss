@@ -11,6 +11,10 @@
     display: table-cell;
     line-height: $line-height-site-navigation-item;
     padding-left: $padding-left-site-navigation-item;
+
+    &:first-child {
+      padding-left: 0;
+    }
   }
 
   a {
