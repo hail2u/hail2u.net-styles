@@ -25,6 +25,7 @@ $width: 45em;
 body {
   @include font-feature-settings("kern" 1, "liga" 1, "lnum" 1, "pnum" 1);
 
+  margin: $font-size;
   max-width: $width;
 }
 
@@ -87,37 +88,20 @@ th {
 
 
 // Media Queries
-$margin-body: ($font-size * 2);
-$breakpoint: ($font-size * 3 + $width / 2 + $font-size * 3);
-
-@media (min-width: $breakpoint) {
+@media (min-width: ($font-size * 28)) {
   body {
-    margin: $margin-body;
+    margin: $font-size;
   }
 }
 
-$margin-body-top: ($margin-body * 2);
-$breakpoint: ($font-size * 3 + $width + $font-size * 3);
-
-@media (min-width: $breakpoint) {
+@media (min-width: ($font-size * 52)) {
   body {
-    margin-top: $margin-body-top;
-  }
-}
-
-$width-ad: 10em;
-$breakpoint: ($breakpoint + $width-ad + $font-size * 3);
-
-@media (min-width: $breakpoint) {
-  .adsense {
-    position: absolute;
-    right: ($font-size * 2);
-    top: ($font-size * 2);
+    margin-top: $font-size;
   }
 }
 
 $indent: 10em;
-$breakpoint: ($indent + $breakpoint);
+$breakpoint: ($font-size + $indent + $width + $font-size);
 
 @media (min-width: $breakpoint) {
   body {
@@ -125,8 +109,8 @@ $breakpoint: ($indent + $breakpoint);
   }
 
   .banner {
-    margin-left: (- ($indent + $font-size * 2));
-    margin-right: (- $font-size * 2);
+    margin-left: (- ($font-size + $indent));
+    margin-right: (- $font-size);
     max-width: none;
   }
 }
