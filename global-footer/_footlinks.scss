@@ -11,6 +11,10 @@
       content: "·";
       margin-left: $margin-left-footlinks-separator;
     }
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   @media (min-width: $breakpoint-full) {
