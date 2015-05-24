@@ -1,18 +1,12 @@
 // Emoji
 @font-face {
   font-family: "Emoji";
-  font-style: normal;
-  font-weight: 400;
   src: local("Apple Color Emoji"), local("Segoe UI Emoji"), local("Segoe UI Symbol");
 }
 
 // Core
-$font-family-body: "Eau Douce", "Emoji", sans-serif;
+$font-family-body: Helvetica Neue, Calibri, Emoji, sans-serif;
 $font-family-body-print: serif;
 
-$font-family-code: "M+ 1m Latin", "Emoji", monospace;
+$font-family-code: Menlo, Consolas, Emoji, monospace;
 $font-family-code-print: monospace;
-
-// Tagline
-$font-family-tagline: "Niconne", $font-family-body;
-$font-family-tagline-print: $font-family-body-print;
