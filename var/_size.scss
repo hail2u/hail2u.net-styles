@@ -1,6 +1,8 @@
 // Line Height
 $line-height: $ratio-golden;
-$line-height-small: ($line-height * .8);
+$line-height-tiny: ($line-height * .8);
+$line-height-small: ($line-height * .9);
+$line-height-large: ($line-height * 1.1);
 
 // Margin
 $margin: rem($ratio-golden);
@@ -58,9 +60,9 @@ $padding-left-centering-full: ($width-supplement-outer + $width-gap-half);
 $margin-right-float-full: $width-gap;
 $width-float-full: $width-supplement;
 
-$line-height-footing: ($line-height-small / $ratio-text-footing);
+$line-height-heading: $line-height-tiny;
 
-$line-height-heading: $line-height-small;
+$line-height-footing: ($line-height-heading / $ratio-text-footing);
 
 $margin-top-margin: $margin;
 
@@ -76,8 +78,9 @@ $width-border-search-form-query: $width-border-small;
 $height-search-form-query: ($height-search-form-button + $padding-small * 2);
 
 // Core
-$line-height-body: ($line-height * .9);
+$line-height-body: $line-height-small;
 $line-height-body-content: $line-height;
+$line-height-body-full: $line-height-large;
 
 $margin-top-heading: $margin-enormous;
 
@@ -87,7 +90,7 @@ $margin-top-hr: $margin;
 $height-hr: rem($line-height * pow($ratio-golden, 3));
 $width-hr: ($height-hr * 1.5);
 
-$line-height-pre: $line-height-small;
+$line-height-pre: $line-height-tiny;
 
 $width-border-blockquote: $width-border-large;
 $padding-left-blockquote: $width-gap;
@@ -224,7 +227,7 @@ $padding-left-full-width-caption-full: ($margin-left-full-width-caption - $width
 // Post List
 $margin-top-post-list: $margin-small;
 
-$line-height-post-list-item: $line-height-small;
+$line-height-post-list-item: $line-height-tiny;
 $margin-left-post-list-item-full: (- ($width-supplement + $width-gap));
 $padding-vert-post-list-item: $padding-gargantuan;
 $padding-left-post-list-item-full: (- $margin-left-post-list-item-full);
@@ -235,7 +238,7 @@ $margin-left-post-list-info-content: $width-gap-half;
 $padding-top-post-list-info-full: $padding-vert-post-list-item;
 
 // Pull Quote
-$line-height-pull-quote: $line-height-small;
+$line-height-pull-quote: $line-height-tiny;
 $margin-side-pull-quote: $width-gap;
 $margin-side-pull-quote-content: $indent;
 $margin-left-pull-quote-full: (- ($width-supplement + $width-gap));
@@ -244,7 +247,7 @@ $width-pull-quote-full: ($width-supplement + $width-gap + $width-supplement / $r
 // Read Older
 $margin-top-read-older-label: $margin-huge;
 
-$line-height-read-older-title: $line-height-small;
+$line-height-read-older-title: $line-height-tiny;
 $margin-top-read-older-title-full: $margin-top-read-older-label;
 
 $line-height-read-older-label-full: ($ratio-text-read-older-title * $line-height-read-older-title);

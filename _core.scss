@@ -25,6 +25,10 @@ body {
   @media (min-width: $breakpoint-content) {
     line-height: $line-height-body-content;
   }
+
+  @media (min-width: $breakpoint-full) {
+    line-height: $line-height-body-full;
+  }
 }
 
 h1 {
