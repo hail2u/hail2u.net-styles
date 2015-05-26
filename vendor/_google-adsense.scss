@@ -1,6 +1,18 @@
 // Google AdSense
 .adsbygoogle {
+  margin-left: $margin-side-adsbygoogle;
+  margin-right: $margin-side-adsbygoogle;
   margin-top: $margin-top-adsbygoogle;
-  max-width: $width-max-adsbygoogle;
+  width: $width-adsbygoogle;
   height: $height-adsbygoogle;
+
+  @media (min-width: $breakpoint-adsbygoogle-rectangle) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: $breakpoint-adsbygoogle-large-rectangle) {
+    height: $height-adsbygoogle-large-rectangle;
+    width: $width-adsbygoogle-large-rectangle;
+  }
 }

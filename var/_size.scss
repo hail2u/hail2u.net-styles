@@ -259,6 +259,11 @@ $width-max-searchbox: ($width-content / $ratio-golden);
 $padding-left-share-buttons-item: $width-gap-half;
 
 // Google AdSense
+$margin-side-adsbygoogle: (- $width-gap-half);
 $margin-top-adsbygoogle: $margin-large;
-$width-max-adsbygoogle: 336px;
-$height-adsbygoogle: 280px;
+$width-adsbygoogle: 300px;
+$width-adsbygoogle-large-rectangle: 336px;
+$height-adsbygoogle: 250px;
+$height-adsbygoogle-large-rectangle: 280px;
+$breakpoint-adsbygoogle-rectangle: 326px;
+$breakpoint-adsbygoogle-large-rectangle: 362px;
