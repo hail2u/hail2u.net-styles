@@ -47,8 +47,8 @@ $width-full: (- $width-gap-half + $width-full-outer - $width-gap-half);
 
 // Breakpoint
 $width-scrollbar: 1.5rem;
-$breakpoint-content: ($width-content-outer + $width-scrollbar);
-$breakpoint-full: ($width-full-outer + $width-scrollbar);
+$breakpoint-content: (($width-content-outer + $width-scrollbar) * $ratio-text-html-content);
+$breakpoint-full: (($width-full-outer + $width-scrollbar) * $ratio-text-html-full);
 
 // Placeholder Class
 $width-max-centering: $width-content;
