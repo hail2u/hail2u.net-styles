@@ -1,12 +1,10 @@
 // Pull Quote
 .pull-quote {
-  border-left: 0;
   color: $color-fg-pull-quote;
   font-size: rem($ratio-text-pull-quote);
   line-height: $line-height-pull-quote;
   margin-left: $margin-side-pull-quote;
   margin-right: $margin-side-pull-quote;
-  padding-left: 0;
   text-align: center;
 
   p {
