@@ -239,7 +239,7 @@ $line-height-pull-quote: $line-height-small;
 $margin-side-pull-quote: $width-gap;
 $margin-side-pull-quote-content: $indent;
 $margin-left-pull-quote-full: (- ($width-supplement + $width-gap));
-$width-pull-quote-full: ($width-supplement + $width-gap + $width-supplement);
+$width-pull-quote-full: ($width-supplement + $width-gap + $width-supplement / $ratio-golden);
 
 // Read Older
 $margin-top-read-older-label: $margin-huge;
