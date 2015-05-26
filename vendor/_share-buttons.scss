@@ -5,6 +5,7 @@
   ul {
     @extend %float;
 
+    display: table;
     padding-left: 0;
 
     &::before {
@@ -24,6 +25,7 @@
   @media (min-width: $breakpoint-full) {
     ul {
       bottom: 0;
+      display: block;
       top: auto;
 
       &::before {
