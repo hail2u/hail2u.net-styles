@@ -4,7 +4,7 @@ exclude:
 
 linters:
   Comment:
-    enabled: false
+    allowed: '^/\*!'
 
   StringQuotes:
     style: double_quotes
