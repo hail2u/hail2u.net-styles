@@ -62,12 +62,14 @@ p {
 
 hr {
   @extend %ir;
+  @extend %margin;
 
   background-color: transparent;
   border: 0;
   clear: both;
   height: $height-hr;
-  margin: $margin-top-hr auto 0;
+  margin-left: auto;
+  margin-right: auto;
   width: $width-hr;
 
   &::before {
