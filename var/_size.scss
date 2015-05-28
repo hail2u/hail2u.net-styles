@@ -1,22 +1,22 @@
 // Line Height
-$line-height: $ratio-golden;
+$line-height: $ratio;
 $line-height-tiny: ($line-height * .8);
 $line-height-small: ($line-height * .9);
 $line-height-large: ($line-height * 1.1);
 
 // Margin
-$margin: rem($ratio-golden);
-$margin-minimal: ($margin / pow($ratio-golden, 3));
-$margin-tiny: ($margin / pow($ratio-golden, 2));
-$margin-small: ($margin / $ratio-golden);
-$margin-large: ($margin * $ratio-golden);
-$margin-huge: ($margin * pow($ratio-golden, 2));
-$margin-gargantuan: ($margin * pow($ratio-golden, 3));
-$margin-enormous: ($margin * pow($ratio-golden, 4));
-$margin-maximal: ($margin * pow($ratio-golden, 5));
+$margin: rem($ratio);
+$margin-minimal: ($margin / pow($ratio, 3));
+$margin-tiny: ($margin / pow($ratio, 2));
+$margin-small: ($margin / $ratio);
+$margin-large: ($margin * $ratio);
+$margin-huge: ($margin * pow($ratio, 2));
+$margin-gargantuan: ($margin * pow($ratio, 3));
+$margin-enormous: ($margin * pow($ratio, 4));
+$margin-maximal: ($margin * pow($ratio, 5));
 
 // Indent
-$indent: rem(pow($ratio-golden, 2));
+$indent: rem(pow($ratio, 2));
 
 // Border
 $width-border: .125rem;
@@ -32,7 +32,7 @@ $padding-gargantuan: ($padding * 4);
 
 // Column
 $column: 36rem;
-$column-gap: rem($ratio-golden);
+$column-gap: rem($ratio);
 
 // Main Component
 $width-gap: $column-gap;
@@ -87,7 +87,7 @@ $margin-top-heading: $margin-enormous;
 $margin-top-subheading: $margin-huge;
 
 $margin-top-hr: $margin;
-$height-hr: rem($line-height * pow($ratio-golden, 3));
+$height-hr: rem($line-height * pow($ratio, 3));
 $width-hr: ($height-hr * 1.5);
 
 $line-height-pre: $line-height-tiny;
@@ -118,8 +118,8 @@ $width-border-th-thead: $width-border;
 
 // Logo
 $margin-left-logo-full: (- ($width-supplement + $width-gap));
-$height-logo: ($width-supplement / pow($ratio-golden, 3));
-$height-logo-content: ($height-logo * $ratio-golden);
+$height-logo: ($width-supplement / pow($ratio, 3));
+$height-logo-content: ($height-logo * $ratio);
 $width-logo: ($height-logo / $ratio-aspect-logo);
 $width-logo-content: ($height-logo-content / $ratio-aspect-logo);
 
@@ -173,7 +173,7 @@ $margin-left-footlinks-separator: $padding-right-footlinks-item;
 $left-byline-full: $width-gap-half;
 
 $margin-bottom-byline-border: $margin-tiny;
-$width-byline-border: ($width-supplement / pow($ratio-golden, 3));
+$width-byline-border: ($width-supplement / pow($ratio, 3));
 $width-border-byline-border: $width-border;
 
 // Site Search
@@ -181,8 +181,8 @@ $right-site-search-content: $width-gap-half;
 $top-site-search: $margin-huge;
 $top-site-search-content: ($margin-top-footlinks + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
 $top-site-search-full: ($margin-top-footlinks-full + (rem($line-height-body-full * $ratio-text-global-footer) - $height-search-form-query) / 2);
-$width-max-site-search: ($width-content / $ratio-golden);
-$width-max-site-search-content: ($width-content / pow($ratio-golden, 2));
+$width-max-site-search: ($width-content / $ratio);
+$width-max-site-search-content: ($width-content / pow($ratio, 2));
 
 // Contact Form
 $padding-contact-form-label: $padding-large;
@@ -206,7 +206,7 @@ $width-flat-ul-item-full: (100% / 3);
 
 // Floatage
 $margin-side-floatage-content: $width-gap-half;
-$width-max-floatage-content: percentage(1 / pow($ratio-golden, 2));
+$width-max-floatage-content: percentage(1 / pow($ratio, 2));
 
 // Footnote
 $margin-top-footnote: $margin;
@@ -240,7 +240,7 @@ $line-height-pull-quote: $line-height-tiny;
 $margin-side-pull-quote: $width-gap;
 $margin-side-pull-quote-content: $indent;
 $margin-left-pull-quote-full: (- ($width-supplement + $width-gap));
-$width-pull-quote-full: ($width-supplement + $width-gap + $width-supplement / $ratio-golden);
+$width-pull-quote-full: ($width-supplement + $width-gap + $width-supplement / $ratio);
 
 // Read Older
 $margin-top-read-older-label: $margin-huge;
@@ -251,7 +251,7 @@ $margin-top-read-older-title-full: $margin-top-read-older-label;
 $line-height-read-older-label-full: ($ratio-text-read-older-title * $line-height-read-older-title);
 
 // Searchbox
-$width-max-searchbox: ($width-content / $ratio-golden);
+$width-max-searchbox: ($width-content / $ratio);
 
 // Share Buttons
 $padding-left-share-buttons-item: $width-gap-half;

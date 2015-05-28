@@ -1,8 +1,5 @@
 // Basic
-$ratio-golden: 1.61803;
-$ratio-silver: 2.41421;
-$ratio-bronze: 3.30378;
-$ratio-yamato: 1.41421;
+$ratio: 1.61803;
 
 // Text Size
 $ratio-text-primary: (16px / 16px);
@@ -10,18 +7,18 @@ $ratio-text-secondary: (21px / 16px);
 
 // Harmonic Ratio
 $ratio-text: $ratio-text-primary;
-$ratio-text-minimal: ($ratio-text-secondary / pow($ratio-golden, 2));
-$ratio-text-tiny: ($ratio-text-primary / $ratio-golden);
-$ratio-text-small: ($ratio-text-secondary / $ratio-golden);
+$ratio-text-minimal: ($ratio-text-secondary / pow($ratio, 2));
+$ratio-text-tiny: ($ratio-text-primary / $ratio);
+$ratio-text-small: ($ratio-text-secondary / $ratio);
 $ratio-text-large: $ratio-text-secondary;
-$ratio-text-huge: ($ratio-text-primary * $ratio-golden);
-$ratio-text-gargantuan: ($ratio-text-secondary * $ratio-golden);
-$ratio-text-enormous: ($ratio-text-primary * pow($ratio-golden, 2));
-$ratio-text-maximal: ($ratio-text-secondary * pow($ratio-golden, 2));
+$ratio-text-huge: ($ratio-text-primary * $ratio);
+$ratio-text-gargantuan: ($ratio-text-secondary * $ratio);
+$ratio-text-enormous: ($ratio-text-primary * pow($ratio, 2));
+$ratio-text-maximal: ($ratio-text-secondary * pow($ratio, 2));
 
 // Column
 $ratio-content: 1;
-$ratio-supplement: (1 / pow($ratio-golden, 2));
+$ratio-supplement: (1 / pow($ratio, 2));
 
 // Placeholder class
 $ratio-text-footing: $ratio-text-small;
