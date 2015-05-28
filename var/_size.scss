@@ -89,6 +89,7 @@ $margin-top-subheading: $margin-huge;
 $margin-top-hr: $margin;
 $height-hr: rem($line-height * pow($ratio, 3));
 $width-hr: ($height-hr * 1.5);
+$width-hr-print: percentage(1 / $ratio);
 
 $line-height-pre: $line-height-tiny;
 
