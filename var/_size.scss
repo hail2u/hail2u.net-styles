@@ -258,7 +258,7 @@ $width-max-searchbox: ($width-content / $ratio);
 $padding-left-share-buttons-item: $width-gap-half;
 
 // Google AdSense
-$margin-side-adsbygoogle: (- $width-gap-half);
+$margin-side-adsbygoogle-rectangle: $width-gap-half;
 $margin-top-adsbygoogle: $margin-large;
 $width-adsbygoogle: 300px;
 $width-adsbygoogle-large-rectangle: 336px;

@@ -1,14 +1,14 @@
 // Google AdSense
 .adsbygoogle {
-  margin-left: $margin-side-adsbygoogle;
-  margin-right: $margin-side-adsbygoogle;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: $margin-top-adsbygoogle;
   width: $width-adsbygoogle;
   height: $height-adsbygoogle;
 
   @media (min-width: $breakpoint-adsbygoogle-rectangle) {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: $margin-side-adsbygoogle-rectangle;
+    margin-right: $margin-side-adsbygoogle-rectangle;
   }
 
   @media (min-width: $breakpoint-adsbygoogle-large-rectangle) {
