@@ -57,6 +57,8 @@ $width-max-centering: $width-content;
 $padding-side-centering: $width-gap-half;
 $padding-left-centering-full: ($width-supplement-outer + $width-gap-half);
 
+$margin-side-expander: (- $width-gap-half);
+
 $margin-right-float-full: $width-gap;
 $width-float-full: $width-supplement;
 
@@ -200,7 +202,7 @@ $width-max-drop-full: ($width-supplement + $width-gap + $width-content / 2);
 $width-min-drop-img: $width-supplement;
 
 // Flat UL
-$margin-side-flat-ul-content: (- $width-gap-half);
+$padding-left-flat-ul: ($width-gap-half + $padding-left-list);
 $padding-side-flat-ul-item-full: $width-gap-half;
 $width-flat-ul-item-full: (100% / 3);
 
@@ -215,7 +217,6 @@ $width-bg-footnote: ($width-border-small * 8);
 $height-bg-footnote: $width-border-small;
 
 // Full Width
-$margin-side-full-width: (- $width-gap-half);
 $margin-left-full-width-full: (- ($width-gap-half + $width-supplement + $width-gap));
 
 $margin-left-full-width-caption: $width-gap-half;

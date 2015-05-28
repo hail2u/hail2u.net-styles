@@ -1,7 +1,6 @@
 // Full Width
 .full-width {
-  margin-left: $margin-side-full-width;
-  margin-right: $margin-side-full-width;
+  @extend %expander;
 
   img,
   video,

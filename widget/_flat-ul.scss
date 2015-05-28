@@ -1,10 +1,11 @@
 // Flat UL
 .flat-ul {
   @extend %clearfix;
+  @extend %expander;
+
+  padding-left: $padding-left-flat-ul;
 
   @media (min-width: $breakpoint-content) {
-    margin-left: $margin-side-flat-ul-content;
-    margin-right: $margin-side-flat-ul-content;
     padding-left: 0;
 
     li {
