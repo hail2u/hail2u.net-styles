@@ -61,15 +61,15 @@
   }
 
   hr {
-    border-bottom: 1px dashed;
+    border-bottom: $width-border-hr-print dashed;
     height: 0;
-    margin-bottom: $margin-large;
-    margin-top: $margin-large;
+    margin-bottom: $margin-vert-hr-print;
+    margin-top: $margin-vert-hr-print;
     width: $width-hr-print;
   }
 
   pre {
-    margin: $margin 0 0;
+    margin: $margin-top-pre-print 0 0;
     padding: 0;
   }
 
@@ -96,10 +96,10 @@
   }
 
   .first-heading {
-    margin-top: ($margin + rem($line-height));
+    margin-top: $margin-top-first-heading-print;
   }
 
   .byline {
-    margin-top: $margin-huge;
+    margin-top: $margin-top-byline-print;
   }
 }

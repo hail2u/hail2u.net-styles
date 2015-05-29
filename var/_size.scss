@@ -88,11 +88,14 @@ $margin-top-heading: $margin-enormous;
 
 $margin-top-subheading: $margin-huge;
 
+$margin-vert-hr-print: $margin-large;
 $height-hr: rem($line-height * pow($ratio, 3));
 $width-hr: ($height-hr * 1.5);
 $width-hr-print: percentage(1 / $ratio);
+$width-border-hr-print: $width-border-small;
 
 $line-height-pre: $line-height-tiny;
+$margin-top-pre-print: $margin;
 
 $width-border-blockquote: $width-border-large;
 $padding-left-blockquote: $width-gap;
@@ -148,6 +151,7 @@ $margin-top-content-full: (- ($margin-top-heading - $margin-top-tagline-full));
 // First Heading
 $margin-top-first-heading: ($margin-top-heading + rem($line-height));
 $margin-top-first-heading-full: $margin-top-heading;
+$margin-top-first-heading-print: ($margin + rem($line-height));
 
 $margin-left-first-heading-permalink-full: $margin-left-tagline-full;
 $padding-bottom-first-heading-permalink: ($margin-top-tagline - $margin);
@@ -174,6 +178,7 @@ $margin-left-footlinks-separator: $padding-right-footlinks-item;
 // Byline
 $left-byline-full: $width-gap-half;
 
+$margin-top-byline-print: $margin-huge;
 $margin-bottom-byline-border: $margin-tiny;
 $width-byline-border: ($width-supplement / pow($ratio, 3));
 $width-border-byline-border: $width-border;
