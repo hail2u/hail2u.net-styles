@@ -1,6 +1,7 @@
 exclude:
   - 'node_modules/**'
   - 'assets/**'
+  - '_shame.scss'
 
 linters:
   Comment:
