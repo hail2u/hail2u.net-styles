@@ -299,8 +299,7 @@ td {
   vertical-align: top;
   white-space: nowrap;
 
-  table > :first-child > &,
-  table > :first-child > :first-child > & {
+  :first-child > :first-child > & {
     border-top-width: 0;
   }
 }
