@@ -259,6 +259,12 @@ $line-height-read-older-label-full: ($ratio-text-read-older-title * $line-height
 // Searchbox
 $width-max-searchbox: ($width-content / $ratio);
 
+// Seealso
+$width-border-seealso: $width-border-large;
+$padding-left-seealso: $width-gap-half;
+$padding-left-seealso-full: $width-gap;
+$margin-left-seealso-full: (- ($width-border-seealso + $width-gap));
+
 // Share Buttons
 $padding-left-share-buttons-item: $width-gap-half;
 
