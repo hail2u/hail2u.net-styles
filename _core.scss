@@ -87,7 +87,7 @@ pre {
   @include font-feature-settings("kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1);
 
   clear: both;
-  font-family: $font-family-code;
+  font-family: $font-family-pre;
   line-height: $line-height-pre;
 
   @media (min-width: $breakpoint-content) {
@@ -164,28 +164,24 @@ figcaption {
   color: $color-fg-figcaption;
 
   blockquote + &:last-child {
-    border-left: $width-border-blockquote solid $color-border-blockquote;
-    color: $color-fg-blockquote;
-    padding-left: $padding-left-blockquote;
-    padding-top: $padding-top-figcaption-blockquote;
+    border-left: $width-border-figcaption-quote solid $color-border-figcaption-quote;
+    color: $color-fg-figcaption-quote;
+    padding-left: $padding-left-figcaption-quote;
+    padding-top: $padding-top-figcaption-quote;
   }
 
   @media (min-width: $breakpoint-full) {
-    border-top: $width-border-figcaption solid $color-border-figcaption;
-    padding-top: $padding-top-figcaption-full;
-
     &:last-child {
-      border-bottom: $width-border-figcaption solid $color-border-figcaption;
-      border-top-width: 0;
+      border-bottom: $width-border-figcaption-at-last-full solid $color-border-figcaption-at-last-full;
       bottom: 0;
       padding-bottom: $padding-bottom-figcaption-at-last-full;
       padding-top: 0;
       top: auto;
     }
 
-    blockquote + &:last-child {
+    blockquote + & {
       border-bottom: 0;
-      margin-left: $margin-left-blockquote-full;
+      margin-left: $margin-left-figcaption-quote-full;
       margin-right: 0;
       padding-bottom: 0;
       position: static;

@@ -8,5 +8,8 @@
 $font-family-body: "Helvetica Neue", "Calibri", "Emoji", sans-serif;
 $font-family-body-print: serif;
 
-$font-family-code: "Menlo", "Consolas", "Emoji", monospace;
-$font-family-code-print: monospace;
+$font-family-pre: "Menlo", "Consolas", "Emoji", monospace;
+$font-family-pre-print: monospace;
+
+$font-family-code: $font-family-pre;
+$font-family-code-print: $font-family-pre-print;

@@ -106,11 +106,12 @@ $padding-left-list-nested-full: $padding-left-list;
 
 $margin-left-dd: $indent;
 
-$width-border-figcaption: $width-border-small;
-$padding-top-figcaption-full: ($width-border-figcaption + $margin-tiny);
-$padding-bottom-figcaption-at-last-full: $padding-top-figcaption-full;
-
-$padding-top-figcaption-blockquote: $margin-tiny;
+$width-border-figcaption-at-last-full: $width-border-small;
+$padding-bottom-figcaption-at-last-full: ($width-border-figcaption-at-last-full + $margin-tiny);
+$padding-top-figcaption-quote: $margin-tiny;
+$padding-left-figcaption-quote: $padding-left-blockquote;
+$width-border-figcaption-quote: $width-border-blockquote;
+$margin-left-figcaption-quote-full: (- ($width-border-figcaption-quote + $padding-left-figcaption-quote));
 
 $width-border-strong: $width-border-small;
 
