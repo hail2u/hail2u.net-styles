@@ -163,7 +163,7 @@ figcaption {
 
   color: $color-fg-figcaption;
 
-  blockquote + &:last-child {
+  blockquote + & {
     border-left: $width-border-figcaption-quote solid $color-border-figcaption-quote;
     color: $color-fg-figcaption-quote;
     padding-left: $padding-left-figcaption-quote;
@@ -171,13 +171,11 @@ figcaption {
   }
 
   @media (min-width: $breakpoint-full) {
-    &:last-child {
-      border-bottom: $width-border-figcaption-at-last-full solid $color-border-figcaption-at-last-full;
-      bottom: 0;
-      padding-bottom: $padding-bottom-figcaption-at-last-full;
-      padding-top: 0;
-      top: auto;
-    }
+    border-bottom: $width-border-figcaption-full solid $color-border-figcaption-full;
+    bottom: 0;
+    padding-bottom: $padding-bottom-figcaption-full;
+    padding-top: 0;
+    top: auto;
 
     blockquote + & {
       border-bottom: 0;
