@@ -228,7 +228,8 @@ $margin-left-full-width-full: (- ($width-gap-half + $width-supplement + $width-g
 
 $margin-left-full-width-caption: $width-gap-half;
 $margin-top-full-width-caption-full: $margin;
-$padding-left-full-width-caption-full: ($margin-left-full-width-caption - $width-border-small);
+$width-border-full-width-caption-full: $width-border-large;
+$padding-left-full-width-caption-full: ($margin-left-full-width-caption - $width-border-full-width-caption-full);
 
 // Post List
 $margin-top-post-list: $margin-small;
