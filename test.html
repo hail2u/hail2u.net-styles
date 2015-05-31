@@ -225,7 +225,7 @@
             <li>プロパティーのアルファベット順に定義を記述します</li>
             <li>省略系のプロパティーはなるべく使いません
               <ul>
-                <li><code>margin</code>や<code>padding</code>、 <code>border</code>に限って使うことがあります</li>
+                <li><code>margin</code>や<code>padding</code>、 <code>border</code>プロパティーに限って使うことがあります</li>
               </ul>
             </li>
             <li>値はなるべく一行(80文字)に収まるように書きます
@@ -373,13 +373,13 @@
         <section>
           <h2>セクション構成物</h2>
 
-          <p>セクションを作成する、<code>section</code>、<code>nav</code>、<code>article</code>と<code>aside</code>では、特に何もスタイルを指定していません。ただし予期せぬ回り込み等を回避するためにclearfixだけは指定することがあります。</p>
+          <p>セクションを作成する、<code>section</code>、<code>nav</code>、<code>article</code>と<code>aside</code>要素では、特に何もスタイルを指定していません。ただし予期せぬ回り込み等を回避するためにclearfixだけは指定することがあります。</p>
         </section>
 
         <section>
           <h2>見出し</h2>
 
-          <p>セクションの見出しは<code>h1</code>でマークアップされます。</p>
+          <p>セクションの見出しは<code>h1</code>要素でマークアップされます。</p>
 
           <pre><code class="language-html">&lt;h1&gt;...&lt;/h1&gt;
 </code></pre>
@@ -388,7 +388,7 @@
         <section>
           <h2>小見出し</h2>
 
-          <p>セクション内の小見出しはセクションの見出しである<code>h1</code>に合わせてそのレベルを調節しています。多くの場合は<code>h2</code>のみが使われることでしょう。</p>
+          <p>セクション内の小見出しはセクションの見出しである<code>h1</code>要素に合わせてそのレベルを調節しています。多くの場合は<code>h2</code>要素のみが使われることでしょう。</p>
 
           <pre><code class="language-html">&lt;h2&gt;...&lt;/h2&gt;
 </code></pre>
@@ -450,7 +450,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
         <section>
           <h2>引用</h2>
 
-          <p>内部で様々なスタイルが使用されるので、ブロックの左端に縦線を引く以外のスタイルは指定しません。字体に斜体を採用すべきところですが、<a href="https://en.wikipedia.org/wiki/Meiryo">メイリオ</a>が和文部分に斜体を持っていないのでそれを考慮して無指定にしています。マークアップは通常、全体を<code>figure</code>で括り、引用元の表記は<code>figcaption</code>と<code>cite</code>を組み合わせて行います。</p>
+          <p>内部で様々なスタイルが使用されるので、ブロックの左端に縦線を引く以外のスタイルは指定しません。字体に斜体を採用すべきところですが、<a href="https://en.wikipedia.org/wiki/Meiryo">メイリオ</a>が和文部分に斜体を持っていないのでそれを考慮して無指定にしています。マークアップは通常、全体を<code>figure</code>要素で括り、引用元の表記は<code>figcaption</code>と<code>cite</code>要素を組み合わせて行います。</p>
 
           <figure>
             <blockquote>
@@ -557,7 +557,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
         <section>
           <h2>図</h2>
 
-          <p>通常は<code>figure</code>を使っています。既に<code>blockquote</code>要素で使われているように内容は画像とは限らないので、強いスタイルは指定していません。</p>
+          <p>通常は<code>figure</code>要素を使っています。既に<code>blockquote</code>要素で使われているように内容は画像とは限らないので、強いスタイルは指定していません。</p>
 
           <figure>
             <img alt="Placeholder Image" height="270" src="https://placeimg.com/480/270/any" width="480">
@@ -585,7 +585,7 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
       <section id="edits">
         <h1>編集</h1>
 
-        <p>より良い編集履歴を残すため、インラインで追加した部分は<ins>特に何もせず</ins>、削除した部分は<del>取り消し線を加えています</del>。単なる追記等の場合はそのことを明示するだけに留め、<code>ins</code>でマークアップはしていません。</p>
+        <p>より良い編集履歴を残すため、インラインで追加した部分は<ins>特に何もせず</ins>、削除した部分は<del>取り消し線を加えています</del>。単なる追記等の場合はそのことを明示するだけに留め、<code>ins</code>要素でマークアップはしていません。</p>
       </section>
 
       <section id="embedded-content">
