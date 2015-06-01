@@ -1,22 +1,21 @@
+// Normalize placeholder style
+::-ms-input-placeholder {
+  color: inherit;
+  opacity: .54;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: .54;
+}
+
+:placeholder-shown {
+  opacity: .54;
+}
+
 // Ditch `-webkit-appearance` on Safari 6+ and Mobile Safari 6+
-// Supress SCSS Lint warnings for vendor prefixes
 .contact-form {
   .button {
     -webkit-appearance: none;
-  }
-
-  ::-moz-placeholder {
-    color: inherit;
-    opacity: $opacity-contact-form-placeholder;
-  }
-
-  ::-ms-input-placeholder {
-    color: inherit;
-    opacity: $opacity-contact-form-placeholder;
-  }
-
-  ::-webkit-input-placeholder {
-    color: inherit;
-    opacity: $opacity-contact-form-placeholder;
   }
 }
