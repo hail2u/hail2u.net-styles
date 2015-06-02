@@ -214,10 +214,10 @@ $margin-side-floatage-content: $width-gap-half;
 $width-max-floatage-content: percentage(1 / pow($ratio, 2));
 
 // Footnote
-$margin-top-footnote: $margin;
 $padding-top-footnote: $margin-tiny;
 $width-bg-footnote: ($width-border-small * 8);
 $height-bg-footnote: $width-border-small;
+$top-bg-footnote: $margin;
 
 // Full Width
 $margin-left-full-width-full: (- ($width-gap-half + $width-supplement + $width-gap));
