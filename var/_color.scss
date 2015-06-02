@@ -1,8 +1,8 @@
 // Basic
 $color-dark: rgb(60, 51, 48);
 $color-light: rgb(252, 249, 240);
-$color-accent: rgb(17, 136, 187);
-$color-accent-complement: rgb(255, 140, 12);
+$color-accent: rgb(39, 141, 210);
+$color-accent-complement: rgb(255, 105, 0);
 
 // Combination
 $color-dark-dark: mix($color-dark, rgb(0, 0, 0));
@@ -19,15 +19,15 @@ $color-tint-dark: mix($color-dark, $color-light, 26%);
 $color-tint-light: mix($color-dark, $color-light, 14%);
 $color-tint-lightest: mix($color-dark, $color-light, 2%);
 
-$color-accent-darkest: rgb(4, 83, 117);
-$color-accent-dark: rgb(5, 107, 151);
-$color-accent-light: rgb(53, 152, 195);
-$color-accent-lightest: rgb(91, 172, 208);
+$color-accent-darkest: rgb(6, 90, 144);
+$color-accent-dark: rgb(9, 126, 204);
+$color-accent-light: rgb(75, 162, 219);
+$color-accent-lightest: rgb(117, 186, 231);
 
-$color-accent-complement-darkest: rgb(185, 79, 0);
-$color-accent-complement-dark: rgb(207, 105, 0);
-$color-accent-complement-light: rgb(255, 172, 14);
-$color-accent-complement-lightest: rgb(255, 217, 19);
+$color-accent-complement-darkest: rgb(159, 33, 0);
+$color-accent-complement-dark: rgb(201, 69, 0);
+$color-accent-complement-light: rgb(255, 186, 0);
+$color-accent-complement-lightest: rgb(255, 222, 0);
 
 // Placeholder Class
 $color-fg-footing: $color-shade-lightest;
