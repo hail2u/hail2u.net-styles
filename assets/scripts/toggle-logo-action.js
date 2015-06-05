@@ -35,9 +35,10 @@
       root.removeEventListener("transitionend", doScroll, false);
     };
     var scrollDistance = w.pageYOffset;
+    var scrollDuration = Math.min(1, (scrollDistance / 5000)) + "s";
     root.addEventListener("transitionend", doScroll, false);
-    styleRoot.transition = "transform 1s ease-in-out";
-    styleRoot.webkitTransition = "-webkit-transform 1s ease-in-out";
+    styleRoot.transition = "transform " + scrollDuration + " ease-in-out";
+    styleRoot.webkitTransition = "-webkit-" + styleRoot.transition;
     styleRoot.transform = styleRoot.webkitTransform = "translate3d(0, " +
       scrollDistance + "px, 0)";
     evt.preventDefault();
