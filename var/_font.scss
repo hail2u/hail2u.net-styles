@@ -5,11 +5,15 @@
 }
 
 // Core
-$font-family-body: "Helvetica Neue", "Calibri", "Emoji", sans-serif;
+$font-family-body: "Eau Douce", "Helvetica Neue", "Calibri", "Emoji", sans-serif;
 $font-family-body-print: serif;
 
-$font-family-pre: "Menlo", "Consolas", "Emoji", monospace;
+$font-family-pre: "M+ 1m Latin", "Menlo", "Consolas", "Emoji", monospace;
 $font-family-pre-print: monospace;
 
 $font-family-code: $font-family-pre;
 $font-family-code-print: $font-family-pre-print;
+
+// Tagline
+$font-family-tagline: "Niconne", $font-family-body;
+$font-family-tagline-print: $font-family-body-print;

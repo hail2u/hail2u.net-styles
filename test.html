@@ -32,11 +32,15 @@
     <meta content="@hail2u_" name="twitter:creator">
 
     <link href="style.css" rel="stylesheet">
+    <link class="js-load-css" href="eau-douce.css" rel="subresource">
+    <link class="js-load-css" href="mplus-1m-latin.css" rel="subresource">
+    <link class="js-load-css" href="niconne.css" rel="subresource">
 
     <link href="debug.css" rel="stylesheet">
 
     <script async src="assets/scripts/_string_endswith.js"></script>
     <script async src="assets/scripts/lightbox.js"></script>
+    <script async src="assets/scripts/load-css.js"></script>
     <script async src="assets/scripts/nohashtop.js"></script>
     <script async src="assets/scripts/toggle-logo-action.js"></script>
     <script async src="assets/scripts/unutm.js"></script>
@@ -263,38 +267,28 @@
       <section id="fonts">
         <h1>フォント</h1>
 
+        <p>表示にはウェブ・フォントを使っています。遅延読み込みをさせているため、ドキュメントのレンダリングはブロックしませんが、フォントが適用される瞬間にフラッシュします。</p>
+
         <table>
           <tr>
-            <th rowspan="5">本文</th>
-            <td class="font-family-body"><a href="http://en.wikipedia.org/wiki/Helvetica#Neue_Helvetica_.281983.29">Neue Helvetica</a> or <a href="https://en.wikipedia.org/wiki/Calibri">Calibri</a></td>
+            <th rowspan="3">本文</th>
+            <td class="font-family-body">Eau Douce</td>
           </tr>
           <tr>
             <td class="font-family-body">The quick brown fox jumps over the lazy dog.</td>
           </tr>
           <tr>
-            <td class="font-family-body italic">The quick brown fox jumps over the lazy dog.</td>
-          </tr>
-          <tr>
             <td class="font-family-body bold">The quick brown fox jumps over the lazy dog.</td>
           </tr>
           <tr>
-            <td class="font-family-body bold italic">The quick brown fox jumps over the lazy dog.</td>
-          </tr>
-          <tr>
-            <th rowspan="5">コード</th>
-            <td class="font-family-code"><a href="http://en.wikipedia.org/wiki/Menlo_(typeface)">Menlo</a> or <a href="http://en.wikipedia.org/wiki/Consolas">Consolas</a></td>
+            <th rowspan="3">コード</th>
+            <td class="font-family-code">M+ 1m (Latin-1 subset)</td>
           </tr>
           <tr>
             <td class="font-family-code">The quick brown fox jumps over the lazy dog.</td>
           </tr>
           <tr>
-            <td class="font-family-code italic">The quick brown fox jumps over the lazy dog.</td>
-          </tr>
-          <tr>
             <td class="font-family-code bold">The quick brown fox jumps over the lazy dog.</td>
-          </tr>
-          <tr>
-            <td class="font-family-code bold italic">The quick brown fox jumps over the lazy dog.</td>
           </tr>
         </table>
       </section>
