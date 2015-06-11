@@ -121,12 +121,16 @@ $padding-td: $padding-large;
 
 $width-border-th-thead: $width-border;
 
+// Global Header
+$margin-top-global-header: $margin-small;
+$margin-top-global-header-content: $margin;
+
 // Logo
 $margin-left-logo-full: (- ($width-supplement + $width-gap));
-$height-logo: ($width-supplement / pow($ratio, 3));
-$height-logo-content: ($height-logo * $ratio);
-$width-logo: ($height-logo / $ratio-aspect-logo);
-$width-logo-content: ($height-logo-content / $ratio-aspect-logo);
+$width-logo: ($width-supplement / pow($ratio, 3));
+$width-logo-content: ($width-logo / 3 * 4);
+$height-logo: $width-logo;
+$height-logo-content: $width-logo-content;
 
 // Site Navigation
 $line-height-site-navigation-item: $height-logo;

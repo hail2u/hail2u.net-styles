@@ -3,4 +3,10 @@
   @extend %centering;
   @extend %link-underline-removal;
   @extend %positioning-root;
+
+  margin-top: $margin-top-global-header;
+
+  @media (min-width: $breakpoint-content) {
+    margin-top: $margin-top-global-header-content;
+  }
 }
