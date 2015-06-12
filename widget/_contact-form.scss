@@ -56,9 +56,10 @@
     cursor: pointer;
     display: block;
     font-size: rem($ratio-text-contact-form-button);
-    font-weight: bolder;
+    margin-left: auto;
     margin-top: $margin-top-contact-form-button;
+    padding-left: $padding-hori-contact-form-button;
+    padding-right: $padding-hori-contact-form-button;
     text-transform: uppercase;
-    width: 100%;
   }
 }
