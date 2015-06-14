@@ -2,19 +2,18 @@
 .site-navigation {
   display: table;
   font-size: rem($ratio-text-site-navigation);
-  margin-left: auto;
   margin-top: 0;
   padding-left: 0;
+  position: absolute;
+  right: 0;
   text-transform: uppercase;
+  top: 0;
 
   li {
     display: table-cell;
     line-height: $line-height-site-navigation-item;
-    padding-left: $padding-left-site-navigation-item;
-
-    &:first-child {
-      padding-left: 0;
-    }
+    padding-left: $padding-side-site-navigation-item;
+    padding-right: $padding-side-site-navigation-item;
   }
 
   a {
@@ -30,7 +29,6 @@
   @media (min-width: $breakpoint-content) {
     li {
       line-height: $line-height-site-navigation-item-content;
-      padding-left: $padding-left-site-navigation-item-content;
     }
   }
 }
