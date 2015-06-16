@@ -13,8 +13,6 @@
 
   @media (min-width: $breakpoint-full) {
     font-size: rem($ratio-text-tagline-full);
-    margin-left: $margin-left-tagline-full;
     margin-top: $margin-top-tagline-full;
-    max-width: $width-max-tagline-full;
   }
 }
