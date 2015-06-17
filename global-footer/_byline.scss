@@ -20,5 +20,11 @@
     bottom: 0;
     left: $left-byline-full;
     position: absolute;
+    text-align: right;
+    width: $width-byline-full;
+
+    &::before {
+      margin-left: auto;
+    }
   }
 }

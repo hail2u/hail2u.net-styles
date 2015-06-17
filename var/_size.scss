@@ -128,9 +128,9 @@ $margin-top-global-header: $margin-small;
 $margin-top-global-header-content: $margin;
 
 // Logo
-$margin-left-logo-full: (- ($width-supplement + $width-gap));
 $width-logo: ($width-supplement / pow($ratio, 3));
 $width-logo-content: ($width-logo / 3 * 4);
+$margin-left-logo-full: (- ($width-logo-content + $width-gap));
 $height-logo: $width-logo;
 $height-logo-content: $width-logo-content;
 
@@ -181,6 +181,7 @@ $margin-left-footlinks-separator: $padding-right-footlinks-item;
 
 // Byline
 $left-byline-full: $width-gap-half;
+$width-byline-full: $width-supplement;
 
 $margin-top-byline-print: $margin-huge;
 $margin-bottom-byline-border: $margin-tiny;
