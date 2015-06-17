@@ -272,11 +272,9 @@ $margin-left-seealso-full: (- ($width-border-seealso + $width-gap));
 $padding-left-share-buttons-item: $width-gap-half;
 
 // Google AdSense
-$margin-side-adsbygoogle-rectangle: $width-gap-half;
 $margin-top-adsbygoogle: $margin-large;
 $width-adsbygoogle: 300px;
 $width-adsbygoogle-large-rectangle: 336px;
 $height-adsbygoogle: 250px;
 $height-adsbygoogle-large-rectangle: 280px;
-$breakpoint-adsbygoogle-rectangle: 326px;
-$breakpoint-adsbygoogle-large-rectangle: 362px;
+$breakpoint-adsbygoogle-large-rectangle: ($width-adsbygoogle-large-rectangle + 16px * 2);
