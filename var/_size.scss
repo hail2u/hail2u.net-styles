@@ -35,17 +35,17 @@ $column: 36rem;
 $column-gap: rem($ratio);
 
 // Main Component
-$width-gap: $column-gap;
+$width-gap: ($column-gap * $ratio);
 $width-gap-half: ($column-gap / 2);
 
 $width-content: $column;
 $width-content-outer: ($width-gap-half + $width-content + $width-gap-half);
 
-$width-supplement-outer: ($width-content-outer / $ratio-content * $ratio-supplement);
-$width-supplement: (- $width-gap-half + $width-supplement-outer - $width-gap-half);
+$width-supplement: ($width-content / $ratio-content * $ratio-supplement);
+$width-supplement-outer: ($width-gap-half + $width-supplement + $width-gap-half);
 
-$width-full-outer: ($width-supplement-outer + $width-content-outer);
-$width-full: (- $width-gap-half + $width-full-outer - $width-gap-half);
+$width-full: ($width-supplement + $width-gap + $width-content);
+$width-full-outer: ($width-gap-half + $width-full + $width-gap-half);
 
 // Breakpoint
 $width-scrollbar: 1.5rem;
@@ -56,7 +56,7 @@ $breakpoint-full: ($width-full-outer + $width-scrollbar);
 $width-max-centering: $width-content;
 $padding-side-centering: ($width-gap-half * .75);
 $padding-side-centering-content: $width-gap-half;
-$padding-left-centering-full: ($width-supplement-outer + $width-gap-half);
+$padding-left-centering-full: ($width-gap-half + $width-supplement + $width-gap);
 
 $margin-side-expander: (- $width-gap-half * .75);
 $margin-side-expander-content: (- $width-gap-half);
