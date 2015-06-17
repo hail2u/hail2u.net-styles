@@ -17,19 +17,10 @@
 
     p {
       margin-top: $margin-top-section-footer-p-full;
-    }
 
-    [role="main"] > & {
-      bottom: auto;
-      top: auto;
-
-      p {
+      [role="main"] > & {
         margin-top: $margin-top-section-footer-p-permalink-full;
       }
-    }
-
-    .has-image[role="main"] > & {
-      bottom: 100%;
     }
   }
 }

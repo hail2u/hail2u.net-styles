@@ -165,7 +165,7 @@ $width-section-footer-full: $width-float-full;
 
 $margin-top-section-footer-p-full: rem(($ratio-text-heading-content * $line-height-heading - $ratio-text-footing * $line-height-footing) / 2);
 
-$margin-top-section-footer-p-permalink-full: ($margin + rem($line-height-body - $line-height-footing * $ratio-text-footing) / 2);
+$margin-top-section-footer-p-permalink-full: rem(($ratio-text-first-heading-permalink-full * $line-height-heading - $ratio-text-footing * $line-height-footing) / 2);
 
 // Global Footer
 $margin-bottom-global-footer: $margin;
