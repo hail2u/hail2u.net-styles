@@ -54,10 +54,12 @@ $breakpoint-full: ($width-full-outer + $width-scrollbar);
 
 // Placeholder Class
 $width-max-centering: $width-content;
-$padding-side-centering: $width-gap-half;
+$padding-side-centering: ($width-gap-half * .75);
+$padding-side-centering-content: $width-gap-half;
 $padding-left-centering-full: ($width-supplement-outer + $width-gap-half);
 
-$margin-side-expander: (- $width-gap-half);
+$margin-side-expander: (- $width-gap-half * .75);
+$margin-side-expander-content: (- $width-gap-half);
 
 $margin-right-float-full: $width-gap;
 $width-float-full: $width-supplement;

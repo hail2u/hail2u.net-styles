@@ -49,7 +49,7 @@ $color-border-colors: #000;
   );
   background-position: left center, right center, center;
   background-repeat: repeat-y;
-  background-size: $width-gap-half, $width-gap-half, 100%;
+  background-size: ($width-gap-half * .75), ($width-gap-half * .75), 100%;
   bottom: 0;
   content: "";
   left: 0;

@@ -5,6 +5,11 @@
   padding-left: $padding-side-centering;
   padding-right: $padding-side-centering;
 
+  @media (min-width: $breakpoint-content) {
+    padding-left: $padding-side-centering-content;
+    padding-right: $padding-side-centering-content;
+  }
+
   @media (min-width: $breakpoint-full) {
     padding-left: $padding-left-centering-full;
   }
