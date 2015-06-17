@@ -31,4 +31,9 @@
       line-height: $line-height-site-navigation-item-content;
     }
   }
+
+  @media (min-width: $breakpoint-full) {
+    margin-left: $margin-left-site-navigation-full;
+    right: auto;
+  }
 }

@@ -137,6 +137,8 @@ $line-height-site-navigation-item: $height-logo;
 $line-height-site-navigation-item-content: $height-logo-content;
 $padding-side-site-navigation-item: $width-gap-half;
 
+$margin-left-site-navigation-full: (- $padding-side-site-navigation-item);
+
 $width-border-site-navigation-mark: $width-border;
 
 // Tagline
@@ -154,7 +156,6 @@ $margin-top-first-heading: ($margin-top-heading + rem($line-height));
 $margin-top-first-heading-full: $margin-top-heading;
 $margin-top-first-heading-print: ($margin + rem($line-height));
 
-$margin-left-first-heading-permalink-full: (- ($width-supplement + $width-gap));
 $padding-bottom-first-heading-permalink: ($margin-top-tagline - $margin);
 $padding-bottom-first-heading-permalink-content: ($margin-top-tagline-content - $margin);
 $padding-bottom-first-heading-permalink-full: ($margin-top-tagline-full - $margin);
