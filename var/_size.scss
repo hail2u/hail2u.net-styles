@@ -35,8 +35,9 @@ $column: 36rem;
 $column-gap: rem($ratio);
 
 // Main Component
-$width-gap: ($column-gap * $ratio);
-$width-gap-half: ($column-gap / 2);
+$width-gap: $column-gap;
+$width-gap-half: ($width-gap / 2);
+$width-gap-content: ($width-gap * $ratio);
 
 $width-content: $column;
 $width-content-outer: ($width-gap-half + $width-content + $width-gap-half);
@@ -44,7 +45,7 @@ $width-content-outer: ($width-gap-half + $width-content + $width-gap-half);
 $width-supplement: ($width-content / $ratio-content * $ratio-supplement);
 $width-supplement-outer: ($width-gap-half + $width-supplement + $width-gap-half);
 
-$width-full: ($width-supplement + $width-gap + $width-content);
+$width-full: ($width-supplement + $width-gap-content + $width-content);
 $width-full-outer: ($width-gap-half + $width-full + $width-gap-half);
 
 // Breakpoint
@@ -56,12 +57,12 @@ $breakpoint-full: ($width-full-outer + $width-scrollbar);
 $width-max-centering: $width-content;
 $padding-side-centering: ($width-gap-half * .75);
 $padding-side-centering-content: $width-gap-half;
-$padding-left-centering-full: ($width-gap-half + $width-supplement + $width-gap);
+$padding-left-centering-full: ($width-gap-half + $width-supplement + $width-gap-content);
 
 $margin-side-expander: (- $width-gap-half * .75);
 $margin-side-expander-content: (- $width-gap-half);
 
-$margin-right-float-full: $width-gap;
+$margin-right-float-full: $width-gap-content;
 $width-float-full: $width-supplement;
 
 $line-height-heading: $line-height-tiny;
@@ -99,7 +100,7 @@ $line-height-pre: $line-height-tiny;
 $margin-top-pre-print: $margin;
 
 $width-border-blockquote: $width-border-large;
-$padding-left-blockquote: $width-gap;
+$padding-left-blockquote: $width-gap-content;
 $margin-left-blockquote-full: (- ($width-border-blockquote + $padding-left-blockquote));
 
 $padding-left-list: $indent;
@@ -130,7 +131,7 @@ $margin-top-global-header-content: $margin;
 // Logo
 $width-logo: ($width-supplement / pow($ratio, 3));
 $width-logo-content: ($width-logo / 3 * 4);
-$margin-left-logo-full: (- ($width-logo-content + $width-gap));
+$margin-left-logo-full: (- ($width-logo-content + $width-gap-content));
 $height-logo: $width-logo;
 $height-logo-content: $width-logo-content;
 
@@ -204,9 +205,9 @@ $padding-hori-contact-form-button: $width-gap;
 $border-radius-contact-form-button: $width-border;
 
 // Drop
-$margin-left-drop-full: (- ($width-supplement + $width-gap));
+$margin-left-drop-full: (- ($width-supplement + $width-gap-content));
 $margin-right-drop-full: $width-gap-half;
-$width-max-drop-full: ($width-supplement + $width-gap + $width-content / 2);
+$width-max-drop-full: ($width-supplement + $width-gap-content + $width-content / 2);
 
 $width-min-drop-img: $width-supplement;
 
@@ -226,7 +227,7 @@ $height-bg-footnote: $width-border-small;
 $top-bg-footnote: $margin;
 
 // Full Width
-$margin-left-full-width-full: (- ($width-gap-half + $width-supplement + $width-gap));
+$margin-left-full-width-full: (- ($width-gap-half + $width-supplement + $width-gap-content));
 
 $margin-left-full-width-caption: $width-gap-half;
 $margin-top-full-width-caption-full: $margin;
@@ -244,8 +245,9 @@ $margin-left-post-list-info-content: $width-gap-half;
 $line-height-pull-quote: $line-height-tiny;
 $margin-side-pull-quote: $width-gap;
 $margin-side-pull-quote-content: $indent;
-$margin-left-pull-quote-full: (- ($width-supplement + $width-gap));
-$width-pull-quote-full: ($width-supplement + $width-gap + $width-supplement / $ratio);
+$margin-left-pull-quote-full: (- ($width-supplement + $width-gap-content));
+$margin-right-pull-quote-full: $width-gap;
+$width-pull-quote-full: ($width-supplement + $width-gap-content + $width-supplement / $ratio);
 
 // Read Older
 $margin-top-read-older-label: $margin-huge;
@@ -260,8 +262,8 @@ $width-max-searchbox: ($width-content / $ratio);
 // Seealso
 $width-border-seealso: $width-border-large;
 $padding-left-seealso: $width-gap-half;
-$padding-left-seealso-full: $width-gap;
-$margin-left-seealso-full: (- ($width-border-seealso + $width-gap));
+$padding-left-seealso-full: $width-gap-content;
+$margin-left-seealso-full: (- ($width-border-seealso + $width-gap-content));
 
 // Share Buttons
 $padding-left-share-buttons-item: $width-gap-half;
