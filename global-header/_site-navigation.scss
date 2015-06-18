@@ -33,7 +33,13 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: $margin-left-site-navigation-full;
+    left: 0;
     right: auto;
+    text-align: right;
+    width: $width-supplement-outer;
+
+    li {
+      display: inline;
+    }
   }
 }

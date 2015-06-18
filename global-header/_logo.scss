@@ -14,8 +14,4 @@
     height: $height-logo-content;
     width: $width-logo-content;
   }
-
-  @media (min-width: $breakpoint-full) {
-    margin-left: $margin-left-logo-full;
-  }
 }
