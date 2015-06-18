@@ -9,14 +9,14 @@
     width: 100%;
   }
 
-  figcaption:last-child {
+  figcaption {
     margin-left: $margin-left-full-width-caption;
   }
 
   @media (min-width: $breakpoint-full) {
     margin-left: $margin-left-full-width-full;
 
-    figcaption:last-child {
+    figcaption {
       border-bottom: 0;
       border-left: $width-border-full-width-caption-full solid $color-border-full-width-caption-full;
       bottom: auto;
