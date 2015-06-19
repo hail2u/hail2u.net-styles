@@ -100,7 +100,7 @@ $line-height-pre: $line-height-tiny;
 $margin-top-pre-print: $margin;
 
 $width-border-blockquote: $width-border-large;
-$padding-left-blockquote: $width-gap-content;
+$padding-left-blockquote: $width-gap;
 $margin-left-blockquote-full: (- ($width-border-blockquote + $padding-left-blockquote));
 
 $padding-left-list: $indent;
@@ -262,8 +262,8 @@ $width-max-searchbox: ($width-content / $ratio);
 // Seealso
 $width-border-seealso: $width-border-large;
 $padding-left-seealso: $width-gap-half;
-$padding-left-seealso-full: $width-gap-content;
-$margin-left-seealso-full: (- ($width-border-seealso + $width-gap-content));
+$padding-left-seealso-full: $width-gap;
+$margin-left-seealso-full: (- ($width-border-seealso + $padding-left-seealso-full));
 
 // Share Buttons
 $padding-left-share-buttons-item: $width-gap-half;
