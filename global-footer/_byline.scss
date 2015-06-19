@@ -16,6 +16,12 @@
     color: inherit;
   }
 
+  @media (min-width: $breakpoint-content) {
+    &::before {
+      width: $width-byline-border-content;
+    }
+  }
+
   @media (min-width: $breakpoint-full) {
     bottom: 0;
     left: $left-byline-full;
