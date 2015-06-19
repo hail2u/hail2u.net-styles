@@ -181,10 +181,10 @@ $padding-right-footlinks-item: $width-gap-half;
 $margin-left-footlinks-separator: $padding-right-footlinks-item;
 
 // Byline
+$margin-top-byline-print: $margin-huge;
 $left-byline-full: $width-gap-half;
 $width-byline-full: $width-supplement;
 
-$margin-top-byline-print: $margin-huge;
 $margin-bottom-byline-border: $margin-tiny;
 $width-byline-border: ($width-supplement / pow($ratio, 3));
 $width-border-byline-border: $width-border;
