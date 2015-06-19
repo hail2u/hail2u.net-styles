@@ -82,8 +82,8 @@ $color-border-colors: #000;
       $color-bg-column $width-gap-half,
       $color-bg-column ($width-gap-half + $width-supplement),
       $color-bg-gutter ($width-gap-half + $width-supplement),
-      $color-bg-gutter ($width-gap-half + $width-supplement + $width-gap),
-      $color-bg-column ($width-gap-half + $width-supplement + $width-gap),
+      $color-bg-gutter ($width-gap-half + $width-supplement + $width-gap-content),
+      $color-bg-column ($width-gap-half + $width-supplement + $width-gap-content),
       $color-bg-column ($width-gap-half + $width-full),
       $color-bg-gutter ($width-gap-half + $width-full),
       $color-bg-gutter $width-full-outer
