@@ -12,7 +12,7 @@
     var l = links.length;
 
     for (i = 0; i < l; i++) {
-      links[i].rel = "stylesheet";
+      links[i].rel += " stylesheet";
     }
   };
 
