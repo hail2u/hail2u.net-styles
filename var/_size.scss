@@ -209,8 +209,9 @@ $width-max-site-search-content: ($width-content / pow($ratio, 2));
 $padding-contact-form-label: $padding-large;
 
 $margin-top-contact-form-button: $margin-small;
-$padding-hori-contact-form-button: $width-gap;
+$padding-vert-contact-form-button: $padding-large;
 $border-radius-contact-form-button: $width-border;
+$width-contact-form-button: ($width-content-outer / pow($ratio, 3));
 
 // Drop
 $margin-left-drop-full: (- ($width-supplement + $width-gap-content));

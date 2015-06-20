@@ -55,10 +55,9 @@
     color: $color-fg-contact-form-button;
     cursor: pointer;
     display: block;
-    font-size: rem($ratio-text-contact-form-button);
     margin-top: $margin-top-contact-form-button;
-    padding-left: $padding-hori-contact-form-button;
-    padding-right: $padding-hori-contact-form-button;
+    padding: $padding-vert-contact-form-button 0;
     text-transform: uppercase;
+    width: $width-contact-form-button;
   }
 }
