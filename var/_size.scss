@@ -16,7 +16,7 @@ $margin-enormous: ($margin * pow($ratio, 4));
 $margin-maximal: ($margin * pow($ratio, 5));
 
 // Indent
-$indent: rem(pow($ratio, 2));
+$indent: rem($ratio);
 
 // Border
 $width-border: .125rem;
