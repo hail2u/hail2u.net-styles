@@ -36,17 +36,17 @@ $column-gap: rem($ratio);
 
 // Main Component
 $width-gap: $column-gap;
-$width-gap-half: ($width-gap / 2);
-$width-gap-content: ($width-gap * $ratio);
+$width-gap-small: ($width-gap / 2);
+$width-gap-large: ($width-gap * $ratio);
 
 $width-content: $column;
-$width-content-outer: ($width-gap-half + $width-content + $width-gap-half);
+$width-content-outer: ($width-gap-small + $width-content + $width-gap-small);
 
 $width-supplement: ($width-content / $ratio-content * $ratio-supplement);
-$width-supplement-outer: ($width-gap-half + $width-supplement + $width-gap-half);
+$width-supplement-outer: ($width-gap-small + $width-supplement + $width-gap-small);
 
-$width-full: ($width-supplement + $width-gap-content + $width-content);
-$width-full-outer: ($width-gap-half + $width-full + $width-gap-half);
+$width-full: ($width-supplement + $width-gap-large + $width-content);
+$width-full-outer: ($width-gap-small + $width-full + $width-gap-small);
 
 // Breakpoint
 $width-scrollbar: 1.5rem;
@@ -55,14 +55,14 @@ $breakpoint-full: ($width-full-outer + $width-scrollbar);
 
 // Placeholder Class
 $width-max-centering: $width-content;
-$padding-side-centering: ($width-gap-half * .75);
-$padding-side-centering-content: $width-gap-half;
-$padding-left-centering-full: ($width-gap-half + $width-supplement + $width-gap-content);
+$padding-side-centering: ($width-gap-small * .75);
+$padding-side-centering-content: $width-gap-small;
+$padding-left-centering-full: ($width-gap-small + $width-supplement + $width-gap-large);
 
-$margin-side-expander: (- $width-gap-half * .75);
-$margin-side-expander-content: (- $width-gap-half);
+$margin-side-expander: (- $width-gap-small * .75);
+$margin-side-expander-content: (- $width-gap-small);
 
-$margin-right-float-full: $width-gap-content;
+$margin-right-float-full: $width-gap-large;
 $width-float-full: $width-supplement;
 
 $line-height-heading: $line-height-tiny;
@@ -132,14 +132,14 @@ $margin-top-global-header-content: $margin;
 // Logo
 $width-logo: ($width-supplement / pow($ratio, 3));
 $width-logo-content: ($width-logo / 3 * 4);
-$margin-left-logo-full: (- ($width-logo-content + $width-gap-content));
+$margin-left-logo-full: (- ($width-logo-content + $width-gap-large));
 $height-logo: $width-logo;
 $height-logo-content: $width-logo-content;
 
 // Site Navigation
 $line-height-site-navigation-item: $height-logo;
 $line-height-site-navigation-item-content: $height-logo-content;
-$padding-side-site-navigation-item: $width-gap-half;
+$padding-side-site-navigation-item: $width-gap-small;
 
 $margin-left-site-navigation-full: (- $padding-side-site-navigation-item);
 
@@ -184,12 +184,12 @@ $margin-bottom-global-footer: $margin;
 $margin-top-footlinks: $margin-gargantuan;
 $margin-top-footlinks-full: $margin-enormous;
 
-$padding-right-footlinks-item: $width-gap-half;
+$padding-right-footlinks-item: $width-gap-small;
 $margin-left-footlinks-separator: $padding-right-footlinks-item;
 
 // Byline
 $margin-top-byline-print: $margin-huge;
-$left-byline-full: $width-gap-half;
+$left-byline-full: $width-gap-small;
 $width-byline-full: $width-supplement;
 
 $margin-bottom-byline-border: $margin-tiny;
@@ -198,7 +198,7 @@ $width-byline-border-content: $width-logo-content;
 $width-border-byline-border: $width-border;
 
 // Site Search
-$right-site-search-content: $width-gap-half;
+$right-site-search-content: $width-gap-small;
 $top-site-search: $margin-huge;
 $top-site-search-content: ($margin-top-footlinks + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
 $top-site-search-full: ($margin-top-footlinks-full + (rem($line-height-body * $ratio-text-global-footer) - $height-search-form-query) / 2);
@@ -214,19 +214,19 @@ $border-radius-contact-form-button: $width-border;
 $width-contact-form-button: ($width-content-outer / pow($ratio, 3));
 
 // Drop
-$margin-left-drop-full: (- ($width-supplement + $width-gap-content));
-$margin-right-drop-full: $width-gap-half;
-$width-max-drop-full: ($width-supplement + $width-gap-content + $width-content / 2);
+$margin-left-drop-full: (- ($width-supplement + $width-gap-large));
+$margin-right-drop-full: $width-gap-small;
+$width-max-drop-full: ($width-supplement + $width-gap-large + $width-content / 2);
 
 $width-min-drop-img: $width-supplement;
 
 // Flat UL
-$padding-left-flat-ul: ($width-gap-half + $padding-left-list);
-$padding-side-flat-ul-item-full: $width-gap-half;
+$padding-left-flat-ul: ($width-gap-small + $padding-left-list);
+$padding-side-flat-ul-item-full: $width-gap-small;
 $width-flat-ul-item-full: (100% / 3);
 
 // Floatage
-$margin-side-floatage-content: $width-gap-half;
+$margin-side-floatage-content: $width-gap-small;
 $width-max-floatage-content: percentage(1 / pow($ratio, 2));
 
 // Footnote
@@ -236,9 +236,9 @@ $height-bg-footnote: $width-border-small;
 $top-bg-footnote: $margin;
 
 // Full Width
-$margin-left-full-width-full: (- ($width-gap-half + $width-supplement + $width-gap-content));
+$margin-left-full-width-full: (- ($width-gap-small + $width-supplement + $width-gap-large));
 
-$margin-left-full-width-caption: $width-gap-half;
+$margin-left-full-width-caption: $width-gap-small;
 $margin-top-full-width-caption-full: $margin;
 $width-border-full-width-caption-full: $width-border-large;
 $padding-left-full-width-caption-full: ($margin-left-full-width-caption - $width-border-full-width-caption-full);
@@ -248,15 +248,15 @@ $line-height-post-list-item: $line-height-tiny;
 $margin-top-post-list-item: $margin-small;
 
 $line-height-post-list-info-content: ($line-height-post-list-item * $ratio-text-post-list-item / $ratio-text-footing);
-$margin-left-post-list-info-content: $width-gap-half;
+$margin-left-post-list-info-content: $width-gap-small;
 
 // Pull Quote
 $line-height-pull-quote: $line-height-tiny;
 $margin-side-pull-quote: $width-gap;
 $margin-side-pull-quote-content: $indent;
-$margin-left-pull-quote-full: (- ($width-supplement + $width-gap-content));
+$margin-left-pull-quote-full: (- ($width-supplement + $width-gap-large));
 $margin-right-pull-quote-full: $width-gap;
-$width-pull-quote-full: ($width-supplement + $width-gap-content + $width-supplement / $ratio);
+$width-pull-quote-full: ($width-supplement + $width-gap-large + $width-supplement / $ratio);
 
 // Read Older
 $margin-top-read-older-label: $margin-huge;
@@ -270,12 +270,12 @@ $width-max-searchbox: ($width-content / $ratio);
 
 // Seealso
 $width-border-seealso: $width-border-large;
-$padding-left-seealso: $width-gap-half;
+$padding-left-seealso: $width-gap-small;
 $padding-left-seealso-full: $width-gap;
 $margin-left-seealso-full: (- ($width-border-seealso + $padding-left-seealso-full));
 
 // Share Buttons
-$padding-left-share-buttons-item: $width-gap-half;
+$padding-left-share-buttons-item: $width-gap-small;
 
 // Google AdSense
 $margin-top-adsbygoogle: $margin-large;

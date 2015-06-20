@@ -49,7 +49,7 @@ $color-border-colors: #000;
   );
   background-position: left center, right center, center;
   background-repeat: repeat-y;
-  background-size: ($width-gap-half * .75), ($width-gap-half * .75), 100%;
+  background-size: ($width-gap-small * .75), ($width-gap-small * .75), 100%;
   bottom: 0;
   content: "";
   left: 0;
@@ -64,10 +64,10 @@ $color-border-colors: #000;
     background-image: linear-gradient(
       to right,
       $color-bg-gutter 0,
-      $color-bg-gutter $width-gap-half,
-      $color-bg-column $width-gap-half,
-      $color-bg-column ($width-gap-half + $width-content),
-      $color-bg-gutter ($width-gap-half + $width-content),
+      $color-bg-gutter $width-gap-small,
+      $color-bg-column $width-gap-small,
+      $color-bg-column ($width-gap-small + $width-content),
+      $color-bg-gutter ($width-gap-small + $width-content),
       $color-bg-gutter $width-content-outer
     );
     background-position: center;
@@ -78,14 +78,14 @@ $color-border-colors: #000;
     background-image: linear-gradient(
       to right,
       $color-bg-gutter 0,
-      $color-bg-gutter $width-gap-half,
-      $color-bg-column $width-gap-half,
-      $color-bg-column ($width-gap-half + $width-supplement),
-      $color-bg-gutter ($width-gap-half + $width-supplement),
-      $color-bg-gutter ($width-gap-half + $width-supplement + $width-gap-content),
-      $color-bg-column ($width-gap-half + $width-supplement + $width-gap-content),
-      $color-bg-column ($width-gap-half + $width-full),
-      $color-bg-gutter ($width-gap-half + $width-full),
+      $color-bg-gutter $width-gap-small,
+      $color-bg-column $width-gap-small,
+      $color-bg-column ($width-gap-small + $width-supplement),
+      $color-bg-gutter ($width-gap-small + $width-supplement),
+      $color-bg-gutter ($width-gap-small + $width-supplement + $width-gap-large),
+      $color-bg-column ($width-gap-small + $width-supplement + $width-gap-large),
+      $color-bg-column ($width-gap-small + $width-full),
+      $color-bg-gutter ($width-gap-small + $width-full),
       $color-bg-gutter $width-full-outer
     );
     background-size: $width-full-outer 1px;
@@ -156,7 +156,7 @@ body::after {
     box-sizing: border-box;
     display: block;
     height: 3rem;
-    margin-top: ($width-gap-half + $width-gap);
+    margin-top: ($width-gap-small + $width-gap);
     overflow: hidden;
     width: 100%;
 
@@ -171,14 +171,14 @@ body::after {
   }
 
   @media (min-width: $breakpoint-content) {
-    margin-left: (- $width-gap-half);
-    margin-right: (- $width-gap-half);
+    margin-left: (- $width-gap-small);
+    margin-right: (- $width-gap-small);
 
     li {
       float: left;
       margin-top: 0;
-      padding-left: $width-gap-half;
-      padding-right: $width-gap-half;
+      padding-left: $width-gap-small;
+      padding-right: $width-gap-small;
       width: (100% / 5);
     }
   }
