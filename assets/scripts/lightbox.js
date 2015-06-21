@@ -74,10 +74,6 @@
     }
   };
 
-  if (!("querySelectorAll" in d) || !("bind" in Function)) {
-    return;
-  }
-
   if (d.readyState === "loading") {
     d.addEventListener("DOMContentLoaded", init, false);
   } else {
