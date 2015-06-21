@@ -23,7 +23,8 @@
     margin-top: $margin-top-tagline-content;
 
     &::before {
-      width: $width-tagline-border-content;
+      max-width: $width-max-tagline-border-content;
+      width: 100%;
     }
   }
 

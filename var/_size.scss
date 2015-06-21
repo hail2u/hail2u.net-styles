@@ -152,7 +152,7 @@ $margin-top-tagline-full: $margin-gargantuan;
 
 $margin-bottom-tagline-border: $margin-small;
 $width-tagline-border: $width-logo;
-$width-tagline-border-content: $width-logo-content;
+$width-max-tagline-border-content: $width-logo-content;
 $width-border-tagline-border: $width-border-large;
 $margin-top-tagline-border-full: ((rem($ratio-text-tagline-full * $line-height-heading) - $width-border-tagline-border) / 2);
 
