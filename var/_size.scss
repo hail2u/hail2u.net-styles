@@ -189,8 +189,7 @@ $margin-left-footlinks-separator: $padding-right-footlinks-item;
 
 // Byline
 $margin-top-byline-print: $margin-huge;
-$left-byline-full: $width-gap-small;
-$width-byline-full: $width-supplement;
+$margin-right-byline-full: (- ($width-supplement-outer - $width-gap-small));
 
 $margin-bottom-byline-border: $margin-tiny;
 $width-byline-border: $width-logo;

@@ -1,5 +1,7 @@
 // Byline
 .byline {
+  @extend %float;
+
   color: $color-fg-byline;
 
   &::before {
@@ -24,10 +26,8 @@
 
   @media (min-width: $breakpoint-full) {
     bottom: 0;
-    left: $left-byline-full;
-    position: absolute;
-    text-align: right;
-    width: $width-byline-full;
+    margin-right: $margin-right-byline-full;
+    top: auto;
 
     &::before {
       margin-left: auto;
