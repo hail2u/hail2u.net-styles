@@ -24,6 +24,7 @@
   mark {
     background-color: transparent;
     border-bottom: $width-border-site-navigation-mark solid $color-border-site-navigation-mark;
+    padding-bottom: $padding-bottom-site-navigation-mark;
   }
 
   @media (min-width: $breakpoint-content) {
