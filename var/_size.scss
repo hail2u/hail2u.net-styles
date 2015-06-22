@@ -127,7 +127,8 @@ $width-border-th-thead: $width-border;
 
 // Global Header
 $margin-top-global-header: $margin-small;
-$margin-top-global-header-content: $margin;
+$margin-top-global-header-content: $margin-large;
+$margin-top-global-header-full: $margin-gargantuan;
 
 // Logo
 $width-logo: ($width-supplement / pow($ratio, 3));
