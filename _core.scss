@@ -84,9 +84,11 @@ pre {
 }
 
 blockquote {
+  @extend %margin;
+  @extend %margin-after-heading;
+
   border-left: $width-border-blockquote solid $color-border-blockquote;
   color: $color-fg-blockquote;
-  margin: 0;
   padding-left: $padding-left-blockquote;
 
   @media (min-width: $breakpoint-full) {
