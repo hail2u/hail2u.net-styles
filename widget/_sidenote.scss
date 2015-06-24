@@ -6,6 +6,7 @@
   font-size: rem($ratio-text-sidenote);
 
   @media (min-width: $breakpoint-full) {
+    text-align: left;
     top: auto;
   }
 }
