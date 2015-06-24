@@ -23,8 +23,8 @@
 
   @media (min-width: $breakpoint-full) {
     a::before {
-      margin-top: $margin-top-read-older-label-full;
-      top: 50%;
+      line-height: $line-height-read-older-label-full;
+      margin-top: 0;
     }
 
     p {
