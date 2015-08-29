@@ -73,13 +73,15 @@ $margin-top-margin: $margin;
 
 $margin-top-margin-after-heading: $margin-tiny;
 
+$padding-right-search-form-query: $padding;
+$width-border-search-form-query: $width-border-small;
+
 $width-search-form-button: rem($line-height);
 $height-search-form-button: $width-search-form-button;
+$left-search-form-button: $width-border-search-form-query;
 $top-search-form-button: $padding-small;
 
-$padding-right-search-form-query: $padding;
 $padding-left-search-form-query: $width-search-form-button;
-$width-border-search-form-query: $width-border-small;
 $height-search-form-query: ($height-search-form-button + $padding-small * 2);
 
 // Core
