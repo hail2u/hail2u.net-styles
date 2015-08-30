@@ -1,40 +1,4 @@
 // Tagline
 .tagline {
-  @extend %positioning-root;
-
-  color: $color-fg-tagline;
-  font-family: $font-family-tagline;
-  font-size: rem($ratio-text-tagline);
-  font-weight: 400;
-  margin-top: $margin-top-tagline;
-
-  &::before {
-    @extend %float;
-
-    border-top: $width-border-tagline-border solid $color-border-tagline-border;
-    content: "";
-    display: block;
-    margin-bottom: $margin-bottom-tagline-border;
-    width: $width-tagline-border;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    font-size: rem($ratio-text-tagline-content);
-    margin-top: $margin-top-tagline-content;
-
-    &::before {
-      max-width: $width-max-tagline-border-content;
-      width: 100%;
-    }
-  }
-
-  @media (min-width: $breakpoint-full) {
-    font-size: rem($ratio-text-tagline-full);
-    margin-top: $margin-top-tagline-full;
-
-    &::before {
-      margin-bottom: 0;
-      margin-top: ((rem($ratio-text-tagline-full * $line-height-heading) - $width-border-large) / 2);
-    }
-  }
+  display: none;
 }
