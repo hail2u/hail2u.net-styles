@@ -1,7 +1,7 @@
 exclude:
-  - 'node_modules/**'
-  - 'assets/**'
-  - 'shame/**'
+  - "assets/**"
+  - "node_modules/**"
+  - "shame/**"
 
 linters:
   Comment:
