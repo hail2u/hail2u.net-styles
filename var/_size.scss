@@ -130,7 +130,7 @@ $width-border-th-thead: $width-border;
 // Global Header
 $margin-top-global-header: $margin-small;
 $margin-top-global-header-content: $margin-large;
-$margin-top-global-header-full: $margin-gargantuan;
+$margin-top-global-header-full: $margin-huge;
 
 // Logo
 $width-logo: ($width-supplement / pow($ratio, 3));
@@ -149,37 +149,20 @@ $margin-left-site-navigation-full: (- $padding-side-site-navigation-item);
 $padding-bottom-site-navigation-mark: $padding-small;
 $width-border-site-navigation-mark: $width-border;
 
-// Tagline
-$margin-top-tagline: $margin-large;
-$margin-top-tagline-content: $margin-huge;
-$margin-top-tagline-full: $margin-gargantuan;
-
-$margin-bottom-tagline-border: $margin-small;
-$width-tagline-border: $width-logo;
-$width-max-tagline-border-content: $width-logo-content;
-$width-border-tagline-border: $width-border-large;
-$margin-top-tagline-border-full: ((rem($ratio-text-tagline-full * $line-height-heading) - $width-border-tagline-border) / 2);
-
 // Content
-$margin-top-content: (- ($margin-top-heading - $margin-top-tagline));
-$margin-top-content-content: (- ($margin-top-heading - $margin-top-tagline-content));
-$margin-top-content-full: (- ($margin-top-heading - $margin-top-tagline-full));
+$margin-top-content: (- ($margin-top-heading - $margin-large));
+$margin-top-content-content: (- ($margin-top-heading - $margin-huge));
+$margin-top-content-full: (- ($margin-top-heading - $margin-gargantuan));
 
 // First Heading
 $margin-top-first-heading: ($margin-top-heading + rem($line-height));
 $margin-top-first-heading-full: $margin-top-heading;
 $margin-top-first-heading-print: ($margin + rem($line-height));
 
-$padding-bottom-first-heading-permalink: ($margin-top-tagline - $margin);
-$padding-bottom-first-heading-permalink-content: ($margin-top-tagline-content - $margin);
-$padding-bottom-first-heading-permalink-full: ($margin-top-tagline-full - $margin);
-
 // Section Footer
 $width-section-footer-full: $width-float-full;
 
 $margin-top-section-footer-p-full: rem(($ratio-text-heading-content * $line-height-heading - $ratio-text-footing * $line-height-footing) / 2);
-
-$margin-top-section-footer-p-permalink-full: rem(($ratio-text-first-heading-permalink-full * $line-height-heading - $ratio-text-footing * $line-height-footing) / 2);
 
 // Global Footer
 $margin-bottom-global-footer: $margin;

@@ -2,25 +2,7 @@
 .first-heading {
   margin-top: $margin-top-first-heading;
 
-  [role="main"] > & {
-    color: $color-fg-first-heading-permalink;
-    font-size: rem($ratio-text-first-heading-permalink);
-    padding-bottom: $padding-bottom-first-heading-permalink;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    [role="main"] > & {
-      font-size: rem($ratio-text-first-heading-permalink-content);
-      padding-bottom: $padding-bottom-first-heading-permalink-content;
-    }
-  }
-
   @media (min-width: $breakpoint-full) {
     margin-top: $margin-top-first-heading-full;
-
-    [role="main"] > & {
-      font-size: rem($ratio-text-first-heading-permalink-full);
-      padding-bottom: $padding-bottom-first-heading-permalink-full;
-    }
   }
 }
