@@ -140,9 +140,11 @@ $margin-left-logo-full: (- ($width-logo-full + $width-gap-large));
 
 // Site Navigation
 $line-height-site-navigation-item: $height-logo;
-$padding-side-site-navigation-item: $width-gap-small;
+$padding-left-site-navigation-item: $width-gap-small;
+$padding-left-site-navigation-item-content: $width-gap;
 
-$margin-left-site-navigation-full: (- $padding-side-site-navigation-item);
+$margin-left-site-navigation-full: (- $padding-left-site-navigation-item-content);
+$right-site-navigation: $padding-left-site-navigation-item;
 
 $padding-bottom-site-navigation-mark: $padding-small;
 $width-border-site-navigation-mark: $width-border;
