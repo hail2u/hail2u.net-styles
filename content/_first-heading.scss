@@ -2,6 +2,10 @@
 .first-heading {
   margin-top: $margin-top-first-heading;
 
+  @media (min-width: $breakpoint-content) {
+    margin-top: $margin-top-first-heading-content;
+  }
+
   @media (min-width: $breakpoint-full) {
     margin-top: $margin-top-first-heading-full;
   }

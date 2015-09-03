@@ -10,12 +10,4 @@
   > [role="main"] {
     @extend %positioning-root;
   }
-
-  @media (min-width: $breakpoint-content) {
-    margin-top: $margin-top-content-content;
-  }
-
-  @media (min-width: $breakpoint-full) {
-    margin-top: $margin-top-content-full;
-  }
 }

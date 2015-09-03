@@ -68,6 +68,7 @@ $width-float-full: $width-supplement;
 $line-height-heading: $line-height-tiny;
 
 $line-height-footing: ($line-height-heading / $ratio-text-footing);
+$height-footing: rem($ratio-text-footing * $line-height-footing);
 
 $margin-top-margin: $margin;
 
@@ -129,8 +130,8 @@ $width-border-th-thead: $width-border;
 
 // Global Header
 $margin-top-global-header: $margin-small;
-$margin-top-global-header-content: $margin-large;
-$margin-top-global-header-full: $margin-huge;
+$margin-top-global-header-content: $margin;
+$margin-top-global-header-full: $margin-large;
 
 // Logo
 $width-logo-full: $width-supplement;
@@ -150,13 +151,12 @@ $padding-bottom-site-navigation-mark: $padding-small;
 $width-border-site-navigation-mark: $width-border;
 
 // Content
-$margin-top-content: (- ($margin-top-heading - $margin-large));
-$margin-top-content-content: (- ($margin-top-heading - $margin-huge));
-$margin-top-content-full: (- ($margin-top-heading - $margin-gargantuan));
+$margin-top-content: (- $margin-top-heading);
 
 // First Heading
-$margin-top-first-heading: ($margin-top-heading + rem($line-height));
-$margin-top-first-heading-full: $margin-top-heading;
+$margin-top-first-heading: ($margin-top-heading + ($margin-top-global-header * $ratio) + $height-footing);
+$margin-top-first-heading-content: ($margin-top-heading + ($margin-top-global-header-content * $ratio) + $height-footing);
+$margin-top-first-heading-full: ($margin-top-heading + ($margin-top-global-header-full * $ratio));
 $margin-top-first-heading-print: ($margin + rem($line-height));
 
 // Section Footer
