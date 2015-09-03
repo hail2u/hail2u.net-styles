@@ -1,9 +1,10 @@
 // Logo
 .logo {
   background-color: transparent;
-  color: inherit;
+  color: $color-fg-logo;
   display: block;
   font-size: rem($ratio-text-logo);
+  font-weight: bold;
   height: $height-logo;
   line-height: $line-height-logo;
   margin-top: 0;
