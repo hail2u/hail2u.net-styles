@@ -6,7 +6,6 @@
   padding-left: 0;
   position: absolute;
   right: 0;
-  text-transform: uppercase;
   top: 0;
 
   li {
@@ -25,12 +24,6 @@
     background-color: transparent;
     border-bottom: $width-border-site-navigation-mark solid $color-border-site-navigation-mark;
     padding-bottom: $padding-bottom-site-navigation-mark;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    li {
-      line-height: $line-height-site-navigation-item-content;
-    }
   }
 
   @media (min-width: $breakpoint-full) {

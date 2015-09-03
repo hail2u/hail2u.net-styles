@@ -5,6 +5,7 @@
   @extend %positioning-root;
 
   margin-top: $margin-top-global-header;
+  text-transform: uppercase;
 
   @media (min-width: $breakpoint-content) {
     margin-top: $margin-top-global-header-content;

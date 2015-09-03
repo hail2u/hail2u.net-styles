@@ -1,21 +1,15 @@
 // Logo
 .logo {
-  background-color: transparent;
+  color: inherit;
   display: block;
+  font-size: rem($ratio-text-logo);
   height: $height-logo;
+  line-height: $line-height-logo;
   margin-top: 0;
-  width: $width-logo;
-
-  &.to-top {
-    cursor: pointer;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    height: $height-logo-content;
-    width: $width-logo-content;
-  }
 
   @media (min-width: $breakpoint-full) {
     margin-left: $margin-left-logo-full;
+    text-align: right;
+    width: $width-supplement;
   }
 }
