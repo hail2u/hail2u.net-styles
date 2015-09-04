@@ -4,13 +4,14 @@
   margin-top: 0;
   padding-left: 0;
   position: absolute;
-  right: $right-site-navigation;
+  right: 0;
   top: 0;
 
   li {
     display: table-cell;
     line-height: $line-height-site-navigation-item;
-    padding-left: $padding-left-site-navigation-item;
+    padding-left: $padding-side-site-navigation-item;
+    padding-right: $padding-side-site-navigation-item;
   }
 
   a {
@@ -22,12 +23,6 @@
     background-color: transparent;
     border-bottom: $width-border-site-navigation-mark solid $color-border-site-navigation-mark;
     padding-bottom: $padding-bottom-site-navigation-mark;
-  }
-
-  @media (min-width: $breakpoint-content) {
-    li {
-      padding-left: $padding-left-site-navigation-item-content;
-    }
   }
 
   @media (min-width: $breakpoint-full) {
