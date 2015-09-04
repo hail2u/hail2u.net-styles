@@ -5,8 +5,13 @@
   display: block;
   font-size: rem($ratio-text-logo);
   font-weight: bold;
+  height: $height-logo;
   line-height: $line-height-logo;
   margin-top: 0;
+
+  @media (min-width: $breakpoint-content) {
+    height: auto;
+  }
 
   @media (min-width: $breakpoint-full) {
     margin-left: $margin-left-logo-full;

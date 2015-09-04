@@ -8,7 +8,7 @@
   top: 0;
 
   li {
-    display: table-cell;
+    display: block;
     line-height: $line-height-site-navigation-item;
     padding-left: $padding-side-site-navigation-item;
     padding-right: $padding-side-site-navigation-item;
@@ -23,6 +23,12 @@
     background-color: transparent;
     border-bottom: $width-border-site-navigation-mark solid $color-border-site-navigation-mark;
     padding-bottom: $padding-bottom-site-navigation-mark;
+  }
+
+  @media (min-width: $breakpoint-content) {
+    li {
+      display: table-cell;
+    }
   }
 
   @media (min-width: $breakpoint-full) {

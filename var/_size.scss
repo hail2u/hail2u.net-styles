@@ -134,8 +134,9 @@ $margin-top-global-header-content: $margin;
 $margin-top-global-header-full: $margin-large;
 
 // Logo
-$width-logo-full: $width-supplement;
 $line-height-logo: ($line-height / $ratio-text-logo);
+$width-logo-full: $width-supplement;
+$height-logo: rem($line-height-logo * $ratio-text-logo * 3);
 $margin-left-logo-full: (- ($width-logo-full + $width-gap-large));
 
 // Site Navigation
