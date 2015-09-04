@@ -1,6 +1,5 @@
 // Logo
 .logo {
-  background-color: transparent;
   color: $color-fg-logo;
   display: block;
   font-size: rem($ratio-text-logo);
@@ -8,6 +7,14 @@
   height: $height-logo;
   line-height: $line-height-logo;
   margin-top: 0;
+
+  a {
+    color: inherit;
+  }
+
+  mark {
+    background-color: transparent;
+  }
 
   @media (min-width: $breakpoint-content) {
     height: auto;
