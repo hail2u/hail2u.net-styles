@@ -135,12 +135,11 @@ $margin-top-global-header-full: $margin-large;
 
 // Logo
 $width-logo-full: $width-supplement;
-$height-logo: rem($line-height);
-$line-height-logo: $height-logo;
+$line-height-logo: rem($line-height);
 $margin-left-logo-full: (- ($width-logo-full + $width-gap-large));
 
 // Site Navigation
-$line-height-site-navigation-item: $height-logo;
+$line-height-site-navigation-item: $line-height-logo;
 $padding-left-site-navigation-item: $width-gap-small;
 $padding-left-site-navigation-item-content: $width-gap;
 
