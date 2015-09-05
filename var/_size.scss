@@ -140,9 +140,8 @@ $margin-left-logo-full: (- ($width-logo-full + $width-gap-large));
 
 // Site Navigation
 $line-height-site-navigation-item: $line-height-logo;
-$padding-side-site-navigation-item: $width-gap-small;
-
-$margin-left-site-navigation-full: (- $padding-side-site-navigation-item);
+$padding-right-site-navigation-item: $width-gap-small;
+$padding-left-site-navigation-item-content: $padding-right-site-navigation-item;
 
 $padding-bottom-site-navigation-mark: $padding-small;
 $width-border-site-navigation-mark: $width-border;

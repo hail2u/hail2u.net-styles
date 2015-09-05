@@ -10,8 +10,7 @@
   li {
     display: table-cell;
     line-height: $line-height-site-navigation-item;
-    padding-left: $padding-side-site-navigation-item;
-    padding-right: $padding-side-site-navigation-item;
+    padding-right: $padding-right-site-navigation-item;
   }
 
   a {
@@ -25,8 +24,17 @@
     padding-bottom: $padding-bottom-site-navigation-mark;
   }
 
+  @media (min-width: $breakpoint-content) {
+    li {
+      padding-left: $padding-left-site-navigation-item-content;
+    }
+  }
+
   @media (min-width: $breakpoint-full) {
-    margin-left: $margin-left-site-navigation-full;
     right: auto;
+
+    li:first-child {
+      padding-left: 0;
+    }
   }
 }
