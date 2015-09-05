@@ -1,4 +1,12 @@
 // Tagline
 .tagline {
-  display: none;
+  margin-top: $margin-top-tagline;
+
+  @media (min-width: $breakpoint-content) {
+    margin-top: $margin-top-tagline-content;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    margin-top: $margin-top-tagline-full;
+  }
 }

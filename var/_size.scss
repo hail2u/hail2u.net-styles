@@ -145,6 +145,11 @@ $padding-left-site-navigation-item-content: $padding-right-site-navigation-item;
 $padding-bottom-site-navigation-mark: $padding-small;
 $width-border-site-navigation-mark: $width-border;
 
+// Tagline
+$margin-top-tagline: ($margin-top-global-header * $ratio);
+$margin-top-tagline-content: ($margin-top-global-header-content * $ratio);
+$margin-top-tagline-full: ($margin-top-global-header-full * $ratio);
+
 // Content
 $margin-top-content: (- $margin-top-heading);
 
