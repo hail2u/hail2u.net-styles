@@ -134,12 +134,11 @@ $margin-top-global-header-content: $margin;
 $margin-top-global-header-full: $margin-large;
 
 // Logo
-$line-height-logo: ($line-height / $ratio-text-logo);
 $width-logo-full: $width-supplement;
 $margin-left-logo-full: (- ($width-logo-full + $width-gap-large));
 
 // Site Navigation
-$line-height-site-navigation-item: $line-height-logo;
+$line-height-site-navigation-item: ($line-height / $ratio-text-site-navigation);
 $padding-right-site-navigation-item: $width-gap-small;
 $padding-left-site-navigation-item-content: $padding-right-site-navigation-item;
 
