@@ -158,7 +158,7 @@ $margin-top-content: (- $margin-top-heading);
 // First Heading
 $margin-top-first-heading: ($margin-top-heading + $margin-top-tagline + $height-footing);
 $margin-top-first-heading-content: ($margin-top-heading + $margin-top-tagline-content + $height-footing);
-$margin-top-first-heading-full: ($margin-top-heading + $margin-top-tagline-full * $ratio);
+$margin-top-first-heading-full: ($margin-top-heading + $margin-top-tagline-full);
 $margin-top-first-heading-print: ($margin + rem($line-height));
 
 // Section Footer
