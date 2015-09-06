@@ -2,10 +2,10 @@
 .logo {
   color: $color-fg-logo;
   font-size: rem($ratio-text-logo);
+  font-weight: bold;
   line-height: $line-height-logo;
   margin-top: 0;
   text-transform: uppercase;
-  font-weight: bold;
 
   a {
     color: inherit;
