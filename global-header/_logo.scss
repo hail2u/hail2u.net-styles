@@ -1,6 +1,9 @@
 // Logo
 .logo {
   color: $color-fg-logo;
+  font-size: rem($ratio-text-logo);
+  line-height: $line-height-logo;
+  margin-top: 0;
   text-transform: uppercase;
   font-weight: bold;
 

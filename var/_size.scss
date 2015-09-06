@@ -134,6 +134,7 @@ $margin-top-global-header-content: $margin;
 $margin-top-global-header-full: $margin-large;
 
 // Logo
+$line-height-logo: $line-height;
 $width-logo-full: $width-supplement;
 $margin-left-logo-full: (- ($width-logo-full + $width-gap-large));
 
@@ -146,6 +147,7 @@ $padding-bottom-site-navigation-mark: $padding-small;
 $width-border-site-navigation-mark: $width-border;
 
 // Tagline
+$line-height-tagline: $line-height-tiny;
 $margin-top-tagline: ($margin-top-global-header * $ratio);
 $margin-top-tagline-content: ($margin-top-global-header-content * $ratio);
 $margin-top-tagline-full: ($margin-top-global-header-full * $ratio);

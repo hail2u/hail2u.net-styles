@@ -1,8 +1,11 @@
 // Tagline
 .tagline {
+  font-size: rem($ratio-text-tagline);
+  line-height: $line-height-tagline;
   margin-top: $margin-top-tagline;
 
   @media (min-width: $breakpoint-content) {
+    font-size: rem($ratio-text-tagline-content);
     margin-top: $margin-top-tagline-content;
   }
 
