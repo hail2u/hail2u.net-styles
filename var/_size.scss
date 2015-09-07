@@ -225,8 +225,6 @@ $margin-left-full-width-full: (- ($width-gap-small + $width-supplement + $width-
 
 $margin-left-full-width-caption: $width-gap-small;
 $margin-top-full-width-caption-full: $margin;
-$width-border-full-width-caption-full: $width-border-large;
-$padding-left-full-width-caption-full: ($margin-left-full-width-caption - $width-border-full-width-caption-full);
 
 // Post List
 $line-height-post-list-item: $line-height-tiny;
