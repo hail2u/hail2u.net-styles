@@ -1,12 +1,5 @@
 // Seealso
 .seealso {
-  border-left: $width-border-seealso double;
   color: $color-fg-seealso;
   font-size: rem($ratio-text-seealso);
-  padding-left: $padding-left-seealso;
-
-  @media (min-width: $breakpoint-full) {
-    margin-left: $margin-left-seealso-full;
-    padding-left: $padding-left-seealso-full;
-  }
 }
