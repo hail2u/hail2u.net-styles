@@ -158,17 +158,12 @@ figcaption {
   }
 
   @media (min-width: $breakpoint-full) {
-    border-bottom: $width-border-figcaption-full solid $color-border-figcaption-full;
     bottom: 0;
-    padding-bottom: $padding-bottom-figcaption-full;
-    padding-top: 0;
     top: auto;
 
     blockquote + & {
-      border-bottom: 0;
       margin-left: $margin-left-figcaption-quote-full;
       margin-right: 0;
-      padding-bottom: 0;
       position: static;
       text-align: left;
       width: auto;
