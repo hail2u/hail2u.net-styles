@@ -4,15 +4,6 @@
 
   color: $color-fg-byline;
 
-  &::before {
-    border-top: $width-border-byline-border solid $color-border-byline-border;
-    content: "";
-    display: block;
-    height: 0;
-    margin-bottom: $margin-bottom-byline-border;
-    width: $width-byline-border;
-  }
-
   mark {
     background-color: transparent;
     color: inherit;
@@ -22,9 +13,5 @@
     bottom: 0;
     margin-right: $margin-right-byline-full;
     top: auto;
-
-    &::before {
-      margin-left: auto;
-    }
   }
 }

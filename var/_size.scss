@@ -178,10 +178,6 @@ $margin-left-footlinks-separator: $padding-right-footlinks-item;
 $margin-top-byline-print: $margin-huge;
 $margin-right-byline-full: (- ($width-supplement-outer - $width-gap-small));
 
-$margin-bottom-byline-border: $margin-tiny;
-$width-byline-border: ($width-supplement / pow($ratio, 3));
-$width-border-byline-border: $width-border;
-
 // Site Search
 $width-max-site-search: ($width-content / $ratio);
 $width-max-site-search-content: ($width-content / pow($ratio, 2));
