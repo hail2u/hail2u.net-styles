@@ -2,11 +2,10 @@
 .site-search {
   @extend %search-form;
 
-  max-width: $width-max-site-search;
+  width: $width-site-search;
   top: $top-site-search;
 
   @media (min-width: $breakpoint-content) {
-    max-width: $width-max-site-search-content;
     position: absolute;
     right: $right-site-search-content;
     top: $top-site-search-content;

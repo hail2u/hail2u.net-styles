@@ -172,8 +172,7 @@ $margin-top-byline-print: $margin-huge;
 $margin-right-byline-full: (- ($width-supplement-outer - $width-gap-small));
 
 // Site Search
-$width-max-site-search: ($width-content / $ratio);
-$width-max-site-search-content: ($width-content / pow($ratio, 2));
+$width-site-search: percentage(1 / 3);
 $right-site-search-content: $width-gap-small;
 $top-site-search: $margin-huge;
 $top-site-search-content: ($margin-top-footlinks + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
