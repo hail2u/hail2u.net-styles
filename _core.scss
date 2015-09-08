@@ -148,8 +148,8 @@ figure {
 figcaption {
   @extend %float;
 
-  margin-top: $margin-top-figcaption;
   color: $color-fg-figcaption;
+  margin-top: $margin-top-figcaption;
 
   blockquote + & {
     border-left: $width-border-figcaption-quote solid $color-border-figcaption-quote;
