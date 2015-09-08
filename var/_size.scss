@@ -93,12 +93,7 @@ $margin-top-heading: $margin-enormous;
 
 $margin-top-subheading: $margin-huge;
 
-$margin-vert-hr: $margin-huge;
-$margin-vert-hr-print: $margin-large;
-$height-hr: rem($line-height);
-$width-hr: $height-hr;
-$width-hr-print: percentage(1 / $ratio);
-$width-border-hr-print: $width-border-small;
+$height-hr: rem($ratio-text-hr);
 
 $line-height-pre: $line-height-tiny;
 $margin-top-pre-print: $margin;

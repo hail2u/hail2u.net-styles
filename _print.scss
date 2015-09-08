@@ -60,14 +60,6 @@
     max-width: $width-content;
   }
 
-  hr {
-    border-bottom: $width-border-hr-print dashed;
-    height: 0;
-    margin-bottom: $margin-vert-hr-print;
-    margin-top: $margin-vert-hr-print;
-    width: $width-hr-print;
-  }
-
   pre {
     margin: $margin-top-pre-print 0 0;
     padding: 0;

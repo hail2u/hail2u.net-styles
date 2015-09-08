@@ -49,18 +49,18 @@ p {
 }
 
 hr {
-  @extend %ir;
   @extend %margin;
 
   background-color: transparent;
   border: 0;
-  clear: both;
+  color: $color-fg-hr;
+  font-size: rem($ratio-text-hr);
   height: $height-hr;
-  margin: $margin-vert-hr auto;
-  width: $width-hr;
+  line-height: 1;
+  text-align: center;
 
   &::before {
-    background-image: $image-hr;
+    content: "* * *";
   }
 }
 
