@@ -1,15 +1,16 @@
 // Footnote
 .footnote {
-  background-image: linear-gradient(
-    to right,
-    $color-border-footnote 0,
-    $color-border-footnote 50%,
-    transparent 50%,
-    transparent 100%
-  );
-  background-position: 0 $top-bg-footnote;
-  background-repeat: repeat-x;
-  background-size: $width-bg-footnote $height-bg-footnote;
   font-size: rem($ratio-text-footnote);
-  padding-top: $padding-top-footnote;
+
+  &::before {
+    border-top: $width-border-footnote-sep solid $color-border-footnote-sep;
+    content: "";
+    display: block;
+    margin-top: $margin-top-footnote-sep;
+    width: $width-footnote-sep;
+  }
+
+  :first-child {
+    margin-top: $margin-top-footnote-first-child;
+  }
 }
