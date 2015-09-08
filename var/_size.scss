@@ -74,16 +74,12 @@ $margin-top-margin: $margin;
 
 $margin-top-margin-after-heading: $margin-tiny;
 
-$padding-right-search-form-query: $padding;
+$width-search-form-query: 79%;
+$height-search-form-query: (rem($line-height) + $padding-small * 2);
 $width-border-search-form-query: $width-border-small;
 
-$width-search-form-button: rem($line-height);
-$height-search-form-button: $width-search-form-button;
-$left-search-form-button: $width-border-search-form-query;
-$top-search-form-button: $padding-small;
-
-$padding-left-search-form-query: $width-search-form-button;
-$height-search-form-query: ($height-search-form-button + $padding-small * 2);
+$width-search-form-button: 20%;
+$height-search-form-button: $height-search-form-query;
 
 // Core
 $line-height-body: $line-height-small;
@@ -238,6 +234,7 @@ $width-pull-quote-full: ($width-supplement + $width-gap-large + $width-supplemen
 $margin-top-read-older-label: $margin-huge;
 
 $line-height-read-older-title: $line-height-tiny;
+$margin-top-read-older-title: $margin-tiny;
 $margin-top-read-older-title-full: $margin-top-read-older-label;
 
 $line-height-read-older-label-full: ($ratio-text-read-older-title * $line-height-read-older-title);

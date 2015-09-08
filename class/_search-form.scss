@@ -12,25 +12,17 @@
     box-sizing: border-box;
     color: $color-fg-search-form-query;
     height: $height-search-form-query;
-    padding: 0 $padding-right-search-form-query 0 $padding-left-search-form-query;
-    width: 100%;
+    padding: 0;
+    width: $width-search-form-query;
   }
 
   .button {
-    // ir-pseudo-element does not work on `input`
-    @include ir-text-indent;
-
-    background-color: transparent;
-    background-image: $image-search-form-button;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-color: $color-bg-search-form-button;
     border: 0;
+    color: $color-fg-search-form-button;
     height: $height-search-form-button;
-    left: 0;
-    padding: 0;
+    right: 0;
     position: absolute;
-    top: $top-search-form-button;
     width: $width-search-form-button;
   }
 }
