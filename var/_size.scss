@@ -55,10 +55,10 @@ $breakpoint-content: ($width-content-outer + $width-scrollbar);
 $breakpoint-full: ($width-full-outer + $width-scrollbar);
 
 // Placeholder Class
-$width-max-centering: $width-content;
+$padding-left-centering-full: ($width-gap-small + $width-supplement + $width-gap-large);
 $padding-side-centering: $width-gap-tiny;
 $padding-side-centering-content: $width-gap-small;
-$padding-left-centering-full: ($width-gap-small + $width-supplement + $width-gap-large);
+$width-max-centering: $width-content;
 
 $margin-side-expander: (- $padding-side-centering);
 $margin-side-expander-content: (- $padding-side-centering-content);
@@ -75,12 +75,12 @@ $margin-top-margin: $margin;
 
 $margin-top-margin-after-heading: $margin-tiny;
 
-$width-search-form-query: 79%;
-$height-search-form-query: (rem($line-height) + $padding-small * 2);
 $width-border-search-form-query: $width-border-small;
+$height-search-form-query: (rem($line-height) + $padding-small * 2);
+$width-search-form-query: 79%;
 
-$width-search-form-button: 20%;
 $height-search-form-button: $height-search-form-query;
+$width-search-form-button: 20%;
 
 // Core
 $line-height-body: $line-height-small;
@@ -106,9 +106,9 @@ $margin-left-dd: $indent;
 
 $margin-top-figcaption: $margin-tiny;
 
-$padding-top-figcaption-quote: $margin-tiny;
-$padding-left-figcaption-quote: $padding-left-blockquote;
 $width-border-figcaption-quote: $width-border-blockquote;
+$padding-left-figcaption-quote: $padding-left-blockquote;
+$padding-top-figcaption-quote: $margin-tiny;
 $margin-left-figcaption-quote-full: (- ($width-border-figcaption-quote + $padding-left-figcaption-quote));
 
 $width-border-strong: $width-border-small;
@@ -135,8 +135,8 @@ $line-height-site-navigation-item: ($line-height / $ratio-text-site-navigation);
 $padding-right-site-navigation-item: $padding-side-centering;
 $padding-side-site-navigation-item-content: $padding-side-centering-content;
 
-$padding-bottom-site-navigation-mark: $padding-small;
 $width-border-site-navigation-mark: $width-border;
+$padding-bottom-site-navigation-mark: $padding-small;
 
 // Tagline
 $line-height-tagline: $line-height-tiny;
@@ -166,11 +166,12 @@ $margin-top-footlinks: $margin-gargantuan;
 $margin-top-footlinks-full: $margin-enormous;
 
 $padding-right-footlinks-item: $width-gap-small;
+
 $margin-left-footlinks-separator: $padding-right-footlinks-item;
 
 // Byline
-$margin-top-byline-print: $margin-huge;
 $margin-right-byline-full: (- ($width-supplement-outer - $width-gap-small));
+$margin-top-byline-print: $margin-huge;
 
 // Site Search
 $width-site-search-content: 43%;
@@ -184,8 +185,8 @@ $top-site-search-full: ($margin-top-footlinks-full + (rem($line-height-body * $r
 $padding-contact-form-label: $padding-large;
 
 $margin-top-contact-form-button: $margin-small;
-$padding-vert-contact-form-button: $padding-large;
 $border-radius-contact-form-button: $width-border;
+$padding-vert-contact-form-button: $padding-large;
 $width-contact-form-button: ($width-content-outer / pow($ratio, 3));
 
 // Drop
@@ -206,8 +207,8 @@ $width-max-floatage-content: percentage(1 / pow($ratio, 2));
 
 // Footnote
 $margin-top-footnote-sep: $margin-large;
-$width-footnote-sep: 25%;
 $width-border-footnote-sep: $width-border-small;
+$width-footnote-sep: 25%;
 
 $margin-top-footnote-first-child: $margin-tiny;
 
@@ -226,10 +227,10 @@ $margin-left-post-list-info-content: $width-gap-small;
 
 // Pull Quote
 $line-height-pull-quote: $line-height-tiny;
-$margin-side-pull-quote: $width-gap;
-$margin-side-pull-quote-content: $indent;
 $margin-left-pull-quote-full: (- ($width-supplement + $width-gap-large));
 $margin-right-pull-quote-full: $width-gap;
+$margin-side-pull-quote: $width-gap;
+$margin-side-pull-quote-content: $indent;
 $width-pull-quote-full: ($width-supplement + $width-gap-large + $width-supplement / $ratio);
 
 // Read Older
@@ -249,8 +250,8 @@ $padding-left-share-buttons-item: $width-gap-small;
 
 // Google AdSense
 $margin-top-adsbygoogle: $margin-large;
-$width-adsbygoogle: 300px;
-$width-adsbygoogle-large-rectangle: 336px;
 $height-adsbygoogle: 250px;
 $height-adsbygoogle-large-rectangle: 280px;
+$width-adsbygoogle: 300px;
+$width-adsbygoogle-large-rectangle: 336px;
 $breakpoint-adsbygoogle-large-rectangle: ($width-adsbygoogle-large-rectangle + 16px * 2);
