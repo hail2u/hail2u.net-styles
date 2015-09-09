@@ -36,6 +36,7 @@ $column-gap: rem($ratio);
 
 // Main Component
 $width-gap: $column-gap;
+$width-gap-tiny: ($width-gap / 3);
 $width-gap-small: ($width-gap / 2);
 $width-gap-large: ($width-gap * $ratio);
 
@@ -55,12 +56,12 @@ $breakpoint-full: ($width-full-outer + $width-scrollbar);
 
 // Placeholder Class
 $width-max-centering: $width-content;
-$padding-side-centering: ($width-gap-small * .75);
+$padding-side-centering: $width-gap-tiny;
 $padding-side-centering-content: $width-gap-small;
 $padding-left-centering-full: ($width-gap-small + $width-supplement + $width-gap-large);
 
-$margin-side-expander: (- $width-gap-small * .75);
-$margin-side-expander-content: (- $width-gap-small);
+$margin-side-expander: (- $padding-side-centering);
+$margin-side-expander-content: (- $padding-side-centering-content);
 
 $margin-right-float-full: $width-gap-large;
 $width-float-full: $width-supplement;
@@ -131,8 +132,8 @@ $margin-left-logo-full: (- ($width-logo-full + $width-gap-large));
 
 // Site Navigation
 $line-height-site-navigation-item: ($line-height / $ratio-text-site-navigation);
-$padding-right-site-navigation-item: $width-gap-small;
-$padding-left-site-navigation-item-content: $padding-right-site-navigation-item;
+$padding-right-site-navigation-item: $padding-side-centering;
+$padding-side-site-navigation-item-content: $padding-side-centering-content;
 
 $padding-bottom-site-navigation-mark: $padding-small;
 $width-border-site-navigation-mark: $width-border;
@@ -174,7 +175,7 @@ $margin-right-byline-full: (- ($width-supplement-outer - $width-gap-small));
 // Site Search
 $width-site-search-content: 43%;
 $width-site-search-full: 32%;
-$right-site-search-content: $width-gap-small;
+$right-site-search-content: $padding-side-centering-content;
 $top-site-search: $margin-huge;
 $top-site-search-content: ($margin-top-footlinks + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
 $top-site-search-full: ($margin-top-footlinks-full + (rem($line-height-body * $ratio-text-global-footer) - $height-search-form-query) / 2);
@@ -195,7 +196,7 @@ $width-max-drop-full: ($width-supplement + $width-gap-large + $width-content / 2
 $width-min-drop-img: $width-supplement;
 
 // Flat UL
-$padding-left-flat-ul: ($width-gap-small + $padding-left-list);
+$padding-left-flat-ul: ($margin-side-expander + $padding-left-list);
 $padding-side-flat-ul-item-full: $width-gap-small;
 $width-flat-ul-item-full: (100% / 3);
 
@@ -211,9 +212,9 @@ $width-border-footnote-sep: $width-border-small;
 $margin-top-footnote-first-child: $margin-tiny;
 
 // Full Width
-$margin-left-full-width-full: (- ($width-gap-small + $width-supplement + $width-gap-large));
+$margin-left-full-width-full: (- ($margin-side-expander-content + $width-supplement + $width-gap-large));
 
-$margin-left-full-width-caption: $width-gap-small;
+$margin-left-full-width-caption: $margin-side-expander;
 $margin-top-full-width-caption-full: $margin;
 
 // Post List
