@@ -212,9 +212,9 @@ $width-border-footnote-sep: $width-border-small;
 $margin-top-footnote-first-child: $margin-tiny;
 
 // Full Width
-$margin-left-full-width-full: (- ($margin-side-expander-content + $width-supplement + $width-gap-large));
+$margin-left-full-width-full: (- ($width-supplement + $width-gap-large));
 
-$margin-left-full-width-caption: $margin-side-expander;
+$margin-left-full-width-caption: (- $margin-side-expander);
 $margin-top-full-width-caption-full: $margin;
 
 // Post List

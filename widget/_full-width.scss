@@ -13,13 +13,21 @@
     margin-left: $margin-left-full-width-caption;
   }
 
+  @media (min-width: $breakpoint-content) {
+    margin-left: 0;
+    margin-right: 0;
+
+    figcaption {
+      margin-left: 0;
+    }
+  }
+
   @media (min-width: $breakpoint-full) {
     margin-left: $margin-left-full-width-full;
 
     figcaption {
       bottom: auto;
       left: 0;
-      margin-left: 0;
       margin-top: $margin-top-full-width-caption-full;
       text-align: left;
     }
