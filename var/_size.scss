@@ -36,7 +36,6 @@ $column-gap: rem($ratio);
 
 // Main Component
 $width-gap: $column-gap;
-$width-gap-tiny: ($width-gap / 3);
 $width-gap-small: ($width-gap / 2);
 $width-gap-large: ($width-gap * $ratio);
 
@@ -56,12 +55,10 @@ $breakpoint-full: ($width-full-outer + $width-scrollbar);
 
 // Placeholder Class
 $padding-left-centering-full: ($width-gap-small + $width-supplement + $width-gap-large);
-$padding-side-centering: $width-gap-tiny;
-$padding-side-centering-content: $width-gap-small;
+$padding-side-centering: $width-gap-small;
 $width-max-centering: $width-content;
 
 $margin-side-expander: (- $padding-side-centering);
-$margin-side-expander-content: (- $padding-side-centering-content);
 
 $margin-right-float-full: $width-gap-large;
 $width-float-full: $width-supplement;
@@ -133,7 +130,7 @@ $margin-left-logo-full: (- ($width-logo-full + $width-gap-large));
 // Site Navigation
 $line-height-site-navigation-item: ($line-height / $ratio-text-site-navigation);
 $padding-right-site-navigation-item: $padding-side-centering;
-$padding-side-site-navigation-item-content: $padding-side-centering-content;
+$padding-left-site-navigation-item-content: $padding-right-site-navigation-item;
 
 $width-border-site-navigation-mark: $width-border;
 $padding-bottom-site-navigation-mark: $padding-small;
@@ -176,7 +173,7 @@ $margin-top-byline-print: $margin-huge;
 // Site Search
 $width-site-search-content: 43%;
 $width-site-search-full: 32%;
-$right-site-search-content: $padding-side-centering-content;
+$right-site-search-content: $padding-side-centering;
 $top-site-search: $margin-huge;
 $top-site-search-content: ($margin-top-footlinks + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
 $top-site-search-full: ($margin-top-footlinks-full + (rem($line-height-body * $ratio-text-global-footer) - $height-search-form-query) / 2);

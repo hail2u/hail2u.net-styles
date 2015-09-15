@@ -2,9 +2,4 @@
 %expander {
   margin-left: $margin-side-expander;
   margin-right: $margin-side-expander;
-
-  @media (min-width: $breakpoint-content) {
-    margin-left: $margin-side-expander-content;
-    margin-right: $margin-side-expander-content;
-  }
 }
