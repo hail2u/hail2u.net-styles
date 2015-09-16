@@ -70,6 +70,7 @@ $width-contact-form-button: ($width-content-outer / pow($ratio, 3));
   .button {
     background-color: $color-bg-contact-form-button;
     border: 0;
+    border-radius: 0;
     color: $color-fg-contact-form-button;
     cursor: pointer;
     display: block;

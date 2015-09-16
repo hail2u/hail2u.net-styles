@@ -33,6 +33,7 @@ $width-search-form-button: 20%;
   .button {
     background-color: $color-bg-search-form-button;
     border: 0;
+    border-radius: 0;
     color: $color-fg-search-form-button;
     height: $height-search-form-button;
     position: absolute;
