@@ -9,6 +9,7 @@ html {
   font-size: percentage($ratio-text-html);
 }
 
+
 // Sections
 $font-family-body: "Eau Douce", "Helvetica Neue", "Calibri", "Emoji", sans-serif;
 
@@ -61,6 +62,7 @@ h2 {
     font-size: rem($ratio-text-subheading-content);
   }
 }
+
 
 // Grouping Content
 p {
@@ -230,6 +232,7 @@ figcaption {
   }
 }
 
+
 // Text-level Semantics
 a {
   @extend %link;
@@ -287,6 +290,7 @@ mark {
   color: inherit;
 }
 
+
 // Edits
 ins {
   text-decoration: none;
@@ -295,6 +299,7 @@ ins {
 del {
   text-decoration: line-through;
 }
+
 
 // Embedded Content
 $color-bg-img: $color-bg-body;
@@ -311,6 +316,7 @@ video {
     vertical-align: bottom;
   }
 }
+
 
 // Tabular Data
 @import "assets/partials/hail2u-scss-partials/vendor-extension";

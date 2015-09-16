@@ -8,16 +8,19 @@
 // Normalization
 @import "normalization";
 
+
 // Function
 @import "assets/partials/hail2u-scss-functions/color/encode-color";
 @import "assets/partials/hail2u-scss-functions/number/pow";
 @import "assets/partials/hail2u-scss-functions/number/rem";
+
 
 // Variable
 @import "var/font";
 @import "var/color";
 @import "var/ratio";
 @import "var/size";
+
 
 // Placeholder Class
 @import "class/centering";
@@ -34,8 +37,10 @@
 @import "class/footing";
 @import "class/link-underline-removal";
 
+
 // Core
 @import "core";
+
 
 // Global Header
 @import "global-header";
@@ -43,19 +48,23 @@
 @import "global-header/site-navigation";
 @import "global-header/tagline";
 
+
 // Content
 @import "content";
 @import "content/first-heading";
 @import "content/section-footer";
+
 
 // Global Footer
 @import "global-footer";
 @import "global-footer/footlinks";
 @import "global-footer/byline";
 
+
 // Subcontent
 @import "subcontent";
 @import "subcontent/site-search";
+
 
 // Widget
 @import "widget/contact-form";
@@ -72,12 +81,15 @@
 @import "widget/sidenote";
 @import "widget/topic";
 
+
 // Vendor
 @import "vendor/google-adsense";
+
 
 // Shame
 @import "shame/appearance";
 @import "shame/pre-scrollbar";
+
 
 // Print
 @import "print";

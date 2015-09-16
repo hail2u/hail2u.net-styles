@@ -1,9 +1,11 @@
 // Basic
 $ratio: 1.7;
 
+
 // Text Size
 $ratio-text-primary: (16px / 16px);
 $ratio-text-secondary: (21px / 16px);
+
 
 // Harmonic Ratio
 $ratio-text: $ratio-text-primary;
@@ -15,6 +17,7 @@ $ratio-text-huge: ($ratio-text-primary * $ratio);
 $ratio-text-gargantuan: ($ratio-text-secondary * $ratio);
 $ratio-text-enormous: ($ratio-text-primary * pow($ratio, 2));
 $ratio-text-maximal: ($ratio-text-secondary * pow($ratio, 2));
+
 
 // Column
 $ratio-content: 1;

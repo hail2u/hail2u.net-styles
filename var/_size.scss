@@ -4,6 +4,7 @@ $line-height-tiny: ($line-height * .8);
 $line-height-small: ($line-height * .9);
 $line-height-large: ($line-height * 1.05);
 
+
 // Margin
 $margin: rem($ratio);
 $margin-minimal: ($margin / pow($ratio, 3));
@@ -15,13 +16,16 @@ $margin-gargantuan: ($margin * pow($ratio, 3));
 $margin-enormous: ($margin * pow($ratio, 4));
 $margin-maximal: ($margin * pow($ratio, 5));
 
+
 // Indent
 $indent: rem($ratio);
+
 
 // Border
 $width-border: .125rem;
 $width-border-small: ($width-border / 2);
 $width-border-large: ($width-border * 2);
+
 
 // Padding
 $padding: .25rem;
@@ -30,9 +34,11 @@ $padding-large: ($padding * 2);
 $padding-huge: ($padding * 3);
 $padding-gargantuan: ($padding * 4);
 
+
 // Column
 $column: 40rem;
 $column-gap: rem($ratio);
+
 
 // Main Component
 $width-gap: $column-gap;
@@ -47,6 +53,7 @@ $width-supplement-outer: ($width-gap-small + $width-supplement + $width-gap-smal
 
 $width-full: ($width-supplement + $width-gap-large + $width-content);
 $width-full-outer: ($width-gap-small + $width-full + $width-gap-small);
+
 
 // Breakpoint
 $width-scrollbar: 1.5rem;
