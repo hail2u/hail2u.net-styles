@@ -3,3 +3,11 @@
   font-family: "Emoji";
   src: local("Apple Color Emoji"), local("Segoe UI Emoji"), local("Segoe UI Symbol");
 }
+
+// Sans-serif
+$font-family-sans-serif-local: "Helvetica Neue", "Calibri", "Emoji", sans-serif;
+$font-family-sans-serif: "Eau Douce", $font-family-sans-serif-local;
+
+// Monospace
+$font-family-monospace-local: "Menlo", "Consolas", "Emoji", monospace;
+$font-family-monospace: "M+ 1m Latin", $font-family-monospace-local;

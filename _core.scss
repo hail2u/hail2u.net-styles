@@ -11,8 +11,6 @@ html {
 
 
 // Sections
-$font-family-body: "Eau Douce", "Helvetica Neue", "Calibri", "Emoji", sans-serif;
-
 $color-fg-body: $color-dark;
 $color-bg-body: $color-light;
 
@@ -22,7 +20,7 @@ $line-height-body-content: $line-height;
 body {
   background-color: $color-bg-body;
   color: $color-fg-body;
-  font-family: $font-family-body;
+  font-family: $font-family-sans-serif;
   line-height: $line-height-body;
 
   @media (min-width: $breakpoint-content) {
@@ -94,8 +92,6 @@ hr {
 
 @import "assets/partials/hail2u-scss-partials/vendor-extension";
 
-$font-family-pre: "M+ 1m Latin", "Menlo", "Consolas", "Emoji", monospace;
-
 $line-height-pre: $line-height-tiny;
 $margin-top-pre-print: $margin;
 
@@ -105,7 +101,7 @@ pre {
   @include font-feature-settings("kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1);
 
   clear: both;
-  font-family: $font-family-pre;
+  font-family: $font-family-monospace;
   line-height: $line-height-pre;
 
   @media (min-width: $breakpoint-content) {
@@ -266,13 +262,11 @@ abbr {
   letter-spacing: $letter-spacing-abbr;
 }
 
-$font-family-code: $font-family-pre;
-
 code,
 var,
 samp,
 kbd {
-  font-family: $font-family-code;
+  font-family: $font-family-monospace;
 
   p &::before,
   p &::after {

@@ -129,11 +129,11 @@ body::after {
 
 // Fonts
 .font-family-body {
-  font-family: $font-family-body;
+  font-family: $font-family-sans-serif;
 }
 
 .font-family-pre {
-  font-family: $font-family-pre;
+  font-family: $font-family-monospace;
 }
 
 .italic {
@@ -145,14 +145,14 @@ body::after {
 }
 
 .no-webfont {
-  font-family: $font-family-body-local;
+  font-family: $font-family-sans-serif-local;
 
   pre {
-    font-family: $font-family-pre-local;
+    font-family: $font-family-monospace-local;
   }
 
   code {
-    font-family: $font-family-code-local;
+    font-family: $font-family-monospace-local;
   }
 }
 
