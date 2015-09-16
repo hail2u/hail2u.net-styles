@@ -1,4 +1,6 @@
 // Floatage
+$width-max-floatage-content: percentage(1 / pow($ratio, 2));
+
 @mixin floatage-base {
   max-width: $width-max-floatage-content;
 
@@ -6,6 +8,8 @@
     margin-top: 0;
   }
 }
+
+$margin-side-floatage-content: $width-gap-small;
 
 @media (min-width: $breakpoint-content) {
   .floatage-left {

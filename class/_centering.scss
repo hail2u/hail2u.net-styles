@@ -1,3 +1,8 @@
+// Centering
+$padding-left-centering-full: ($width-gap-small + $width-supplement + $width-gap-large);
+$padding-side-centering: $width-gap-small;
+$width-max-centering: $width-content;
+
 %centering {
   margin-left: auto;
   margin-right: auto;

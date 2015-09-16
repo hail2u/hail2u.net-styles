@@ -1,4 +1,11 @@
 // Logo
+$color-fg-logo: $color-shade-darkest;
+
+$ratio-text-logo: $ratio-text;
+
+$line-height-logo: $line-height;
+$margin-left-logo-full: (- ($width-supplement + $width-gap-large));
+
 .logo {
   color: $color-fg-logo;
   font-size: rem($ratio-text-logo);

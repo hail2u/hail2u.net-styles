@@ -25,12 +25,14 @@
 @import "class/ellipsing";
 @import "class/expander";
 @import "class/float";
-@import "class/footing";
 @import "class/heading";
-@import "class/link-underline-removal";
+@import "class/link";
 @import "class/margin";
 @import "class/positioning-root";
 @import "class/search-form";
+
+@import "class/footing";
+@import "class/link-underline-removal";
 
 // Core
 @import "core";

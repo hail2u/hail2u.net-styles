@@ -1,4 +1,8 @@
 // Seealso
+$color-fg-seealso: $color-shade-darkest;
+
+$ratio-text-seealso: $ratio-text-large;
+
 .seealso {
   color: $color-fg-seealso;
   font-size: rem($ratio-text-seealso);

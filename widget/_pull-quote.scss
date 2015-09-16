@@ -1,4 +1,15 @@
 // Pull Quote
+$color-fg-pull-quote: $color-shade-dark;
+
+$ratio-text-pull-quote: $ratio-text-huge;
+
+$line-height-pull-quote: $line-height-tiny;
+$margin-left-pull-quote-full: (- ($width-supplement + $width-gap-large));
+$margin-right-pull-quote-full: $width-gap;
+$margin-side-pull-quote: $width-gap;
+$margin-side-pull-quote-content: $indent;
+$width-pull-quote-full: ($width-supplement + $width-gap-large + $width-supplement / $ratio);
+
 .pull-quote {
   color: $color-fg-pull-quote;
   font-size: rem($ratio-text-pull-quote);

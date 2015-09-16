@@ -1,4 +1,6 @@
 // Expander
+$margin-side-expander: (- $padding-side-centering);
+
 %expander {
   margin-left: $margin-side-expander;
   margin-right: $margin-side-expander;

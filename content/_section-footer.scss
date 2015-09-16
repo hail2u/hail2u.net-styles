@@ -1,4 +1,8 @@
 // Section Footer
+$width-section-footer-full: $width-float-full;
+
+$margin-top-section-footer-p-full: rem(($ratio-text-heading-content * $line-height-heading - $ratio-text-footing * $line-height-footing) / 2);
+
 .section-footer {
   @extend %link-underline-removal;
   @extend %float;

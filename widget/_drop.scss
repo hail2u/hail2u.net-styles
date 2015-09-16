@@ -1,4 +1,10 @@
 // Drop
+$margin-left-drop-full: (- ($width-supplement + $width-gap-large));
+$margin-right-drop-full: $width-gap-small;
+$width-max-drop-full: ($width-supplement + $width-gap-large + $width-content / 2);
+
+$width-min-drop-img: $width-supplement;
+
 .drop {
   img {
     min-width: $width-min-drop-img;

@@ -1,4 +1,8 @@
 // Global Header
+$margin-top-global-header: $margin-small;
+$margin-top-global-header-content: $margin;
+$margin-top-global-header-full: $margin-large;
+
 .global-header {
   @extend %centering;
   @extend %link-underline-removal;

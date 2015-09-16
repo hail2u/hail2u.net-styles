@@ -1,4 +1,9 @@
 // Byline
+$color-fg-byline: $color-shade-dark;
+
+$margin-right-byline-full: (- ($width-supplement-outer - $width-gap-small));
+$margin-top-byline-print: $margin-huge;
+
 .byline {
   @extend %float;
 

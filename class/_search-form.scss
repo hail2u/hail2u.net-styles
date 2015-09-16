@@ -1,6 +1,20 @@
 // Search Form
 @import "../assets/partials/hail2u-scss-partials/image-replacement";
 
+$color-fg-search-form-query: $color-dark;
+$color-bg-search-form-query: $color-light-light;
+$color-border-search-form-query: $color-tint-light;
+
+$color-fg-search-form-button: $color-light-light;
+$color-bg-search-form-button: $color-accent-lightest;
+
+$width-border-search-form-query: $width-border-small;
+$height-search-form-query: (rem($line-height) + $padding-small * 2);
+$width-search-form-query: 79%;
+
+$height-search-form-button: $height-search-form-query;
+$width-search-form-button: 20%;
+
 %search-form {
   @extend %positioning-root;
 

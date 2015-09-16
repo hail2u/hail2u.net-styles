@@ -1,4 +1,14 @@
 // Footnote
+$color-border-footnote-sep: $color-tint-dark;
+
+$ratio-text-footnote: $ratio-text-small;
+
+$margin-top-footnote-sep: $margin-large;
+$width-border-footnote-sep: $width-border-small;
+$width-footnote-sep: 25%;
+
+$margin-top-footnote-first-child: $margin-tiny;
+
 .footnote {
   font-size: rem($ratio-text-footnote);
 

@@ -1,4 +1,15 @@
 // Site Navigation
+$color-border-site-navigation-mark: $color-accent;
+
+$ratio-text-site-navigation: $ratio-text-small;
+
+$line-height-site-navigation-item: ($line-height / $ratio-text-site-navigation);
+$padding-right-site-navigation-item: $padding-side-centering;
+$padding-left-site-navigation-item-content: $padding-right-site-navigation-item;
+
+$width-border-site-navigation-mark: $width-border;
+$padding-bottom-site-navigation-mark: $padding-small;
+
 .site-navigation {
   font-size: rem($ratio-text-site-navigation);
   margin-top: 0;

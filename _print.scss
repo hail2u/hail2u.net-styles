@@ -1,6 +1,12 @@
 // Print
 @import "assets/partials/hail2u-scss-partials/black-prints";
 
+$font-family-body-print: serif;
+
+$font-family-pre-print: monospace;
+
+$font-family-code-print: $font-family-pre-print;
+
 @media print {
   @include black-prints;
 

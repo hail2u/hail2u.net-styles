@@ -1,4 +1,15 @@
 // Footing
+$color-fg-footing: $color-shade-lightest;
+
+$color-fg-footing-date: $color-shade-dark;
+
+$color-fg-footing-tag: $color-shade-dark;
+
+$ratio-text-footing: $ratio-text-small;
+
+$line-height-footing: ($line-height-heading / $ratio-text-footing);
+$height-footing: rem($ratio-text-footing * $line-height-footing);
+
 %footing {
   color: $color-fg-footing;
   font-size: rem($ratio-text-footing);

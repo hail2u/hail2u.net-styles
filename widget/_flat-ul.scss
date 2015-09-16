@@ -1,4 +1,8 @@
 // Flat UL
+$padding-left-flat-ul: ($margin-side-expander + $padding-left-list);
+$padding-side-flat-ul-item-full: $width-gap-small;
+$width-flat-ul-item-full: (100% / 3);
+
 .flat-ul {
   @extend %clearfix;
   @extend %expander;

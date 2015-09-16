@@ -1,4 +1,8 @@
 // Sidenote
+$color-fg-sidenote: $color-shade-lightest;
+
+$ratio-text-sidenote: $ratio-text-small;
+
 .sidenote {
   @extend %float;
 

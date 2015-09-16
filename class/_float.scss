@@ -1,4 +1,7 @@
 // Float
+$margin-right-float-full: $width-gap-large;
+$width-float-full: $width-supplement;
+
 %float {
   @media (min-width: $breakpoint-full) {
     margin-right: $margin-right-float-full;

@@ -1,4 +1,6 @@
 // Content
+$margin-top-content: (- $margin-top-heading);
+
 .content {
   @extend %centering;
   @extend %positioning-root;

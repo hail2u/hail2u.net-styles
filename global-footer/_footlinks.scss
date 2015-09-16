@@ -1,4 +1,11 @@
 // Footlinks
+$margin-top-footlinks: $margin-gargantuan;
+$margin-top-footlinks-full: $margin-enormous;
+
+$padding-right-footlinks-item: $width-gap-small;
+
+$margin-left-footlinks-separator: $padding-right-footlinks-item;
+
 .footlinks {
   margin-top: $margin-top-footlinks;
   padding-left: 0;

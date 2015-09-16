@@ -1,4 +1,9 @@
 // Full Width
+$margin-left-full-width-full: (- ($width-supplement + $width-gap-large));
+
+$margin-left-full-width-caption: (- $margin-side-expander);
+$margin-top-full-width-caption-full: $margin;
+
 .full-width {
   @extend %expander;
 

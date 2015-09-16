@@ -1,4 +1,16 @@
 // Read Older
+$color-fg-read-older-label: $color-shade-darkest;
+
+$ratio-text-read-older-title: $ratio-text-huge;
+
+$margin-top-read-older-label: $margin-huge;
+
+$line-height-read-older-title: $line-height-tiny;
+$margin-top-read-older-title: $margin-tiny;
+$margin-top-read-older-title-full: $margin-top-read-older-label;
+
+$line-height-read-older-label-full: ($ratio-text-read-older-title * $line-height-read-older-title);
+
 .read-older {
   @extend %positioning-root;
   @extend %link-underline-removal;

@@ -1,4 +1,23 @@
 // Contact Form
+$color-fg-contact-form-label: $color-shade-lightest;
+$color-bg-contact-form-label: $color-light-light;
+$color-border-contact-form-label: $color-tint-light;
+
+$color-fg-contact-form-text-field: $color-dark;
+
+$color-fg-contact-form-button: $color-light-light;
+$color-bg-contact-form-button: $color-accent-lightest;
+
+$ratio-text-contact-form-label: $ratio-text-small;
+
+$ratio-text-contact-form-text-field: $ratio-text-large;
+
+$padding-contact-form-label: $padding-large;
+
+$margin-top-contact-form-button: $margin-small;
+$padding-vert-contact-form-button: $padding-large;
+$width-contact-form-button: ($width-content-outer / pow($ratio, 3));
+
 .contact-form {
   @extend %margin;
 

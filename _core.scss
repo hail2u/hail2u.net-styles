@@ -1,6 +1,8 @@
 // Root
 @import "assets/partials/hail2u-scss-partials/vendor-extension";
 
+$ratio-text-html: $ratio-text;
+
 html {
   @include font-feature-settings("kern" 1, "liga" 1, "lnum" 1, "pnum" 1);
 
@@ -8,6 +10,14 @@ html {
 }
 
 // Sections
+$font-family-body: "Eau Douce", "Helvetica Neue", "Calibri", "Emoji", sans-serif;
+
+$color-fg-body: $color-dark;
+$color-bg-body: $color-light;
+
+$line-height-body: $line-height-small;
+$line-height-body-content: $line-height;
+
 body {
   background-color: $color-bg-body;
   color: $color-fg-body;
@@ -18,6 +28,11 @@ body {
     line-height: $line-height-body-content;
   }
 }
+
+$ratio-text-heading: $ratio-text-huge;
+$ratio-text-heading-content: $ratio-text-gargantuan;
+
+$margin-top-heading: $margin-enormous;
 
 h1 {
   @extend %heading;
@@ -30,6 +45,11 @@ h1 {
     font-size: rem($ratio-text-heading-content);
   }
 }
+
+$ratio-text-subheading: $ratio-text-large;
+$ratio-text-subheading-content: $ratio-text-huge;
+
+$margin-top-subheading: $margin-huge;
 
 h2 {
   @extend %heading;
@@ -47,6 +67,12 @@ p {
   @extend %margin;
   @extend %margin-after-heading;
 }
+
+$color-fg-hr: $color-shade-lightest;
+
+$ratio-text-hr: $ratio-text-huge;
+
+$height-hr: rem($ratio-text-hr);
 
 hr {
   @extend %margin;
@@ -66,6 +92,11 @@ hr {
 
 @import "assets/partials/hail2u-scss-partials/vendor-extension";
 
+$font-family-pre: "M+ 1m Latin", "Menlo", "Consolas", "Emoji", monospace;
+
+$line-height-pre: $line-height-tiny;
+$margin-top-pre-print: $margin;
+
 pre {
   @extend %margin;
   @extend %margin-after-heading;
@@ -83,6 +114,13 @@ pre {
   }
 }
 
+$color-fg-blockquote: $color-shade-dark;
+$color-border-blockquote: $color-tint-light;
+
+$width-border-blockquote: $width-border-large;
+$padding-left-blockquote: $width-gap;
+$margin-left-blockquote-full: (- ($width-border-blockquote + $padding-left-blockquote));
+
 blockquote {
   @extend %margin;
   @extend %margin-after-heading;
@@ -95,6 +133,9 @@ blockquote {
     margin-left: $margin-left-blockquote-full;
   }
 }
+
+$padding-left-list: $indent;
+$padding-left-list-nested-full: $padding-left-list;
 
 ul,
 ol {
@@ -130,10 +171,14 @@ dl {
   }
 }
 
+$color-fg-dt: $color-shade-darkest;
+
 dt {
   color: $color-fg-dt;
   font-weight: bolder;
 }
+
+$margin-left-dd: $indent;
 
 dd {
   margin-left: $margin-left-dd;
@@ -144,6 +189,17 @@ figure {
   @extend %margin-after-heading;
   @extend %positioning-root;
 }
+
+$color-fg-figcaption: $color-shade-dark;
+$color-fg-figcaption-quote: $color-fg-blockquote;
+$color-border-figcaption-quote: $color-border-blockquote;
+
+$margin-top-figcaption: $margin-tiny;
+
+$width-border-figcaption-quote: $width-border-blockquote;
+$padding-left-figcaption-quote: $padding-left-blockquote;
+$padding-top-figcaption-quote: $margin-tiny;
+$margin-left-figcaption-quote-full: (- ($width-border-figcaption-quote + $padding-left-figcaption-quote));
 
 figcaption {
   @extend %float;
@@ -175,26 +231,21 @@ figcaption {
 }
 
 // Text-level Semantics
-@import "assets/partials/hail2u-scss-partials/vendor-extension";
-
 a {
-  color: $color-fg-a;
-  text-decoration: underline;
-
-  @supports (-moz-text-decoration-color: red) or
-    (-webkit-text-decoration-color: red) or
-    (text-decoration-color: red) {
-    @include text-decoration-color($color-fg-a-underline);
-
-    color: inherit;
-  }
+  @extend %link;
 }
+
+$color-fg-em: $color-shade-darkest;
 
 em {
   color: $color-fg-em;
   font-style: normal;
   font-weight: bolder;
 }
+
+$color-fg-strong: $color-accent-complement;
+
+$width-border-strong: $width-border-small;
 
 strong {
   color: $color-fg-strong;
@@ -205,10 +256,14 @@ cite {
   font-style: normal;
 }
 
+$letter-spacing-abbr: $width-border-small;
+
 abbr {
   cursor: help;
   letter-spacing: $letter-spacing-abbr;
 }
+
+$font-family-code: $font-family-pre;
 
 code,
 var,
@@ -225,6 +280,8 @@ kbd {
   }
 }
 
+$color-bg-mark: $color-accent-complement-lightest;
+
 mark {
   background-color: $color-bg-mark;
   color: inherit;
@@ -240,6 +297,8 @@ del {
 }
 
 // Embedded Content
+$color-bg-img: $color-bg-body;
+
 img,
 video {
   box-sizing: border-box;
@@ -272,6 +331,11 @@ table {
   }
 }
 
+$color-border-td: $color-tint-dark;
+
+$width-border-td: $width-border-small;
+$padding-td: $padding-large;
+
 %table-cell,
 td {
   border-top: $width-border-td solid $color-border-td;
@@ -283,6 +347,10 @@ td {
     border-top-width: 0;
   }
 }
+
+$color-border-th-thead: $color-border-td;
+
+$width-border-th-thead: $width-border;
 
 th {
   @extend %table-cell;

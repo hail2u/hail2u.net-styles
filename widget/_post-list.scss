@@ -1,4 +1,12 @@
 // Post List
+$ratio-text-post-list-item: $ratio-text-large;
+
+$line-height-post-list-item: $line-height-tiny;
+$margin-top-post-list-item: $margin-small;
+
+$line-height-post-list-info-content: ($line-height-post-list-item * $ratio-text-post-list-item / $ratio-text-footing);
+$margin-left-post-list-info-content: $width-gap-small;
+
 .post-list {
   @extend %link-underline-removal;
 
