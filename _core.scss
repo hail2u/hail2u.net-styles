@@ -342,10 +342,6 @@ td {
   padding: $padding-td;
   vertical-align: top;
   white-space: nowrap;
-
-  :first-child > :first-child > & {
-    border-top-width: 0;
-  }
 }
 
 $color-border-th-thead: $color-border-td;
