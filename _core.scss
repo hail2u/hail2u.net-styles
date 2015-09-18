@@ -12,7 +12,7 @@ html {
 body {
   background-color: $color-light;
   color: $color-dark;
-  font-family: $font-family-sans-serif;
+  font-family: $font-stack-sans-serif;
   line-height: $line-height-small;
 
   @media (min-width: $breakpoint-content) {
@@ -88,7 +88,7 @@ pre {
   @include font-feature-settings("kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1);
 
   clear: both;
-  font-family: $font-family-monospace;
+  font-family: $font-stack-monospace;
   line-height: $line-height-tiny;
 
   @media (min-width: $breakpoint-content) {
@@ -236,7 +236,7 @@ code,
 var,
 samp,
 kbd {
-  font-family: $font-family-monospace;
+  font-family: $font-stack-monospace;
 
   p &::before,
   p &::after {

@@ -5,9 +5,9 @@
 }
 
 // Sans-serif
-$font-family-sans-serif-local: "Helvetica Neue", "Calibri", "Emoji", sans-serif;
-$font-family-sans-serif: "Eau Douce", $font-family-sans-serif-local;
+$font-stack-sans-serif-local: "Helvetica Neue", "Calibri", "Emoji", sans-serif;
+$font-stack-sans-serif: "Eau Douce", $font-stack-sans-serif-local;
 
 // Monospace
-$font-family-monospace-local: "Menlo", "Consolas", "Emoji", monospace;
-$font-family-monospace: "M+ 1m Latin", $font-family-monospace-local;
+$font-stack-monospace-local: "Menlo", "Consolas", "Emoji", monospace;
+$font-stack-monospace: "M+ 1m Latin", $font-stack-monospace-local;
