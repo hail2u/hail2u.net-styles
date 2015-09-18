@@ -31,6 +31,7 @@ $width-search-form-button: 20%;
   }
 
   .button {
+    -webkit-appearance: none;
     background-color: $color-bg-search-form-button;
     border: 0;
     border-radius: 0;
