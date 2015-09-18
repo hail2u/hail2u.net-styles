@@ -25,9 +25,6 @@ $color-fg-breakpoints: #fff;
 
 $color-border-colors: #000;
 
-// Classes
-@import "class/clearfix";
-
 // Show Column
 .show-column::before {
   background-image: linear-gradient(
@@ -158,17 +155,16 @@ body::after {
 
 // Colors
 .colors {
-  @extend %clearfix;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-left: 0;
 
   li {
-    box-sizing: border-box;
     display: block;
-    height: 3rem;
-    margin-top: ($width-gap-small + $width-gap);
+    height: rem($line-height * 1.5);
     overflow: hidden;
-    width: 100%;
+    width: calc((100% / 5) - #{$width-gap-small});
 
     &::before {
       border: 1px solid $color-border-colors;
@@ -177,19 +173,6 @@ body::after {
       display: block;
       height: 100%;
       width: 100%;
-    }
-  }
-
-  @media (min-width: $breakpoint-content) {
-    margin-left: (- $width-gap-small);
-    margin-right: (- $width-gap-small);
-
-    li {
-      float: left;
-      margin-top: 0;
-      padding-left: $width-gap-small;
-      padding-right: $width-gap-small;
-      width: (100% / 5);
     }
   }
 
