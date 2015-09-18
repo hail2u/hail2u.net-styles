@@ -15,7 +15,8 @@
     list-style-type: none;
     margin-top: $margin-small;
 
-    $height-post-list-item: rem($lh * $r) !global;
+    $ratio-text-post-list-item: $r !global;
+    $line-height-post-list-item: $lh !global;
   }
 
   .info {
@@ -25,7 +26,7 @@
   @media (min-width: $breakpoint-content) {
     .info {
       float: right;
-      line-height: ($height-post-list-item / $ratio-text-footing);
+      line-height: ($line-height-post-list-item * $ratio-text-post-list-item / $ratio-text-footing);
       margin-left: $width-gap-small;
     }
   }
