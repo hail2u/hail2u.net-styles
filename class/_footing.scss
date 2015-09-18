@@ -1,5 +1,7 @@
 // Footing
 %footing {
+  @extend %float;
+
   $r: $ratio-text-small;
   $lh: ($line-height-heading / $r);
 

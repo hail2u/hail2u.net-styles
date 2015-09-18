@@ -1,7 +1,6 @@
 // Section Footer
 .section-footer {
   @extend %link-underline-removal;
-  @extend %float;
   @extend %footing;
 
   bottom: 100%;
