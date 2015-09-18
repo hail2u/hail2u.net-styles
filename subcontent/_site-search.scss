@@ -4,7 +4,7 @@ $width-site-search-full: 32%;
 $right-site-search-content: $padding-side-centering;
 $top-site-search: $margin-huge;
 $top-site-search-content: ($margin-top-footlinks + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
-$top-site-search-full: ($margin-top-footlinks-full + (rem($line-height-body * $ratio-text-global-footer) - $height-search-form-query) / 2);
+$top-site-search-full: ($margin-top-footlinks-full + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
 
 .site-search {
   @extend %search-form;
