@@ -7,7 +7,15 @@
   $r: $ratio-text-small;
 
   font-size: rem($r);
-  margin-bottom: $margin;
+  margin-bottom: $margin-top-global-header;
+
+  @media (min-width: $breakpoint-content) {
+    margin-bottom: $margin-top-global-header-content;
+  }
+
+  @media (min-width: $breakpoint-full) {
+    margin-bottom: $margin-top-global-header-full;
+  }
 
   $ratio-text-global-footer: $r !global;
 }
