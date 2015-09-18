@@ -1,28 +1,27 @@
 // Floatage
-$width-max-floatage-content: percentage(1 / pow($ratio, 2));
-
 @mixin floatage-base {
-  max-width: $width-max-floatage-content;
+  max-width: percentage(1 / pow($ratio, 2));
+
 
   &:first-child {
     margin-top: 0;
   }
 }
 
-$margin-side-floatage-content: $width-gap-small;
-
 @media (min-width: $breakpoint-content) {
+  $m: $width-gap-small;
+
   .floatage-left {
     @include floatage-base;
 
     float: left;
-    margin-right: $margin-side-floatage-content;
+    margin-right: $m;
   }
 
   .floatage-right {
     @include floatage-base;
 
     float: right;
-    margin-left: $margin-side-floatage-content;
+    margin-left: $m;
   }
 }

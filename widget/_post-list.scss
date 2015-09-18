@@ -1,12 +1,4 @@
 // Post List
-$ratio-text-post-list-item: $ratio-text-large;
-
-$line-height-post-list-item: $line-height-tiny;
-$margin-top-post-list-item: $margin-small;
-
-$line-height-post-list-info-content: ($line-height-post-list-item * $ratio-text-post-list-item / $ratio-text-footing);
-$margin-left-post-list-info-content: $width-gap-small;
-
 .post-list {
   @extend %link-underline-removal;
 
@@ -15,10 +7,15 @@ $margin-left-post-list-info-content: $width-gap-small;
   li {
     @extend %positioning-root;
 
-    font-size: rem($ratio-text-post-list-item);
-    line-height: $line-height-post-list-item;
+    $r: $ratio-text-large;
+    $lh: $line-height-tiny;
+
+    font-size: rem($r);
+    line-height: $lh;
     list-style-type: none;
-    margin-top: $margin-top-post-list-item;
+    margin-top: $margin-small;
+
+    $height-post-list-item: rem($lh * $r) !global;
   }
 
   .info {
@@ -29,8 +26,8 @@ $margin-left-post-list-info-content: $width-gap-small;
   @media (min-width: $breakpoint-content) {
     .info {
       float: right;
-      line-height: $line-height-post-list-info-content;
-      margin-left: $margin-left-post-list-info-content;
+      line-height: ($height-post-list-item / $ratio-text-footing);
+      margin-left: $width-gap-small;
     }
   }
 

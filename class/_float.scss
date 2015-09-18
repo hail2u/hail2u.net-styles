@@ -1,14 +1,15 @@
 // Float
-$margin-right-float-full: $width-gap-large;
-$width-float-full: $width-supplement;
-
 %float {
   @media (min-width: $breakpoint-full) {
-    margin-right: $margin-right-float-full;
+    $w: $width-supplement;
+
+    margin-right: $width-gap-large;
     position: absolute;
     right: 100%;
     top: 0;
-    width: $width-float-full;
+    width: $w;
     z-index: 1;
+
+    $width-float-full: $w !global;
   }
 }

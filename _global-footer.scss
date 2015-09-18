@@ -1,13 +1,13 @@
 // Global Footer
-$ratio-text-global-footer: $ratio-text-small;
-
-$margin-bottom-global-footer: $margin;
-
 .global-footer {
   @extend %centering;
   @extend %link-underline-removal;
   @extend %positioning-root;
 
-  font-size: rem($ratio-text-global-footer);
-  margin-bottom: $margin-bottom-global-footer;
+  $r: $ratio-text-small;
+
+  font-size: rem($r);
+  margin-bottom: $margin;
+
+  $ratio-text-global-footer: $r !global;
 }

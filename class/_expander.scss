@@ -1,7 +1,9 @@
 // Expander
-$margin-side-expander: (- $padding-side-centering);
-
 %expander {
-  margin-left: $margin-side-expander;
-  margin-right: $margin-side-expander;
+  $m: (- $padding-side-centering);
+
+  margin-left: $m;
+  margin-right: $m;
+
+  $margin-side-expander: $m !global;
 }

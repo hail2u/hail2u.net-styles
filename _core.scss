@@ -1,63 +1,58 @@
 // Root
 @import "assets/partials/hail2u-scss-partials/vendor-extension";
 
-$ratio-text-html: $ratio-text;
-
 html {
   @include font-feature-settings("kern" 1, "liga" 1, "lnum" 1, "pnum" 1);
 
-  font-size: percentage($ratio-text-html);
+  font-size: percentage($ratio-text);
 }
 
 
 // Sections
-$color-fg-body: $color-dark;
-$color-bg-body: $color-light;
-
-$line-height-body: $line-height-small;
-$line-height-body-content: $line-height;
-
 body {
-  background-color: $color-bg-body;
-  color: $color-fg-body;
+  background-color: $color-light;
+  color: $color-dark;
   font-family: $font-family-sans-serif;
-  line-height: $line-height-body;
+  line-height: $line-height-small;
 
   @media (min-width: $breakpoint-content) {
-    line-height: $line-height-body-content;
+    $lh: $line-height;
+
+    line-height: $lh;
+
+    $line-height-body-content: $lh !global;
   }
 }
-
-$ratio-text-heading: $ratio-text-huge;
-$ratio-text-heading-content: $ratio-text-gargantuan;
-
-$margin-top-heading: $margin-enormous;
 
 h1 {
   @extend %heading;
   @extend %link-underline-removal;
 
-  font-size: rem($ratio-text-heading);
-  margin: $margin-top-heading 0 0;
+  $m: $margin-enormous;
+
+  font-size: rem($ratio-text-huge);
+  margin: $m 0 0;
+
+  $margin-top-heading: $m !global;
 
   @media (min-width: $breakpoint-content) {
-    font-size: rem($ratio-text-heading-content);
+    $r: $ratio-text-gargantuan;
+
+    font-size: rem($r);
+
+    $ratio-text-heading-content: $r !global;
+    $height-heading: rem($line-height-heading * $r) !global;
   }
 }
-
-$ratio-text-subheading: $ratio-text-large;
-$ratio-text-subheading-content: $ratio-text-huge;
-
-$margin-top-subheading: $margin-huge;
 
 h2 {
   @extend %heading;
 
-  font-size: rem($ratio-text-subheading);
-  margin: $margin-top-subheading 0 0;
+  font-size: rem($ratio-text-large);
+  margin: $margin-huge 0 0;
 
   @media (min-width: $breakpoint-content) {
-    font-size: rem($ratio-text-subheading-content);
+    font-size: rem($ratio-text-huge);
   }
 }
 
@@ -68,20 +63,16 @@ p {
   @extend %margin-after-heading;
 }
 
-$color-fg-hr: $color-shade-lightest;
-
-$ratio-text-hr: $ratio-text-huge;
-
-$height-hr: rem($ratio-text-hr);
-
 hr {
   @extend %margin;
 
+  $r: $ratio-text-huge;
+
   background-color: transparent;
   border: 0;
-  color: $color-fg-hr;
-  font-size: rem($ratio-text-hr);
-  height: $height-hr;
+  color: $color-shade-lightest;
+  font-size: rem($r);
+  height: rem($r);
   line-height: 1;
   text-align: center;
 
@@ -90,19 +81,15 @@ hr {
   }
 }
 
-@import "assets/partials/hail2u-scss-partials/vendor-extension";
-
-$line-height-pre: $line-height-tiny;
-$margin-top-pre-print: $margin;
-
 pre {
+  @import "assets/partials/hail2u-scss-partials/vendor-extension";
   @extend %margin;
   @extend %margin-after-heading;
   @include font-feature-settings("kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1);
 
   clear: both;
   font-family: $font-family-monospace;
-  line-height: $line-height-pre;
+  line-height: $line-height-tiny;
 
   @media (min-width: $breakpoint-content) {
     overflow: visible;
@@ -112,36 +99,40 @@ pre {
   }
 }
 
-$color-fg-blockquote: $color-shade-dark;
-$color-border-blockquote: $color-tint-light;
-
-$width-border-blockquote: $width-border-large;
-$padding-left-blockquote: $width-gap;
-$margin-left-blockquote-full: (- ($width-border-blockquote + $padding-left-blockquote));
-
 blockquote {
   @extend %margin;
   @extend %margin-after-heading;
 
-  border-left: $width-border-blockquote solid $color-border-blockquote;
-  color: $color-fg-blockquote;
-  padding-left: $padding-left-blockquote;
+  $c-f: $color-shade-dark;
+  $c-b: $color-tint-light;
+  $w: $width-border-large;
+  $p: $width-gap;
+
+  border-left: $w solid $c-b;
+  color: $c-f;
+  padding-left: $p;
+
+  $color-fg-blockquote: $c-f !global;
+  $color-border-blockquote: $c-b !global;
+  $width-border-blockquote: $w !global;
+  $padding-left-blockquote: $p !global;
 
   @media (min-width: $breakpoint-full) {
-    margin-left: $margin-left-blockquote-full;
+    margin-left: (- ($w + $p));
   }
 }
-
-$padding-left-list: $indent;
-$padding-left-list-nested-full: $padding-left-list;
 
 ul,
 ol {
   @extend %margin;
   @extend %margin-after-heading;
 
+  $p: $indent;
+
   clear: both;
-  padding: 0 0 0 $padding-left-list;
+  padding: 0 0 0 $p;
+
+  $padding-left-list: $p !global;
 
   ul,
   ol {
@@ -153,7 +144,7 @@ ol {
 
     ul,
     ol {
-      padding-left: $padding-left-list-nested-full;
+      padding-left: $p;
     }
   }
 }
@@ -169,17 +160,13 @@ dl {
   }
 }
 
-$color-fg-dt: $color-shade-darkest;
-
 dt {
-  color: $color-fg-dt;
+  color: $color-shade-darkest;
   font-weight: bolder;
 }
 
-$margin-left-dd: $indent;
-
 dd {
-  margin-left: $margin-left-dd;
+  margin-left: $indent;
 }
 
 figure {
@@ -188,29 +175,20 @@ figure {
   @extend %positioning-root;
 }
 
-$color-fg-figcaption: $color-shade-dark;
-$color-fg-figcaption-quote: $color-fg-blockquote;
-$color-border-figcaption-quote: $color-border-blockquote;
-
-$margin-top-figcaption: $margin-tiny;
-
-$width-border-figcaption-quote: $width-border-blockquote;
-$padding-left-figcaption-quote: $padding-left-blockquote;
-$padding-top-figcaption-quote: $margin-tiny;
-$margin-left-figcaption-quote-full: (- ($width-border-figcaption-quote + $padding-left-figcaption-quote));
-
 figcaption {
   @extend %float;
 
-  color: $color-fg-figcaption;
-  margin-top: $margin-top-figcaption;
+  $m: $margin-tiny;
+
+  color: $color-shade-dark;
+  margin-top: $m;
 
   blockquote + & {
-    border-left: $width-border-figcaption-quote solid $color-border-figcaption-quote;
-    color: $color-fg-figcaption-quote;
+    border-left: $width-border-blockquote solid $color-border-blockquote;
+    color: $color-fg-blockquote;
     margin-top: 0;
-    padding-left: $padding-left-figcaption-quote;
-    padding-top: $padding-top-figcaption-quote;
+    padding-left: $padding-left-blockquote;
+    padding-top: $m;
   }
 
   @media (min-width: $breakpoint-full) {
@@ -219,7 +197,7 @@ figcaption {
     top: auto;
 
     blockquote + & {
-      margin-left: $margin-left-figcaption-quote-full;
+      margin-left: (- ($width-border-blockquote + $padding-left-blockquote));
       margin-right: 0;
       position: static;
       text-align: left;
@@ -234,20 +212,14 @@ a {
   @extend %link;
 }
 
-$color-fg-em: $color-shade-darkest;
-
 em {
-  color: $color-fg-em;
+  color: $color-shade-darkest;
   font-style: normal;
   font-weight: bolder;
 }
 
-$color-fg-strong: $color-accent-complement;
-
-$width-border-strong: $width-border-small;
-
 strong {
-  color: $color-fg-strong;
+  color: $color-accent-complement;
   font-weight: bolder;
 }
 
@@ -255,11 +227,9 @@ cite {
   font-style: normal;
 }
 
-$letter-spacing-abbr: $width-border-small;
-
 abbr {
   cursor: help;
-  letter-spacing: $letter-spacing-abbr;
+  letter-spacing: $width-border-small;
 }
 
 code,
@@ -277,10 +247,8 @@ kbd {
   }
 }
 
-$color-bg-mark: $color-accent-complement-lightest;
-
 mark {
-  background-color: $color-bg-mark;
+  background-color: $color-accent-complement-lightest;
   color: inherit;
 }
 
@@ -296,8 +264,6 @@ del {
 
 
 // Embedded Content
-$color-bg-img: $color-tint-lightest;
-
 img,
 video {
   box-sizing: border-box;
@@ -306,16 +272,15 @@ video {
   max-width: 100%;
 
   figure & {
-    background-color: $color-bg-img;
+    background-color: $color-tint-lightest;
     vertical-align: bottom;
   }
 }
 
 
 // Tabular Data
-@import "assets/partials/hail2u-scss-partials/vendor-extension";
-
 table {
+  @import "assets/partials/hail2u-scss-partials/vendor-extension";
   @extend %margin;
   @extend %margin-after-heading;
   @include font-feature-settings("pnum" 0, "tnum" 1, "zero" 1);
@@ -331,22 +296,17 @@ table {
   }
 }
 
-$color-border-td: $color-tint-dark;
-
-$width-border-td: $width-border-small;
-$padding-td: $padding-large;
-
 %table-cell,
 td {
-  border-top: $width-border-td solid $color-border-td;
-  padding: $padding-td;
+  $c: $color-tint-dark;
+
+  border-top: $width-border-small solid $c;
+  padding: $padding-large;
   vertical-align: top;
   white-space: nowrap;
+
+  $color-border-td: $c !global;
 }
-
-$color-border-th-thead: $color-border-td;
-
-$width-border-th-thead: $width-border;
 
 th {
   @extend %table-cell;
@@ -354,6 +314,6 @@ th {
   text-align: left;
 
   thead & {
-    border-bottom: $width-border-th-thead solid $color-border-th-thead;
+    border-bottom: $width-border solid $color-border-td;
   }
 }

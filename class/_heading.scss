@@ -1,7 +1,9 @@
 // Heading
-$line-height-heading: $line-height-tiny;
-
 %heading {
+  $lh: $line-height-tiny;
+
   font-weight: 400;
-  line-height: $line-height-heading;
+  line-height: $lh;
+
+  $line-height-heading: $lh !global;
 }

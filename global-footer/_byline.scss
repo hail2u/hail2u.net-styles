@@ -1,13 +1,8 @@
 // Byline
-$color-fg-byline: $color-shade-dark;
-
-$margin-right-byline-full: (- ($width-supplement-outer - $width-gap-small));
-$margin-top-byline-print: $margin-huge;
-
 .byline {
   @extend %float;
 
-  color: $color-fg-byline;
+  color: $color-shade-dark;
 
   mark {
     background-color: transparent;
@@ -16,7 +11,7 @@ $margin-top-byline-print: $margin-huge;
 
   @media (min-width: $breakpoint-full) {
     bottom: 0;
-    margin-right: $margin-right-byline-full;
+    margin-right: (- ($width-supplement-outer - $width-gap-small));
     top: auto;
   }
 }

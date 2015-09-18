@@ -1,21 +1,12 @@
 // Pull Quote
-$color-fg-pull-quote: $color-shade-dark;
-
-$ratio-text-pull-quote: $ratio-text-huge;
-
-$line-height-pull-quote: $line-height-tiny;
-$margin-left-pull-quote-full: (- ($width-supplement + $width-gap-large));
-$margin-right-pull-quote-full: $width-gap;
-$margin-side-pull-quote: $width-gap;
-$margin-side-pull-quote-content: $indent;
-$width-pull-quote-full: ($width-supplement + $width-gap-large + $width-supplement / $ratio);
-
 .pull-quote {
-  color: $color-fg-pull-quote;
-  font-size: rem($ratio-text-pull-quote);
-  line-height: $line-height-pull-quote;
-  margin-left: $margin-side-pull-quote;
-  margin-right: $margin-side-pull-quote;
+  $m: $width-gap;
+
+  color: $color-shade-dark;
+  font-size: rem($ratio-text-huge);
+  line-height: $line-height-tiny;
+  margin-left: $m;
+  margin-right: $m;
   text-align: center;
 
   p {
@@ -33,14 +24,16 @@ $width-pull-quote-full: ($width-supplement + $width-gap-large + $width-supplemen
   }
 
   @media (min-width: $breakpoint-content) {
-    margin-left: $margin-side-pull-quote-content;
-    margin-right: $margin-side-pull-quote-content;
+    $m: $indent;
+
+    margin-left: $m;
+    margin-right: $m;
   }
 
   @media (min-width: $breakpoint-full) {
     float: left;
-    margin-left: $margin-left-pull-quote-full;
-    margin-right: $margin-right-pull-quote-full;
-    width: $width-pull-quote-full;
+    margin-left: (- ($width-supplement + $width-gap-large));
+    margin-right: $width-gap;
+    width: ($width-supplement + $width-gap-large + $width-supplement / $ratio);
   }
 }

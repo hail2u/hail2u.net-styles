@@ -1,12 +1,6 @@
 // Print
 @import "assets/partials/hail2u-scss-partials/black-prints";
 
-$font-family-body-print: serif;
-
-$font-family-pre-print: monospace;
-
-$font-family-code-print: $font-family-pre-print;
-
 @media print {
   @include black-prints;
 
@@ -26,7 +20,7 @@ $font-family-code-print: $font-family-pre-print;
 
   // Font
   body {
-    font-family: $font-family-body-print;
+    font-family: serif;
   }
 
   pre,
@@ -34,7 +28,7 @@ $font-family-code-print: $font-family-pre-print;
   samp,
   var,
   kbd {
-    font-family: $font-family-code-print;
+    font-family: monospace;
   }
 
   // Page Break
@@ -67,7 +61,7 @@ $font-family-code-print: $font-family-pre-print;
   }
 
   pre {
-    margin: $margin-top-pre-print 0 0;
+    margin: $margin 0 0;
     padding: 0;
   }
 
@@ -94,10 +88,10 @@ $font-family-code-print: $font-family-pre-print;
   }
 
   .first-heading {
-    margin-top: $margin-top-first-heading-print;
+    margin-top: ($margin + rem($line-height));
   }
 
   .byline {
-    margin-top: $margin-top-byline-print;
+    margin-top: $margin-huge;
   }
 }

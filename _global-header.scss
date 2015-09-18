@@ -1,20 +1,28 @@
 // Global Header
-$margin-top-global-header: $margin-small;
-$margin-top-global-header-content: $margin;
-$margin-top-global-header-full: $margin-large;
-
 .global-header {
   @extend %centering;
   @extend %link-underline-removal;
   @extend %positioning-root;
 
-  margin-top: $margin-top-global-header;
+  $m: $margin-small;
+
+  margin-top: $m;
+
+  $margin-top-global-header: $m !global;
 
   @media (min-width: $breakpoint-content) {
-    margin-top: $margin-top-global-header-content;
+    $m: $margin;
+
+    margin-top: $m;
+
+    $margin-top-global-header-content: $m !global;
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-top: $margin-top-global-header-full;
+    $m: $margin-large;
+
+    margin-top: $m;
+
+    $margin-top-global-header-full: $m !global;
   }
 }

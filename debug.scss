@@ -15,32 +15,25 @@
 @import "var/ratio";
 @import "var/size";
 
-$color-bg-column: #f0f;
-$color-bg-gutter: #0f0;
-
-$color-outline-outline: #f0f;
-
-$color-bg-breakpoints: #096;
-$color-fg-breakpoints: #fff;
-
-$color-border-colors: #000;
-
 // Show Column
 .show-column::before {
+  $c-c: rgb(255, 0, 255);
+  $c-g: rgb(0, 255, 0);
+
   background-image: linear-gradient(
     to right,
-    $color-bg-gutter 0,
-    $color-bg-gutter 100%
+    $c-g 0,
+    $c-g 100%
   ),
   linear-gradient(
     to right,
-    $color-bg-gutter 0,
-    $color-bg-gutter 100%
+    $c-g 0,
+    $c-g 100%
   ),
   linear-gradient(
     to right,
-    $color-bg-column 0,
-    $color-bg-column 100%
+    $c-c 0,
+    $c-c 100%
   );
   background-position: left center, right center, center;
   background-repeat: repeat-y;
@@ -58,12 +51,12 @@ $color-border-colors: #000;
   @media (min-width: $breakpoint-content) {
     background-image: linear-gradient(
       to right,
-      $color-bg-gutter 0,
-      $color-bg-gutter $width-gap-small,
-      $color-bg-column $width-gap-small,
-      $color-bg-column ($width-gap-small + $width-content),
-      $color-bg-gutter ($width-gap-small + $width-content),
-      $color-bg-gutter $width-content-outer
+      $c-g 0,
+      $c-g $width-gap-small,
+      $c-c $width-gap-small,
+      $c-c ($width-gap-small + $width-content),
+      $c-g ($width-gap-small + $width-content),
+      $c-g $width-content-outer
     );
     background-position: center;
     background-size: $width-content-outer 1px;
@@ -72,16 +65,16 @@ $color-border-colors: #000;
   @media (min-width: $breakpoint-full) {
     background-image: linear-gradient(
       to right,
-      $color-bg-gutter 0,
-      $color-bg-gutter $width-gap-small,
-      $color-bg-column $width-gap-small,
-      $color-bg-column ($width-gap-small + $width-supplement),
-      $color-bg-gutter ($width-gap-small + $width-supplement),
-      $color-bg-gutter ($width-gap-small + $width-supplement + $width-gap-large),
-      $color-bg-column ($width-gap-small + $width-supplement + $width-gap-large),
-      $color-bg-column ($width-gap-small + $width-full),
-      $color-bg-gutter ($width-gap-small + $width-full),
-      $color-bg-gutter $width-full-outer
+      $c-g 0,
+      $c-g $width-gap-small,
+      $c-c $width-gap-small,
+      $c-c ($width-gap-small + $width-supplement),
+      $c-g ($width-gap-small + $width-supplement),
+      $c-g ($width-gap-small + $width-supplement + $width-gap-large),
+      $c-c ($width-gap-small + $width-supplement + $width-gap-large),
+      $c-c ($width-gap-small + $width-full),
+      $c-g ($width-gap-small + $width-full),
+      $c-g $width-full-outer
     );
     background-size: $width-full-outer 1px;
   }
@@ -89,14 +82,14 @@ $color-border-colors: #000;
 
 // Show Outline
 .show-outline * {
-  outline: 1px solid $color-outline-outline;
+  outline: 1px solid rgb(255, 0, 255);
 }
 
 // Breakpoints
 body::after {
-  background-color: $color-bg-breakpoints;
+  background-color: rgb(0, 153, 102);
   bottom: .5rem;
-  color: $color-fg-breakpoints;
+  color: rgb(255, 255, 255);
   content: "Small";
   display: block;
   font-size: .875rem;
@@ -167,7 +160,7 @@ body::after {
     width: calc((100% / 5) - #{$width-gap-small});
 
     &::before {
-      border: 1px solid $color-border-colors;
+      border: 1px solid rgb(0, 0, 0);
       box-sizing: border-box;
       content: "";
       display: block;

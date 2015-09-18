@@ -1,11 +1,9 @@
 // Content
-$margin-top-content: (- $margin-top-heading);
-
 .content {
   @extend %centering;
   @extend %positioning-root;
 
-  margin-top: $margin-top-content;
+  margin-top: (- $margin-top-heading);
 
   > article,
   > section {

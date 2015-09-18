@@ -1,24 +1,22 @@
 // Flat UL
-$padding-left-flat-ul: (- $margin-side-expander + $padding-left-list);
-$padding-side-flat-ul-item-full: $width-gap-small;
-$width-flat-ul-item-full: (100% / 3);
-
 .flat-ul {
   @extend %clearfix;
   @extend %expander;
 
-  padding-left: $padding-left-flat-ul;
+  padding-left: (- $margin-side-expander + $padding-left-list);
 
   @media (min-width: $breakpoint-content) {
     padding-left: 0;
 
     li {
+      $p: $width-gap-small;
+
       box-sizing: border-box;
       display: block;
       float: left;
-      padding-left: $padding-side-flat-ul-item-full;
-      padding-right: $padding-side-flat-ul-item-full;
-      width: $width-flat-ul-item-full;
+      padding-left: $p;
+      padding-right: $p;
+      width: (100% / 3);
     }
   }
 }

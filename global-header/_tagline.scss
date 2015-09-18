@@ -1,23 +1,27 @@
 // Tagline
-$ratio-text-tagline: $ratio-text-large;
-$ratio-text-tagline-content: $ratio-text-huge;
-
-$line-height-tagline: $line-height-tiny;
-$margin-top-tagline: ($margin-top-global-header * $ratio);
-$margin-top-tagline-content: ($margin-top-global-header-content * $ratio);
-$margin-top-tagline-full: ($margin-top-global-header-full * $ratio);
-
 .tagline {
-  font-size: rem($ratio-text-tagline);
-  line-height: $line-height-tagline;
-  margin-top: $margin-top-tagline;
+  $m: ($margin-top-global-header * $ratio);
+
+  font-size: rem($ratio-text-large);
+  line-height: $line-height-tiny;
+  margin-top: $m;
+
+  $margin-top-tagline: $m !global;
 
   @media (min-width: $breakpoint-content) {
-    font-size: rem($ratio-text-tagline-content);
-    margin-top: $margin-top-tagline-content;
+    $m: ($margin-top-global-header-content * $ratio);
+
+    font-size: rem($ratio-text-huge);
+    margin-top: $m;
+
+    $margin-top-tagline-content: $m !global;
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-top: $margin-top-tagline-full;
+    $m: ($margin-top-global-header-full * $ratio);
+
+    margin-top: $m;
+
+    $margin-top-tagline-full: $m !global;
   }
 }

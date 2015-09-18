@@ -1,26 +1,19 @@
 // Site Search
-$width-site-search-content: 43%;
-$width-site-search-full: 32%;
-$right-site-search-content: $padding-side-centering;
-$top-site-search: $margin-huge;
-$top-site-search-content: ($margin-top-footlinks + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
-$top-site-search-full: ($margin-top-footlinks-full + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
-
 .site-search {
   @extend %search-form;
 
-  top: $top-site-search;
+  top: $margin-huge;
 
   @media (min-width: $breakpoint-content) {
     position: absolute;
-    right: $right-site-search-content;
-    top: $top-site-search-content;
-    width: $width-site-search-content;
+    right: $padding-side-centering;
+    top: ($margin-top-footlinks + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
+    width: 43%;
     z-index: 1;
   }
 
   @media (min-width: $breakpoint-full) {
-    top: $top-site-search-full;
-    width: $width-site-search-full;
+    top: ($margin-top-footlinks-full + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
+    width: 32%;
   }
 }

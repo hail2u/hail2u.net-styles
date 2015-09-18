@@ -1,17 +1,8 @@
 // Site Navigation
-$color-border-site-navigation-mark: $color-accent;
-
-$ratio-text-site-navigation: $ratio-text-small;
-
-$line-height-site-navigation-item: ($line-height / $ratio-text-site-navigation);
-$padding-right-site-navigation-item: $padding-side-centering;
-$padding-left-site-navigation-item-content: $padding-right-site-navigation-item;
-
-$width-border-site-navigation-mark: $width-border;
-$padding-bottom-site-navigation-mark: $padding-small;
-
 .site-navigation {
-  font-size: rem($ratio-text-site-navigation);
+  $r: $ratio-text-small;
+
+  font-size: rem($r);
   margin-top: 0;
   padding-left: 0;
   position: absolute;
@@ -21,8 +12,8 @@ $padding-bottom-site-navigation-mark: $padding-small;
 
   li {
     display: table-cell;
-    line-height: $line-height-site-navigation-item;
-    padding-right: $padding-right-site-navigation-item;
+    line-height: ($line-height / $r);
+    padding-right: $padding-side-centering;
   }
 
   a {
@@ -32,13 +23,13 @@ $padding-bottom-site-navigation-mark: $padding-small;
 
   mark {
     background-color: transparent;
-    border-bottom: $width-border-site-navigation-mark solid $color-border-site-navigation-mark;
-    padding-bottom: $padding-bottom-site-navigation-mark;
+    border-bottom: $width-border solid $color-accent;
+    padding-bottom: $padding-small;
   }
 
   @media (min-width: $breakpoint-content) {
     li {
-      padding-left: $padding-left-site-navigation-item-content;
+      padding-left: $padding-side-centering;
     }
   }
 

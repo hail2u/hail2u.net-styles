@@ -1,16 +1,9 @@
 // Logo
-$color-fg-logo: $color-shade-darkest;
-
-$ratio-text-logo: $ratio-text;
-
-$line-height-logo: $line-height;
-$margin-left-logo-full: (- ($width-supplement + $width-gap-large));
-
 .logo {
-  color: $color-fg-logo;
-  font-size: rem($ratio-text-logo);
+  color: $color-shade-darkest;
+  font-size: rem($ratio-text);
   font-weight: bold;
-  line-height: $line-height-logo;
+  line-height: $line-height;
   margin-top: 0;
   text-transform: uppercase;
 
@@ -23,6 +16,6 @@ $margin-left-logo-full: (- ($width-supplement + $width-gap-large));
   }
 
   @media (min-width: $breakpoint-full) {
-    margin-left: $margin-left-logo-full;
+    margin-left: (- ($width-supplement + $width-gap-large));
   }
 }

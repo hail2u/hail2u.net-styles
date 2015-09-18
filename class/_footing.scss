@@ -1,25 +1,20 @@
 // Footing
-$color-fg-footing: $color-shade-lightest;
-
-$color-fg-footing-date: $color-shade-dark;
-
-$color-fg-footing-tag: $color-shade-dark;
-
-$ratio-text-footing: $ratio-text-small;
-
-$line-height-footing: ($line-height-heading / $ratio-text-footing);
-$height-footing: rem($ratio-text-footing * $line-height-footing);
-
 %footing {
-  color: $color-fg-footing;
-  font-size: rem($ratio-text-footing);
-  line-height: $line-height-footing;
+  $r: $ratio-text-small;
+  $lh: ($line-height-heading / $r);
+
+  color: $color-shade-lightest;
+  font-size: rem($r);
+  line-height: $lh;
+
+  $ratio-text-footing: $r !global;
+  $height-footing: rem($lh * $r) !global;
 
   .date {
-    color: $color-fg-footing-date;
+    color: $color-shade-dark;
   }
 
   .tag {
-    color: $color-fg-footing-tag;
+    color: $color-shade-dark;
   }
 }

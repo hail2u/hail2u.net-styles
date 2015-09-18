@@ -1,45 +1,35 @@
 // Search Form
 @import "../assets/partials/hail2u-scss-partials/image-replacement";
 
-$color-fg-search-form-query: $color-dark;
-$color-bg-search-form-query: $color-light-light;
-$color-border-search-form-query: $color-tint-light;
-
-$color-fg-search-form-button: $color-light-light;
-$color-bg-search-form-button: $color-accent-lightest;
-
-$width-border-search-form-query: $width-border-small;
-$height-search-form-query: (rem($line-height) + $padding-small * 2);
-$width-search-form-query: 79%;
-
-$height-search-form-button: $height-search-form-query;
-$width-search-form-button: 20%;
-
 %search-form {
   @extend %positioning-root;
 
   .query {
+    $h: (rem($line-height) + $padding-small * 2);
+
     -webkit-appearance: none;
-    background-color: $color-bg-search-form-query;
-    border: $width-border-search-form-query solid $color-border-search-form-query;
+    background-color: $color-light-light;
+    border: $width-border-small solid $color-tint-light;
     border-radius: 0;
     box-sizing: border-box;
-    color: $color-fg-search-form-query;
-    height: $height-search-form-query;
+    color: $color-dark;
+    height: $h;
     padding: 0;
-    width: $width-search-form-query;
+    width: 79%;
+
+    $height-search-form-query: $h !global;
   }
 
   .button {
     -webkit-appearance: none;
-    background-color: $color-bg-search-form-button;
+    background-color: $color-accent-lightest;
     border: 0;
     border-radius: 0;
-    color: $color-fg-search-form-button;
-    height: $height-search-form-button;
+    color: $color-light-light;
+    height: $height-search-form-query;
     padding: 0;
     position: absolute;
     right: 0;
-    width: $width-search-form-button;
+    width: 20%;
   }
 }

@@ -1,8 +1,4 @@
 // Section Footer
-$width-section-footer-full: $width-float-full;
-
-$margin-top-section-footer-p-full: rem(($ratio-text-heading-content * $line-height-heading - $ratio-text-footing * $line-height-footing) / 2);
-
 .section-footer {
   @extend %link-underline-removal;
   @extend %float;
@@ -19,10 +15,10 @@ $margin-top-section-footer-p-full: rem(($ratio-text-heading-content * $line-heig
   }
 
   @media (min-width: $breakpoint-full) {
-    width: $width-section-footer-full;
+    width: $width-float-full;
 
     p {
-      margin-top: $margin-top-section-footer-p-full;
+      margin-top: (($height-heading - $height-footing) / 2);
     }
   }
 }

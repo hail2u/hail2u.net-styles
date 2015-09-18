@@ -1,13 +1,9 @@
 // Sidenote
-$color-fg-sidenote: $color-shade-lightest;
-
-$ratio-text-sidenote: $ratio-text-small;
-
 .sidenote {
   @extend %float;
 
-  color: $color-fg-sidenote;
-  font-size: rem($ratio-text-sidenote);
+  color: $color-shade-lightest;
+  font-size: rem($ratio-text-small);
 
   @media (min-width: $breakpoint-full) {
     text-align: left;
