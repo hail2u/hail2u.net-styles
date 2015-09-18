@@ -1,7 +1,6 @@
 // Image Replacement
-@import "../assets/partials/hail2u-scss-partials/image-replacement";
-
 %ir {
+  @import "../assets/partials/hail2u-scss-partials/image-replacement";
   @include ir-pseudo-element;
 
   &::before {

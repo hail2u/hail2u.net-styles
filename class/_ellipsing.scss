@@ -1,7 +1,6 @@
 // Ellipsing
-@import "../assets/partials/hail2u-scss-partials/vendor-extension";
-
 %ellipsing {
+  @import "../assets/partials/hail2u-scss-partials/vendor-extension";
   @include font-feature-settings(normal);
 
   overflow: hidden;

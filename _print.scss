@@ -1,7 +1,6 @@
 // Print
-@import "assets/partials/hail2u-scss-partials/black-prints";
-
 @media print {
+  @import "assets/partials/hail2u-scss-partials/black-prints";
   @include black-prints;
 
   // Hiding

@@ -1,7 +1,6 @@
 // Root
-@import "assets/partials/hail2u-scss-partials/vendor-extension";
-
 html {
+  @import "assets/partials/hail2u-scss-partials/vendor-extension";
   @include font-feature-settings("kern" 1, "liga" 1, "lnum" 1, "pnum" 1);
 
   font-size: percentage($ratio-text);
