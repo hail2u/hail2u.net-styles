@@ -102,17 +102,17 @@ blockquote {
   @extend %margin;
   @extend %margin-after-heading;
 
-  $c-f: $color-shade-dark;
-  $c-b: $color-tint-light;
+  $f: $color-shade-dark;
+  $b: $color-tint-light;
   $w: $width-border-large;
   $p: $width-gap;
 
-  border-left: $w solid $c-b;
-  color: $c-f;
+  border-left: $w solid $b;
+  color: $f;
   padding-left: $p;
 
-  $color-fg-blockquote: $c-f !global;
-  $color-border-blockquote: $c-b !global;
+  $color-fg-blockquote: $f !global;
+  $color-border-blockquote: $b !global;
   $width-border-blockquote: $w !global;
   $padding-left-blockquote: $p !global;
 

@@ -17,23 +17,23 @@
 
 // Show Column
 .show-column::before {
-  $c-c: rgb(255, 0, 255);
-  $c-g: rgb(0, 255, 0);
+  $c: rgb(255, 0, 255);
+  $g: rgb(0, 255, 0);
 
   background-image: linear-gradient(
     to right,
-    $c-g 0,
-    $c-g 100%
+    $g 0,
+    $g 100%
   ),
   linear-gradient(
     to right,
-    $c-g 0,
-    $c-g 100%
+    $g 0,
+    $g 100%
   ),
   linear-gradient(
     to right,
-    $c-c 0,
-    $c-c 100%
+    $c 0,
+    $c 100%
   );
   background-position: left center, right center, center;
   background-repeat: repeat-y;
@@ -51,12 +51,12 @@
   @media (min-width: $breakpoint-content) {
     background-image: linear-gradient(
       to right,
-      $c-g 0,
-      $c-g $width-gap-small,
-      $c-c $width-gap-small,
-      $c-c ($width-gap-small + $width-content),
-      $c-g ($width-gap-small + $width-content),
-      $c-g $width-content-outer
+      $g 0,
+      $g $width-gap-small,
+      $c $width-gap-small,
+      $c ($width-gap-small + $width-content),
+      $g ($width-gap-small + $width-content),
+      $g $width-content-outer
     );
     background-position: center;
     background-size: $width-content-outer 1px;
@@ -65,16 +65,16 @@
   @media (min-width: $breakpoint-full) {
     background-image: linear-gradient(
       to right,
-      $c-g 0,
-      $c-g $width-gap-small,
-      $c-c $width-gap-small,
-      $c-c ($width-gap-small + $width-supplement),
-      $c-g ($width-gap-small + $width-supplement),
-      $c-g ($width-gap-small + $width-supplement + $width-gap-large),
-      $c-c ($width-gap-small + $width-supplement + $width-gap-large),
-      $c-c ($width-gap-small + $width-full),
-      $c-g ($width-gap-small + $width-full),
-      $c-g $width-full-outer
+      $g 0,
+      $g $width-gap-small,
+      $c $width-gap-small,
+      $c ($width-gap-small + $width-supplement),
+      $g ($width-gap-small + $width-supplement),
+      $g ($width-gap-small + $width-supplement + $width-gap-large),
+      $c ($width-gap-small + $width-supplement + $width-gap-large),
+      $c ($width-gap-small + $width-full),
+      $g ($width-gap-small + $width-full),
+      $g $width-full-outer
     );
     background-size: $width-full-outer 1px;
   }

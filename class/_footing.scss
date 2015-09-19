@@ -12,10 +12,7 @@
   $ratio-text-footing: $r !global;
   $height-footing: rem($lh * $r) !global;
 
-  .date {
-    color: $color-shade-dark;
-  }
-
+  .date,
   .tag {
     color: $color-shade-dark;
   }
