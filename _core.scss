@@ -175,7 +175,7 @@ figure {
 }
 
 figcaption {
-  @extend %float;
+  @extend %protrusion;
 
   $m: $margin-tiny;
 

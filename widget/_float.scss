@@ -1,0 +1,10 @@
+// Float
+.float {
+  float: right;
+  margin-left: $width-gap-small;
+  max-width: percentage(1 / pow($ratio, 2));
+
+  &:first-child {
+    margin-top: 0;
+  }
+}

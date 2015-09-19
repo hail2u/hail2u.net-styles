@@ -1,5 +1,5 @@
-// Float
-%float {
+// Protrusion
+%protrusion {
   @media (min-width: $breakpoint-full) {
     $w: $width-supplement;
 
@@ -10,6 +10,6 @@
     width: $w;
     z-index: 1;
 
-    $width-float-full: $w !global;
+    $width-protrusion-full: $w !global;
   }
 }

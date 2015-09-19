@@ -27,11 +27,11 @@
 @import "class/clearfix";
 @import "class/ellipsing";
 @import "class/expander";
-@import "class/float";
 @import "class/heading";
 @import "class/link";
 @import "class/margin";
 @import "class/positioning-root";
+@import "class/protrusion";
 @import "class/search-form";
 
 @import "class/footing";
@@ -69,7 +69,7 @@
 // Widget
 @import "widget/drop";
 @import "widget/flat-ul";
-@import "widget/floatage";
+@import "widget/float";
 @import "widget/footnote";
 @import "widget/full-width";
 @import "widget/post-list";

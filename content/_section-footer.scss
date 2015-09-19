@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    width: $width-float-full;
+    width: $width-protrusion-full;
 
     p {
       margin-top: (($height-heading - $height-footing) / 2);
