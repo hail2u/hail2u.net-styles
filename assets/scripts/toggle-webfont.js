@@ -1,8 +1,21 @@
 (function (d) {
   "use strict";
 
-  var toggle = function (evt) {
-    d.body.classList.toggle("no-webfont");
+  var c = d.body.classList;
+  var n = "no-webfont";
+  var l;
+
+  var toggle = function () {
+    c.toggle(n);
+    l = this.textContent;
+
+    if (c.contains(n)) {
+      l = l.replace(/無/, "有");
+    } else {
+      l = l.replace(/有/, "無");
+    }
+
+    this.textContent = l;
   };
 
   var init = function () {
