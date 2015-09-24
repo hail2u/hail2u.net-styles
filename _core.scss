@@ -69,6 +69,7 @@ hr {
 
   background-color: transparent;
   border: 0;
+  clear: both;
   color: $color-shade-lightest;
   font-size: rem($r);
   height: rem($r);
@@ -128,7 +129,6 @@ ol {
 
   $p: $indent;
 
-  clear: both;
   padding: 0 0 0 $p;
 
   $padding-left-list: $p !global;
@@ -151,8 +151,6 @@ ol {
 dl {
   @extend %margin;
   @extend %margin-after-heading;
-
-  clear: both;
 
   dl {
     margin-top: 0;
