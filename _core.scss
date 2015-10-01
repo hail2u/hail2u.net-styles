@@ -13,6 +13,7 @@ body {
   color: $color-dark;
   font-family: $font-stack-sans-serif;
   line-height: $line-height-small;
+  margin: 0;
 
   @media (min-width: $breakpoint-content) {
     $lh: $line-height;
@@ -69,6 +70,7 @@ hr {
 
   background-color: transparent;
   border: 0;
+  box-sizing: content-box;
   clear: both;
   color: $color-shade-lightest;
   font-size: rem($r);
@@ -89,7 +91,9 @@ pre {
 
   clear: both;
   font-family: $font-stack-monospace;
+  font-size: 1em;
   line-height: $line-height-tiny;
+  overflow: auto;
 
   @media (min-width: $breakpoint-content) {
     overflow: visible;
@@ -208,6 +212,10 @@ figcaption {
   }
 }
 
+main {
+  display: block;
+}
+
 
 // Text-level Semantics
 a {
@@ -239,6 +247,7 @@ var,
 samp,
 kbd {
   font-family: $font-stack-monospace;
+  font-size: 1em;
 
   p &::before,
   p &::after {
@@ -268,6 +277,7 @@ del {
 // Embedded Content
 img,
 video {
+  border: 0;
   box-sizing: border-box;
   height: auto;
   max-height: 100%;
@@ -287,6 +297,8 @@ table {
   @extend %margin-after-heading;
   @include font-feature-settings("pnum" 0, "tnum" 1, "zero" 1);
 
+  border-collapse: collapse;
+  border-spacing: 0;
   clear: both;
   display: block;
   max-width: 100%;
@@ -318,4 +330,10 @@ th {
   thead & {
     border-bottom: $width-border solid $color-border-td;
   }
+}
+
+
+// SVG
+svg:not(:root) {
+  overflow: hidden;
 }
