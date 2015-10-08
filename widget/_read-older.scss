@@ -8,9 +8,10 @@
 
     $m: $margin-huge;
 
+    color: $color-dark;
     content: "Read older:";
     display: block;
-    font-family: $font-stack-sans-serif;
+    font-weight: bolder;
     line-height: 1;
     margin-top: $m;
     text-transform: uppercase;

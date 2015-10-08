@@ -15,7 +15,7 @@ html {
 body {
   background-color: $color-light;
   color: $color-dark;
-  font-family: $font-stack-serif;
+  font-family: $font-stack-sans-serif;
   line-height: $line-height-small;
   margin: 0;
 
@@ -167,7 +167,6 @@ dl {
 
 dt {
   color: $color-shade-darkest;
-  font-family: $font-stack-sans-serif;
 }
 
 dd {
@@ -228,13 +227,12 @@ a {
 
 em {
   color: $color-shade-darkest;
-  font-family: $font-stack-sans-serif;
   font-style: normal;
+  font-weight: bolder;
 }
 
 strong {
   color: $color-accent-complement;
-  font-family: $font-stack-sans-serif;
   font-weight: normal;
 }
 
@@ -330,8 +328,6 @@ td {
 th {
   @extend %table-cell;
 
-  font-family: $font-stack-sans-serif;
-  font-weight: normal;
   text-align: left;
 
   thead & {

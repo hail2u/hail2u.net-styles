@@ -1,11 +1,11 @@
 // Seealso
 .seealso {
-  font-family: $font-stack-sans-serif;
   font-size: rem($ratio-text-large);
+  font-weight: bolder;
   text-transform: uppercase;
 
   a {
-    font-family: $font-stack-serif;
+    font-weight: normal;
     text-transform: none;
   }
 }
