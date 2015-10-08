@@ -2,6 +2,7 @@
 .site-navigation {
   $r: $ratio-text-small;
 
+  font-family: $font-stack-sans-serif;
   font-size: rem($r);
   position: absolute;
   right: 0;
