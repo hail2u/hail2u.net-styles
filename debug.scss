@@ -120,6 +120,10 @@ body::after {
 
 // Fonts
 .font-family-body {
+  font-family: $font-stack-serif;
+}
+
+.font-family-heading {
   font-family: $font-stack-sans-serif;
 }
 
@@ -133,18 +137,6 @@ body::after {
 
 .bold {
   font-weight: bold;
-}
-
-.no-webfont {
-  font-family: $font-stack-sans-serif-local;
-
-  pre {
-    font-family: $font-stack-monospace-local;
-  }
-
-  code {
-    font-family: $font-stack-monospace-local;
-  }
 }
 
 // Colors

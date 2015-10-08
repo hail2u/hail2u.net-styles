@@ -4,10 +4,14 @@
   src: local("Apple Color Emoji"), local("Segoe UI Emoji"), local("Segoe UI Symbol");
 }
 
+// Serif
+$font-stack-serif-local: "Georgia", "Emoji", serif;
+$font-stack-serif: $font-stack-serif-local;
+
 // Sans-serif
-$font-stack-sans-serif-local: "Helvetica Neue", "Calibri", "Emoji", sans-serif;
-$font-stack-sans-serif: "Eau Douce", $font-stack-sans-serif-local;
+$font-stack-sans-serif-local: "San Francisco", "Calibri", "Emoji", sans-serif;
+$font-stack-sans-serif: $font-stack-sans-serif-local;
 
 // Monospace
 $font-stack-monospace-local: "Menlo", "Consolas", "Emoji", monospace;
-$font-stack-monospace: "M+ 1m Latin", $font-stack-monospace-local;
+$font-stack-monospace: $font-stack-monospace-local;

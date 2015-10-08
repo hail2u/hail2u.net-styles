@@ -4,6 +4,10 @@ html {
   @include font-feature-settings("kern" 1, "liga" 1, "lnum" 1, "pnum" 1);
 
   font-size: percentage($ratio-text);
+
+  @media (min-width: $breakpoint-content) {
+    font-size: percentage($ratio-text-large);
+  }
 }
 
 
@@ -11,7 +15,7 @@ html {
 body {
   background-color: $color-light;
   color: $color-dark;
-  font-family: $font-stack-sans-serif;
+  font-family: $font-stack-serif;
   line-height: $line-height-small;
   margin: 0;
 
@@ -163,7 +167,7 @@ dl {
 
 dt {
   color: $color-shade-darkest;
-  font-weight: bolder;
+  font-family: $font-stack-sans-serif;
 }
 
 dd {
@@ -224,13 +228,14 @@ a {
 
 em {
   color: $color-shade-darkest;
+  font-family: $font-stack-sans-serif;
   font-style: normal;
-  font-weight: bolder;
 }
 
 strong {
   color: $color-accent-complement;
-  font-weight: bolder;
+  font-family: $font-stack-sans-serif;
+  font-weight: normal;
 }
 
 cite {
@@ -325,6 +330,8 @@ td {
 th {
   @extend %table-cell;
 
+  font-family: $font-stack-sans-serif;
+  font-weight: normal;
   text-align: left;
 
   thead & {

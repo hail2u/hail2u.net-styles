@@ -2,6 +2,7 @@
 .tagline {
   $m: ($margin-top-global-header * $ratio);
 
+  font-family: $font-stack-sans-serif;
   font-size: rem($ratio-text-large);
   line-height: $line-height-tiny;
   margin-top: $m;
