@@ -18,13 +18,10 @@ $width: 45em;
 // Imports
 @import "assets/partials/hail2u-scss-partials/clearfix";
 @import "assets/partials/hail2u-scss-partials/natural";
-@import "assets/partials/hail2u-scss-partials/vendor-extension";
 
 
 // Styles
 body {
-  @include font-feature-settings("kern" 1, "liga" 1, "lnum" 1, "pnum" 1);
-
   margin: $font-size;
   max-width: $width;
 }
@@ -44,15 +41,11 @@ h6 {
 }
 
 pre {
-  @include font-feature-settings("kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1);
-
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
 
 table {
-  @include font-feature-settings("pnum" 0, "tnum" 1, "zero" 1);
-
   display: block;
   max-width: 100%;
   overflow-x: auto;

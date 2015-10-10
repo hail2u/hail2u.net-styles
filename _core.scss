@@ -1,8 +1,5 @@
 // Root
 html {
-  @import "assets/partials/hail2u-scss-partials/vendor-extension";
-  @include font-feature-settings("kern" 1, "liga" 1, "lnum" 1, "pnum" 1);
-
   font-size: percentage($ratio-text);
 
   @media (min-width: $breakpoint-content) {
@@ -88,10 +85,8 @@ hr {
 }
 
 pre {
-  @import "assets/partials/hail2u-scss-partials/vendor-extension";
   @extend %margin;
   @extend %margin-after-heading;
-  @include font-feature-settings("kern" 0, "liga" 0, "pnum" 0, "tnum" 1, "zero" 1);
 
   clear: both;
   font-family: $font-stack-monospace;
@@ -295,10 +290,8 @@ video {
 
 // Tabular Data
 table {
-  @import "assets/partials/hail2u-scss-partials/vendor-extension";
   @extend %margin;
   @extend %margin-after-heading;
-  @include font-feature-settings("pnum" 0, "tnum" 1, "zero" 1);
 
   border-collapse: collapse;
   border-spacing: 0;
