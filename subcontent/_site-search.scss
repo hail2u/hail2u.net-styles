@@ -14,5 +14,6 @@
 
   @media (min-width: $breakpoint-full) {
     top: ($margin-top-footlinks-full + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
+    width: percentage(1 / 3);
   }
 }
