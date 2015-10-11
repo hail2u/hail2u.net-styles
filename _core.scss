@@ -28,21 +28,14 @@ h1 {
   @extend %heading;
   @extend %link-underline-removal;
 
-  $m: $margin-enormous;
+  $m: $margin-gargantuan;
+  $r: $ratio-text-huge;
 
-  font-size: rem($ratio-text-huge);
+  font-size: rem($r);
   margin: $m 0 0;
 
+  $height-heading: rem($line-height-heading * $r) !global;
   $margin-top-heading: $m !global;
-
-  @media (min-width: $breakpoint-content) {
-    $r: $ratio-text-gargantuan;
-
-    font-size: rem($r);
-
-    $ratio-text-heading-content: $r !global;
-    $height-heading: rem($line-height-heading * $r) !global;
-  }
 }
 
 h2 {
@@ -50,10 +43,6 @@ h2 {
 
   font-size: rem($ratio-text-large);
   margin: $margin-huge 0 0;
-
-  @media (min-width: $breakpoint-content) {
-    font-size: rem($ratio-text-huge);
-  }
 }
 
 
