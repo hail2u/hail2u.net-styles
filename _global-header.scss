@@ -4,25 +4,13 @@
   @extend %link-underline-removal;
   @extend %positioning-root;
 
-  $m: $margin-small;
-
-  margin-top: $m;
-
-  $margin-top-global-header: $m !global;
+  margin-top: $margin-small;
 
   @media (min-width: $breakpoint-content) {
-    $m: $margin;
-
-    margin-top: $m;
-
-    $margin-top-global-header-content: $m !global;
+    margin-top: $margin;
   }
 
   @media (min-width: $breakpoint-full) {
-    $m: $margin-large;
-
-    margin-top: $m;
-
-    $margin-top-global-header-full: $m !global;
+    margin-top: $margin-large;
   }
 }

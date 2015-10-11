@@ -1,6 +1,6 @@
 // Tagline
 .tagline {
-  $m: ($margin-top-global-header * $ratio);
+  $m: $margin-large;
 
   color: $color-dark-dark;
   font-size: rem($ratio-text-large);
@@ -11,7 +11,7 @@
   $margin-top-tagline: $m !global;
 
   @media (min-width: $breakpoint-content) {
-    $m: ($margin-top-global-header-content * $ratio);
+    $m: $margin-huge;
 
     font-size: rem($ratio-text-huge);
     margin-top: $m;
@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    $m: ($margin-top-global-header-full * $ratio);
+    $m: $margin-gargantuan;
 
     font-size: rem($ratio-text-gargantuan);
     margin-top: $m;
