@@ -1,5 +1,6 @@
 // Line Height
 $line-height: $ratio;
+$line-height-minimal: ($line-height * .7);
 $line-height-tiny: ($line-height * .8);
 $line-height-small: ($line-height * .9);
 $line-height-large: ($line-height * 1.05);

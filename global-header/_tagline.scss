@@ -3,7 +3,7 @@
   $m: ($margin-top-global-header * $ratio);
 
   font-size: rem($ratio-text-large);
-  line-height: $line-height-tiny;
+  line-height: $line-height-minimal;
   margin-top: $m;
 
   $margin-top-tagline: $m !global;
@@ -20,6 +20,7 @@
   @media (min-width: $breakpoint-full) {
     $m: ($margin-top-global-header-full * $ratio);
 
+    font-size: rem($ratio-text-gargantuan);
     margin-top: $m;
 
     $margin-top-tagline-full: $m !global;
