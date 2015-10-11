@@ -119,6 +119,7 @@
           <li>ウィジェット
             <ol>
               <li><a href="#ads-block">広告</a></li>
+              <li><a href="#bordered-image">枠線付き画像</a></li>
               <li><a href="#drop-image">画像の飛び出し</a></li>
               <li><a href="#flat-ul-link">フラットな序列なしリスト</a></li>
               <li><a href="#float-image">浮かんだ画像</a></li>
@@ -286,7 +287,7 @@
         <p>ロゴとほぼ同じ画像を正方形にしたSVGフォーマットの画像から生成されています。PNGフォーマットへ変換したものや、更にそのPNGフォーマットの画像をアイコン形式にまとめたものがブラウザーによって適宜使われます。</p>
 
         <figure>
-          <img alt="Uppercase H" height="128" src="assets/images/favicon-large.svg" width="128">
+          <img class="bordered" alt="Uppercase H" height="128" src="assets/images/favicon-large.svg" width="128">
         </figure>
       </section>
 
@@ -639,6 +640,17 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
           (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
       </aside>
+
+      <section id="bordered-image">
+        <h1>枠線付き画像</h1>
+
+        <figure>
+          <img class="bordered" alt="Placeholder Image" height="270" src="http://lorempixel.com/480/270/" width="480">
+        </figure>
+
+        <pre><code class="language-html">&lt;img <mark>class=&quot;bordered&quot;</mark> alt=&quot;...&quot; src=&quot;...&quot;&gt;
+</code></pre>
+      </section>
 
       <section id="drop-image">
         <h1>画像の飛び出し</h1>
