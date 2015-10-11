@@ -1,5 +1,8 @@
 // Root
 html {
+  @import "assets/partials/hail2u-scss-partials/vendor-extension";
+  @include font-feature-settings("kern" 1);
+
   font-size: percentage($ratio-text);
 }
 
