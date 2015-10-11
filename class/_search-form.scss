@@ -2,6 +2,8 @@
 %search-form {
   @extend %positioning-root;
 
+  $w-b: percentage(1 / 5);
+
   .query {
     $h: (rem($line-height) + $padding-small * 2);
 
@@ -15,7 +17,7 @@
     font-size: inherit;
     height: $h;
     padding: 0;
-    width: 74%;
+    width: (100% - $w-b - 1%);
 
     $height-search-form-query: $h !global;
   }
@@ -32,6 +34,6 @@
     padding: 0;
     position: absolute;
     right: 0;
-    width: 25%;
+    width: $w-b;
   }
 }

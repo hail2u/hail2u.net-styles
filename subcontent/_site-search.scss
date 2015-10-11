@@ -8,12 +8,11 @@
     position: absolute;
     right: $padding-side-centering;
     top: ($margin-top-footlinks + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
-    width: 43%;
+    width: percentage(1 / 2);
     z-index: 1;
   }
 
   @media (min-width: $breakpoint-full) {
     top: ($margin-top-footlinks-full + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
-    width: 32%;
   }
 }

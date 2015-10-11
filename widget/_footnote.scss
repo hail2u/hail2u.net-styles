@@ -7,7 +7,7 @@
     content: "";
     display: block;
     margin-top: $margin-large;
-    width: 25%;
+    width: percentage(1 / 4);
   }
 
   :first-child {
