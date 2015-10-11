@@ -1,10 +1,6 @@
 // Root
 html {
   font-size: percentage($ratio-text);
-
-  @media (min-width: $breakpoint-content) {
-    font-size: percentage($ratio-text-large);
-  }
 }
 
 
