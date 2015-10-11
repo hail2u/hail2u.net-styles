@@ -17,7 +17,7 @@
     width: $width-protrusion-full;
 
     p {
-      margin-top: (($height-heading - $height-footing) / 2);
+      margin-top: (($height-h1 - $height-footing) / 2);
     }
   }
 }

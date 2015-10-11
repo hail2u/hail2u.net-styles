@@ -3,7 +3,7 @@
   @extend %centering;
   @extend %positioning-root;
 
-  margin-top: (- $margin-top-heading);
+  margin-top: (- $margin-top-h1);
 
   > article,
   > section {
