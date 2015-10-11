@@ -2,7 +2,9 @@
 .tagline {
   $m: ($margin-top-global-header * $ratio);
 
+  color: $color-dark-dark;
   font-size: rem($ratio-text-large);
+  font-weight: lighter;
   line-height: $line-height-minimal;
   margin-top: $m;
 
