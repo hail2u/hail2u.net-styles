@@ -1,6 +1,6 @@
 // Site Navigation
 .site-navigation {
-  $r: $ratio-text-small;
+  $r: $ratio-text-tiny;
 
   font-size: rem($r);
   position: absolute;
@@ -31,7 +31,12 @@
   }
 
   @media (min-width: $breakpoint-content) {
+    $r: $ratio-text-small;
+
+    font-size: rem($r);
+
     li {
+      line-height: ($line-height / $r);
       padding-left: $padding-side-centering;
     }
   }
