@@ -1,30 +1,39 @@
 // Tagline
 .tagline {
+  $lh: $line-height-minimal;
   $m: $margin-large;
+  $r: $ratio-text-large;
 
   color: $color-dark-dark;
-  font-size: rem($ratio-text-large);
+  font-size: rem($r);
   font-weight: lighter;
-  line-height: $line-height-minimal;
+  line-height: $lh;
   margin-top: $m;
 
+  $line-height-tagline: $lh !global;
   $margin-top-tagline: $m !global;
+  $ratio-text-tagline: $r !global;
 
   @media (min-width: $breakpoint-content) {
     $m: $margin-huge;
+    $r: $ratio-text-huge;
 
-    font-size: rem($ratio-text-huge);
+    font-size: rem($r);
     margin-top: $m;
 
     $margin-top-tagline-content: $m !global;
+    $ratio-text-tagline-content: $r !global;
   }
 
   @media (min-width: $breakpoint-full) {
     $m: $margin-gargantuan;
+    $r: $ratio-text-gargantuan;
 
-    font-size: rem($ratio-text-gargantuan);
+    font-size: rem($r);
     margin-top: $m;
 
+    $height-tagline-full: rem($lh * $r) !global;
     $margin-top-tagline-full: $m !global;
+    $ratio-text-tagline-full: $r !global;
   }
 }
