@@ -1,7 +1,7 @@
 // Root
 html {
   @import "assets/partials/hail2u-scss-partials/vendor-extension";
-  @include font-feature-settings("kern" 1);
+  @include font-feature-settings("kern" 1, "lnum" 1, "pnum" 1);
 
   font-size: percentage($ratio-text);
 }
@@ -73,8 +73,10 @@ hr {
 }
 
 pre {
+  @import "assets/partials/hail2u-scss-partials/vendor-extension";
   @extend %margin;
   @extend %margin-after-heading;
+  @include font-feature-settings("zero" 1);
 
   clear: both;
   font-family: $font-stack-monospace;
@@ -232,6 +234,9 @@ code,
 var,
 samp,
 kbd {
+  @import "assets/partials/hail2u-scss-partials/vendor-extension";
+  @include font-feature-settings("zero" 1);
+
   font-family: $font-stack-monospace;
   font-size: 1em;
 
@@ -278,8 +283,10 @@ video {
 
 // Tabular Data
 table {
+  @import "assets/partials/hail2u-scss-partials/vendor-extension";
   @extend %margin;
   @extend %margin-after-heading;
+  @include font-feature-settings("tnum" 1);
 
   $c: $color-tint-dark;
 
