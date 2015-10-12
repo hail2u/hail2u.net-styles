@@ -281,13 +281,18 @@ table {
   @extend %margin;
   @extend %margin-after-heading;
 
+  $c: $color-tint-dark;
+
+  border-bottom: $width-border-small solid $c;
   border-collapse: collapse;
   border-spacing: 0;
   clear: both;
-  display: block;
+  display: inline-block;
   max-width: 100%;
   overflow-x: auto;
   table-layout: fixed;
+
+  $color-border-table: $c !global;
 
   @media not screen {
     display: table;
@@ -296,14 +301,10 @@ table {
 
 %table-cell,
 td {
-  $c: $color-tint-dark;
-
-  border-top: $width-border-small solid $c;
+  border-top: $width-border-small solid $color-border-table;
   padding: $padding-large;
   vertical-align: top;
   white-space: nowrap;
-
-  $color-border-td: $c !global;
 }
 
 th {
@@ -312,7 +313,7 @@ th {
   text-align: left;
 
   thead & {
-    border-bottom: $width-border solid $color-border-td;
+    border-bottom: $width-border solid $color-border-table;
   }
 }
 
