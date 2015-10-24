@@ -20,7 +20,7 @@
 
   // Font
   body {
-    font-family: serif;
+    font-family: $font-stack-serif;
   }
 
   pre,
@@ -28,7 +28,7 @@
   samp,
   var,
   kbd {
-    font-family: monospace;
+    font-family: $font-stack-monospace;
   }
 
   // Page Break
