@@ -7,7 +7,8 @@
   aside,
   nav,
   hr::before,
-  .global-header,
+  .site-navigation,
+  .tagline,
   .footlinks,
   .byline::before,
   .icon-list,
@@ -75,6 +76,11 @@
   th,
   td {
     white-space: normal;
+  }
+
+  .logo {
+    font-family: $font-stack-sans-serif;
+    font-size: rem($ratio-text-huge);
   }
 
   .content,
