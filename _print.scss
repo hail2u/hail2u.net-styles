@@ -99,4 +99,9 @@
   .byline {
     margin-top: $margin-huge;
   }
+
+  .footnote,
+  .sidenote {
+    display: block;
+  }
 }
