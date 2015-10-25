@@ -61,7 +61,7 @@
             · <span class="tag"><a href="#">Guide</a></span></p>
         </footer>
 
-        <figure class="full-width">
+        <figure class="fill">
           <a href="assets/images/about/how-i-markup-and-style-this-website.svg"><img alt="How I Markup &amp; Style This Website" height="1440" src="assets/images/about/how-i-markup-and-style-this-website.svg" width="2560"></a>
         </figure>
 
@@ -120,11 +120,11 @@
               <li><a href="#ads-block">広告</a></li>
               <li><a href="#bordered-image">枠線付き画像</a></li>
               <li><a href="#drop-image">画像の飛び出し</a></li>
+              <li><a href="#fill-block">幅いっぱい</a></li>
               <li><a href="#flat-list-block">フラット・リスト</a></li>
               <li><a href="#float-image">浮かんだ画像</a></li>
               <li><a href="#follow-link">フォロー</a></li>
               <li><a href="#footnote-block">脚注</a></li>
-              <li><a href="#full-width-block">幅いっぱい</a></li>
               <li><a href="#post-list-block">記事リスト</a></li>
               <li><a href="#pull-quote-block">抜粋見出し(Pull Quote)</a></li>
               <li><a href="#read-older-block">古い記事を読む</a></li>
@@ -676,6 +676,23 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
         <p>Cras ipsum nisi, vestibulum a aliquam in, aliquet ac augue. Ut sit amet nisl sit amet leo ullamcorper imperdiet id non orci. Etiam at auctor quam, a volutpat nulla. Aliquam posuere magna sit amet auctor vulputate. Vivamus at nisi vel magna bibendum egestas. Vivamus imperdiet sem at ipsum tempor mattis a nec justo. Sed sit amet lectus in libero euismod rhoncus et id velit. Vestibulum at rutrum urna, in dignissim mi. Aenean in lectus id ipsum ornare molestie. Mauris sit amet ipsum pharetra, luctus diam sodales, vehicula ipsum. Nullam tincidunt porttitor ante at pretium. Phasellus varius, metus in mollis commodo, augue lorem aliquet magna, condimentum condimentum ante tellus eleifend odio. Nullam fermentum porta lacus quis placerat.</p>
       </section>
 
+      <section id="fill-block">
+        <h1>幅いっぱい</h1>
+
+        <figure class="fill">
+          <img alt="Placeholder Image" height="270" src="https://unsplash.it/g/480/270/" width="480">
+          <figcaption>Random Image from <a href="https://unsplash.it/">Unsplash It</a></figcaption>
+        </figure>
+
+        <p>Ut at sapien id tortor mattis pharetra in nec felis. In dapibus gravida eleifend. Vestibulum viverra vulputate molestie. Nullam auctor hendrerit rhoncus. Nulla rutrum, arcu eget hendrerit dignissim.</p>
+
+        <pre><code class="language-html">&lt;figure <mark>class=&quot;fill&quot;</mark>&gt;
+  &lt;img alt=&quot;...&quot; src=&quot;...&quot;&gt;
+  &lt;figcaption&gt;...&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+      </section>
+
       <section id="flat-list-block">
         <h1>フラットな序列なしリスト</h1>
 
@@ -721,23 +738,6 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
         <pre><code class="language-html">&lt;aside <mark>class=&quot;footnote&quot;</mark>&gt;
   &lt;p&gt;...&lt;/p&gt;
 &lt;/aside&gt;
-</code></pre>
-      </section>
-
-      <section id="full-width-block">
-        <h1>幅いっぱい</h1>
-
-        <figure class="full-width">
-          <img alt="Placeholder Image" height="270" src="https://unsplash.it/g/480/270/" width="480">
-          <figcaption>Random Image from <a href="https://unsplash.it/">Unsplash It</a></figcaption>
-        </figure>
-
-        <p>Ut at sapien id tortor mattis pharetra in nec felis. In dapibus gravida eleifend. Vestibulum viverra vulputate molestie. Nullam auctor hendrerit rhoncus. Nulla rutrum, arcu eget hendrerit dignissim.</p>
-
-        <pre><code class="language-html">&lt;figure <mark>class=&quot;full-width&quot;</mark>&gt;
-  &lt;img alt=&quot;...&quot; src=&quot;...&quot;&gt;
-  &lt;figcaption&gt;...&lt;/figcaption&gt;
-&lt;/figure&gt;
 </code></pre>
       </section>
 
