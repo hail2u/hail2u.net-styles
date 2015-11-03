@@ -37,7 +37,7 @@ $padding-gargantuan: ($padding * 4);
 
 
 // Column
-$column: rem(remove-unit(pow(16px * $ratio-text * $line-height, 2) / 16px) * 0.875);
+$column: rem(remove-unit(pow(16px * $ratio-text * $line-height, 2) / 16px) * .875);
 $column-gap: rem($ratio);
 
 
