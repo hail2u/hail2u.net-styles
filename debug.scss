@@ -203,47 +203,31 @@ body::after {
     }
   }
 
-  &.variation-accent li {
+  &.variation-primary li {
     &:nth-child(1)::before {
-      background-color: $color-accent;
+      background-color: $color-primary;
     }
 
     &:nth-child(2)::before {
-      background-color: $color-accent-darkest;
+      background-color: $color-primary-darkest;
     }
 
     &:nth-child(3)::before {
-      background-color: $color-accent-dark;
+      background-color: $color-primary-dark;
     }
 
     &:nth-child(4)::before {
-      background-color: $color-accent-light;
+      background-color: $color-primary-light;
     }
 
     &:nth-child(5)::before {
-      background-color: $color-accent-lightest;
+      background-color: $color-primary-lightest;
     }
   }
 
-  &.variation-accent.complement li {
+  &.variation-secondary li {
     &:nth-child(1)::before {
-      background-color: $color-accent-complement;
-    }
-
-    &:nth-child(2)::before {
-      background-color: $color-accent-complement-darkest;
-    }
-
-    &:nth-child(3)::before {
-      background-color: $color-accent-complement-dark;
-    }
-
-    &:nth-child(4)::before {
-      background-color: $color-accent-complement-light;
-    }
-
-    &:nth-child(5)::before {
-      background-color: $color-accent-complement-lightest;
+      background-color: $color-secondary;
     }
   }
 }

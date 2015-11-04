@@ -1,8 +1,8 @@
 // Basic
 $color-dark: rgb(60, 51, 48);
 $color-light: rgb(252, 249, 240);
-$color-accent: rgb(33, 117, 180);
-$color-accent-complement: rgb(243, 127, 30);
+$color-primary: rgb(33, 117, 180);
+$color-secondary: rgb(243, 127, 30);
 
 
 // Combination
@@ -23,12 +23,7 @@ $color-tint-dark: mix($color-dark, $color-light, 26%);
 $color-tint-light: mix($color-dark, $color-light, 14%);
 $color-tint-lightest: mix($color-dark, $color-light, 2%);
 
-$color-accent-darkest: rgb(7, 71, 121);
-$color-accent-dark: rgb(9, 93, 158);
-$color-accent-light: rgb(66, 138, 193);
-$color-accent-lightest: rgb(105, 165, 211);
-
-$color-accent-complement-darkest: rgb(157, 71, 0);
-$color-accent-complement-dark: rgb(198, 94, 7);
-$color-accent-complement-light: rgb(255, 157, 75);
-$color-accent-complement-lightest: rgb(255, 179, 116);
+$color-primary-darkest: rgb(7, 71, 121);
+$color-primary-dark: rgb(9, 93, 158);
+$color-primary-light: rgb(66, 138, 193);
+$color-primary-lightest: rgb(105, 165, 211);

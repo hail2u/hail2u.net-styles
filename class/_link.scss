@@ -1,6 +1,6 @@
 // Link
 %link {
-  $c: $color-accent;
+  $c: $color-primary;
 
   color: $c;
   text-decoration: underline;
@@ -11,7 +11,7 @@
     (-webkit-text-decoration-color: red) or
     (text-decoration-color: red) {
     @import "../assets/partials/hail2u-scss-partials/vendor-extension";
-    @include text-decoration-color($color-accent-lightest);
+    @include text-decoration-color($color-primary-lightest);
 
     color: inherit;
   }
