@@ -217,8 +217,10 @@ em {
 }
 
 strong {
-  color: $color-secondary;
+  background-color: $color-shade-darkest;
+  color: $color-tint-lightest;
   font-weight: normal;
+  padding: $padding-small;
 }
 
 cite {
