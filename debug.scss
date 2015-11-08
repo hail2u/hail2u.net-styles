@@ -120,6 +120,8 @@ body::after {
 
 // Version
 .version {
+  background-color: transparent;
+  color: $color-secondary;
   font-size: rem($ratio-text);
   vertical-align: super;
 }
