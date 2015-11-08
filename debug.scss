@@ -238,6 +238,14 @@ body::after {
     &:nth-child(1)::before {
       background-color: $color-secondary;
     }
+
+    &:nth-child(2)::before {
+      background-color: $color-secondary-dark;
+    }
+
+    &:nth-child(3)::before {
+      background-color: $color-secondary-light;
+    }
   }
 }
 
