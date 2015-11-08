@@ -11,11 +11,13 @@
 @import "assets/partials/hail2u-scss-functions/number/pow";
 @import "assets/partials/hail2u-scss-functions/number/remove-unit";
 
+
 // Variables
 @import "var/font";
 @import "var/color";
 @import "var/ratio";
 @import "var/size";
+
 
 // Show Column
 .show-column::before {
@@ -82,10 +84,12 @@
   }
 }
 
+
 // Show Outline
 .show-outline * {
   outline: 1px solid rgb(255, 0, 255);
 }
+
 
 // Breakpoints
 body::after {
@@ -113,11 +117,13 @@ body::after {
   }
 }
 
+
 // Version
 .version {
   font-size: rem($ratio-text);
   vertical-align: super;
 }
+
 
 // Fonts
 .font-family-body {
@@ -135,6 +141,7 @@ body::after {
 .bold {
   font-weight: bolder;
 }
+
 
 // Colors
 .colors {
@@ -231,6 +238,7 @@ body::after {
     }
   }
 }
+
 
 // Line Length
 .line-length {
