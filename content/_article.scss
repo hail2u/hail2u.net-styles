@@ -1,0 +1,10 @@
+// Article
+article {
+  .permalink & > p:last-child::after,
+  .permalink & > :last-child p:last-child::after {
+    color: $color-secondary-dark;
+    content: "KN";
+    font-weight: lighter;
+    letter-spacing: -.5em;
+  }
+}
