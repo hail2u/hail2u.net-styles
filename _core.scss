@@ -348,3 +348,12 @@ th {
 svg:not(:root) {
   overflow: hidden;
 }
+
+// Selection
+::-moz-selection {
+  background-color: $color-secondary-light;
+}
+
+::selection {
+  background-color: $color-secondary-light;
+}
