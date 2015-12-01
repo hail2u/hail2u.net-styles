@@ -9,7 +9,7 @@
 
     -webkit-appearance: none;
     background-color: $color-light-light;
-    border: $width-border-small solid $color-tint-light;
+    border: $width-border-small solid $color-light-dark;
     border-radius: 0;
     box-sizing: border-box;
     color: $color-dark;
@@ -24,7 +24,7 @@
 
   .button {
     -webkit-appearance: none;
-    background-color: $color-primary-lightest;
+    background-color: $color-primary-light;
     border: 0;
     border-radius: 0;
     color: $color-light-light;

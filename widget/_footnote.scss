@@ -3,7 +3,7 @@
   font-size: rem($ratio-text-small);
 
   &::before {
-    border-top: $width-border-small solid $color-tint-dark;
+    border-top: $width-border-small solid $color-light-dark;
     content: "";
     display: block;
     margin-top: $margin-large;

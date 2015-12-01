@@ -1,32 +1,24 @@
 // Basic
 $color-dark: rgb(60, 51, 48);
 $color-light: rgb(252, 249, 240);
-$color-primary: rgb(33, 117, 180);
-$color-secondary: rgb(255, 213, 0);
 
-
-// Combination
 // scss-lint:disable ColorVariable
 $color-dark-dark: mix($color-dark, rgb(0, 0, 0));
+// scss-lint:enable ColorVariable
+$color-dark-light: mix($color-dark, $color-light, 80%);
+
+$color-light-dark: mix($color-dark, $color-light, 20%);
+// scss-lint:disable ColorVariable
 $color-light-light: mix($color-light, rgb(255, 255, 255));
 // scss-lint:enable ColorVariable
 
 
 // Variation
-$color-shade-darkest: mix($color-dark, $color-light, 88%);
-$color-shade-dark: mix($color-dark, $color-light, 76%);
-$color-shade-light: mix($color-dark, $color-light, 64%);
-$color-shade-lightest: mix($color-dark, $color-light, 52%);
+$color-primary: rgb(33, 117, 180);
+$color-secondary: rgb(255, 213, 0);
 
-$color-tint-darkest: mix($color-dark, $color-light, 38%);
-$color-tint-dark: mix($color-dark, $color-light, 26%);
-$color-tint-light: mix($color-dark, $color-light, 14%);
-$color-tint-lightest: mix($color-dark, $color-light, 2%);
-
-$color-primary-darkest: rgb(7, 71, 121);
-$color-primary-dark: rgb(9, 93, 158);
-$color-primary-light: rgb(66, 138, 193);
-$color-primary-lightest: rgb(105, 165, 211);
+$color-primary-dark: rgb(7, 71, 121);
+$color-primary-light: rgb(105, 165, 211);
 
 $color-secondary-light: rgb(251, 254, 0);
 $color-secondary-dark: rgb(255, 171, 0);

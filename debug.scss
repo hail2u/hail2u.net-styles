@@ -156,7 +156,7 @@ body::after {
     display: block;
     height: rem($line-height * 1.5);
     overflow: hidden;
-    width: calc((100% / 5) - #{$width-gap-small});
+    width: calc((100% / 6) - #{$width-gap-small});
 
     &::before {
       border: 1px solid rgb(0, 0, 0);
@@ -168,82 +168,54 @@ body::after {
     }
   }
 
-  &.variation-shade li {
+  &.basic li {
     &:nth-child(1)::before {
+      background-color: $color-dark-dark;
+    }
+
+    &:nth-child(2)::before {
       background-color: $color-dark;
     }
 
-    &:nth-child(2)::before {
-      background-color: $color-shade-darkest;
-    }
-
     &:nth-child(3)::before {
-      background-color: $color-shade-dark;
+      background-color: $color-dark-light;
     }
 
     &:nth-child(4)::before {
-      background-color: $color-shade-light;
+      background-color: $color-light-dark;
     }
 
     &:nth-child(5)::before {
-      background-color: $color-shade-lightest;
-    }
-  }
-
-  &.variation-tint li {
-    &:nth-child(1)::before {
       background-color: $color-light;
     }
 
-    &:nth-child(2)::before {
-      background-color: $color-tint-darkest;
-    }
-
-    &:nth-child(3)::before {
-      background-color: $color-tint-dark;
-    }
-
-    &:nth-child(4)::before {
-      background-color: $color-tint-light;
-    }
-
-    &:nth-child(5)::before {
-      background-color: $color-tint-lightest;
+    &:nth-child(6)::before {
+      background-color: $color-light-light;
     }
   }
 
-  &.variation-primary li {
+  &.variation li {
     &:nth-child(1)::before {
-      background-color: $color-primary;
-    }
-
-    &:nth-child(2)::before {
-      background-color: $color-primary-darkest;
-    }
-
-    &:nth-child(3)::before {
       background-color: $color-primary-dark;
     }
 
-    &:nth-child(4)::before {
-      background-color: $color-primary-light;
-    }
-
-    &:nth-child(5)::before {
-      background-color: $color-primary-lightest;
-    }
-  }
-
-  &.variation-secondary li {
-    &:nth-child(1)::before {
-      background-color: $color-secondary;
-    }
-
     &:nth-child(2)::before {
-      background-color: $color-secondary-dark;
+      background-color: $color-primary;
     }
 
     &:nth-child(3)::before {
+      background-color: $color-primary-light;
+    }
+
+    &:nth-child(4)::before {
+      background-color: $color-secondary-dark;
+    }
+
+    &:nth-child(5)::before {
+      background-color: $color-secondary;
+    }
+
+    &:nth-child(6)::before {
       background-color: $color-secondary-light;
     }
   }

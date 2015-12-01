@@ -61,7 +61,7 @@ hr {
   border: 0;
   box-sizing: content-box;
   clear: both;
-  color: $color-shade-lightest;
+  color: $color-dark-light;
   font-size: rem($r);
   height: rem($r);
   line-height: 1;
@@ -96,8 +96,8 @@ blockquote {
   @extend %margin;
   @extend %margin-after-heading;
 
-  $f: $color-shade-dark;
-  $b: $color-tint-light;
+  $f: $color-dark-light;
+  $b: $color-light-dark;
   $w: $width-border-large;
   $p: $width-gap;
 
@@ -151,7 +151,7 @@ dl {
 }
 
 dt {
-  color: $color-shade-darkest;
+  color: $color-dark-light;
 }
 
 dd {
@@ -174,7 +174,7 @@ figcaption {
 
   $m: $margin-tiny;
 
-  color: $color-shade-dark;
+  color: $color-dark-light;
   margin-top: $m;
 
   blockquote + & {
@@ -211,7 +211,7 @@ a {
 }
 
 em {
-  color: $color-shade-darkest;
+  color: $color-dark-light;
   font-style: normal;
   font-weight: bolder;
 }
@@ -277,7 +277,7 @@ video {
   max-width: 100%;
 
   figure & {
-    background-color: $color-tint-lightest;
+    background-color: $color-light-dark;
     vertical-align: bottom;
   }
 }
@@ -290,7 +290,7 @@ table {
   @extend %margin-after-heading;
   @include font-feature-settings("tnum" 1);
 
-  $c: $color-tint-dark;
+  $c: $color-light-dark;
 
   border-bottom: $width-border-small solid $c;
   border-collapse: collapse;

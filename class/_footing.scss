@@ -5,7 +5,7 @@
   $r: $ratio-text-small;
   $lh: ($line-height-heading / $r);
 
-  color: $color-shade-lightest;
+  color: $color-dark-light;
   font-size: rem($r);
   line-height: $lh;
 
@@ -14,6 +14,6 @@
 
   .date,
   .tag {
-    color: $color-shade-dark;
+    color: $color-dark-light;
   }
 }

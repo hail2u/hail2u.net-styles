@@ -2,7 +2,7 @@
 .sidenote {
   @extend %protrusion;
 
-  color: $color-shade-lightest;
+  color: $color-dark-light;
   font-size: rem($ratio-text-small);
 
   @media (min-width: $breakpoint-full) {

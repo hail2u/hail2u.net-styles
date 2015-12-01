@@ -11,7 +11,7 @@
     (-webkit-text-decoration-color: red) or
     (text-decoration-color: red) {
     @import "../assets/partials/hail2u-scss-partials/vendor-extension";
-    @include text-decoration-color($color-primary-lightest);
+    @include text-decoration-color($color-primary-light);
 
     color: inherit;
   }
