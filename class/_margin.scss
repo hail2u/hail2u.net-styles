@@ -5,7 +5,8 @@
 
 
 %margin-after-heading {
-  h2 + & {
+  h2 + &,
+  h3 + & {
     margin-top: $margin-tiny;
   }
 }

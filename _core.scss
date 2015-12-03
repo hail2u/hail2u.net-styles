@@ -32,6 +32,7 @@ h1 {
   $r: $ratio-text-huge;
 
   font-size: rem($r);
+  font-weight: normal;
   margin: $m 0 0;
 
   $height-h1: rem($line-height-heading * $r) !global;
@@ -42,6 +43,14 @@ h2 {
   @extend %heading;
 
   font-size: rem($ratio-text-large);
+  font-weight: normal;
+  margin: $margin-huge 0 0;
+}
+
+h3 {
+  @extend %heading;
+
+  font-size: rem($ratio-text);
   margin: $margin-huge 0 0;
 }
 
