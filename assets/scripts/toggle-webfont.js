@@ -1,7 +1,7 @@
 (function (d) {
   "use strict";
 
-  var c = d.body.classList;
+  var c;
   var n = "no-webfont";
   var l;
 
@@ -19,6 +19,7 @@
   };
 
   var init = function () {
+    c = d.body.classList;
     d.getElementById("toggle-webfont").addEventListener("click", toggle, false);
   };
 
