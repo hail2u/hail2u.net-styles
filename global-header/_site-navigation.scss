@@ -41,10 +41,18 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    right: auto;
+    margin-top: rem(- $line-height);
+    position: relative;
 
     li:first-child {
       padding-left: 0;
+    }
+
+    li:last-child {
+      padding-right: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
   }
 }
