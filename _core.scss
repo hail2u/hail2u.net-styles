@@ -109,10 +109,6 @@ blockquote {
   $color-border-blockquote: $b !global;
   $width-border-blockquote: $w !global;
   $padding-left-blockquote: $p !global;
-
-  @media (min-width: $breakpoint-full) {
-    margin-left: (- ($w + $p));
-  }
 }
 
 ul,
@@ -122,22 +118,13 @@ ol {
 
   $p: $indent;
 
-  padding: 0 0 0 $p;
+  padding-left: $indent;
 
   $padding-left-list: $p !global;
 
   ul,
   ol {
     margin-top: 0;
-  }
-
-  @media (min-width: $breakpoint-full) {
-    padding-left: 0;
-
-    ul,
-    ol {
-      padding-left: $p;
-    }
   }
 }
 
@@ -192,7 +179,6 @@ figcaption {
     top: auto;
 
     blockquote + & {
-      margin-left: (- ($width-border-blockquote + $padding-left-blockquote));
       margin-right: 0;
       position: static;
       text-align: left;
