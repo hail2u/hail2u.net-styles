@@ -14,10 +14,10 @@
     border-radius: 0;
     box-sizing: border-box;
     color: $color-dark;
-    font-family: inherit;
+    font-family: initial;
     font-size: inherit;
     height: $h;
-    line-height: 100%;
+    line-height: $h;
     padding: 0;
     width: (100% - $w-b - 1%);
 
@@ -30,10 +30,10 @@
     border: 0;
     border-radius: 0;
     color: $color-light-light;
-    font-family: inherit;
+    font-family: initial;
     font-size: inherit;
     height: $height-search-form-query;
-    line-height: 100%;
+    line-height: $height-search-form-query;
     padding: 0;
     position: absolute;
     right: 0;
