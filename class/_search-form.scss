@@ -5,11 +5,12 @@
   $w-b: percentage(1 / 5);
 
   .query {
-    $h: (rem($line-height) + $padding-small * 2);
+    $b: $width-border-small;
+    $h: (1rem + ($b + $padding-large) * 2);
 
     -webkit-appearance: none;
     background-color: $color-light-light;
-    border: $width-border-small solid $color-light-dark;
+    border: $b solid $color-light-dark;
     border-radius: 0;
     box-sizing: border-box;
     color: $color-dark;
