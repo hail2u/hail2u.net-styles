@@ -240,7 +240,7 @@ kbd {
 mark {
   background-color: $color-secondary;
   color: inherit;
-  padding: $padding-small;
+  padding: ($line-height-tiny / 2);
 }
 
 
