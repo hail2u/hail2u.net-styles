@@ -9,11 +9,15 @@ html {
 
 // Sections
 body {
+  $lh: $line-height-small;
+
   background-color: $color-light;
   color: $color-dark;
   font-family: $font-stack-sans-serif;
-  line-height: $line-height-small;
+  line-height: $lh;
   margin: 0;
+
+  $line-height-body: $lh !global;
 
   @media (min-width: $breakpoint-content) {
     $lh: $line-height;
