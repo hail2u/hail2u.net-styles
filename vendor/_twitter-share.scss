@@ -1,6 +1,9 @@
 // Twitter Share
 .twitter-share {
-  margin-top: $margin-large;
+  @extend %protrusion;
+
+  top: auto;
+  bottom: 0;
 
   a {
     $c: rgb(91, 174, 238);
