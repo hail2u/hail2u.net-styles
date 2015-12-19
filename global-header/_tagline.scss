@@ -30,6 +30,7 @@
     $r: $ratio-text-gargantuan;
 
     font-size: rem($r);
+    margin-left: (- ($width-supplement + $width-gap-large));
     margin-top: $m;
 
     $height-tagline-full: rem($lh * $r) !global;
