@@ -17,24 +17,30 @@
   @media (min-width: $breakpoint-content) {
     $m: $margin-huge;
     $r: $ratio-text-huge;
+    $w: ($width-content / $ratio);
 
     font-size: rem($r);
     margin-top: $m;
+    width: $w;
 
     $margin-top-tagline-content: $m !global;
     $ratio-text-tagline-content: $r !global;
+    $width-tagline-content: $w !global;
   }
 
   @media (min-width: $breakpoint-full) {
     $m: $margin-gargantuan;
     $r: $ratio-text-gargantuan;
+    $w: ($width-supplement + $width-gap-large + $width-supplement);
 
     font-size: rem($r);
     margin-left: (- ($width-supplement + $width-gap-large));
     margin-top: $m;
+    width: $w;
 
     $height-tagline-full: rem($lh * $r) !global;
     $margin-top-tagline-full: $m !global;
     $ratio-text-tagline-full: $r !global;
+    $width-tagline-full: $w !global;
   }
 }
