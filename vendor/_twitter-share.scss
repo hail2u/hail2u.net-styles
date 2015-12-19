@@ -2,9 +2,6 @@
 .twitter-share {
   @extend %protrusion;
 
-  top: auto;
-  bottom: 0;
-
   a {
     $c: rgb(91, 174, 238);
     $w: rem($line-height-body);
@@ -19,8 +16,16 @@
   }
 
   @media (min-width: $breakpoint-content) {
+    top: auto;
+    bottom: 0;
+
     a {
       background-size: rem($line-height-body-content);
     }
+  }
+
+  @media (min-width: $breakpoint-full) {
+    top: auto;
+    bottom: 0;
   }
 }
