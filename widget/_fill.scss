@@ -28,8 +28,15 @@
     figcaption {
       bottom: auto;
       left: 0;
-      margin-top: ($margin - $width-border-decorative-border - $margin-bottom-figcaption-border);
+      margin-top: $margin;
       text-align: left;
+
+      &::before {
+        $m: ((rem($line-height) - $width-border-decorative-border) / 2);
+
+        margin-bottom: $m;
+        padding-top: $m;
+      }
     }
   }
 }
