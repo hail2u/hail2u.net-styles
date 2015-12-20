@@ -55,6 +55,8 @@ $width-supplement-outer: ($width-gap-small + $width-supplement + $width-gap-smal
 $width-full: ($width-supplement + $width-gap-large + $width-content);
 $width-full-outer: ($width-gap-small + $width-full + $width-gap-small);
 
+$width-decoration: ($width-supplement / pow($ratio, 3));
+
 
 // Breakpoint
 $width-scrollbar: 1.5rem;
