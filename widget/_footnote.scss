@@ -3,12 +3,9 @@
   @extend %decorative-border;
 
   font-size: rem($ratio-text-small);
-
-  &::before {
-    margin-top: $margin-large;
-  }
+  margin-top: ($margin-large - $margin-bottom-decorative-border);
 
   :first-child {
-    margin-top: $margin-tiny;
+    margin-top: 0;
   }
 }

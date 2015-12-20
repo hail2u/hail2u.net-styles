@@ -1,14 +1,18 @@
 // Decorative Border
 %decorative-border {
   &::before {
-    $w-b: $width-border;
+    $m: $margin-tiny;
     $w: ($width-supplement / pow($ratio, 3));
+    $w-b: $width-border;
 
     border-bottom: $w-b solid $color-light-dark;
     content: "";
     display: block;
+    margin-bottom: $m;
+    padding-top: $m;
     width: $w;
 
+    $margin-bottom-decorative-border: $m !global;
     $width-border-decorative-border: $w-b !global;
     $width-decorative-border: $w !global;
   }

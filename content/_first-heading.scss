@@ -8,13 +8,6 @@
     font-size: rem($ratio-text-tagline);
     line-height: $line-height-tagline;
     padding-bottom: ($margin-top-tagline - $margin + $height-footing);
-
-    &::before {
-      $m: $margin-tiny;
-
-      margin-bottom: $m;
-      padding-top: $m;
-    }
   }
 
   @media (min-width: $breakpoint-content) {

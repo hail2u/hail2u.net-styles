@@ -168,14 +168,6 @@ figcaption {
   color: $color-dark-light;
   margin-top: $margin-small;
 
-  &::before {
-    $m: $margin-minimal;
-
-    margin-bottom: $m;
-
-    $margin-bottom-figcaption-border: $m !global;
-  }
-
   blockquote + & {
     border-left: $width-border-blockquote solid $color-border-blockquote;
     color: $color-fg-blockquote;

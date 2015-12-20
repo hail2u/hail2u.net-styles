@@ -17,13 +17,6 @@
   $margin-top-tagline: $m !global;
   $ratio-text-tagline: $r !global;
 
-  &::before {
-    $m: $margin-tiny;
-
-    margin-bottom: $m;
-    padding-top: $m;
-  }
-
   @media (min-width: $breakpoint-content) {
     $m: $margin-huge;
     $r: $ratio-text-huge;
@@ -37,10 +30,6 @@
     $margin-top-tagline-content: $m !global;
     $ratio-text-tagline-content: $r !global;
     $width-tagline-content: $w !global;
-
-    &::before {
-      margin-top: (($height-tagline-content - $width-border-decorative-border) / 2);
-    }
   }
 
   @media (min-width: $breakpoint-full) {
@@ -57,9 +46,5 @@
     $margin-top-tagline-full: $m !global;
     $ratio-text-tagline-full: $r !global;
     $width-tagline-full: $w !global;
-
-    &::before {
-      margin-top: (($height-tagline-full - $width-border-decorative-border) / 2);
-    }
   }
 }

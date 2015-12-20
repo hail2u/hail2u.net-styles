@@ -5,13 +5,6 @@
 
   color: $color-dark-light;
 
-  &::before {
-    $m: $margin-tiny;
-
-    margin-bottom: $m;
-    padding-top: $m;
-  }
-
   mark {
     background-color: transparent;
     color: inherit;
