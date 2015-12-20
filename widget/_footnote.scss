@@ -3,11 +3,11 @@
   font-size: rem($ratio-text-small);
 
   &::before {
-    border-top: $width-border-small solid $color-light-dark;
+    border-top: $width-border solid $color-light-dark;
     content: "";
     display: block;
     margin-top: $margin-large;
-    width: percentage(1 / 4);
+    width: $width-decoration;
   }
 
   :first-child {
