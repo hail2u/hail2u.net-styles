@@ -28,7 +28,7 @@
     figcaption {
       bottom: auto;
       left: 0;
-      margin-top: $margin;
+      margin-top: ($margin - $width-border - $margin-bottom-figcaption-border);
       text-align: left;
     }
   }
