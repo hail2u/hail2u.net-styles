@@ -6,6 +6,17 @@
     font-size: rem($ratio-text-tagline);
     line-height: $line-height-tagline;
     padding-bottom: ($margin-top-tagline - $margin + $height-footing);
+
+    &::before {
+      $m: $margin-tiny;
+
+      border-bottom: $width-border solid $color-light-dark;
+      content: "";
+      display: block;
+      margin-bottom: $m;
+      padding-top: $m;
+      width: $width-decoration;
+    }
   }
 
   @media (min-width: $breakpoint-content) {
