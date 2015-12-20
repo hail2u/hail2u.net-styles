@@ -2,7 +2,7 @@
 %search-form {
   @extend %positioning-root;
 
-  $w-b: percentage(1 / 5);
+  $w-b: percentage(1 / 4);
 
   .query {
     $b: $width-border-small;
