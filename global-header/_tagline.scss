@@ -1,31 +1,27 @@
 // Tagline
 .tagline {
   @extend %decorative-border;
-  @extend %positioning-root;
 
   $lh: $line-height-minimal;
-  $m-l: ($width-decorative-border + $width-gap);
-  $m-t: $margin-large;
+  $m: $margin-large;
   $r: $ratio-text-large;
 
   color: $color-dark-light;
   font-size: rem($r);
   font-weight: lighter;
   line-height: $lh;
-  margin-left: $m-l;
-  margin-top: $m-t;
+  margin-top: $m;
 
   $height-tagline: rem($lh * $r) !global;
   $line-height-tagline: $lh !global;
-  $margin-left-tagline: $m-l !global;
-  $margin-top-tagline: $m-t !global;
+  $margin-top-tagline: $m !global;
   $ratio-text-tagline: $r !global;
 
   &::before {
-    margin-right: $width-gap;
-    margin-top: (($height-tagline - $width-border-decorative-border) / 2);
-    position: absolute;
-    right: 100%;
+    $m: $margin-tiny;
+
+    margin-bottom: $m;
+    padding-top: $m;
   }
 
   @media (min-width: $breakpoint-content) {
@@ -53,7 +49,7 @@
     $w: ($width-supplement + $width-gap-large + $width-supplement);
 
     font-size: rem($r);
-    margin-left: ($margin-left-tagline - ($width-supplement + $width-gap-large));
+    margin-left: (- ($width-supplement + $width-gap-large));
     margin-top: $m;
     width: $w;
 
