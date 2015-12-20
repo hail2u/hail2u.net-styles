@@ -63,7 +63,7 @@
     $width-tagline-full: $w !global;
 
     &::before {
-      margin-top: (($height-tagline-full - $width-border)/ 2);
+      margin-top: (($height-tagline-full - $width-border) / 2);
     }
   }
 }

@@ -22,8 +22,8 @@
 
     .permalink & {
       font-size: rem($ratio-text-tagline-content);
-      width: $width-tagline-content;
       padding-bottom: ($margin-top-tagline-content - $margin + $height-footing);
+      width: $width-tagline-content;
     }
   }
 
@@ -33,9 +33,9 @@
     .permalink & {
       font-size: rem($ratio-text-tagline-full);
       margin-left: (- ($width-supplement + $width-gap-large));
-      width: $width-tagline-full;
       padding-bottom: ($margin-top-tagline-full - $margin);
       padding-top: $height-footing;
+      width: $width-tagline-full;
     }
   }
 }

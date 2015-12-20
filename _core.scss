@@ -339,7 +339,9 @@ svg:not(:root) {
 }
 
 // Selection
+// scss-lint:disable VendorPrefix
 ::-moz-selection {
+// scss-lint:enable VendorPrefix
   background-color: $color-secondary-light;
 }
 
