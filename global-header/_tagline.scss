@@ -23,7 +23,7 @@
 
   &::before {
     margin-right: $width-gap;
-    margin-top: (($height-tagline - $width-border) / 2);
+    margin-top: (($height-tagline - $width-border-decorative-border) / 2);
     position: absolute;
     right: 100%;
   }
@@ -43,7 +43,7 @@
     $width-tagline-content: $w !global;
 
     &::before {
-      margin-top: (($height-tagline-content - $width-border) / 2);
+      margin-top: (($height-tagline-content - $width-border-decorative-border) / 2);
     }
   }
 
@@ -63,7 +63,7 @@
     $width-tagline-full: $w !global;
 
     &::before {
-      margin-top: (($height-tagline-full - $width-border) / 2);
+      margin-top: (($height-tagline-full - $width-border-decorative-border) / 2);
     }
   }
 }
