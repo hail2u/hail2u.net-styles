@@ -1,13 +1,11 @@
 // Footnote
 .footnote {
+  @extend %decorative-border;
+
   font-size: rem($ratio-text-small);
 
   &::before {
-    border-top: $width-border solid $color-light-dark;
-    content: "";
-    display: block;
     margin-top: $margin-large;
-    width: $width-decoration;
   }
 
   :first-child {

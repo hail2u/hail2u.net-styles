@@ -1,5 +1,6 @@
 // Byline
 .byline {
+  @extend %decorative-border;
   @extend %protrusion;
 
   color: $color-dark-light;
@@ -7,12 +8,8 @@
   &::before {
     $m: $margin-tiny;
 
-    border-bottom: $width-border solid $color-light-dark;
-    content: "";
-    display: block;
     margin-bottom: $m;
     padding-top: $m;
-    width: $width-decoration;
   }
 
   mark {

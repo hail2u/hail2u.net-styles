@@ -1,9 +1,10 @@
 // Tagline
 .tagline {
+  @extend %decorative-border;
   @extend %positioning-root;
 
   $lh: $line-height-minimal;
-  $m-l: ($width-decoration + $width-gap);
+  $m-l: ($width-decorative-border + $width-gap);
   $m-t: $margin-large;
   $r: $ratio-text-large;
 
@@ -21,14 +22,10 @@
   $ratio-text-tagline: $r !global;
 
   &::before {
-    border-bottom: $width-border solid $color-light-dark;
-    content: "";
-    display: block;
     margin-right: $width-gap;
     margin-top: (($height-tagline - $width-border) / 2);
     position: absolute;
     right: 100%;
-    width: $width-decoration;
   }
 
   @media (min-width: $breakpoint-content) {
