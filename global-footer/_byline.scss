@@ -4,6 +4,17 @@
 
   color: $color-dark-light;
 
+  &::before {
+    $m: $margin-tiny;
+
+    border-bottom: $width-border solid $color-light-dark;
+    content: "";
+    display: block;
+    margin-bottom: $m;
+    padding-top: $m;
+    width: $width-decoration;
+  }
+
   mark {
     background-color: transparent;
     color: inherit;
