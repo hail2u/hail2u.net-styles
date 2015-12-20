@@ -34,8 +34,8 @@
   @media (min-width: $breakpoint-full) {
     a::before {
       line-height: ($line-height-read-older-title * $ratio-text-read-older-title);
-
       margin-top: 0;
+      top: 0;
     }
 
     p {

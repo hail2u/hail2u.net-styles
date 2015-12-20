@@ -16,4 +16,8 @@
   .tag {
     color: $color-dark-light;
   }
+
+  @media (min-width: $breakpoint-full) {
+    top: 0;
+  }
 }
