@@ -15,7 +15,7 @@
 
   var init = function () {
     var article = d.getElementById("introduction");
-    var eyecatch = d.querySelector(".full-width");
+    var eyecatch = d.querySelector(".fill");
     d.querySelector(".section-footer").addEventListener(
       "click",
       toggle.bind(null, eyecatch, article),
