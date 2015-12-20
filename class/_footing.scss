@@ -9,8 +9,8 @@
   font-size: rem($r);
   line-height: $lh;
 
-  $ratio-text-footing: $r !global;
   $height-footing: rem($lh * $r) !global;
+  $ratio-text-footing: $r !global;
 
   .date,
   .tag {

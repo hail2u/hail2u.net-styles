@@ -20,15 +20,15 @@
   }
 
   p {
-    $r: $ratio-text-huge;
     $lh: $line-height-tiny;
+    $r: $ratio-text-huge;
 
     font-size: rem($r);
     line-height: $lh;
     margin-top: $margin-tiny;
 
-    $ratio-text-read-older-title: $r !global;
     $line-height-read-older-title: $lh !global;
+    $ratio-text-read-older-title: $r !global;
   }
 
   @media (min-width: $breakpoint-full) {

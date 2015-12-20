@@ -2,8 +2,8 @@
 %decorative-border {
   &::before {
     $m: $margin-tiny;
-    $w: ($width-supplement / pow($ratio, 3));
     $w-b: $width-border;
+    $w: ($width-supplement / pow($ratio, 3));
 
     border-bottom: $w-b solid $color-light-dark;
     content: "";

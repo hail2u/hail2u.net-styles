@@ -100,19 +100,19 @@ blockquote {
   @extend %margin;
   @extend %margin-after-heading;
 
-  $f: $color-dark-light;
   $b: $color-light-dark;
-  $w: $width-border-large;
+  $f: $color-dark-light;
   $p: $width-gap;
+  $w: $width-border-large;
 
   border-left: $w solid $b;
   color: $f;
   padding-left: $p;
 
-  $color-fg-blockquote: $f !global;
   $color-border-blockquote: $b !global;
-  $width-border-blockquote: $w !global;
+  $color-fg-blockquote: $f !global;
   $padding-left-blockquote: $p !global;
+  $width-border-blockquote: $w !global;
 }
 
 ul,

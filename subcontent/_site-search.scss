@@ -2,18 +2,20 @@
 .site-search {
   @extend %search-form;
 
+  $m: ((rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
+
   top: $margin-huge;
 
   @media (min-width: $breakpoint-content) {
     position: absolute;
     right: $padding-side-centering;
-    top: ($margin-top-footlinks + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
+    top: ($margin-top-footlinks + $m);
     width: percentage(1 / 2);
     z-index: 1;
   }
 
   @media (min-width: $breakpoint-full) {
-    top: ($margin-top-footlinks-full + (rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
+    top: ($margin-top-footlinks-full + $m);
     width: percentage(1 / 3);
   }
 }
