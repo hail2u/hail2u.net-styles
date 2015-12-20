@@ -16,15 +16,12 @@
   }
 
   @media (min-width: $breakpoint-content) {
-    bottom: 0;
-
     a {
       background-size: rem($line-height-body-content);
     }
   }
 
   @media (min-width: $breakpoint-full) {
-    top: auto;
     bottom: 0;
   }
 }
