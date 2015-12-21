@@ -1,12 +1,12 @@
 // Twitter Share
 .twitter-share {
+  @extend %link-underline-removal;
   @extend %protrusion;
 
   $c: rgb(91, 174, 238);
 
   a {
     color: $c;
-    text-decoration: none;
   }
 
   @media (min-width: $breakpoint-full) {
