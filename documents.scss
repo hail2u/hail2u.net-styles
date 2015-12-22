@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
   &:target {
-    padding-top: 1em;
+    padding-top: $font-size;
   }
 
   + p {
@@ -43,6 +43,11 @@ h6 {
 pre {
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+blockquote,
+blockquote + figcaption {
+  margin-left: ($font-size * 2);
 }
 
 table {
