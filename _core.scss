@@ -338,14 +338,3 @@ th {
 svg:not(:root) {
   overflow: hidden;
 }
-
-// Selection
-// scss-lint:disable VendorPrefix
-::-moz-selection {
-// scss-lint:enable VendorPrefix
-  background-color: $color-secondary-light;
-}
-
-::selection {
-  background-color: $color-secondary-light;
-}
