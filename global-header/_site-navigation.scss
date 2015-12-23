@@ -27,6 +27,7 @@
   mark {
     background-color: transparent;
     border-bottom: $width-border solid $color-primary;
+    padding-bottom: $padding-small;
   }
 
   @media (min-width: $breakpoint-content) {
