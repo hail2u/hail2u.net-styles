@@ -36,7 +36,7 @@
   @media (min-width: $breakpoint-full) {
     $m: $margin-gargantuan;
     $r: $ratio-text-gargantuan;
-    $w: ($width-supplement + $width-gap-large + $width-supplement);
+    $w: ($width-full / $ratio);
 
     font-size: rem($r);
     margin-left: (- ($width-supplement + $width-gap-large));
