@@ -42,11 +42,12 @@ h1 {
   $margin-top-h1: $m !global;
 }
 
-h2 {
-  @extend %heading;
-
-  font-size: rem($ratio-text-large);
-  margin: $margin-huge 0 0;
+article,
+section {
+  section h1 {
+    font-size: rem($ratio-text-large);
+    margin: $margin-huge 0 0;
+  }
 }
 
 
