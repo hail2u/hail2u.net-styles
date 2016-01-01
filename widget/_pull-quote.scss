@@ -32,8 +32,9 @@
 
   @media (min-width: $breakpoint-full) {
     float: left;
+    margin-bottom: $margin-tiny;
     margin-left: (- ($width-supplement + $width-gap-large));
     margin-right: $width-gap;
-    width: ($width-supplement + $width-gap-large + $width-supplement / $ratio);
+    max-width: ($width-supplement + $width-gap-large + $width-supplement / $ratio);
   }
 }
