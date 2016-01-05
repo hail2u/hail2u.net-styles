@@ -144,18 +144,6 @@ body::after {
   font-weight: bolder;
 }
 
-.no-webfont {
-  font-family: $font-stack-sans-serif-local;
-
-  pre,
-  code,
-  var,
-  samp,
-  kbd {
-    font-family: $font-stack-monospace-local;
-  }
-}
-
 
 // Colors
 .colors {

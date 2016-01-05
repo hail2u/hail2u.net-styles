@@ -3,9 +3,9 @@ $font-stack-serif-local: "Palatino", "Palatino Linotype", serif;
 $font-stack-serif: $font-stack-serif-local;
 
 // Sans-Serif
-$font-stack-sans-serif-local: -apple-system, "Helvetica Neue", "Calibri", sans-serif;
-$font-stack-sans-serif: "Eau Douce", sans-serif;
+$font-stack-sans-serif-local: -apple-system, "Segoe UI", sans-serif;
+$font-stack-sans-serif: $font-stack-sans-serif-local;
 
 // Monospace
 $font-stack-monospace-local: "Menlo", "Consolas", monospace;
-$font-stack-monospace: "M+ 1m Latin", monospace;
+$font-stack-monospace: $font-stack-monospace-local;
