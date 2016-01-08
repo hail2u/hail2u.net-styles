@@ -5,7 +5,9 @@
   .permalink & {
     @extend %decorative-border;
 
+    color: $color-fg-tagline;
     font-size: rem($ratio-text-tagline);
+    font-weight: $font-weight-tagline;
     line-height: $line-height-tagline;
     min-width: $width-min-tagline;
     padding-bottom: ($margin-top-tagline - $margin + $height-footing);

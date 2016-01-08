@@ -2,20 +2,24 @@
 .tagline {
   @extend %decorative-border;
 
+  $c: $color-dark-light;
+  $fw: 700;
   $lh: $line-height-minimal;
   $m: $margin-large;
   $r: $ratio-text-large;
   $w-m: ($width-content / pow($ratio, 2));
   $w: (100% / $ratio);
 
-  color: $color-dark-light;
+  color: $c;
   font-size: rem($r);
-  font-weight: lighter;
+  font-weight: $fw;
   line-height: $lh;
   margin-top: $m;
   min-width: $w-m;
   width: $w;
 
+  $color-fg-tagline: $c !global;
+  $font-weight-tagline: $fw !global;
   $line-height-tagline: $lh !global;
   $margin-top-tagline: $m !global;
   $ratio-text-tagline: $r !global;
