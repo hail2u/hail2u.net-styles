@@ -2,39 +2,34 @@
 %search-form {
   @extend %positioning-root;
 
+  $b: $width-border-small;
+  $h: (1rem + ($b + $padding-large) * 2);
   $w-b: percentage(1 / 4);
 
-  .query {
-    $b: $width-border-small;
-    $h: (1rem + ($b + $padding-large) * 2);
-
+  input {
     -webkit-appearance: none;
-    background-color: $color-light-light;
-    border: $b solid $color-light-dark;
     border-radius: 0;
-    box-sizing: border-box;
-    color: $color-dark;
     font-family: inherit;
     font-size: inherit;
     height: $h;
     line-height: $h;
     padding: 0;
+  }
+
+  .query {
+    background-color: $color-light-light;
+    border: $b solid $color-light-dark;
+    box-sizing: border-box;
+    color: $color-dark;
     width: (100% - $w-b - 1%);
 
     $height-search-form-query: $h !global;
   }
 
   .button {
-    -webkit-appearance: none;
     background-color: $color-primary-light;
     border: 0;
-    border-radius: 0;
     color: $color-light-light;
-    font-family: inherit;
-    font-size: inherit;
-    height: $height-search-form-query;
-    line-height: $height-search-form-query;
-    padding: 0;
     position: absolute;
     right: 0;
     width: $w-b;
