@@ -2,13 +2,13 @@
 %decorative-border {
   &::after {
     $m: $margin-tiny;
-    $w-b: $width-border;
+    $w-b: $width-border-large;
     $w: ($width-supplement / pow($ratio, 3));
 
     border-bottom: $w-b solid $color-light-dark;
     content: "";
     display: block;
-    margin-bottom: $m;
+    margin-top: $m;
     padding-top: $m;
     width: $w;
 
