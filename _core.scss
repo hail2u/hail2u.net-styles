@@ -48,6 +48,12 @@ section {
     font-size: rem($ratio-text-large);
     margin: $margin-huge 0 0;
   }
+
+  section section h1 {
+    font-size: rem($ratio-text);
+    font-weight: bolder;
+    margin: $margin-large 0 0;
+  }
 }
 
 
