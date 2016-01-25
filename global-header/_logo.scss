@@ -1,11 +1,16 @@
 // Logo
 .logo {
+  $r: $ratio-text;
+  $lh: rem($r * 2);
+
   color: $color-dark-light;
-  font-size: rem($ratio-text);
+  font-size: rem($r);
   font-weight: bolder;
-  line-height: $line-height;
+  line-height: $lh;
   margin-top: 0;
   text-transform: uppercase;
+
+  $line-height-logo: $lh !global;
 
   a {
     color: inherit;

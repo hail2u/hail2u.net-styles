@@ -3,6 +3,7 @@
   $r: $ratio-text-tiny;
 
   font-size: rem($r);
+  line-height: $line-height-logo;
   position: absolute;
   right: 0;
   text-transform: uppercase;
@@ -15,7 +16,6 @@
 
   li {
     display: table-cell;
-    line-height: ($line-height / $r);
     padding-right: $padding-side-centering;
   }
 
@@ -36,7 +36,6 @@
     font-size: rem($r);
 
     li {
-      line-height: ($line-height / $r);
       padding-left: $padding-side-centering;
     }
   }
