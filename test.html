@@ -21,9 +21,6 @@
     <script async src="assets/scripts/toggle-eyecatch.js"></script>
     <script async src="assets/scripts/toggle-outline.js"></script>
     <script async src="assets/scripts/toggle-tagline.js"></script>
-
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
 
   <body>
@@ -94,7 +91,6 @@
           </li>
           <li>ウィジェット
             <ol>
-              <li><a href="#ads-block">広告</a></li>
               <li><a href="#bordered-image">枠線付き画像</a></li>
               <li><a href="#drop-image">画像の飛び出し</a></li>
               <li><a href="#fill-block">幅いっぱい</a></li>
@@ -109,12 +105,6 @@
               <li><a href="#seealso-link">他を参照</a></li>
               <li><a href="#sidenote-block">傍注</a></li>
               <li><a href="#topic-block">話題の記事</a></li>
-            </ol>
-          </li>
-          <li>サードパーティー
-            <ol>
-              <li><a href="#google-adsense-block">Google AdSense</a></li>
-              <li><a href="#twitter-share-button">Twitter Share</a></li>
             </ol>
           </li>
         </ol>
@@ -601,27 +591,6 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
         <p>特別なマークアップの必要はありません。</p>
       </section>
 
-      <section id="ads-block">
-        <h1>広告</h1>
-
-        <p>AdSenseまたはAmazonアソシエイトによる広告は常に最初のプライマリー・セクションの直後に<code>aside</code>要素を使って挿入します。極端に長いページの場合は、コンテンツ部分の最後にも更に一つ追加することがあります。</p>
-
-        <pre><code class="language-html">&lt;aside <mark>class=&quot;ads&quot;</mark>&gt;...&lt;/aside&gt;
-</code></pre>
-      </section>
-
-      <aside class="ads">
-        <!-- Hail2u.net (Main) -->
-        <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-8712792805045949"
-          data-ad-format="rectangle, horizontal"
-          data-ad-slot="1723739447"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </aside>
-
       <section id="bordered-image">
         <h1>枠線付き画像</h1>
 
@@ -861,31 +830,6 @@ $ &lt;kbd&gt;git push -u origin master&lt;/kbd&gt;
 &lt;/section&gt;
 </code></pre>
       </section>
-
-      <section id="google-adsense-block">
-        <h1>Google AdSense</h1>
-
-        <p>Google AdSenseの広告はレスポンシブ広告を使っています。完全には自動切り替えにはせず、特定のフォーマットが優先的に表示されるように調節しています。</p>
-
-        <pre><code class="language-html">&lt;ins <mark>class=&quot;adsbygoogle&quot;</mark>
-  style=&quot;display:block&quot;
-  data-ad-client=&quot;...&quot;
-  data-ad-format=&quot;rectangle, horizontal&quot;
-  data-ad-slot=&quot;...&quot;&gt;&lt;/ins&gt;
-</code></pre>
-      </section>
-
-      <aside class="ads">
-        <!-- Hail2u.net (Main) -->
-        <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-8712792805045949"
-          data-ad-format="rectangle, horizontal"
-          data-ad-slot="1723739447"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </aside>
     </main>
 
     <aside class="subcontent">
