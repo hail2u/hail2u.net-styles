@@ -23,6 +23,12 @@
     @extend %footing;
   }
 
+  a {
+    @extend %ellipsing;
+
+    display: block;
+  }
+
   @media (min-width: $breakpoint-content) {
     .info {
       float: right;
