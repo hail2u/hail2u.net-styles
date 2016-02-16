@@ -23,7 +23,7 @@
     @extend %footing;
   }
 
-  a {
+  li > a {
     @extend %ellipsing;
 
     display: block;
