@@ -23,17 +23,18 @@
     @extend %footing;
   }
 
-  li > a {
-    @extend %ellipsing;
-
-    display: block;
-  }
-
   @media (min-width: $breakpoint-content) {
     .info {
       float: right;
       line-height: ($line-height-post-list-item * $ratio-text-post-list-item / $ratio-text-footing);
       margin-left: $width-gap-small;
+    }
+
+    li > a {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 
