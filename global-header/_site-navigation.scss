@@ -3,11 +3,7 @@
   $r: $ratio-text-tiny;
 
   font-size: rem($r);
-  line-height: $line-height-logo;
-  position: absolute;
-  right: 0;
   text-transform: uppercase;
-  top: 0;
 
   ul {
     margin-top: 0;
@@ -34,6 +30,10 @@
     $r: $ratio-text-small;
 
     font-size: rem($r);
+    line-height: $line-height-logo;
+    position: absolute;
+    right: 0;
+    top: 0;
 
     li {
       padding-left: $padding-side-centering;
