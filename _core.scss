@@ -1,31 +1,31 @@
 // Root
-html {
+:root {
+  $lh: $line-height-small;
+
   @import "assets/partials/hail2u-scss-partials/vendor-extension";
   @include font-feature-settings("kern" 1, "lnum" 1, "pnum" 1);
 
-  font-size: percentage($ratio-text);
-}
-
-
-// Sections
-body {
-  $lh: $line-height-small;
-
-  background-color: $color-light;
-  color: $color-dark;
   font-family: $font-stack-sans-serif;
+  font-size: percentage($ratio-text);
   line-height: $lh;
-  margin: 0;
 
-  $line-height-body: $lh !global;
+  $line-height-root: $lh !global;
 
   @media (min-width: $breakpoint-content) {
     $lh: $line-height;
 
     line-height: $lh;
 
-    $line-height-body-content: $lh !global;
+    $line-height-root-content: $lh !global;
   }
+}
+
+
+// Sections
+body {
+  background-color: $color-light;
+  color: $color-dark;
+  margin: 0;
 }
 
 h1 {

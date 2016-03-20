@@ -2,7 +2,7 @@
 .site-search {
   @extend %search-form;
 
-  $m: ((rem($line-height-body-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
+  $m: ((rem($line-height-root-content * $ratio-text-global-footer) - $height-search-form-query) / 2);
 
   top: $margin-huge;
 
