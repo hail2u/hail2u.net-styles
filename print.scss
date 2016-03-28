@@ -1,0 +1,56 @@
+/*!
+ * print.css
+ * https://github.com/hail2u/hail2u.net-styles
+ *
+ * Licensed under MIT: http://hail2u.mit-license.org/2011
+ */
+
+// Variable
+@import "var/font";
+
+
+// Hiding
+aside,
+nav,
+hr::before,
+.site-navigation,
+.tagline,
+.footlinks,
+.byline::before,
+.icon-list,
+.searchbox,
+.seealso::before,
+.topic .section-footer + p::after {
+  display: none;
+}
+
+
+// Page Break
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figcaption {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+pre,
+blockquote,
+ul,
+ol,
+dl,
+figure,
+table {
+  page-break-inside: avoid;
+}
+
+
+// Images
+img,
+svg,
+video {
+  max-width: 100%;
+}
