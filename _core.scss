@@ -40,6 +40,10 @@ h1 {
 
   $height-h1: rem($line-height-heading * $r) !global;
   $margin-top-h1: $m !global;
+
+  @media (min-width: $breakpoint-full) {
+    margin-left: (- ($width-supplement + $width-gap-large));
+  }
 }
 
 article,

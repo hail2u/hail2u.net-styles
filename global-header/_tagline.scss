@@ -47,6 +47,7 @@
     margin-top: $m;
     width: $w;
 
+    $height-tagline-full: rem($lh * $r) !global;
     $margin-top-tagline-full: $m !global;
     $ratio-text-tagline-full: $r !global;
     $width-tagline-full: $w !global;

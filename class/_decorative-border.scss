@@ -12,6 +12,7 @@
     padding-top: $m;
     width: $w;
 
+    $height-decorative-border: $m + $w-b + $m !global;
     $margin-bottom-decorative-border: $m !global;
     $width-border-decorative-border: $w-b !global;
     $width-decorative-border: $w !global;
