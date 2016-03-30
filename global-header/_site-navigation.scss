@@ -1,8 +1,6 @@
 // Site Navigation
 .site-navigation {
-  $r: $ratio-text-tiny;
-
-  font-size: rem($r);
+  font-size: rem($ratio-text-small);
   text-transform: uppercase;
 
   ul {
@@ -26,9 +24,6 @@
   }
 
   @media (min-width: $breakpoint-content) {
-    $r: $ratio-text-small;
-
-    font-size: rem($r);
     line-height: $line-height-logo;
     position: absolute;
     right: 0;
