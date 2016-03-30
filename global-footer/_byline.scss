@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    bottom: 0;
+    bottom: (- $margin);
     margin-right: (- ($width-supplement-outer - $width-gap-small));
   }
 }

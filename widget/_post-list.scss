@@ -13,7 +13,7 @@
     font-size: rem($r);
     line-height: $lh;
     list-style-type: none;
-    margin-top: $margin-small;
+    margin-bottom: $margin-small;
 
     $line-height-post-list-item: $lh !global;
     $ratio-text-post-list-item: $r !global;

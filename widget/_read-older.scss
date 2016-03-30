@@ -13,6 +13,7 @@
     display: block;
     font-weight: bolder;
     line-height: 1;
+    margin-bottom: $margin-tiny;
     margin-top: $m;
     text-transform: uppercase;
 
@@ -25,7 +26,6 @@
 
     font-size: rem($r);
     line-height: $lh;
-    margin-top: $margin-tiny;
 
     $line-height-read-older-title: $lh !global;
     $ratio-text-read-older-title: $r !global;

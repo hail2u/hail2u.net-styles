@@ -7,7 +7,7 @@
   font-size: rem($r);
   font-weight: bolder;
   line-height: $lh;
-  margin-top: 0;
+  margin-top: $margin-small;
   text-transform: uppercase;
 
   $line-height-logo: $lh !global;
@@ -21,7 +21,12 @@
     background-color: transparent;
   }
 
+  @media (min-width: $breakpoint-content) {
+    margin-top: $margin;
+  }
+
   @media (min-width: $breakpoint-full) {
     margin-left: (- ($width-supplement + $width-gap-large));
+    margin-top: $margin-large;
   }
 }

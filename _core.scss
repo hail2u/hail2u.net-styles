@@ -36,7 +36,7 @@ h1 {
   $r: $ratio-text-huge;
 
   font-size: rem($r);
-  margin: $m 0 0;
+  margin: $m 0 $margin-tiny;
 
   $height-h1: rem($line-height-heading * $r) !global;
   $margin-top-h1: $m !global;
@@ -50,13 +50,17 @@ article,
 section {
   section h1 {
     font-size: rem($ratio-text-large);
-    margin: $margin-huge 0 0;
+    margin-top: $margin-huge;
+
+    @media (min-width: $breakpoint-full) {
+      margin-left: 0;
+    }
   }
 
   section section h1 {
     font-size: rem($ratio-text);
     font-weight: bolder;
-    margin: $margin-large 0 0;
+    margin-top: $margin-large;
   }
 }
 
@@ -64,7 +68,6 @@ section {
 // Grouping Content
 p {
   @extend %margin;
-  @extend %margin-after-heading;
 }
 
 hr {
@@ -90,7 +93,6 @@ hr {
 pre {
   @import "assets/partials/hail2u-scss-partials/vendor-extension";
   @extend %margin;
-  @extend %margin-after-heading;
   @include font-feature-settings("zero" 1);
 
   clear: both;
@@ -109,7 +111,6 @@ pre {
 
 blockquote {
   @extend %margin;
-  @extend %margin-after-heading;
 
   $b: $color-light-dark;
   $f: $color-dark-light;
@@ -129,7 +130,6 @@ blockquote {
 ul,
 ol {
   @extend %margin;
-  @extend %margin-after-heading;
 
   $p: $indent;
 
@@ -139,16 +139,15 @@ ol {
 
   ul,
   ol {
-    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
 dl {
   @extend %margin;
-  @extend %margin-after-heading;
 
   dl {
-    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -162,13 +161,12 @@ dd {
 
   + dd,
   + dt {
-    margin-top: $margin-tiny;
+    margin-bottom: $margin-tiny;
   }
 }
 
 figure {
   @extend %margin;
-  @extend %margin-after-heading;
   @extend %positioning-root;
 }
 
@@ -177,12 +175,10 @@ figcaption {
   @extend %protrusion;
 
   color: $color-dark-light;
-  margin-top: $margin-small;
 
   blockquote + & {
     border-left: $width-border-blockquote solid $color-border-blockquote;
     color: $color-fg-blockquote;
-    margin-top: 0;
     padding-left: $padding-left-blockquote;
 
     &::before {
@@ -288,7 +284,6 @@ video {
 table {
   @import "assets/partials/hail2u-scss-partials/vendor-extension";
   @extend %margin;
-  @extend %margin-after-heading;
   @include font-feature-settings("tnum" 1);
 
   $c: $color-light-dark;

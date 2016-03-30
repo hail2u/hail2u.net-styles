@@ -4,8 +4,4 @@
   margin-bottom: rem(($line-height - 1) / 2);
   margin-left: $width-gap-small;
   max-width: percentage(1 / pow($ratio, 2));
-
-  &:nth-child(2) + p {
-    margin-top: $margin-top-margin-after-heading;
-  }
 }

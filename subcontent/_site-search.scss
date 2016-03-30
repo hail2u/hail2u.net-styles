@@ -9,13 +9,13 @@
   @media (min-width: $breakpoint-content) {
     position: absolute;
     right: $padding-side-centering;
-    top: ($margin-top-footlinks + $m);
+    top: ($margin-top-footlinks - $margin + $m);
     width: percentage(1 / 2);
     z-index: 1;
   }
 
   @media (min-width: $breakpoint-full) {
-    top: ($margin-top-footlinks-full + $m);
+    top: ($margin-top-footlinks-full - $margin + $m);
     width: percentage(1 / 3);
   }
 }

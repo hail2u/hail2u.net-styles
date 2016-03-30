@@ -1,15 +1,4 @@
 // Margin
 %margin {
-  margin: $margin 0 0;
-}
-
-
-%margin-after-heading {
-  h1 + & {
-    $m: $margin-tiny;
-
-    margin-top: $m;
-
-    $margin-top-margin-after-heading: $m !global;
-  }
+  margin: 0 0 $margin;
 }
