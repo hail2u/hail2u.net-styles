@@ -5,76 +5,23 @@
  * Licensed under MIT: http://hail2u.mit-license.org/2011
  */
 
-// Function
-@import "assets/partials/hail2u-scss-functions/color/encode-color";
-@import "assets/partials/hail2u-scss-functions/number/pow";
-@import "assets/partials/hail2u-scss-functions/number/rem";
-@import "assets/partials/hail2u-scss-functions/number/remove-unit";
+@import "init";
 
-
-// Variable
-@import "var/font";
-@import "var/color";
-@import "var/ratio";
-@import "var/size";
-
-
-// Placeholder Class
-@import "class/centering";
-@import "class/clearfix";
-@import "class/decorative-border";
-@import "class/expander";
-@import "class/heading";
-@import "class/link";
-@import "class/margin";
-@import "class/positioning-root";
-@import "class/protrusion";
-@import "class/search-form";
-
-@import "class/footing";
-@import "class/link-underline-removal";
-
-
-// Core
 @import "core";
 
-
-// Global Header
 @import "global-header";
 @import "global-header/logo";
 @import "global-header/site-navigation";
 @import "global-header/tagline";
 
-
-// Content
 @import "content";
 @import "content/first-heading";
 @import "content/section-footer";
 @import "content/article";
 
-
-// Global Footer
 @import "global-footer";
 @import "global-footer/footlinks";
 @import "global-footer/byline";
 
-
-// Subcontent
 @import "subcontent";
 @import "subcontent/site-search";
-
-
-// Widget
-@import "widget/bordered";
-@import "widget/drop";
-@import "widget/fill";
-@import "widget/flat-list";
-@import "widget/float";
-@import "widget/footnote";
-@import "widget/post-list";
-@import "widget/pull-quote";
-@import "widget/read-older";
-@import "widget/searchbox";
-@import "widget/seealso";
-@import "widget/sidenote";
-@import "widget/topic";
