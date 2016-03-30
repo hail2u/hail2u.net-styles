@@ -6,6 +6,10 @@
 
 %margin-after-heading {
   h1 + & {
-    margin-top: $margin-tiny;
+    $m: $margin-tiny;
+
+    margin-top: $m;
+
+    $margin-top-margin-after-heading: $m !global;
   }
 }
