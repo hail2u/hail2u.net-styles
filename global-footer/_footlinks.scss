@@ -1,21 +1,15 @@
 // Footlinks
 .footlinks {
-  $m: $margin-gargantuan;
-
-  margin-top: $m;
+  margin-top: $margin-top-footlinks;
   padding-left: 0;
 
-  $margin-top-footlinks: $m !global;
-
   li {
-    $p: $width-gap-small;
-
     display: table-cell;
-    padding-right: $p;
+    padding-right: $padding-right-footlinks-item;
 
     &:first-child::after {
       content: "·";
-      margin-left: $p;
+      margin-left: $padding-right-footlinks-item;
     }
 
     &:last-child {
@@ -24,10 +18,6 @@
   }
 
   @media (min-width: $breakpoint-full) {
-    $m: $margin-enormous;
-
-    margin-top: $m;
-
-    $margin-top-footlinks-full: $m !global;
+    margin-top: $margin-top-footlinks-full;
   }
 }

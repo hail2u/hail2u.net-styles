@@ -2,54 +2,23 @@
 .tagline {
   @extend %decorative-border;
 
-  $c: $color-dark-light;
-  $fw: 700;
-  $lh: $line-height-minimal;
-  $m: $margin-large;
-  $r: $ratio-text-large;
-  $w-m: ($width-content / pow($ratio, 2));
-  $w: (100% / $ratio);
-
-  color: $c;
-  font-size: rem($r);
-  font-weight: $fw;
-  line-height: $lh;
-  margin-top: $m;
-  min-width: $w-m;
-  width: $w;
-
-  $color-fg-tagline: $c !global;
-  $font-weight-tagline: $fw !global;
-  $line-height-tagline: $lh !global;
-  $margin-top-tagline: $m !global;
-  $ratio-text-tagline: $r !global;
-  $width-min-tagline: $w-m !global;
-  $width-tagline: $w !global;
+  color: $color-fg-tagline;
+  font-size: rem($ratio-text-tagline);
+  font-weight: $font-weight-tagline;
+  line-height: $line-height-tagline;
+  margin-top: $margin-top-tagline;
+  min-width: $width-min-tagline;
+  width: $width-tagline;
 
   @media (min-width: $breakpoint-content) {
-    $m: $margin-huge;
-    $r: $ratio-text-huge;
-
-    font-size: rem($r);
-    margin-top: $m;
-
-    $margin-top-tagline-content: $m !global;
-    $ratio-text-tagline-content: $r !global;
+    font-size: rem($ratio-text-tagline-content);
+    margin-top: $margin-top-tagline-content;
   }
 
   @media (min-width: $breakpoint-full) {
-    $m: $margin-gargantuan;
-    $r: $ratio-text-gargantuan;
-    $w: ($width-full / $ratio);
-
-    font-size: rem($r);
+    font-size: rem($ratio-text-tagline-full);
     margin-left: (- ($width-supplement + $width-gap-large));
-    margin-top: $m;
-    width: $w;
-
-    $height-tagline-full: rem($lh * $r) !global;
-    $margin-top-tagline-full: $m !global;
-    $ratio-text-tagline-full: $r !global;
-    $width-tagline-full: $w !global;
+    margin-top: $margin-top-tagline-full;
+    width: $width-tagline-full;
   }
 }

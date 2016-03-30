@@ -1,20 +1,11 @@
 // Decorative Border
 %decorative-border {
   &::before {
-    $m: $margin-tiny;
-    $w-b: $width-border-large;
-    $w: ($width-supplement / pow($ratio, 3));
-
-    border-bottom: $w-b solid $color-light-dark;
+    border-bottom: $width-border-decorative-border solid $color-light-dark;
     content: "";
     display: block;
-    margin-bottom: $m;
-    padding-top: $m;
-    width: $w;
-
-    $height-decorative-border: $m + $w-b + $m !global;
-    $margin-bottom-decorative-border: $m !global;
-    $width-border-decorative-border: $w-b !global;
-    $width-decorative-border: $w !global;
+    margin-bottom: $margin-bottom-decorative-border;
+    padding-top: $margin-bottom-decorative-border;
+    width: $width-decorative-border;
   }
 }

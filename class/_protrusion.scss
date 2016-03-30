@@ -1,14 +1,10 @@
 // Protrusion
 %protrusion {
   @media (min-width: $breakpoint-full) {
-    $w: $width-supplement;
-
     margin-right: $width-gap-large;
     position: absolute;
     right: 100%;
-    width: $w;
+    width: $width-protrusion-full;
     z-index: 1;
-
-    $width-protrusion-full: $w !global;
   }
 }

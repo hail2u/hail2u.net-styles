@@ -22,3 +22,25 @@ $ratio-text-maximal: ($ratio-text-secondary * pow($ratio, 2));
 // Column
 $ratio-content: 1;
 $ratio-supplement: (1 / pow($ratio, 2));
+
+
+// Placeholder Class
+$ratio-text-footing: $ratio-text-small;
+
+
+// Core
+$ratio-text-h1: $ratio-text-huge;
+
+$ratio-text-hr: $ratio-text-huge;
+
+
+// Global Header
+$ratio-text-logo: $ratio-text;
+
+$ratio-text-tagline: $ratio-text-large;
+$ratio-text-tagline-content: $ratio-text-huge;
+$ratio-text-tagline-full: $ratio-text-gargantuan;
+
+
+// Global Footer
+$ratio-text-global-footer: $ratio-text-small;

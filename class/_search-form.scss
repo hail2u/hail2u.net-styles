@@ -2,28 +2,22 @@
 %search-form {
   @extend %positioning-root;
 
-  $b: $width-border-small;
-  $h: (1rem + ($b + $padding-large) * 2);
-  $w-b: percentage(1 / 4);
-
   input {
     -webkit-appearance: none;
     border-radius: 0;
     font-family: inherit;
     font-size: inherit;
-    height: $h;
-    line-height: $h;
+    height: $height-search-form-query;
+    line-height: $height-search-form-query;
     padding: 0;
   }
 
   .query {
     background-color: $color-light-light;
-    border: $b solid $color-light-dark;
+    border: $width-border-search-form-query solid $color-light-dark;
     box-sizing: border-box;
     color: $color-dark;
-    width: (100% - $w-b - 1%);
-
-    $height-search-form-query: $h !global;
+    width: (100% - $width-search-form-button - 1%);
   }
 
   .button {
@@ -32,6 +26,6 @@
     color: $color-light-light;
     position: absolute;
     right: 0;
-    width: $w-b;
+    width: $width-search-form-button;
   }
 }

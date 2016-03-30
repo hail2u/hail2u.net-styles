@@ -2,15 +2,9 @@
 %footing {
   @extend %protrusion;
 
-  $r: $ratio-text-small;
-  $lh: ($line-height-heading / $r);
-
   color: $color-dark-light;
-  font-size: rem($r);
-  line-height: $lh;
-
-  $height-footing: rem($lh * $r) !global;
-  $ratio-text-footing: $r !global;
+  font-size: rem($ratio-text-footing);
+  line-height: $line-height-footing;
 
   .date,
   .tag {

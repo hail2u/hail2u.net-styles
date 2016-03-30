@@ -1,14 +1,10 @@
 // Centering
 %centering {
-  $p: $width-gap-small;
-
   margin-left: auto;
   margin-right: auto;
   max-width: $width-content;
-  padding-left: $p;
-  padding-right: $p;
-
-  $padding-side-centering: $p !global;
+  padding-left: $padding-side-centering;
+  padding-right: $padding-side-centering;
 
   @media (min-width: $breakpoint-full) {
     padding-left: ($width-gap-small + $width-supplement + $width-gap-large);

@@ -3,6 +3,9 @@
   @extend %positioning-root;
   @extend %link-underline-removal;
 
+  $lh: $line-height-tiny;
+  $r: $ratio-text-huge;
+
   a::before {
     @extend %protrusion;
 
@@ -21,19 +24,13 @@
   }
 
   p {
-    $lh: $line-height-tiny;
-    $r: $ratio-text-huge;
-
     font-size: rem($r);
     line-height: $lh;
-
-    $line-height-read-older-title: $lh !global;
-    $ratio-text-read-older-title: $r !global;
   }
 
   @media (min-width: $breakpoint-full) {
     a::before {
-      line-height: ($line-height-read-older-title * $ratio-text-read-older-title);
+      line-height: ($lh * $r);
       margin-top: 0;
     }
 

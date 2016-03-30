@@ -60,3 +60,54 @@ $width-full-outer: ($width-gap-small + $width-full + $width-gap-small);
 $width-scrollbar: 1.5rem;
 $breakpoint-content: ($width-content-outer + $width-scrollbar);
 $breakpoint-full: ($width-full-outer + $width-scrollbar);
+
+
+// Placeholder Class
+$padding-side-centering: $width-gap-small;
+
+$margin-bottom-decorative-border: $margin-tiny;
+$width-border-decorative-border: $width-border-large;
+$width-decorative-border: ($width-supplement / pow($ratio, 3));
+$height-decorative-border: $margin-bottom-decorative-border + $width-border-decorative-border + $margin-bottom-decorative-border;
+
+$margin-side-expander: (- $padding-side-centering);
+
+$line-height-heading: $line-height-tiny;
+
+$width-protrusion-full: $width-supplement;
+
+$width-border-search-form-query: $width-border-small;
+$height-search-form-query: (1rem + ($width-border-search-form-query + $padding-large) * 2);
+$width-search-form-button: percentage(1 / 4);
+
+$line-height-footing: ($line-height-heading / $ratio-text-footing);
+$height-footing: rem($line-height-footing * $ratio-text-footing);
+
+
+// Core
+$margin-top-h1: $margin-gargantuan;
+$height-h1: rem($line-height-heading * $ratio-text-h1);
+
+$padding-left-blockquote: $width-gap;
+$width-border-blockquote: $width-border-large;
+
+$padding-left-list: $indent;
+
+
+// Global Header
+$line-height-logo: rem($ratio-text-logo * 2);
+
+$line-height-tagline: $line-height-minimal;
+$height-tagline-full: rem($line-height-tagline * $ratio-text-tagline-full);
+$margin-top-tagline: $margin-large;
+$margin-top-tagline-content: $margin-huge;
+$margin-top-tagline-full: $margin-gargantuan;
+$width-min-tagline: ($width-content / pow($ratio, 2));
+$width-tagline: (100% / $ratio);
+$width-tagline-full: ($width-full / $ratio);
+
+
+// Global Footer
+$margin-top-footlinks: $margin-gargantuan;
+$margin-top-footlinks-full: $margin-enormous;
+$padding-right-footlinks-item: $width-gap-small;

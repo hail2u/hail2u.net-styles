@@ -4,10 +4,6 @@
   @extend %link-underline-removal;
   @extend %positioning-root;
 
-  $r: $ratio-text-small;
-
-  font-size: rem($r);
+  font-size: rem($ratio-text-global-footer);
   margin-bottom: $margin-large;
-
-  $ratio-text-global-footer: $r !global;
 }

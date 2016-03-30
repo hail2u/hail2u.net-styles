@@ -1,9 +1,5 @@
 // Heading
 %heading {
-  $lh: $line-height-tiny;
-
   font-weight: normal;
-  line-height: $lh;
-
-  $line-height-heading: $lh !global;
+  line-height: $line-height-heading;
 }

@@ -2,21 +2,18 @@
 .post-list {
   @extend %link-underline-removal;
 
+  $lh: $line-height-tiny;
+  $r: $ratio-text-large;
+
   padding-left: 0;
 
   li {
     @extend %positioning-root;
 
-    $lh: $line-height-tiny;
-    $r: $ratio-text-large;
-
     font-size: rem($r);
     line-height: $lh;
     list-style-type: none;
     margin-bottom: $margin-small;
-
-    $line-height-post-list-item: $lh !global;
-    $ratio-text-post-list-item: $r !global;
   }
 
   .info {
@@ -26,7 +23,7 @@
   @media (min-width: $breakpoint-content) {
     .info {
       float: right;
-      line-height: ($line-height-post-list-item * $ratio-text-post-list-item / $ratio-text-footing);
+      line-height: ($lh * $r / $ratio-text-footing);
       margin-left: $width-gap-small;
     }
 

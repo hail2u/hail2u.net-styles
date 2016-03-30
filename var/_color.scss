@@ -22,3 +22,20 @@ $color-primary-light: rgb(105, 165, 211);
 
 $color-secondary-light: rgb(251, 254, 0);
 $color-secondary-dark: rgb(255, 171, 0);
+
+
+// Placeholder Class
+$color-fg-link: $color-primary;
+
+
+// Core
+$color-border-blockquote: $color-light-dark;
+$color-fg-blockquote: $color-dark-light;
+
+$color-border-table: $color-light-dark;
+
+
+// Global Header
+$color-fg-tagline: $color-dark-light;
+$font-weight-tagline: 700;
+
