@@ -4,20 +4,6 @@
  *
  * Licensed under MIT: http://hail2u.mit-license.org/2012
  */
-// scss-lint:disable ColorVariable
-
-// Functions
-@import "assets/partials/hail2u-scss-functions/number/rem";
-@import "assets/partials/hail2u-scss-functions/number/pow";
-@import "assets/partials/hail2u-scss-functions/number/remove-unit";
-
-
-// Variables
-@import "var/font";
-@import "var/color";
-@import "var/ratio";
-@import "var/size";
-
 
 // Show Column
 .show-column::before {
@@ -87,15 +73,20 @@
 
 // Show Outline
 .show-outline * {
-  outline: 1px solid rgb(255, 0, 255);
+  $c: rgb(255, 0, 255);
+
+  outline: 1px solid $c;
 }
 
 
 // Breakpoints
 body::after {
-  background-color: rgb(0, 153, 102);
+  $c-b: rgb(0, 153, 102);
+  $c-f: rgb(255, 255, 255);
+
+  background-color: $c-b;
   bottom: .5rem;
-  color: rgb(255, 255, 255);
+  color: $c-f;
   content: "Small";
   display: block;
   font-size: .875rem;
@@ -159,7 +150,9 @@ body::after {
     width: calc((100% / 6) - #{$width-gap-small});
 
     &::before {
-      border: 1px solid rgb(0, 0, 0);
+      $c: rgb(0, 0, 0);
+
+      border: 1px solid $c;
       box-sizing: border-box;
       content: "";
       display: block;
