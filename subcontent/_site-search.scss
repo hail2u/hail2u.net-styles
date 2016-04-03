@@ -9,7 +9,7 @@
   @media (min-width: $breakpoint-content) {
     position: absolute;
     right: $padding-side-centering;
-    top: ($margin-top-footlinks+ $m);
+    top: ($margin-top-footlinks + $m);
     width: percentage(1 / 2);
     z-index: 1;
   }
