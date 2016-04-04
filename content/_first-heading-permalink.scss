@@ -1,0 +1,24 @@
+// First Heading
+.permalink .first-heading {
+  @extend %decorative-border;
+
+  color: $color-fg-tagline;
+  font-size: rem($ratio-text-tagline);
+  font-weight: $font-weight-tagline;
+  line-height: $line-height-tagline;
+  min-width: $width-min-tagline;
+  padding-bottom: ($margin-top-tagline - $margin + $height-footing);
+  width: $width-tagline;
+
+  @media (min-width: $breakpoint-content) {
+    font-size: rem($ratio-text-tagline-content);
+    padding-bottom: ($margin-top-tagline-content - $margin + $height-footing);
+  }
+
+  @media (min-width: $breakpoint-full) {
+    font-size: rem($ratio-text-tagline-full);
+    margin-left: (- ($width-supplement + $width-gap-large));
+    padding-bottom: ($margin-top-tagline-full - $margin);
+    width: $width-tagline-full;
+  }
+}

@@ -1,0 +1,6 @@
+// Section Footer
+.permalink .section-footer p {
+  @media (min-width: $breakpoint-full) {
+    margin-top: ($height-decorative-border + ($height-tagline-full - $height-footing) / 2);
+  }
+}

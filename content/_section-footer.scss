@@ -19,10 +19,6 @@
 
     p {
       margin-top: (($height-h1 - $height-footing) / 2);
-
-      .permalink & {
-        margin-top: ($height-decorative-border + ($height-tagline-full - $height-footing) / 2);
-      }
     }
   }
 }
